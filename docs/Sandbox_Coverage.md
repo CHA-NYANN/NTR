@@ -30,6 +30,10 @@ Di kamar sendiri, pemain dapat memasang alarm untuk 20 menit, 90 menit, 6, 8, at
 - `python tests/run_save_upgrade.py PATH_SDK ZIP_PLAYTEST_SEBELUMNYA` membuat save baru pada versi lama yang dipercaya dan memuatnya pada versi sekarang. Sampel yang diuji berasal dari paket LivingWorld sebelum iterasi Hanami/Golden Week.
 - ZIP Windows iterasi ini lolos pemeriksaan integritas. Executable hasil ekstraksi memulai renderer. Skenario panjang berjalan di proyek temporer dengan source produksi.
 
+## Keluarga Kisaragi
+
+Di lobi apartemen pada malam hari, Yutaka bisa bertemu ayahnya ketika hubungan keluarga masih dingin. Setelah hubungan membaik, pesan dari ibu dapat masuk, termasuk ketika Yutaka beristirahat. Panggilan ayah pada M13, makan Natal di rumah Amamiya pada M21, dan jawaban karier pada M31 tercatat dalam perjalanan. E-YH-01 memerlukan Yutaka lolos evaluasi, memilih perusahaan keluarga, dan hubungan Kisaragi ≥60. Dasar 30 dan ambang 40/60 berasal dari Alur_Cabang/08. Jam malam, kedatangan di apartemen untuk panggilan M13, dan bobot respons 5–10 adalah penjadwalan dan penyetelan prototipe. Gerbang Koita Success setelah Y13 masih parsial.
+
 ## Pedoman playtest
 
 Mulai permainan baru, pilih salah satu tubuh, lalu kunjungi distrik kampus. Coba makan, berbicara dengan seseorang, kembali ke tempat itu pada waktu berbeda dan simpan sebelum sebuah keputusan. Muat kembali dan amati perbedaan respons. Untuk laporan sertakan tubuh, tanggal/jam, lokasi, tindakan dan perubahan yang terlihat. Gunakan save terpisah untuk membandingkan dua perjalanan.
@@ -48,7 +52,7 @@ Status implementasi dan bukti uji merupakan dua kolom terpisah. **implemented** 
 
 ### Event utama
 
-24 dari 190 ID mempunyai referensi langsung dalam alur atau resolver. Katalog memuat 553 alternatif tertulis pada seluruh ID.
+26 dari 190 ID mempunyai referensi langsung dalam alur atau resolver. Katalog memuat 553 alternatif tertulis pada seluruh ID.
 
 | ID | Implementasi | Bukti |
 | --- | --- | --- |
@@ -105,11 +109,11 @@ Status implementasi dan bukti uji merupakan dua kolom terpisah. **implemented** 
 | Y06 | data-only | untested |
 | Y07 | data-only | untested |
 | Y08 | data-only | untested |
-| Y09 | data-only | untested |
+| Y09 | partial | A pada Yutaka; tertutup untuk Chiasa |
 | Y10 | data-only | untested |
 | Y11 | data-only | untested |
 | Y12 | data-only | untested |
-| Y13 | data-only | untested |
+| Y13 | partial | A pada Yutaka; tertutup untuk Chiasa |
 | Y14 | data-only | untested |
 | Y15 | data-only | untested |
 | Y16 | data-only | untested |
@@ -245,7 +249,7 @@ Status implementasi dan bukti uji merupakan dua kolom terpisah. **implemented** 
 
 ### Event dinamis
 
-8 dari 128 ID mempunyai referensi langsung dalam alur atau resolver. Katalog memuat 393 alternatif tertulis pada seluruh ID.
+10 dari 128 ID mempunyai referensi langsung dalam alur atau resolver. Katalog memuat 393 alternatif tertulis pada seluruh ID.
 
 | ID | Implementasi | Bukti |
 | --- | --- | --- |
@@ -356,12 +360,12 @@ Status implementasi dan bukti uji merupakan dua kolom terpisah. **implemented** 
 | K-D21 | data-only | untested |
 | Y-D01 | data-only | untested |
 | Y-D02 | data-only | untested |
-| Y-D03 | data-only | untested |
+| Y-D03 | partial | A pada Yutaka; tertutup untuk Chiasa |
 | Y-D04 | data-only | untested |
 | Y-D05 | data-only | untested |
 | Y-D06 | data-only | untested |
 | Y-D07 | data-only | untested |
-| Y-D08 | data-only | untested |
+| Y-D08 | partial | A pada Yutaka; tertutup untuk Chiasa |
 | Y-D09 | data-only | untested |
 | Y-D10 | data-only | untested |
 | Y-D11 | data-only | untested |
@@ -380,7 +384,7 @@ Status implementasi dan bukti uji merupakan dua kolom terpisah. **implemented** 
 
 ### Ending
 
-22 dari 220 ID mempunyai referensi langsung dalam alur atau resolver.
+23 dari 220 ID mempunyai referensi langsung dalam alur atau resolver.
 
 | ID | Implementasi | Bukti |
 | --- | --- | --- |
@@ -508,7 +512,7 @@ Status implementasi dan bukti uji merupakan dua kolom terpisah. **implemented** 
 | E-BL-06 | data-only | untested |
 | E-BL-07 | data-only | untested |
 | E-BL-08 | data-only | untested |
-| E-YH-01 | data-only | untested |
+| E-YH-01 | partial | Epilog Yutaka; absen untuk Chiasa |
 | E-YH-02 | partial | untested |
 | E-YH-03 | data-only | untested |
 | E-YH-04 | data-only | untested |

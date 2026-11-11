@@ -55,6 +55,14 @@ label kk_phone_rematch:
 init python:
     KK_DYN_BY_ID = {event["id"]: event for event in KK_EVENTS_DYN}
 
+    def kk_father_visit(place):
+        return (kk_host == "yutaka" and place == "Apartemen Yutaka" and kk_slot == 3
+                and kk_family_bond() < 40 and not kk_done("Y-D03"))
+
+    def kk_mother_message():
+        return (kk_host == "yutaka" and kk_slot == 3 and kk_family_bond() >= 40
+                and not kk_done("Y-D08") and "Y-D08" not in kk_missed)
+
     def kk_phone_event():
         return (not kk_done("N-D01") and "N-D01" not in kk_missed and
                 kk_slot in (4,5) and kk_rel_get("nagisa","aff") >= 25)
@@ -88,6 +96,8 @@ init python:
                 incoming.append(("nagisa", "N-D01"))
             if kk_pudding_message():
                 incoming.append(("miyuki", "Mi-D01"))
+            if kk_mother_message():
+                incoming.append(("ibu_kisaragi", "Y-D08"))
             for cid, eid in incoming:
                 if kk_phone_mode == "siaga" or (kk_phone_mode == "normal" and cid in kk_priority_contacts):
                     message = cid
@@ -126,7 +136,9 @@ init python:
         if harumi:
             result.append(harumi)
         if result[0] in ("E-SI-01","E-SI-02","E-SI-03","E-SI-18"):
-            if kk_host == "yutaka" and kk_has("job_outside"):
+            if kk_host == "yutaka" and kk_has("job_family") and kk_family_bond() >= 60:
+                result.append("E-YH-01")
+            elif kk_host == "yutaka" and kk_has("job_outside"):
                 result.append("E-YH-02")
             elif kk_host == "yutaka" and kk_has("intern_abroad"):
                 result.append("E-YH-06")

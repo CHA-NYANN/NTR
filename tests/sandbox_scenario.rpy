@@ -52,7 +52,9 @@ init python:
         if name == "kk_choice_panel":
             screen = renpy.get_screen("kk_choice_panel")
             if screen:
-                return renpy.run(screen.scope["rows"][0][1])
+                rows = screen.scope["rows"]
+                selected = next((row for row in rows if kk_host == "yutaka" and row[0].startswith("Tawarkan pergi bersama")),rows[0])
+                return renpy.run(selected[1])
         if name == "kk_ending_card":
             return renpy.run(Return())
 
@@ -191,12 +193,30 @@ label kk_sandbox_test:
         $ kk_test_expect("Dorm tea reachable at one", kk_bulan == 10)
     call kk_do_talk("d1", "Asrama Putri", "harumi")
     $ kk_test_expect("Dorm tea happens once", kk_done("H-D01") and kk_get("kejelasan_harumi") == (50 if kk_host == "yutaka" else 35))
+    $ kk_test_at(12,10,3)
+    $ kk_test_expect("Lobby visit respects host and location", kk_father_visit("Apartemen Yutaka") == (kk_host == "yutaka") and not kk_father_visit("Kos Moeka"))
+    if kk_host == "yutaka":
+        call kk_visit_kisaragi
+        $ kk_test_expect("Father visit opens mother message", kk_family_bond() == 40 and not kk_father_visit("Apartemen Yutaka") and kk_mother_message())
+        call kk_message_kisaragi
+        $ kk_test_expect("Reply recorded only once", kk_done("Y-D08") and not kk_mother_message() and kk_family_bond() == 45)
     $ kk_test_at(13,1,1)
     while not kk_pending_talk("harumi","d1","Gedung Sains & Lab"):
         $ kk_advance()
         $ kk_test_expect("Spring lab meeting bounded", kk_bulan == 13)
     call kk_do_talk("d1","Gedung Sains & Lab","harumi")
     $ kk_test_expect("Harumi remembers earlier conversation", kk_has("harumi_dibantu_menamai_emosi"))
+    $ kk_test_expect("Father call is host specific", ("Y09" in kk_pending_enter("d3","Apartemen Yutaka")) == (kk_host == "yutaka"))
+    if kk_host == "yutaka":
+        call kk_play_scene("Y09")
+        $ kk_test_expect("Family listens to graduation plans", kk_family_bond() == 55)
+    $ kk_test_at(21,24,1)
+    $ kk_test_expect("Amamiya dinner is not open at lunch", not kk_pending_enter("d2","Rumah Amamiya"))
+    $ kk_test_at(21,24,3)
+    $ kk_test_expect("Amamiya Christmas dinner", ("Y13" in kk_pending_enter("d2","Rumah Amamiya")) == (kk_host == "yutaka"))
+    if kk_host == "yutaka":
+        call kk_play_scene("Y13")
+        $ kk_test_expect("Dinner remembered", kk_has("makan_bersama_amamiya"))
     $ kk_test_at(31,1,1)
     $ kk_test_expect("Offer only for Yutaka", bool(kk_pending_enter("d3","Apartemen Yutaka")) == (kk_host == "yutaka"))
     if kk_host == "yutaka":
@@ -207,7 +227,7 @@ label kk_sandbox_test:
         $ kk_test_at(33,25,3)
     $ kk_test_expect("Proposal due to pressure accumulated over years", kk_pending_talk("miyuki","d6","Rumah Sakit Tachibana") == ["Mi25"])
     call kk_do_talk("d6","Rumah Sakit Tachibana","miyuki")
-    $ kk_test_expect("Miyuki family ending", "E-MI-04" in kk_epilogue())
+    $ kk_test_expect("Miyuki family ending", ("E-MI-05" if kk_host == "yutaka" else "E-MI-04") in kk_epilogue())
     $ kk_test_at(33,26,1)
     $ kk_test_expect("Late host and missed opportunities", "Mi09" in kk_missed and not kk_pending_enter("d3","Apartemen Yutaka"))
     $ kk_test_at(35,1,3)
@@ -220,8 +240,9 @@ label kk_sandbox_test:
     $ kk_test_expect("Twenty minute nap", kk_sleep(20) is None and kk_clock() == "04:20")
     $ kk_test_at(36,31,4)
     $ kk_minutes(120)
-    $ kk_test_expect("Graduation on normal clock", kk_graduated and kk_epilogue()[0] == "E-SI-13")
+    $ kk_test_expect("Graduation on normal clock", kk_graduated and kk_epilogue()[0] == ("E-SI-02" if kk_host == "yutaka" else "E-SI-13"))
     $ kk_test_expect("Organic Harumi ending only for this journey", ("E-HA-01" in kk_epilogue()) == (kk_host == "yutaka"))
+    $ kk_test_expect("Reconciled heir after graduation", ("E-YH-01" in kk_epilogue()) == (kk_host == "yutaka"))
     call kk_evaluasi
     $ open(os.path.join(config.basedir, kk_host+".ok"),"w").write(kk_host+" · life, four VN scenes, save/load, rollback, expiry, delayed response, epilogue: OK")
     $ renpy.quit()

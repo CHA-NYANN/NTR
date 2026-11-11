@@ -2,6 +2,14 @@
 # Adegan keluarga memakai aksi dari katalog. Mesin hanya meresolusi kondisi
 # yang memiliki sumber state, sehingga epilog yang belum terhubung tidak direka.
 init python:
+    def kk_family_bond():
+        # Alur_Cabang/08: dasar 30; Y17-A tetap berlaku pada save sebelumnya.
+        return max(0, min(100, 30 + pts.get("perubahan_kisaragi", 0) + (10 if kk_has("job_family") else 0)))
+
+    def kk_change_family(delta):
+        current = kk_family_bond()
+        pts["perubahan_kisaragi"] = pts.get("perubahan_kisaragi", 0) + max(0,min(100,current+delta)) - current
+
     def kk_family_choice(eid, key):
         if not kk_record_choice(eid, key):
             return
@@ -27,6 +35,16 @@ init python:
             kk_flag({"A":"hayase_engaged","B":"hayase_interrupted","C":"left_with_miyuki"}[key])
         elif eid == "N22":
             kk_flag("nagisa_family_visit" if key == "A" else "nagisa_family_declined")
+        elif eid == "Y09":
+            kk_change_family({"A":10,"B":-10,"C":-5}[key])
+            if key == "C":
+                kk_flag("saionji_disebut_ke_ayah")
+        elif eid == "Y-D03":
+            kk_change_family({"A":10,"B":-5,"C":10}[key])
+        elif eid == "Y-D08":
+            kk_change_family({"A":5,"B":0,"C":-5}[key])
+        elif eid == "Y13":
+            kk_flag({"A":"makan_bersama_amamiya","B":"menghindari_amamiya","C":"bicara_dengan_amamiya"}[key])
         elif eid == "Y17":
             kk_flag({"A":"job_family","B":"job_outside","C":"intern_abroad"}[key])
 
@@ -126,3 +144,52 @@ label kk_family_menu(eid, captions):
     $ kk_family_choice(eid, _decision)
     return _decision
 
+
+# Draft editorial. Event_Yutaka Y09/Y13; Alur_Cabang/08 Y-D03 dan Y-D08.
+label kk_visit_kisaragi:
+    if not kk_father_visit("Apartemen Yutaka"):
+        return
+    call kk_scene_enter("yutaka", "Lobi apartemen")
+    nar "Ayahmu sedang menunggu di lobi. Kau baru melihatnya setelah pintu lift menutup di belakangmu."
+    call kk_family_menu("Y-D03", ["Sambut ayahmu.", "Lewati lobi tanpa menghampirinya.", "Duduk dan ajak ia bicara serius."])
+    if _return == "B":
+        nar "Kau naik sendiri. Percakapan itu belum terjadi."
+    elif _return == "C":
+        nar "Ia menyimpan ponselnya. Kali ini kau punya perhatiannya."
+    else:
+        nar "Kau berhenti di sisinya. Ia menanyakan kabarmu."
+    return
+
+label kk_message_kisaragi:
+    if not kk_mother_message():
+        return
+    nar "Nama Ibu muncul di layar ponsel. Ia hanya ingin tahu kabarmu. Sudah lama ia tidak bertanya seperti ini."
+    call kk_family_menu("Y-D08", ["Ceritakan kabarmu dan tanyakan kabarnya.", "Balas singkat dengan sopan.", "Simpan ponsel tanpa membalas."])
+    if _return == "A":
+        nar "Untuk sekali ini percakapan kalian berlanjut setelah pertanyaan pertama."
+    $ kk_minutes(1)
+    return
+
+label kkscene_Y09:
+    call kk_scene_enter("yutaka", "Apartemen Yutaka")
+    nar "Ayah menelepon. Setelah salam singkat, ia langsung menanyakan rencanamu sesudah lulus."
+    call kk_family_menu("Y09", ["Jawab pertanyaannya dengan sopan.", "Katakan bahwa keputusan itu milikmu.", "Singgung keluarga Saionji."])
+    if _return == "C":
+        nar "Nama itu membuatnya berhenti sejenak. Sekarang ia meminta penjelasan."
+    elif _return == "B":
+        nar "Ia menunggu. Kau membiarkan jawabanmu tetap seperti tadi."
+    else:
+        nar "Ayah mendengarkan sampai kau selesai."
+    return
+
+label kkscene_Y13:
+    call kk_scene_enter("yutaka", "Rumah Amamiya · Natal")
+    nar "Daisuke dan Yoshie ternyata sudah pulang. Di meja makan masih ada tempat untukmu."
+    call kk_family_menu("Y13", ["Tarik kursi dan makan bersama mereka.", "Pamit sebelum makan malam.", "Minta waktu untuk bicara dari hati ke hati."])
+    if _return == "A":
+        nar "Yoshie menggeser lauknya agar kau bisa ikut mengambil."
+    elif _return == "C":
+        nar "Daisuke meletakkan sumpitnya. Kau mulai bicara."
+    else:
+        nar "Kau mengucapkan selamat Natal dari pintu."
+    return

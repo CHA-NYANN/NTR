@@ -52,6 +52,8 @@ init -4 python:
         ("Mi18", 21, "d6", "Rumah Sakit Tachibana", "miyuki"),
         ("Mi25", 33, "d6", "Rumah Sakit Tachibana", "miyuki"),
         ("N22", 33, "d2", "Rumah Sakurajima", "nagisa"),
+        ("Y09", 13, "d3", "Apartemen Yutaka", "host"),
+        ("Y13", 21, "d2", "Rumah Amamiya", "host"),
         ("Y17", 31, "d3", "Apartemen Yutaka", "host"),
         ("N04", 5, "d7", "Tepi Sungai", "nagisa"),
         ("N06", 7, "d1", "Gedung Arsitektur", "nagisa"),
@@ -311,6 +313,9 @@ label kk_loc_list:
     if _ent:
         call kk_play_scene(_ent[0])
         $ kk_advance()
+    elif kk_father_visit(_lokasi):
+        call kk_visit_kisaragi
+        $ kk_minutes(10)
     jump kk_location_view_loop
 
 label kk_location_view_loop:
@@ -323,6 +328,8 @@ label kk_location_view_loop:
         call kk_phone_rematch
     elif kk_pudding_message():
         call kk_pudding
+    elif kk_mother_message():
+        call kk_message_kisaragi
     call screen kk_location_view(_distrik, _lokasi)
     $ _c = _return
     if _c[0] == "leave":

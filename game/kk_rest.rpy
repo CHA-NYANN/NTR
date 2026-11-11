@@ -18,6 +18,8 @@ label kk_rest_home:
         nar "Bunyi ponsel menarik perhatianmu."
         if _wake_contact == "nagisa":
             call kk_phone_rematch
+        elif _wake_contact == "ibu_kisaragi":
+            call kk_message_kisaragi
         else:
             call kk_pudding
     else:
@@ -37,6 +39,8 @@ label kk_bedside_phone:
 
 label kk_bedside_contacts:
     $ _people = [(KK_CHARS[cid]["nama"], Return(cid), cid in kk_priority_contacts) for cid in KK_CHARS if cid != kk_host and cid in kk_last_met]
+    if kk_host == "yutaka":
+        $ _people.append(("Ibu", Return("ibu_kisaragi"), "ibu_kisaragi" in kk_priority_contacts))
     $ _people.append(("Kembali", Return(None), False))
     call screen kk_choice_panel(_people, "Kontak yang boleh membangunkanmu")
     if _return is None:

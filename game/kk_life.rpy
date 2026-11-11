@@ -138,6 +138,8 @@ init python:
         return kk_bulan == 2 and 3 <= kk_hari_n <= 6
 
     def kk_window(eid):
+        if eid == "Y13":
+            return kk_hari_n in (24,25) and kk_slot == 3
         if eid == "H01":
             return kk_is_hanami_date() and kk_slot == 0
         if eid == "H03":
