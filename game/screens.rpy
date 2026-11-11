@@ -15,7 +15,7 @@ screen kk_set(char, loc=""):
         add Solid("#18273488")
     else:
         add kk_ink2
-        add Solid(meta["warna"] + "30") xpos 0.62 xsize 0.38 yfill True
+        add Solid(meta["warna"] + "30") xpos 0.62 xsize 0.38 ysize 1.0
         add Solid(meta["warna"] + "55") pos (1190, 0) xysize (4, 1080)
         text meta["nama"] xpos kk_margin ypos 340 size 84 bold True color kk_bone
     frame:
@@ -88,7 +88,7 @@ screen quick_menu():
 default quick_menu = True
 
 screen kk_choice_panel(rows, heading):
-    add Solid("#111d27dd")
+    add Solid(kk_ink)
     vbox:
         pos (kk_margin, 128) spacing kk_gap
         text heading style "kk_heading" xmaximum 1680
@@ -217,6 +217,7 @@ screen kk_ending_card(e):
 
 screen kk_gallery():
     tag menu
+    key "game_menu" action Return()
     default grp = KK_ENDINGS[0]["code"].split("-")[1]
     default code = None
     $ groups = list(dict.fromkeys(e["code"].split("-")[1] for e in KK_ENDINGS))
@@ -252,7 +253,10 @@ screen main_menu():
             text "Kouseikan" size 100 font kk_display bold True
             add Solid(kk_line) xysize (590, 2)
             null height 42
-            use kk_link("Mulai", Start(), 560)
+            textbutton "Mulai   ›":
+                style "kk_button" text_style "kk_button_text" action Start() xsize 560
+                background Solid(kk_accent) hover_background Solid("#ffceb1")
+                text_color kk_ink text_hover_color kk_ink text_bold True
             use kk_link("Lanjutkan", Continue(), 560)
             use kk_link("Muat", ShowMenu("load"), 560)
             use kk_link("Galeri ending", ShowMenu("kk_gallery"), 560)
@@ -260,6 +264,7 @@ screen main_menu():
             use kk_link("Keluar", Quit(confirm=True), 560)
 
 screen game_menu(title, scroll=None):
+    key "game_menu" action Return()
     add kk_ink
     frame:
         xysize (470, 1080) background Solid(kk_ink2) padding (52, 70)
@@ -328,7 +333,7 @@ screen preferences():
                 vbox:
                     spacing 12
                     text caption size 28
-                    bar value Preference(pref) xsize 820 ysize 36 alt caption
+                    bar value Preference(pref) style "kk_slider" xsize 820 ysize 24 alt caption
             null height 12
             hbox:
                 spacing 16

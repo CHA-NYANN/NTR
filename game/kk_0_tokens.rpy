@@ -55,3 +55,18 @@ style kk_caption is default:
 style default:
     font kk_body
     color kk_bone
+
+# Ukuran eksplisit menyisakan lebar viewport untuk daftar dan detail.
+style vscrollbar:
+    xsize 16
+    base_bar Solid(kk_panel)
+    thumb Solid(kk_line)
+    hover_thumb Solid(kk_accent)
+    unscrollable "hide"
+
+style kk_slider is slider:
+    left_bar Solid(kk_accent)
+    right_bar Solid(kk_panel)
+    thumb Transform(Solid(kk_bone), xsize=12)
+    hover_thumb Transform(Solid("#ffffff"), xsize=12)
+    thumb_offset 6

@@ -1,4 +1,4 @@
-﻿## File ini berisi opsi yang dapat di ubah untuk mengkustomisasi game mu.
+## File ini berisi opsi yang dapat di ubah untuk mengkustomisasi game mu.
 ##
 ## Baris yang di awali dengan dua 'tanda '#' adalah komentar, dan kamu tidak
 ## seharusnya menghapus nya. Baris dengan satu '#' adalah kode yang di
@@ -74,13 +74,13 @@ define config.has_voice = True
 
 ## Memasuki atau keluar dari menu permainan.
 
-define config.enter_transition = dissolve
-define config.exit_transition = dissolve
+define config.enter_transition = Dissolve(.18)
+define config.exit_transition = Dissolve(.18)
 
 
 ## Antara layar dari menu permainan
 
-define config.intra_transition = dissolve
+define config.intra_transition = Dissolve(.14)
 
 
 ## Transisi yang di gunakan setelah game di load.
