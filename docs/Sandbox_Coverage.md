@@ -6,18 +6,39 @@ Baseline GitHub 74447c1. Matriks ini mengukur jalur pemain. Explorer pengembang 
 
 | Fase | Hasil | Batas pengujian |
 | --- | --- | --- |
-| Fondasi | Kalender 36 bulan, konteks lokasi, kalender NPC, biaya aktivitas, memori pertemuan, penurunan relasi dan antrean akibat. Sebelumnya pemicu bisa memaksa NPC hadir dan hari tidak otomatis mengganti bulan. | Kondisi awal kedua host dan kalender diuji. Migrasi save lama tersedia tetapi belum diuji dengan save rilis pemain. Sembilan lapisan jadwal dan ekonomi belum lengkap. Janji pertemuan mengubah lokasi, dan ketidakhadiran pemain memengaruhi kepercayaan bila NPC datang. |
+| Fondasi | Kalender 36 bulan, konteks lokasi, kalender NPC, biaya aktivitas, memori pertemuan, penurunan relasi dan antrean akibat. Sebelumnya pemicu bisa memaksa NPC hadir dan hari tidak otomatis mengganti bulan. | Kondisi awal kedua host dan kalender diuji. Satu save Yutaka dari ZIP playtest sebelumnya kembali ke layar distrik dengan saldo, tanggal dan pilihan yang sama. Save pengguna lain, lokasi lain dan seluruh versi sebelumnya belum diuji. Sembilan lapisan jadwal dan ekonomi belum lengkap. Janji pertemuan mengubah lokasi, dan ketidakhadiran pemain memengaruhi kepercayaan bila NPC datang. |
 | Vertical slice | N01, Mi01, N03, Mi03 memiliki adegan, pilihan, dan pengaruh ke pertemuan selanjutnya. | Driver menjalankan cabang A pada kedua host. Kalender dipercepat setelah pertemuan pertama. |
 | Konten | Nagisa, Miyuki dan tawaran kerja Yutaka mendapat pertemuan lanjutan. N04-B dapat mengubah keadaan Nagisa/Koita dua minggu kemudian meski pemain absen. | Driver menguji efek N04-B melalui pencatatan pilihan. Belum menjalankan semua alternatif adegan. Dialog penghubung baru berstatus draft editorial. |
-| Ending | Evaluasi saat kelulusan dan epilog berlapis. | E-SI-13 dan E-MI-04 diperiksa pada akhir skenario. Referensi kode lain pada resolver belum membuktikan semua prasyarat dapat dibentuk lewat dunia normal. |
-| QA | Dari folder proyek jalankan `python tests/run_living.py PATH_SDK` dengan Ren'Py 8.3.2 Windows/Linux x86-64. Driver membuat proyek dan save temporer. | Dijalankan di Windows. Lint, dua host, tindakan, perjalanan, simpan/muat, rollback, kesempatan terlewat dan akibat tertunda. Belum ada inspeksi visual tiga resolusi atau benchmark satu sesi penuh tiga tahun. |
+| Ending | Evaluasi saat kelulusan dan epilog berlapis. | E-SI-13, E-MI-04, dan E-HA-01 diperiksa pada akhir skenario. Referensi kode lain pada resolver belum membuktikan semua prasyarat dapat dibentuk lewat dunia normal. |
+| QA | Dari folder proyek jalankan `python tests/run_living.py PATH_SDK` dengan Ren'Py 8.3.2 Windows/Linux x86-64. Driver membuat proyek dan save temporer. | Dijalankan di Windows. Lint, dua host, tindakan, perjalanan, simpan/muat, rollback, kesempatan terlewat dan akibat tertunda. Layar lokasi Hanami dengan enam NPC diperiksa di 1280×720, 1366×768 dan 1920×1080. Tombol aktivitas dan keluar terlihat pada ketiganya. Layar lain belum diperiksa ulang di semua resolusi. Belum ada benchmark satu sesi penuh tiga tahun. |
+
+## Iterasi Hanami, Golden Week dan Harumi
+
+Pada akhir pekan Hanami, ada pertemuan terpisah dengan Harumi di perpustakaan sains, Moeka di piknik, dan Shiori di dekat papan shogi. Pada 3–6 Mei, stasiun menawarkan perjalanan ke ryokan. NPC bepergian meski pemain tinggal di kota. Uji Yutaka memeriksa percakapan, efek dan jam pada empat peristiwa Golden Week. Uji Chiasa memeriksa kedaluwarsa. Skenario memakai kalender dipercepat dan panggilan interaksi produksi. Belum seluruh tombol perjalanan dan alternatif respons diuji manual.
+
+Membantu Harumi memasak membuka H-D05 pada pertemuan selanjutnya. E-HA-01 mensyaratkan kejelasan emosi, dukungan nyata saat ia menamai perasaannya, dan riwayat tanpa Force. Di penginapan, mengalah sengaja pada Nagisa dapat membuka N-D08, ketika ia memutar ulang permainan. Setelah balasan Koita, kesempatan N-D03 hanya terbuka pada malam turunnya harapan Nagisa.
+
+H08-A membuka kemungkinan teh larut malam di asrama, bila Harumi hadir. H09 mengingat percakapan tahun baru. Pemilihan slot kegiatan di ryokan, kunjungan tahun baru tanggal 1–3, dan waktu tempuh 60 menit merupakan penjadwalan prototipe. Besar efek memakai rentang Sistem_Cabang_dan_Poin §2.2. Dialog penghubung memerlukan tinjauan editorial.
+
+Di kamar sendiri, pemain dapat memasang alarm untuk 20 menit, 90 menit, 6, 8, atau 10 jam. Ponsel memiliki mode senyap, normal, dan siaga serta daftar kontak prioritas dari orang yang pernah ditemui. Interupsi memakai dua pesan yang terhubung saat ini. Kualitas tidur di lokasi lain, panggilan darurat, dan seluruh penyebab bangun masih parsial.
+
+## Menjalankan ulang pemeriksaan
+
+- `python tests/check_catalog.py` memeriksa ID, duplikasi, label adegan dan angka matriks.
+- `python tests/run_living.py PATH_SDK` menjalankan lint produksi dan dua perjalanan.
+- `python tests/run_living.py PATH_SDK FOLDER_GAMBAR` mengambil gambar layar Hanami ramai pada tiga ukuran target.
+- `python tests/run_save_upgrade.py PATH_SDK ZIP_PLAYTEST_SEBELUMNYA` membuat save baru pada versi lama yang dipercaya dan memuatnya pada versi sekarang. Sampel yang diuji berasal dari paket LivingWorld sebelum iterasi Hanami/Golden Week.
+- ZIP Windows iterasi ini lolos pemeriksaan integritas. Executable hasil ekstraksi memulai renderer. Skenario panjang berjalan di proyek temporer dengan source produksi.
 
 ## Pedoman playtest
 
 Mulai permainan baru, pilih salah satu tubuh, lalu kunjungi distrik kampus. Coba makan, berbicara dengan seseorang, kembali ke tempat itu pada waktu berbeda dan simpan sebelum sebuah keputusan. Muat kembali dan amati perbedaan respons. Untuk laporan sertakan tubuh, tanggal/jam, lokasi, tindakan dan perubahan yang terlihat. Gunakan save terpisah untuk membandingkan dua perjalanan.
 
+Untuk mencoba Golden Week, datangi stasiun pada 3–6 Mei, pilih berangkat, lalu lihat siapa yang berada di lobi atau dapur. Untuk membandingkan, gunakan save kedua dan tetap di kota hingga liburan selesai.
+
 ## Ketidaksesuaian sumber
 
+- K02: Milestone_3_Tahun M02 menyebut Koita sekamar dengan dua heroine. Event_Koita K02 menyebut satu heroine sesuai kesiapan. K02 belum diaktifkan. Empat event lain di Golden Week bisa ditemukan.
 - GDD menyebut Master Canon v11.1. File yang ditemukan adalah v11. Isi v11.1 belum dapat dibandingkan.
 - Efek kelelahan Mi03-A memakai −8 dari hook existing dan Alur_Cabang/01; contoh di Sistem_Cabang_dan_Poin §6 memakai −5. Angka existing dipertahankan sampai prioritas dua rujukan dikonfirmasi.
 
@@ -27,7 +48,7 @@ Status implementasi dan bukti uji merupakan dua kolom terpisah. **implemented** 
 
 ### Event utama
 
-14 dari 190 ID mempunyai referensi langsung dalam alur atau resolver. Katalog memuat 553 alternatif tertulis pada seluruh ID.
+24 dari 190 ID mempunyai referensi langsung dalam alur atau resolver. Katalog memuat 553 alternatif tertulis pada seluruh ID.
 
 | ID | Implementasi | Bukti |
 | --- | --- | --- |
@@ -95,8 +116,8 @@ Status implementasi dan bukti uji merupakan dua kolom terpisah. **implemented** 
 | Y17 | partial | Cabang A, Yutaka; tertutup untuk Chiasa |
 | Y18 | data-only | untested |
 | Y19 | data-only | untested |
-| Mo01 | data-only | untested |
-| Mo02 | data-only | untested |
+| Mo01 | partial | A, Chiasa |
+| Mo02 | partial | A, Yutaka |
 | Mo03 | data-only | untested |
 | Mo04 | data-only | untested |
 | Mo05 | data-only | untested |
@@ -121,15 +142,15 @@ Status implementasi dan bukti uji merupakan dua kolom terpisah. **implemented** 
 | Mo24 | data-only | untested |
 | Mo26 | data-only | untested |
 | Mo25 | data-only | untested |
-| H01 | data-only | untested |
+| H01 | partial | A, kedua host |
 | H02 | data-only | untested |
-| H03 | data-only | untested |
+| H03 | partial | C, Yutaka |
 | H04 | data-only | untested |
 | H05 | data-only | untested |
 | H06 | data-only | untested |
 | H07 | data-only | untested |
-| H08 | data-only | untested |
-| H09 | data-only | untested |
+| H08 | partial | A, kedua host |
+| H09 | partial | A, kedua host |
 | H10 | data-only | untested |
 | H11 | data-only | untested |
 | H12 | data-only | untested |
@@ -145,8 +166,8 @@ Status implementasi dan bukti uji merupakan dua kolom terpisah. **implemented** 
 | H22 | data-only | untested |
 | H23 | data-only | untested |
 | H24 | data-only | untested |
-| S01 | data-only | untested |
-| S02 | data-only | untested |
+| S01 | partial | A, Yutaka |
+| S02 | partial | A, Yutaka; kedaluwarsa pada Chiasa |
 | S03 | data-only | untested |
 | S04 | data-only | untested |
 | S05 | data-only | untested |
@@ -171,7 +192,7 @@ Status implementasi dan bukti uji merupakan dua kolom terpisah. **implemented** 
 | S24 | data-only | untested |
 | S25 | data-only | untested |
 | N01 | implemented | Cabang A, dua host |
-| N02 | data-only | untested |
+| N02 | partial | B, Yutaka |
 | N03 | implemented | Cabang A, dua host |
 | N04 | partial | Efek B, tertunda 14 hari |
 | N05 | data-only | untested |
@@ -195,7 +216,7 @@ Status implementasi dan bukti uji merupakan dua kolom terpisah. **implemented** 
 | N23 | data-only | untested |
 | N24 | data-only | untested |
 | Mi01 | implemented | Cabang A, dua host |
-| Mi02 | data-only | untested |
+| Mi02 | partial | A, Yutaka |
 | Mi03 | implemented | Cabang A, dua host |
 | Mi04 | data-only | untested |
 | Mi05 | partial | untested |
@@ -224,7 +245,7 @@ Status implementasi dan bukti uji merupakan dua kolom terpisah. **implemented** 
 
 ### Event dinamis
 
-4 dari 128 ID mempunyai referensi langsung dalam alur atau resolver. Katalog memuat 393 alternatif tertulis pada seluruh ID.
+8 dari 128 ID mempunyai referensi langsung dalam alur atau resolver. Katalog memuat 393 alternatif tertulis pada seluruh ID.
 
 | ID | Implementasi | Bukti |
 | --- | --- | --- |
@@ -244,22 +265,22 @@ Status implementasi dan bukti uji merupakan dua kolom terpisah. **implemented** 
 | Mi-D14 | data-only | untested |
 | N-D01 | partial | untested |
 | N-D02 | partial | untested |
-| N-D03 | data-only | untested |
+| N-D03 | partial | A, Chiasa; absen dan kedaluwarsa pada Yutaka |
 | N-D04 | data-only | untested |
 | N-D05 | data-only | untested |
 | N-D06 | data-only | untested |
 | N-D07 | data-only | untested |
-| N-D08 | data-only | untested |
+| N-D08 | partial | A setelah N02-B, Yutaka |
 | N-D09 | data-only | untested |
 | N-D10 | data-only | untested |
 | N-D11 | data-only | untested |
 | N-D12 | data-only | untested |
 | N-D13 | data-only | untested |
-| H-D01 | data-only | untested |
+| H-D01 | partial | B pada Yutaka, A pada Chiasa; akses dapur berbeda |
 | H-D02 | data-only | untested |
 | H-D03 | data-only | untested |
 | H-D04 | data-only | untested |
-| H-D05 | data-only | untested |
+| H-D05 | partial | A setelah H03-C, Yutaka |
 | H-D06 | data-only | untested |
 | H-D07 | data-only | untested |
 | H-D08 | data-only | untested |
@@ -359,7 +380,7 @@ Status implementasi dan bukti uji merupakan dua kolom terpisah. **implemented** 
 
 ### Ending
 
-21 dari 220 ID mempunyai referensi langsung dalam alur atau resolver.
+22 dari 220 ID mempunyai referensi langsung dalam alur atau resolver.
 
 | ID | Implementasi | Bukti |
 | --- | --- | --- |
@@ -391,7 +412,7 @@ Status implementasi dan bukti uji merupakan dua kolom terpisah. **implemented** 
 | E-NA-12 | partial | untested |
 | E-NA-13 | data-only | untested |
 | E-NA-14 | data-only | untested |
-| E-HA-01 | data-only | untested |
+| E-HA-01 | partial | Tercapai pada Yutaka, tidak pada perjalanan Chiasa |
 | E-HA-02 | data-only | untested |
 | E-HA-03 | data-only | untested |
 | E-HA-04 | data-only | untested |

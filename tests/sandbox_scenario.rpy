@@ -1,7 +1,30 @@
 # Driver is copied to a temporary game by run_living.py, never into production.
 init python:
     import os
+    if os.name == 'nt' and os.environ.get('KK_CAPTURE'):
+        import ctypes
+        ctypes.windll.user32.SetProcessDPIAware()
     def kk_test_input(name):
+        if os.environ.get("KK_CAPTURE"):
+            size = os.environ["KK_SIZE"]
+            if name == "main_menu" and not os.environ.get("KK_SIZED"):
+                os.environ["KK_SIZED"] = "1"
+                if size == "1920x1080":
+                    renpy.run(Preference("display","fullscreen"))
+                else:
+                    renpy.set_physical_size(tuple(int(n) for n in size.split("x")))
+                return
+            if name == "kk_location_view":
+                physical = tuple(renpy.get_physical_size())
+                expected = tuple(int(n) for n in size.split("x"))
+                # The 16:9 viewport can round an odd drawable dimension down a pixel.
+                assert all(abs(a-b) <= 1 for a,b in zip(physical,expected)), (physical, expected)
+                renpy.screenshot(os.path.join(os.environ["KK_CAPTURE"], "Hanami-"+size+".png"))
+                with open(os.path.join(config.basedir,size+".ok"), "w") as output:
+                    output.write("Hanami target "+size+", measured "+str(physical))
+                renpy.quit()
+            if name == "main_menu":
+                return renpy.run(Start("kk_capture_hanami"))
         if name == "main_menu":
             return renpy.run(Start())
         if name == "kk_titlecard":
@@ -22,7 +45,10 @@ init python:
             renpy.queue_event("dismiss")
         if name == "choice":
             items = renpy.get_screen("choice").scope["items"]
-            return renpy.run(items[0].action)
+            selected = next((item for item in items if item.caption.startswith("Perlambat permainanmu")), items[0])
+            if kk_host == "yutaka":
+                selected = next((item for item in items if item.caption.startswith(("Tawarkan membuat percobaan", "Tanyakan apa yang ia rasakan"))),selected)
+            return renpy.run(selected.action)
         if name == "kk_choice_panel":
             screen = renpy.get_screen("kk_choice_panel")
             if screen:
@@ -50,6 +76,10 @@ label kk_sandbox_test:
     $ balance_before = saldo
     call kk_do_activity("Kantin Pusat","makan")
     $ kk_test_expect("Meal", saldo == balance_before - 800 and body["lapar"] < 20)
+    $ kk_test_at(1,19,0)
+    $ kk_world_seed = next(n for n in range(1,200) if int.from_bytes(hashlib.sha256(("%d/%d/0/harumi" % (n,kk_elapsed_days)).encode()).digest()[:4],"big") % 100 >= 8 and int.from_bytes(hashlib.sha256(("%d/%d/1/miyuki" % (n,kk_elapsed_days)).encode()).digest()[:4],"big") % 100 >= 10)
+    call kk_do_talk("d1","Gedung Sains & Lab","harumi")
+    $ kk_test_expect("Science library before picnic", kk_done("H01"))
     $ kk_test_at(1,19,1)
     if kk_daily_place("miyuki") != "Taman Kampus":
         $ kk_test_at(1,19,2)
@@ -57,6 +87,32 @@ label kk_sandbox_test:
         $ kk_test_at(1,20,1)
     $ kk_test_expect("Hanami", kk_pending_enter("d1","Taman Kampus") == ["Mi01"])
     call kk_play_scene("Mi01")
+    $ kk_test_at(1,20,1)
+    $ kk_world_seed = next(seed for seed in range(1,500) if all(int.from_bytes(hashlib.sha256(("%d/%d/1/%s" % (seed, kk_elapsed_days, who)).encode()).digest()[:4], "big") % 100 >= pct for who,pct in (("moeka",30),("shiori",5))))
+    $ spring_cid = "shiori" if kk_host == "yutaka" else "moeka"
+    $ spring_id = "S01" if kk_host == "yutaka" else "Mo01"
+    $ kk_test_expect("Hanami contextual conversation", kk_pending_talk(spring_cid,"d1","Taman Kampus") == [spring_id])
+    call kk_do_talk("d1","Taman Kampus",spring_cid)
+    $ kk_test_expect("Hanami recorded", kk_done(spring_id))
+    $ kk_test_at(2,3,0)
+    $ kk_world_seed = next(seed for seed in range(1,1000) if all(int.from_bytes(hashlib.sha256(("%d/%d/%d/%s" % (seed, kk_elapsed_days, slot, who)).encode()).digest()[:4], "big") % 100 >= pct for slot,who,pct in ((0,"moeka",30),(1,"shiori",5),(2,"miyuki",10),(3,"nagisa",15))))
+    $ kk_test_expect("Invitation at station", kk_pending_talk("moeka","d5","Stasiun Kouseikan-mae") == ["Mo02"])
+    if kk_host == "yutaka":
+        call kk_do_talk("d5","Stasiun Kouseikan-mae","moeka")
+        $ spring_before = kk_get("respek_shiori")
+        call kk_do_talk("onsen","Lobi ryokan","shiori")
+        $ kk_test_expect("Shogi remembered", kk_done("S02") and kk_get("respek_shiori") > spring_before)
+        call kk_do_talk("onsen","Dapur ryokan","miyuki")
+        call kk_do_talk("onsen","Ruang bersama ryokan","nagisa")
+        $ kk_test_expect("Ryokan dinner and night", kk_done("Mi02") and kk_done("N02"))
+    if kk_host == "yutaka":
+        while kk_daily_place("nagisa") != "Ruang bersama ryokan":
+            $ kk_advance()
+            $ kk_test_expect("Replay within trip", kk_onsen_dates())
+        call kk_do_talk("onsen","Ruang bersama ryokan","nagisa")
+        $ kk_test_expect("Losing on purpose leads to replay", kk_done("N-D08"))
+    $ kk_test_at(2,7,0)
+    $ kk_test_expect("Holiday closes; absence persists", not kk_onsen_dates() and ("S02" in kk_missed) == (kk_host == "chiasa"))
     $ kk_test_at(3,1,1)
     while not kk_pending_talk("nagisa","d1","Gedung Arsitektur"):
         $ kk_advance()
@@ -70,6 +126,16 @@ label kk_sandbox_test:
         $ kk_test_expect("Mi03 bounded",kk_bulan == 4)
     call kk_do_talk("d6","Rumah Sakit Tachibana","miyuki")
     $ kk_test_expect("Mi03 effect",kk_get("kelelahan_miyuki") == 27 and kk_done("Mi03"))
+    if kk_host == "yutaka":
+        while not kk_pending_talk("harumi","d1","Asrama Putri"):
+            $ kk_advance()
+            $ kk_test_expect("Cooking reachable before end of exams", kk_bulan == 4)
+        call kk_do_talk("d1","Asrama Putri","harumi")
+        while kk_social_event("harumi","Asrama Putri") != "H-D05":
+            $ kk_advance()
+            $ kk_test_expect("Harumi tries again", kk_bulan == 4)
+        call kk_do_talk("d1","Asrama Putri","harumi")
+        $ kk_test_expect("Cooking callback", kk_done("H-D05") and kk_get("kejelasan_harumi") == 30)
     $ test_balance = saldo
     nar "Pemeriksaan simpan."
     if not os.environ.get("KK_TEST_LOADED"):
@@ -78,6 +144,7 @@ label kk_sandbox_test:
         $ os.environ["KK_TEST_LOADED"] = "1"
         $ renpy.load("qa-world")
     $ kk_test_expect("Save/load",saldo == test_balance and kk_done("Mi03"))
+    $ kk_test_at(5,9,3)
     $ test_before = len(choices_log)
     nar "Pemeriksaan rollback."
     $ kk_record_choice("N04","B")
@@ -86,7 +153,13 @@ label kk_sandbox_test:
         $ os.environ["KK_TEST_ROLLED"] = "1"
         $ renpy.rollback(force=True, checkpoints=2, greedy=False)
     $ kk_test_expect("Rollback and replay once", len(choices_log) == test_before+1 and kk_due["koita_reply"] == kk_elapsed_days+14)
+    $ kk_test_at(5,23,3)
+    if kk_host == "chiasa":
+        $ kk_world_seed = next(n for n in range(1,200) if int.from_bytes(hashlib.sha256(("%d/%d/3/nagisa" % (n,kk_elapsed_days)).encode()).digest()[:4],"big") % 100 >= 15)
+        $ kk_test_expect("Swing only on the evening of the reply", kk_social_event("nagisa","Taman Lingkungan") == "N-D03")
+        call kk_do_talk("d2","Taman Lingkungan","nagisa")
     $ kk_test_at(5,28,1)
+    $ kk_test_expect("Swing expires for absent host", ("N-D03" in kk_missed) == (kk_host == "yutaka"))
     $ kk_test_expect("Consequence without player", kk_has("nagisa_koita_ditolak") and "koita_reply" not in kk_due)
     $ kk_test_expect("Silence and misses", kk_has("q01_expired") and "Mi09" not in kk_missed)
     $ kk_world_seed = next(seed for seed in range(1,500) if all(int.from_bytes(hashlib.sha256(("%d/%d/1/harumi" % (seed, kk_elapsed_days+days)).encode()).digest()[:4],"big") % 100 >= 8 for days in (1,2)))
@@ -105,6 +178,25 @@ label kk_sandbox_test:
     $ pressure_before = kk_get("omiai_takeru")
     call kk_do_talk("d6","Rumah Sakit Tachibana","miyuki")
     $ kk_test_expect("Family meeting", kk_done("Mi07") and kk_get("omiai_takeru") == pressure_before+5)
+    $ kk_test_at(10,1,0)
+    while not kk_pending_talk("harumi","d7","Kuil"):
+        $ kk_advance()
+        $ kk_test_expect("Hatsumode within New Year", kk_hari_n <= 3)
+    call kk_do_talk("d7","Kuil","harumi")
+    $ kk_test_expect("Interpreting the fortune unlocks late tea", kk_get("kejelasan_harumi") == (40 if kk_host == "yutaka" else 30))
+    $ kk_test_at(10,5,4)
+    $ kk_minute = 180
+    while not kk_social_event("harumi", "Asrama Putri"):
+        $ kk_advance()
+        $ kk_test_expect("Dorm tea reachable at one", kk_bulan == 10)
+    call kk_do_talk("d1", "Asrama Putri", "harumi")
+    $ kk_test_expect("Dorm tea happens once", kk_done("H-D01") and kk_get("kejelasan_harumi") == (50 if kk_host == "yutaka" else 35))
+    $ kk_test_at(13,1,1)
+    while not kk_pending_talk("harumi","d1","Gedung Sains & Lab"):
+        $ kk_advance()
+        $ kk_test_expect("Spring lab meeting bounded", kk_bulan == 13)
+    call kk_do_talk("d1","Gedung Sains & Lab","harumi")
+    $ kk_test_expect("Harumi remembers earlier conversation", kk_has("harumi_dibantu_menamai_emosi"))
     $ kk_test_at(31,1,1)
     $ kk_test_expect("Offer only for Yutaka", bool(kk_pending_enter("d3","Apartemen Yutaka")) == (kk_host == "yutaka"))
     if kk_host == "yutaka":
@@ -118,10 +210,27 @@ label kk_sandbox_test:
     $ kk_test_expect("Miyuki family ending", "E-MI-04" in kk_epilogue())
     $ kk_test_at(33,26,1)
     $ kk_test_expect("Late host and missed opportunities", "Mi09" in kk_missed and not kk_pending_enter("d3","Apartemen Yutaka"))
+    $ kk_test_at(35,1,3)
+    $ kk_minute = 220
+    $ kk_rel("nagisa","aff", 30)
+    $ kk_priority_contacts.append("nagisa")
+    $ kk_test_expect("Normal priority interrupted at 22:00", kk_sleep(90) == "nagisa" and kk_clock() == "22:00" and not kk_done("N-D01"))
+    $ kk_phone_mode = "senyap"
+    $ kk_test_expect("Silent sleeping crosses midnight", kk_sleep(360) is None and kk_clock() == "04:00" and kk_hari_n == 2 and "N-D01" in kk_missed)
+    $ kk_test_expect("Twenty minute nap", kk_sleep(20) is None and kk_clock() == "04:20")
     $ kk_test_at(36,31,4)
     $ kk_minutes(120)
     $ kk_test_expect("Graduation on normal clock", kk_graduated and kk_epilogue()[0] == "E-SI-13")
+    $ kk_test_expect("Organic Harumi ending only for this journey", ("E-HA-01" in kk_epilogue()) == (kk_host == "yutaka"))
     call kk_evaluasi
     $ open(os.path.join(config.basedir, kk_host+".ok"),"w").write(kk_host+" · life, four VN scenes, save/load, rollback, expiry, delayed response, epilogue: OK")
     $ renpy.quit()
 
+
+label kk_capture_hanami:
+    $ kk_host = "chiasa"
+    $ kk_setup_state()
+    $ kk_test_at(1,19,1)
+    $ kk_world_seed = next(seed for seed in range(1,5000) if all(int.from_bytes(hashlib.sha256(("%d/%d/1/%s" % (seed, kk_elapsed_days, who)).encode()).digest()[:4],"big") % 100 >= pct for who,pct in (("miyuki",10),("shiori",5),("nagisa",15),("moeka",30),("harumi",8),("koita",12))))
+    call screen kk_location_view("d1","Taman Kampus")
+    return

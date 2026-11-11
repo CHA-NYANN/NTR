@@ -13,11 +13,18 @@ with tempfile.TemporaryDirectory(prefix="kouseikan-playtest-") as temp:
     root = Path(temp)
     game = root / "game"
     shutil.copytree(project/"game", game, ignore=shutil.ignore_patterns("saves","cache","*.rpyc","*.rpymc","*.log"))
-    for host in ("yutaka","chiasa"):
+    capture = Path(sys.argv[2]).resolve() if len(sys.argv) > 2 else None
+    sizes = ("1280x720","1366x768","1920x1080") if capture else ()
+    if capture:
+        capture.mkdir(parents=True,exist_ok=True)
+    runs = [("chiasa", size) for size in sizes] if capture else [("yutaka",None),("chiasa",None)]
+    for seq,(host,size) in enumerate(runs):
         env = dict(os.environ, RENPY_PATH_TO_SAVES=str(root/host), KK_HOST=host,
                    RENPY_SIMPLE_EXCEPTIONS="1", RENPY_PERFORMANCE_TEST="0", SDL_AUDIODRIVER="dummy")
+        if size:
+            env.update(KK_CAPTURE=str(capture), KK_SIZE=size, RENPY_HIGHDPI="1")
         command = [str(exe),str(sdk/"renpy.py"),str(root)]
-        if host == "yutaka":
+        if seq == 0:
             report = root/"lint.txt"
             subprocess.run(command+["lint",str(report)],env=env,check=True,timeout=120)
             lint=report.read_text(encoding="utf-8-sig")
@@ -43,7 +50,7 @@ with tempfile.TemporaryDirectory(prefix="kouseikan-playtest-") as temp:
             world.write_text(src,encoding="utf8")
         try:
             subprocess.run(command,env=env,check=True,timeout=120)
-            result=root/(host+".ok")
+            result=root/((size or host)+".ok")
             assert result.is_file(), "Game exited before test completion"
             print(result.read_text(),flush=True)
         except Exception:
