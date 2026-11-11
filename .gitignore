@@ -1,0 +1,39 @@
+# Kouseikan / Ren'Py
+# Hanya memengaruhi file yang BELUM dilacak Git.
+# Jangan gunakan file ini untuk menghapus save, log, atau sumber yang sudah di-commit.
+
+# Hasil kompilasi Ren'Py dan cache mesin
+*.rpyc
+*.rpymc
+/game/cache/
+
+# Data pribadi dan save hasil permainan lokal
+/game/saves/
+
+# Log diagnostik yang dihasilkan saat berjalan/lint
+/errors.txt
+/log.txt
+/traceback.txt
+/game/log.txt
+/game/errors.txt
+/game/traceback.txt
+*.log
+
+# File sementara editor dan sistem operasi
+*.pyc
+__pycache__/
+*.bak
+*.tmp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Lingkungan Python lokal (jika dipakai untuk tooling)
+.venv/
+venv/
+.env
+
+# Tetap simpan file sumber .rpy/.rpym, dokumen desain,
+# gambar aset, dan file konfigurasi yang memang dibutuhkan proyek.
