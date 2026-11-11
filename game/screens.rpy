@@ -146,6 +146,7 @@ screen kk_status():
                     text ("Energi · " + kk_lvl(body.get("energi", 0))) size 24
                     text ("Kesehatan · " + kk_lvl(body.get("kesehatan", 0))) size 24
                     text ("Saldo · ¥" + "{:,}".format(saldo)) size 24
+                    use kk_link("Riwayat transaksi", Show("kk_wallet"), 420)
                     null height 18
                     text "Pola pilihanmu" style "kk_caption"
                     text kk_persona_label() size 26
@@ -162,6 +163,37 @@ screen kk_status():
                                 else:
                                     text "Belum ada percakapan yang tercatat." style "kk_caption"
             use kk_link("Tutup", Hide("kk_status"))
+
+screen kk_wallet():
+    modal True
+    zorder 85
+    default page = 0
+    key "game_menu" action Hide("kk_wallet")
+    add Solid("#101b24ee")
+    frame:
+        align (.5,.5) xysize (1500, 840) background Solid(kk_ink2) padding (54, 44)
+        vbox:
+            spacing 18
+            text "Riwayat transaksi" style "kk_heading"
+            text ("Saldo   ¥" + "{:,}".format(saldo)) size 30
+            $ end = len(kk_transactions) - page * 7
+            $ entries = kk_transactions[max(0, end-7):end]
+            if not entries:
+                text "Belum ada transaksi yang tercatat." style "kk_caption"
+            for month, day, description, amount, balance in reversed(entries):
+                hbox:
+                    spacing 22
+                    text ("{} {}".format(day, KK_BACKBONE[month-1][1])) style "kk_caption" xsize 220
+                    text description size 26 xsize 490
+                    text ("{}¥{:,}".format("+" if amount > 0 else "−", abs(amount))) size 26 xsize 220
+                    text ("Saldo ¥{:,}".format(balance)) style "kk_caption"
+            hbox:
+                spacing 16
+                if page > 0:
+                    use kk_link("Lebih baru", SetScreenVariable("page", page - 1), 255)
+                if end > 7:
+                    use kk_link("Lebih lama", SetScreenVariable("page", page + 1), 255)
+                use kk_link("Kembali ke status", Hide("kk_wallet"), 360)
 
 screen kk_explorer():
     modal True

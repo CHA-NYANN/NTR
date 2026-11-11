@@ -9,8 +9,8 @@ Baseline GitHub 74447c1. Matriks ini mengukur jalur pemain. Explorer pengembang 
 | Fondasi | Kalender 36 bulan, konteks lokasi, kalender NPC, biaya aktivitas, memori pertemuan, penurunan relasi dan antrean akibat. Sebelumnya pemicu bisa memaksa NPC hadir dan hari tidak otomatis mengganti bulan. | Kondisi awal kedua host dan kalender diuji. Satu save Yutaka dari ZIP playtest sebelumnya kembali ke layar distrik dengan saldo, tanggal dan pilihan yang sama. Save pengguna lain, lokasi lain dan seluruh versi sebelumnya belum diuji. Sembilan lapisan jadwal dan ekonomi belum lengkap. Janji pertemuan mengubah lokasi, dan ketidakhadiran pemain memengaruhi kepercayaan bila NPC datang. |
 | Vertical slice | N01, Mi01, N03, Mi03 memiliki adegan, pilihan, dan pengaruh ke pertemuan selanjutnya. | Driver menjalankan cabang A pada kedua host. Kalender dipercepat setelah pertemuan pertama. |
 | Konten | Nagisa, Miyuki dan tawaran kerja Yutaka mendapat pertemuan lanjutan. N04-B dapat mengubah keadaan Nagisa/Koita dua minggu kemudian meski pemain absen. | Driver menguji efek N04-B melalui pencatatan pilihan. Belum menjalankan semua alternatif adegan. Dialog penghubung baru berstatus draft editorial. |
-| Ending | Evaluasi saat kelulusan dan epilog berlapis. | E-SI-13, E-MI-04, dan E-HA-01 diperiksa pada akhir skenario. Referensi kode lain pada resolver belum membuktikan semua prasyarat dapat dibentuk lewat dunia normal. |
-| QA | Dari folder proyek jalankan `python tests/run_living.py PATH_SDK` dengan Ren'Py 8.3.2 Windows/Linux x86-64. Driver membuat proyek dan save temporer. | Dijalankan di Windows. Lint, dua host, tindakan, perjalanan, simpan/muat, rollback, kesempatan terlewat dan akibat tertunda. Layar lokasi Hanami dengan enam NPC diperiksa di 1280×720, 1366×768 dan 1920×1080. Tombol aktivitas dan keluar terlihat pada ketiganya. Layar lain belum diperiksa ulang di semua resolusi. Belum ada benchmark satu sesi penuh tiga tahun. |
+| Ending | Evaluasi saat kelulusan dan epilog berlapis. | E-SI-13, E-SI-02, E-MI-04, E-MI-05, E-HA-01, E-YH-01 dan E-CF-08 diperiksa pada akhir skenario. Referensi kode lain pada resolver belum membuktikan semua prasyarat dapat dibentuk lewat dunia normal. |
+| QA | Dari folder proyek jalankan `python tests/run_living.py PATH_SDK` dengan Ren'Py 8.3.2 Windows/Linux x86-64. Driver membuat proyek dan save temporer. | Dijalankan di Windows. Lint, dua host, tindakan, perjalanan, simpan/muat, rollback, kesempatan terlewat dan akibat tertunda. Layar lokasi Hanami dengan enam NPC serta riwayat transaksi dengan tujuh baris diperiksa di 1280×720, 1366×768 dan 1920×1080. Tombol aktivitas dan keluar terlihat pada ketiganya. Layar lain belum diperiksa ulang di semua resolusi. Belum ada benchmark satu sesi penuh tiga tahun. |
 
 ## Iterasi Hanami, Golden Week dan Harumi
 
@@ -20,19 +20,27 @@ Membantu Harumi memasak membuka H-D05 pada pertemuan selanjutnya. E-HA-01 mensya
 
 H08-A membuka kemungkinan teh larut malam di asrama, bila Harumi hadir. H09 mengingat percakapan tahun baru. Pemilihan slot kegiatan di ryokan, kunjungan tahun baru tanggal 1–3, dan waktu tempuh 60 menit merupakan penjadwalan prototipe. Besar efek memakai rentang Sistem_Cabang_dan_Poin §2.2. Dialog penghubung memerlukan tinjauan editorial.
 
-Di kamar sendiri, pemain dapat memasang alarm untuk 20 menit, 90 menit, 6, 8, atau 10 jam. Ponsel memiliki mode senyap, normal, dan siaga serta daftar kontak prioritas dari orang yang pernah ditemui. Interupsi memakai dua pesan yang terhubung saat ini. Kualitas tidur di lokasi lain, panggilan darurat, dan seluruh penyebab bangun masih parsial.
+Di kamar sendiri, pemain dapat memasang alarm untuk 20 menit, 90 menit, 6, 8, atau 10 jam. Ponsel memiliki mode senyap, normal, dan siaga serta daftar kontak prioritas dari orang yang pernah ditemui. Mode ponsel memakai pemicu pesan Nagisa, Miyuki, ibu Yutaka, dan editor Mio. Kualitas tidur di lokasi lain, panggilan darurat, dan seluruh penyebab bangun masih parsial.
 
 ## Menjalankan ulang pemeriksaan
 
 - `python tests/check_catalog.py` memeriksa ID, duplikasi, label adegan dan angka matriks.
-- `python tests/run_living.py PATH_SDK` menjalankan lint produksi dan dua perjalanan.
+- `python tests/run_living.py PATH_SDK` menjalankan lint produksi dan tiga perjalanan.
 - `python tests/run_living.py PATH_SDK FOLDER_GAMBAR` mengambil gambar layar Hanami ramai pada tiga ukuran target.
-- `python tests/run_save_upgrade.py PATH_SDK ZIP_PLAYTEST_SEBELUMNYA` membuat save baru pada versi lama yang dipercaya dan memuatnya pada versi sekarang. Sampel yang diuji berasal dari paket LivingWorld sebelum iterasi Hanami/Golden Week.
+- `python tests/run_save_upgrade.py PATH_SDK ZIP_PLAYTEST_SEBELUMNYA` membuat save baru pada versi lama yang dipercaya dan memuatnya pada versi sekarang. Sampel yang diuji berasal dari paket SandboxSpring sebelum iterasi keluarga dan ilustrasi.
 - ZIP Windows iterasi ini lolos pemeriksaan integritas. Executable hasil ekstraksi memulai renderer. Skenario panjang berjalan di proyek temporer dengan source produksi.
 
 ## Keluarga Kisaragi
 
 Di lobi apartemen pada malam hari, Yutaka bisa bertemu ayahnya ketika hubungan keluarga masih dingin. Setelah hubungan membaik, pesan dari ibu dapat masuk, termasuk ketika Yutaka beristirahat. Panggilan ayah pada M13, makan Natal di rumah Amamiya pada M21, dan jawaban karier pada M31 tercatat dalam perjalanan. E-YH-01 memerlukan Yutaka lolos evaluasi, memilih perusahaan keluarga, dan hubungan Kisaragi ≥60. Dasar 30 dan ambang 40/60 berasal dari Alur_Cabang/08. Jam malam, kedatangan di apartemen untuk panggilan M13, dan bobot respons 5–10 adalah penjadwalan dan penyetelan prototipe. Gerbang Koita Success setelah Y13 masih parsial.
+
+Tiga skenario desktop mencapai epilog dengan kalender dipercepat. Di antara ketiganya, pemeriksaan mencakup E-SI-13, E-SI-02, E-MI-04, E-MI-05, E-HA-01, E-YH-01 dan E-CF-08. Riwayat transaksi dan navigasi halaman lama diuji pada ketiga resolusi.
+
+## Ilustrasi Chiasa dan penghasilan
+
+Mio menawarkan proyek pada M08. Bila diterima, ia bisa mengirim pesan jam 23. Pada M16, menyewa ilustrator dapat membuat Haruka membandingkan sketsa. Chiasa bisa belajar dengannya di studio atau berlatih di rumah pada malam hari. Tangan yang gemetar mengubah pilihannya. Pada M20, Shiori dapat datang ke studio untuk pameran. Ambang kemampuan 80 membuka E-CF-08 bagi Chiasa yang lolos evaluasi. Hari pameran di akhir pekan, durasi latihan 60 menit dan kenaikan 1–3 poin per sesi merupakan penyetelan prototipe dari Alur_Cabang/06 dan Sistem_Cabang_dan_Poin. Adegan dan dialog penghubung adalah draft editorial.
+
+Saldo awal mencakup awal perjalanan. Setiap pergantian bulan berikutnya membukukan satu uang saku Yutaka ¥150.000 atau dua transaksi Chiasa (uang saku ¥50.000 dan royalti ¥50.000). Royalti dibayar meski proyek baru ditolak. Panel Status memberi akses ke saldo dan riwayat per halaman. Save lama mempertahankan saldo dan mencatat transaksi mulai saat dimuat. Tidak ada pembayaran retroaktif.
 
 ## Pedoman playtest
 
@@ -52,7 +60,7 @@ Status implementasi dan bukti uji merupakan dua kolom terpisah. **implemented** 
 
 ### Event utama
 
-26 dari 190 ID mempunyai referensi langsung dalam alur atau resolver. Katalog memuat 553 alternatif tertulis pada seluruh ID.
+29 dari 190 ID mempunyai referensi langsung dalam alur atau resolver. Katalog memuat 553 alternatif tertulis pada seluruh ID.
 
 | ID | Implementasi | Bukti |
 | --- | --- | --- |
@@ -60,13 +68,13 @@ Status implementasi dan bukti uji merupakan dua kolom terpisah. **implemented** 
 | C02 | data-only | untested |
 | C03 | data-only | untested |
 | C04 | data-only | untested |
-| C05 | data-only | untested |
+| C05 | partial | A dan B, dua perjalanan Chiasa |
 | C06 | data-only | untested |
 | C07 | data-only | untested |
 | C08 | data-only | untested |
-| C09 | data-only | untested |
+| C09 | partial | A dan B, dua perjalanan Chiasa |
 | C10 | data-only | untested |
-| C11 | data-only | untested |
+| C11 | partial | A, Chiasa di pameran |
 | C12 | data-only | untested |
 | C13 | data-only | untested |
 | C14 | data-only | untested |
@@ -243,13 +251,13 @@ Status implementasi dan bukti uji merupakan dua kolom terpisah. **implemented** 
 | Mi22 | data-only | untested |
 | Mi23 | data-only | untested |
 | Mi24 | data-only | untested |
-| Mi25 | partial | Cabang A, dua host |
+| Mi25 | partial | A pada Chiasa; C pada Yutaka dan perjalanan seni Chiasa |
 | Mi26 | data-only | untested |
 | Mi27 | data-only | untested |
 
 ### Event dinamis
 
-10 dari 128 ID mempunyai referensi langsung dalam alur atau resolver. Katalog memuat 393 alternatif tertulis pada seluruh ID.
+13 dari 128 ID mempunyai referensi langsung dalam alur atau resolver. Katalog memuat 393 alternatif tertulis pada seluruh ID.
 
 | ID | Implementasi | Bukti |
 | --- | --- | --- |
@@ -323,12 +331,12 @@ Status implementasi dan bukti uji merupakan dua kolom terpisah. **implemented** 
 | S-D16 | data-only | untested |
 | S-D17 | data-only | untested |
 | C-D01 | data-only | untested |
-| C-D02 | data-only | untested |
-| C-D03 | data-only | untested |
+| C-D02 | partial | C, setelah menerima proyek dan mencari ilustrator |
+| C-D03 | partial | B, latihan saat tubuh lelah |
 | C-D04 | data-only | untested |
 | C-D05 | data-only | untested |
 | C-D06 | data-only | untested |
-| C-D07 | data-only | untested |
+| C-D07 | partial | A, pukul 23 setelah proyek diterima |
 | C-D08 | data-only | untested |
 | C-D09 | data-only | untested |
 | C-D10 | data-only | untested |
@@ -384,7 +392,7 @@ Status implementasi dan bukti uji merupakan dua kolom terpisah. **implemented** 
 
 ### Ending
 
-23 dari 220 ID mempunyai referensi langsung dalam alur atau resolver.
+24 dari 220 ID mempunyai referensi langsung dalam alur atau resolver.
 
 | ID | Implementasi | Bukti |
 | --- | --- | --- |
@@ -392,7 +400,7 @@ Status implementasi dan bukti uji merupakan dua kolom terpisah. **implemented** 
 | E-MI-02 | data-only | untested |
 | E-MI-03 | data-only | untested |
 | E-MI-04 | partial | Sesudah Mi25-A, dua host |
-| E-MI-05 | partial | untested |
+| E-MI-05 | partial | Yutaka dan perjalanan seni Chiasa |
 | E-MI-06 | data-only | untested |
 | E-MI-07 | data-only | untested |
 | E-MI-08 | data-only | untested |
@@ -416,7 +424,7 @@ Status implementasi dan bukti uji merupakan dua kolom terpisah. **implemented** 
 | E-NA-12 | partial | untested |
 | E-NA-13 | data-only | untested |
 | E-NA-14 | data-only | untested |
-| E-HA-01 | partial | Tercapai pada Yutaka, tidak pada perjalanan Chiasa |
+| E-HA-01 | partial | Dua perjalanan mencapai epilog, satu melewatkannya |
 | E-HA-02 | data-only | untested |
 | E-HA-03 | data-only | untested |
 | E-HA-04 | data-only | untested |
@@ -477,7 +485,7 @@ Status implementasi dan bukti uji merupakan dua kolom terpisah. **implemented** 
 | E-CF-05 | data-only | untested |
 | E-CF-06 | data-only | untested |
 | E-CF-07 | data-only | untested |
-| E-CF-08 | data-only | untested |
+| E-CF-08 | partial | Perjalanan Chiasa yang berlatih dan lolos evaluasi |
 | E-CF-09 | data-only | untested |
 | E-CF-10 | partial | untested |
 | E-CF-11 | data-only | untested |
@@ -543,7 +551,7 @@ Status implementasi dan bukti uji merupakan dua kolom terpisah. **implemented** 
 | E-FO-14 | data-only | untested |
 | E-FO-15 | data-only | untested |
 | E-SI-01 | partial | untested |
-| E-SI-02 | partial | untested |
+| E-SI-02 | partial | Yutaka dan perjalanan seni Chiasa |
 | E-SI-03 | partial | untested |
 | E-SI-04 | data-only | untested |
 | E-SI-05 | partial | untested |
@@ -554,7 +562,7 @@ Status implementasi dan bukti uji merupakan dua kolom terpisah. **implemented** 
 | E-SI-10 | data-only | untested |
 | E-SI-11 | data-only | untested |
 | E-SI-12 | data-only | untested |
-| E-SI-13 | partial | Evaluasi, dua host |
+| E-SI-13 | partial | Perjalanan Chiasa yang gagal evaluasi |
 | E-SI-14 | data-only | untested |
 | E-SI-15 | data-only | untested |
 | E-SI-16 | data-only | untested |

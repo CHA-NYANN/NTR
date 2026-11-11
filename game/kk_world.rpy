@@ -52,6 +52,9 @@ init -4 python:
         ("Mi18", 21, "d6", "Rumah Sakit Tachibana", "miyuki"),
         ("Mi25", 33, "d6", "Rumah Sakit Tachibana", "miyuki"),
         ("N22", 33, "d2", "Rumah Sakurajima", "nagisa"),
+        ("C05", 8, "d2", "Rumah Amamiya", "host"),
+        ("C11", 20, "d1", "Gedung Seni Rupa & Studio", "shiori"),
+        ("C09", 16, "d2", "Rumah Amamiya", "host"),
         ("Y09", 13, "d3", "Apartemen Yutaka", "host"),
         ("Y13", 21, "d2", "Rumah Amamiya", "host"),
         ("Y17", 31, "d3", "Apartemen Yutaka", "host"),
@@ -64,7 +67,7 @@ init -4 python:
     def kk_pending_enter(distrik, lokasi):
         return [m[0] for m in KK_MILESTONE_MAP
                 if ((m[4] == "enter" and kk_daily_place("miyuki") == lokasi) or
-                    (m[4] == "host" and kk_host == "yutaka")) and m[1] == store.kk_bulan and m[2] == distrik
+                    (m[4] == "host" and _char_of(m[0]) == kk_host)) and m[1] == store.kk_bulan and m[2] == distrik
                 and m[3] == lokasi and kk_window(m[0]) and not kk_done(m[0]) and m[0] not in kk_missed]
 
     def kk_pending_talk(cid, distrik, lokasi):
@@ -98,10 +101,10 @@ init -4 python:
     # ── Aktivitas sehari-hari (🟡 nilai usulan) ──
     def _ok_makan():   return store.saldo >= 800
     def _fn_makan():
-        store.saldo -= 800
+        kk_post_money(-800, "Makan")
         kk_adj_body("lapar", -60); kk_adj_body("energi", 8)
     def _fn_kerja():
-        store.saldo += 3000
+        kk_post_money(3000, "Upah kerja paruh waktu")
         kk_adj_body("energi", -20); kk_adj_body("kebersihan", -6)
     def _fn_belajar():
         kk_adj_body("energi", -15); kk_adj("belajar", 5)
@@ -266,9 +269,13 @@ screen kk_location_view(distrik, lokasi):
                     use kk_link("Berangkat ke penginapan onsen", Return(("travel", None)), 800)
                 if distrik == "onsen":
                     use kk_link("Duduk sejenak di penginapan", Return(("rest", None)), 800)
+                if kk_art_studio_open(lokasi):
+                    use kk_link("Bicarakan sketsa dengan Haruka", Return(("portfolio", None)), 800)
+                if kk_can_sketch(lokasi):
+                    use kk_link("Latihan di buku sketsa", Return(("draw", None)), 800)
                 if lokasi == home:
                     use kk_link("Beristirahat di kamar", Return(("sleep", None)), 800)
-                if not acts and lokasi != home and distrik != "onsen" and not (lokasi == "Stasiun Kouseikan-mae" and kk_onsen_dates()):
+                if not acts and not kk_art_studio_open(lokasi) and lokasi != home and distrik != "onsen" and not (lokasi == "Stasiun Kouseikan-mae" and kk_onsen_dates()):
                     text "Tidak ada aktivitas khusus di sini." style "kk_caption"
     fixed:
         pos (kk_margin, 980)
@@ -324,12 +331,10 @@ label kk_location_view_loop:
         jump kk_evaluasi
     if _distrik == "onsen" and not kk_onsen_dates():
         jump kk_trip_return
-    if kk_phone_event():
-        call kk_phone_rematch
-    elif kk_pudding_message():
-        call kk_pudding
-    elif kk_mother_message():
-        call kk_message_kisaragi
+    $ _incoming = kk_incoming_messages()
+    if _incoming:
+        call expression _incoming[0][2]
+        jump kk_location_view_loop
     call screen kk_location_view(_distrik, _lokasi)
     $ _c = _return
     if _c[0] == "leave":
@@ -347,6 +352,12 @@ label kk_location_view_loop:
         jump kk_location_view_loop
     elif _c[0] == "rest":
         $ kk_advance()
+        jump kk_location_view_loop
+    elif _c[0] == "portfolio":
+        call kk_show_portfolio
+        jump kk_location_view_loop
+    elif _c[0] == "draw":
+        call kk_draw_at_home
         jump kk_location_view_loop
     elif _c[0] == "sleep":
         call kk_rest_home
@@ -416,7 +427,7 @@ label kk_generic_talk(cid, loc, known=True):
                 $ kk_rel(cid, "aff", 2)
             $ kk_minutes(5)
         "Bawakan makanan untuk Miyuki." if cid == "miyuki" and saldo >= 800:
-            $ saldo -= 800
+            $ kk_post_money(-800, "Makanan untuk Miyuki")
             if fresh:
                 $ kk_adj("dimanja_miyuki",4)
                 $ kk_adj("kelelahan_miyuki",-8)

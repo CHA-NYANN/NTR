@@ -17,10 +17,12 @@ with tempfile.TemporaryDirectory(prefix="kouseikan-playtest-") as temp:
     sizes = ("1280x720","1366x768","1920x1080") if capture else ()
     if capture:
         capture.mkdir(parents=True,exist_ok=True)
-    runs = [("chiasa", size) for size in sizes] if capture else [("yutaka",None),("chiasa",None)]
+    runs = [("chiasa", size) for size in sizes] if capture else [("yutaka",None),("chiasa",None),("chiasa",None)]
     for seq,(host,size) in enumerate(runs):
-        env = dict(os.environ, RENPY_PATH_TO_SAVES=str(root/host), KK_HOST=host,
+        env = dict(os.environ, RENPY_PATH_TO_SAVES=str(root/(host+"-"+str(seq))), KK_HOST=host,
                    RENPY_SIMPLE_EXCEPTIONS="1", RENPY_PERFORMANCE_TEST="0", SDL_AUDIODRIVER="dummy")
+        if not size and seq == 2:
+            env["KK_ART_WIN"] = "1"
         if size:
             env.update(KK_CAPTURE=str(capture), KK_SIZE=size, RENPY_HIGHDPI="1")
         command = [str(exe),str(sdk/"renpy.py"),str(root)]
@@ -35,7 +37,7 @@ with tempfile.TemporaryDirectory(prefix="kouseikan-playtest-") as temp:
             # Drive real interactions in the temporary project only.
             screens = game/"screens.rpy"
             src = screens.read_text(encoding="utf-8-sig")
-            for name in ("main_menu","say","choice","kk_route_select","kk_choice_panel","kk_ending_card","kk_titlecard"):
+            for name in ("main_menu","say","choice","kk_route_select","kk_choice_panel","kk_ending_card","kk_titlecard","kk_wallet"):
                 import re
                 src = re.sub(r"(^screen "+name+r"\([^\n]*\):\n(?:    (?:tag menu|modal True)\n)*)",
                              lambda m:m[0]+'    timer .12 repeat True action Function(kk_test_input, "'+name+'", _update_screens=False)\n',src,flags=re.M)
@@ -50,7 +52,7 @@ with tempfile.TemporaryDirectory(prefix="kouseikan-playtest-") as temp:
             world.write_text(src,encoding="utf8")
         try:
             subprocess.run(command,env=env,check=True,timeout=120)
-            result=root/((size or host)+".ok")
+            result=root/((size or ("artist" if seq == 2 else host))+".ok")
             assert result.is_file(), "Game exited before test completion"
             print(result.read_text(),flush=True)
         except Exception:

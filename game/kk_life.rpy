@@ -7,6 +7,7 @@ default kk_elapsed_days = 0
 default kk_graduated = False
 default kk_missed = []
 default kk_due = {}
+default kk_transactions = []
 default kk_promises = {}
 default kk_npc_rel = {}
 default kk_last_met = {}
@@ -42,6 +43,17 @@ init python:
         store.kk_calendar_version = 1
         kk_sync_calendar()
 
+    def kk_post_money(amount, description):
+        store.saldo += amount
+        kk_transactions.append((kk_bulan, kk_hari_n, description, amount, saldo))
+
+    def kk_monthly_income():
+        if kk_host == "yutaka":
+            kk_post_money(150000, "Uang saku Kisaragi")
+        elif kk_host == "chiasa":
+            kk_post_money(50000, "Uang saku Amamiya")
+            kk_post_money(50000, "Royalti ilustrasi")
+
     def kk_new_day():
         if kk_bulan == 36 and kk_hari_n == 31:
             store.kk_graduated = True
@@ -58,8 +70,12 @@ init python:
                 if not kk_schedule_away(cid, day, slot):
                     kk_rel(cid, "trust", -3)
         for eid, month, district, loc, trigger in KK_MILESTONE_MAP:
+            if trigger == "host" and _char_of(eid) != kk_host:
+                continue
             if old_month == month and kk_bulan != month and not kk_done(eid) and eid not in kk_missed:
                 store.kk_missed.append(eid)
+        if old_month != kk_bulan:
+            kk_monthly_income()
         if old_month != kk_bulan and kk_bulan >= 7:
             kk_adj("omiai_takeru", 3)
             if old_month in (9,21) and not kk_done("Mi09" if old_month == 9 else "Mi18"):
@@ -138,6 +154,10 @@ init python:
         return kk_bulan == 2 and 3 <= kk_hari_n <= 6
 
     def kk_window(eid):
+        if eid == "C11":
+            return kk_host == "chiasa" and kk_date().weekday() >= 5 and kk_slot == 2
+        if eid == "C09":
+            return kk_get("kemampuan_gambar") < 80
         if eid == "Y13":
             return kk_hari_n in (24,25) and kk_slot == 3
         if eid == "H01":
@@ -168,6 +188,8 @@ init python:
         slot = kk_slot
         if cid == "nagisa" and kk_npc_rel.get("hari_harapan_turun") == kk_elapsed_days and slot == 3:
             return "Taman Lingkungan"
+        if cid == "shiori" and kk_bulan == 20 and week >= 5 and slot == 2:
+            return "Gedung Seni Rupa & Studio"
         if cid == "harumi" and kk_is_hanami_date() and slot == 0:
             return "Gedung Sains & Lab"
         if cid == "harumi" and kk_bulan == 10 and kk_hari_n <= 3 and slot in (0,1):

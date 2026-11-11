@@ -55,6 +55,21 @@ label kk_phone_rematch:
 init python:
     KK_DYN_BY_ID = {event["id"]: event for event in KK_EVENTS_DYN}
 
+    def kk_can_sketch(place):
+        return kk_host == "chiasa" and place == "Rumah Amamiya" and kk_slot in (3,4,5)
+
+    def kk_art_studio_open(place):
+        return (kk_host == "chiasa" and place == "Gedung Seni Rupa & Studio"
+                and kk_slot == 2 and kk_date().weekday() < 5
+                and (kk_has("haruka_dimintai_bantuan") or kk_get("kemampuan_gambar") >= 30
+                     or kk_comparison_due()))
+
+    def kk_comparison_due():
+        return kk_host == "chiasa" and kk_get("shena_risiko",20) >= 40 and not kk_done("C-D02")
+
+    def kk_shaking_hands():
+        return kk_host == "chiasa" and kk_kelelahan_tier()[1] >= 2 and not kk_done("C-D03")
+
     def kk_father_visit(place):
         return (kk_host == "yutaka" and place == "Apartemen Yutaka" and kk_slot == 3
                 and kk_family_bond() < 40 and not kk_done("Y-D03"))
@@ -86,19 +101,26 @@ init python:
     def kk_is_hanami_date():
         return kk_bulan == 1 and kk_hari_n in (19,20)
 
+    def kk_mio_message():
+        return (kk_host == "chiasa" and kk_has("proyek_mio_diterima")
+                and not kk_done("C-D07") and "C-D07" not in kk_missed
+                and kk_slot == 4 and 60 <= kk_minute < 120)
+
+    def kk_incoming_messages():
+        # One ordering for awake play and bedside phone modes.
+        return [(cid, eid, label) for cid, eid, label, ready in (
+            ("nagisa", "N-D01", "kk_phone_rematch", kk_phone_event),
+            ("miyuki", "Mi-D01", "kk_pudding", kk_pudding_message),
+            ("ibu_kisaragi", "Y-D08", "kk_message_kisaragi", kk_mother_message),
+            ("mio", "C-D07", "kk_mio_deadline", kk_mio_message),
+        ) if ready()]
+
     def kk_sleep(minutes=480):
         # Wake on the same simulated clock used by the phone, including midnight.
         slept = 0
         message = None
         while slept < minutes and not kk_graduated:
-            incoming = []
-            if kk_phone_event():
-                incoming.append(("nagisa", "N-D01"))
-            if kk_pudding_message():
-                incoming.append(("miyuki", "Mi-D01"))
-            if kk_mother_message():
-                incoming.append(("ibu_kisaragi", "Y-D08"))
-            for cid, eid in incoming:
+            for cid, eid, label in kk_incoming_messages():
                 if kk_phone_mode == "siaga" or (kk_phone_mode == "normal" and cid in kk_priority_contacts):
                     message = cid
                     break
@@ -142,6 +164,8 @@ init python:
                 result.append("E-YH-02")
             elif kk_host == "yutaka" and kk_has("intern_abroad"):
                 result.append("E-YH-06")
+            elif kk_host == "chiasa" and kk_get("kemampuan_gambar") >= 80:
+                result.append("E-CF-08")
             elif kk_host == "chiasa" and "E-HP-05" in result:
                 result.append("E-CF-10")
         return result
