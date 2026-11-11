@@ -56,7 +56,7 @@ init python:
     KK_DYN_BY_ID = {event["id"]: event for event in KK_EVENTS_DYN}
 
     def kk_phone_event():
-        return (not kk_done("N-D01") and
+        return (not kk_done("N-D01") and "N-D01" not in kk_missed and
                 kk_slot in (4,5) and kk_rel_get("nagisa","aff") >= 25)
 
     def kk_can_skip():
@@ -65,9 +65,12 @@ init python:
     def kk_skip_week():
         if not kk_can_skip():
             return
+        if any(p[0] == kk_elapsed_days for p in kk_promises.values()):
+            return
         for day in range(7):
             kk_new_day()
-            if kk_graduated or kk_is_hanami_date() or (kk_bulan, kk_hari_n) == (5,9):
+            if (kk_graduated or kk_is_hanami_date() or (kk_bulan, kk_hari_n) in ((2,3),(5,9))
+                    or any(p[0] == kk_elapsed_days for p in kk_promises.values())):
                 break
         store.kk_slot = 0
         store.kk_minute = 0
@@ -75,13 +78,32 @@ init python:
     def kk_is_hanami_date():
         return kk_bulan == 1 and kk_hari_n in (19,20)
 
-    def kk_sleep():
-        # Dua slot empat jam. Pulihkan beban energi per slot dan utang satu malam.
-        before = body.get("energi",100)
-        debt = body.get("utang_tidur",0)
-        kk_minutes(480, sleeping=True)
-        store.body["energi"] = min(100, before + 12)
-        store.body["utang_tidur"] = max(0,debt - 8)
+    def kk_sleep(minutes=480):
+        # Wake on the same simulated clock used by the phone, including midnight.
+        slept = 0
+        message = None
+        while slept < minutes and not kk_graduated:
+            incoming = []
+            if kk_phone_event():
+                incoming.append(("nagisa", "N-D01"))
+            if kk_pudding_message():
+                incoming.append(("miyuki", "Mi-D01"))
+            for cid, eid in incoming:
+                if kk_phone_mode == "siaga" or (kk_phone_mode == "normal" and cid in kk_priority_contacts):
+                    message = cid
+                    break
+                if eid not in kk_missed:
+                    store.kk_missed.append(eid)
+            if message:
+                break
+            step = min(minutes - slept, 60 - kk_minute % 60)
+            kk_minutes(step, sleeping=True)
+            slept += step
+        energy, store.kk_rest_energy_minutes = divmod(kk_rest_energy_minutes + slept, 40)
+        debt, store.kk_rest_debt_minutes = divmod(kk_rest_debt_minutes + slept, 60)
+        kk_adj_body("energi", energy)
+        kk_adj_body("utang_tidur", -debt)
+        return message
 
     def kk_epilogue():
         result = [kk_resolve_ending()]
@@ -114,12 +136,15 @@ init python:
 
     def kk_pudding_message():
         return (kk_slot == 4 and kk_minute >= 60 and kk_minute < 120 and
-                not kk_done("Mi-D01") and kk_rel_get("miyuki","trust") >= 25 and
+                not kk_done("Mi-D01") and "Mi-D01" not in kk_missed and kk_rel_get("miyuki","trust") >= 25 and
                 kk_get("dimanja_miyuki",10) >= 50)
 
     def kk_social_event(cid, place):
         if kk_daily_place(cid) != place:
             return None
+        if cid == "harumi" and place == "Asrama Putri" and kk_slot == 4 and kk_minute >= 180:
+            if kk_get("kejelasan_harumi") >= 30 and not kk_done("H-D01"):
+                return "H-D01"
         if cid == "nagisa" and kk_slot == 1 and not kk_done("N-D02"):
             if kk_rel_get(cid,"aff") >= 55 and kk_get("gengsi_nagisa",70) >= 50:
                 return "N-D02"
@@ -131,6 +156,9 @@ init python:
 label kk_social_scene(eid):
     # Draft editorial dari pemicu dan pilihan katalog dinamis.
     if kk_done(eid):
+        return
+    if eid == "H-D01":
+        call kk_dorm_tea
         return
     if eid == "N-D02":
         nagisa "Ini bukan khusus buatmu. Kebetulan saja aku bawa satu lebih."

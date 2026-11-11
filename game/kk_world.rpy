@@ -32,7 +32,18 @@ init -4 python:
     # ── Peta event milestone → (bulan, distrik, lokasi, pemicu) ──
     # pemicu "enter": muncul saat memasuki lokasi (peristiwa berkumpul).
     # pemicu = cid: muncul saat berbicara dengan karakter itu di sana.
+    KK_DISTRICT_NAME["onsen"] = "Penginapan onsen"
+    KK_DISTRICT_LOCS["onsen"] = ["Lobi ryokan", "Dapur ryokan", "Ruang bersama ryokan", "Taman luar ryokan"]
     KK_MILESTONE_MAP = [
+        ("H01", 1, "d1", "Gedung Sains & Lab", "harumi"),
+        ("H08", 10, "d7", "Kuil", "harumi"),
+        ("H09", 13, "d1", "Gedung Sains & Lab", "harumi"),
+        ("Mo01", 1, "d1", "Taman Kampus", "moeka"),
+        ("S01", 1, "d1", "Taman Kampus", "shiori"),
+        ("Mo02", 2, "d5", "Stasiun Kouseikan-mae", "moeka"),
+        ("S02", 2, "onsen", "Lobi ryokan", "shiori"),
+        ("Mi02", 2, "onsen", "Dapur ryokan", "miyuki"),
+        ("N02", 2, "onsen", "Ruang bersama ryokan", "nagisa"),
         ("N01", 1, "d1", "Gedung Arsitektur", "nagisa"),
         ("Mi01", 1, "d1", "Taman Kampus", "enter"),
         ("Mi07", 7, "d6", "Rumah Sakit Tachibana", "miyuki"),
@@ -245,9 +256,13 @@ screen kk_location_view(distrik, lokasi):
                         yalign .5 spacing 16
                         text a["label"] size 24 bold True yalign .5 xsize 300
                         text a["desc"] style "kk_caption" yalign .5
+            if lokasi == "Stasiun Kouseikan-mae" and kk_onsen_dates():
+                use kk_link("Berangkat ke penginapan onsen", Return(("travel", None)), 800)
+            if distrik == "onsen":
+                use kk_link("Duduk sejenak di penginapan", Return(("rest", None)), 800)
             if lokasi == home:
-                use kk_link("Tidur delapan jam", Return(("sleep", None)), 800)
-            if not acts and lokasi != home:
+                use kk_link("Beristirahat di kamar", Return(("sleep", None)), 800)
+            if not acts and lokasi != home and distrik != "onsen" and not (lokasi == "Stasiun Kouseikan-mae" and kk_onsen_dates()):
                 text "Tidak ada aktivitas khusus di sini." style "kk_caption"
     fixed:
         pos (kk_margin, 980)
@@ -276,8 +291,12 @@ label kk_world_loop:
 label kk_loc_list:
     if kk_graduated:
         jump kk_evaluasi
+    if _distrik == "onsen" and not kk_onsen_dates():
+        jump kk_trip_return
     call screen kk_world_location(_distrik)
     if _return == "back":
+        if _distrik == "onsen":
+            jump kk_trip_return
         jump kk_world_loop
     $ _lokasi = _return
     $ kk_minutes(30)
@@ -294,6 +313,8 @@ label kk_location_view_loop:
     $ kk_upgrade_world()
     if kk_graduated:
         jump kk_evaluasi
+    if _distrik == "onsen" and not kk_onsen_dates():
+        jump kk_trip_return
     if kk_phone_event():
         call kk_phone_rematch
     elif kk_pudding_message():
@@ -305,13 +326,30 @@ label kk_location_view_loop:
     elif _c[0] == "talk":
         call kk_do_talk(_distrik, _lokasi, _c[1])
         jump kk_location_view_loop
+    elif _c[0] == "travel":
+        $ kk_minutes(60)
+        if kk_onsen_dates():
+            $ _distrik = "onsen"
+            nar "Kau menyusul rombongan ke penginapan."
+            jump kk_loc_list
+        nar "Kesempatan untuk menyusul rombongan sudah berlalu."
+        jump kk_location_view_loop
+    elif _c[0] == "rest":
+        $ kk_advance()
+        jump kk_location_view_loop
     elif _c[0] == "sleep":
-        $ kk_sleep()
-        nar "Kau terbangun di kamarmu."
+        call kk_rest_home
         jump kk_location_view_loop
     elif _c[0] == "act":
         call kk_do_activity(_lokasi, _c[1])
         jump kk_location_view_loop
+
+label kk_trip_return:
+    $ _distrik = "d5"
+    $ _lokasi = "Stasiun Kouseikan-mae"
+    $ kk_minutes(60)
+    nar "Kau kembali ke stasiun Kouseikan."
+    jump kk_location_view_loop
 
 label kk_do_talk(distrik, lokasi, cid):
     if cid not in kk_present_here(distrik, lokasi):
@@ -349,6 +387,11 @@ label kk_generic_talk(cid, loc, known=True):
     call kk_scene_enter(cid, loc)
     $ renpy.say(getattr(store, cid), "Oh, kau. Sedang apa di sini?")
     menu:
+        "Buka kembali soal yang kalian baca bersama." if cid == "harumi" and any(c["ev"] == "H01" and c["key"] == "A" for c in choices_log):
+            harumi "Mari kita periksa dari langkah pertama."
+            if fresh:
+                $ kk_rel("harumi", "trust", 1)
+            $ kk_minutes(10)
         "Tanyakan bagaimana harinya." if known:
             if fresh:
                 $ kk_rel(cid, "trust", 1)

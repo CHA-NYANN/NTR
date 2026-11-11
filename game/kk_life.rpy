@@ -69,8 +69,12 @@ init python:
         if old_month == 3 and kk_bulan == 4 and "N03" in kk_missed:
             store.kk_npc_rel["yuuto_nagisa_studio"] = "membantu maket"
         if kk_bulan == 1:
-            for eid, deadline in (("N01",7), ("Mi01",20)):
+            for eid, deadline in (("N01",7), ("Mi01",20), ("Mo01",20), ("S01",20), ("H01",20)):
                 if d.day > deadline and not kk_done(eid) and eid not in kk_missed:
+                    store.kk_missed.append(eid)
+        if kk_bulan == 2 and kk_hari_n == 7:
+            for eid in ("Mo02", "Mi02", "S02", "N02"):
+                if not kk_done(eid) and eid not in kk_missed:
                     store.kk_missed.append(eid)
         if kk_due.get("koita_reply", float("inf")) <= kk_elapsed_days:
             del store.kk_due["koita_reply"]
@@ -126,7 +130,18 @@ init python:
     def kk_is_hanami():
         return kk_bulan == 1 and kk_hari_n in (19,20) and kk_slot in (1,2)
 
+    def kk_onsen_dates():
+        return kk_bulan == 2 and 3 <= kk_hari_n <= 6
+
     def kk_window(eid):
+        if eid == "H01":
+            return kk_is_hanami_date() and kk_slot == 0
+        if eid == "H08":
+            return kk_hari_n <= 3
+        if eid in ("Mo01", "S01"):
+            return kk_is_hanami()
+        if eid in ("Mo02", "Mi02", "S02", "N02"):
+            return kk_onsen_dates()
         if eid in ("N22","Mi09","Mi18","Mi25"):
             return kk_hari_n in (24,25) and (eid != "Mi25" or kk_get("omiai_takeru") >= 70)
         if eid == "N01":
@@ -143,6 +158,22 @@ init python:
         # Jadwal verbal tanpa lokasi tertentu menghasilkan None.
         week = kk_date().weekday()
         slot = kk_slot
+        if cid == "harumi" and kk_is_hanami_date() and slot == 0:
+            return "Gedung Sains & Lab"
+        if cid == "harumi" and kk_bulan == 10 and kk_hari_n <= 3 and slot in (0,1):
+            return "Kuil"
+        if kk_onsen_dates() and cid in ("moeka","miyuki","shiori","nagisa","koita"):
+            if cid == "moeka" and kk_hari_n == 3 and slot in (0,1):
+                return "Stasiun Kouseikan-mae"
+            if cid == "nagisa" and slot in (3,4):
+                return "Ruang bersama ryokan"
+            if cid == "miyuki" and slot in (0,1,2):
+                return "Dapur ryokan"
+            if cid == "shiori" and slot in (1,2):
+                return "Lobi ryokan"
+            if cid == "koita" and slot == 3:
+                return "Taman luar ryokan"
+            return None
         if kk_is_hanami() and cid in ("miyuki","moeka","shiori","nagisa","harumi","koita","chiasa"):
             return "Taman Kampus"
         if cid == "nagisa" and kk_bulan == 5 and kk_hari_n == 9 and slot == 3:
