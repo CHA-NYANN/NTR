@@ -1,5 +1,5 @@
-# Kouseikan — engine. Poin, ambang, jadwal, Force (abstrak), resolver ending.
-# Semua logika tersembunyi; pemain membaca lewat perilaku, bukan angka (✅ 6C.4).
+# Kouseikan â€” engine. Poin, ambang, jadwal, Force (abstrak), resolver ending.
+# Semua logika tersembunyi; pemain membaca lewat perilaku, bukan angka (âœ… 6C.4).
 
 init python:
 
@@ -82,23 +82,39 @@ init python:
     def kk_slot_label():
         return store.KK_SLOTS[store.kk_slot]
     def kk_advance(slots=1):
-        # maju slot; tubuh menanggung. Pemain tak wajib tidur.
-        # Overflow slot = hari baru, BUKAN bulan baru. Bulan maju lewat timeskip eksplisit
-        # (kk_next_month) atau peristiwa cerita — agar bulan tidak melesat karena aktivitas harian.
-        for _ in range(slots):
-            store.kk_slot += 1
-            kk_adj_body("energi", -6)
-            kk_adj_body("lapar", +5)
-            if store.kk_slot >= len(store.KK_SLOTS):
-                store.kk_slot = 0
-                store.kk_hari_n += 1
-                kk_adj_body("utang_tidur", +8)  # tidak tidur semalaman
+        kk_minutes(slots * 240)
+
+    def kk_clock():
+        minutes = (360 + kk_slot * 240 + kk_minute) % 1440
+        return "%02d:%02d" % divmod(minutes,60)
+
+    def kk_minutes(amount, sleeping=False):
+        kk_upgrade_world()
+        while amount > 0 and not kk_graduated:
+            boundary = 120 if kk_slot == 4 and kk_minute < 120 else 240
+            step = min(amount, boundary - kk_minute)
+            store.kk_minute += step
+            amount -= step
+            if kk_slot == 4 and kk_minute == 120:
+                kk_new_day()
+            elif kk_minute == 240:
+                store.kk_minute = 0
+                store.kk_slot = (kk_slot + 1) % 6
+                if not sleeping:
+                    if body.get("energi",100) == 0:
+                        kk_adj_body("kesehatan",-1)
+                    kk_adj_body("energi",-6)
+                kk_adj_body("lapar",5)
+                if kk_slot == 0 and not sleeping:
+                    kk_adj_body("utang_tidur",8)
 
     def kk_next_month():
-        # Timeskip (✅ GDD 6N.1). Minggu-minggu berlalu; tubuh pulih sebagian.
-        store.kk_bulan = min(36, store.kk_bulan + 1)
+        # Timeskip (âœ… GDD 6N.1). Minggu-minggu berlalu; tubuh pulih sebagian.
+        kk_upgrade_world()
+        month = kk_bulan
+        while kk_bulan == month and not kk_graduated:
+            kk_new_day()
         store.kk_slot = 0
-        store.kk_hari_n = 1
         store.body["energi"] = min(100, store.body.get("energi", 0) + 60)
         store.body["utang_tidur"] = max(0, store.body.get("utang_tidur", 0) - 40)
         store.body["lapar"] = 10
@@ -129,7 +145,7 @@ init python:
             "chiasa": {0:"Sarapan dgn Koita",1:"Studio Seni",2:"Studio (Haruka)",3:"Menggambar",4:"Proyek (01:00)",5:"Tidur"},
         }
         slot = store.kk_slot
-        loc = base.get(npc, {}).get(slot, "—")
+        loc = base.get(npc, {}).get(slot, "â€”")
         # lapis 4: tahap rute menggeser jadwal
         st = store.stage.get(npc, 0)
         if npc == "moeka" and st >= 3 and slot in (1,2):
@@ -145,12 +161,12 @@ init python:
 
     # ---- Force: abstrak, non-operasional ----
     # Aksi TIDAK ditampilkan (layar hitam). Fungsi ini hanya memasang akibat.
-    # Lihat docs/Alur_Cabang/09_Force_dan_Kriminal.md §2.
+    # Lihat docs/Alur_Cabang/09_Force_dan_Kriminal.md Â§2.
     KK_FORCE_LAPOR = {"miyuki":30,"nagisa":65,"harumi":20,"moeka":20,"shiori":90,"chiasa":55,"koita":20}
     def kk_force_consequences(victim):
         kk_flag("force_" + victim)
         kk_flag("force_pernah")
-        # deviasi: korban lepas dari Koita (Tinggi) — dihitung Sistem
+        # deviasi: korban lepas dari Koita (Tinggi) â€” dihitung Sistem
         store.deviasi += 22
         # romansa korban dgn pelaku terkunci
         kk_flag("lock_romance_" + victim)
@@ -159,16 +175,16 @@ init python:
         kk_rel(victim, "trust", -60)
         # peluang terbongkar (ditentukan watak + saksi), disimpan untuk resolver
         store.pts["lapor_" + victim] = KK_FORCE_LAPOR.get(victim, 40)
-        # jalur bersih butuh semua kecurigaan tetap rendah (§10) — ditandai belum tercemar
+        # jalur bersih butuh semua kecurigaan tetap rendah (Â§10) â€” ditandai belum tercemar
         if "force_bersih_" + victim not in store.flags:
             kk_flag("force_bersih_" + victim)  # masih bersih; event lain bisa mencabut
 
     # ---- resolver ending (nasib pemain) ----
     def kk_resolve_ending():
-        # ending tersembunyi: celah sistem (§11)
+        # ending tersembunyi: celah sistem (Â§11)
         if store.koita_bebas_naskah:
             return "E-SI-18"
-        # Chiasa × Yutaka saja = mati
+        # Chiasa Ã— Yutaka saja = mati
         if store.kk_host == "chiasa" and kk_has("chiasa_yutaka_saja") and store.deviasi < 20:
             return "E-SI-06"
         # ambang tersembunyi (prototipe: 45)
@@ -190,7 +206,7 @@ init python:
         store.body = {"energi":100,"utang_tidur":0,"lapar":10,"kebersihan":100,
                       "kesehatan":100,"stres_host":0,"nyeri_sistem":0}
         store.rel = {}
-        store.pts = {"kelelahan_miyuki":35,"stres_moeka":40,"kejelasan_harumi":20,
+        store.pts = {"dimanja_miyuki":10,"gengsi_nagisa":70,"kelelahan_miyuki":35,"stres_moeka":40,"kejelasan_harumi":20,
                      "kelekatan_nagisa":20,"respek_shiori":20,"marah_shiori":0}
         store.stage = {"miyuki":0,"nagisa":0,"harumi":0,"moeka":0,"shiori":0,
                        "chiasa":0,"koita_bl":0}
@@ -204,7 +220,10 @@ init python:
         store.saldo = 500000 if store.kk_host == "yutaka" else 400000
         # heroine mencintai Koita (kecuali Shiori); ke host rendah
         for cid in ("miyuki","nagisa","harumi","moeka","chiasa"):
-            store.rel[cid] = {"aff":78,"trust":40,"intim":30,"jeal":10,"fear":5}
+            store.kk_npc_rel[cid + "_koita_aff"] = 78
+            store.rel[cid] = {"aff":20,"trust":40,"intim":30,"jeal":10,"fear":5}
         store.rel["shiori"] = {"aff":10,"trust":20,"intim":10,"jeal":5,"fear":5}
         store.rel["koita"]  = {"aff":40,"trust":60,"intim":40,"jeal":10,"fear":5}
         store.rel["yutaka"] = {"aff":30,"trust":55,"intim":30,"jeal":10,"fear":5}
+        store.kk_rel_base = {cid: dict(values) for cid, values in rel.items()}
+        kk_upgrade_world()

@@ -35,19 +35,21 @@ init -4 python:
     KK_MILESTONE_MAP = [
         ("N01", 1, "d1", "Gedung Arsitektur", "nagisa"),
         ("Mi01", 1, "d1", "Taman Kampus", "enter"),
+        ("N04", 5, "d7", "Tepi Sungai", "nagisa"),
+        ("N06", 7, "d1", "Gedung Arsitektur", "nagisa"),
         ("N03", 3, "d1", "Gedung Arsitektur", "nagisa"),
         ("Mi03", 4, "d6", "Rumah Sakit Tachibana", "miyuki"),
     ]
 
     def kk_pending_enter(distrik, lokasi):
         return [m[0] for m in KK_MILESTONE_MAP
-                if m[4] == "enter" and m[1] == store.kk_bulan and m[2] == distrik
-                and m[3] == lokasi and not kk_done(m[0])]
+                if m[4] == "enter" and kk_daily_place("miyuki") == lokasi and m[1] == store.kk_bulan and m[2] == distrik
+                and m[3] == lokasi and kk_window(m[0]) and not kk_done(m[0]) and m[0] not in kk_missed]
 
     def kk_pending_talk(cid, distrik, lokasi):
         return [m[0] for m in KK_MILESTONE_MAP
-                if m[4] == cid and m[1] == store.kk_bulan and m[2] == distrik
-                and m[3] == lokasi and not kk_done(m[0])]
+                if m[4] == cid and kk_daily_place(cid) == lokasi and m[1] == store.kk_bulan and m[2] == distrik
+                and m[3] == lokasi and kk_window(m[0]) and not kk_done(m[0]) and m[0] not in kk_missed]
 
     # ── Kehadiran NPC (jadwal, disederhanakan; 🟡) ──
     # lokasi → [(cid, {slot...})]. Hanya karakter yang bisa diajak bicara.
@@ -70,32 +72,7 @@ init -4 python:
     }
 
     def kk_present_here(distrik, lokasi):
-        # Cache per (lokasi, waktu): stabil lintas redraw screen, hanya re-roll saat waktu berubah.
-        stamp = (lokasi, store.kk_bulan, store.kk_hari_n, store.kk_slot)
-        cache = getattr(store, "_present_cache", None)
-        if cache and cache[0] == stamp:
-            return cache[1]
-        out = []
-        for cid, slots in KK_FREQ.get(lokasi, []):
-            if cid == store.kk_host:
-                continue  # host = pemain, bukan NPC
-            # jadwal berubah karena rute (contoh minimal)
-            st = store.stage.get(cid, 0)
-            here = store.kk_slot in slots
-            if cid == "moeka" and st >= 3 and store.kk_slot in (1, 2):
-                here = False  # menarik diri
-            if cid == "nagisa" and st >= 3:
-                here = True   # muncul di lokasimu
-            # variasi acak (jadwal tidak tetap) — rollback-safe
-            if here and renpy.random.random() < 0.12:
-                here = False
-            # jaminan: kalau ada event "talk" tertunda untuk dia di sini+sekarang, ia pasti ada
-            if kk_pending_talk(cid, distrik, lokasi):
-                here = True
-            if here and cid not in out:
-                out.append(cid)
-        store._present_cache = (stamp, out)
-        return out
+        return [cid for cid in KK_CHARS if kk_daily_place(cid) == lokasi]
 
     # ── Aktivitas sehari-hari (🟡 nilai usulan) ──
     def _ok_makan():   return store.saldo >= 800
@@ -153,7 +130,7 @@ screen kk_world_district():
     vbox:
         xpos kk_margin ypos 150 spacing 10
         $ mt = kk_month_tuple()
-        text ("[mt[0]] · " + mt[2]) style "kk_caption"
+        text (kk_hari + " · " + str(kk_hari_n) + " " + mt[1]) style "kk_caption"
         text "Ke mana kau pergi?" style "kk_heading"
         text ("Hari ke-" + str(kk_hari_n) + " · " + KK_SLOTS[kk_slot] + ". Berpindah distrik memakan waktu.") style "kk_caption"
         null height 10
@@ -166,9 +143,10 @@ screen kk_world_district():
                     text (str(len(locs)) + " lokasi") style "kk_caption" yalign .5
     vbox:
         pos (kk_margin, 980) spacing 6
-        if kk_bulan < 36:
-            use kk_link("Lewati waktu ke bulan depan  »", Return(("skip", None)), 520)
-        use kk_link("Alat uji", Show("kk_debug_panel"), 520)
+        if kk_can_skip():
+            use kk_link("Lanjutkan rutinitas mingguan", Return(("skip", None)), 520)
+        if config.developer and kk_debug_tools:
+            use kk_link("Alat uji", Show("kk_debug_panel"), 520)
 
 screen kk_debug_panel():
     modal True
@@ -221,6 +199,7 @@ screen kk_location_view(distrik, lokasi):
     tag kk_world
     $ present = kk_present_here(distrik, lokasi)
     $ acts = kk_acts_at(lokasi)
+    $ home = "Apartemen Yutaka" if kk_host == "yutaka" else "Rumah Amamiya"
     use kk_place_bg(distrik, lokasi, kk_accent)
     use kk_hud
     # Identitas tempat (kiri)
@@ -259,7 +238,9 @@ screen kk_location_view(distrik, lokasi):
                         yalign .5 spacing 16
                         text a["label"] size 24 bold True yalign .5 xsize 300
                         text a["desc"] style "kk_caption" yalign .5
-            if not acts:
+            if lokasi == home:
+                use kk_link("Tidur delapan jam", Return(("sleep", None)), 800)
+            if not acts and lokasi != home:
                 text "Tidak ada aktivitas khusus di sini." style "kk_caption"
     fixed:
         pos (kk_margin, 980)
@@ -270,30 +251,46 @@ screen kk_location_view(distrik, lokasi):
 # ALUR navigasi dunia
 # ══════════════════════════════════════════════════════════════════════════
 label kk_world_loop:
+    $ kk_upgrade_world()
+    if kk_graduated:
+        jump kk_evaluasi
     call screen kk_world_district
     $ _r = _return
     if _r[0] == "skip":
-        $ _b = kk_next_month()
+        $ kk_skip_week()
         scene black with fade
         $ _mt = kk_month_tuple()
-        nar "Minggu-minggu berlalu. [_mt[0]] — [_mt[2]]."
+        nar "Rutinitasmu berlanjut. [kk_hari], [kk_hari_n] [_mt[1]]."
         jump kk_world_loop
     $ _distrik = _r[1]
-    $ kk_advance(1)   # (1-2) berpindah distrik memakan waktu; tubuh menanggung
+    $ kk_minutes(60)
     jump kk_loc_list
 
 label kk_loc_list:
+    if kk_graduated:
+        jump kk_evaluasi
     call screen kk_world_location(_distrik)
     if _return == "back":
         jump kk_world_loop
     $ _lokasi = _return
+    $ kk_minutes(30)
+    if kk_graduated:
+        jump kk_evaluasi
     # (3-4) peristiwa berkumpul yang muncul begitu kau tiba
     $ _ent = kk_pending_enter(_distrik, _lokasi)
     if _ent:
         call kk_play_scene(_ent[0])
+        $ kk_advance()
     jump kk_location_view_loop
 
 label kk_location_view_loop:
+    $ kk_upgrade_world()
+    if kk_graduated:
+        jump kk_evaluasi
+    if kk_phone_event():
+        call kk_phone_rematch
+    elif kk_pudding_message():
+        call kk_pudding
     call screen kk_location_view(_distrik, _lokasi)
     $ _c = _return
     if _c[0] == "leave":
@@ -301,37 +298,70 @@ label kk_location_view_loop:
     elif _c[0] == "talk":
         call kk_do_talk(_distrik, _lokasi, _c[1])
         jump kk_location_view_loop
+    elif _c[0] == "sleep":
+        $ kk_sleep()
+        nar "Kau terbangun di kamarmu."
+        jump kk_location_view_loop
     elif _c[0] == "act":
         call kk_do_activity(_lokasi, _c[1])
         jump kk_location_view_loop
 
 label kk_do_talk(distrik, lokasi, cid):
+    if cid not in kk_present_here(distrik, lokasi):
+        return
+    $ known = cid in kk_last_met
+    $ kk_contact(cid)
     $ _p = kk_pending_talk(cid, distrik, lokasi)
     if _p:
         # (5-6) event kontekstual via orang yang tepat — akibat lewat hook, tidak diumumkan
         call kk_play_scene(_p[0])
+    elif kk_social_event(cid, lokasi):
+        call kk_social_scene(kk_social_event(cid, lokasi))
+        return
+    elif cid == "nagisa" and kk_has("nagisa_koita_ditolak") and not kk_has("heard_reply"):
+        nagisa "Dia bilang kita teman masa kecil. Seperti itu saja."
+        $ kk_flag("heard_reply")
     else:
-        call kk_generic_talk(cid, KK_DISTRICT_NAME[distrik] + " · " + lokasi)
+        call kk_generic_talk(cid, KK_DISTRICT_NAME[distrik] + " · " + lokasi, known)
+        return
+    $ kk_advance()
     return
 
 # Obrolan ringan tanpa event: beberapa kata, tanpa pilihan abstrak.
 # Sekadar hadir & bicara menumbuhkan kedekatan sedikit, diam-diam.
-label kk_generic_talk(cid, loc):
+label kk_generic_talk(cid, loc, known=True):
     $ _name = KK_CHARS[cid]["nama"]
     $ _key = "ngobrol_%s_%d_%d_%d" % (cid, kk_bulan, kk_hari_n, kk_slot)
-    if kk_has(_key):
-        nar "Kalian sudah bicara tadi. [_name] kembali ke urusannya."
-        return
+    $ fresh = not kk_has(_key)
     $ kk_flag(_key)
-    $ kk_rel(cid, "intim", 1)
     call kk_scene_enter(cid, loc)
     $ renpy.say(getattr(store, cid), "Oh, kau. Sedang apa di sini?")
-    nar "Kalian bertukar beberapa kata ringan. Tidak terjadi apa-apa yang istimewa — baru. (Dialog berkarakter untuk obrolan bebas menyusul.)"
+    menu:
+        "Tanyakan bagaimana harinya." if known:
+            if fresh:
+                $ kk_rel(cid, "trust", 1)
+            $ kk_minutes(10)
+        "Balas sapaannya lalu pamit.":
+            if fresh:
+                $ kk_rel(cid, "aff", 2)
+            $ kk_minutes(5)
+        "Bawakan makanan untuk Miyuki." if cid == "miyuki" and saldo >= 800:
+            $ saldo -= 800
+            if fresh:
+                $ kk_adj("dimanja_miyuki",4)
+                $ kk_adj("kelelahan_miyuki",-8)
+            $ kk_minutes(60)
+        "Puji pastry yang ia bawa." if cid == "miyuki" and _lokasi == "Kafe Komorebi" and kk_hari == "Sabtu":
+            $ kk_flag("puji_pastry")
+            if fresh:
+                $ kk_rel(cid,"aff",2)
+            $ kk_minutes(2)
+    nar "Kalian bertukar beberapa kata ringan. Setelah itu ia kembali ke kegiatannya."
     return
 
 label kk_do_activity(lokasi, actid):
     $ a = KK_ACTS[actid]
-    if not a["ok"]():
+    if actid not in KK_ACT_BY_LOC.get(lokasi, []) or not a["ok"]():
         nar "[a['fail']]"
         return
     call kk_scene_enter(kk_host, lokasi)
@@ -351,17 +381,21 @@ label kk_scene_enter(char, loc_label):
 # Alat uji — dipisah dari alur pemain, tidak dihapus.
 # ══════════════════════════════════════════════════════════════════════════
 label kk_debug_explore:
+    if not (config.developer and kk_debug_tools):
+        jump kk_world_loop
     call kk_explore_loop
     jump kk_world_loop
 
 label kk_debug_eval:
+    if not (config.developer and kk_debug_tools):
+        jump kk_world_loop
     jump kk_evaluasi
 
 
 # Ambience lokasi (🟡 placeholder singkat; hanya yang relevan di slice).
 init -4 python:
     KK_LOC_AMBIENCE = {
-        "Taman Kampus": "Sakura belum sepenuhnya gugur. Beberapa kelompok duduk di bawah pohon — hari Hanami.",
+        "Taman Kampus": "Jalan setapak membelah taman di antara gedung-gedung kampus.",
         "Gedung Arsitektur": "Bau kayu maket dan kertas potong. Studio di lantai atas masih ramai.",
         "Kafe Komorebi": "Aroma kopi dari gerbang depan kampus. Tempat paling mudah menemukan orang.",
         "Perpustakaan Pusat": "Sepi dan dingin. Beberapa mahasiswa tertidur di meja sendiri.",

@@ -49,7 +49,8 @@ screen kk_hud():
             text "KOUSEIKAN" bold True size 24
             if kk_host:
                 $ mt = kk_month_tuple()
-                text "[mt[0]] [mt[2]]   /   [KK_SLOTS[kk_slot]]" style "kk_caption"
+                $ clock_text = kk_clock()
+                text "[clock_text]   [kk_hari], [kk_hari_n] [mt[1]]   /   [KK_SLOTS[kk_slot]]" style "kk_caption"
                 $ tier = kk_kelelahan_tier()
                 if tier[1] >= 2:
                     text tier[0] color kk_warn size 22
@@ -113,7 +114,6 @@ screen kk_route_select():
     vbox:
         xpos kk_margin yalign .48 spacing 30
         text "Pilih tubuh" style "kk_heading"
-        text "Rute awal, bukan batas orientasi." style "kk_caption"
         hbox:
             spacing kk_gap
             for host, name, route, detail, tint in [("yutaka","Kisaragi Yutaka","Male Route","Sahabat Koita sejak kecil.","#93b6df"), ("chiasa","Amamiya Chiasa","Female Route","Adik tiri Koita.",kk_accent)]:
@@ -123,7 +123,6 @@ screen kk_route_select():
                     vbox:
                         spacing 18
                         add Solid(tint) xysize (68, 5)
-                        text route size 24 color tint
                         text name size 46 bold True
                         text detail style "kk_caption"
 
@@ -158,6 +157,7 @@ screen kk_status():
                             if cid in rel:
                                 text KK_CHARS[cid]["nama"] size 27 bold True color kk_bone
                                 text ("Afeksi · {}     Kepercayaan · {}".format(kk_lvl(kk_rel_get(cid,"aff")), kk_lvl(kk_rel_get(cid,"trust")))) style "kk_caption"
+                                text ("Keintiman · {}     Kecemburuan · {}     Ketakutan · {}".format(kk_lvl(kk_rel_get(cid,"intim")), kk_lvl(kk_rel_get(cid,"jeal")), kk_lvl(kk_rel_get(cid,"fear")))) style "kk_caption"
             use kk_link("Tutup", Hide("kk_status"))
 
 screen kk_explorer():
@@ -181,15 +181,17 @@ screen kk_explorer():
                 use kk_link("{}   /   {}     {}".format(event["id"], event["month"], event["title"]), Return(event["id"]), 1090)
     textbutton "‹ Kembali" style "kk_button" action Return("back") pos (kk_margin, 956)
 
-screen kk_ending_detail(entry):
+screen kk_ending_detail(entry, diagnostics=False):
     vbox:
         spacing 20
-        text (entry["type"].upper() + "   /   " + entry["code"]) size 23 color kk_accent
+        if diagnostics:
+            text (entry["type"].upper() + "   /   " + entry["code"]) size 23 color kk_accent
         text entry["name"] size 44 bold True
         text entry.get("body", "") size 28 line_spacing 6
         null height 8
-        text "Syarat" style "kk_caption"
-        text entry.get("cond", "") size 24 line_spacing 5
+        if diagnostics:
+            text "Syarat" style "kk_caption"
+            text entry.get("cond", "") size 24 line_spacing 5
 
 screen kk_ending_card(e):
     add kk_ink
@@ -225,7 +227,7 @@ screen kk_gallery():
         pos (880, 250) xysize (936, 650) background Solid(kk_ink2) padding (36, 32)
         viewport:
             mousewheel True draggable True arrowkeys True scrollbars "vertical"
-            use kk_ending_detail(current)
+            use kk_ending_detail(current, diagnostics=True)
     textbutton "‹ Kembali" style "kk_button" action Return() pos (kk_margin, 956)
 
 screen main_menu():
@@ -382,4 +384,3 @@ screen nvl(dialogue, items=None):
                         text d.what id d.what_id size 30
                 for item in items or []:
                     use kk_link(item.caption, item.action)
-

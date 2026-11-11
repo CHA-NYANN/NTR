@@ -3,12 +3,13 @@
 
 label kk_intro:
     scene black with fade
-    call screen kk_titlecard("KOUSEIKAN", "prototipe sistem cabang · 18+ · semua tokoh dewasa")
+    call screen kk_titlecard("KOUSEIKAN", "18+ · semua tokoh dewasa")
     nar "Kau mati di dunia nyata. Kini kau terbangun di tubuh orang lain, di dunia manga harem yang tak kau sukai."
     call screen kk_route_select
     $ kk_host = _return
     $ kk_setup_state()
     call kk_prologue
+    sistem "Dalam tujuh hari, temui tiga orang yang dekat dengan Koita."
     jump kk_main
 
 label kk_prologue:
@@ -16,16 +17,15 @@ label kk_prologue:
         $ kk_mc_nama = "YUTAKA (kau)"
         show screen kk_set("yutaka", "Apartemen Mewah · Dini Hari")
         with fade
-        nar "Male Route. Kau Kisaragi Yutaka — sahabat Koita, diam-diam menyukai Chiasa."
+        nar "Kau Kisaragi Yutaka — sahabat Koita, diam-diam menyukai Chiasa."
     else:
         $ kk_mc_nama = "CHIASA (kau)"
         show screen kk_set("chiasa", "Rumah Amamiya · Pagi")
         with fade
-        nar "Female Route. Kau Amamiya Chiasa — adik tiri Koita yang mencintainya. Kebanyakan yuri."
+        nar "Kau Amamiya Chiasa — adik tiri Koita yang mencintainya."
     nar "Sebuah jendela biru kaca terbuka di kepalamu."
     sistem "Selamat pagi, Host. Kontrak aktif. Tugasmu: menyimpangkan takdir romantis Koita. Dievaluasi sekali, saat ia lulus. Gagal, kau mati."
     sistem "Kepribadianmu? Bukan urusanku menebaknya sekarang. Aku akan tahu dari apa yang kau lakukan, bukan dari apa katamu."
-    nar "{color=#8d877f}(Tidak ada pilihan kepribadian di sini. Ramah, dingin, genit, agresif, atau manipulatif — itu terbentuk dari caramu menjawab orang, bukan dari menu. Lihat Status sewaktu-waktu untuk membaca pola yang sudah terbentuk.){/color}"
     return
 
 label kk_main:
@@ -35,11 +35,13 @@ label kk_main:
     $ kk_slot = 1
     show screen kk_set("koita", "Kampus Kouseikan · Hari Pertama")
     with fade
-    nar "M01 · Kontrak. Hari pertama semester. Koita dikelilingi para heroine di kantin."
+    nar "Hari pertama semester. Di kantin, teman-teman Koita sudah mengelilingi mejanya."
     nar "Inilah dunia yang harus kau belokkan. Ke mana kau pergi, dan kapan, adalah milikmu."
     jump kk_world_loop
 
 label kk_explore_loop:
+    if not (config.developer and kk_debug_tools):
+        return
     call screen kk_explorer
     if _return == "back":
         return
@@ -68,12 +70,10 @@ label kk_event(evid, reveal=True):
     if ev["choices"]:
         call screen kk_choices(ev)
         $ key = _return
-        $ kk_log(ev["id"], key)
+        $ _new_choice = kk_record_choice(ev["id"], key)
         $ _fk = ev["id"] + "-" + key
-        if _fk in KK_FORCE_CHOICES:
+        if _new_choice and _fk in KK_FORCE_CHOICES:
             call kk_force(KK_FORCE_CHOICES[_fk])
-        else:
-            $ kk_run_hook(ev["id"], key)
         if reveal and ev["effect"]:
             nar "{color=#8d877f}→ Efek (ringkas): [ev['effect']]{/color}"
     else:
@@ -93,12 +93,15 @@ label kk_force(victim):
 
 label kk_evaluasi:
     scene black with fade
-    show screen kk_set("koita", "M36 · Wisuda · Evaluasi")
+    show screen kk_set("koita", "Wisuda")
     with dissolve
-    nar "M36. Koita menerima ijazah. Kontrak jatuh tempo."
+    nar "Koita menerima ijazah. Kontrak jatuh tempo."
     sistem "Mari kita hitung. Apa yang sudah kau ubah dari takdirnya?"
-    $ _code = kk_resolve_ending()
-    call kk_show_ending(_code)
+    $ _slides = kk_epilogue()
+    $ _slide = 0
+    while _slide < len(_slides):
+        call kk_show_ending(_slides[_slide])
+        $ _slide += 1
     return
 
 label kk_show_ending(code):
