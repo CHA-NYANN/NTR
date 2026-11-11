@@ -1,5 +1,5 @@
 # Kouseikan — engine. Poin, ambang, jadwal, Force (abstrak), resolver ending.
-# Semua logika tersembunyi; pemain membaca lewat perilaku, bukan angka (âœ… 6C.4).
+# Semua logika tersembunyi; pemain membaca lewat perilaku, bukan angka (✅ 6C.4).
 
 init python:
 
@@ -109,7 +109,7 @@ init python:
                     kk_adj_body("utang_tidur",8)
 
     def kk_next_month():
-        # Timeskip (âœ… GDD 6N.1). Minggu-minggu berlalu; tubuh pulih sebagian.
+        # Timeskip (✅ GDD 6N.1). Minggu-minggu berlalu; tubuh pulih sebagian.
         kk_upgrade_world()
         month = kk_bulan
         while kk_bulan == month and not kk_graduated:
