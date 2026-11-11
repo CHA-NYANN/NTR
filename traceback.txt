@@ -1,0 +1,30 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/kk_flow.rpy", line 7, in script
+    nar "Kau mati di dunia nyata. Kini kau terbangun di tubuh orang lain, di dunia manga harem yang tak kau sukai."
+Exception: The say screen (or show_function) must return a Text object.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/kk_flow.rpy", line 7, in script
+    nar "Kau mati di dunia nyata. Kini kau terbangun di tubuh orang lain, di dunia manga harem yang tak kau sukai."
+  File "D:\Punya Patra\Aplikasi\renpy-8.0.3-sdk\renpy\ast.py", line 2573, in execute
+    Say.execute(self)
+  File "D:\Punya Patra\Aplikasi\renpy-8.0.3-sdk\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "D:\Punya Patra\Aplikasi\renpy-8.0.3-sdk\renpy\exports\sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+  File "D:\Punya Patra\Aplikasi\renpy-8.0.3-sdk\renpy\character.py", line 1455, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "D:\Punya Patra\Aplikasi\renpy-8.0.3-sdk\renpy\character.py", line 1106, in do_display
+    display_say(who,
+  File "D:\Punya Patra\Aplikasi\renpy-8.0.3-sdk\renpy\character.py", line 759, in display_say
+    raise Exception("The say screen (or show_function) must return a Text object.")
+Exception: The say screen (or show_function) must return a Text object.
+
+Windows-10-10.0.28000 AMD64
+Ren'Py 8.3.2.24090902
+Kouseikan 1.0
+Wed Nov 11 10:19:01 2026
