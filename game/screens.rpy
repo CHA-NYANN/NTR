@@ -156,8 +156,11 @@ screen kk_status():
                         for cid in KK_CHARS:
                             if cid in rel:
                                 text KK_CHARS[cid]["nama"] size 27 bold True color kk_bone
-                                text ("Afeksi · {}     Kepercayaan · {}".format(kk_lvl(kk_rel_get(cid,"aff")), kk_lvl(kk_rel_get(cid,"trust")))) style "kk_caption"
-                                text ("Keintiman · {}     Kecemburuan · {}     Ketakutan · {}".format(kk_lvl(kk_rel_get(cid,"intim")), kk_lvl(kk_rel_get(cid,"jeal")), kk_lvl(kk_rel_get(cid,"fear")))) style "kk_caption"
+                                if cid in kk_last_met:
+                                    $ days_since = kk_elapsed_days - kk_last_met[cid]
+                                    text ("Terakhir berbincang hari ini." if days_since == 0 else "Terakhir berbincang {} hari lalu.".format(days_since)) style "kk_caption"
+                                else:
+                                    text "Belum ada percakapan yang tercatat." style "kk_caption"
             use kk_link("Tutup", Hide("kk_status"))
 
 screen kk_explorer():

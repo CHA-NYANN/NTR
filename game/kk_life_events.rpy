@@ -88,10 +88,24 @@ init python:
         if result == ["E-SI-05"] and (kk_done_kindness()):
             result = ["E-SI-13"]
         # Katalog §1: jangan menggambarkan karier host masa depan setelah kematian.
-        if not any(kk_has(f) for f in ("romansa_dimulai","chiasa_yutaka_saja")):
+        miyuki = kk_miyuki_ending()
+        nagisa = kk_nagisa_ending()
+        partners = int(miyuki in ("E-MI-05","E-MI-13","E-MI-01")) + int(nagisa == "E-NA-01")
+        if partners:
+            result.append("E-HP-02" if partners > 1 else "E-HP-01")
+        elif not any(kk_has(f) for f in ("romansa_dimulai","chiasa_yutaka_saja")):
             result.append("E-HP-05")
-        if stage.get("nagisa",0) <= 2 and not kk_has("pengkhianatan_geng") and not kk_has("force_pernah"):
-            result.append("E-NA-09")
+        if nagisa:
+            result.append(nagisa)
+        if miyuki:
+            result.append(miyuki)
+        if result[0] in ("E-SI-01","E-SI-02","E-SI-03","E-SI-18"):
+            if kk_host == "yutaka" and kk_has("job_outside"):
+                result.append("E-YH-02")
+            elif kk_host == "yutaka" and kk_has("intern_abroad"):
+                result.append("E-YH-06")
+            elif kk_host == "chiasa" and "E-HP-05" in result:
+                result.append("E-CF-10")
         return result
 
     def kk_done_kindness():

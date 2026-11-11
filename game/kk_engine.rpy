@@ -1,4 +1,4 @@
-# Kouseikan â€” engine. Poin, ambang, jadwal, Force (abstrak), resolver ending.
+# Kouseikan — engine. Poin, ambang, jadwal, Force (abstrak), resolver ending.
 # Semua logika tersembunyi; pemain membaca lewat perilaku, bukan angka (âœ… 6C.4).
 
 init python:
@@ -145,7 +145,7 @@ init python:
             "chiasa": {0:"Sarapan dgn Koita",1:"Studio Seni",2:"Studio (Haruka)",3:"Menggambar",4:"Proyek (01:00)",5:"Tidur"},
         }
         slot = store.kk_slot
-        loc = base.get(npc, {}).get(slot, "â€”")
+        loc = base.get(npc, {}).get(slot, "—")
         # lapis 4: tahap rute menggeser jadwal
         st = store.stage.get(npc, 0)
         if npc == "moeka" and st >= 3 and slot in (1,2):
@@ -161,12 +161,12 @@ init python:
 
     # ---- Force: abstrak, non-operasional ----
     # Aksi TIDAK ditampilkan (layar hitam). Fungsi ini hanya memasang akibat.
-    # Lihat docs/Alur_Cabang/09_Force_dan_Kriminal.md Â§2.
+    # Lihat docs/Alur_Cabang/09_Force_dan_Kriminal.md §2.
     KK_FORCE_LAPOR = {"miyuki":30,"nagisa":65,"harumi":20,"moeka":20,"shiori":90,"chiasa":55,"koita":20}
     def kk_force_consequences(victim):
         kk_flag("force_" + victim)
         kk_flag("force_pernah")
-        # deviasi: korban lepas dari Koita (Tinggi) â€” dihitung Sistem
+        # deviasi: korban lepas dari Koita (Tinggi) — dihitung Sistem
         store.deviasi += 22
         # romansa korban dgn pelaku terkunci
         kk_flag("lock_romance_" + victim)
@@ -175,24 +175,27 @@ init python:
         kk_rel(victim, "trust", -60)
         # peluang terbongkar (ditentukan watak + saksi), disimpan untuk resolver
         store.pts["lapor_" + victim] = KK_FORCE_LAPOR.get(victim, 40)
-        # jalur bersih butuh semua kecurigaan tetap rendah (Â§10) â€” ditandai belum tercemar
+        # jalur bersih butuh semua kecurigaan tetap rendah (§10) — ditandai belum tercemar
         if "force_bersih_" + victim not in store.flags:
             kk_flag("force_bersih_" + victim)  # masih bersih; event lain bisa mencabut
 
     # ---- resolver ending (nasib pemain) ----
     def kk_resolve_ending():
-        # ending tersembunyi: celah sistem (Â§11)
+        # Hitung hasil akhir sekali per tokoh, bukan setiap kunjungan/klik.
+        # Penyetelan prototipe: dampak besar 15–25 (Sistem_Cabang §2.2).
+        score = deviasi + kk_orbit_delta()
+        # ending tersembunyi: celah sistem (§11)
         if store.koita_bebas_naskah:
             return "E-SI-18"
-        # Chiasa Ã— Yutaka saja = mati
-        if store.kk_host == "chiasa" and kk_has("chiasa_yutaka_saja") and store.deviasi < 20:
+        # Chiasa × Yutaka saja = mati
+        if store.kk_host == "chiasa" and kk_has("chiasa_yutaka_saja") and score < 20:
             return "E-SI-06"
         # ambang tersembunyi (prototipe: 45)
-        if store.deviasi >= 45:
+        if score >= 45:
             rap = store.sikap_sistem.get("selidik",0)
-            if store.deviasi >= 75 and rap >= 2:
+            if score >= 75 and rap >= 2:
                 return "E-SI-03"
-            if store.deviasi >= 75:
+            if score >= 75:
                 return "E-SI-01"
             return "E-SI-02"
         # gagal

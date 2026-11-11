@@ -35,6 +35,12 @@ init -4 python:
     KK_MILESTONE_MAP = [
         ("N01", 1, "d1", "Gedung Arsitektur", "nagisa"),
         ("Mi01", 1, "d1", "Taman Kampus", "enter"),
+        ("Mi07", 7, "d6", "Rumah Sakit Tachibana", "miyuki"),
+        ("Mi09", 9, "d6", "Rumah Sakit Tachibana", "miyuki"),
+        ("Mi18", 21, "d6", "Rumah Sakit Tachibana", "miyuki"),
+        ("Mi25", 33, "d6", "Rumah Sakit Tachibana", "miyuki"),
+        ("N22", 33, "d2", "Rumah Sakurajima", "nagisa"),
+        ("Y17", 31, "d3", "Apartemen Yutaka", "host"),
         ("N04", 5, "d7", "Tepi Sungai", "nagisa"),
         ("N06", 7, "d1", "Gedung Arsitektur", "nagisa"),
         ("N03", 3, "d1", "Gedung Arsitektur", "nagisa"),
@@ -43,7 +49,8 @@ init -4 python:
 
     def kk_pending_enter(distrik, lokasi):
         return [m[0] for m in KK_MILESTONE_MAP
-                if m[4] == "enter" and kk_daily_place("miyuki") == lokasi and m[1] == store.kk_bulan and m[2] == distrik
+                if ((m[4] == "enter" and kk_daily_place("miyuki") == lokasi) or
+                    (m[4] == "host" and kk_host == "yutaka")) and m[1] == store.kk_bulan and m[2] == distrik
                 and m[3] == lokasi and kk_window(m[0]) and not kk_done(m[0]) and m[0] not in kk_missed]
 
     def kk_pending_talk(cid, distrik, lokasi):

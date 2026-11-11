@@ -54,6 +54,12 @@ init python:
         for eid, month, district, loc, trigger in KK_MILESTONE_MAP:
             if old_month == month and kk_bulan != month and not kk_done(eid) and eid not in kk_missed:
                 store.kk_missed.append(eid)
+        if old_month != kk_bulan and kk_bulan >= 7:
+            kk_adj("omiai_takeru", 3)
+            if old_month in (9,21) and not kk_done("Mi09" if old_month == 9 else "Mi18"):
+                kk_adj("omiai_takeru", 5)
+            if old_month == 33 and not kk_done("Mi25") and kk_get("omiai_takeru") >= 90:
+                kk_flag("hayase_engaged")
         if old_month == 3 and kk_bulan == 4 and "N03" in kk_missed:
             store.kk_npc_rel["yuuto_nagisa_studio"] = "membantu maket"
         if kk_bulan == 1:
@@ -64,6 +70,7 @@ init python:
             del store.kk_due["koita_reply"]
             kk_flag("nagisa_koita_ditolak")
             store.kk_npc_rel["nagisa_koita"] = "goyah"
+            store.kk_npc_rel["harapan_koita"] = min(44, kk_npc_rel.get("harapan_koita",70))
         if kk_elapsed_days == 7 and not kk_has("q01_complete"):
             kk_flag("q01_expired")
         if kk_elapsed_days % 7 == 0:
@@ -98,6 +105,8 @@ init python:
         return kk_bulan == 1 and kk_hari_n in (19,20) and kk_slot in (1,2)
 
     def kk_window(eid):
+        if eid in ("N22","Mi09","Mi18","Mi25"):
+            return kk_hari_n in (24,25) and (eid != "Mi25" or kk_get("omiai_takeru") >= 70)
         if eid == "N01":
             return kk_hari_n == 7 and kk_slot in (1,2)
         if eid == "Mi01":
@@ -118,6 +127,10 @@ init python:
             return "Tepi Sungai"
         if cid == "miyuki" and kk_bulan in (4,16,28) and slot == 4 and week < 5:
             return "Rumah Sakit Tachibana"
+        if cid == "miyuki" and kk_bulan in (9,21,33) and kk_hari_n in (24,25) and slot == 3:
+            return "Rumah Sakit Tachibana"
+        if cid == "nagisa" and kk_bulan == 33 and kk_hari_n in (24,25) and slot == 3:
+            return "Rumah Sakurajima"
         if cid == "moeka" and stage.get(cid,0) >= 3 and slot in (1,2):
             return None
         if cid == "miyuki" and stage.get(cid,0) >= 2 and slot in (3,4):
@@ -155,3 +168,7 @@ init python:
 
 default kk_rel_base = {}
 
+
+label after_load:
+    $ kk_upgrade_world()
+    return
