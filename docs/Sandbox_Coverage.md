@@ -9,7 +9,7 @@ Baseline GitHub 74447c1. Matriks ini mengukur jalur pemain. Explorer pengembang 
 | Fondasi | Kalender 36 bulan, konteks lokasi, kalender NPC, biaya aktivitas, memori pertemuan, penurunan relasi dan antrean akibat. Sebelumnya pemicu bisa memaksa NPC hadir dan hari tidak otomatis mengganti bulan. | Kondisi awal kedua host dan kalender diuji. Migrasi save lama tersedia tetapi belum diuji dengan save rilis pemain. Sembilan lapisan jadwal dan ekonomi belum lengkap. Janji pertemuan mengubah lokasi, dan ketidakhadiran pemain memengaruhi kepercayaan bila NPC datang. |
 | Vertical slice | N01, Mi01, N03, Mi03 memiliki adegan, pilihan, dan pengaruh ke pertemuan selanjutnya. | Driver menjalankan cabang A pada kedua host. Kalender dipercepat setelah pertemuan pertama. |
 | Konten | Nagisa, Miyuki dan tawaran kerja Yutaka mendapat pertemuan lanjutan. N04-B dapat mengubah keadaan Nagisa/Koita dua minggu kemudian meski pemain absen. | Driver menguji efek N04-B melalui pencatatan pilihan. Belum menjalankan semua alternatif adegan. Dialog penghubung baru berstatus draft editorial. |
-| Ending | Evaluasi saat kelulusan dan epilog berlapis. | E-SI-13 diperiksa pada akhir skenario. Referensi kode lain pada resolver belum membuktikan semua prasyarat dapat dibentuk lewat dunia normal. |
+| Ending | Evaluasi saat kelulusan dan epilog berlapis. | E-SI-13 dan E-MI-04 diperiksa pada akhir skenario. Referensi kode lain pada resolver belum membuktikan semua prasyarat dapat dibentuk lewat dunia normal. |
 | QA | Dari folder proyek jalankan `python tests/run_living.py PATH_SDK` dengan Ren'Py 8.3.2 Windows/Linux x86-64. Driver membuat proyek dan save temporer. | Dijalankan di Windows. Lint, dua host, tindakan, perjalanan, simpan/muat, rollback, kesempatan terlewat dan akibat tertunda. Belum ada inspeksi visual tiga resolusi atau benchmark satu sesi penuh tiga tahun. |
 
 ## Pedoman playtest
@@ -92,7 +92,7 @@ Status implementasi dan bukti uji merupakan dua kolom terpisah. **implemented** 
 | Y14 | data-only | untested |
 | Y15 | data-only | untested |
 | Y16 | data-only | untested |
-| Y17 | partial | untested |
+| Y17 | partial | Cabang A, Yutaka; tertutup untuk Chiasa |
 | Y18 | data-only | untested |
 | Y19 | data-only | untested |
 | Mo01 | data-only | untested |
@@ -200,7 +200,7 @@ Status implementasi dan bukti uji merupakan dua kolom terpisah. **implemented** 
 | Mi04 | data-only | untested |
 | Mi05 | partial | untested |
 | Mi06 | data-only | untested |
-| Mi07 | partial | untested |
+| Mi07 | partial | Cabang A, dua host |
 | Mi08 | data-only | untested |
 | Mi09 | partial | untested |
 | Mi10 | data-only | untested |
@@ -218,7 +218,7 @@ Status implementasi dan bukti uji merupakan dua kolom terpisah. **implemented** 
 | Mi22 | data-only | untested |
 | Mi23 | data-only | untested |
 | Mi24 | data-only | untested |
-| Mi25 | partial | untested |
+| Mi25 | partial | Cabang A, dua host |
 | Mi26 | data-only | untested |
 | Mi27 | data-only | untested |
 
@@ -366,7 +366,7 @@ Status implementasi dan bukti uji merupakan dua kolom terpisah. **implemented** 
 | E-MI-01 | partial | untested |
 | E-MI-02 | data-only | untested |
 | E-MI-03 | data-only | untested |
-| E-MI-04 | partial | untested |
+| E-MI-04 | partial | Sesudah Mi25-A, dua host |
 | E-MI-05 | partial | untested |
 | E-MI-06 | data-only | untested |
 | E-MI-07 | data-only | untested |
