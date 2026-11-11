@@ -1,10 +1,11 @@
 # Komponen UI Kouseikan. Kanvas logis 1920 × 1080.
-screen kk_link(caption, operation, width=None, active=False):
+screen kk_link(caption, operation, width=None, active=False, first=False):
     textbutton caption:
         style "kk_button"
         text_style "kk_button_text"
         action operation
         selected active
+        default_focus first
         xsize width
 
 screen kk_set(char, loc=""):
@@ -93,11 +94,11 @@ screen kk_choice_panel(rows, heading):
         pos (kk_margin, 128) spacing kk_gap
         text heading style "kk_heading" xmaximum 1680
         viewport:
-            xysize (1600, 700) mousewheel True draggable True scrollbars "vertical"
+            xysize (1600, 700) mousewheel True draggable renpy.variant("touch") scrollbars "vertical"
             vbox:
                 spacing 12
-                for caption, operation, chosen in rows:
-                    use kk_link(caption, operation, 1500, chosen)
+                for index, (caption, operation, chosen) in enumerate(rows):
+                    use kk_link(caption, operation, 1500, chosen, index == 0)
 
 screen choice(items):
     use kk_choice_panel([(i.caption, i.action, i.chosen) for i in items], "Pilihanmu")
@@ -165,7 +166,7 @@ screen kk_status():
                     text "Pola pilihanmu" style "kk_caption"
                     text kk_persona_label() size 26
                 viewport:
-                    xysize (1000, 475) mousewheel True draggable True scrollbars "vertical" arrowkeys True
+                    xysize (1000, 475) mousewheel True draggable renpy.variant("touch") scrollbars "vertical" arrowkeys True
                     vbox:
                         spacing 16
                         for cid in KK_CHARS:
@@ -188,7 +189,7 @@ screen kk_explorer():
         if "yutaka" in KK_EV_BY_CHAR:
             use kk_link("Kisaragi Yutaka", SetScreenVariable("cur", "yutaka"), 510, cur == "yutaka")
     viewport:
-        pos (650, 176) xysize (1160, 740) mousewheel True draggable True scrollbars "vertical"
+        pos (650, 176) xysize (1160, 740) mousewheel True draggable renpy.variant("touch") scrollbars "vertical"
         vbox:
             spacing 8
             for event in KK_EV_BY_CHAR.get(cur, []):
@@ -230,7 +231,7 @@ screen kk_gallery():
         for group in groups:
             use kk_link(group, [SetScreenVariable("grp", group), SetScreenVariable("code", None)], active=group == grp)
     viewport:
-        pos (kk_margin, 250) xysize (740, 650) mousewheel True draggable True scrollbars "vertical"
+        pos (kk_margin, 250) xysize (740, 650) mousewheel True draggable renpy.variant("touch") scrollbars "vertical"
         vbox:
             spacing 8
             for entry in entries:
