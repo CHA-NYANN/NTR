@@ -36,6 +36,7 @@ init -4 python:
     KK_DISTRICT_LOCS["onsen"] = ["Lobi ryokan", "Dapur ryokan", "Ruang bersama ryokan", "Taman luar ryokan"]
     KK_MILESTONE_MAP = [
         ("H01", 1, "d1", "Gedung Sains & Lab", "harumi"),
+        ("H03", 4, "d1", "Asrama Putri", "harumi"),
         ("H08", 10, "d7", "Kuil", "harumi"),
         ("H09", 13, "d1", "Gedung Sains & Lab", "harumi"),
         ("Mo01", 1, "d1", "Taman Kampus", "moeka"),
@@ -207,7 +208,7 @@ screen kk_world_location(distrik):
                         text lokasi size 26 yalign .5
     fixed:
         pos (kk_margin, 980)
-        use kk_link("‹ Kembali ke peta", Return("back"))
+        use kk_link("‹ Pulang ke stasiun" if distrik == "onsen" else "‹ Kembali ke peta", Return("back"))
 
 
 # ══════════════════════════════════════════════════════════════════════════
@@ -230,40 +231,43 @@ screen kk_location_view(distrik, lokasi):
         text KK_LOC_AMBIENCE.get(lokasi, "Tempat biasa. Dunia tetap berjalan di tempat lain.") style "kk_caption" xmaximum 760
 
     # Siapa di sini + aktivitas (kanan)
-    vbox:
-        pos (980, 150) spacing 28 xsize 820
+    viewport:
+        pos (980, 150) xysize (860, 780)
+        mousewheel True draggable renpy.variant("touch") arrowkeys True scrollbars "vertical"
         vbox:
-            spacing 10
-            text "SIAPA DI SINI" size 20 color kk_dim font kk_mono
-            if present:
-                for cid in present:
-                    $ meta = KK_CHARS[cid]
+            spacing 28 xsize 820
+            vbox:
+                spacing 10
+                text "SIAPA DI SINI" size 20 color kk_dim font kk_mono
+                if present:
+                    for cid in present:
+                        $ meta = KK_CHARS[cid]
+                        button:
+                            style "kk_button" xysize (800, 78) action Return(("talk", cid))
+                            hbox:
+                                yalign .5 spacing 18
+                                add Solid(meta["warna"]) xysize (10, 44) yalign .5
+                                text meta["nama"] size 25 bold True yalign .5
+                else:
+                    text "Tidak ada orang yang kau kenal di sini sekarang." style "kk_caption"
+            vbox:
+                spacing 10
+                text "YANG BISA KAU LAKUKAN" size 20 color kk_dim font kk_mono
+                for aid, a in acts:
                     button:
-                        style "kk_button" xysize (800, 78) action Return(("talk", cid))
+                        style "kk_button" xysize (800, 72) action Return(("act", aid)) sensitive a["ok"]()
                         hbox:
-                            yalign .5 spacing 18
-                            add Solid(meta["warna"]) xysize (10, 44) yalign .5
-                            text meta["nama"] size 25 bold True yalign .5
-            else:
-                text "Tidak ada orang yang kau kenal di sini sekarang." style "kk_caption"
-        vbox:
-            spacing 10
-            text "YANG BISA KAU LAKUKAN" size 20 color kk_dim font kk_mono
-            for aid, a in acts:
-                button:
-                    style "kk_button" xysize (800, 72) action Return(("act", aid)) sensitive a["ok"]()
-                    hbox:
-                        yalign .5 spacing 16
-                        text a["label"] size 24 bold True yalign .5 xsize 300
-                        text a["desc"] style "kk_caption" yalign .5
-            if lokasi == "Stasiun Kouseikan-mae" and kk_onsen_dates():
-                use kk_link("Berangkat ke penginapan onsen", Return(("travel", None)), 800)
-            if distrik == "onsen":
-                use kk_link("Duduk sejenak di penginapan", Return(("rest", None)), 800)
-            if lokasi == home:
-                use kk_link("Beristirahat di kamar", Return(("sleep", None)), 800)
-            if not acts and lokasi != home and distrik != "onsen" and not (lokasi == "Stasiun Kouseikan-mae" and kk_onsen_dates()):
-                text "Tidak ada aktivitas khusus di sini." style "kk_caption"
+                            yalign .5 spacing 16
+                            text a["label"] size 24 bold True yalign .5 xsize 300
+                            text a["desc"] style "kk_caption" yalign .5
+                if lokasi == "Stasiun Kouseikan-mae" and kk_onsen_dates():
+                    use kk_link("Berangkat ke penginapan onsen", Return(("travel", None)), 800)
+                if distrik == "onsen":
+                    use kk_link("Duduk sejenak di penginapan", Return(("rest", None)), 800)
+                if lokasi == home:
+                    use kk_link("Beristirahat di kamar", Return(("sleep", None)), 800)
+                if not acts and lokasi != home and distrik != "onsen" and not (lokasi == "Stasiun Kouseikan-mae" and kk_onsen_dates()):
+                    text "Tidak ada aktivitas khusus di sini." style "kk_caption"
     fixed:
         pos (kk_margin, 980)
         use kk_link("‹ Pergi dari sini", Return(("leave", None)))

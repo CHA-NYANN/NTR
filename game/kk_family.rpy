@@ -49,6 +49,8 @@ init python:
             score += 25
         if kk_nagisa_ending() == "E-NA-01":
             score += 25
+        if kk_harumi_ending() == "E-HA-01":
+            score += 25
         return score
 
     def kk_miyuki_ending():

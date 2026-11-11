@@ -80,7 +80,11 @@ init python:
             del store.kk_due["koita_reply"]
             kk_flag("nagisa_koita_ditolak")
             store.kk_npc_rel["nagisa_koita"] = "goyah"
+            if kk_npc_rel.get("harapan_koita",70) > 44:
+                store.kk_npc_rel["hari_harapan_turun"] = kk_elapsed_days
             store.kk_npc_rel["harapan_koita"] = min(44, kk_npc_rel.get("harapan_koita",70))
+        if kk_npc_rel.get("hari_harapan_turun") == kk_elapsed_days - 1 and not kk_done("N-D03") and "N-D03" not in kk_missed:
+            store.kk_missed.append("N-D03")
         if kk_elapsed_days == 7 and not kk_has("q01_complete"):
             kk_flag("q01_expired")
         if kk_elapsed_days % 7 == 0:
@@ -136,6 +140,8 @@ init python:
     def kk_window(eid):
         if eid == "H01":
             return kk_is_hanami_date() and kk_slot == 0
+        if eid == "H03":
+            return kk_slot == 3
         if eid == "H08":
             return kk_hari_n <= 3
         if eid in ("Mo01", "S01"):
@@ -158,6 +164,8 @@ init python:
         # Jadwal verbal tanpa lokasi tertentu menghasilkan None.
         week = kk_date().weekday()
         slot = kk_slot
+        if cid == "nagisa" and kk_npc_rel.get("hari_harapan_turun") == kk_elapsed_days and slot == 3:
+            return "Taman Lingkungan"
         if cid == "harumi" and kk_is_hanami_date() and slot == 0:
             return "Gedung Sains & Lab"
         if cid == "harumi" and kk_bulan == 10 and kk_hari_n <= 3 and slot in (0,1):

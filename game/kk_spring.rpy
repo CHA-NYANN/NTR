@@ -108,3 +108,42 @@ init 1 python:
     _hook("N02-B", lambda: kk_rel("nagisa", "trust", -5))
     _hook("N02-C", lambda: kk_rel("nagisa", "trust", 5))
 
+
+# Event dinamis Nagisa, Alur_Cabang/02. Lokasi ayunan mengikuti harapan
+# Nagisa pada Koita yang turun hari ini, termasuk saat pemain sedang jauh.
+label kkscene_N_D03:
+    nagisa "Ayunan sebelah kosong. Kalau mau duduk, duduk saja."
+    menu:
+        "Duduk di ayunan sebelah.":
+            $ kk_record_choice("N-D03","A")
+            nar "Kau duduk. Sejenak hanya bunyi rantai ayunan yang terdengar."
+        "Tawarkan untuk memanggil Koita.":
+            $ kk_record_choice("N-D03","B")
+            if kk_daily_place("koita") == "Taman Lingkungan":
+                koita "Nagisa? Kau mau bicara?"
+            else:
+                nar "Koita tidak ada di taman. Nagisa tetap memandang ke depan."
+        "Beri dia ruang.":
+            $ kk_record_choice("N-D03","C")
+            nar "Kau meninggalkan ayunan di sebelahnya kosong."
+    return
+
+label kkscene_N_D08:
+    nagisa "Aku putar ulang pertandingan di penginapan. Di sini kau bisa menang. Kenapa kau berhenti?"
+    menu:
+        "Akui kau sengaja mengalah.":
+            $ kk_record_choice("N-D08","A")
+            nagisa "Aku mau menang karena bisa. Lain kali ingat itu."
+        "Sangkal bahwa kau sengaja kalah.":
+            $ kk_record_choice("N-D08","B")
+            nar "Ia memutar bagian yang sama sekali lagi."
+        "Tantang dia lagi dan mainlah dengan serius.":
+            $ kk_record_choice("N-D08","C")
+            nagisa "Nah. Kali ini jangan menahan diri."
+    return
+
+init 1 python:
+    _hook("N-D03-A", lambda: kk_adj("kelekatan_nagisa",5))
+    _hook("N-D08-A", lambda: (kk_rel("nagisa","trust",5), kk_adj("gengsi_nagisa",-5)))
+    _hook("N-D08-B", lambda: kk_rel("nagisa","trust",-5))
+    _hook("N-D08-C", lambda: kk_rel("nagisa","trust",5))

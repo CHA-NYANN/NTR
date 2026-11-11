@@ -113,6 +113,8 @@ init python:
         miyuki = kk_miyuki_ending()
         nagisa = kk_nagisa_ending()
         partners = int(miyuki in ("E-MI-05","E-MI-13","E-MI-01")) + int(nagisa == "E-NA-01")
+        harumi = kk_harumi_ending()
+        partners += int(harumi == "E-HA-01")
         if partners:
             result.append("E-HP-02" if partners > 1 else "E-HP-01")
         elif not any(kk_has(f) for f in ("romansa_dimulai","chiasa_yutaka_saja")):
@@ -121,6 +123,8 @@ init python:
             result.append(nagisa)
         if miyuki:
             result.append(miyuki)
+        if harumi:
+            result.append(harumi)
         if result[0] in ("E-SI-01","E-SI-02","E-SI-03","E-SI-18"):
             if kk_host == "yutaka" and kk_has("job_outside"):
                 result.append("E-YH-02")
@@ -142,6 +146,16 @@ init python:
     def kk_social_event(cid, place):
         if kk_daily_place(cid) != place:
             return None
+        if cid == "nagisa":
+            if (place == "Taman Lingkungan" and kk_slot == 3 and not kk_done("N-D03")
+                    and kk_npc_rel.get("hari_harapan_turun") == kk_elapsed_days):
+                return "N-D03"
+            if (not kk_done("N-D08") and kk_get("gengsi_nagisa",70) >= 60 and
+                    any(c["ev"] == "N02" and c["key"] == "B" for c in choices_log)):
+                return "N-D08"
+        if cid == "harumi" and place == "Asrama Putri" and kk_slot == 3 and not kk_done("H-D05"):
+            if any(c["ev"] == "H03" and c["key"] == "C" for c in choices_log):
+                return "H-D05"
         if cid == "harumi" and place == "Asrama Putri" and kk_slot == 4 and kk_minute >= 180:
             if kk_get("kejelasan_harumi") >= 30 and not kk_done("H-D01"):
                 return "H-D01"
@@ -156,6 +170,13 @@ init python:
 label kk_social_scene(eid):
     # Draft editorial dari pemicu dan pilihan katalog dinamis.
     if kk_done(eid):
+        return
+    if eid in ("N-D03","N-D08"):
+        call expression ("kkscene_" + eid.replace("-","_"))
+        $ kk_minutes(10)
+        return
+    if eid == "H-D05":
+        call kk_second_meal
         return
     if eid == "H-D01":
         call kk_dorm_tea

@@ -74,3 +74,44 @@ init 1 python:
     _hook("H-D01-B", lambda: kk_adj("kejelasan_harumi",10))
     _hook("H-D01-C", lambda: kk_adj("kejelasan_harumi",5))
 
+
+label kkscene_H03:
+    call kk_scene_enter("harumi", "Asrama Putri")
+    harumi "Aku sudah mengikuti urutannya. Rasanya tetap aneh. Coba sedikit?"
+    menu:
+        "Habiskan bagian yang ia tawarkan.":
+            $ kk_record_choice("H03","A")
+            harumi "Sampai habis? Aku masih belum yakin dengan rasanya."
+        "Jelaskan dengan jujur bagian mana yang terasa aneh.":
+            $ kk_record_choice("H03","B")
+            harumi "Berarti ada yang perlu kuubah. Terima kasih sudah mencobanya."
+        "Tawarkan membuat percobaan berikutnya bersama.":
+            $ kk_record_choice("H03","C")
+            harumi "Dua orang untuk satu percobaan. Kalau begitu kau cicipi dulu, sebelum kutambahkan lagi."
+    return
+
+label kk_second_meal:
+    harumi "Aku mengulang yang kita masak bersama. Mau coba sekarang?"
+    menu:
+        "Tunjukkan rasa yang kali ini lebih seimbang.":
+            $ kk_record_choice("H-D05","A")
+            harumi "Kau juga bisa merasakan bedanya. Aku senang."
+        "Katakan dengan jujur apa yang masih kurang.":
+            $ kk_record_choice("H-D05","B")
+            harumi "Aku ingin mencobanya lagi. Rupanya aku menyukai bagian ini."
+        "Ajak dia memasak bersama lagi.":
+            $ kk_record_choice("H-D05","C")
+            harumi "Boleh. Aku lebih senang waktu kita membuatnya bersama."
+    $ kk_minutes(10)
+    return
+
+init 1 python:
+    _hook("H-D05-A", lambda: kk_adj("kejelasan_harumi",10))
+    _hook("H-D05-B", lambda: kk_adj("kejelasan_harumi",5))
+    _hook("H-D05-C", lambda: kk_adj("kejelasan_harumi",10))
+
+    def kk_harumi_ending():
+        if (kk_get("kejelasan_harumi") >= 60 and kk_has("harumi_dibantu_menamai_emosi")
+                and not kk_has("force_pernah") and not kk_has("lock_romance_harumi")):
+            return "E-HA-01"
+        return None
