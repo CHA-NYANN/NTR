@@ -116,7 +116,7 @@ screen kk_route_select():
         text "Rute awal, bukan batas orientasi." style "kk_caption"
         hbox:
             spacing kk_gap
-            for host, name, route, detail, tint in [("yutaka","Kisaragi Yutaka","Male Route","Host dominan, bisa BL","#93b6df"), ("chiasa","Amamiya Chiasa","Female Route","Host, kebanyakan yuri",kk_accent)]:
+            for host, name, route, detail, tint in [("yutaka","Kisaragi Yutaka","Male Route","Sahabat Koita sejak kecil.","#93b6df"), ("chiasa","Amamiya Chiasa","Female Route","Adik tiri Koita.",kk_accent)]:
                 button:
                     style "kk_button" xysize (780, 300) padding (36, 36)
                     action Return(host)
@@ -126,21 +126,6 @@ screen kk_route_select():
                         text route size 24 color tint
                         text name size 46 bold True
                         text detail style "kk_caption"
-
-screen kk_hub_menu():
-    add kk_ink
-    use kk_hud
-    vbox:
-        xpos kk_margin ypos 152 spacing kk_gap
-        text "Kampus Kouseikan" style "kk_heading"
-        text "Pilih jalur atau jelajahi event yang tersedia." style "kk_caption"
-        for title, sub, target in [("Jalur Miyuki", "Perpustakaan Malam  /  Vila", "miyuki"), ("Jalur Nagisa", "Maket Hujan  /  Yuuto", "nagisa"), ("Jelajah cabang", "Pilih karakter dan event", "explore"), ("Evaluasi akhir", "Pintasan playtest ke M36", "eval")]:
-            button:
-                style "kk_button" xysize (1480, 106) action Return(target)
-                hbox:
-                    yalign .5 spacing 36
-                    text title size 31 bold True xsize 450
-                    text sub style "kk_caption" yalign .5
 
 screen kk_status():
     modal True
@@ -185,7 +170,7 @@ screen kk_explorer():
         pos (kk_margin, 176) spacing 8
         for rid, rnama, rsub in KK_ROUTES:
             $ ck = "koita" if rid == "koita_bl" else rid
-            use kk_link(rnama, SetScreenVariable("cur", ck), 510, cur == ck)
+            use kk_link(KK_CHARS[ck]["nama"], SetScreenVariable("cur", ck), 510, cur == ck)
         if "yutaka" in KK_EV_BY_CHAR:
             use kk_link("Kisaragi Yutaka", SetScreenVariable("cur", "yutaka"), 510, cur == "yutaka")
     viewport:
@@ -260,7 +245,6 @@ screen main_menu():
                 text_color kk_ink text_hover_color kk_ink text_bold True
             use kk_link("Lanjutkan", Continue(), 560)
             use kk_link("Muat", ShowMenu("load"), 560)
-            use kk_link("Galeri ending", ShowMenu("kk_gallery"), 560)
             use kk_link("Pengaturan", ShowMenu("preferences"), 560)
             use kk_link("Keluar", Quit(confirm=True), 560)
 

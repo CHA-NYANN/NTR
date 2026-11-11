@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 15: 'alpha' is not a keyword argument or valid child of the text statement.
-    size 164 bold True color meta["warna"] alpha 0.12
-                                                ^
-
-File "game/screens.rpy", line 101: 'bottom_margin' is not a keyword argument or valid child of the text statement.
-    text "PILIH" size 15 color kk_dim font kk_mono bottom_margin 10
-                                                                ^
+File "game/kk_scenes.rpy", line 88: end of line expected.
+    miyuki "Kau... membelikan ini? Kau tidak perlu—" "...Terima kasih. Sungguh."
+                                                     ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090902
-Wed Nov 11 10:00:35 2026
+Wed Nov 11 15:18:38 2026

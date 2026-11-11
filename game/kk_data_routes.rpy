@@ -38,11 +38,14 @@ init python:
     _hook("Mi05-B", lambda: kk_rel("miyuki","intim",4))
     # Mi05-C → jalur Force (ditangani KK_FORCE_CHOICES)
 
-    # --- Nagisa prolog ---
-    # Kepribadian host: tidak dipilih di menu, muncul dari pilihan ini sendiri.
+    # --- Nagisa ---
+    # Kepribadian host: tidak dipilih di menu, muncul dari pilihan dalam adegan.
     _hook("N01-A", lambda: (kk_rel("nagisa","aff",3), kk_adj("kelekatan_nagisa",4), kk_persona_nudge("agresif")))
     _hook("N01-B", lambda: (kk_rel("nagisa","aff",-2), kk_persona_nudge("dingin")))
     _hook("N01-C", lambda: (kk_rel("nagisa","intim",3), kk_rel("nagisa","jeal",3), kk_persona_nudge("genit")))
+    _hook("N03-A", lambda: (kk_adj("kelekatan_nagisa",8), kk_rel("nagisa","trust",5), kk_stage("nagisa",1), kk_persona_nudge("ramah")))
+    _hook("N03-B", lambda: (kk_rel("nagisa","aff",2),))
+    _hook("N03-C", lambda: (kk_rel("nagisa","aff",-4), kk_persona_nudge("dingin")))
 
     def kk_run_hook(evid, key):
         h = KK_HOOKS.get(evid + "-" + key)

@@ -32,3 +32,7 @@ Prototipe Windows 64-bit, Ren’Py 8.3.2. Penguji dewasa dapat memainkan satu pu
 - ZIP Windows dibangun dari source dan aset produksi. Integritas CRC diperiksa, lalu executable hasil ekstraksi memulai renderer. Pengujian alur lengkap dilakukan pada salinan source dengan driver uji terpisah. Paket distribusi tidak memuat driver, save pemain, atau log pengembangan.
 - Pengujian mencakup alur prototipe dan sampel isi galeri. Belum semua 190 event, 128 data event dinamis, atau 220 ending dimainkan. Peta distrik, sprite karakter final, galeri CG/replay lengkap dan seluruh syarat ending tetap pekerjaan desain/konten terpisah. Uji kegunaan oleh pemain eksternal masih diperlukan.
 
+## Catatan susulan — navigasi dunia (setelah playtest ini)
+
+Instruksi langkah 3 dan 5 di atas ("Di hub kampus...", "Pilih jalur Miyuki atau Nagisa", "Galeri di menu utama") merujuk hub menu lama. Arsitektur navigasi diganti sesudah playtest ini: **distrik → lokasi** menggantikan daftar jalur datar, event ditemukan dengan berjalan ke lokasi yang tepat pada bulan yang tepat (bukan dipanggil dari menu), dan Galeri Ending dipindah dari menu utama ke panel **Alat Uji** sesuai risiko spoiler yang sudah dicatat di atas. Detail di [PROTOTIPE_RENPY.md](../PROTOTIPE_RENPY.md). Temuan UI/QA di dokumen ini (kanvas, token, viewport, keyboard focus) tidak berubah dan tetap jadi dasar tampilan.
+

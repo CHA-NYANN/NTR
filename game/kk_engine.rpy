@@ -70,6 +70,8 @@ init python:
     # ---- log pilihan ----
     def kk_log(evid, key, note=""):
         store.choices_log.append({"ev":evid, "key":key, "note":note})
+    def kk_done(evid):
+        return any(l["ev"] == evid for l in store.choices_log)
 
     # ---- waktu ----
     def kk_month():
@@ -81,13 +83,26 @@ init python:
         return store.KK_SLOTS[store.kk_slot]
     def kk_advance(slots=1):
         # maju slot; tubuh menanggung. Pemain tak wajib tidur.
+        # Overflow slot = hari baru, BUKAN bulan baru. Bulan maju lewat timeskip eksplisit
+        # (kk_next_month) atau peristiwa cerita — agar bulan tidak melesat karena aktivitas harian.
         for _ in range(slots):
             store.kk_slot += 1
             kk_adj_body("energi", -6)
             kk_adj_body("lapar", +5)
             if store.kk_slot >= len(store.KK_SLOTS):
                 store.kk_slot = 0
-                store.kk_bulan = min(36, store.kk_bulan + 1)
+                store.kk_hari_n += 1
+                kk_adj_body("utang_tidur", +8)  # tidak tidur semalaman
+
+    def kk_next_month():
+        # Timeskip (✅ GDD 6N.1). Minggu-minggu berlalu; tubuh pulih sebagian.
+        store.kk_bulan = min(36, store.kk_bulan + 1)
+        store.kk_slot = 0
+        store.kk_hari_n = 1
+        store.body["energi"] = min(100, store.body.get("energi", 0) + 60)
+        store.body["utang_tidur"] = max(0, store.body.get("utang_tidur", 0) - 40)
+        store.body["lapar"] = 10
+        return store.kk_bulan
     def kk_adj_body(name, delta):
         store.body[name] = _clamp(store.body.get(name, 0) + delta)
         return store.body[name]

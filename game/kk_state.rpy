@@ -12,6 +12,8 @@ default kk_persona = {"ramah":0, "dingin":0, "genit":0, "agresif":0, "manipulati
 default kk_bulan = 1             # 1..36 (M01..M36)
 default kk_slot = 0             # index ke KK_SLOTS
 default kk_hari = "Senin"
+default kk_hari_n = 1           # hari ke-berapa dalam bulan (overflow slot)
+default _present_cache = None   # cache kehadiran NPC per-waktu (stabil lintas redraw)
 
 # Sumber daya tubuh host (lihat Sistem_Waktu_Bebas_dan_Kondisi_Fisik.md)
 default body = {}
@@ -83,13 +85,14 @@ init -5 python:
     ]
 
     # Heroine & karakter inti (id, nama tampil, fakultas singkat, warna aksen rute)
+    # tag = fakultas/identitas netral (BUKAN nama rute — jangan membocorkan arah cerita).
     KK_CHARS = {
-        "koita":  {"nama":"Amamiya Koita",    "tag":"MC Manga",        "warna":"#6366f1"},
-        "miyuki": {"nama":"Tachibana Miyuki",  "tag":"Masokis",         "warna":"#c0607a"},
-        "nagisa": {"nama":"Sakurajima Nagisa", "tag":"Yandere",         "warna":"#d9a441"},
-        "harumi": {"nama":"Kujo Harumi",       "tag":"Eksploitasi",     "warna":"#4aa3a0"},
-        "moeka":  {"nama":"Kohinata Moeka",     "tag":"Death-Flag",      "warna":"#5a8fd0"},
-        "shiori": {"nama":"Saionji Shiori",    "tag":"Revenge",         "warna":"#9c7bd0"},
-        "chiasa": {"nama":"Amamiya Chiasa",    "tag":"Koita Success",   "warna":"#d9a441"},
-        "yutaka": {"nama":"Kisaragi Yutaka",   "tag":"Host / BL",       "warna":"#4a7bf0"},
+        "koita":  {"nama":"Amamiya Koita",    "tag":"Sastra & Humaniora",  "warna":"#6366f1"},
+        "miyuki": {"nama":"Tachibana Miyuki",  "tag":"Kedokteran",          "warna":"#c0607a"},
+        "nagisa": {"nama":"Sakurajima Nagisa", "tag":"Arsitektur",          "warna":"#d9a441"},
+        "harumi": {"nama":"Kujo Harumi",       "tag":"Sains",               "warna":"#4aa3a0"},
+        "moeka":  {"nama":"Kohinata Moeka",     "tag":"Seni Rupa & Desain",  "warna":"#5a8fd0"},
+        "shiori": {"nama":"Saionji Shiori",    "tag":"Ekonomi & Bisnis",    "warna":"#9c7bd0"},
+        "chiasa": {"nama":"Amamiya Chiasa",    "tag":"Seni Rupa",           "warna":"#d9a441"},
+        "yutaka": {"nama":"Kisaragi Yutaka",   "tag":"Ekonomi & Bisnis",    "warna":"#4a7bf0"},
     }
