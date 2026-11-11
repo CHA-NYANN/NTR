@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1" gradientUnits="objectBoundingBox"><stop stop-color="#324b61"/><stop offset=".58" stop-color="#d69a89"/><stop offset="1" stop-color="#edd5a1"/></linearGradient>
+    <linearGradient id="glass" x2="1" y2="1"><stop stop-color="#506572"/><stop offset=".72" stop-color="#e6aa87"/><stop offset="1" stop-color="#f6d6a3"/></linearGradient>
+    <pattern id="windows" width="98" height="112" patternUnits="userSpaceOnUse"><rect width="98" height="112" fill="#35444d"/><rect x="7" y="8" width="78" height="76" fill="url(#glass)"/><path d="M45 8v76M7 34h78" stroke="#49535b" stroke-width="4"/></pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#sky)"/>
+  <circle cx="1410" cy="340" r="166" fill="#f9d6aa"/>
+  <path d="M0 560 Q300 420 520 524T960 515Q1210 445 1370 492T1920 470V1080H0Z" fill="#827d83"/>
+  <path d="M0 615 Q280 525 540 575T1000 560Q1320 520 1510 558T1920 516V1080H0Z" fill="#626c74"/>
+  <g transform="translate(752 545) skewY(-7)">
+    <rect x="-30" y="-12" width="1330" height="22" fill="#303e48"/>
+    <rect width="1290" height="470" fill="url(#windows)"/>
+    <path d="M0 100h1290M0 212h1290M0 324h1290" stroke="#263945" stroke-width="12"/>
+  </g>
+  <path d="M0 690 370 573 752 545v470L0 1080Z" fill="#263740"/>
+  <path d="M0 884 1920 783v297H0Z" fill="#22323c"/>
+  <g stroke="#52606a" fill="none"><path d="m180 1080 1200-267m-530 267 620-275m-75 275 180-279M0 982l1920-135"/></g>
+  <g stroke="#232e39" fill="none"><path d="M940 0q440 210 980 116M800 0q560 245 1120 149" stroke-width="3"/><path d="m1773 78 10 716m-56-678 110 10" stroke-width="8"/></g>
+  <path d="M0 0h1920v18H0zM0 0h35v1080H0z" fill="#26343e"/>
+</svg>
