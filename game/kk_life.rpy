@@ -7,6 +7,7 @@ default kk_elapsed_days = 0
 default kk_graduated = False
 default kk_missed = []
 default kk_due = {}
+default kk_promises = {}
 default kk_npc_rel = {}
 default kk_last_met = {}
 define kk_debug_tools = False
@@ -51,6 +52,11 @@ init python:
         store.kk_hari_n = d.day
         store.kk_elapsed_days += 1
         kk_sync_calendar()
+        for cid, (day, slot, place) in list(kk_promises.items()):
+            if day < kk_elapsed_days:
+                del store.kk_promises[cid]
+                if not kk_schedule_away(cid, day, slot):
+                    kk_rel(cid, "trust", -3)
         for eid, month, district, loc, trigger in KK_MILESTONE_MAP:
             if old_month == month and kk_bulan != month and not kk_done(eid) and eid not in kk_missed:
                 store.kk_missed.append(eid)
@@ -86,6 +92,21 @@ init python:
             if kk_bulan >= 13:
                 kk_adj("kelelahan_miyuki", 3)
 
+    # Alur_Cabang/14: trust kecil saat berjanji, lebih besar ketika ditepati.
+    def kk_make_promise(cid, place):
+        if cid in kk_promises or kk_graduated:
+            return False
+        store.kk_promises[cid] = (kk_elapsed_days + 1, kk_slot, place)
+        kk_rel(cid, "trust", 1)
+        return True
+
+    def kk_keep_promise(cid, place):
+        if kk_promises.get(cid) != (kk_elapsed_days, kk_slot, place):
+            return False
+        del store.kk_promises[cid]
+        kk_rel(cid, "trust", 3)
+        return True
+
     def kk_contact(cid):
         store.kk_last_met[cid] = kk_elapsed_days
         if kk_elapsed_days < 7 and cid in ("miyuki","nagisa","harumi","moeka","shiori"):
@@ -97,7 +118,8 @@ init python:
         if kk_done(eid):
             return False
         kk_log(eid, key)
-        kk_contact(_char_of(eid))
+        if _char_of(eid) != kk_host:
+            kk_contact(_char_of(eid))
         kk_run_hook(eid, key)
         return True
 
@@ -158,12 +180,18 @@ init python:
             return None
         return locations[(kk_elapsed_days + slot) % len(locations)]
 
+    def kk_schedule_away(cid, day, slot):
+        data = ("%d/%d/%d/%s" % (kk_world_seed, day, slot, cid)).encode("ascii")
+        rates = {"shiori":5, "harumi":8, "miyuki":10, "koita":12, "nagisa":15,
+                 "yutaka":20, "chiasa":20, "moeka":30}
+        return int.from_bytes(hashlib.sha256(data).digest()[:4], "big") % 100 < rates[cid]
+
     def kk_daily_place(cid):
-        if cid == kk_host:
+        if cid == kk_host or kk_schedule_away(cid, kk_elapsed_days, kk_slot):
             return None
-        data = ("%d/%d/%d/%s" % (kk_world_seed, kk_elapsed_days, kk_slot, cid)).encode("ascii")
-        if int.from_bytes(hashlib.sha256(data).digest()[:4], "big") % 100 < 12:
-            return None
+        promise = kk_promises.get(cid)
+        if promise and promise[:2] == (kk_elapsed_days, kk_slot):
+            return promise[2]
         return kk_planned_place(cid)
 
 default kk_rel_base = {}

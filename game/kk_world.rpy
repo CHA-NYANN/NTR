@@ -317,11 +317,16 @@ label kk_do_talk(distrik, lokasi, cid):
     if cid not in kk_present_here(distrik, lokasi):
         return
     $ known = cid in kk_last_met
+    if kk_keep_promise(cid, lokasi):
+        nar "Kau datang seperti yang kalian janjikan."
     $ kk_contact(cid)
     $ _p = kk_pending_talk(cid, distrik, lokasi)
     if _p:
         # (5-6) event kontekstual via orang yang tepat — akibat lewat hook, tidak diumumkan
         call kk_play_scene(_p[0])
+        if _p[0] == "N03" and any(c["ev"] == "N03" and c["key"] == "A" for c in choices_log):
+            $ kk_minutes((6 - kk_slot) * 240 - kk_minute)
+            return
     elif kk_social_event(cid, lokasi):
         call kk_social_scene(kk_social_event(cid, lokasi))
         return
@@ -348,6 +353,10 @@ label kk_generic_talk(cid, loc, known=True):
             if fresh:
                 $ kk_rel(cid, "trust", 1)
             $ kk_minutes(10)
+        "Janjikan bertemu lagi di sini besok pada waktu yang sama." if fresh and cid not in kk_promises:
+            $ kk_make_promise(cid, _lokasi)
+            $ kk_minutes(1)
+            nar "Kalian sepakat bertemu lagi besok."
         "Balas sapaannya lalu pamit.":
             if fresh:
                 $ kk_rel(cid, "aff", 2)

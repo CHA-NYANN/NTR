@@ -23,9 +23,45 @@ label kk_prologue:
         show screen kk_set("chiasa", "Rumah Amamiya · Pagi")
         with fade
         nar "Kau Amamiya Chiasa — adik tiri Koita yang mencintainya."
+    call kk_first_morning
     nar "Sebuah jendela biru kaca terbuka di kepalamu."
     sistem "Selamat pagi, Host. Kontrak aktif. Tugasmu: menyimpangkan takdir romantis Koita. Dievaluasi sekali, saat ia lulus. Gagal, kau mati."
     sistem "Kepribadianmu? Bukan urusanku menebaknya sekarang. Aku akan tahu dari apa yang kau lakukan, bukan dari apa katamu."
+    return
+
+# Draft editorial. Karakter/Event_Chiasa C01 dan Event_Yutaka Y01.
+label kk_first_morning:
+    $ _opening = "Y01" if kk_host == "yutaka" else "C01"
+    if kk_done(_opening):
+        return
+    if kk_host == "yutaka":
+        $ _actions = ["Periksa dompet dan ponsel.", "Cari cermin.", "Hubungi Koita.", "Tunggu notifikasi berikutnya."]
+    else:
+        $ _actions = ["Lihat cermin dan buku sketsa.", "Periksa ponsel.", "Turun untuk sarapan.", "Tunggu sampai Sistem bicara."]
+    $ _rows = [(caption, Return(key), False) for key, caption in zip("ABCD", _actions)]
+    call screen kk_choice_panel(_rows, "Apa yang pertama kali kaulakukan?")
+    $ _opening_key = _return
+    $ kk_record_choice(_opening, _opening_key)
+    $ kk_flag("kesan_awal_" + _opening + "_" + _opening_key)
+    if kk_host == "yutaka":
+        if _opening_key == "A":
+            $ _balance = "¥{:,}".format(saldo)
+            nar "Nama Kisaragi tertera di layar ponsel. Saldo yang bisa kaugunakan hari ini [_balance]."
+        elif _opening_key == "B":
+            nar "Wajah Yutaka di cermin ikut mengangkat tangan saat kau menyentuh pipimu."
+        elif _opening_key == "C":
+            nar "Kau menemukan nama Koita di daftar kontak dan menekan tombol panggil."
+        else:
+            nar "Kau meletakkan ponsel kembali dan menunggu."
+    else:
+        if _opening_key == "A":
+            nar "Di cermin kau melihat pita Chiasa. Kau membuka buku sketsa di dekatmu."
+        elif _opening_key == "B":
+            nar "Kau menyalakan layar ponsel, mencari sesuatu yang terasa familier."
+        elif _opening_key == "C":
+            nar "Kau meninggalkan kamar dan turun untuk sarapan."
+        else:
+            nar "Kau duduk kembali di tepi tempat tidur dan mendengarkan."
     return
 
 label kk_main:

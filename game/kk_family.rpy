@@ -6,13 +6,15 @@ init python:
         if not kk_record_choice(eid, key):
             return
         if eid == "Mi07":
-            kk_adj("omiai_takeru", {"A":5,"B":-5,"C":0}[key])
+            kk_adj("omiai_takeru", {"A":5,"B":10,"C":0}[key])
+            if key == "B":
+                kk_flag("pemain_menghalangi")
             if key == "C":
                 kk_rel("miyuki","trust",5)
         elif eid == "Mi09":
             if key == "B":
                 kk_flag("pasangan_palsu")
-                kk_adj("omiai_takeru",-5)
+                kk_adj("omiai_takeru",-15)
             elif key == "A":
                 kk_rel("miyuki","trust",5)
             else:
