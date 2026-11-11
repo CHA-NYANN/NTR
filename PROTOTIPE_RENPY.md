@@ -1,5 +1,7 @@
 # Kouseikan — Prototipe Ren'Py
 
+Panduan bermain dan cakupan pengujian terbaru tersedia di [Playtest sandbox](docs/Sandbox_Coverage.md). Catatan di bawah mendokumentasikan prototipe sebelumnya.
+
 Status: 🟡 kerangka teknis. **Belum ada story** — teks hanya poin utama (awal → pilihan → akibat ringkas). Lint bersih (Ren'Py 8.3.2, 0 error, 29 screen).
 
 Dua kontributor di repo ini sejauh ini: kerangka data/engine/navigasi (sesi ini) dan redesign visual + playtest Windows nyata oleh **Cleopatra H.A** (lihat [docs/Playtest_UI.md](docs/Playtest_UI.md) dan commit `ui/editorial-playtest`). UI final (token, `say`, HUD, save/load, riwayat, galeri) adalah hasil kerjanya — jangan ditimpa tanpa alasan kuat.
@@ -74,3 +76,4 @@ Data event/ending di-generate ulang dari dokumen desain lewat `gen_rpy.mjs` (di 
 
 ## Catatan Force (konsisten dgn desain)
 Node Force/manipulasi = **flag + skip ke aftermath**. Tidak ada metode/adegan di kode, sama seperti `docs/Alur_Cabang/09 §2`. Jangan menuliskan cara; cukup set konsekuensi.
+
