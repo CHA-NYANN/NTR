@@ -1,5 +1,7 @@
 # Playtest UI Kouseikan
 
+Panduan bermain dan cakupan pengujian terbaru tersedia di [Playtest sandbox](Sandbox_Coverage.md). Catatan di bawah mendokumentasikan prototipe sebelumnya.
+
 Prototipe Windows 64-bit, Ren’Py 8.3.2. Penguji dewasa dapat memainkan satu putaran singkat dari prolog sampai evaluasi. Sebagian event masih berupa ringkasan desain dan beberapa jalur memuat tema paksaan; adegan terkait dilewati menuju akibatnya.
 
 ## Untuk penguji
@@ -35,4 +37,5 @@ Prototipe Windows 64-bit, Ren’Py 8.3.2. Penguji dewasa dapat memainkan satu pu
 ## Catatan susulan — navigasi dunia (setelah playtest ini)
 
 Instruksi langkah 3 dan 5 di atas ("Di hub kampus...", "Pilih jalur Miyuki atau Nagisa", "Galeri di menu utama") merujuk hub menu lama. Arsitektur navigasi diganti sesudah playtest ini: **distrik → lokasi** menggantikan daftar jalur datar, event ditemukan dengan berjalan ke lokasi yang tepat pada bulan yang tepat (bukan dipanggil dari menu), dan Galeri Ending dipindah dari menu utama ke panel **Alat Uji** sesuai risiko spoiler yang sudah dicatat di atas. Detail di [PROTOTIPE_RENPY.md](../PROTOTIPE_RENPY.md). Temuan UI/QA di dokumen ini (kanvas, token, viewport, keyboard focus) tidak berubah dan tetap jadi dasar tampilan.
+
 

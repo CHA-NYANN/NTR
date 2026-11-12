@@ -82,23 +82,39 @@ init python:
     def kk_slot_label():
         return store.KK_SLOTS[store.kk_slot]
     def kk_advance(slots=1):
-        # maju slot; tubuh menanggung. Pemain tak wajib tidur.
-        # Overflow slot = hari baru, BUKAN bulan baru. Bulan maju lewat timeskip eksplisit
-        # (kk_next_month) atau peristiwa cerita — agar bulan tidak melesat karena aktivitas harian.
-        for _ in range(slots):
-            store.kk_slot += 1
-            kk_adj_body("energi", -6)
-            kk_adj_body("lapar", +5)
-            if store.kk_slot >= len(store.KK_SLOTS):
-                store.kk_slot = 0
-                store.kk_hari_n += 1
-                kk_adj_body("utang_tidur", +8)  # tidak tidur semalaman
+        kk_minutes(slots * 240)
+
+    def kk_clock():
+        minutes = (360 + kk_slot * 240 + kk_minute) % 1440
+        return "%02d:%02d" % divmod(minutes,60)
+
+    def kk_minutes(amount, sleeping=False):
+        kk_upgrade_world()
+        while amount > 0 and not kk_graduated:
+            boundary = 120 if kk_slot == 4 and kk_minute < 120 else 240
+            step = min(amount, boundary - kk_minute)
+            store.kk_minute += step
+            amount -= step
+            if kk_slot == 4 and kk_minute == 120:
+                kk_new_day()
+            elif kk_minute == 240:
+                store.kk_minute = 0
+                store.kk_slot = (kk_slot + 1) % 6
+                if not sleeping:
+                    if body.get("energi",100) == 0:
+                        kk_adj_body("kesehatan",-1)
+                    kk_adj_body("energi",-6)
+                kk_adj_body("lapar",5)
+                if kk_slot == 0 and not sleeping:
+                    kk_adj_body("utang_tidur",8)
 
     def kk_next_month():
         # Timeskip (✅ GDD 6N.1). Minggu-minggu berlalu; tubuh pulih sebagian.
-        store.kk_bulan = min(36, store.kk_bulan + 1)
+        kk_upgrade_world()
+        month = kk_bulan
+        while kk_bulan == month and not kk_graduated:
+            kk_new_day()
         store.kk_slot = 0
-        store.kk_hari_n = 1
         store.body["energi"] = min(100, store.body.get("energi", 0) + 60)
         store.body["utang_tidur"] = max(0, store.body.get("utang_tidur", 0) - 40)
         store.body["lapar"] = 10
@@ -165,18 +181,21 @@ init python:
 
     # ---- resolver ending (nasib pemain) ----
     def kk_resolve_ending():
+        # Hitung hasil akhir sekali per tokoh, bukan setiap kunjungan/klik.
+        # Penyetelan prototipe: dampak besar 15–25 (Sistem_Cabang §2.2).
+        score = deviasi + kk_orbit_delta()
         # ending tersembunyi: celah sistem (§11)
         if store.koita_bebas_naskah:
             return "E-SI-18"
         # Chiasa × Yutaka saja = mati
-        if store.kk_host == "chiasa" and kk_has("chiasa_yutaka_saja") and store.deviasi < 20:
+        if store.kk_host == "chiasa" and kk_has("chiasa_yutaka_saja") and score < 20:
             return "E-SI-06"
         # ambang tersembunyi (prototipe: 45)
-        if store.deviasi >= 45:
+        if score >= 45:
             rap = store.sikap_sistem.get("selidik",0)
-            if store.deviasi >= 75 and rap >= 2:
+            if score >= 75 and rap >= 2:
                 return "E-SI-03"
-            if store.deviasi >= 75:
+            if score >= 75:
                 return "E-SI-01"
             return "E-SI-02"
         # gagal
@@ -190,7 +209,7 @@ init python:
         store.body = {"energi":100,"utang_tidur":0,"lapar":10,"kebersihan":100,
                       "kesehatan":100,"stres_host":0,"nyeri_sistem":0}
         store.rel = {}
-        store.pts = {"kelelahan_miyuki":35,"stres_moeka":40,"kejelasan_harumi":20,
+        store.pts = {"dimanja_miyuki":10,"gengsi_nagisa":70,"kelelahan_miyuki":35,"stres_moeka":40,"kejelasan_harumi":20,
                      "kelekatan_nagisa":20,"respek_shiori":20,"marah_shiori":0}
         store.stage = {"miyuki":0,"nagisa":0,"harumi":0,"moeka":0,"shiori":0,
                        "chiasa":0,"koita_bl":0}
@@ -204,7 +223,10 @@ init python:
         store.saldo = 500000 if store.kk_host == "yutaka" else 400000
         # heroine mencintai Koita (kecuali Shiori); ke host rendah
         for cid in ("miyuki","nagisa","harumi","moeka","chiasa"):
-            store.rel[cid] = {"aff":78,"trust":40,"intim":30,"jeal":10,"fear":5}
+            store.kk_npc_rel[cid + "_koita_aff"] = 78
+            store.rel[cid] = {"aff":20,"trust":40,"intim":30,"jeal":10,"fear":5}
         store.rel["shiori"] = {"aff":10,"trust":20,"intim":10,"jeal":5,"fear":5}
         store.rel["koita"]  = {"aff":40,"trust":60,"intim":40,"jeal":10,"fear":5}
         store.rel["yutaka"] = {"aff":30,"trust":55,"intim":30,"jeal":10,"fear":5}
+        store.kk_rel_base = {cid: dict(values) for cid, values in rel.items()}
+        kk_upgrade_world()

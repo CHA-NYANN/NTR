@@ -49,7 +49,8 @@ screen kk_hud():
             text "KOUSEIKAN" bold True size 24
             if kk_host:
                 $ mt = kk_month_tuple()
-                text "[mt[0]] [mt[2]]   /   [KK_SLOTS[kk_slot]]" style "kk_caption"
+                $ clock_text = kk_clock()
+                text "[clock_text]   [kk_hari], [kk_hari_n] [mt[1]]   /   [KK_SLOTS[kk_slot]]" style "kk_caption"
                 $ tier = kk_kelelahan_tier()
                 if tier[1] >= 2:
                     text tier[0] color kk_warn size 22
@@ -113,7 +114,6 @@ screen kk_route_select():
     vbox:
         xpos kk_margin yalign .48 spacing 30
         text "Pilih tubuh" style "kk_heading"
-        text "Rute awal, bukan batas orientasi." style "kk_caption"
         hbox:
             spacing kk_gap
             for host, name, route, detail, tint in [("yutaka","Kisaragi Yutaka","Male Route","Sahabat Koita sejak kecil.","#93b6df"), ("chiasa","Amamiya Chiasa","Female Route","Adik tiri Koita.",kk_accent)]:
@@ -123,7 +123,6 @@ screen kk_route_select():
                     vbox:
                         spacing 18
                         add Solid(tint) xysize (68, 5)
-                        text route size 24 color tint
                         text name size 46 bold True
                         text detail style "kk_caption"
 
@@ -147,6 +146,7 @@ screen kk_status():
                     text ("Energi · " + kk_lvl(body.get("energi", 0))) size 24
                     text ("Kesehatan · " + kk_lvl(body.get("kesehatan", 0))) size 24
                     text ("Saldo · ¥" + "{:,}".format(saldo)) size 24
+                    use kk_link("Riwayat transaksi", Show("kk_wallet"), 420)
                     null height 18
                     text "Pola pilihanmu" style "kk_caption"
                     text kk_persona_label() size 26
@@ -157,8 +157,43 @@ screen kk_status():
                         for cid in KK_CHARS:
                             if cid in rel:
                                 text KK_CHARS[cid]["nama"] size 27 bold True color kk_bone
-                                text ("Afeksi · {}     Kepercayaan · {}".format(kk_lvl(kk_rel_get(cid,"aff")), kk_lvl(kk_rel_get(cid,"trust")))) style "kk_caption"
+                                if cid in kk_last_met:
+                                    $ days_since = kk_elapsed_days - kk_last_met[cid]
+                                    text ("Terakhir berbincang hari ini." if days_since == 0 else "Terakhir berbincang {} hari lalu.".format(days_since)) style "kk_caption"
+                                else:
+                                    text "Belum ada percakapan yang tercatat." style "kk_caption"
             use kk_link("Tutup", Hide("kk_status"))
+
+screen kk_wallet():
+    modal True
+    zorder 85
+    default page = 0
+    key "game_menu" action Hide("kk_wallet")
+    add Solid("#101b24ee")
+    frame:
+        align (.5,.5) xysize (1500, 840) background Solid(kk_ink2) padding (54, 44)
+        vbox:
+            spacing 18
+            text "Riwayat transaksi" style "kk_heading"
+            text ("Saldo   ¥" + "{:,}".format(saldo)) size 30
+            $ end = len(kk_transactions) - page * 7
+            $ entries = kk_transactions[max(0, end-7):end]
+            if not entries:
+                text "Belum ada transaksi yang tercatat." style "kk_caption"
+            for month, day, description, amount, balance in reversed(entries):
+                hbox:
+                    spacing 22
+                    text ("{} {}".format(day, KK_BACKBONE[month-1][1])) style "kk_caption" xsize 220
+                    text description size 26 xsize 490
+                    text ("{}¥{:,}".format("+" if amount > 0 else "−", abs(amount))) size 26 xsize 220
+                    text ("Saldo ¥{:,}".format(balance)) style "kk_caption"
+            hbox:
+                spacing 16
+                if page > 0:
+                    use kk_link("Lebih baru", SetScreenVariable("page", page - 1), 255)
+                if end > 7:
+                    use kk_link("Lebih lama", SetScreenVariable("page", page + 1), 255)
+                use kk_link("Kembali ke status", Hide("kk_wallet"), 360)
 
 screen kk_explorer():
     modal True
@@ -181,15 +216,17 @@ screen kk_explorer():
                 use kk_link("{}   /   {}     {}".format(event["id"], event["month"], event["title"]), Return(event["id"]), 1090)
     textbutton "‹ Kembali" style "kk_button" action Return("back") pos (kk_margin, 956)
 
-screen kk_ending_detail(entry):
+screen kk_ending_detail(entry, diagnostics=False):
     vbox:
         spacing 20
-        text (entry["type"].upper() + "   /   " + entry["code"]) size 23 color kk_accent
+        if diagnostics:
+            text (entry["type"].upper() + "   /   " + entry["code"]) size 23 color kk_accent
         text entry["name"] size 44 bold True
         text entry.get("body", "") size 28 line_spacing 6
         null height 8
-        text "Syarat" style "kk_caption"
-        text entry.get("cond", "") size 24 line_spacing 5
+        if diagnostics:
+            text "Syarat" style "kk_caption"
+            text entry.get("cond", "") size 24 line_spacing 5
 
 screen kk_ending_card(e):
     add kk_ink
@@ -225,7 +262,7 @@ screen kk_gallery():
         pos (880, 250) xysize (936, 650) background Solid(kk_ink2) padding (36, 32)
         viewport:
             mousewheel True draggable True arrowkeys True scrollbars "vertical"
-            use kk_ending_detail(current)
+            use kk_ending_detail(current, diagnostics=True)
     textbutton "‹ Kembali" style "kk_button" action Return() pos (kk_margin, 956)
 
 screen main_menu():
@@ -382,4 +419,3 @@ screen nvl(dialogue, items=None):
                         text d.what id d.what_id size 30
                 for item in items or []:
                     use kk_link(item.caption, item.action)
-

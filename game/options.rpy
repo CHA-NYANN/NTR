@@ -182,6 +182,8 @@ init python:
     ## Mengklasifikasi file sebagai None  untuk memisahkannya dari distribusi
     ## build.
 
+    build.classify('tests/**', None)
+    build.classify('docs/Sandbox_Coverage.md', None)
     build.classify('**~', None)
     build.classify('**.bak', None)
     build.classify('**/.**', None)

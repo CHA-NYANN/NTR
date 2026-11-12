@@ -6,6 +6,8 @@
 
 # Dispatcher: pakai adegan tulisan tangan bila ada; kalau tidak, pemutar generik ringkas.
 label kk_play_scene(evid):
+    if kk_done(evid):
+        return
     if renpy.has_label("kkscene_" + evid):
         call expression ("kkscene_" + evid)
     else:
@@ -20,16 +22,13 @@ label kkscene_N01:
     nar "Sakurajima Nagisa. Teman masa kecil Koita. Ia belum tahu ada yang berbeda darimu, dan menantangmu seolah kalian memang selalu begini."
     menu:
         "Angkat maketnya, lalu balas tantangannya.":
-            $ kk_log("N01", "A")
-            $ kk_run_hook("N01", "A")
+            $ kk_record_choice("N01", "A")
             nagisa "...Hmph. Setidaknya kau tidak lari. Lain kali, lawan aku yang benar."
         "Minta maaf singkat, kau sedang buru-buru.":
-            $ kk_log("N01", "B")
-            $ kk_run_hook("N01", "B")
+            $ kk_record_choice("N01", "B")
             nagisa "Hah. Ya sudah. Pergi sana."
         "Goda dia soal game yang lebih penting dari tabrakan.":
-            $ kk_log("N01", "C")
-            $ kk_run_hook("N01", "C")
+            $ kk_record_choice("N01", "C")
             nagisa "A-apa—bukan urusanmu! Lagian aku hampir menang."
     return
 
@@ -41,16 +40,13 @@ label kkscene_Mi01:
     nar "Tachibana Miyuki, mahasiswi kedokteran tahun ketiga. Senyumnya hangat, tapi ada lelah tipis di sudut matanya yang ia sembunyikan rapi."
     menu:
         "Puji masakannya dengan tulus.":
-            $ kk_log("Mi01", "A")
-            $ kk_run_hook("Mi01", "A")
+            $ kk_record_choice("Mi01", "A")
             miyuki "Benarkah enak? Syukurlah. Aku... jarang dapat alasan untuk memasak sebanyak ini."
         "Bantu ia membawakan kotaknya yang berat.":
-            $ kk_log("Mi01", "B")
-            $ kk_run_hook("Mi01", "B")
+            $ kk_record_choice("Mi01", "B")
             miyuki "Eh, tidak perlu—tapi... terima kasih. Tidak banyak yang menawarkan."
         "Permisi, kau ada urusan lain.":
-            $ kk_log("Mi01", "C")
-            $ kk_run_hook("Mi01", "C")
+            $ kk_record_choice("Mi01", "C")
             miyuki "Oh. Tentu, maaf menahanmu. Hati-hati, ya."
     return
 
@@ -58,20 +54,19 @@ label kkscene_Mi01:
 label kkscene_N03:
     call kk_scene_enter("nagisa", "Gedung Arsitektur")
     nar "Hujan menerobos jendela studio yang lupa ditutup. Maket tugas akhir Nagisa—kerja berminggu-minggu—basah dan melengkung di satu sudut. Ia berdiri mematung, rahang mengeras, menolak menangis di depan siapa pun."
+    if any(c["ev"] == "N01" and c["key"] == "A" for c in choices_log):
+        nagisa "Kalau mau tanding lagi, kau harus tunggu. Lihat sendiri maketku."
     nagisa "...Tidak apa-apa. Masih bisa. Aku tinggal mengulang bagian ini. Semalaman. Lagi."
     menu:
         "Tinggal, bantu memperbaikinya sampai pagi.":
-            $ kk_log("N03", "A")
-            $ kk_run_hook("N03", "A")
+            $ kk_record_choice("N03", "A")
             nagisa "Kenapa kau... tidak usah. ...Terserah. Jangan sentuh bagian atap, itu bagianku."
             nar "Kalian bekerja sampai langit memutih. Ia tidak bilang terima kasih—tapi tidak menyuruhmu pulang."
         "Tawarkan membelikan bahan maket baru.":
-            $ kk_log("N03", "B")
-            $ kk_run_hook("N03", "B")
+            $ kk_record_choice("N03", "B")
             nagisa "Aku tidak butuh dikasihani dengan uang. ...Tapi, ya. Terima kasih, kurasa."
         "Tertawakan nasib sialnya.":
-            $ kk_log("N03", "C")
-            $ kk_run_hook("N03", "C")
+            $ kk_record_choice("N03", "C")
             nagisa "...Keluar. Keluar dari studioku."
     return
 
@@ -80,18 +75,17 @@ label kkscene_Mi03:
     call kk_scene_enter("miyuki", "Rumah Sakit Tachibana")
     nar "Lewat tengah malam. Lampu perpustakaan medis sudah separuh dimatikan, tapi Miyuki masih di sana, dikelilingi tumpukan buku anatomi. Ia tidak sadar kau datang sampai kau cukup dekat untuk melihat betapa pucatnya ia."
     miyuki "...Jam berapa? Ah, tidak apa. Sedikit lagi. Bab ini saja."
+    if any(c["ev"] == "Mi01" and c["key"] == "B" for c in choices_log):
+        miyuki "Kau lagi. Kotak bento waktu itu juga kau yang bawa, ya?"
     nar "Ia sudah mengatakan 'bab ini saja' entah berapa kali, kelihatannya."
     menu:
         "Bawakan sesuatu untuk ia makan, diam-diam temani.":
-            $ kk_log("Mi03", "A")
-            $ kk_run_hook("Mi03", "A")
+            $ kk_record_choice("Mi03", "A")
             miyuki "Kau... membelikan ini? Kau tidak perlu. ...Terima kasih. Sungguh."
         "Tegas: tutup bukunya, suruh ia pulang.":
-            $ kk_log("Mi03", "B")
-            $ kk_run_hook("Mi03", "B")
+            $ kk_record_choice("Mi03", "B")
             miyuki "Kau benar. Maaf. Aku memang berlebihan. Aku... pulang sekarang."
         "Duduk diam di sebelahnya tanpa bicara.":
-            $ kk_log("Mi03", "C")
-            $ kk_run_hook("Mi03", "C")
+            $ kk_record_choice("Mi03", "C")
             miyuki "...Kau tidak harus tinggal. Tapi... jangan pergi dulu. Sebentar saja."
     return

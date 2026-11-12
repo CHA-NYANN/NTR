@@ -47,9 +47,34 @@ init python:
     _hook("N03-B", lambda: (kk_rel("nagisa","aff",2),))
     _hook("N03-C", lambda: (kk_rel("nagisa","aff",-4), kk_persona_nudge("dingin")))
 
+    # N04-B menghasilkan penolakan dua minggu kemudian (Sistem Cabang §1).
+    def kk_nagisa_confession():
+        store.kk_due["koita_reply"] = kk_elapsed_days + 14
+        store.kk_npc_rel["nagisa_koita"] = "menunggu jawaban"
+
+    _hook("N04-A", lambda: kk_adj("kelekatan_nagisa", 5))
+    _hook("N04-B", kk_nagisa_confession)
+    _hook("N04-C", lambda: kk_flag("pengakuan_terputus"))
+    _hook("N06-A", lambda: kk_flag("yuuto_bantu"))
+    _hook("N06-B", lambda: kk_stage("nagisa", 2))
+    _hook("N06-C", lambda: kk_stage("nagisa", 2))
+    _hook("N-D01-A", lambda: (kk_rel("nagisa","intim",1), kk_adj("gengsi_nagisa",1)))
+    _hook("N-D01-B", lambda: kk_flag("rematch_ditunda"))
+    _hook("N-D01-C", lambda: (kk_rel("nagisa","intim",1), kk_adj("gengsi_nagisa",-1)))
+
+    _hook("N-D02-A", lambda: (kk_adj("gengsi_nagisa",-2), kk_rel("nagisa","aff",2)))
+    _hook("N-D02-B", lambda: kk_rel("nagisa","aff",5))
+    _hook("N-D02-C", lambda: kk_flag("bekal_dikembalikan"))
+    _hook("Mi-D03-A", lambda: kk_flag("koita_mencatat_pastry"))
+    _hook("Mi-D03-B", lambda: kk_flag("pastry_disimpan"))
+    _hook("Mi-D03-C", lambda: kk_flag("pastry_dibagi"))
+    for key, delta in zip("ABCD",(10,5,-5,-10)):
+        _hook("Mi-D01-" + key, lambda delta=delta: kk_adj("dimanja_miyuki",delta))
+
     def kk_run_hook(evid, key):
         h = KK_HOOKS.get(evid + "-" + key)
         if h:
             h()
             return True
         return False
+
