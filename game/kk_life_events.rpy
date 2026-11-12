@@ -160,6 +160,8 @@ init python:
         if result[0] in ("E-SI-01","E-SI-02","E-SI-03","E-SI-18"):
             if kk_host == "yutaka" and kk_has("job_family") and kk_family_bond() >= 60:
                 result.append("E-YH-01")
+            elif kk_yutaka_relation_ending():
+                result.append(kk_yutaka_relation_ending())
             elif kk_host == "yutaka" and kk_has("job_outside"):
                 result.append("E-YH-02")
             elif kk_host == "yutaka" and kk_has("intern_abroad"):

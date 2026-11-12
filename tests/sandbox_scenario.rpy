@@ -86,6 +86,9 @@ label kk_sandbox_test:
     $ kk_test_expect("Host-specific opening", kk_done("Y01") == (kk_host == "yutaka") and kk_done("C01") == (kk_host == "chiasa"))
     $ kk_test_expect("Host absent from NPC list", kk_daily_place(kk_host) is None)
     $ kk_test_expect("No duplicate effect", kk_done("N01") and not kk_record_choice("N01","B") and kk_rel_get("nagisa","aff") == 23)
+    $ kk_test_expect("Acknowledged sham resolves to the honest ending", kk_miyuki_sham_ending(palsu=True, diakui=True) == "E-MI-13")
+    $ kk_test_expect("Exposed sham resolves to the broken ending", kk_miyuki_sham_ending(palsu=True, diakui=False, terbongkar=True) == "E-MI-14")
+    $ kk_test_expect("No sham no sham ending", kk_miyuki_sham_ending(palsu=False) is None)
     $ balance_before = saldo
     call kk_do_activity("Kantin Pusat","makan")
     $ kk_test_expect("Meal", saldo == balance_before - 800 and body["lapar"] < 20)
@@ -274,6 +277,9 @@ label kk_sandbox_test:
     if kk_host == "yutaka":
         call kk_play_scene("Y13")
         $ kk_test_expect("Dinner remembered", kk_has("makan_bersama_amamiya"))
+        $ kk_test_expect("Christmas dinner builds the Amamiya bond", kk_amamiya_bond() >= 60)
+        $ kk_test_expect("Warm ties resolve to the chosen family", kk_yutaka_relation_ending() == "E-YH-03")
+        $ kk_test_expect("Avoiding the dinner leaves no chosen-family ending", kk_yutaka_relation_ending(bond=40) is None)
     $ kk_test_at(31,1,1)
     $ kk_test_expect("Offer only for Yutaka", bool(kk_pending_enter("d3","Apartemen Yutaka")) == (kk_host == "yutaka"))
     if kk_host == "yutaka":
@@ -300,6 +306,7 @@ label kk_sandbox_test:
     $ kk_test_expect("Graduation on normal clock", kk_graduated and kk_epilogue()[0] == ("E-SI-02" if kk_test_romance() else "E-SI-13"))
     $ kk_test_expect("Organic Harumi ending only for this journey", ("E-HA-01" in kk_epilogue()) == kk_test_romance())
     $ kk_test_expect("Reconciled heir after graduation", ("E-YH-01" in kk_epilogue()) == (kk_host == "yutaka"))
+    $ kk_test_expect("Chosen-family ending yields to the Kisaragi post here", "E-YH-03" not in kk_epilogue())
     $ kk_test_expect("Thirty-five monthly deposits", len([t for t in kk_transactions if t[2].startswith("Uang saku")]) == 35 and kk_transactions[-1][4] == saldo)
     $ kk_test_expect("Shena builds her own style", ("E-CF-08" in kk_epilogue()) == bool(os.environ.get("KK_ART_WIN")))
     call screen kk_wallet

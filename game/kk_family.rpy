@@ -10,6 +10,44 @@ init python:
         current = kk_family_bond()
         pts["perubahan_kisaragi"] = pts.get("perubahan_kisaragi", 0) + max(0,min(100,current+delta)) - current
 
+    def kk_amamiya_bond():
+        # Master Canon §5.3: Yutaka lebih nyaman bersama keluarga Amamiya. Dasar 45; Y13 menggerakkannya.
+        return max(0, min(100, 45 + pts.get("perubahan_amamiya", 0)))
+
+    def kk_change_amamiya(delta):
+        current = kk_amamiya_bond()
+        pts["perubahan_amamiya"] = pts.get("perubahan_amamiya", 0) + max(0,min(100,current+delta)) - current
+
+    def kk_yutaka_relation_ending(bond=None, crime=None):
+        # E-YH-03 Keluarga Pilihan (Alur_Cabang/08): hubungan keluarga Amamiya tinggi, tanpa kejahatan.
+        # Membaca flag yang dicatat Y13. bond/crime bisa dioverride untuk uji dua keadaan.
+        if kk_host != "yutaka":
+            return None
+        if bond is None:
+            bond = kk_amamiya_bond()
+        if crime is None:
+            crime = kk_has("force_pernah")
+        if bond >= 60 and not crime:
+            return "E-YH-03"
+        return None
+
+    def kk_miyuki_sham_ending(palsu=None, diakui=None, terbongkar=None):
+        # Alur_Cabang/01: pasangan palsu (Mi09-B). Diakui jujur di Mi18-C -> E-MI-13;
+        # terbongkar oleh Takeru/orang tua (Mi18 selain C) -> E-MI-14.
+        if palsu is None:
+            palsu = kk_has("pasangan_palsu")
+        if not palsu:
+            return None
+        if diakui is None:
+            diakui = kk_has("sandiwara_diakui")
+        if terbongkar is None:
+            terbongkar = kk_has("sandiwara_terbongkar")
+        if diakui:
+            return "E-MI-13"
+        if terbongkar:
+            return "E-MI-14"
+        return None
+
     def kk_family_choice(eid, key):
         if not kk_record_choice(eid, key):
             return
@@ -28,8 +66,11 @@ init python:
             else:
                 kk_adj("omiai_takeru",5)
         elif eid == "Mi18":
-            if key == "C" and kk_has("pasangan_palsu"):
-                kk_flag("sandiwara_diakui")
+            if kk_has("pasangan_palsu"):
+                if key == "C":
+                    kk_flag("sandiwara_diakui")
+                else:
+                    kk_flag("sandiwara_terbongkar")
             kk_adj("omiai_takeru",5 if key == "A" else -5)
         elif eid == "Mi25":
             kk_flag({"A":"hayase_engaged","B":"hayase_interrupted","C":"left_with_miyuki"}[key])
@@ -45,6 +86,7 @@ init python:
             kk_change_family({"A":5,"B":0,"C":-5}[key])
         elif eid == "Y13":
             kk_flag({"A":"makan_bersama_amamiya","B":"menghindari_amamiya","C":"bicara_dengan_amamiya"}[key])
+            kk_change_amamiya({"A":15,"B":-15,"C":20}[key])
         elif eid == "Y17":
             kk_flag({"A":"job_family","B":"job_outside","C":"intern_abroad"}[key])
 
@@ -78,8 +120,9 @@ init python:
             return "E-MI-05"
         if kk_has("hayase_engaged"):
             return "E-MI-04"
-        if kk_has("sandiwara_diakui"):
-            return "E-MI-13"
+        sham = kk_miyuki_sham_ending()
+        if sham:
+            return sham
         if (stage.get("miyuki",0) <= 3 and kk_rel_get("miyuki","aff") >= 55 and
                 kk_rel_get("miyuki","trust") >= 55 and kk_get("sena_curiga") < 60):
             return "E-MI-01"

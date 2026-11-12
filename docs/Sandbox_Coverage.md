@@ -32,9 +32,11 @@ Di kamar sendiri, pemain dapat memasang alarm untuk 20 menit, 90 menit, 6, 8, at
 
 ## Keluarga Kisaragi
 
-Di lobi apartemen pada malam hari, Yutaka bisa bertemu ayahnya ketika hubungan keluarga masih dingin. Setelah hubungan membaik, pesan dari ibu dapat masuk, termasuk ketika Yutaka beristirahat. Panggilan ayah pada M13, makan Natal di rumah Amamiya pada M21, dan jawaban karier pada M31 tercatat dalam perjalanan. E-YH-01 memerlukan Yutaka lolos evaluasi, memilih perusahaan keluarga, dan hubungan Kisaragi ≥60. Dasar 30 dan ambang 40/60 berasal dari Alur_Cabang/08. Jam malam, kedatangan di apartemen untuk panggilan M13, dan bobot respons 5–10 adalah penjadwalan dan penyetelan prototipe. Gerbang Koita Success setelah Y13 masih parsial.
+Di lobi apartemen pada malam hari, Yutaka bisa bertemu ayahnya ketika hubungan keluarga masih dingin. Setelah hubungan membaik, pesan dari ibu dapat masuk, termasuk ketika Yutaka beristirahat. Panggilan ayah pada M13, makan Natal di rumah Amamiya pada M21, dan jawaban karier pada M31 tercatat dalam perjalanan. E-YH-01 memerlukan Yutaka lolos evaluasi, memilih perusahaan keluarga, dan hubungan Kisaragi ≥60. Dasar 30 dan ambang 40/60 berasal dari Alur_Cabang/08. Jam malam, kedatangan di apartemen untuk panggilan M13, dan bobot respons 5–10 adalah penjadwalan dan penyetelan prototipe. Y13 kini membangun bond keluarga Amamiya (dasar 45; makan bersama +15, bicara dari hati +20, pamit −15) yang dibaca E-YH-03 "Keluarga Pilihan" saat epilog, didahulukan E-YH-01 bila Yutaka memilih perusahaan keluarga dengan Kisaragi ≥60. Dasar 45 dari Master Canon §5.3; ambang 60 dan bobot 15/20 adalah penyetelan prototipe dari Alur_Cabang/08. **Gerbang Koita Success** (cabang Y13 yang lain, saat Chiasa-NPC bersama Koita) masih diblok: butuh subsistem Chiasa-NPC-dengan-Koita dan simulasi romansa Koita yang belum ada — menambahkannya adalah mekanik baru, bukan menyambung yang sudah terdokumentasi.
 
 Tiga skenario desktop mencapai epilog dengan kalender dipercepat. Di antara ketiganya, pemeriksaan mencakup E-SI-13, E-SI-02, E-MI-04, E-MI-05, E-HA-01, E-YH-01 dan E-CF-08. Riwayat transaksi dan navigasi halaman lama diuji pada ketiga resolusi.
+
+Rangkaian pasangan palsu Miyuki (Mi09-B) kini tuntas kedua ujungnya: Mi18-C mengakui sandiwara (sudah ada) menuju E-MI-13, sedangkan Mi18 selain C membiarkannya terbongkar oleh Takeru atau orang tua menuju E-MI-14 "Sandiwara Terbongkar". Kedua keadaan diuji lewat resolver `kk_miyuki_sham_ending` pada ketiga perjalanan. Nilai dan ambang mengikuti Alur_Cabang/01; tidak ada mekanik baru.
 
 ## Ilustrasi Chiasa dan penghasilan
 
@@ -121,7 +123,7 @@ Status implementasi dan bukti uji merupakan dua kolom terpisah. **implemented** 
 | Y10 | data-only | untested |
 | Y11 | data-only | untested |
 | Y12 | data-only | untested |
-| Y13 | partial | A pada Yutaka; tertutup untuk Chiasa |
+| Y13 | implemented | A pada Yutaka; flag dibaca E-YH-03; tertutup untuk Chiasa |
 | Y14 | data-only | untested |
 | Y15 | data-only | untested |
 | Y16 | data-only | untested |
@@ -392,7 +394,7 @@ Status implementasi dan bukti uji merupakan dua kolom terpisah. **implemented** 
 
 ### Ending
 
-24 dari 220 ID mempunyai referensi langsung dalam alur atau resolver.
+26 dari 220 ID mempunyai referensi langsung dalam alur atau resolver.
 
 | ID | Implementasi | Bukti |
 | --- | --- | --- |
@@ -409,7 +411,7 @@ Status implementasi dan bukti uji merupakan dua kolom terpisah. **implemented** 
 | E-MI-11 | data-only | untested |
 | E-MI-12 | data-only | untested |
 | E-MI-13 | partial | untested |
-| E-MI-14 | data-only | untested |
+| E-MI-14 | partial | Pasangan palsu tak diakui di Mi18; dua keadaan diuji lewat resolver |
 | E-NA-01 | partial | untested |
 | E-NA-02 | data-only | untested |
 | E-NA-03 | data-only | untested |
@@ -522,7 +524,7 @@ Status implementasi dan bukti uji merupakan dua kolom terpisah. **implemented** 
 | E-BL-08 | data-only | untested |
 | E-YH-01 | partial | Epilog Yutaka; absen untuk Chiasa |
 | E-YH-02 | partial | untested |
-| E-YH-03 | data-only | untested |
+| E-YH-03 | partial | Bond Amamiya dari Y13; dua keadaan diuji lewat resolver |
 | E-YH-04 | data-only | untested |
 | E-YH-05 | data-only | untested |
 | E-YH-06 | partial | untested |
