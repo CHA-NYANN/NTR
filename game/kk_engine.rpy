@@ -184,6 +184,27 @@ init python:
         # Hitung hasil akhir sekali per tokoh, bukan setiap kunjungan/klik.
         # Penyetelan prototipe: dampak besar 15–25 (Sistem_Cabang §2.2).
         score = deviasi + kk_orbit_delta()
+        # Keadaan ekstrem Sistem (digerbang flag distingtif; dorman di normal/test).
+        if kk_has("pemain_dilukai_fatal"):
+            return "E-SI-16"
+        if kk_has("sistem_tubuh_gagal"):
+            return "E-SI-07"
+        if kk_has("pembangkangan_sengaja"):
+            return "E-SI-08"
+        if kk_has("dipenjara"):
+            return "E-SI-09" if score >= 45 else "E-SI-10"
+        if kk_has("reputasi_hancur_total"):
+            return "E-SI-11"
+        if kk_has("sistem_dibuka_luas"):
+            return "E-SI-15"
+        if kk_has("hasil_sandiwara"):
+            return "E-SI-17"
+        if kk_has("berhenti_manipulasi"):
+            return "E-SI-12"
+        if kk_has("pemain_jauh_wisuda"):
+            return "E-SI-14"
+        if kk_has("kontrak_baru") and score >= 45:
+            return "E-SI-04"
         # ending tersembunyi: celah sistem (§11)
         if store.koita_bebas_naskah:
             return "E-SI-18"
@@ -202,7 +223,12 @@ init python:
         return "E-SI-05"
 
     def kk_ending_data(code):
-        return KK_END_BY_CODE.get(code, {"code":code,"name":code,"type":"?","host":"?","cond":"","body":""})
+        base = dict(KK_END_BY_CODE.get(code, {"code":code,"name":code,"type":"?","host":"?","cond":"","body":""}))
+        # Teks ending yang kamu tulis sendiri di kk_ending_story.rpy menimpa body katalog.
+        _t = KK_END_TEXT.get(code) if "KK_END_TEXT" in dir(store) else None
+        if _t:
+            base["body"] = _t
+        return base
 
     # ---- setup state baru ----
     def kk_setup_state():
@@ -210,7 +236,7 @@ init python:
                       "kesehatan":100,"stres_host":0,"nyeri_sistem":0}
         store.rel = {}
         store.pts = {"dimanja_miyuki":10,"gengsi_nagisa":70,"kelelahan_miyuki":35,"stres_moeka":40,"kejelasan_harumi":20,
-                     "kelekatan_nagisa":20,"respek_shiori":20,"marah_shiori":0}
+                     "kelekatan_nagisa":20,"respek_shiori":20,"marah_shiori":0,"orang_tua_kujo":30}
         store.stage = {"miyuki":0,"nagisa":0,"harumi":0,"moeka":0,"shiori":0,
                        "chiasa":0,"koita_bl":0}
         store.flags = []

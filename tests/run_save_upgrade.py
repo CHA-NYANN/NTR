@@ -65,6 +65,7 @@ init 999 python:
             else:
                 assert kk_phone_mode == "normal" and not kk_priority_contacts
                 assert kk_rest_energy_minutes == 0 and kk_harumi_ending() is None
+                assert pts.get("orang_tua_kujo") == 30 and not kk_miyuki_ready_to_refuse()
             with open(os.path.join(config.basedir, "verified"), "w") as out:
                 out.write(repr((kk_host, saldo, kk_bulan, kk_hari_n, list(choices_log))))
             renpy.quit()

@@ -1,0 +1,5900 @@
+[
+  {
+    "id": "C01",
+    "type": "milestone",
+    "title": "Terbangun di Kamar Chiasa",
+    "prompt": "adegan/chiasa/C01.md",
+    "source": "game/kk_flow.rpy",
+    "line": 44,
+    "label": "kk_first_morning",
+    "shared_with": [
+      "Y01",
+      "C01"
+    ],
+    "source_sha256": "7f5cc9035b3fa1845bcb903fb926ecf02c0f816df42f4d4bcadc194a550a2931"
+  },
+  {
+    "id": "C02",
+    "type": "milestone",
+    "title": "\"Ko-nii?\"",
+    "prompt": "adegan/chiasa/C02.md",
+    "source": "game/kk_chiasa_host.rpy",
+    "line": 11,
+    "label": "kkscene_C02",
+    "shared_with": [
+      "C02"
+    ],
+    "source_sha256": "67981d05dded925e3f4260beb04e9570aae3595dbfd53cc6cdffcc32d4d6e805"
+  },
+  {
+    "id": "C03",
+    "type": "milestone",
+    "title": "Tanzaku Chiasa",
+    "prompt": "adegan/chiasa/C03.md",
+    "source": "game/kk_chiasa_host.rpy",
+    "line": 34,
+    "label": "kkscene_C03",
+    "shared_with": [
+      "C03"
+    ],
+    "source_sha256": "402bec5b729468cd17e018f2f51dc205a662bec53e7fc6d1f24c3b17452d0228"
+  },
+  {
+    "id": "C04",
+    "type": "milestone",
+    "title": "\"Nacchan-oneechan\"",
+    "prompt": "adegan/chiasa/C04.md",
+    "source": "game/kk_chiasa_host.rpy",
+    "line": 56,
+    "label": "kkscene_C04",
+    "shared_with": [
+      "C04"
+    ],
+    "source_sha256": "7652352402836bcd0b90707b9bd5a41a4b473383d26517519536d2ccce68e644"
+  },
+  {
+    "id": "C05",
+    "type": "milestone",
+    "title": "Mio Menelepon",
+    "prompt": "adegan/chiasa/C05.md",
+    "source": "game/kk_art.rpy",
+    "line": 9,
+    "label": "kkscene_C05",
+    "shared_with": [
+      "C05"
+    ],
+    "source_sha256": "7c3bf0e0fe741040aac966d37fc2939d521fd4db72afffe499463449e4b0b5ca"
+  },
+  {
+    "id": "C06",
+    "type": "milestone",
+    "title": "Natal Rumah Amamiya",
+    "prompt": "adegan/chiasa/C06.md",
+    "source": "game/kk_chiasa_route.rpy",
+    "line": 14,
+    "label": "kkscene_C06",
+    "shared_with": [
+      "C06"
+    ],
+    "source_sha256": "70274d3f326c871b7f2eff65ae865c2728a333a33023b29a0b46c6e55dd7beb7"
+  },
+  {
+    "id": "C07",
+    "type": "milestone",
+    "title": "Coklat untuk Banyak Orang",
+    "prompt": "adegan/chiasa/C07.md",
+    "source": "game/kk_chiasa_route.rpy",
+    "line": 40,
+    "label": "kkscene_C07",
+    "shared_with": [
+      "C07"
+    ],
+    "source_sha256": "28d5675d4e2d4eed9cbcde9734b1abc452bccce6067add2a4777d1206a0664cd"
+  },
+  {
+    "id": "C08",
+    "type": "milestone",
+    "title": "Haruka Curiga",
+    "prompt": "adegan/chiasa/C08.md",
+    "source": "game/kk_chiasa_host.rpy",
+    "line": 79,
+    "label": "kkscene_C08",
+    "shared_with": [
+      "C08"
+    ],
+    "source_sha256": "e6c5a5d77310c45b07bef6cd66c1e2879bf900c752846389a20a6568b2d15602"
+  },
+  {
+    "id": "C09",
+    "type": "milestone",
+    "title": "Buku Sketsa Kosong",
+    "prompt": "adegan/chiasa/C09.md",
+    "source": "game/kk_art.rpy",
+    "line": 28,
+    "label": "kkscene_C09",
+    "shared_with": [
+      "C09"
+    ],
+    "source_sha256": "d7e8bffcfa8cb67d49f975b8d7abe266c551e9b15fef1b1eb955dc59d2225d63"
+  },
+  {
+    "id": "C10",
+    "type": "milestone",
+    "title": "Rival di Yukata",
+    "prompt": "adegan/chiasa/C10.md",
+    "source": "game/kk_chiasa_route.rpy",
+    "line": 65,
+    "label": "kkscene_C10",
+    "shared_with": [
+      "C10"
+    ],
+    "source_sha256": "3aff2db4736db9ef0fcd73bdd8728c5fe096d0acdac92258e2f9d05135ac3889"
+  },
+  {
+    "id": "C11",
+    "type": "milestone",
+    "title": "Pameran Kecil dan Shiori",
+    "prompt": "adegan/chiasa/C11.md",
+    "source": "game/kk_art.rpy",
+    "line": 163,
+    "label": "kkscene_C11",
+    "shared_with": [
+      "C11"
+    ],
+    "source_sha256": "9524d9c585d9c19a99221f7264d6b8db65ff1725abc476bca34310f54c757d97"
+  },
+  {
+    "id": "C12",
+    "type": "milestone",
+    "title": "Orang Tua Pulang",
+    "prompt": "adegan/chiasa/C12.md",
+    "source": "game/kk_chiasa_route.rpy",
+    "line": 88,
+    "label": "kkscene_C12",
+    "shared_with": [
+      "C12"
+    ],
+    "source_sha256": "b8aef8b26c5839dc97cb15ef135d4a7932cda6881fa31f03e57738cfa8dd70f0"
+  },
+  {
+    "id": "C13",
+    "type": "milestone",
+    "title": "Hari Bentrok: Chiasa",
+    "prompt": "adegan/chiasa/C13.md",
+    "source": "game/kk_chiasa_route.rpy",
+    "line": 111,
+    "label": "kkscene_C13",
+    "shared_with": [
+      "C13"
+    ],
+    "source_sha256": "67f388e2a50afab2eed711c4805d5db6935baaac98859163ca4f0b35f07b2639"
+  },
+  {
+    "id": "C14",
+    "type": "milestone",
+    "title": "Perjalanan Perpisahan",
+    "prompt": "adegan/chiasa/C14.md",
+    "source": "game/kk_chiasa_route.rpy",
+    "line": 137,
+    "label": "kkscene_C14",
+    "shared_with": [
+      "C14"
+    ],
+    "source_sha256": "d1fb5f8f715edf6ba862bed76593a78737ba84bd5e10382feb129525a45e2cdc"
+  },
+  {
+    "id": "C15",
+    "type": "milestone",
+    "title": "Kembang Api dan Nagisa",
+    "prompt": "adegan/chiasa/C15.md",
+    "source": "game/kk_chiasa_route.rpy",
+    "line": 158,
+    "label": "kkscene_C15",
+    "shared_with": [
+      "C15"
+    ],
+    "source_sha256": "777c28da14071e7691c7d9356c63daab6c93823c7d0448e9d451d525ed9d288b"
+  },
+  {
+    "id": "C16",
+    "type": "milestone",
+    "title": "Cover vs Skripsi",
+    "prompt": "adegan/chiasa/C16.md",
+    "source": "game/kk_chiasa_route.rpy",
+    "line": 181,
+    "label": "kkscene_C16",
+    "shared_with": [
+      "C16"
+    ],
+    "source_sha256": "1985f36898fe328d31973acda6d98fdd0c963352984c19f4177262ee6e2759d3"
+  },
+  {
+    "id": "C17",
+    "type": "milestone",
+    "title": "Pameran Tunggal",
+    "prompt": "adegan/chiasa/C17.md",
+    "source": "game/kk_chiasa_route.rpy",
+    "line": 201,
+    "label": "kkscene_C17",
+    "shared_with": [
+      "C17"
+    ],
+    "source_sha256": "eaa39006a44ec96d0f6a82af5cb5a30acef52c593542063aa34ebf1c44654223"
+  },
+  {
+    "id": "C18",
+    "type": "node_akhir",
+    "title": "Pilihan Chiasa",
+    "prompt": "adegan/chiasa/C18.md",
+    "source": "game/kk_story_stubs.rpy",
+    "line": 119,
+    "label": "kkscene_C18",
+    "shared_with": [
+      "C18"
+    ],
+    "source_sha256": "65652a7cddb7c3f8ad56e7593d4bc8ac295c143d1527bb0eb8870ddd2198d073"
+  },
+  {
+    "id": "K01",
+    "type": "milestone",
+    "title": "Senyum yang Terlalu Cepat",
+    "prompt": "adegan/koita/K01.md",
+    "source": "game/kk_koita_y1.rpy",
+    "line": 12,
+    "label": "kkscene_K01",
+    "shared_with": [
+      "K01"
+    ],
+    "source_sha256": "33e295fd0910e326ad8592730727d3a17f7988b6827f62c5ddc9107dbb3dbb42"
+  },
+  {
+    "id": "K02",
+    "type": "milestone",
+    "title": "Kamar yang Tertukar",
+    "prompt": "adegan/koita/K02.md",
+    "source": "game/kk_ryokan.rpy",
+    "line": 13,
+    "label": "kkscene_K02",
+    "shared_with": [
+      "K02"
+    ],
+    "source_sha256": "2fade4e3626d9b20736b4f70737102e2457ff00f660d267ccc79aa900c2602d4"
+  },
+  {
+    "id": "K03",
+    "type": "milestone",
+    "title": "Tanzaku Koita",
+    "prompt": "adegan/koita/K03.md",
+    "source": "game/kk_koita_y1.rpy",
+    "line": 44,
+    "label": "kkscene_K03",
+    "shared_with": [
+      "K03"
+    ],
+    "source_sha256": "1a9438f331486be2d30d1585be292858c1fd0f85429d0b04b52911f193972597"
+  },
+  {
+    "id": "K04",
+    "type": "milestone",
+    "title": "Pertanyaan di Bawah Kembang Api",
+    "prompt": "adegan/koita/K04.md",
+    "source": "game/kk_koita_route.rpy",
+    "line": 15,
+    "label": "kkscene_K04",
+    "shared_with": [
+      "K04"
+    ],
+    "source_sha256": "028d28584b97765383995c3a6df85c51eaf56d7150a50b9994b58de8cf8d0eae"
+  },
+  {
+    "id": "K05",
+    "type": "milestone",
+    "title": "Malam di Dapur Vila",
+    "prompt": "adegan/koita/K05.md",
+    "source": "game/kk_koita_route.rpy",
+    "line": 52,
+    "label": "kkscene_K05",
+    "shared_with": [
+      "K05"
+    ],
+    "source_sha256": "c1e14f9d894ee227900119bcd88e26f97cec9c3c78a618df288b29401f7e17c2"
+  },
+  {
+    "id": "K06",
+    "type": "milestone",
+    "title": "Foto Reuni",
+    "prompt": "adegan/koita/K06.md",
+    "source": "game/kk_koita_y1.rpy",
+    "line": 74,
+    "label": "kkscene_K06",
+    "shared_with": [
+      "K06"
+    ],
+    "source_sha256": "542b091506481a05907a910bd6b60273c4baf9125ffaf32bad3092442730dc3c"
+  },
+  {
+    "id": "K07",
+    "type": "milestone",
+    "title": "Bazar Sastra",
+    "prompt": "adegan/koita/K07.md",
+    "source": "game/kk_main_extra.rpy",
+    "line": 14,
+    "label": "kkscene_K07",
+    "shared_with": [
+      "K07"
+    ],
+    "source_sha256": "5a2ebcec8f95dcbaecc41b793e7d82ebc2bbdddbe94e3841ddeb8a4dc447e216"
+  },
+  {
+    "id": "K08",
+    "type": "milestone",
+    "title": "Natal Plot Armor",
+    "prompt": "adegan/koita/K08.md",
+    "source": "game/kk_main_extra.rpy",
+    "line": 43,
+    "label": "kkscene_K08",
+    "shared_with": [
+      "K08"
+    ],
+    "source_sha256": "7b4432215a0e24cb14254339e1dd529d720873e463991d67a87a28afeed93322"
+  },
+  {
+    "id": "K09",
+    "type": "milestone",
+    "title": "Omikuji Koita",
+    "prompt": "adegan/koita/K09.md",
+    "source": "game/kk_koita_y1.rpy",
+    "line": 104,
+    "label": "kkscene_K09",
+    "shared_with": [
+      "K09"
+    ],
+    "source_sha256": "39ebf2a264326534649dc89eb1bbb0cc1f01570b7ab21b928e8f3d4faea0963f"
+  },
+  {
+    "id": "K10",
+    "type": "milestone",
+    "title": "Coklat yang Tidak Habis",
+    "prompt": "adegan/koita/K10.md",
+    "source": "game/kk_koita_y1.rpy",
+    "line": 132,
+    "label": "kkscene_K10",
+    "shared_with": [
+      "K10"
+    ],
+    "source_sha256": "5e8c948ec4a666fc9b6d9a7e56e425f3658a57e44eaadb5577421f0cd75fe147"
+  },
+  {
+    "id": "K11",
+    "type": "milestone",
+    "title": "Hadiah yang Sama",
+    "prompt": "adegan/koita/K11.md",
+    "source": "game/kk_koita_y1.rpy",
+    "line": 163,
+    "label": "kkscene_K11",
+    "shared_with": [
+      "K11"
+    ],
+    "source_sha256": "4f4f6fd009aac30f9678835dff6d0ddf0d1b8b721a74ef89d9a82ceee70e2642"
+  },
+  {
+    "id": "K12",
+    "type": "milestone",
+    "title": "Telepon dari Seberang",
+    "prompt": "adegan/koita/K12.md",
+    "source": "game/kk_koita_y2.rpy",
+    "line": 11,
+    "label": "kkscene_K12",
+    "shared_with": [
+      "K12"
+    ],
+    "source_sha256": "b1da4e4ce5fa109486ad27148cb134a996c4a3f60ad42405f923b2edf762cee2"
+  },
+  {
+    "id": "K13",
+    "type": "milestone",
+    "title": "Yukata Pilihan",
+    "prompt": "adegan/koita/K13.md",
+    "source": "game/kk_koita_route.rpy",
+    "line": 86,
+    "label": "kkscene_K13",
+    "shared_with": [
+      "K13"
+    ],
+    "source_sha256": "41af11bce38444e818127a4c142d1356065b733911d78dd5f06fafb59df14566"
+  },
+  {
+    "id": "K14",
+    "type": "milestone",
+    "title": "Rumor tentang Koita",
+    "prompt": "adegan/koita/K14.md",
+    "source": "game/kk_koita_y2.rpy",
+    "line": 46,
+    "label": "kkscene_K14",
+    "shared_with": [
+      "K14"
+    ],
+    "source_sha256": "6e98b3965446dedc47b3f0a970ead6cc86abea18aed4f9a77f4a968388e1c77f"
+  },
+  {
+    "id": "K15",
+    "type": "milestone",
+    "title": "Panik Pertama",
+    "prompt": "adegan/koita/K15.md",
+    "source": "game/kk_koita_y2.rpy",
+    "line": 80,
+    "label": "kkscene_K15",
+    "shared_with": [
+      "K15"
+    ],
+    "source_sha256": "d4bb7c2621c5cf1f5106370ecdbbcd498cf7590c68bfbad2b4589a6638abeec7"
+  },
+  {
+    "id": "K16",
+    "type": "milestone",
+    "title": "Telepon Larut Malam",
+    "prompt": "adegan/koita/K16.md",
+    "source": "game/kk_koita_y2.rpy",
+    "line": 111,
+    "label": "kkscene_K16",
+    "shared_with": [
+      "K16"
+    ],
+    "source_sha256": "3cc5fdf56e00728f82d782fdc35bf8f29d23fde3db4d1995537b23e81352a589"
+  },
+  {
+    "id": "K17",
+    "type": "milestone",
+    "title": "Hari Pengakuan Bentrok",
+    "prompt": "adegan/koita/K17.md",
+    "source": "game/kk_koita_route.rpy",
+    "line": 113,
+    "label": "kkscene_K17",
+    "shared_with": [
+      "K17"
+    ],
+    "source_sha256": "0794f1b931bfc9ea81fc62da3d477fdd4942717df37709dd2251ad4109afe1ff"
+  },
+  {
+    "id": "K18",
+    "type": "milestone",
+    "title": "Daftar Orang yang Kupilih",
+    "prompt": "adegan/koita/K18.md",
+    "source": "game/kk_koita_y3.rpy",
+    "line": 11,
+    "label": "kkscene_K18",
+    "shared_with": [
+      "K18"
+    ],
+    "source_sha256": "5ffacca2ca61537d5b891a43dca087ddb141b370cf6b8b66cf76ef62c110ddf9"
+  },
+  {
+    "id": "K19",
+    "type": "milestone",
+    "title": "Skripsi: Tokoh yang Tidak Memilih",
+    "prompt": "adegan/koita/K19.md",
+    "source": "game/kk_koita_y3.rpy",
+    "line": 42,
+    "label": "kkscene_K19",
+    "shared_with": [
+      "K19"
+    ],
+    "source_sha256": "4b158428c7de90edf298b542616f2d9b7ecac16c16cbd53764c6102a20f8dc86"
+  },
+  {
+    "id": "K20",
+    "type": "milestone",
+    "title": "Atap Penginapan",
+    "prompt": "adegan/koita/K20.md",
+    "source": "game/kk_koita_route.rpy",
+    "line": 157,
+    "label": "kkscene_K20",
+    "shared_with": [
+      "K20"
+    ],
+    "source_sha256": "ed38a9064cf244ee8e8b49ba39585ded8d50baf60fc58a3fbb92633370afd50b"
+  },
+  {
+    "id": "K21",
+    "type": "milestone",
+    "title": "Yukata Terakhir",
+    "prompt": "adegan/koita/K21.md",
+    "source": "game/kk_koita_route.rpy",
+    "line": 186,
+    "label": "kkscene_K21",
+    "shared_with": [
+      "K21"
+    ],
+    "source_sha256": "6823dd8387db20e64e7ae96eb699514c39c073605c6f3efe136f86f4b7ae1065"
+  },
+  {
+    "id": "K22",
+    "type": "milestone",
+    "title": "Malam Terakhir di Vila",
+    "prompt": "adegan/koita/K22.md",
+    "source": "game/kk_koita_route.rpy",
+    "line": 214,
+    "label": "kkscene_K22",
+    "shared_with": [
+      "K22"
+    ],
+    "source_sha256": "ae0c29357f53fe3ceb2f7ec7417a863e2cbf1eb0f2b6123ed47f441dc3dae04e"
+  },
+  {
+    "id": "K23",
+    "type": "milestone",
+    "title": "Tawaran dari Penerbit",
+    "prompt": "adegan/koita/K23.md",
+    "source": "game/kk_koita_y3.rpy",
+    "line": 72,
+    "label": "kkscene_K23",
+    "shared_with": [
+      "K23"
+    ],
+    "source_sha256": "badb96f7385746435e4e62db184100a251aaaea8777cf46fe7cb7962a2a795d4"
+  },
+  {
+    "id": "K24",
+    "type": "milestone",
+    "title": "Pidato Klub",
+    "prompt": "adegan/koita/K24.md",
+    "source": "game/kk_koita_y3.rpy",
+    "line": 103,
+    "label": "kkscene_K24",
+    "shared_with": [
+      "K24"
+    ],
+    "source_sha256": "ad4e11260350d544510dfb6e786ad44b3c1af7679abb2031e7ba3f4f8dfce66a"
+  },
+  {
+    "id": "K25",
+    "type": "milestone",
+    "title": "Natal Sendirian",
+    "prompt": "adegan/koita/K25.md",
+    "source": "game/kk_koita_y3.rpy",
+    "line": 132,
+    "label": "kkscene_K25",
+    "shared_with": [
+      "K25"
+    ],
+    "source_sha256": "fc15a57636e1bc80af875aa948bba2d7cc2d0e8bb99415e79b5a6f196d781e7b"
+  },
+  {
+    "id": "K26",
+    "type": "node_akhir",
+    "title": "Pilihan Terakhir Koita",
+    "prompt": "adegan/koita/K26.md",
+    "source": "game/kk_story_stubs.rpy",
+    "line": 13,
+    "label": "kkscene_K26",
+    "shared_with": [
+      "K26"
+    ],
+    "source_sha256": "b3ba07585066ab5dcef4969809cd5ac9e9221f2ffca83a86bf9563376f236450"
+  },
+  {
+    "id": "K27",
+    "type": "node_akhir",
+    "title": "Wisuda",
+    "prompt": "adegan/koita/K27.md",
+    "source": "game/kk_story_stubs.rpy",
+    "line": 161,
+    "label": "kkscene_K27",
+    "shared_with": [
+      "K27"
+    ],
+    "source_sha256": "06a74a75f6693a88d9eaec497625969e998fa823b5301c1bebd05ebc09dd55df"
+  },
+  {
+    "id": "Y01",
+    "type": "milestone",
+    "title": "Terbangun di Apartemen Mewah",
+    "prompt": "adegan/yutaka/Y01.md",
+    "source": "game/kk_flow.rpy",
+    "line": 44,
+    "label": "kk_first_morning",
+    "shared_with": [
+      "Y01",
+      "C01"
+    ],
+    "source_sha256": "7f5cc9035b3fa1845bcb903fb926ecf02c0f816df42f4d4bcadc194a550a2931"
+  },
+  {
+    "id": "Y02",
+    "type": "milestone",
+    "title": "Kunci yang Tidak Ada",
+    "prompt": "adegan/yutaka/Y02.md",
+    "source": "game/kk_yutaka_host.rpy",
+    "line": 17,
+    "label": "kkscene_Y02",
+    "shared_with": [
+      "Y02"
+    ],
+    "source_sha256": "9f96e256f82cc3d27da774828caa9331512541b1d399b4c454f9100d4a11bbae"
+  },
+  {
+    "id": "Y03",
+    "type": "milestone",
+    "title": "Yuu-kun?",
+    "prompt": "adegan/yutaka/Y03.md",
+    "source": "game/kk_yutaka_route.rpy",
+    "line": 14,
+    "label": "kkscene_Y03",
+    "shared_with": [
+      "Y03"
+    ],
+    "source_sha256": "194ae47bf31064246dacdbea0398f0ae3c637a63881887eb323c08324cc2593a"
+  },
+  {
+    "id": "Y04",
+    "type": "milestone",
+    "title": "Kuliah Ekonomi: Ingatan yang Hilang",
+    "prompt": "adegan/yutaka/Y04.md",
+    "source": "game/kk_yutaka_route.rpy",
+    "line": 33,
+    "label": "kkscene_Y04",
+    "shared_with": [
+      "Y04"
+    ],
+    "source_sha256": "dff05acfd615c29ebd79f4146e5fa261c95e840778902135b1b47c7520e64548"
+  },
+  {
+    "id": "Y05",
+    "type": "milestone",
+    "title": "Turnamen Game: Skill yang Hilang",
+    "prompt": "adegan/yutaka/Y05.md",
+    "source": "game/kk_yutaka_host.rpy",
+    "line": 36,
+    "label": "kkscene_Y05",
+    "shared_with": [
+      "Y05"
+    ],
+    "source_sha256": "f8d067c77b4e34addc16b241be0abb0c6da8471d313eadaf229924af4344f724"
+  },
+  {
+    "id": "Y06",
+    "type": "milestone",
+    "title": "Daichi Membocorkan",
+    "prompt": "adegan/yutaka/Y06.md",
+    "source": "game/kk_yutaka_route.rpy",
+    "line": 56,
+    "label": "kkscene_Y06",
+    "shared_with": [
+      "Y06"
+    ],
+    "source_sha256": "62d985b09f0bd38ec5d8b495c978d45aac951bc04942775ba31a62b7dc1204df"
+  },
+  {
+    "id": "Y07",
+    "type": "milestone",
+    "title": "Natal: Apartemen Sepi",
+    "prompt": "adegan/yutaka/Y07.md",
+    "source": "game/kk_yutaka_route.rpy",
+    "line": 76,
+    "label": "kkscene_Y07",
+    "shared_with": [
+      "Y07"
+    ],
+    "source_sha256": "ad49bbfc8d105b70d09529ab537de62837a3ab58354f4e3a8814e67466d3e691"
+  },
+  {
+    "id": "Y08",
+    "type": "milestone",
+    "title": "Coklat dari Siapa",
+    "prompt": "adegan/yutaka/Y08.md",
+    "source": "game/kk_yutaka_route.rpy",
+    "line": 99,
+    "label": "kkscene_Y08",
+    "shared_with": [
+      "Y08"
+    ],
+    "source_sha256": "ec81d72dc1ee401c5d7ac2c9fe14903e7a4e35e638e78e5e25b38c6825c6c053"
+  },
+  {
+    "id": "Y09",
+    "type": "milestone",
+    "title": "Telepon Orang Tua Kisaragi",
+    "prompt": "adegan/yutaka/Y09.md",
+    "source": "game/kk_family.rpy",
+    "line": 490,
+    "label": "kkscene_Y09",
+    "shared_with": [
+      "Y09"
+    ],
+    "source_sha256": "5e18c94ffe15ebea266c1847cc4195c1a9b1e5fa29a5dc2ef99f2915feafb372"
+  },
+  {
+    "id": "Y10",
+    "type": "milestone",
+    "title": "Jam Tangan Hadiah",
+    "prompt": "adegan/yutaka/Y10.md",
+    "source": "game/kk_yutaka_host.rpy",
+    "line": 55,
+    "label": "kkscene_Y10",
+    "shared_with": [
+      "Y10"
+    ],
+    "source_sha256": "ca62d87177ac98cd17c75cb51d098771d3cabec8cf21eaef1549f6d512607947"
+  },
+  {
+    "id": "Y11",
+    "type": "milestone",
+    "title": "Yukata dan Chiasa",
+    "prompt": "adegan/yutaka/Y11.md",
+    "source": "game/kk_yutaka_route.rpy",
+    "line": 122,
+    "label": "kkscene_Y11",
+    "shared_with": [
+      "Y11"
+    ],
+    "source_sha256": "216c8987219b04f2f926f93241decb23d41b23fd8f8746ac9b986db4b412472b"
+  },
+  {
+    "id": "Y12",
+    "type": "milestone",
+    "title": "Pameran Chiasa",
+    "prompt": "adegan/yutaka/Y12.md",
+    "source": "game/kk_yutaka_route.rpy",
+    "line": 141,
+    "label": "kkscene_Y12",
+    "shared_with": [
+      "Y12"
+    ],
+    "source_sha256": "4ead660506dc7ce06f540f3038da8069c990e6959542923841247f9e6a1254a6"
+  },
+  {
+    "id": "Y13",
+    "type": "milestone",
+    "title": "Daisuke dan Yoshie Pulang",
+    "prompt": "adegan/yutaka/Y13.md",
+    "source": "game/kk_family.rpy",
+    "line": 509,
+    "label": "kkscene_Y13",
+    "shared_with": [
+      "Y13"
+    ],
+    "source_sha256": "39a994b8da971ffd1e9f699a3365146525eca4d3225844b64883504aa64306ce"
+  },
+  {
+    "id": "Y14",
+    "type": "milestone",
+    "title": "Hari Bentrok: Pernyataan Yutaka",
+    "prompt": "adegan/yutaka/Y14.md",
+    "source": "game/kk_yutaka_route.rpy",
+    "line": 160,
+    "label": "kkscene_Y14",
+    "shared_with": [
+      "Y14"
+    ],
+    "source_sha256": "c33cab45ea9b3ea365ac9e2fc30c23149972b80be7be97adf85f36b61f267fda"
+  },
+  {
+    "id": "Y15",
+    "type": "milestone",
+    "title": "Jarak dari Rumah",
+    "prompt": "adegan/yutaka/Y15.md",
+    "source": "game/kk_yutaka_route.rpy",
+    "line": 183,
+    "label": "kkscene_Y15",
+    "shared_with": [
+      "Y15"
+    ],
+    "source_sha256": "c0a36696b5c05c89780249fed94ca5dd470ff72f7da63aa5895fd82d3f12530f"
+  },
+  {
+    "id": "Y16",
+    "type": "milestone",
+    "title": "Kembang Api dan Chiasa",
+    "prompt": "adegan/yutaka/Y16.md",
+    "source": "game/kk_yutaka_route.rpy",
+    "line": 202,
+    "label": "kkscene_Y16",
+    "shared_with": [
+      "Y16"
+    ],
+    "source_sha256": "fed5a727bf161d7d131c2d2a0798d8d932e6bcc1891c304119ba6455a275cea9"
+  },
+  {
+    "id": "Y17",
+    "type": "milestone",
+    "title": "Pilihan Karier",
+    "prompt": "adegan/yutaka/Y17.md",
+    "source": "game/kk_family.rpy",
+    "line": 425,
+    "label": "kkscene_Y17",
+    "shared_with": [
+      "Y17"
+    ],
+    "source_sha256": "b57bfee056e8e3f13d5eff76c71834483e96911c175022f4aa99a9bc5436ced7"
+  },
+  {
+    "id": "Y18",
+    "type": "milestone",
+    "title": "Pameran Tunggal Chiasa",
+    "prompt": "adegan/yutaka/Y18.md",
+    "source": "game/kk_yutaka_route.rpy",
+    "line": 221,
+    "label": "kkscene_Y18",
+    "shared_with": [
+      "Y18"
+    ],
+    "source_sha256": "352a9d29c6c680e5bfcaf482e6be08a38fe5a08bf1cba2ed495d6d5a1421dcd5"
+  },
+  {
+    "id": "Y19",
+    "type": "node_akhir",
+    "title": "Jawaban",
+    "prompt": "adegan/yutaka/Y19.md",
+    "source": "game/kk_story_stubs.rpy",
+    "line": 140,
+    "label": "kkscene_Y19",
+    "shared_with": [
+      "Y19"
+    ],
+    "source_sha256": "b654ad4a9bfb4fffffa4548c0f851cc81b1a08118ce1c1dc280c504cc351f72a"
+  },
+  {
+    "id": "Mo01",
+    "type": "milestone",
+    "title": "Wakil yang Selalu Terlambat",
+    "prompt": "adegan/moeka/Mo01.md",
+    "source": "game/kk_spring.rpy",
+    "line": 10,
+    "label": "kkscene_Mo01",
+    "shared_with": [
+      "Mo01"
+    ],
+    "source_sha256": "6ca2b652d8e8293fdfcbbe823ec738276656f7e9773a0b2bc70f3e8527d118ff"
+  },
+  {
+    "id": "Mo02",
+    "type": "milestone",
+    "title": "Undian Onsen",
+    "prompt": "adegan/moeka/Mo02.md",
+    "source": "game/kk_spring.rpy",
+    "line": 57,
+    "label": "kkscene_Mo02",
+    "shared_with": [
+      "Mo02"
+    ],
+    "source_sha256": "7337ba6832e526d796a23c1ce7d3840a3457ab48f538056ce3a5f2845c92e9e1"
+  },
+  {
+    "id": "Mo03",
+    "type": "milestone",
+    "title": "Janji yang Terlupa",
+    "prompt": "adegan/moeka/Mo03.md",
+    "source": "game/kk_moeka.rpy",
+    "line": 22,
+    "label": "kkscene_Mo03",
+    "shared_with": [
+      "Mo03"
+    ],
+    "source_sha256": "e4fbd8cd89056f8389f86804b53fc2e8e360711a20f6b1d000e1b154223e79ba"
+  },
+  {
+    "id": "Mo04",
+    "type": "milestone",
+    "title": "Pingsan Karena Lupa Makan",
+    "prompt": "adegan/moeka/Mo04.md",
+    "source": "game/kk_moeka.rpy",
+    "line": 46,
+    "label": "kkscene_Mo04",
+    "shared_with": [
+      "Mo04"
+    ],
+    "source_sha256": "3b176ed7cd8b3da32fec9e2581cfc5428e93fd1606e1074e45048ae94d92a17b"
+  },
+  {
+    "id": "Mo05",
+    "type": "milestone",
+    "title": "Kabar dari Rumah",
+    "prompt": "adegan/moeka/Mo05.md",
+    "source": "game/kk_moeka.rpy",
+    "line": 70,
+    "label": "kkscene_Mo05",
+    "shared_with": [
+      "Mo05"
+    ],
+    "source_sha256": "7c87344f3b7829e10528e09924cfb2c24385cc01947d0b63e36886359ca3689b"
+  },
+  {
+    "id": "Mo06",
+    "type": "milestone",
+    "title": "Kuga Renji: Tawaran Foto",
+    "prompt": "adegan/moeka/Mo06.md",
+    "source": "game/kk_moeka.rpy",
+    "line": 94,
+    "label": "kkscene_Mo06",
+    "shared_with": [
+      "Mo06"
+    ],
+    "source_sha256": "79ef7434365e084092aa30510f4592382bcb56470060a2b2a5dfdabab80e4573"
+  },
+  {
+    "id": "Mo07",
+    "type": "milestone",
+    "title": "Peragaan Pertama",
+    "prompt": "adegan/moeka/Mo07.md",
+    "source": "game/kk_cleanup_main.rpy",
+    "line": 87,
+    "label": "kkscene_Mo07",
+    "shared_with": [
+      "Mo07"
+    ],
+    "source_sha256": "96580205d7716265bd6377e633698e0824f74724257ccf02d23bb373c46001ce"
+  },
+  {
+    "id": "Mo08",
+    "type": "milestone",
+    "title": "Natal Moeka dan Adik",
+    "prompt": "adegan/moeka/Mo08.md",
+    "source": "game/kk_moeka.rpy",
+    "line": 120,
+    "label": "kkscene_Mo08",
+    "shared_with": [
+      "Mo08"
+    ],
+    "source_sha256": "f299f44f54296a0e89cafe504836f5e005bf95a0a5deb84b77fb003d82b17024"
+  },
+  {
+    "id": "Mo09",
+    "type": "milestone",
+    "title": "Hatsumode: Doa Ayah",
+    "prompt": "adegan/moeka/Mo09.md",
+    "source": "game/kk_moeka.rpy",
+    "line": 143,
+    "label": "kkscene_Mo09",
+    "shared_with": [
+      "Mo09"
+    ],
+    "source_sha256": "ad880ab3172efb5258a4ba94a1c41eba7d9d26548e2f3a9230b7b266539f1fe1"
+  },
+  {
+    "id": "Mo10",
+    "type": "milestone",
+    "title": "Coklat untuk Tiga Adik",
+    "prompt": "adegan/moeka/Mo10.md",
+    "source": "game/kk_moeka.rpy",
+    "line": 165,
+    "label": "kkscene_Mo10",
+    "shared_with": [
+      "Mo10"
+    ],
+    "source_sha256": "94d2d3cad98a3530bd19ff1cf7d528f295351337bc9877084e2ba1cb4014a80e"
+  },
+  {
+    "id": "Mo11",
+    "type": "milestone",
+    "title": "Hujan Deras: Ponsel Mati",
+    "prompt": "adegan/moeka/Mo11.md",
+    "source": "game/kk_moeka.rpy",
+    "line": 187,
+    "label": "kkscene_Mo11",
+    "shared_with": [
+      "Mo11"
+    ],
+    "source_sha256": "e4f2ebb80855702d81668900e897152507fa5aec87efcea63381971cd1a008e0"
+  },
+  {
+    "id": "Mo12",
+    "type": "milestone",
+    "title": "IPK Turun",
+    "prompt": "adegan/moeka/Mo12.md",
+    "source": "game/kk_moeka.rpy",
+    "line": 210,
+    "label": "kkscene_Mo12",
+    "shared_with": [
+      "Mo12"
+    ],
+    "source_sha256": "f5e7222c8c3b9dff4d9fa23f4679f4cd513cc3bdde923980263afc929af8821c"
+  },
+  {
+    "id": "Mo13",
+    "type": "milestone",
+    "title": "Foto yang Beredar",
+    "prompt": "adegan/moeka/Mo13.md",
+    "source": "game/kk_moeka2.rpy",
+    "line": 15,
+    "label": "kkscene_Mo13",
+    "shared_with": [
+      "Mo13"
+    ],
+    "source_sha256": "2bb5b8a641dd1e7b8cf5d8d15aedad681a94b9b5b7facaf2ae3738d6faf296c3"
+  },
+  {
+    "id": "Mo14",
+    "type": "milestone",
+    "title": "Topeng Tebal",
+    "prompt": "adegan/moeka/Mo14.md",
+    "source": "game/kk_moeka2.rpy",
+    "line": 39,
+    "label": "kkscene_Mo14",
+    "shared_with": [
+      "Mo14"
+    ],
+    "source_sha256": "78df8db7a735230aaf533a2ceb975475a897c1bc203ba97cb1e6a802ea411f54"
+  },
+  {
+    "id": "Mo15",
+    "type": "milestone",
+    "title": "Surat Peringatan Beasiswa",
+    "prompt": "adegan/moeka/Mo15.md",
+    "source": "game/kk_moeka2.rpy",
+    "line": 64,
+    "label": "kkscene_Mo15",
+    "shared_with": [
+      "Mo15"
+    ],
+    "source_sha256": "6332362e064a092627ccf994a0dfe3f90752d4abd10604ddf44406105c0fb60d"
+  },
+  {
+    "id": "Mo16",
+    "type": "milestone",
+    "title": "Nilai Kedua",
+    "prompt": "adegan/moeka/Mo16.md",
+    "source": "game/kk_moeka2.rpy",
+    "line": 87,
+    "label": "kkscene_Mo16",
+    "shared_with": [
+      "Mo16"
+    ],
+    "source_sha256": "0f5ec05ca0e6a924736024fc58242e2071b1f27123d8fafa574973cbd98320bc"
+  },
+  {
+    "id": "Mo17",
+    "type": "milestone",
+    "title": "Menghilang dari Grup Chat",
+    "prompt": "adegan/moeka/Mo17.md",
+    "source": "game/kk_moeka2.rpy",
+    "line": 111,
+    "label": "kkscene_Mo17",
+    "shared_with": [
+      "Mo17"
+    ],
+    "source_sha256": "ba6eefcd91022f303baf5ad8b0939dc139f99e5138ee0539aaffd535cfe8f00b"
+  },
+  {
+    "id": "Mo18",
+    "type": "milestone",
+    "title": "Rina Bicara",
+    "prompt": "adegan/moeka/Mo18.md",
+    "source": "game/kk_moeka2.rpy",
+    "line": 133,
+    "label": "kkscene_Mo18",
+    "shared_with": [
+      "Mo18"
+    ],
+    "source_sha256": "014ee047e8c7273a47bf4592ce379bc0e795be9bb017542d7d62f4c0995ddc43"
+  },
+  {
+    "id": "Mo19",
+    "type": "milestone",
+    "title": "Barang yang Dibagikan",
+    "prompt": "adegan/moeka/Mo19.md",
+    "source": "game/kk_moeka2.rpy",
+    "line": 156,
+    "label": "kkscene_Mo19",
+    "shared_with": [
+      "Mo19"
+    ],
+    "source_sha256": "d785b2a32c1847f8c937e87ce5a635668a584e45d30b8ce85314b2fc9578d83d"
+  },
+  {
+    "id": "Mo20",
+    "type": "milestone",
+    "title": "Tanzaku Moeka",
+    "prompt": "adegan/moeka/Mo20.md",
+    "source": "game/kk_tanabata.rpy",
+    "line": 57,
+    "label": "kkscene_Mo20",
+    "shared_with": [
+      "Mo20"
+    ],
+    "source_sha256": "192b434079b11fe635af72af50a632dbcc2eb8026422ee69e42ea2c310606853"
+  },
+  {
+    "id": "Mo21",
+    "type": "milestone",
+    "title": "Tertawa Terlalu Keras",
+    "prompt": "adegan/moeka/Mo21.md",
+    "source": "game/kk_moeka2.rpy",
+    "line": 180,
+    "label": "kkscene_Mo21",
+    "shared_with": [
+      "Mo21"
+    ],
+    "source_sha256": "6562513d81b97bcf40872e78c9aef80f3283a265927ddde1ee7cb1a1c7696b0a"
+  },
+  {
+    "id": "Mo22",
+    "type": "milestone",
+    "title": "Ren Menelepon",
+    "prompt": "adegan/moeka/Mo22.md",
+    "source": "game/kk_moeka2.rpy",
+    "line": 201,
+    "label": "kkscene_Mo22",
+    "shared_with": [
+      "Mo22"
+    ],
+    "source_sha256": "e5ee2bdb682798597968422313d11f26cbca3efbe3964a1c686e26ab75b63467"
+  },
+  {
+    "id": "Mo23",
+    "type": "milestone",
+    "title": "Kontrak Kuga",
+    "prompt": "adegan/moeka/Mo23.md",
+    "source": "game/kk_moeka2.rpy",
+    "line": 225,
+    "label": "kkscene_Mo23",
+    "shared_with": [
+      "Mo23"
+    ],
+    "source_sha256": "b2716aec8f4e0928b1c4b80b0ac186880d13cd2944da45a08b1ab3e828c61196"
+  },
+  {
+    "id": "Mo24",
+    "type": "milestone",
+    "title": "Peragaan Terakhir",
+    "prompt": "adegan/moeka/Mo24.md",
+    "source": "game/kk_moeka2.rpy",
+    "line": 248,
+    "label": "kkscene_Mo24",
+    "shared_with": [
+      "Mo24"
+    ],
+    "source_sha256": "bc4fc2148210d015c9da239675dce939ab4ab2454b02a067983d1834b530c8fb"
+  },
+  {
+    "id": "Mo26",
+    "type": "milestone",
+    "title": "Natal Sunyi",
+    "prompt": "adegan/moeka/Mo26.md",
+    "source": "game/kk_moeka.rpy",
+    "line": 233,
+    "label": "kkscene_Mo26",
+    "shared_with": [
+      "Mo26"
+    ],
+    "source_sha256": "4498f21922b0ff70ae39ebe0c69914b86a116651a05ef5e2bd878870d3e87ea5"
+  },
+  {
+    "id": "Mo25",
+    "type": "milestone",
+    "title": "Malam Tanpa Balasan",
+    "prompt": "adegan/moeka/Mo25.md",
+    "source": "game/kk_moeka2.rpy",
+    "line": 271,
+    "label": "kkscene_Mo25",
+    "shared_with": [
+      "Mo25"
+    ],
+    "source_sha256": "15f904257f1348d8991edeb5eb1ee61c62da336b2993a3ab4f4d5382fa4e2c46"
+  },
+  {
+    "id": "H01",
+    "type": "milestone",
+    "title": "Perpustakaan Sains",
+    "prompt": "adegan/harumi/H01.md",
+    "source": "game/kk_harumi.rpy",
+    "line": 9,
+    "label": "kkscene_H01",
+    "shared_with": [
+      "H01"
+    ],
+    "source_sha256": "efe758dabd57601cac356af06dd964f3d897ad628379cc8043719dcbf3e32543"
+  },
+  {
+    "id": "H02",
+    "type": "milestone",
+    "title": "Teh di Bawah Atap",
+    "prompt": "adegan/harumi/H02.md",
+    "source": "game/kk_harumi_family.rpy",
+    "line": 10,
+    "label": "kkscene_H02",
+    "shared_with": [
+      "H02"
+    ],
+    "source_sha256": "0ad307f7239391923f6a531b29f5ae0a1b85588fe34eded51616d5af1eb094d8"
+  },
+  {
+    "id": "H03",
+    "type": "milestone",
+    "title": "Masakan Eksperimental",
+    "prompt": "adegan/harumi/H03.md",
+    "source": "game/kk_harumi.rpy",
+    "line": 125,
+    "label": "kkscene_H03",
+    "shared_with": [
+      "H03"
+    ],
+    "source_sha256": "9ab992e957efb319539d0b4219ae577b0767de410880f66789a74585d01e2e20"
+  },
+  {
+    "id": "H04",
+    "type": "milestone",
+    "title": "Teh Malam di Vila",
+    "prompt": "adegan/harumi/H04.md",
+    "source": "game/kk_harumi_route.rpy",
+    "line": 25,
+    "label": "kkscene_H04",
+    "shared_with": [
+      "H04"
+    ],
+    "source_sha256": "be769b9a9df664d7079b87d3ac71dceb71d0016a9ee8ef1bc27a8b77f8cdb845"
+  },
+  {
+    "id": "H05",
+    "type": "milestone",
+    "title": "Reuni di Rumah Teh",
+    "prompt": "adegan/harumi/H05.md",
+    "source": "game/kk_harumi_family.rpy",
+    "line": 34,
+    "label": "kkscene_H05",
+    "shared_with": [
+      "H05"
+    ],
+    "source_sha256": "d9cc5d54974e7436f8eeb949001ead81d14dd233be9a28df006a863afd2a2407"
+  },
+  {
+    "id": "H06",
+    "type": "milestone",
+    "title": "Ogawa Masato Muncul",
+    "prompt": "adegan/harumi/H06.md",
+    "source": "game/kk_harumi_route.rpy",
+    "line": 50,
+    "label": "kkscene_H06",
+    "shared_with": [
+      "H06"
+    ],
+    "source_sha256": "8308dc2d9955aff11d37c86d4493286b3f7a4875a783634808f08476c0413110"
+  },
+  {
+    "id": "H07",
+    "type": "milestone",
+    "title": "Natal di Laboratorium",
+    "prompt": "adegan/harumi/H07.md",
+    "source": "game/kk_harumi_route.rpy",
+    "line": 77,
+    "label": "kkscene_H07",
+    "shared_with": [
+      "H07"
+    ],
+    "source_sha256": "e1597c33216d69e7ca71c570cabd8bee27936437c31c878a009c91507b554748"
+  },
+  {
+    "id": "H08",
+    "type": "milestone",
+    "title": "Omikuji Harumi",
+    "prompt": "adegan/harumi/H08.md",
+    "source": "game/kk_harumi.rpy",
+    "line": 34,
+    "label": "kkscene_H08",
+    "shared_with": [
+      "H08"
+    ],
+    "source_sha256": "c461f84919f3894e863053383d57ffb59f0239e922d159f4c3bec5db1753fa0e"
+  },
+  {
+    "id": "H09",
+    "type": "milestone",
+    "title": "Hipotesis Cinta",
+    "prompt": "adegan/harumi/H09.md",
+    "source": "game/kk_harumi.rpy",
+    "line": 57,
+    "label": "kkscene_H09",
+    "shared_with": [
+      "H09"
+    ],
+    "source_sha256": "acd839a958ba82501738d221f5643d6a709952c30aa19be3812ae8b8a352c763"
+  },
+  {
+    "id": "H10",
+    "type": "milestone",
+    "title": "Pulang ke Kansai",
+    "prompt": "adegan/harumi/H10.md",
+    "source": "game/kk_harumi_family.rpy",
+    "line": 59,
+    "label": "kkscene_H10",
+    "shared_with": [
+      "H10"
+    ],
+    "source_sha256": "5d2f6c4cd52146356a39654b51759b8d19bc2df3b1a0f867dc74a7f89342ce62"
+  },
+  {
+    "id": "H11",
+    "type": "milestone",
+    "title": "Beasiswa Luar Negeri Dibuka",
+    "prompt": "adegan/harumi/H11.md",
+    "source": "game/kk_harumi_route.rpy",
+    "line": 101,
+    "label": "kkscene_H11",
+    "shared_with": [
+      "H11"
+    ],
+    "source_sha256": "c3efee00ad4c0400fd5875368f501ab62fff119fd26a2737a85d9fc487805c87"
+  },
+  {
+    "id": "H12",
+    "type": "milestone",
+    "title": "Variabel Sosial",
+    "prompt": "adegan/harumi/H12.md",
+    "source": "game/kk_harumi_route.rpy",
+    "line": 125,
+    "label": "kkscene_H12",
+    "shared_with": [
+      "H12"
+    ],
+    "source_sha256": "768b852f4ac61c7eb003582a5cb4ead8268c745f4950bdee97f69788e051581a"
+  },
+  {
+    "id": "H13",
+    "type": "milestone",
+    "title": "Dana Lab Dibekukan",
+    "prompt": "adegan/harumi/H13.md",
+    "source": "game/kk_harumi_route.rpy",
+    "line": 150,
+    "label": "kkscene_H13",
+    "shared_with": [
+      "H13"
+    ],
+    "source_sha256": "55a681a61d147df5d0d176092c835aa31f82095de151c4dc5005d67c325f971b"
+  },
+  {
+    "id": "H14",
+    "type": "milestone",
+    "title": "Natal: Undangan Diskusi",
+    "prompt": "adegan/harumi/H14.md",
+    "source": "game/kk_harumi_route.rpy",
+    "line": 179,
+    "label": "kkscene_H14",
+    "shared_with": [
+      "H14"
+    ],
+    "source_sha256": "f556f9c67bf3784fc8f7dd59e6706caf6820e484afdf566cbfb62de299c2fd84"
+  },
+  {
+    "id": "H15",
+    "type": "milestone",
+    "title": "Uang yang Tidak Jelas",
+    "prompt": "adegan/harumi/H15.md",
+    "source": "game/kk_harumi_route.rpy",
+    "line": 204,
+    "label": "kkscene_H15",
+    "shared_with": [
+      "H15"
+    ],
+    "source_sha256": "417f889981a805dd6ef9977be770a8e7e1cf419a46e5879d3db14add0f0015ca"
+  },
+  {
+    "id": "H16",
+    "type": "milestone",
+    "title": "Valentine: Data Lain",
+    "prompt": "adegan/harumi/H16.md",
+    "source": "game/kk_harumi_route.rpy",
+    "line": 227,
+    "label": "kkscene_H16",
+    "shared_with": [
+      "H16"
+    ],
+    "source_sha256": "ea4d1a1e7a7676ef75de7d08f0ff0c3bdf02fd3f716b4f623b41659a0935e477"
+  },
+  {
+    "id": "H17",
+    "type": "milestone",
+    "title": "Ogiwara Menegur",
+    "prompt": "adegan/harumi/H17.md",
+    "source": "game/kk_harumi_route.rpy",
+    "line": 251,
+    "label": "kkscene_H17",
+    "shared_with": [
+      "H17"
+    ],
+    "source_sha256": "a480cc88c3398d5d0b6f21eca902992e3d6f1afd5d2253602f5f62183aae03f7"
+  },
+  {
+    "id": "H18",
+    "type": "milestone",
+    "title": "Mizuhara Memanggil",
+    "prompt": "adegan/harumi/H18.md",
+    "source": "game/kk_harumi_route.rpy",
+    "line": 276,
+    "label": "kkscene_H18",
+    "shared_with": [
+      "H18"
+    ],
+    "source_sha256": "6291abccdbfebcb26adf0e33ec0b06ab6951563b785aa7b40714e84035eb061b"
+  },
+  {
+    "id": "H19",
+    "type": "milestone",
+    "title": "Tanzaku Kosong",
+    "prompt": "adegan/harumi/H19.md",
+    "source": "game/kk_tanabata.rpy",
+    "line": 35,
+    "label": "kkscene_H19",
+    "shared_with": [
+      "H19"
+    ],
+    "source_sha256": "d171a97f29abe7ed19f740f9f5f425fbcabe522fcf0d9e76c436e0c1cf3bf5e9"
+  },
+  {
+    "id": "H20",
+    "type": "milestone",
+    "title": "Teh Terakhir",
+    "prompt": "adegan/harumi/H20.md",
+    "source": "game/kk_cleanup_main.rpy",
+    "line": 13,
+    "label": "kkscene_H20",
+    "shared_with": [
+      "H20"
+    ],
+    "source_sha256": "139f620ae2975572d2b8fbdacb20f12f9e62d3874f88fce7acca0a879a25fd8c"
+  },
+  {
+    "id": "H21",
+    "type": "milestone",
+    "title": "Pengumuman Studi",
+    "prompt": "adegan/harumi/H21.md",
+    "source": "game/kk_cleanup_main.rpy",
+    "line": 39,
+    "label": "kkscene_H21",
+    "shared_with": [
+      "H21"
+    ],
+    "source_sha256": "61b3b2147a4e0f70070eeaaf03f3819a15d8b8278c9614a91e2e5b51fa96ff3c"
+  },
+  {
+    "id": "H22",
+    "type": "milestone",
+    "title": "Natal Pulang",
+    "prompt": "adegan/harumi/H22.md",
+    "source": "game/kk_harumi_family.rpy",
+    "line": 84,
+    "label": "kkscene_H22",
+    "shared_with": [
+      "H22"
+    ],
+    "source_sha256": "524bfbab5b3b2097253d81a38427ee13130d3bee2ef42e411efb3d736e3f0c66"
+  },
+  {
+    "id": "H23",
+    "type": "milestone",
+    "title": "Ujian Akhir",
+    "prompt": "adegan/harumi/H23.md",
+    "source": "game/kk_cleanup_main.rpy",
+    "line": 62,
+    "label": "kkscene_H23",
+    "shared_with": [
+      "H23"
+    ],
+    "source_sha256": "c1f3f543294eec648e5f0e5373826a8f2a85e04042aabbc70572d12c0b7e32cc"
+  },
+  {
+    "id": "H24",
+    "type": "node_akhir",
+    "title": "Pilihan Harumi",
+    "prompt": "adegan/harumi/H24.md",
+    "source": "game/kk_story_stubs.rpy",
+    "line": 77,
+    "label": "kkscene_H24",
+    "shared_with": [
+      "H24"
+    ],
+    "source_sha256": "fab0ef39f74dffad1346cc87180bb76cb6e1dd628384bf3f2f8660042f906c02"
+  },
+  {
+    "id": "S01",
+    "type": "milestone",
+    "title": "Papan Shogi di Taman",
+    "prompt": "adegan/shiori/S01.md",
+    "source": "game/kk_spring.rpy",
+    "line": 35,
+    "label": "kkscene_S01",
+    "shared_with": [
+      "S01"
+    ],
+    "source_sha256": "bf7edc561f017f0bc349d5bcc40d89692ba54df1405b207aa168714aed31432b"
+  },
+  {
+    "id": "S02",
+    "type": "milestone",
+    "title": "Ruang Catur di Ryokan",
+    "prompt": "adegan/shiori/S02.md",
+    "source": "game/kk_spring.rpy",
+    "line": 83,
+    "label": "kkscene_S02",
+    "shared_with": [
+      "S02"
+    ],
+    "source_sha256": "010e9e90f15a910b1dbced6a4e37c5067b2c4491f0369e381fdae97b3db4e23c"
+  },
+  {
+    "id": "S03",
+    "type": "milestone",
+    "title": "Payung Hujan",
+    "prompt": "adegan/shiori/S03.md",
+    "source": "game/kk_shiori_early.rpy",
+    "line": 11,
+    "label": "kkscene_S03",
+    "shared_with": [
+      "S03"
+    ],
+    "source_sha256": "0a0d6cacd90d518742167d4efec6f4ca2831710e13f72c21010dd67340cd3cf0"
+  },
+  {
+    "id": "S04",
+    "type": "milestone",
+    "title": "Pertandingan Malam di Vila",
+    "prompt": "adegan/shiori/S04.md",
+    "source": "game/kk_shiori_route.rpy",
+    "line": 15,
+    "label": "kkscene_S04",
+    "shared_with": [
+      "S04"
+    ],
+    "source_sha256": "cfbf22e454df7416acbffc99993c5c4ae9674b20474e8ff176ae7cb21712eab6"
+  },
+  {
+    "id": "S05",
+    "type": "milestone",
+    "title": "Tojo Akihiro di Pesta",
+    "prompt": "adegan/shiori/S05.md",
+    "source": "game/kk_shiori_route.rpy",
+    "line": 38,
+    "label": "kkscene_S05",
+    "shared_with": [
+      "S05"
+    ],
+    "source_sha256": "cc2e2d42d020da7366b2b7e6854c69c4f5dfbf2e395c46baae538377f7273d6b"
+  },
+  {
+    "id": "S06",
+    "type": "milestone",
+    "title": "Turnamen Klub Catur",
+    "prompt": "adegan/shiori/S06.md",
+    "source": "game/kk_shiori_early.rpy",
+    "line": 34,
+    "label": "kkscene_S06",
+    "shared_with": [
+      "S06"
+    ],
+    "source_sha256": "e903441de33970652a3c4bd7256046243e2e5289d91547118fb575a469fcb2b9"
+  },
+  {
+    "id": "S07",
+    "type": "milestone",
+    "title": "Natal Keluarga Saionji",
+    "prompt": "adegan/shiori/S07.md",
+    "source": "game/kk_saionji.rpy",
+    "line": 9,
+    "label": "kkscene_S07",
+    "shared_with": [
+      "S07"
+    ],
+    "source_sha256": "d048d2fbca2a0928695a8e029ad658034c3f7277cc1bc82066be342f27855c3f"
+  },
+  {
+    "id": "S08",
+    "type": "milestone",
+    "title": "Festival: Satu Tahun",
+    "prompt": "adegan/shiori/S08.md",
+    "source": "game/kk_shiori_early.rpy",
+    "line": 56,
+    "label": "kkscene_S08",
+    "shared_with": [
+      "S08"
+    ],
+    "source_sha256": "23ce62f31e96acc1267bc73f5b6132436ee8e89e5653a8c8f78666000ec47761"
+  },
+  {
+    "id": "S09",
+    "type": "milestone",
+    "title": "Tawaran Persahabatan",
+    "prompt": "adegan/shiori/S09.md",
+    "source": "game/kk_saionji.rpy",
+    "line": 53,
+    "label": "kkscene_S09",
+    "shared_with": [
+      "S09"
+    ],
+    "source_sha256": "279f091ff96e4c07583772e7e37b6c82c1053633422b17f8c663aa5990d8c649"
+  },
+  {
+    "id": "S10",
+    "type": "milestone",
+    "title": "Hujan Deras: Kuroiwa Menjemput",
+    "prompt": "adegan/shiori/S10.md",
+    "source": "game/kk_misc_late.rpy",
+    "line": 10,
+    "label": "kkscene_S10",
+    "shared_with": [
+      "S10"
+    ],
+    "source_sha256": "d83fd36a444f3a6b3f141eb856416b90830bca0b1386af8c2c76a4618c2e9e4c"
+  },
+  {
+    "id": "S11",
+    "type": "milestone",
+    "title": "Peringkat Pertama",
+    "prompt": "adegan/shiori/S11.md",
+    "source": "game/kk_shiori_early.rpy",
+    "line": 78,
+    "label": "kkscene_S11",
+    "shared_with": [
+      "S11"
+    ],
+    "source_sha256": "68dd2b824d4ae9f30a8f365a2ab2da0a44db7f091bc56fe21306c9d28de70d16"
+  },
+  {
+    "id": "S12",
+    "type": "milestone",
+    "title": "Rumor tentang Shiori",
+    "prompt": "adegan/shiori/S12.md",
+    "source": "game/kk_shiori_early.rpy",
+    "line": 102,
+    "label": "kkscene_S12",
+    "shared_with": [
+      "S12"
+    ],
+    "source_sha256": "ab08ff8e3deb1a7467c9f8868b2cf70dafd668690270dd0933b313045e6eccdd"
+  },
+  {
+    "id": "S13",
+    "type": "milestone",
+    "title": "Penemuan",
+    "prompt": "adegan/shiori/S13.md",
+    "source": "game/kk_saionji.rpy",
+    "line": 173,
+    "label": "kkscene_S13",
+    "shared_with": [
+      "S13"
+    ],
+    "source_sha256": "b3f9148ba809d213af6e1f794cf658aaca38bd2ab5f4ebff2402919010f77999"
+  },
+  {
+    "id": "S14",
+    "type": "milestone",
+    "title": "Natal Kedua: Senyum yang Sama",
+    "prompt": "adegan/shiori/S14.md",
+    "source": "game/kk_saionji.rpy",
+    "line": 101,
+    "label": "kkscene_S14",
+    "shared_with": [
+      "S14"
+    ],
+    "source_sha256": "204bacac3d9a85731e03cbe2edbe68d4e9a4e41800a53e620408e88ea9079b34"
+  },
+  {
+    "id": "S15",
+    "type": "milestone",
+    "title": "Hatsumode: Doa untuk Siapa",
+    "prompt": "adegan/shiori/S15.md",
+    "source": "game/kk_saionji.rpy",
+    "line": 126,
+    "label": "kkscene_S15",
+    "shared_with": [
+      "S15"
+    ],
+    "source_sha256": "f99508ec00018e71c1f7e6005628a19b1575dfb6dd0c1ebf01265a89663af49a"
+  },
+  {
+    "id": "S16",
+    "type": "milestone",
+    "title": "Valentine: Papan Kosong",
+    "prompt": "adegan/shiori/S16.md",
+    "source": "game/kk_saionji.rpy",
+    "line": 147,
+    "label": "kkscene_S16",
+    "shared_with": [
+      "S16"
+    ],
+    "source_sha256": "6221109f48075b6493832037e20be7bb2b9917e8152d62abd6782d882ff6fa65"
+  },
+  {
+    "id": "S17",
+    "type": "milestone",
+    "title": "Keputusan Warisan",
+    "prompt": "adegan/shiori/S17.md",
+    "source": "game/kk_saionji.rpy",
+    "line": 200,
+    "label": "kkscene_S17",
+    "shared_with": [
+      "S17"
+    ],
+    "source_sha256": "92c0fc952bb4c14fcfa83cae757fbf965e49c6495997ce3a753a70b8d4b300f7"
+  },
+  {
+    "id": "S18",
+    "type": "milestone",
+    "title": "Hujan Terakhir: Pengumpulan Bukti",
+    "prompt": "adegan/shiori/S18.md",
+    "source": "game/kk_saionji.rpy",
+    "line": 298,
+    "label": "kkscene_S18",
+    "shared_with": [
+      "S18"
+    ],
+    "source_sha256": "51150205bbb8e031513a0398df76e32f6feeeb05b2639c67c7eb4116488caeef"
+  },
+  {
+    "id": "S19",
+    "type": "milestone",
+    "title": "Tanzaku Shiori",
+    "prompt": "adegan/shiori/S19.md",
+    "source": "game/kk_tanabata.rpy",
+    "line": 9,
+    "label": "kkscene_S19",
+    "shared_with": [
+      "S19"
+    ],
+    "source_sha256": "e93aeead0d566e86f6e6d52d4d4b29ae3cb7064b82e0e8f7161225813e0e9d87"
+  },
+  {
+    "id": "S20",
+    "type": "milestone",
+    "title": "Permainan Terakhir",
+    "prompt": "adegan/shiori/S20.md",
+    "source": "game/kk_shiori_route.rpy",
+    "line": 62,
+    "label": "kkscene_S20",
+    "shared_with": [
+      "S20"
+    ],
+    "source_sha256": "a860ef4d6f001e2125222d51f16e4a1999138f34eac09760f24ca71974cda31d"
+  },
+  {
+    "id": "S21",
+    "type": "milestone",
+    "title": "Pengumuman: Tojo",
+    "prompt": "adegan/shiori/S21.md",
+    "source": "game/kk_shiori_route.rpy",
+    "line": 85,
+    "label": "kkscene_S21",
+    "shared_with": [
+      "S21"
+    ],
+    "source_sha256": "9b6a23a6cbeff69c429dbc6858d2577599264ab95e3bbef4bfb0b2f295b06152"
+  },
+  {
+    "id": "S22",
+    "type": "milestone",
+    "title": "Penghancuran Dimulai",
+    "prompt": "adegan/shiori/S22.md",
+    "source": "game/kk_shiori_route.rpy",
+    "line": 108,
+    "label": "kkscene_S22",
+    "shared_with": [
+      "S22"
+    ],
+    "source_sha256": "0983ab8649d657f0dcd9ad8adaa30f85577fd25a593e162613280d6c11a86331"
+  },
+  {
+    "id": "S23",
+    "type": "milestone",
+    "title": "Turnamen Akhir",
+    "prompt": "adegan/shiori/S23.md",
+    "source": "game/kk_shiori_route.rpy",
+    "line": 131,
+    "label": "kkscene_S23",
+    "shared_with": [
+      "S23"
+    ],
+    "source_sha256": "f429565a5d0c7e6d4eaeb27cbbed848f11d56004ce8f4156a9583e605f845252"
+  },
+  {
+    "id": "S24",
+    "type": "milestone",
+    "title": "Natal: Skakmat",
+    "prompt": "adegan/shiori/S24.md",
+    "source": "game/kk_shiori_route.rpy",
+    "line": 153,
+    "label": "kkscene_S24",
+    "shared_with": [
+      "S24"
+    ],
+    "source_sha256": "c22fb2d9934e4b9b6286f56eedbad56a91f76d8aac2c471e82260076e96efaef"
+  },
+  {
+    "id": "S25",
+    "type": "node_akhir",
+    "title": "Pilihan Shiori",
+    "prompt": "adegan/shiori/S25.md",
+    "source": "game/kk_story_stubs.rpy",
+    "line": 98,
+    "label": "kkscene_S25",
+    "shared_with": [
+      "S25"
+    ],
+    "source_sha256": "3692740c509c56c93fa6e10ac62a8c21dc5b3c074386bc626c2b4b812405c78b"
+  },
+  {
+    "id": "N01",
+    "type": "milestone",
+    "title": "Tabrakan di Koridor",
+    "prompt": "adegan/nagisa/N01.md",
+    "source": "game/kk_scenes.rpy",
+    "line": 25,
+    "label": "kkscene_N01",
+    "shared_with": [
+      "N01"
+    ],
+    "source_sha256": "4fd321041a5b1636330de125ac9d626ca6b686924711532d902729f33e60baf5"
+  },
+  {
+    "id": "N02",
+    "type": "milestone",
+    "title": "Rematch Malam Onsen",
+    "prompt": "adegan/nagisa/N02.md",
+    "source": "game/kk_spring.rpy",
+    "line": 136,
+    "label": "kkscene_N02",
+    "shared_with": [
+      "N02"
+    ],
+    "source_sha256": "05c92ec7652b1a42c8c1ba287af73fea5dd48c2c90e4cfb8f6e97424391db667"
+  },
+  {
+    "id": "N03",
+    "type": "milestone",
+    "title": "Maket Hujan",
+    "prompt": "adegan/nagisa/N03.md",
+    "source": "game/kk_scenes.rpy",
+    "line": 83,
+    "label": "kkscene_N03",
+    "shared_with": [
+      "N03"
+    ],
+    "source_sha256": "fb87fef41956f994d5b3b4e8db77e8daeb49ce2bfb8328017a5eb1ac8dbd37f9"
+  },
+  {
+    "id": "N04",
+    "type": "milestone",
+    "title": "Gagal Mengaku Lagi",
+    "prompt": "adegan/nagisa/N04.md",
+    "source": "game/kk_life_events.rpy",
+    "line": 10,
+    "label": "kkscene_N04",
+    "shared_with": [
+      "N04"
+    ],
+    "source_sha256": "cc69a766e3efa4ed35e743fe54fa2b7d4fe2dbf46f9ac51ab0c39d5898a924a6"
+  },
+  {
+    "id": "N05",
+    "type": "milestone",
+    "title": "Foto Berempat",
+    "prompt": "adegan/nagisa/N05.md",
+    "source": "game/kk_nagisa_early.rpy",
+    "line": 11,
+    "label": "kkscene_N05",
+    "shared_with": [
+      "N05"
+    ],
+    "source_sha256": "5dafcdcf09b0538a0ba8773136f798d2bc0ee9c62c26f414563e45ef8b9d4bf0"
+  },
+  {
+    "id": "N06",
+    "type": "milestone",
+    "title": "Yuuto Menawarkan Bantuan",
+    "prompt": "adegan/nagisa/N06.md",
+    "source": "game/kk_life_events.rpy",
+    "line": 39,
+    "label": "kkscene_N06",
+    "shared_with": [
+      "N06"
+    ],
+    "source_sha256": "685911aa713ed45e78d173ab739173da278c6b491d7b52ace62dcf5cdceb9156"
+  },
+  {
+    "id": "N07",
+    "type": "milestone",
+    "title": "Natal: Koko",
+    "prompt": "adegan/nagisa/N07.md",
+    "source": "game/kk_nagisa_early.rpy",
+    "line": 39,
+    "label": "kkscene_N07",
+    "shared_with": [
+      "N07"
+    ],
+    "source_sha256": "193c85ff615fd6b7866e220c502297671cafa51137a973ba0b414a1cad6abe76"
+  },
+  {
+    "id": "N08",
+    "type": "milestone",
+    "title": "Coklat Gosong",
+    "prompt": "adegan/nagisa/N08.md",
+    "source": "game/kk_nagisa_early.rpy",
+    "line": 70,
+    "label": "kkscene_N08",
+    "shared_with": [
+      "N08"
+    ],
+    "source_sha256": "f106d0ad7e12861ca4e1e8976f73a37b5be5de02c8682392dea565d7f7774eec"
+  },
+  {
+    "id": "N09",
+    "type": "milestone",
+    "title": "Hadiah Kecil",
+    "prompt": "adegan/nagisa/N09.md",
+    "source": "game/kk_nagisa_early.rpy",
+    "line": 97,
+    "label": "kkscene_N09",
+    "shared_with": [
+      "N09"
+    ],
+    "source_sha256": "d43ac3173f3bace6c34c193d481fb1a070154532e434dfcc007f621b59dac1dd"
+  },
+  {
+    "id": "N10",
+    "type": "milestone",
+    "title": "Haruto Menelepon",
+    "prompt": "adegan/nagisa/N10.md",
+    "source": "game/kk_nagisa_early.rpy",
+    "line": 139,
+    "label": "kkscene_N10",
+    "shared_with": [
+      "N10"
+    ],
+    "source_sha256": "de3fd740134f8cbffa7a34e52ec99054e74c6d21dcecc1d8702716415cfebaa1"
+  },
+  {
+    "id": "N11",
+    "type": "milestone",
+    "title": "Ditinggal di Rumah",
+    "prompt": "adegan/nagisa/N11.md",
+    "source": "game/kk_main_extra.rpy",
+    "line": 76,
+    "label": "kkscene_N11",
+    "shared_with": [
+      "N11"
+    ],
+    "source_sha256": "8040dddbfce14ed169532946ebf040f2cab65156edbdb1a8eb702bebf818c911"
+  },
+  {
+    "id": "N12",
+    "type": "milestone",
+    "title": "Hujan Deras: Nagisa Menyelamatkan",
+    "prompt": "adegan/nagisa/N12.md",
+    "source": "game/kk_main_extra.rpy",
+    "line": 101,
+    "label": "kkscene_N12",
+    "shared_with": [
+      "N12"
+    ],
+    "source_sha256": "406198be45f5ebab5e467e2aa199341be7154d52d54a639665de495170f2d11e"
+  },
+  {
+    "id": "N13",
+    "type": "milestone",
+    "title": "Konfrontasi Yukata",
+    "prompt": "adegan/nagisa/N13.md",
+    "source": "game/kk_main_extra.rpy",
+    "line": 128,
+    "label": "kkscene_N13",
+    "shared_with": [
+      "N13"
+    ],
+    "source_sha256": "abc872884f264559d6bae77b08f5272570287d2b57d566b66f2303fd42745844"
+  },
+  {
+    "id": "N14",
+    "type": "milestone",
+    "title": "Cek Pesan",
+    "prompt": "adegan/nagisa/N14.md",
+    "source": "game/kk_nagisa_route.rpy",
+    "line": 18,
+    "label": "kkscene_N14",
+    "shared_with": [
+      "N14"
+    ],
+    "source_sha256": "5d956b76d31b6612ef2c5dbc6a4b5aba5e94f93ab4966a8fa577bedd4ca00f2e"
+  },
+  {
+    "id": "N15",
+    "type": "milestone",
+    "title": "Natal Kedua: Ultimatum",
+    "prompt": "adegan/nagisa/N15.md",
+    "source": "game/kk_nagisa_route.rpy",
+    "line": 46,
+    "label": "kkscene_N15",
+    "shared_with": [
+      "N15"
+    ],
+    "source_sha256": "21f1e002fc423b3a53d1f4a549b52e35ed7d4a9638ed32f1cdd85e40afcaafab"
+  },
+  {
+    "id": "N16",
+    "type": "milestone",
+    "title": "Hari Bentrok",
+    "prompt": "adegan/nagisa/N16.md",
+    "source": "game/kk_nagisa_route.rpy",
+    "line": 73,
+    "label": "kkscene_N16",
+    "shared_with": [
+      "N16"
+    ],
+    "source_sha256": "feb7a0ff9e36e9c1e5b13a1dfcd4bcb7c7b6c96a58acb9b95ca59222f59226ec"
+  },
+  {
+    "id": "N17",
+    "type": "milestone",
+    "title": "Gantungan Kunci yang Hilang",
+    "prompt": "adegan/nagisa/N17.md",
+    "source": "game/kk_nagisa_route.rpy",
+    "line": 101,
+    "label": "kkscene_N17",
+    "shared_with": [
+      "N17"
+    ],
+    "source_sha256": "b8471b696486e717187df48fa95e3674c00d65ada929ed462b0e243e566be3c5"
+  },
+  {
+    "id": "N18",
+    "type": "milestone",
+    "title": "Yuuto dan Sabotase",
+    "prompt": "adegan/nagisa/N18.md",
+    "source": "game/kk_nagisa_route.rpy",
+    "line": 129,
+    "label": "kkscene_N18",
+    "shared_with": [
+      "N18"
+    ],
+    "source_sha256": "8c87fbac2685f8cfe618876edc3f2629b5ccafc3af5ccc0ce29a6d9098004330"
+  },
+  {
+    "id": "N19",
+    "type": "milestone",
+    "title": "Tanzaku Palsu",
+    "prompt": "adegan/nagisa/N19.md",
+    "source": "game/kk_tanabata.rpy",
+    "line": 82,
+    "label": "kkscene_N19",
+    "shared_with": [
+      "N19"
+    ],
+    "source_sha256": "ed5347db51e40849e693c127a2255a855d4c804c6b94d67690fc260d7f75d401"
+  },
+  {
+    "id": "N20",
+    "type": "milestone",
+    "title": "Kembang Api Terakhir",
+    "prompt": "adegan/nagisa/N20.md",
+    "source": "game/kk_misc_late.rpy",
+    "line": 32,
+    "label": "kkscene_N20",
+    "shared_with": [
+      "N20"
+    ],
+    "source_sha256": "71c0837173a6c58cfe3851436945f957635761c7f399f6f6667afab45b6c481f"
+  },
+  {
+    "id": "N21",
+    "type": "milestone",
+    "title": "Haruto Datang",
+    "prompt": "adegan/nagisa/N21.md",
+    "source": "game/kk_family.rpy",
+    "line": 311,
+    "label": "kkscene_N21",
+    "shared_with": [
+      "N21"
+    ],
+    "source_sha256": "caf1fa5fdeba4ad7debdbfc49899f1d3e9a1c5d24ed04a41a420e67bf8f4a69f"
+  },
+  {
+    "id": "N22",
+    "type": "milestone",
+    "title": "Natal: Rumah Sakurajima",
+    "prompt": "adegan/nagisa/N22.md",
+    "source": "game/kk_family.rpy",
+    "line": 402,
+    "label": "kkscene_N22",
+    "shared_with": [
+      "N22"
+    ],
+    "source_sha256": "283bb35fba44718407bedafb35136f4255b096fedd3f246bafc8613db4fd14db"
+  },
+  {
+    "id": "N23",
+    "type": "milestone",
+    "title": "Koko di Meja Pemain",
+    "prompt": "adegan/nagisa/N23.md",
+    "source": "game/kk_family.rpy",
+    "line": 350,
+    "label": "kkscene_N23",
+    "shared_with": [
+      "N23"
+    ],
+    "source_sha256": "ee385f74eeb992f39204d922a465c45eec517dd3926ef9a4222498ac155e22d1"
+  },
+  {
+    "id": "N24",
+    "type": "node_akhir",
+    "title": "Pilihan Nagisa",
+    "prompt": "adegan/nagisa/N24.md",
+    "source": "game/kk_story_stubs.rpy",
+    "line": 55,
+    "label": "kkscene_N24",
+    "shared_with": [
+      "N24"
+    ],
+    "source_sha256": "f064ff77fbb88f547c3d007475dcb28bb3c81168f51225d3b0819d77976d3b6a"
+  },
+  {
+    "id": "Mi01",
+    "type": "milestone",
+    "title": "Bento Hanami",
+    "prompt": "adegan/miyuki/Mi01.md",
+    "source": "game/kk_scenes.rpy",
+    "line": 54,
+    "label": "kkscene_Mi01",
+    "shared_with": [
+      "Mi01"
+    ],
+    "source_sha256": "6b2c101219ebc98d3c2ee2d1ddca6396eaf46cfb554e5f06bac0f053022d43bb"
+  },
+  {
+    "id": "Mi02",
+    "type": "milestone",
+    "title": "Kue Percobaan Ketiga",
+    "prompt": "adegan/miyuki/Mi02.md",
+    "source": "game/kk_spring.rpy",
+    "line": 109,
+    "label": "kkscene_Mi02",
+    "shared_with": [
+      "Mi02"
+    ],
+    "source_sha256": "00471bc10f6609d6fa0614da27d3c4e8a851494888037c76f6993f09ac2e46e6"
+  },
+  {
+    "id": "Mi03",
+    "type": "milestone",
+    "title": "Perpustakaan Medis Malam",
+    "prompt": "adegan/miyuki/Mi03.md",
+    "source": "game/kk_scenes.rpy",
+    "line": 113,
+    "label": "kkscene_Mi03",
+    "shared_with": [
+      "Mi03"
+    ],
+    "source_sha256": "0913adcee07bf8489694377218b276074b27518ceefe81d579e7a52d20480c8e"
+  },
+  {
+    "id": "Mi04",
+    "type": "milestone",
+    "title": "Tali Obi",
+    "prompt": "adegan/miyuki/Mi04.md",
+    "source": "game/kk_miyuki_early.rpy",
+    "line": 10,
+    "label": "kkscene_Mi04",
+    "shared_with": [
+      "Mi04"
+    ],
+    "source_sha256": "225479146b2f834fab50e4253dd365fd74006894e2358ac4de26f815cb58e88b"
+  },
+  {
+    "id": "Mi05",
+    "type": "milestone",
+    "title": "Minuman di Vila",
+    "prompt": "adegan/miyuki/Mi05.md",
+    "source": "game/kk_vila.rpy",
+    "line": 14,
+    "label": "kkscene_Mi05",
+    "shared_with": [
+      "Mi05"
+    ],
+    "source_sha256": "1380120041baa137d01d08133635b7b7f448ea2f9edbe8c3fc6872e543f2b54d"
+  },
+  {
+    "id": "Mi06",
+    "type": "milestone",
+    "title": "Rencana Masa Depan",
+    "prompt": "adegan/miyuki/Mi06.md",
+    "source": "game/kk_miyuki_daily.rpy",
+    "line": 263,
+    "label": "kkscene_Mi06",
+    "shared_with": [
+      "Mi06"
+    ],
+    "source_sha256": "42f7b8d8e61c996aec4f2cd6330a0d7fe9d475b523b5be09eb4e1f0f146d602c"
+  },
+  {
+    "id": "Mi07",
+    "type": "milestone",
+    "title": "Takeru Muncul",
+    "prompt": "adegan/miyuki/Mi07.md",
+    "source": "game/kk_family.rpy",
+    "line": 192,
+    "label": "kkscene_Mi07",
+    "shared_with": [
+      "Mi07"
+    ],
+    "source_sha256": "d77333eab425da251900b2b7c6eccfbd32b766c48ba20dc602fef4fc458d21a8"
+  },
+  {
+    "id": "Mi08",
+    "type": "milestone",
+    "title": "Sena dan Psikolog",
+    "prompt": "adegan/miyuki/Mi08.md",
+    "source": "game/kk_miyuki_early.rpy",
+    "line": 40,
+    "label": "kkscene_Mi08",
+    "shared_with": [
+      "Mi08"
+    ],
+    "source_sha256": "09d231a8c6fb55e7c50461469fe827e3ad68dbf149e3c031de6969b85bc49244"
+  },
+  {
+    "id": "Mi09",
+    "type": "milestone",
+    "title": "Natal: Pesta Rumah Sakit",
+    "prompt": "adegan/miyuki/Mi09.md",
+    "source": "game/kk_family.rpy",
+    "line": 219,
+    "label": "kkscene_Mi09",
+    "shared_with": [
+      "Mi09"
+    ],
+    "source_sha256": "67a15426ef6ee7d6437d651b317da694697bbb64555d580e31d6a98d3cce8bd5"
+  },
+  {
+    "id": "Mi10",
+    "type": "milestone",
+    "title": "Omikuji Miyuki",
+    "prompt": "adegan/miyuki/Mi10.md",
+    "source": "game/kk_miyuki_early.rpy",
+    "line": 67,
+    "label": "kkscene_Mi10",
+    "shared_with": [
+      "Mi10"
+    ],
+    "source_sha256": "fee6007c8def43a7978a184e531d6d0017db20579a2138f36a11bc886ef91e4f"
+  },
+  {
+    "id": "Mi11",
+    "type": "milestone",
+    "title": "Kue untuk Semua",
+    "prompt": "adegan/miyuki/Mi11.md",
+    "source": "game/kk_miyuki_daily.rpy",
+    "line": 84,
+    "label": "kkscene_Mi11",
+    "shared_with": [
+      "Mi11"
+    ],
+    "source_sha256": "ccf4ce795930a71918fcf4605c4c148621121c761ee6c092955732b78cd8a86b"
+  },
+  {
+    "id": "Mi12",
+    "type": "milestone",
+    "title": "Tahun Keempat",
+    "prompt": "adegan/miyuki/Mi12.md",
+    "source": "game/kk_miyuki_daily.rpy",
+    "line": 150,
+    "label": "kkscene_Mi12",
+    "shared_with": [
+      "Mi12"
+    ],
+    "source_sha256": "365460c6dac68f09018ef8c034e1664dbda2e7da1da07896d549bc0384c897b9"
+  },
+  {
+    "id": "Mi13",
+    "type": "milestone",
+    "title": "Telepon Ibu",
+    "prompt": "adegan/miyuki/Mi13.md",
+    "source": "game/kk_miyuki_daily.rpy",
+    "line": 177,
+    "label": "kkscene_Mi13",
+    "shared_with": [
+      "Mi13"
+    ],
+    "source_sha256": "68d41392d0d990b58aea16b8df50d08f16cb14f54fe8c88262c27cd563329aea"
+  },
+  {
+    "id": "Mi14",
+    "type": "milestone",
+    "title": "Hujan di Bangsal",
+    "prompt": "adegan/miyuki/Mi14.md",
+    "source": "game/kk_miyuki_route.rpy",
+    "line": 19,
+    "label": "kkscene_Mi14",
+    "shared_with": [
+      "Mi14"
+    ],
+    "source_sha256": "18577696fd18c15c5f41f8ff014a578512bdc6f4db18cb2c53a6cdee4845ea65"
+  },
+  {
+    "id": "Mi15",
+    "type": "milestone",
+    "title": "Minta Maaf Berlebihan",
+    "prompt": "adegan/miyuki/Mi15.md",
+    "source": "game/kk_miyuki_route.rpy",
+    "line": 47,
+    "label": "kkscene_Mi15",
+    "shared_with": [
+      "Mi15"
+    ],
+    "source_sha256": "8bbf4c05fd37dd20910bf6a35e4fff79180f115d19c43634faef759b93b8bf83"
+  },
+  {
+    "id": "Mi16",
+    "type": "milestone",
+    "title": "Kesalahan di Bangsal",
+    "prompt": "adegan/miyuki/Mi16.md",
+    "source": "game/kk_miyuki_route.rpy",
+    "line": 75,
+    "label": "kkscene_Mi16",
+    "shared_with": [
+      "Mi16"
+    ],
+    "source_sha256": "7633440e8fb53965a895caa56bc33f6af4ccc4f325639c9b7ce3b5c2216cf902"
+  },
+  {
+    "id": "Mi17",
+    "type": "milestone",
+    "title": "Pingsan di Pameran",
+    "prompt": "adegan/miyuki/Mi17.md",
+    "source": "game/kk_miyuki_route.rpy",
+    "line": 109,
+    "label": "kkscene_Mi17",
+    "shared_with": [
+      "Mi17"
+    ],
+    "source_sha256": "fa4932f90fecc9927e84f2f99d8521fc5b05808f3f5494f90957cc3c00f37c88"
+  },
+  {
+    "id": "Mi18",
+    "type": "milestone",
+    "title": "Natal Kedua: Lamaran Terselubung",
+    "prompt": "adegan/miyuki/Mi18.md",
+    "source": "game/kk_family.rpy",
+    "line": 247,
+    "label": "kkscene_Mi18",
+    "shared_with": [
+      "Mi18"
+    ],
+    "source_sha256": "c42dd5f92168e50002a32680e315cc6666f03189024b048f8e56c945f52e192a"
+  },
+  {
+    "id": "Mi19",
+    "type": "milestone",
+    "title": "Valentine Dingin",
+    "prompt": "adegan/miyuki/Mi19.md",
+    "source": "game/kk_miyuki_route.rpy",
+    "line": 137,
+    "label": "kkscene_Mi19",
+    "shared_with": [
+      "Mi19"
+    ],
+    "source_sha256": "d259fa4bf74c9a08f619ad68b82e1fe792c854e1f03e65620961bf74b387da52"
+  },
+  {
+    "id": "Mi20",
+    "type": "milestone",
+    "title": "Audit Pribadi",
+    "prompt": "adegan/miyuki/Mi20.md",
+    "source": "game/kk_miyuki_route.rpy",
+    "line": 165,
+    "label": "kkscene_Mi20",
+    "shared_with": [
+      "Mi20"
+    ],
+    "source_sha256": "80bb3459f8f245c906054cbaaa0f6abf3c97ea6c9c08fc76fbacd81d06979e8a"
+  },
+  {
+    "id": "Mi21",
+    "type": "milestone",
+    "title": "Rotasi Klinik",
+    "prompt": "adegan/miyuki/Mi21.md",
+    "source": "game/kk_miyuki_daily.rpy",
+    "line": 288,
+    "label": "kkscene_Mi21",
+    "shared_with": [
+      "Mi21"
+    ],
+    "source_sha256": "c9d38b146c37fbf7a08c6ac4723469df1ae1938a9f0efc6c3e35028a8b76d3b7"
+  },
+  {
+    "id": "Mi22",
+    "type": "milestone",
+    "title": "Pola Menetap",
+    "prompt": "adegan/miyuki/Mi22.md",
+    "source": "game/kk_miyuki_route.rpy",
+    "line": 193,
+    "label": "kkscene_Mi22",
+    "shared_with": [
+      "Mi22"
+    ],
+    "source_sha256": "f6550ce175414771bc56719a2515ea4ffe1915158a92dcb763b275eb9167b561"
+  },
+  {
+    "id": "Mi23",
+    "type": "milestone",
+    "title": "Yukata Tanpa Senyum",
+    "prompt": "adegan/miyuki/Mi23.md",
+    "source": "game/kk_miyuki_route.rpy",
+    "line": 220,
+    "label": "kkscene_Mi23",
+    "shared_with": [
+      "Mi23"
+    ],
+    "source_sha256": "feef20d3f8d6308e1c1807c1b77adfb4da770c5ccf4826e56ea017862b17b5bf"
+  },
+  {
+    "id": "Mi24",
+    "type": "milestone",
+    "title": "Hasil CBT",
+    "prompt": "adegan/miyuki/Mi24.md",
+    "source": "game/kk_miyuki_daily.rpy",
+    "line": 398,
+    "label": "kkscene_Mi24",
+    "shared_with": [
+      "Mi24"
+    ],
+    "source_sha256": "640f1d8db8398bae81ff45d1fb685c25e86771a132c7716ffe816ab06fc6dd98"
+  },
+  {
+    "id": "Mi25",
+    "type": "milestone",
+    "title": "Natal: Pertunangan?",
+    "prompt": "adegan/miyuki/Mi25.md",
+    "source": "game/kk_family.rpy",
+    "line": 283,
+    "label": "kkscene_Mi25",
+    "shared_with": [
+      "Mi25"
+    ],
+    "source_sha256": "bf4f09d932b4e87c625960e11664de7ede9452aca22a209787392e2358b0c4b9"
+  },
+  {
+    "id": "Mi26",
+    "type": "milestone",
+    "title": "Ujian Akhir dan Sena",
+    "prompt": "adegan/miyuki/Mi26.md",
+    "source": "game/kk_miyuki_route.rpy",
+    "line": 247,
+    "label": "kkscene_Mi26",
+    "shared_with": [
+      "Mi26"
+    ],
+    "source_sha256": "89da3f251833d3a25fc7233886a3698934e139909a18cb30dfcdb381bdf6c1c7"
+  },
+  {
+    "id": "Mi27",
+    "type": "node_akhir",
+    "title": "Pilihan Miyuki",
+    "prompt": "adegan/miyuki/Mi27.md",
+    "source": "game/kk_story_stubs.rpy",
+    "line": 34,
+    "label": "kkscene_Mi27",
+    "shared_with": [
+      "Mi27"
+    ],
+    "source_sha256": "ace8b8092131bff6d21643fa8bda6b509451c822ab0bc98ab9bb2a320e637f43"
+  },
+  {
+    "id": "Mi-D01",
+    "type": "dinamis",
+    "title": "Permintaan Kecil",
+    "prompt": "adegan/miyuki/Mi-D01.md",
+    "source": "game/kk_life_events.rpy",
+    "line": 1005,
+    "label": "kk_pudding",
+    "shared_with": [
+      "Mi-D01"
+    ],
+    "source_sha256": "dec55f06c35f5e24004147c7dec8a4a24a28e22ca81819ae5868876e4a193ec4"
+  },
+  {
+    "id": "Mi-D02",
+    "type": "dinamis",
+    "title": "Tertidur di Bahu",
+    "prompt": "adegan/miyuki/Mi-D02.md",
+    "source": "game/kk_miyuki_daily.rpy",
+    "line": 202,
+    "label": "kk_library_rest",
+    "shared_with": [
+      "Mi-D02"
+    ],
+    "source_sha256": "cbeb1dc0f429977dadab37b361c1417e572664f2fab988eae3451b90e280cc89"
+  },
+  {
+    "id": "Mi-D03",
+    "type": "dinamis",
+    "title": "Pastry dengan Nama",
+    "prompt": "adegan/miyuki/Mi-D03.md",
+    "source": "game/kk_life_events.rpy",
+    "line": 902,
+    "label": "kk_social_scene",
+    "shared_with": [
+      "N-D02",
+      "Mi-D03"
+    ],
+    "source_sha256": "522f2090a7153978f8b8f6b00c579ab1e8457d0e39881be76be0b3faf6e0e8ae"
+  },
+  {
+    "id": "Mi-D04",
+    "type": "dinamis",
+    "title": "Telepon Ibu yang Terdengar",
+    "prompt": "adegan/miyuki/Mi-D04.md",
+    "source": "game/kk_miyuki_daily.rpy",
+    "line": 53,
+    "label": "kk_overheard_call",
+    "shared_with": [
+      "Mi-D04"
+    ],
+    "source_sha256": "a8c12c5ebac8a99f90d3bf55ee6575eb3710f5b1525dd2d6f956749bdd8e9154"
+  },
+  {
+    "id": "Mi-D05",
+    "type": "dinamis",
+    "title": "Tangga Darurat Jam Tiga",
+    "prompt": "adegan/miyuki/Mi-D05.md",
+    "source": "game/kk_miyuki_dyn.rpy",
+    "line": 16,
+    "label": "kkscene_Mi_D05",
+    "shared_with": [
+      "Mi-D05"
+    ],
+    "source_sha256": "f4b3af7a0e773496b4d25c1a61cbcd8595e151c8c6bbbc49c4ca93fed47ac89e"
+  },
+  {
+    "id": "Mi-D06",
+    "type": "dinamis",
+    "title": "Teguran yang Ia Minta",
+    "prompt": "adegan/miyuki/Mi-D06.md",
+    "source": "game/kk_miyuki_dyn.rpy",
+    "line": 102,
+    "label": "kkscene_Mi_D06",
+    "shared_with": [
+      "Mi-D06"
+    ],
+    "source_sha256": "2c115e19c0388774da45708883d232e224dae518ebd157f8a1880bdeb4f91611"
+  },
+  {
+    "id": "Mi-D07",
+    "type": "dinamis",
+    "title": "Hayase di Kafe",
+    "prompt": "adegan/miyuki/Mi-D07.md",
+    "source": "game/kk_miyuki_dyn.rpy",
+    "line": 139,
+    "label": "kkscene_Mi_D07",
+    "shared_with": [
+      "Mi-D07"
+    ],
+    "source_sha256": "3d6f52f6b2de899baec8366ca7e109849a5ae600b118b655f82742eeddd941e2"
+  },
+  {
+    "id": "Mi-D08",
+    "type": "dinamis",
+    "title": "Rahasia di Konbini",
+    "prompt": "adegan/miyuki/Mi-D08.md",
+    "source": "game/kk_miyuki_dyn.rpy",
+    "line": 175,
+    "label": "kkscene_Mi_D08",
+    "shared_with": [
+      "Mi-D08"
+    ],
+    "source_sha256": "dc9aee3d84cef70c8d7328c9af560f4dd8d27e67e3c91f4fbcef31e69c2b363b"
+  },
+  {
+    "id": "Mi-D09",
+    "type": "dinamis",
+    "title": "Pasien Kecil",
+    "prompt": "adegan/miyuki/Mi-D09.md",
+    "source": "game/kk_miyuki_daily.rpy",
+    "line": 313,
+    "label": "kk_pediatric_patient",
+    "shared_with": [
+      "Mi-D09"
+    ],
+    "source_sha256": "cfa3e6805c8641e6b239d33ed9c0c14abacb7ed4a02e8a1a4592c81884590b36"
+  },
+  {
+    "id": "Mi-D10",
+    "type": "dinamis",
+    "title": "Resep yang Salah Tulis",
+    "prompt": "adegan/miyuki/Mi-D10.md",
+    "source": "game/kk_miyuki_dyn.rpy",
+    "line": 45,
+    "label": "kkscene_Mi_D10",
+    "shared_with": [
+      "Mi-D10"
+    ],
+    "source_sha256": "afa4c0f19e1bc7745e352feb71d32a10f800dde115b55ace61642fb1b54718a6"
+  },
+  {
+    "id": "Mi-D11",
+    "type": "dinamis",
+    "title": "Malam Sebelum CBT",
+    "prompt": "adegan/miyuki/Mi-D11.md",
+    "source": "game/kk_miyuki_daily.rpy",
+    "line": 359,
+    "label": "kk_exam_eve",
+    "shared_with": [
+      "Mi-D11"
+    ],
+    "source_sha256": "0fec5a31c75877eaedb7d4339d27457a866700b7fc57640b2505fdd781557fd7"
+  },
+  {
+    "id": "Mi-D12",
+    "type": "dinamis",
+    "title": "Ia Memilih Dirinya",
+    "prompt": "adegan/miyuki/Mi-D12.md",
+    "source": "game/kk_miyuki_daily.rpy",
+    "line": 111,
+    "label": "kk_miyuki_refuses",
+    "shared_with": [
+      "Mi-D12"
+    ],
+    "source_sha256": "2641001a6912b611a370d85659969959168b0591e5df3bea857fe584123b122f"
+  },
+  {
+    "id": "Mi-D13",
+    "type": "dinamis",
+    "title": "Pertanyaan yang Belum Pernah Ia Tanyakan",
+    "prompt": "adegan/miyuki/Mi-D13.md",
+    "source": "game/kk_misc_dyn.rpy",
+    "line": 11,
+    "label": "kkscene_Mi_D13",
+    "shared_with": [
+      "Mi-D13"
+    ],
+    "source_sha256": "4c6a4f4ad71679b97d9ee1397d3082ed2ff8f818aa5d4495f5639a7e161fbdb1"
+  },
+  {
+    "id": "Mi-D14",
+    "type": "dinamis",
+    "title": "Jaga untuk Pemain",
+    "prompt": "adegan/miyuki/Mi-D14.md",
+    "source": "game/kk_miyuki_dyn.rpy",
+    "line": 74,
+    "label": "kkscene_Mi_D14",
+    "shared_with": [
+      "Mi-D14"
+    ],
+    "source_sha256": "abdf4fba207bdfc7860f978282141ee79af18e375dda135548a6d78815c39eaa"
+  },
+  {
+    "id": "N-D01",
+    "type": "dinamis",
+    "title": "Rematch Jam Dua",
+    "prompt": "adegan/nagisa/N-D01.md",
+    "source": "game/kk_life_events.rpy",
+    "line": 67,
+    "label": "kk_phone_rematch",
+    "shared_with": [
+      "N-D01"
+    ],
+    "source_sha256": "28330a8659a2c3dd7b7e384b3c55257e2adfd9538daf735511498ac2c4683470"
+  },
+  {
+    "id": "N-D02",
+    "type": "dinamis",
+    "title": "Bekal yang Tidak Diakui",
+    "prompt": "adegan/nagisa/N-D02.md",
+    "source": "game/kk_life_events.rpy",
+    "line": 902,
+    "label": "kk_social_scene",
+    "shared_with": [
+      "N-D02",
+      "Mi-D03"
+    ],
+    "source_sha256": "522f2090a7153978f8b8f6b00c579ab1e8457d0e39881be76be0b3faf6e0e8ae"
+  },
+  {
+    "id": "N-D03",
+    "type": "dinamis",
+    "title": "Ayunan Malam",
+    "prompt": "adegan/nagisa/N-D03.md",
+    "source": "game/kk_spring.rpy",
+    "line": 177,
+    "label": "kkscene_N_D03",
+    "shared_with": [
+      "N-D03"
+    ],
+    "source_sha256": "eca93d4004f7702863dcd51c26977fe2418b7667367601daac925c1a4ef301e7"
+  },
+  {
+    "id": "N-D04",
+    "type": "dinamis",
+    "title": "Tawaran Kedua Yuuto",
+    "prompt": "adegan/nagisa/N-D04.md",
+    "source": "game/kk_misc_dyn.rpy",
+    "line": 38,
+    "label": "kkscene_N_D04",
+    "shared_with": [
+      "N-D04"
+    ],
+    "source_sha256": "532ad92fe26e82899743fdf0601495dc7061c28025412fd9c5408fc35cbeceaa"
+  },
+  {
+    "id": "N-D05",
+    "type": "dinamis",
+    "title": "Tangkapan Layar",
+    "prompt": "adegan/nagisa/N-D05.md",
+    "source": "game/kk_nagisa_dyn.rpy",
+    "line": 156,
+    "label": "kkscene_N_D05",
+    "shared_with": [
+      "N-D05"
+    ],
+    "source_sha256": "058335f44decc5581e09b09481fd76a5ba51e1e5a24eba6bdf41cdce9b41b28d"
+  },
+  {
+    "id": "N-D06",
+    "type": "dinamis",
+    "title": "Kunci Cadangan",
+    "prompt": "adegan/nagisa/N-D06.md",
+    "source": "game/kk_nagisa_dyn.rpy",
+    "line": 20,
+    "label": "kkscene_N_D06",
+    "shared_with": [
+      "N-D06"
+    ],
+    "source_sha256": "29906dd08d1fde99d49830a8ebcda03ce1f387d9e55a3ff6fa8f8a37b499e40f"
+  },
+  {
+    "id": "N-D07",
+    "type": "dinamis",
+    "title": "Haruto di Depan Rumah",
+    "prompt": "adegan/nagisa/N-D07.md",
+    "source": "game/kk_nagisa_dyn.rpy",
+    "line": 47,
+    "label": "kkscene_N_D07",
+    "shared_with": [
+      "N-D07"
+    ],
+    "source_sha256": "e43e9cc3eb6e68af0173579a951335c7324703a61a5fb4425d61212f1d3fb052"
+  },
+  {
+    "id": "N-D08",
+    "type": "dinamis",
+    "title": "Rekaman Pertandingan",
+    "prompt": "adegan/nagisa/N-D08.md",
+    "source": "game/kk_spring.rpy",
+    "line": 206,
+    "label": "kkscene_N_D08",
+    "shared_with": [
+      "N-D08"
+    ],
+    "source_sha256": "eec9e79d83ffe9c8bb1304c27968d822e9419fe5caf7eb66af653716500dd232"
+  },
+  {
+    "id": "N-D09",
+    "type": "dinamis",
+    "title": "Koko Robek",
+    "prompt": "adegan/nagisa/N-D09.md",
+    "source": "game/kk_family.rpy",
+    "line": 376,
+    "label": "kk_torn_koko",
+    "shared_with": [
+      "N-D09"
+    ],
+    "source_sha256": "eb39d2d66f577525031f1d7e85f7de6064096ad83e849ed9be232ec3d594d2f1"
+  },
+  {
+    "id": "N-D10",
+    "type": "dinamis",
+    "title": "Pesan Ketiga Puluh Tujuh",
+    "prompt": "adegan/nagisa/N-D10.md",
+    "source": "game/kk_nagisa_dyn.rpy",
+    "line": 189,
+    "label": "kkscene_N_D10",
+    "shared_with": [
+      "N-D10"
+    ],
+    "source_sha256": "d6471293d31a4d15a653b87b4363d8b7e814f0538a4cf20e8a31770d8ba78968"
+  },
+  {
+    "id": "N-D11",
+    "type": "dinamis",
+    "title": "Ruang di Gambar Kerja",
+    "prompt": "adegan/nagisa/N-D11.md",
+    "source": "game/kk_nagisa_dyn.rpy",
+    "line": 74,
+    "label": "kkscene_N_D11",
+    "shared_with": [
+      "N-D11"
+    ],
+    "source_sha256": "3e20ec4daa85d635476b7598afc45539cb2d491e5dbece99b9dc986f0d3442e7"
+  },
+  {
+    "id": "N-D12",
+    "type": "dinamis",
+    "title": "Nacchan-oneechan",
+    "prompt": "adegan/nagisa/N-D12.md",
+    "source": "game/kk_nagisa_dyn.rpy",
+    "line": 101,
+    "label": "kkscene_N_D12",
+    "shared_with": [
+      "N-D12"
+    ],
+    "source_sha256": "244f9e62358bf5ae52072ea5485e403ee8c94f8c68a019b6a0aed81a5432fe79"
+  },
+  {
+    "id": "N-D13",
+    "type": "dinamis",
+    "title": "Jendela Seberang",
+    "prompt": "adegan/nagisa/N-D13.md",
+    "source": "game/kk_nagisa_dyn.rpy",
+    "line": 129,
+    "label": "kkscene_N_D13",
+    "shared_with": [
+      "N-D13"
+    ],
+    "source_sha256": "e14af5c6c65b26db8a91b5f177a4af92c18c3779cb0119e239678729f76b85a0"
+  },
+  {
+    "id": "H-D01",
+    "type": "dinamis",
+    "title": "Teh Jam Satu",
+    "prompt": "adegan/harumi/H-D01.md",
+    "source": "game/kk_harumi.rpy",
+    "line": 84,
+    "label": "kk_dorm_tea",
+    "shared_with": [
+      "H-D01"
+    ],
+    "source_sha256": "7db38aec7d5b2aedbb00560c2aa8ef4b36f46430f413bbdb014dbeab178cdf54"
+  },
+  {
+    "id": "H-D02",
+    "type": "dinamis",
+    "title": "Lembar Pengamatan",
+    "prompt": "adegan/harumi/H-D02.md",
+    "source": "game/kk_harumi_dyn.rpy",
+    "line": 12,
+    "label": "kkscene_H_D02",
+    "shared_with": [
+      "H-D02"
+    ],
+    "source_sha256": "0417aaf673085ad5d9cecc425a7c1f0a4b462a23270d8674832c728b2ed70937"
+  },
+  {
+    "id": "H-D03",
+    "type": "dinamis",
+    "title": "Pintu Lab Jam Sebelas",
+    "prompt": "adegan/harumi/H-D03.md",
+    "source": "game/kk_harumi_dyn.rpy",
+    "line": 37,
+    "label": "kkscene_H_D03",
+    "shared_with": [
+      "H-D03"
+    ],
+    "source_sha256": "b60c91b4fc3397b40434bb45fab40a02f599864490997ff2537a392d0ddc4716"
+  },
+  {
+    "id": "H-D04",
+    "type": "dinamis",
+    "title": "Tawaran Ogawa",
+    "prompt": "adegan/harumi/H-D04.md",
+    "source": "game/kk_harumi_dyn.rpy",
+    "line": 67,
+    "label": "kkscene_H_D04",
+    "shared_with": [
+      "H-D04"
+    ],
+    "source_sha256": "936292bc60a03d164932e57182ef3155a49d993221a33e30aed1f3d2cf978bb7"
+  },
+  {
+    "id": "H-D05",
+    "type": "dinamis",
+    "title": "Masakan Kedua",
+    "prompt": "adegan/harumi/H-D05.md",
+    "source": "game/kk_harumi.rpy",
+    "line": 150,
+    "label": "kk_second_meal",
+    "shared_with": [
+      "H-D05"
+    ],
+    "source_sha256": "d7c03bbca9c520e07873ea31bfb281d7117f7def81a70a46fa258f7b53d53ae0"
+  },
+  {
+    "id": "H-D06",
+    "type": "dinamis",
+    "title": "Taksi Jam Lima",
+    "prompt": "adegan/harumi/H-D06.md",
+    "source": "game/kk_harumi_dyn.rpy",
+    "line": 91,
+    "label": "kkscene_H_D06",
+    "shared_with": [
+      "H-D06"
+    ],
+    "source_sha256": "ae798a9fd52b631626517c271d33f682fafda3d5434b75a7f0d0b3eb116963ba"
+  },
+  {
+    "id": "H-D07",
+    "type": "dinamis",
+    "title": "Surat dari Kansai",
+    "prompt": "adegan/harumi/H-D07.md",
+    "source": "game/kk_harumi_family.rpy",
+    "line": 109,
+    "label": "kk_kansai_letter",
+    "shared_with": [
+      "H-D07"
+    ],
+    "source_sha256": "dd65da5c5a5868decf55d96285c64b6658c9594c20dc55c48836fd3689c0b617"
+  },
+  {
+    "id": "H-D08",
+    "type": "dinamis",
+    "title": "Hipotesis Ditolak",
+    "prompt": "adegan/harumi/H-D08.md",
+    "source": "game/kk_harumi_dyn.rpy",
+    "line": 120,
+    "label": "kkscene_H_D08",
+    "shared_with": [
+      "H-D08"
+    ],
+    "source_sha256": "9f4ab88fb14b5f1038f2077f16217cb7c87a0ce3563db4b7f228a97f4c696408"
+  },
+  {
+    "id": "H-D09",
+    "type": "dinamis",
+    "title": "Celah di Jadwal",
+    "prompt": "adegan/harumi/H-D09.md",
+    "source": "game/kk_harumi_dyn.rpy",
+    "line": 143,
+    "label": "kkscene_H_D09",
+    "shared_with": [
+      "H-D09"
+    ],
+    "source_sha256": "5fd48b5a6de9b110d2aa11e3fb788d1b6a0f1dfea27a4675e75823cd72cca98d"
+  },
+  {
+    "id": "H-D10",
+    "type": "dinamis",
+    "title": "Permintaan Komentar",
+    "prompt": "adegan/harumi/H-D10.md",
+    "source": "game/kk_harumi_dyn.rpy",
+    "line": 165,
+    "label": "kkscene_H_D10",
+    "shared_with": [
+      "H-D10"
+    ],
+    "source_sha256": "f5ba43e3ed8282c9096b043592358cb7a933ab313f91d800ceb2751e214a0926"
+  },
+  {
+    "id": "H-D11",
+    "type": "dinamis",
+    "title": "Pelajaran yang Ia Minta",
+    "prompt": "adegan/harumi/H-D11.md",
+    "source": "game/kk_harumi_dyn.rpy",
+    "line": 188,
+    "label": "kkscene_H_D11",
+    "shared_with": [
+      "H-D11"
+    ],
+    "source_sha256": "01c19269753d7e3fa1bc6886dc3628ff65953dff198bab28c6c124b4815bcb05"
+  },
+  {
+    "id": "H-D12",
+    "type": "dinamis",
+    "title": "Poster Riset",
+    "prompt": "adegan/harumi/H-D12.md",
+    "source": "game/kk_harumi_dyn.rpy",
+    "line": 217,
+    "label": "kkscene_H_D12",
+    "shared_with": [
+      "H-D12"
+    ],
+    "source_sha256": "bb645a5e84f186257e85d1575802ee6e134387261c8c2057da261b03f410dcec"
+  },
+  {
+    "id": "Mo-D01",
+    "type": "dinamis",
+    "title": "Onigiri Jam Tiga",
+    "prompt": "adegan/moeka/Mo-D01.md",
+    "source": "game/kk_moeka_dyn.rpy",
+    "line": 20,
+    "label": "kkscene_Mo_D01",
+    "shared_with": [
+      "Mo-D01"
+    ],
+    "source_sha256": "f30e8e7ed8ed76626e94af3aa941359921ba6681b2e400ed60f112973fd79807"
+  },
+  {
+    "id": "Mo-D02",
+    "type": "dinamis",
+    "title": "Panggilan Empat Detik",
+    "prompt": "adegan/moeka/Mo-D02.md",
+    "source": "game/kk_moeka_dyn.rpy",
+    "line": 50,
+    "label": "kkscene_Mo_D02",
+    "shared_with": [
+      "Mo-D02"
+    ],
+    "source_sha256": "40945844fd9f5e2d8b8276c98fbd41e2f0e106c93e1428ad2ad5004e01aa3b98"
+  },
+  {
+    "id": "Mo-D03",
+    "type": "dinamis",
+    "title": "Kostum untuk Hinata",
+    "prompt": "adegan/moeka/Mo-D03.md",
+    "source": "game/kk_moeka_dyn.rpy",
+    "line": 72,
+    "label": "kkscene_Mo_D03",
+    "shared_with": [
+      "Mo-D03"
+    ],
+    "source_sha256": "7473d640f1810ef84b6e6a0d1c767deb60ab2c0c4bb5d8c778dc7d08487c5eb3"
+  },
+  {
+    "id": "Mo-D04",
+    "type": "dinamis",
+    "title": "Struk di Lantai",
+    "prompt": "adegan/moeka/Mo-D04.md",
+    "source": "game/kk_moeka_dyn.rpy",
+    "line": 95,
+    "label": "kkscene_Mo_D04",
+    "shared_with": [
+      "Mo-D04"
+    ],
+    "source_sha256": "8cfcecef5647f631fa4f95ae169066d6e726b11c54157db5e050dbb708480072"
+  },
+  {
+    "id": "Mo-D05",
+    "type": "dinamis",
+    "title": "Lokasi dari Kuga",
+    "prompt": "adegan/moeka/Mo-D05.md",
+    "source": "game/kk_moeka_dyn.rpy",
+    "line": 118,
+    "label": "kkscene_Mo_D05",
+    "shared_with": [
+      "Mo-D05"
+    ],
+    "source_sha256": "7a40531cb3858812c025ef90f250e1ff610bbbdb462d942d1bd2039c5485f286"
+  },
+  {
+    "id": "Mo-D06",
+    "type": "dinamis",
+    "title": "Ulang Tahun yang Ia Lupakan",
+    "prompt": "adegan/moeka/Mo-D06.md",
+    "source": "game/kk_moeka_dyn.rpy",
+    "line": 145,
+    "label": "kkscene_Mo_D06",
+    "shared_with": [
+      "Mo-D06"
+    ],
+    "source_sha256": "2a39bded1a950f6a77d5318af449080b4caea8b99367038f246de83f936a8a64"
+  },
+  {
+    "id": "Mo-D07",
+    "type": "dinamis",
+    "title": "Rina Bertanya",
+    "prompt": "adegan/moeka/Mo-D07.md",
+    "source": "game/kk_moeka_dyn.rpy",
+    "line": 168,
+    "label": "kkscene_Mo_D07",
+    "shared_with": [
+      "Mo-D07"
+    ],
+    "source_sha256": "febdae8c9cb004853d488a0e60e3d7e37127cdda08778dd9e156b85bbbcaeb9b"
+  },
+  {
+    "id": "Mo-D08",
+    "type": "dinamis",
+    "title": "Formulir Banding",
+    "prompt": "adegan/moeka/Mo-D08.md",
+    "source": "game/kk_moeka_dyn.rpy",
+    "line": 191,
+    "label": "kkscene_Mo_D08",
+    "shared_with": [
+      "Mo-D08"
+    ],
+    "source_sha256": "c630d24c8b14a07c7514c97bdb7d7ad9fc7644dfe1d96e968ac466667770d017"
+  },
+  {
+    "id": "Mo-D09",
+    "type": "dinamis",
+    "title": "Cocok sebagai Donor",
+    "prompt": "adegan/moeka/Mo-D09.md",
+    "source": "game/kk_moeka_dyn.rpy",
+    "line": 214,
+    "label": "kkscene_Mo_D09",
+    "shared_with": [
+      "Mo-D09"
+    ],
+    "source_sha256": "96058ca184f6fc240bc3806a01e741a5e327cf5b5c9161621715a33dca1f6dca"
+  },
+  {
+    "id": "Mo-D10",
+    "type": "dinamis",
+    "title": "Tawa di Grup Jam Dua",
+    "prompt": "adegan/moeka/Mo-D10.md",
+    "source": "game/kk_moeka_dyn.rpy",
+    "line": 244,
+    "label": "kkscene_Mo_D10",
+    "shared_with": [
+      "Mo-D10"
+    ],
+    "source_sha256": "8c778bc6614140013767563a18dff49ab7eb9b22ade88b887ed3d7bed0a3cb88"
+  },
+  {
+    "id": "Mo-D11",
+    "type": "dinamis",
+    "title": "Barang yang Dikembalikan",
+    "prompt": "adegan/moeka/Mo-D11.md",
+    "source": "game/kk_moeka_dyn.rpy",
+    "line": 264,
+    "label": "kkscene_Mo_D11",
+    "shared_with": [
+      "Mo-D11"
+    ],
+    "source_sha256": "0f4606725c6cb146a7f724e30a5400e0af1d444405f8766d736a7f1fe1f025dd"
+  },
+  {
+    "id": "Mo-D12",
+    "type": "dinamis",
+    "title": "Pertanyaan Langsung",
+    "prompt": "adegan/moeka/Mo-D12.md",
+    "source": "game/kk_moeka_dyn.rpy",
+    "line": 285,
+    "label": "kkscene_Mo_D12",
+    "shared_with": [
+      "Mo-D12"
+    ],
+    "source_sha256": "2eec754e69bb35e60a945922f25cada42007779889cb052f75f4eec1841b3307"
+  },
+  {
+    "id": "Mo-D13",
+    "type": "dinamis",
+    "title": "Sketsa Label Pertama",
+    "prompt": "adegan/moeka/Mo-D13.md",
+    "source": "game/kk_moeka_dyn.rpy",
+    "line": 311,
+    "label": "kkscene_Mo_D13",
+    "shared_with": [
+      "Mo-D13"
+    ],
+    "source_sha256": "7f4a6c54c849cb3f02bc21c2ff7f62545e2a3c1a0e220dba4fb88558d753960a"
+  },
+  {
+    "id": "S-D01",
+    "type": "dinamis",
+    "title": "Langkah Jam Dua Belas",
+    "prompt": "adegan/shiori/S-D01.md",
+    "source": "game/kk_shiori_dyn2.rpy",
+    "line": 11,
+    "label": "kkscene_S_D01",
+    "shared_with": [
+      "S-D01"
+    ],
+    "source_sha256": "d6757978b68a5a637ce0072068f899dff92bfb1777dda614a03b422b6fefeaac"
+  },
+  {
+    "id": "S-D02",
+    "type": "dinamis",
+    "title": "Kuroiwa di Parkiran",
+    "prompt": "adegan/shiori/S-D02.md",
+    "source": "game/kk_shiori_dyn2.rpy",
+    "line": 33,
+    "label": "kkscene_S_D02",
+    "shared_with": [
+      "S-D02"
+    ],
+    "source_sha256": "2d981d90c586f5563116881d4042a157add10e624c917108c2e5bcde9a598ce4"
+  },
+  {
+    "id": "S-D03",
+    "type": "dinamis",
+    "title": "Kekalahan yang Ia Rayakan",
+    "prompt": "adegan/shiori/S-D03.md",
+    "source": "game/kk_shiori_dyn.rpy",
+    "line": 27,
+    "label": "kkscene_S_D03",
+    "shared_with": [
+      "S-D03"
+    ],
+    "source_sha256": "0cd082e53ade4a92c71c5a2b5773807ab965f1868c80f4652d542b8cfc24b091"
+  },
+  {
+    "id": "S-D04",
+    "type": "dinamis",
+    "title": "Pertanyaan Jebakan",
+    "prompt": "adegan/shiori/S-D04.md",
+    "source": "game/kk_saionji.rpy",
+    "line": 77,
+    "label": "kk_shiori_question",
+    "shared_with": [
+      "S-D04"
+    ],
+    "source_sha256": "5f44278b6f5112f64f5579273bfa3b6c71e20371de17566fce77ba1a456840c5"
+  },
+  {
+    "id": "S-D05",
+    "type": "dinamis",
+    "title": "Buku Bertanda Tangan",
+    "prompt": "adegan/shiori/S-D05.md",
+    "source": "game/kk_shiori_dyn2.rpy",
+    "line": 56,
+    "label": "kkscene_S_D05",
+    "shared_with": [
+      "S-D05"
+    ],
+    "source_sha256": "73c048b8186ab63f4ad3d8c568255c9d97d1cfb1eb14227d71b7a974a074b779"
+  },
+  {
+    "id": "S-D06",
+    "type": "dinamis",
+    "title": "Gala dan Tojo",
+    "prompt": "adegan/shiori/S-D06.md",
+    "source": "game/kk_shiori_dyn2.rpy",
+    "line": 79,
+    "label": "kkscene_S_D06",
+    "shared_with": [
+      "S-D06"
+    ],
+    "source_sha256": "6af7ae7dfa160710181ff0bffc766113fe3a07dc6b0956e817861cdda0b89b86"
+  },
+  {
+    "id": "S-D07",
+    "type": "dinamis",
+    "title": "Kartu yang Ia Tunjukkan",
+    "prompt": "adegan/shiori/S-D07.md",
+    "source": "game/kk_shiori_dyn.rpy",
+    "line": 50,
+    "label": "kkscene_S_D07",
+    "shared_with": [
+      "S-D07"
+    ],
+    "source_sha256": "298c36c5310df5a86f397c278eb729a6cf68f9c06d0be5e985ae4cafa460c8f2"
+  },
+  {
+    "id": "S-D08",
+    "type": "dinamis",
+    "title": "Teh dengan Ibu Saionji",
+    "prompt": "adegan/shiori/S-D08.md",
+    "source": "game/kk_saionji.rpy",
+    "line": 32,
+    "label": "kk_saionji_tea",
+    "shared_with": [
+      "S-D08"
+    ],
+    "source_sha256": "cd42bf8df53d9b00693d123818e69393b92f780eecf06a90a86a6f8b9f5268b0"
+  },
+  {
+    "id": "S-D09",
+    "type": "dinamis",
+    "title": "Papan yang Ditinggalkan",
+    "prompt": "adegan/shiori/S-D09.md",
+    "source": "game/kk_saionji.rpy",
+    "line": 276,
+    "label": "kk_inspect_board",
+    "shared_with": [
+      "S-D09"
+    ],
+    "source_sha256": "fd03b275463c0862bc94347a1a554063546db8261258bd7787495e11aab58ae9"
+  },
+  {
+    "id": "S-D10",
+    "type": "dinamis",
+    "title": "Musuh Bersama",
+    "prompt": "adegan/shiori/S-D10.md",
+    "source": "game/kk_shiori_dyn2.rpy",
+    "line": 102,
+    "label": "kkscene_S_D10",
+    "shared_with": [
+      "S-D10"
+    ],
+    "source_sha256": "d1b915ee38068d08fdbaa909710be4a9befaceef4bf1e2d6a80ec05d3bab8531"
+  },
+  {
+    "id": "S-D11",
+    "type": "dinamis",
+    "title": "Prediksi yang Benar",
+    "prompt": "adegan/shiori/S-D11.md",
+    "source": "game/kk_shiori_dyn2.rpy",
+    "line": 124,
+    "label": "kkscene_S_D11",
+    "shared_with": [
+      "S-D11"
+    ],
+    "source_sha256": "00bace4d00e30699cd9ac340f43ba9dfd6473f311296bc7f0817038727d1dc58"
+  },
+  {
+    "id": "S-D12",
+    "type": "dinamis",
+    "title": "Ratu yang Jatuh Sakit",
+    "prompt": "adegan/shiori/S-D12.md",
+    "source": "game/kk_shiori_dyn2.rpy",
+    "line": 146,
+    "label": "kkscene_S_D12",
+    "shared_with": [
+      "S-D12"
+    ],
+    "source_sha256": "3a842c2d61807c2ad426b5129477232e9ece7e37c82e327a125a332ab014641a"
+  },
+  {
+    "id": "S-D13",
+    "type": "dinamis",
+    "title": "Rahasia Palsu",
+    "prompt": "adegan/shiori/S-D13.md",
+    "source": "game/kk_shiori_dyn.rpy",
+    "line": 73,
+    "label": "kkscene_S_D13",
+    "shared_with": [
+      "S-D13"
+    ],
+    "source_sha256": "d7e4308a07851cdf72aa8aac483523166a40fd91295b1240ed447b39c43f6640"
+  },
+  {
+    "id": "S-D14",
+    "type": "dinamis",
+    "title": "Kesempatan Kecil untuk Berkhianat",
+    "prompt": "adegan/shiori/S-D14.md",
+    "source": "game/kk_shiori_dyn.rpy",
+    "line": 96,
+    "label": "kkscene_S_D14",
+    "shared_with": [
+      "S-D14"
+    ],
+    "source_sha256": "ed8623ba8b306ca72640355f5ba4e8ef9dc6e2faccebe2ad11a18b26aefdfa6c"
+  },
+  {
+    "id": "S-D15",
+    "type": "dinamis",
+    "title": "Senyum Paling Manis",
+    "prompt": "adegan/shiori/S-D15.md",
+    "source": "game/kk_shiori_dyn.rpy",
+    "line": 119,
+    "label": "kkscene_S_D15",
+    "shared_with": [
+      "S-D15"
+    ],
+    "source_sha256": "5a91215067a553f0ae78af79b7d2818b9832a132278322863a1440a5266207d2"
+  },
+  {
+    "id": "S-D16",
+    "type": "dinamis",
+    "title": "Langkah yang Terlalu Cepat",
+    "prompt": "adegan/shiori/S-D16.md",
+    "source": "game/kk_shiori_dyn.rpy",
+    "line": 142,
+    "label": "kkscene_S_D16",
+    "shared_with": [
+      "S-D16"
+    ],
+    "source_sha256": "dd107f348d7b24778debcd53733e8f55866123f4c0ef4f032106562b04f2657c"
+  },
+  {
+    "id": "S-D17",
+    "type": "dinamis",
+    "title": "Papan yang Dibalik",
+    "prompt": "adegan/shiori/S-D17.md",
+    "source": "game/kk_shiori_dyn.rpy",
+    "line": 163,
+    "label": "kkscene_S_D17",
+    "shared_with": [
+      "S-D17"
+    ],
+    "source_sha256": "75cc621d61b8f940c24de0fa13034a04f9f5c6176c10dbf5b408b73fd9ff7691"
+  },
+  {
+    "id": "C-D01",
+    "type": "dinamis",
+    "title": "Dapur Jam Dua",
+    "prompt": "adegan/chiasa/C-D01.md",
+    "source": "game/kk_chiasa_dyn.rpy",
+    "line": 17,
+    "label": "kkscene_C_D01",
+    "shared_with": [
+      "C-D01"
+    ],
+    "source_sha256": "d0c13fc7d67c6e7e58bf6a0962219463b4429d2dcaad4698f97e508a979be885"
+  },
+  {
+    "id": "C-D02",
+    "type": "dinamis",
+    "title": "Dua Sketsa Berdampingan",
+    "prompt": "adegan/chiasa/C-D02.md",
+    "source": "game/kk_art.rpy",
+    "line": 135,
+    "label": "kk_show_portfolio",
+    "shared_with": [
+      "C-D02"
+    ],
+    "source_sha256": "fd629f676cf131fa24e6696fd4210d8e68cb3ca02478d652ebbeaa2f34de91e0"
+  },
+  {
+    "id": "C-D03",
+    "type": "dinamis",
+    "title": "Tangan yang Gemetar",
+    "prompt": "adegan/chiasa/C-D03.md",
+    "source": "game/kk_art.rpy",
+    "line": 71,
+    "label": "kk_draw_at_home",
+    "shared_with": [
+      "C-D03"
+    ],
+    "source_sha256": "85f0a973957494633aa91a95830ee95224e329891d3a53684e235f74def53a8b"
+  },
+  {
+    "id": "C-D04",
+    "type": "dinamis",
+    "title": "Hari Pertama",
+    "prompt": "adegan/chiasa/C-D04.md",
+    "source": "game/kk_chiasa_dyn.rpy",
+    "line": 45,
+    "label": "kkscene_C_D04",
+    "shared_with": [
+      "C-D04"
+    ],
+    "source_sha256": "4f680955b57a64422e588c6cd38f2cd87559e068fc2ceae4a10e2e22c82b6c24"
+  },
+  {
+    "id": "C-D05",
+    "type": "dinamis",
+    "title": "Video Call dari Luar Negeri",
+    "prompt": "adegan/chiasa/C-D05.md",
+    "source": "game/kk_chiasa_dyn.rpy",
+    "line": 68,
+    "label": "kkscene_C_D05",
+    "shared_with": [
+      "C-D05"
+    ],
+    "source_sha256": "f3cb8f6a60787b009dbe216b7abb4b390d3c2787d29eedba082a9b31d4724b24"
+  },
+  {
+    "id": "C-D06",
+    "type": "dinamis",
+    "title": "Pagar di Antara Dua Rumah",
+    "prompt": "adegan/chiasa/C-D06.md",
+    "source": "game/kk_chiasa_dyn.rpy",
+    "line": 85,
+    "label": "kkscene_C_D06",
+    "shared_with": [
+      "C-D06"
+    ],
+    "source_sha256": "121a62697800a058050797603ace55a6249d856f3f33cf174e7fcf8956347659"
+  },
+  {
+    "id": "C-D07",
+    "type": "dinamis",
+    "title": "Pesan Mio Jam Sebelas",
+    "prompt": "adegan/chiasa/C-D07.md",
+    "source": "game/kk_art.rpy",
+    "line": 102,
+    "label": "kk_mio_deadline",
+    "shared_with": [
+      "C-D07"
+    ],
+    "source_sha256": "f97dbd2f5a0c06ec581bab0591972a643a2d7e83eae3f629a59375666902682d"
+  },
+  {
+    "id": "C-D08",
+    "type": "dinamis",
+    "title": "Kopi dari Yutaka",
+    "prompt": "adegan/chiasa/C-D08.md",
+    "source": "game/kk_chiasa_dyn.rpy",
+    "line": 106,
+    "label": "kkscene_C_D08",
+    "shared_with": [
+      "C-D08"
+    ],
+    "source_sha256": "81e560b5cf0f6326067ffe5b5a68232da4c1efcb1bfe50305734bf577772c40f"
+  },
+  {
+    "id": "C-D09",
+    "type": "dinamis",
+    "title": "Tangis di Ruang Tamu",
+    "prompt": "adegan/chiasa/C-D09.md",
+    "source": "game/kk_chiasa_dyn.rpy",
+    "line": 129,
+    "label": "kkscene_C_D09",
+    "shared_with": [
+      "C-D09"
+    ],
+    "source_sha256": "1ecd274bf534ef546c9426222f78c07cec32e2582957896636e89326ad883b7c"
+  },
+  {
+    "id": "C-D10",
+    "type": "dinamis",
+    "title": "Bandara Jam Lima",
+    "prompt": "adegan/chiasa/C-D10.md",
+    "source": "game/kk_chiasa_dyn.rpy",
+    "line": 157,
+    "label": "kkscene_C_D10",
+    "shared_with": [
+      "C-D10"
+    ],
+    "source_sha256": "48de084adae563c3d65d09dd85a9a30d81b26d655ebeda47de274bdc4e396eee"
+  },
+  {
+    "id": "C-D11",
+    "type": "dinamis",
+    "title": "Karya yang Dibeli Diam-diam",
+    "prompt": "adegan/chiasa/C-D11.md",
+    "source": "game/kk_chiasa_dyn.rpy",
+    "line": 179,
+    "label": "kkscene_C_D11",
+    "shared_with": [
+      "C-D11"
+    ],
+    "source_sha256": "8f73e3bee953a6aa7dc5759ecc6104b7d024c9a16e7e48eaf9a939015c11fdb8"
+  },
+  {
+    "id": "C-D12",
+    "type": "dinamis",
+    "title": "Kuas yang Dipinjam",
+    "prompt": "adegan/chiasa/C-D12.md",
+    "source": "game/kk_chiasa_dyn.rpy",
+    "line": 202,
+    "label": "kkscene_C_D12",
+    "shared_with": [
+      "C-D12"
+    ],
+    "source_sha256": "ebf91b82dca843d64d0afd7b12a8c101c8926c04054625d718094595ff123a15"
+  },
+  {
+    "id": "C-D13",
+    "type": "dinamis",
+    "title": "Mata yang Kering",
+    "prompt": "adegan/chiasa/C-D13.md",
+    "source": "game/kk_chiasa_dyn.rpy",
+    "line": 222,
+    "label": "kkscene_C_D13",
+    "shared_with": [
+      "C-D13"
+    ],
+    "source_sha256": "6dd1ce234da16190165ca196a274fee598640705fcbdeb1aed9f5d0f50fe0df6"
+  },
+  {
+    "id": "C-D14",
+    "type": "dinamis",
+    "title": "Pengakuan Setengah",
+    "prompt": "adegan/chiasa/C-D14.md",
+    "source": "game/kk_chiasa_dyn.rpy",
+    "line": 241,
+    "label": "kkscene_C_D14",
+    "shared_with": [
+      "C-D14"
+    ],
+    "source_sha256": "4ec0e0550db5b6aa4d3e4e61588fb0e128dc3c12a253fd3b3dbd987531d5fc50"
+  },
+  {
+    "id": "C-D15",
+    "type": "dinamis",
+    "title": "Nyaris Ketahuan",
+    "prompt": "adegan/chiasa/C-D15.md",
+    "source": "game/kk_chiasa_dyn.rpy",
+    "line": 260,
+    "label": "kkscene_C_D15",
+    "shared_with": [
+      "C-D15"
+    ],
+    "source_sha256": "c531f9976f476d931c88fcfe8a280ce92d5494dd1ef1aa159f23ff4a2d2eeaa7"
+  },
+  {
+    "id": "K-D01",
+    "type": "dinamis",
+    "title": "Draf yang Tertinggal",
+    "prompt": "adegan/koita/K-D01.md",
+    "source": "game/kk_koita_dyn.rpy",
+    "line": 27,
+    "label": "kkscene_K_D01",
+    "shared_with": [
+      "K-D01"
+    ],
+    "source_sha256": "834f2cfb580abcab4b8f8ab5a0456c68bf8a8ecd8385d7c19a6f654e832f487d"
+  },
+  {
+    "id": "K-D02",
+    "type": "dinamis",
+    "title": "Jalan Pulang yang Diperpanjang",
+    "prompt": "adegan/koita/K-D02.md",
+    "source": "game/kk_koita_dyn2.rpy",
+    "line": 14,
+    "label": "kkscene_K_D02",
+    "shared_with": [
+      "K-D02"
+    ],
+    "source_sha256": "27a5b6f3ec8b4d1c4e9aa2706b54defe0e38dcafa6aa83929ced806cc0bb9e07"
+  },
+  {
+    "id": "K-D03",
+    "type": "dinamis",
+    "title": "Uang untuk Hadiah",
+    "prompt": "adegan/koita/K-D03.md",
+    "source": "game/kk_koita_dyn2.rpy",
+    "line": 48,
+    "label": "kkscene_K_D03",
+    "shared_with": [
+      "K-D03"
+    ],
+    "source_sha256": "7a790e4da153a5b5bebc4c3173d5e72e6cd4f502af517b8bb00dc0d161433027"
+  },
+  {
+    "id": "K-D04",
+    "type": "dinamis",
+    "title": "Dua Pesan yang Sama",
+    "prompt": "adegan/koita/K-D04.md",
+    "source": "game/kk_koita_dyn2.rpy",
+    "line": 83,
+    "label": "kkscene_K_D04",
+    "shared_with": [
+      "K-D04"
+    ],
+    "source_sha256": "571f0279bc4fd9d2814f19cc46d17b8be81798d8b8840ff7357a24a527a0a78a"
+  },
+  {
+    "id": "K-D05",
+    "type": "dinamis",
+    "title": "Senyum yang Berhenti",
+    "prompt": "adegan/koita/K-D05.md",
+    "source": "game/kk_koita_dyn.rpy",
+    "line": 56,
+    "label": "kkscene_K_D05",
+    "shared_with": [
+      "K-D05"
+    ],
+    "source_sha256": "d4f728b78720cc6a81394318388d0405238a08ab7f410b17689182c728c1063c"
+  },
+  {
+    "id": "K-D06",
+    "type": "dinamis",
+    "title": "Debat di Klub Sastra",
+    "prompt": "adegan/koita/K-D06.md",
+    "source": "game/kk_koita_dyn2.rpy",
+    "line": 112,
+    "label": "kkscene_K_D06",
+    "shared_with": [
+      "K-D06"
+    ],
+    "source_sha256": "0cd8b931dc6ea89f074fba9062ae70ba6f5a310b86686b0a238a9733f9ee53b3"
+  },
+  {
+    "id": "K-D07",
+    "type": "dinamis",
+    "title": "Pelukan di Stasiun",
+    "prompt": "adegan/koita/K-D07.md",
+    "source": "game/kk_koita_dyn2.rpy",
+    "line": 145,
+    "label": "kkscene_K_D07",
+    "shared_with": [
+      "K-D07"
+    ],
+    "source_sha256": "3c0eee164f1806d8cc06a7d85ea5405e508a1287cf348cbf87ae2870e54d41db"
+  },
+  {
+    "id": "K-D08",
+    "type": "dinamis",
+    "title": "Ponsel Pemain di Meja",
+    "prompt": "adegan/koita/K-D08.md",
+    "source": "game/kk_koita_dyn.rpy",
+    "line": 81,
+    "label": "kkscene_K_D08",
+    "shared_with": [
+      "K-D08"
+    ],
+    "source_sha256": "2979809ac42b9d5cb297a0c769325bec57f64ad410b8e2d585d057edeed56e3b"
+  },
+  {
+    "id": "K-D09",
+    "type": "dinamis",
+    "title": "Foto Ayah",
+    "prompt": "adegan/koita/K-D09.md",
+    "source": "game/kk_koita_dyn.rpy",
+    "line": 110,
+    "label": "kkscene_K_D09",
+    "shared_with": [
+      "K-D09"
+    ],
+    "source_sha256": "ece17ad993cf713823795f589c44b191cee5147915a0a4761707d75aa3d93427"
+  },
+  {
+    "id": "K-D10",
+    "type": "dinamis",
+    "title": "Kebetulan yang Gagal Tiga Kali",
+    "prompt": "adegan/koita/K-D10.md",
+    "source": "game/kk_koita_dyn2.rpy",
+    "line": 181,
+    "label": "kkscene_K_D10",
+    "shared_with": [
+      "K-D10"
+    ],
+    "source_sha256": "e1ccba8376894da364509147a579be79638f9be2d64c5283a1f2229bb8992977"
+  },
+  {
+    "id": "K-D11",
+    "type": "dinamis",
+    "title": "Pilihan Lebih Awal",
+    "prompt": "adegan/koita/K-D11.md",
+    "source": "game/kk_koita_dyn2.rpy",
+    "line": 216,
+    "label": "kkscene_K_D11",
+    "shared_with": [
+      "K-D11"
+    ],
+    "source_sha256": "0820397e379021023a61eb9a85941338ec33ad0e2b5a4ab99435ed935c1224e0"
+  },
+  {
+    "id": "K-D12",
+    "type": "dinamis",
+    "title": "Gladi Resik Pidato",
+    "prompt": "adegan/koita/K-D12.md",
+    "source": "game/kk_koita_dyn2.rpy",
+    "line": 249,
+    "label": "kkscene_K_D12",
+    "shared_with": [
+      "K-D12"
+    ],
+    "source_sha256": "80d1436ef2125d85d278c2708832b6b4d4d3a023516b82d26cef7dc22c8ab402"
+  },
+  {
+    "id": "K-D13",
+    "type": "dinamis",
+    "title": "Nama yang Dicoret",
+    "prompt": "adegan/koita/K-D13.md",
+    "source": "game/kk_koita_dyn.rpy",
+    "line": 142,
+    "label": "kkscene_K_D13",
+    "shared_with": [
+      "K-D13"
+    ],
+    "source_sha256": "c1f086c2f9001fdb856dc1d1bab733bc80ef97729a15f202023a9d8675c6bb8e"
+  },
+  {
+    "id": "K-D14",
+    "type": "dinamis",
+    "title": "Kebetulan yang Tidak Datang Lagi",
+    "prompt": "adegan/koita/K-D14.md",
+    "source": "game/kk_koita_dyn2.rpy",
+    "line": 282,
+    "label": "kkscene_K_D14",
+    "shared_with": [
+      "K-D14"
+    ],
+    "source_sha256": "8d1cfbdfd8ecf6b155f1ff9641911457b58d845e49416397bc5801ab3f4bd93b"
+  },
+  {
+    "id": "K-D15",
+    "type": "dinamis",
+    "title": "Dari Seberang Jalan",
+    "prompt": "adegan/koita/K-D15.md",
+    "source": "game/kk_koita_dyn2.rpy",
+    "line": 312,
+    "label": "kkscene_K_D15",
+    "shared_with": [
+      "K-D15"
+    ],
+    "source_sha256": "202818e9bc3a99460fc841834752b12ca88a47de21fae8a60319439de02dafc9"
+  },
+  {
+    "id": "K-D16",
+    "type": "dinamis",
+    "title": "Pengakuan yang Disengaja",
+    "prompt": "adegan/koita/K-D16.md",
+    "source": "game/kk_koita_dyn.rpy",
+    "line": 172,
+    "label": "kkscene_K_D16",
+    "shared_with": [
+      "K-D16"
+    ],
+    "source_sha256": "cf7f911d58d1c45bcd955166258c83d22ab152ec0daf6f30067c093aac4daa17"
+  },
+  {
+    "id": "K-D17",
+    "type": "dinamis",
+    "title": "Yang Ia Temukan Setelahnya",
+    "prompt": "adegan/koita/K-D17.md",
+    "source": "game/kk_koita_dyn2.rpy",
+    "line": 340,
+    "label": "kkscene_K_D17",
+    "shared_with": [
+      "K-D17"
+    ],
+    "source_sha256": "bc55b7ba1ea1dd735717c584109cc615ee47406f9db12575504d2dcd4968432b"
+  },
+  {
+    "id": "K-D18",
+    "type": "dinamis",
+    "title": "Draf Terakhir",
+    "prompt": "adegan/koita/K-D18.md",
+    "source": "game/kk_koita_dyn.rpy",
+    "line": 204,
+    "label": "kkscene_K_D18",
+    "shared_with": [
+      "K-D18"
+    ],
+    "source_sha256": "e6a4ebc136afe9cdd97c509ec3f4c25b32fb4eeaebc4dd35af614c58df7598a0"
+  },
+  {
+    "id": "K-D19",
+    "type": "dinamis",
+    "title": "Telepon Yoshie",
+    "prompt": "adegan/koita/K-D19.md",
+    "source": "game/kk_koita_dyn.rpy",
+    "line": 237,
+    "label": "kkscene_K_D19",
+    "shared_with": [
+      "K-D19"
+    ],
+    "source_sha256": "eb6b5abdd45d191905681d52c826192e13284d95ba31db326811a8422bf37448"
+  },
+  {
+    "id": "K-D20",
+    "type": "dinamis",
+    "title": "Matsuda Mengetuk",
+    "prompt": "adegan/koita/K-D20.md",
+    "source": "game/kk_koita_dyn.rpy",
+    "line": 267,
+    "label": "kkscene_K_D20",
+    "shared_with": [
+      "K-D20"
+    ],
+    "source_sha256": "4da15ce83eb47a0194b0da604b7c26c6352463b3a1c79a20e58c03aa374f42fb"
+  },
+  {
+    "id": "K-D21",
+    "type": "dinamis",
+    "title": "Satu yang Tidak Ikut Percaya",
+    "prompt": "adegan/koita/K-D21.md",
+    "source": "game/kk_koita_dyn.rpy",
+    "line": 298,
+    "label": "kkscene_K_D21",
+    "shared_with": [
+      "K-D21"
+    ],
+    "source_sha256": "da837576b3d23a2caae3bfa70e47753f38dd15ab527dc5c7ac5f1105e5f755ab"
+  },
+  {
+    "id": "Y-D01",
+    "type": "dinamis",
+    "title": "Notifikasi Saldo",
+    "prompt": "adegan/yutaka/Y-D01.md",
+    "source": "game/kk_yutaka_dyn.rpy",
+    "line": 11,
+    "label": "kkscene_Y_D01",
+    "shared_with": [
+      "Y-D01"
+    ],
+    "source_sha256": "4193b3b71ec9ba107c94de2d4c6b1675de97d47d2c7c3fda1dfcef1fe9ad2071"
+  },
+  {
+    "id": "Y-D02",
+    "type": "dinamis",
+    "title": "Teman Game yang Heran",
+    "prompt": "adegan/yutaka/Y-D02.md",
+    "source": "game/kk_yutaka_dyn.rpy",
+    "line": 31,
+    "label": "kkscene_Y_D02",
+    "shared_with": [
+      "Y-D02"
+    ],
+    "source_sha256": "19982de5c5dc2071100896ef5b89ac25c4c6e583d5d2589db21cf7895d744055"
+  },
+  {
+    "id": "Y-D03",
+    "type": "dinamis",
+    "title": "Ayah di Lobi",
+    "prompt": "adegan/yutaka/Y-D03.md",
+    "source": "game/kk_family.rpy",
+    "line": 448,
+    "label": "kk_visit_kisaragi",
+    "shared_with": [
+      "Y-D03"
+    ],
+    "source_sha256": "667d40ea234b74ee570201288efbdbcc7ff281df4b93e6f0fe4a3611f76001ea"
+  },
+  {
+    "id": "Y-D04",
+    "type": "dinamis",
+    "title": "Daichi Menginap",
+    "prompt": "adegan/yutaka/Y-D04.md",
+    "source": "game/kk_yutaka_dyn.rpy",
+    "line": 51,
+    "label": "kkscene_Y_D04",
+    "shared_with": [
+      "Y-D04"
+    ],
+    "source_sha256": "776472503974ea5c95dff5e8abbbcacc5b0ac6edbebb8396aad3bc5b74a8ec32"
+  },
+  {
+    "id": "Y-D05",
+    "type": "dinamis",
+    "title": "Jam dari Daisuke",
+    "prompt": "adegan/yutaka/Y-D05.md",
+    "source": "game/kk_yutaka_dyn.rpy",
+    "line": 71,
+    "label": "kkscene_Y_D05",
+    "shared_with": [
+      "Y-D05"
+    ],
+    "source_sha256": "bd016ed0288c491502ccde0111b01e28fd6fd48b23467ba015bec5343c2c378d"
+  },
+  {
+    "id": "Y-D06",
+    "type": "dinamis",
+    "title": "Lidah yang Lepas di Kafe Bar",
+    "prompt": "adegan/yutaka/Y-D06.md",
+    "source": "game/kk_yutaka_dyn.rpy",
+    "line": 91,
+    "label": "kkscene_Y_D06",
+    "shared_with": [
+      "Y-D06"
+    ],
+    "source_sha256": "e8ccca0eb79845f33b9e6bcabba7864c0fa3f004b7f0d0ba65ec9a8787d3e0e7"
+  },
+  {
+    "id": "Y-D07",
+    "type": "dinamis",
+    "title": "Nagisa Main Sampai Pagi",
+    "prompt": "adegan/yutaka/Y-D07.md",
+    "source": "game/kk_yutaka_dyn.rpy",
+    "line": 111,
+    "label": "kkscene_Y_D07",
+    "shared_with": [
+      "Y-D07"
+    ],
+    "source_sha256": "a1336c9fe768043cdeec74a6f2aecc3d4f7a80e1806162fc2abdead36cc441f3"
+  },
+  {
+    "id": "Y-D08",
+    "type": "dinamis",
+    "title": "Pesan dari Ibu",
+    "prompt": "adegan/yutaka/Y-D08.md",
+    "source": "game/kk_family.rpy",
+    "line": 469,
+    "label": "kk_message_kisaragi",
+    "shared_with": [
+      "Y-D08"
+    ],
+    "source_sha256": "539b57cd004269e43797e41fd1a8dbe5a78ccae8da4cc5ef79dd721d17cf8aa8"
+  },
+  {
+    "id": "Y-D09",
+    "type": "dinamis",
+    "title": "Koita di Depan Pintu",
+    "prompt": "adegan/yutaka/Y-D09.md",
+    "source": "game/kk_yutaka_dyn.rpy",
+    "line": 131,
+    "label": "kkscene_Y_D09",
+    "shared_with": [
+      "Y-D09"
+    ],
+    "source_sha256": "f54e91066b870eb7c361ee912a0cd9ff1ae7e63f89eb85cd8a273f482ecc99c7"
+  },
+  {
+    "id": "Y-D10",
+    "type": "dinamis",
+    "title": "Menunggu di Stasiun",
+    "prompt": "adegan/yutaka/Y-D10.md",
+    "source": "game/kk_yutaka_dyn.rpy",
+    "line": 151,
+    "label": "kkscene_Y_D10",
+    "shared_with": [
+      "Y-D10"
+    ],
+    "source_sha256": "6b35e39f2185d0c8fb93aa476dd995b198d3fea81d27ca724782fb75c3d84f8e"
+  },
+  {
+    "id": "Y-D11",
+    "type": "dinamis",
+    "title": "Pengakuan Jumat Malam",
+    "prompt": "adegan/yutaka/Y-D11.md",
+    "source": "game/kk_yutaka_dyn.rpy",
+    "line": 171,
+    "label": "kkscene_Y_D11",
+    "shared_with": [
+      "Y-D11"
+    ],
+    "source_sha256": "0d161e68a3f8835fdbd4f1f97734e856aafc2839e4b84264d1aa3d49dc064f98"
+  },
+  {
+    "id": "X-D01",
+    "type": "dinamis",
+    "title": "Pertengkaran di Konbini",
+    "prompt": "adegan/lintas/X-D01.md",
+    "source": "game/kk_cross_dyn.rpy",
+    "line": 12,
+    "label": "kkscene_X_D01",
+    "shared_with": [
+      "X-D01"
+    ],
+    "source_sha256": "ede3eb8328a8812b55680030fc2e47ac8d1772a1815664310ff4402f59943190"
+  },
+  {
+    "id": "X-D02",
+    "type": "dinamis",
+    "title": "Calon Dokter Membaca Tanda",
+    "prompt": "adegan/lintas/X-D02.md",
+    "source": "game/kk_cross_dyn.rpy",
+    "line": 37,
+    "label": "kkscene_X_D02",
+    "shared_with": [
+      "X-D02"
+    ],
+    "source_sha256": "50a41b0c490c0828e5a1dfc30630ffc346e953171bb1580f973a386544257d18"
+  },
+  {
+    "id": "X-D03",
+    "type": "dinamis",
+    "title": "Dua Peringkat Teratas",
+    "prompt": "adegan/lintas/X-D03.md",
+    "source": "game/kk_cross_dyn.rpy",
+    "line": 57,
+    "label": "kkscene_X_D03",
+    "shared_with": [
+      "X-D03"
+    ],
+    "source_sha256": "41574b814b61563f859021b3095da5013e07b8b6fa842563a3fe271e421d355b"
+  },
+  {
+    "id": "X-D04",
+    "type": "dinamis",
+    "title": "Dua Coklat di Satu Loker",
+    "prompt": "adegan/lintas/X-D04.md",
+    "source": "game/kk_cross_dyn.rpy",
+    "line": 77,
+    "label": "kkscene_X_D04",
+    "shared_with": [
+      "X-D04"
+    ],
+    "source_sha256": "188841bc08eaa4d61f41d215dcc97663f8a71f8b2b4a782785bdb7da465ec04d"
+  },
+  {
+    "id": "X-D05",
+    "type": "dinamis",
+    "title": "Rumah Amamiya Penuh",
+    "prompt": "adegan/lintas/X-D05.md",
+    "source": "game/kk_cross_dyn.rpy",
+    "line": 96,
+    "label": "kkscene_X_D05",
+    "shared_with": [
+      "X-D05"
+    ],
+    "source_sha256": "c8992b57324e2ed286cc0df71b42d5b9eb7467a894a9674b26b36d62a155dfbc"
+  },
+  {
+    "id": "X-D06",
+    "type": "dinamis",
+    "title": "Wawancara Mei",
+    "prompt": "adegan/lintas/X-D06.md",
+    "source": "game/kk_cross_dyn.rpy",
+    "line": 115,
+    "label": "kkscene_X_D06",
+    "shared_with": [
+      "X-D06"
+    ],
+    "source_sha256": "2e5098259b8f55d72fc9eec7e696ada8ed68f7587a0a753d72c9794dccc7398a"
+  },
+  {
+    "id": "X-D07",
+    "type": "dinamis",
+    "title": "Rapat Rahasia Koita",
+    "prompt": "adegan/lintas/X-D07.md",
+    "source": "game/kk_cross_dyn.rpy",
+    "line": 134,
+    "label": "kkscene_X_D07",
+    "shared_with": [
+      "X-D07"
+    ],
+    "source_sha256": "ed9076e93d7ef51a13c9febaccf7afe168894980fecf595aa9564b1a318c2e42"
+  },
+  {
+    "id": "X-D08",
+    "type": "dinamis",
+    "title": "Rina dan Sena Bertukar Cerita",
+    "prompt": "adegan/lintas/X-D08.md",
+    "source": "game/kk_cross_dyn.rpy",
+    "line": 154,
+    "label": "kkscene_X_D08",
+    "shared_with": [
+      "X-D08"
+    ],
+    "source_sha256": "1a7e556ef4da1c3af2c0ff1ce614aa4f47dd70cf9f4cf8f9dfc6891d412c284e"
+  },
+  {
+    "id": "X-D09",
+    "type": "dinamis",
+    "title": "Dua Penjaga",
+    "prompt": "adegan/lintas/X-D09.md",
+    "source": "game/kk_cross_dyn.rpy",
+    "line": 174,
+    "label": "kkscene_X_D09",
+    "shared_with": [
+      "X-D09"
+    ],
+    "source_sha256": "bd93b1a8e4108abfd3bbee2ed6aa07e92eb19d1cf2b4c3bfc55d03b71a9121c6"
+  },
+  {
+    "id": "X-D10",
+    "type": "dinamis",
+    "title": "Malam Dua Krisis",
+    "prompt": "adegan/lintas/X-D10.md",
+    "source": "game/kk_cross_dyn.rpy",
+    "line": 189,
+    "label": "kkscene_X_D10",
+    "shared_with": [
+      "X-D10"
+    ],
+    "source_sha256": "cd55a220a93fbc785a344df1dfb33a7a9bb62d6ca30c557fbd4fa96f152bf0da"
+  },
+  {
+    "id": "X-D11",
+    "type": "dinamis",
+    "title": "Grup Belajar SMA Hidup Lagi",
+    "prompt": "adegan/lintas/X-D11.md",
+    "source": "game/kk_cross_dyn.rpy",
+    "line": 210,
+    "label": "kkscene_X_D11",
+    "shared_with": [
+      "X-D11"
+    ],
+    "source_sha256": "fc9b8e09a4481eedcaf81d5c5162e2cf6e05155e6c1fd219b18b711115325454"
+  },
+  {
+    "id": "X-D12",
+    "type": "dinamis",
+    "title": "Salah Kirim",
+    "prompt": "adegan/lintas/X-D12.md",
+    "source": "game/kk_cross_dyn.rpy",
+    "line": 230,
+    "label": "kkscene_X_D12",
+    "shared_with": [
+      "X-D12"
+    ],
+    "source_sha256": "d5f5f1d1c9684088a152574a26b6019c7a991c18a07866cf9574be613cfc9c74"
+  },
+  {
+    "id": "E-MI-01",
+    "type": "ending",
+    "title": "Jas Putih yang Ringan",
+    "prompt": "ending/MI/E-MI-01.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "db0dcb3a7fd7a998a6cfe8473d36e075643d8e895eb3247414eebaf00eda026d"
+  },
+  {
+    "id": "E-MI-02",
+    "type": "ending",
+    "title": "Dokter Anak",
+    "prompt": "ending/MI/E-MI-02.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "46d500c64e13af2a263fff53bbc407e3282ebd1f21c4d69be005ad7b046e570e"
+  },
+  {
+    "id": "E-MI-03",
+    "type": "ending",
+    "title": "Kembali ke Koita",
+    "prompt": "ending/MI/E-MI-03.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "d82b346b51c0a5b0e5d51a67010885e8a61d7caf1823e0783fa2f73f8918e943"
+  },
+  {
+    "id": "E-MI-04",
+    "type": "ending",
+    "title": "Cincin Keluarga Hayase",
+    "prompt": "ending/MI/E-MI-04.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "641c58d74e4ff450533846dd321205ec1ba5d69b4bd3869c10100caf4aa149bd"
+  },
+  {
+    "id": "E-MI-05",
+    "type": "ending",
+    "title": "Kereta Pagi Tanpa Tujuan",
+    "prompt": "ending/MI/E-MI-05.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "b9b9c9ecc0b26d8bacc6c1c3b3f9a3a7fa8521c8b602dccfdb618ede5d0d815f"
+  },
+  {
+    "id": "E-MI-06",
+    "type": "ending",
+    "title": "Lampu Bangsal Padam",
+    "prompt": "ending/MI/E-MI-06.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "1cb98c06790fc3d64748944225a5d64410b228911f6ca0424bc8afb2adbc6d52"
+  },
+  {
+    "id": "E-MI-07",
+    "type": "ending",
+    "title": "Kenyamanan yang Salah",
+    "prompt": "ending/MI/E-MI-07.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "27d5f00e8501cbd1c9e5bae31b2f20c3ecdb961f618bc2522b3e9ad0ac222b47"
+  },
+  {
+    "id": "E-MI-08",
+    "type": "ending",
+    "title": "Penebusan Tanpa Akhir",
+    "prompt": "ending/MI/E-MI-08.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "770b0a53b693738c50d095bc937ab8c61cf0238c7e9e254990ed8982b58fdcad"
+  },
+  {
+    "id": "E-MI-09",
+    "type": "ending",
+    "title": "Menunggu yang Menyakitkan",
+    "prompt": "ending/MI/E-MI-09.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "8e25f0a29f4775ae45b6daaf431389d2adb313397a57cb5a2eff7afd0a2c212f"
+  },
+  {
+    "id": "E-MI-10",
+    "type": "ending",
+    "title": "Cuti Satu Tahun",
+    "prompt": "ending/MI/E-MI-10.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "b7b0fba2066d1f552e8ad67c6560531d2c64eb30518a1c8bb1eedd5c29b5e274"
+  },
+  {
+    "id": "E-MI-11",
+    "type": "ending",
+    "title": "Pintu yang Ditutup Sena",
+    "prompt": "ending/MI/E-MI-11.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "c1bf2d95b2f8d5a5ca7be799d689e7fe3cd8ee988749d31ccec051c74cf8ad83"
+  },
+  {
+    "id": "E-MI-12",
+    "type": "ending",
+    "title": "Napas yang Tertahan",
+    "prompt": "ending/MI/E-MI-12.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "63b011a9a61ff8505e367fd5c634a6a0a13b548334c02e2f7408a5ada042b180"
+  },
+  {
+    "id": "E-MI-13",
+    "type": "ending",
+    "title": "Sandiwara yang Jadi Nyata",
+    "prompt": "ending/MI/E-MI-13.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "a85ba356ec2513f5ea8ff0bc4e49b281120ce861f9f7fc393c17cc5d6f0b884f"
+  },
+  {
+    "id": "E-MI-14",
+    "type": "ending",
+    "title": "Sandiwara Terbongkar",
+    "prompt": "ending/MI/E-MI-14.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "cad6e202fad320b51e8009b8e170a03143a75d576ab1362a3ebcd02de861c205"
+  },
+  {
+    "id": "E-NA-01",
+    "type": "ending",
+    "title": "Maket untuk Dua Orang",
+    "prompt": "ending/NA/E-NA-01.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "882b744e6b4849ac51736992612352cd7c974dc57a8812b8bc5a7434573aba0d"
+  },
+  {
+    "id": "E-NA-02",
+    "type": "ending",
+    "title": "Garis yang Ia Gambar Sendiri",
+    "prompt": "ending/NA/E-NA-02.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "922e50f2c29a25412bbdf88aeab71b3d3cf285bca2234ba3b1afc58244311238"
+  },
+  {
+    "id": "E-NA-03",
+    "type": "ending",
+    "title": "Pengakuan yang Akhirnya Sampai",
+    "prompt": "ending/NA/E-NA-03.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "dc5e9005446cd00438d57e178201fdf43a23d0ffd91398efdc3fb28e1a0dc0b5"
+  },
+  {
+    "id": "E-NA-04",
+    "type": "ending",
+    "title": "Rumah yang Dibangun di Sekitarmu",
+    "prompt": "ending/NA/E-NA-04.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "7d90fb9fb35e1171ede0097a4d83f66dae9e566e722e6ba3028044947b36c8b1"
+  },
+  {
+    "id": "E-NA-05",
+    "type": "ending",
+    "title": "Kamar yang Dikunci",
+    "prompt": "ending/NA/E-NA-05.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "b1d89c65ec392a3797c733cafbad56f9baa6a30736df69694fbcd8d62a8ba88e"
+  },
+  {
+    "id": "E-NA-06",
+    "type": "ending",
+    "title": "Garis Merah",
+    "prompt": "ending/NA/E-NA-06.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "a491aa37abab1cd970cf271b65a32986504b0a56670929e97837b2293fdf813c"
+  },
+  {
+    "id": "E-NA-07",
+    "type": "ending",
+    "title": "Pulang ke Rumah Sakurajima",
+    "prompt": "ending/NA/E-NA-07.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "898a811ce1c8c80e30777cd89a89dc9d68be91afc0fa5f2d02a055ac1b31225f"
+  },
+  {
+    "id": "E-NA-08",
+    "type": "ending",
+    "title": "Koko di Tempat Sampah",
+    "prompt": "ending/NA/E-NA-08.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "709475eca21ec2eb7c9643b9827c2f95aec9f35f76f7c1a19dbb32686b9d3a6a"
+  },
+  {
+    "id": "E-NA-09",
+    "type": "ending",
+    "title": "Empat Orang di Foto Lama",
+    "prompt": "ending/NA/E-NA-09.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "59f505d18ccad9cb7fd7ab9528fc1eade0e719a01dab8d13062f88ae0b839424"
+  },
+  {
+    "id": "E-NA-10",
+    "type": "ending",
+    "title": "Rival Jadi Kekasih",
+    "prompt": "ending/NA/E-NA-10.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "4aaf355071509292dc6edf86872e3d57c78c84b11595a17d42020dfcb29e508d"
+  },
+  {
+    "id": "E-NA-11",
+    "type": "ending",
+    "title": "Bayangan di Bawah Jendela",
+    "prompt": "ending/NA/E-NA-11.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "de99d4b652d42f3f1c2ed8490e48e3c6c923b49a0e3eba7b62089e0ab678df4f"
+  },
+  {
+    "id": "E-NA-12",
+    "type": "ending",
+    "title": "Gengsi yang Retak",
+    "prompt": "ending/NA/E-NA-12.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "2703b592ddc8afbbfc943b49ee7b7baae2f07e5c2710bbcf49ff6175a651d97e"
+  },
+  {
+    "id": "E-NA-13",
+    "type": "ending",
+    "title": "Ambulans di Malam Valentine",
+    "prompt": "ending/NA/E-NA-13.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "299499bbc240b4954c69259080d42a494eb649796937c89b0763e5296b8c0fab"
+  },
+  {
+    "id": "E-NA-14",
+    "type": "ending",
+    "title": "Senjata yang Kau Arahkan",
+    "prompt": "ending/NA/E-NA-14.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "bc4d185338d92601e99aa5a9992f3041ff44e8eda3f46f5984adb598c98f9af5"
+  },
+  {
+    "id": "E-HA-01",
+    "type": "ending",
+    "title": "Hipotesis yang Terbukti",
+    "prompt": "ending/HA/E-HA-01.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "65c6a734401f4b327146ca395b06d4a239e59867621688f9a63e20576cf8ac67"
+  },
+  {
+    "id": "E-HA-02",
+    "type": "ending",
+    "title": "Laboratorium di Seberang Laut",
+    "prompt": "ending/HA/E-HA-02.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "c498470d4f260e398ada348fa1f51966fb1ab2557e9abde59c94192e2598a151"
+  },
+  {
+    "id": "E-HA-03",
+    "type": "ending",
+    "title": "Data yang Dihapus",
+    "prompt": "ending/HA/E-HA-03.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "ff2d52f5cd44f183ed81b7d8c5680c57f3998c30433a3f88fce1197149c66b9e"
+  },
+  {
+    "id": "E-HA-04",
+    "type": "ending",
+    "title": "Variabel Tetap",
+    "prompt": "ending/HA/E-HA-04.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "27c34b5bee0422ba19177daa8357c2d058d4a15494b847df92a1bec6a7d6d8ab"
+  },
+  {
+    "id": "E-HA-05",
+    "type": "ending",
+    "title": "Persamaan Transaksi",
+    "prompt": "ending/HA/E-HA-05.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "3e9ac5a88c9f1d5ea313e9a6a720501391e0be3dc7e46719f75a76bc8a7f655e"
+  },
+  {
+    "id": "E-HA-06",
+    "type": "ending",
+    "title": "Lampu Merah di Distrik Empat",
+    "prompt": "ending/HA/E-HA-06.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "437280430894820ffbb27f3192766e2b5ce436af4f07cca3cace4cc3c7c36b72"
+  },
+  {
+    "id": "E-HA-07",
+    "type": "ending",
+    "title": "Ogawa Jatuh",
+    "prompt": "ending/HA/E-HA-07.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "094f7ec3e8fddba7d4d1f651dd0dfd9e1fca9648fa3d6de570a440a9cc8ac010"
+  },
+  {
+    "id": "E-HA-08",
+    "type": "ending",
+    "title": "Ogawa Menang",
+    "prompt": "ending/HA/E-HA-08.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "976ec75506fc85167594bedf43137d3e8c58bc171b83c937c83c307a17f8a025"
+  },
+  {
+    "id": "E-HA-09",
+    "type": "ending",
+    "title": "Rumah Teh di Kansai",
+    "prompt": "ending/HA/E-HA-09.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "89ee9fe9c13a82add209d527bfd4ce6cbc718d81913886cf688d1c8961bcf700"
+  },
+  {
+    "id": "E-HA-10",
+    "type": "ending",
+    "title": "Eksperimen yang Kau Mulai",
+    "prompt": "ending/HA/E-HA-10.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "c552d8e6bd73db2e0c6074f16ce73f9a43cbb8bf5dc36e79c885783dbd1c6480"
+  },
+  {
+    "id": "E-HA-11",
+    "type": "ending",
+    "title": "Rumus Tanpa Variabel Cinta",
+    "prompt": "ending/HA/E-HA-11.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "e30747209d58413ed2c03bc0c4cbe52922319ec761d31ced4e43f444195ec67b"
+  },
+  {
+    "id": "E-HA-12",
+    "type": "ending",
+    "title": "Disosiasi",
+    "prompt": "ending/HA/E-HA-12.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "c14b4b8840de190c984f3bd8b79e8a69ef1bb23adb577df654c210721336402a"
+  },
+  {
+    "id": "E-HA-13",
+    "type": "ending",
+    "title": "Seni dan Sains",
+    "prompt": "ending/HA/E-HA-13.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "ac9e43e63aac1493e62af83f58c5ae905b1006506de27de1b877e040af29d719"
+  },
+  {
+    "id": "E-HA-14",
+    "type": "ending",
+    "title": "Satu Tiket Lagi",
+    "prompt": "ending/HA/E-HA-14.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "a7d6e56833fd844a77519d25c1bd4a08a9e3bd674d214c7606463d27fd5dc915"
+  },
+  {
+    "id": "E-MO-01",
+    "type": "ending",
+    "title": "Belajar Meminta Tolong",
+    "prompt": "ending/MO/E-MO-01.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "17625bc9267da4a76d98b9268a764312b6b8ee2b832b6a6ca390328132cb187b"
+  },
+  {
+    "id": "E-MO-02",
+    "type": "ending",
+    "title": "Cuti Setahun",
+    "prompt": "ending/MO/E-MO-02.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "2c8ff4013237aee6b333cb1e12b24717d1079781093feb0d5aa0332042d5408f"
+  },
+  {
+    "id": "E-MO-03",
+    "type": "ending",
+    "title": "Topeng Sempurna",
+    "prompt": "ending/MO/E-MO-03.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "c0169e4c8cd5fe0276f9f1df27008c315e733ab14d3d75196c2572eae0f1e07d"
+  },
+  {
+    "id": "E-MO-04",
+    "type": "ending",
+    "title": "Malam Tanpa Balasan",
+    "prompt": "ending/MO/E-MO-04.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "831a86ca1630dbac3bf470b9d639cdca6faf20126e317adc17ae7bd3f0172a8a"
+  },
+  {
+    "id": "E-MO-05",
+    "type": "ending",
+    "title": "Tepat Waktu",
+    "prompt": "ending/MO/E-MO-05.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "31129605c5cd98488f24e5f88664b9cb91bbe9463e073bf780ebf0faa2ef4826"
+  },
+  {
+    "id": "E-MO-06",
+    "type": "ending",
+    "title": "Rina Mengetuk Pintu",
+    "prompt": "ending/MO/E-MO-06.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "6fb53d4450228e6046a480f9d5993cacc90b63c99d3668e0a9a69858683fdbe1"
+  },
+  {
+    "id": "E-MO-07",
+    "type": "ending",
+    "title": "Kontrak Kuga",
+    "prompt": "ending/MO/E-MO-07.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "7ee53e349fbdb8a09960508ace0504b9941a5562c538ffa1354e713e42ae5900"
+  },
+  {
+    "id": "E-MO-08",
+    "type": "ending",
+    "title": "Label di Garasi",
+    "prompt": "ending/MO/E-MO-08.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "911a3eb7846c32fc4c3b090c47768f237256743fe348fe81213b84f10ff49416"
+  },
+  {
+    "id": "E-MO-09",
+    "type": "ending",
+    "title": "Banding yang Dimenangkan",
+    "prompt": "ending/MO/E-MO-09.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "820738676069e90f94ce80b2b0a74081c513d83a2d20a3e4fd83bb77cd12464e"
+  },
+  {
+    "id": "E-MO-10",
+    "type": "ending",
+    "title": "Doa yang Tidak Terkabul",
+    "prompt": "ending/MO/E-MO-10.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "d2074c53460a457bd3aee45f3723a1c65cde7c21db84bc7a4f34fd10d2d3b9a6"
+  },
+  {
+    "id": "E-MO-11",
+    "type": "ending",
+    "title": "Topeng yang Pecah",
+    "prompt": "ending/MO/E-MO-11.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "a9d923ab6b571d225f0511ac5dd6105dda5bc7b92d0e40f3387dceb866006861"
+  },
+  {
+    "id": "E-MO-12",
+    "type": "ending",
+    "title": "Selamat, Tapi Bukan Karenamu",
+    "prompt": "ending/MO/E-MO-12.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "df5042fe5ca19f89f12bab8676da363023cf77437f71f73075c3f62a5ed0d6c4"
+  },
+  {
+    "id": "E-MO-13",
+    "type": "ending",
+    "title": "Ginjal untuk Ayah",
+    "prompt": "ending/MO/E-MO-13.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "fb55683439a5be6b1ca9ed42094b93a752a6d00a45e893780be9bb036f1d6777"
+  },
+  {
+    "id": "E-SH-01",
+    "type": "ending",
+    "title": "Lawan Tanding Seumur Hidup",
+    "prompt": "ending/SH/E-SH-01.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "6e40d0d6563e18dd075b7cf9ff835612ed4f57113873763d9b3186d82b8ef9ae"
+  },
+  {
+    "id": "E-SH-02",
+    "type": "ending",
+    "title": "Skakmat",
+    "prompt": "ending/SH/E-SH-02.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "269e58a54c1a4f65f8142a92b656b59e48b9a8c0b2fb962840a77b53e92cd022"
+  },
+  {
+    "id": "E-SH-03",
+    "type": "ending",
+    "title": "Gencatan Senjata",
+    "prompt": "ending/SH/E-SH-03.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "0bda0d2d6b5db702f16c60f6936a3bc2666278dd9c455f55d4f5993a73f7661c"
+  },
+  {
+    "id": "E-SH-04",
+    "type": "ending",
+    "title": "Ratu Tanpa Kepercayaan",
+    "prompt": "ending/SH/E-SH-04.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "ee789dac2ea55d9371ba3041e9df7d9b8fb5745a2b1c5888d99104d9a5911eaa"
+  },
+  {
+    "id": "E-SH-05",
+    "type": "ending",
+    "title": "Langkah Koita",
+    "prompt": "ending/SH/E-SH-05.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "149bccbf68df01d8349a95b514b0c69b4ac91514bd60c90f7f8f58d34eae94fd"
+  },
+  {
+    "id": "E-SH-06",
+    "type": "ending",
+    "title": "Sekutu di Papan yang Sama",
+    "prompt": "ending/SH/E-SH-06.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "2c4b5ee59bda4dabe026daca461da297a3ae5aab1b58bee6aa7e2ce4ee2bf0ed"
+  },
+  {
+    "id": "E-SH-07",
+    "type": "ending",
+    "title": "Pewaris dengan Caranya Sendiri",
+    "prompt": "ending/SH/E-SH-07.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "d34b01f79237ad728544eb65ea92921a2ff9c137c107b62d210335efb62e5889"
+  },
+  {
+    "id": "E-SH-08",
+    "type": "ending",
+    "title": "Bidak Bernama Tojo",
+    "prompt": "ending/SH/E-SH-08.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "6e23a9b076b13e6cb0e60e4fc11b5422c27eaa577b44ec36e39aa87f5a36f720"
+  },
+  {
+    "id": "E-SH-09",
+    "type": "ending",
+    "title": "Ratu Menjatuhkan Protagonis",
+    "prompt": "ending/SH/E-SH-09.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "38bea86ec85b9e0cde081785c1c0c3eaf95e142afd92893e884744daff1896ec"
+  },
+  {
+    "id": "E-SH-10",
+    "type": "ending",
+    "title": "Keadilan yang Tersenyum",
+    "prompt": "ending/SH/E-SH-10.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "28bcd9f50801de9c355a3384473e2540692945a2f6cd0dca5e2e01577e007e88"
+  },
+  {
+    "id": "E-SH-11",
+    "type": "ending",
+    "title": "Jalur Hukum",
+    "prompt": "ending/SH/E-SH-11.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "fba36d4aff8d19a2a6142dc62b511d82a9b8cc67522a1a0036f0173958e13a91"
+  },
+  {
+    "id": "E-SH-12",
+    "type": "ending",
+    "title": "Shena dan Pembacanya",
+    "prompt": "ending/SH/E-SH-12.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "6577d7d01594f9fce02fcea3971f74b8471899e0fc7e1f33ce8489133e70a5de"
+  },
+  {
+    "id": "E-SH-13",
+    "type": "ending",
+    "title": "Shena dan Penipunya",
+    "prompt": "ending/SH/E-SH-13.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "ec80829070a82a1a55dfef4ac14e849a9ff10db8375d1ed0be5cae063f4e6fe2"
+  },
+  {
+    "id": "E-SH-14",
+    "type": "ending",
+    "title": "Lawan Tanpa Nama",
+    "prompt": "ending/SH/E-SH-14.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "265471b18a13af0d812a01986cf228ecd35875438338f9046dac04d2d1897d4f"
+  },
+  {
+    "id": "E-SH-15",
+    "type": "ending",
+    "title": "Pion di Papan Orang Lain",
+    "prompt": "ending/SH/E-SH-15.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "4b0b229fa1c02680fe611d624ccea278c0387626a2ea3b3cee97fd3dc86f5502"
+  },
+  {
+    "id": "E-SH-16",
+    "type": "ending",
+    "title": "Senyum Terakhir",
+    "prompt": "ending/SH/E-SH-16.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "b61209ab168e0af8e574c8e76e27d557b33574058d36fa013eac07260b1df3dd"
+  },
+  {
+    "id": "E-CH-01",
+    "type": "ending",
+    "title": "Rumah Kita Sendiri",
+    "prompt": "ending/CH/E-CH-01.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "2c646d4c0303559453f037a9ae941132816340c877a7f1ea2db8c2089fba6bb2"
+  },
+  {
+    "id": "E-CH-02",
+    "type": "ending",
+    "title": "Diterima",
+    "prompt": "ending/CH/E-CH-02.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "1b28b690f353d52f712f8a6c029f08b6e76d78dda80a300c2af333b3d9edc471"
+  },
+  {
+    "id": "E-CH-03",
+    "type": "ending",
+    "title": "Berpisah Baik-baik",
+    "prompt": "ending/CH/E-CH-03.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "590849ba149274b13446cbe25c48fb4a9bdffae92450f859b21c115208590723"
+  },
+  {
+    "id": "E-CH-04",
+    "type": "ending",
+    "title": "Dipisah Paksa",
+    "prompt": "ending/CH/E-CH-04.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "d7d11bc15eac5ec4f44da6a1de5321944582780f3547c9ffd1ca7992460c9a33"
+  },
+  {
+    "id": "E-CH-05",
+    "type": "ending",
+    "title": "Digantung Lagi",
+    "prompt": "ending/CH/E-CH-05.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "f086ed9d637dbf70bc596ec9d27739a7d08ae9af25fcee0f6ad2f23612b931f5"
+  },
+  {
+    "id": "E-CH-06",
+    "type": "ending",
+    "title": "Shena Saja",
+    "prompt": "ending/CH/E-CH-06.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "605f127e532156024e7fdadbe05deea5a251c800460e3b190f9d6a5e9e24fa04"
+  },
+  {
+    "id": "E-CH-07",
+    "type": "ending",
+    "title": "Tersisih Dua Kali",
+    "prompt": "ending/CH/E-CH-07.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "020d5dfd4c868ce6a52173573a1270e0939727941943fe71bc08fe8ab3477f49"
+  },
+  {
+    "id": "E-CH-08",
+    "type": "ending",
+    "title": "Sekutu Paling Setia",
+    "prompt": "ending/CH/E-CH-08.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "5aba67e7bc3bf284b105507d29b4a7c333a856ea3852e5b38ae153a84a1b14dc"
+  },
+  {
+    "id": "E-CH-09",
+    "type": "ending",
+    "title": "Rumah yang Tidak Aman",
+    "prompt": "ending/CH/E-CH-09.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "9ee4deaae5747705ce74086388a07b97516db0c984c29b0bcbb11df634ff1198"
+  },
+  {
+    "id": "E-CH-10",
+    "type": "ending",
+    "title": "Adik yang Kembali",
+    "prompt": "ending/CH/E-CH-10.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "79bb61c73d58f17f511e8c37f54d09546e449376c1b2b6b777fb62ddd860c53c"
+  },
+  {
+    "id": "E-CH-11",
+    "type": "ending",
+    "title": "Bukan Piala",
+    "prompt": "ending/CH/E-CH-11.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "6060b63e6b45f6f265dace63974a6f47a946436237371acb2e1e6903e25a1c49"
+  },
+  {
+    "id": "E-CF-01",
+    "type": "ending",
+    "title": "Rumah Baru",
+    "prompt": "ending/CF/E-CF-01.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "82390c9ec059d981994597e95446783e8cdc29f6dbe6da3e7050b9c0bd3b2ab4"
+  },
+  {
+    "id": "E-CF-02",
+    "type": "ending",
+    "title": "Diterima",
+    "prompt": "ending/CF/E-CF-02.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "7b02cac5a60ca8d0fa003b8814e82f318c7fb8984e57a98f7d87152ff0583325"
+  },
+  {
+    "id": "E-CF-03",
+    "type": "ending",
+    "title": "Berpisah Baik-baik",
+    "prompt": "ending/CF/E-CF-03.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "96e6a28dc6c7f883068a4b8e0e467160fd7d6088658c4952baf31be8ac80692f"
+  },
+  {
+    "id": "E-CF-04",
+    "type": "ending",
+    "title": "Dipisah Paksa",
+    "prompt": "ending/CF/E-CF-04.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "79af40a23d869380bd9f3d6f3bf0d80b3d271aad04d94dd593af74a527c4d1aa"
+  },
+  {
+    "id": "E-CF-05",
+    "type": "ending",
+    "title": "Digantung Lagi",
+    "prompt": "ending/CF/E-CF-05.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "83b2ad7fc989bc0b9167d3048785109cbbede461fa8680b9eb8f4d96951715b8"
+  },
+  {
+    "id": "E-CF-06",
+    "type": "ending",
+    "title": "Bersama Yutaka",
+    "prompt": "ending/CF/E-CF-06.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "4d493c66c4da716dc25e731aae88110cf2c44528d75bfe1731594a94ffb9b4e2"
+  },
+  {
+    "id": "E-CF-07",
+    "type": "ending",
+    "title": "Nama Pena yang Runtuh",
+    "prompt": "ending/CF/E-CF-07.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "dbedcba891d38cbcf805af16bced298549365c34970c7360c795b62224c5fe65"
+  },
+  {
+    "id": "E-CF-08",
+    "type": "ending",
+    "title": "Gaya Baru Shena",
+    "prompt": "ending/CF/E-CF-08.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "97aa41dc18f24d287d6dea0a343aeb2b871edddf5d2de2f1d5d214b0b622622f"
+  },
+  {
+    "id": "E-CF-09",
+    "type": "ending",
+    "title": "Rumah Amamiya Retak",
+    "prompt": "ending/CF/E-CF-09.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "bf45bb855d5050ee6eac35f6c838078e98745aa427685df6d2d777323c9454e0"
+  },
+  {
+    "id": "E-CF-10",
+    "type": "ending",
+    "title": "Studio Sendiri",
+    "prompt": "ending/CF/E-CF-10.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "50da1295cc8b1f5fa0877aac4e3976dfeebe7da8e7cfbc612350d4e2be0b6038"
+  },
+  {
+    "id": "E-CF-11",
+    "type": "ending",
+    "title": "Lingkaran yang Runtuh",
+    "prompt": "ending/CF/E-CF-11.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "f3ff922bd48bd3082d58136ab0cd8cb4e337c3115cbf6bee5ab70c6cab90aaeb"
+  },
+  {
+    "id": "E-CF-12",
+    "type": "ending",
+    "title": "Korban yang Ia Ciptakan",
+    "prompt": "ending/CF/E-CF-12.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "9d49e3ff71e637e5853c84cb180cef10a3d86370ba968ab1fc95c23b04af0d16"
+  },
+  {
+    "id": "E-CF-13",
+    "type": "ending",
+    "title": "Pengakuan yang Tidak Diminta",
+    "prompt": "ending/CF/E-CF-13.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "ca14455800d660a8ba50337f2e4183986de8361a6440efde26de95ab81bea271"
+  },
+  {
+    "id": "E-KO-01",
+    "type": "ending",
+    "title": "Dipilih: Miyuki",
+    "prompt": "ending/KO/E-KO-01.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "f6ab3c69f97199513ac445544d6d00f28b314ab3a0242d5170d4dfdce67e4a8d"
+  },
+  {
+    "id": "E-KO-02",
+    "type": "ending",
+    "title": "Dipilih: Nagisa",
+    "prompt": "ending/KO/E-KO-02.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "29419b1e69399eab810fc8135b3782686805b2d2417015b928b2a8abd996d8a7"
+  },
+  {
+    "id": "E-KO-03",
+    "type": "ending",
+    "title": "Dipilih: Harumi",
+    "prompt": "ending/KO/E-KO-03.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "8697fb1d29721edb2e913e3523c4967dcbb651aef29c37544cfdaa842ddd7637"
+  },
+  {
+    "id": "E-KO-04",
+    "type": "ending",
+    "title": "Dipilih: Moeka",
+    "prompt": "ending/KO/E-KO-04.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "13d5f175254fec46825486453639adca416448236f22fb02414f393acd664ae0"
+  },
+  {
+    "id": "E-KO-05",
+    "type": "ending",
+    "title": "Dipilih: Shiori",
+    "prompt": "ending/KO/E-KO-05.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "496289cd20f88b0ce15b5a0fd5d8d78f6ae316d3ca14f15c70f6235ec9751711"
+  },
+  {
+    "id": "E-KO-06",
+    "type": "ending",
+    "title": "Dipilih: Chiasa",
+    "prompt": "ending/KO/E-KO-06.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "c454bd30a65adfc531cc908578b8d31eb84011e99d2642edfc604efe4554cc46"
+  },
+  {
+    "id": "E-KO-07",
+    "type": "ending",
+    "title": "Sendiri",
+    "prompt": "ending/KO/E-KO-07.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "b4f22068227883b490f9b353fd760f880171aadffdebb557b78744e4de852130"
+  },
+  {
+    "id": "E-KO-08",
+    "type": "ending",
+    "title": "Tetap Menggantung",
+    "prompt": "ending/KO/E-KO-08.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "e33ec27e9d6d6aaa4ae5a744d606b94a8d8963b6c43d414a18f75a077374ca6b"
+  },
+  {
+    "id": "E-KO-09",
+    "type": "ending",
+    "title": "Hancur",
+    "prompt": "ending/KO/E-KO-09.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "aad41f0b2aa54b1943542a2edab19a90435b36740d4cec5e8b1d71d0dc9e338d"
+  },
+  {
+    "id": "E-KO-10",
+    "type": "ending",
+    "title": "Koita Membalas",
+    "prompt": "ending/KO/E-KO-10.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "a34f6fe7d21599720dbbbf17e427221ece90f283b5f497cf5a2c70aca9fdec63"
+  },
+  {
+    "id": "E-KO-11",
+    "type": "ending",
+    "title": "Penulis yang Jujur",
+    "prompt": "ending/KO/E-KO-11.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "31cbdd51770f32bae0627cb1ed61df60beb96dbed2022c7e140cbc6d8669d486"
+  },
+  {
+    "id": "E-KO-12",
+    "type": "ending",
+    "title": "Pergi",
+    "prompt": "ending/KO/E-KO-12.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "0103a0b23787b81631c5649084a0c9fd10028afba204f51321e0ca97beebe98b"
+  },
+  {
+    "id": "E-KO-13",
+    "type": "ending",
+    "title": "Protagonis yang Terbangun",
+    "prompt": "ending/KO/E-KO-13.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "6b29f4ea5b14d7acd1429f584de7080671be0c2e2057bd3e3e082756adab396b"
+  },
+  {
+    "id": "E-KO-14",
+    "type": "ending",
+    "title": "Persahabatan yang Diakhiri",
+    "prompt": "ending/KO/E-KO-14.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "2399707d1d6f79e118db4371cc103af2b4af3bdadcc2bb03abae829e38348dcc"
+  },
+  {
+    "id": "E-KO-15",
+    "type": "ending",
+    "title": "Toga yang Tidak Dipakai",
+    "prompt": "ending/KO/E-KO-15.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "17bac24d7f355b18518b71418eb8104810102974cca71490b6be5ad614fd6ace"
+  },
+  {
+    "id": "E-KO-16",
+    "type": "ending",
+    "title": "Semua Pergi",
+    "prompt": "ending/KO/E-KO-16.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "d59c1c68b58315538e74b3ce7293d0396f6d90aa08b64195d303dcbfacbd8a44"
+  },
+  {
+    "id": "E-KO-17",
+    "type": "ending",
+    "title": "Pusat yang Berpindah",
+    "prompt": "ending/KO/E-KO-17.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "50a1b6a2711a72d12b6ea0c39f4aebf16d5ac14de1575c77b703119960b47398"
+  },
+  {
+    "id": "E-KO-18",
+    "type": "ending",
+    "title": "Naskah yang Kosong",
+    "prompt": "ending/KO/E-KO-18.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "164dd8a9f468e1f090ef7be50c77dff7d8e0fa08e8002e6987adfef4c9e723c7"
+  },
+  {
+    "id": "E-KO-19",
+    "type": "ending",
+    "title": "Yang Tidak Bisa Ia Hentikan",
+    "prompt": "ending/KO/E-KO-19.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "779d88e7c76ed431b9f2d82a0ba3e141e550ff8f5aa4b7f4a0d6e42e8c152083"
+  },
+  {
+    "id": "E-KO-20",
+    "type": "ending",
+    "title": "Saksi yang Bersuara",
+    "prompt": "ending/KO/E-KO-20.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "5635b872e6e9cb1b480b41caf1794192395410b6be3551da3e5635bc5dca0b9b"
+  },
+  {
+    "id": "E-KO-21",
+    "type": "ending",
+    "title": "Dituduh atas Luka yang Menimpanya",
+    "prompt": "ending/KO/E-KO-21.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "5bc31c8fbfada23ab8a8238706a2b9f588126d84fe747ba7116fe625b1a06e2a"
+  },
+  {
+    "id": "E-BL-01",
+    "type": "ending",
+    "title": "Berkomitmen",
+    "prompt": "ending/BL/E-BL-01.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "64ee44ab881a4026a5d9cac3f120550a5b120f36a72c6578637f0ab20db6a524"
+  },
+  {
+    "id": "E-BL-02",
+    "type": "ending",
+    "title": "Ditolak dan Retak",
+    "prompt": "ending/BL/E-BL-02.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "0b9d261d8df6eb379ef8ee4c6db1b1b9260a0643bb3de726d66da4cf7a7f5f8c"
+  },
+  {
+    "id": "E-BL-03",
+    "type": "ending",
+    "title": "Kembali ke Pola Lama",
+    "prompt": "ending/BL/E-BL-03.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "26f5c446c7b61b7e79226d7e8b4e0c043837b8b00eb1de8fced0b214497da05f"
+  },
+  {
+    "id": "E-BL-04",
+    "type": "ending",
+    "title": "Kolaps",
+    "prompt": "ending/BL/E-BL-04.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "b0ab6c507ebdc6a0618b0bd61a1136dae5d8c12159d95385e3ae5c997f8c5401"
+  },
+  {
+    "id": "E-BL-05",
+    "type": "ending",
+    "title": "Rahasia di Apartemen",
+    "prompt": "ending/BL/E-BL-05.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "e6acc746805724b5f132b4a951d04157dc7969a097cd5f93db9f5824017fbcaf"
+  },
+  {
+    "id": "E-BL-06",
+    "type": "ending",
+    "title": "Restu di Meja Makan",
+    "prompt": "ending/BL/E-BL-06.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "36ce5af1a15647e4370e5b551487d4151bd608c05364c6120b3469fe6579588e"
+  },
+  {
+    "id": "E-BL-07",
+    "type": "ending",
+    "title": "Kursi Kosong di Rumah Amamiya",
+    "prompt": "ending/BL/E-BL-07.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "b167cf1a616504e1cd345010113b0b1190e175b14a0c94d4873fefa38a5c6832"
+  },
+  {
+    "id": "E-BL-08",
+    "type": "ending",
+    "title": "Ia Lari dari Pintu Itu",
+    "prompt": "ending/BL/E-BL-08.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "cc6959491a68dbe116e47e949ab562e3a2974cd57de391b1e9c07190fba5dfe0"
+  },
+  {
+    "id": "E-YH-01",
+    "type": "ending",
+    "title": "Pewaris yang Berbeda",
+    "prompt": "ending/YH/E-YH-01.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "07d042b12465d446d9e79bb209b549c99b89db808635cee38a3f0ce6b879c904"
+  },
+  {
+    "id": "E-YH-02",
+    "type": "ending",
+    "title": "Bekerja di Luar",
+    "prompt": "ending/YH/E-YH-02.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "d97337476648d7093c120495597ed901be5bd38dfd367294fdc14d742a7825df"
+  },
+  {
+    "id": "E-YH-03",
+    "type": "ending",
+    "title": "Keluarga Pilihan",
+    "prompt": "ending/YH/E-YH-03.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "2da16e8cb14f87def859603470ad930e8b7bad086535478b35b313b6f221e694"
+  },
+  {
+    "id": "E-YH-04",
+    "type": "ending",
+    "title": "Dicoret",
+    "prompt": "ending/YH/E-YH-04.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "dea9cb16791683f86678407249bf4aec881ce4c71d7ab23d1abc18282ce709f6"
+  },
+  {
+    "id": "E-YH-05",
+    "type": "ending",
+    "title": "Ketahuan Bukan Yutaka",
+    "prompt": "ending/YH/E-YH-05.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "7a9a9e121bdb681f8933b4d8c1077ccf9d949e4b3a477b1ba51d2a895dc2a661"
+  },
+  {
+    "id": "E-YH-06",
+    "type": "ending",
+    "title": "Pergi Jauh",
+    "prompt": "ending/YH/E-YH-06.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "1dfe974c9f35d3053e56080b8e18246e4ddca355f21d184ec3b531f3c588b661"
+  },
+  {
+    "id": "E-YH-07",
+    "type": "ending",
+    "title": "Informan yang Menagih",
+    "prompt": "ending/YH/E-YH-07.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "a94a52ff9b9856f578ece926339d3c3f56b298a1f0a8c99cc6d67839dd2987a9"
+  },
+  {
+    "id": "E-YU-01",
+    "type": "ending",
+    "title": "Bersama Chiasa",
+    "prompt": "ending/YU/E-YU-01.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "685b17275ab7eccdc618d7c306fb765151411c59e1cba5d21fe32b621cbe8497"
+  },
+  {
+    "id": "E-YU-02",
+    "type": "ending",
+    "title": "Mundur ke Luar Negeri",
+    "prompt": "ending/YU/E-YU-02.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "d2c9a43f64e309f034bdc49fabb372c4ee5ccd90618a4b95e4286f1ecc9d86dd"
+  },
+  {
+    "id": "E-YU-03",
+    "type": "ending",
+    "title": "Retak dan Menutup Diri",
+    "prompt": "ending/YU/E-YU-03.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "7c25e787d1c74a9aab0f0ec0ccc4707ff3a914584c100e28c5fabe05edb959d9"
+  },
+  {
+    "id": "E-YU-04",
+    "type": "ending",
+    "title": "Sekutu Chiasa",
+    "prompt": "ending/YU/E-YU-04.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "83f945033abb63ab75bd408ea8052b596d7630f48bb3faf594e7674b2950cbbf"
+  },
+  {
+    "id": "E-YU-05",
+    "type": "ending",
+    "title": "Tahu Dipakai",
+    "prompt": "ending/YU/E-YU-05.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "40e182b80998dff9bd28becfa90e14c4de7fd204f98586630b11d00d28a4c07d"
+  },
+  {
+    "id": "E-YU-06",
+    "type": "ending",
+    "title": "Membela Koita",
+    "prompt": "ending/YU/E-YU-06.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "c6c234140436139f368e2f4abe1c37e563546312f1c4d6d516a935c0be5c1910"
+  },
+  {
+    "id": "E-YU-07",
+    "type": "ending",
+    "title": "Pewaris Kisaragi",
+    "prompt": "ending/YU/E-YU-07.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "58efdc0567a5116608fe2e0995e752ed4eeb81b891770141e38a5f04ece0955a"
+  },
+  {
+    "id": "E-YU-08",
+    "type": "ending",
+    "title": "Sahabat Lagi",
+    "prompt": "ending/YU/E-YU-08.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "977386e4a8bb5e0598e716b790d4d67ca892a0dbf8a4753afd90af2cd031bd0c"
+  },
+  {
+    "id": "E-FO-01",
+    "type": "ending",
+    "title": "Jeruji",
+    "prompt": "ending/FO/E-FO-01.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "4389369c7ad42781758284a31d4fbf3d15d8cb457c501c70cb61961393fed58b"
+  },
+  {
+    "id": "E-FO-02",
+    "type": "ending",
+    "title": "Dikeluarkan dan Hancur Sosial",
+    "prompt": "ending/FO/E-FO-02.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "d03fa58ace7135b2bf4c6f8aa8161504357b93754435b6c1256de2cb2f9baf8e"
+  },
+  {
+    "id": "E-FO-03",
+    "type": "ending",
+    "title": "Lolos tapi Dihantui",
+    "prompt": "ending/FO/E-FO-03.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "0793ad6f365b65beea486568d68c7c827a96096740c05ed1e61dc89cc84f3680"
+  },
+  {
+    "id": "E-FO-04",
+    "type": "ending",
+    "title": "Mengaku dan Menjalani Proses",
+    "prompt": "ending/FO/E-FO-04.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "7b4c716efb03f7d119561be6aab06de9b27268fe927c215433f81c3c108dab5e"
+  },
+  {
+    "id": "E-FO-05",
+    "type": "ending",
+    "title": "Buron",
+    "prompt": "ending/FO/E-FO-05.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "df9de4c0f50c469e774ab6e2c2ad0d4333166dc66352637138a03ab126703284"
+  },
+  {
+    "id": "E-FO-06",
+    "type": "ending",
+    "title": "Kakak yang Tidak Menunggu Polisi",
+    "prompt": "ending/FO/E-FO-06.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "54ff26e0deabb9a3a2631621cd1f07485e0b120c31bee685b17327a6f83829e8"
+  },
+  {
+    "id": "E-FO-07",
+    "type": "ending",
+    "title": "Saksi yang Memeras",
+    "prompt": "ending/FO/E-FO-07.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "826d17a36ca66da2d535d0980e41d5acb65dff6a2cc5c7ab0c8cf1c3cce9b16b"
+  },
+  {
+    "id": "E-FO-08",
+    "type": "ending",
+    "title": "Kasus yang Dibuka Kembali",
+    "prompt": "ending/FO/E-FO-08.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "1f597577e90098fc6d0d34251764cc08380bf0518bcb8cec7eb3465d8dfd3e4e"
+  },
+  {
+    "id": "E-FO-09",
+    "type": "ending",
+    "title": "Kejahatan Berantai",
+    "prompt": "ending/FO/E-FO-09.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "1d1f2cd2d138c93bc3875490bbf0e249a9d13444a41a287dd2956bd0c78c9757"
+  },
+  {
+    "id": "E-FO-10",
+    "type": "ending",
+    "title": "Skorsing dan Catatan",
+    "prompt": "ending/FO/E-FO-10.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "ccf29dd1dbbe36542352a106c5081ad25790a162b7e13ade7787abcc78d91317"
+  },
+  {
+    "id": "E-FO-11",
+    "type": "ending",
+    "title": "Saksi di Ambang Pintu",
+    "prompt": "ending/FO/E-FO-11.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "c474b7b40bf02d36c9871429dcadc59dff7b982514e800b38d03b12d66a6348c"
+  },
+  {
+    "id": "E-FO-12",
+    "type": "ending",
+    "title": "Kurungan Tanpa Jeruji",
+    "prompt": "ending/FO/E-FO-12.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "03706a9623d32778d537acc3c9c681cdb589a8ce2a38f794ef593b300ccfc4b7"
+  },
+  {
+    "id": "E-FO-13",
+    "type": "ending",
+    "title": "Kebetulan yang Datang Tepat Waktu",
+    "prompt": "ending/FO/E-FO-13.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "cc1233edd35ad401c76697d35aa00a634d4713e8f22651276b75619002a2ba95"
+  },
+  {
+    "id": "E-FO-14",
+    "type": "ending",
+    "title": "Dua Orang yang Diam",
+    "prompt": "ending/FO/E-FO-14.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "b648c9c61b493cf04c7e3e5b9afc3f0a2ad45ab6b31450ac39ffe938b0915f46"
+  },
+  {
+    "id": "E-FO-15",
+    "type": "ending",
+    "title": "Pembalikan yang Terbongkar",
+    "prompt": "ending/FO/E-FO-15.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "23445b31a8325117211c7f3cb3b44389f4fd6423b49bfaa451dcd81808319ad6"
+  },
+  {
+    "id": "E-SI-01",
+    "type": "ending",
+    "title": "Kontrak Selesai",
+    "prompt": "ending/SI/E-SI-01.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "9dca80ca1ed3da3367727eea61b0814e8a4db893cda6f93bd5f54b7fd139bc7e"
+  },
+  {
+    "id": "E-SI-02",
+    "type": "ending",
+    "title": "Nyaris",
+    "prompt": "ending/SI/E-SI-02.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "3de4dc58a79d85911dea5835dc78f27b68ec257382585e135e85864d9c3cef3d"
+  },
+  {
+    "id": "E-SI-03",
+    "type": "ending",
+    "title": "Penonton Terakhir",
+    "prompt": "ending/SI/E-SI-03.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "1818a6bccb3c02c57cf83bd15077c5a6dd328612344c77d1fb8f92c19060b441"
+  },
+  {
+    "id": "E-SI-04",
+    "type": "ending",
+    "title": "Kontrak Baru",
+    "prompt": "ending/SI/E-SI-04.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "f153c8908a747ccbd97f760242607864f51d1e46550c04d8c46d74b74aadae84"
+  },
+  {
+    "id": "E-SI-05",
+    "type": "ending",
+    "title": "Gagal di Bawah Sakura",
+    "prompt": "ending/SI/E-SI-05.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "81a79103a8b660a426d1557c40f54ae32278982e5c8da4c86845a2f8245e5e86"
+  },
+  {
+    "id": "E-SI-06",
+    "type": "ending",
+    "title": "Cinta yang Tidak Dihitung",
+    "prompt": "ending/SI/E-SI-06.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "285d8b7396243b81639b6d42975fe166e9cda68033927d53bacf628e71cf6323"
+  },
+  {
+    "id": "E-SI-07",
+    "type": "ending",
+    "title": "Tubuh Pinjaman Menyerah",
+    "prompt": "ending/SI/E-SI-07.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "4bd71859d5c547403f85f7f92262bd3b8a602b468e6c70acaf19048d6bbf3256"
+  },
+  {
+    "id": "E-SI-08",
+    "type": "ending",
+    "title": "Pembangkang",
+    "prompt": "ending/SI/E-SI-08.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "3558eeb112ba4523401bfee077528dd85aedd15557c7602653f2018380d8bfa0"
+  },
+  {
+    "id": "E-SI-09",
+    "type": "ending",
+    "title": "Lolos di Balik Jeruji",
+    "prompt": "ending/SI/E-SI-09.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "f946bf284056cafeb81e9ba0d0d9b00d853c54b5bc0333f33eff8fbb1a37dff4"
+  },
+  {
+    "id": "E-SI-10",
+    "type": "ending",
+    "title": "Gagal di Balik Jeruji",
+    "prompt": "ending/SI/E-SI-10.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "a59b52985fc965155f6b78b2b5d563db4a171bf776745f81b55e9dc11fef6ad0"
+  },
+  {
+    "id": "E-SI-11",
+    "type": "ending",
+    "title": "Hidup Tanpa Nama",
+    "prompt": "ending/SI/E-SI-11.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "505d66e640504fc3129c68815a3724454fd7d2f668e31029bb4e574438eeea7b"
+  },
+  {
+    "id": "E-SI-12",
+    "type": "ending",
+    "title": "Figuran yang Baik",
+    "prompt": "ending/SI/E-SI-12.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "de017add83d77a057598cce663d37b2b4e4c8ef4c9466c345f0ddc7e335bd19e"
+  },
+  {
+    "id": "E-SI-13",
+    "type": "ending",
+    "title": "Kebaikan yang Tidak Dihitung",
+    "prompt": "ending/SI/E-SI-13.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "bd51740490fcccfed32551f572fad93462e9317d10b181df4fa8bed697e3aca4"
+  },
+  {
+    "id": "E-SI-14",
+    "type": "ending",
+    "title": "Jauh dari Panggung",
+    "prompt": "ending/SI/E-SI-14.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "80f1291a8ab387c81e55412cb24d268422bc3ffbd263ce8950013ea9c3f268e5"
+  },
+  {
+    "id": "E-SI-15",
+    "type": "ending",
+    "title": "Pengakuan yang Tidak Dipercaya",
+    "prompt": "ending/SI/E-SI-15.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "1d5aa1b789f8f7afe4b1190ef49d132b64a645a71a88cd0f1d914ee0d25878f2"
+  },
+  {
+    "id": "E-SI-16",
+    "type": "ending",
+    "title": "Tagihan dari Orang Lain",
+    "prompt": "ending/SI/E-SI-16.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "9a6f35f41dba2f29f4216942df1cca2a188bd525f6eaa7adc80748b370547186"
+  },
+  {
+    "id": "E-SI-17",
+    "type": "ending",
+    "title": "Penipu yang Tertipu",
+    "prompt": "ending/SI/E-SI-17.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "6d99b7596b49fbf450f5fd700912e47286a5931f775894fa919888f737437ccf"
+  },
+  {
+    "id": "E-SI-18",
+    "type": "ending",
+    "title": "Celah yang Tidak Pernah Dicatat",
+    "prompt": "ending/SI/E-SI-18.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "0c818afbd0296a933d798d320366468d75c8874c5ca4cdb30b461d24898452b1"
+  },
+  {
+    "id": "E-HP-01",
+    "type": "ending",
+    "title": "Bersama Satu Orang",
+    "prompt": "ending/HP/E-HP-01.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "76152fbb34f4f5e9139dc8e82f422e13796420c543a5a153b0324e8cbe42de3d"
+  },
+  {
+    "id": "E-HP-02",
+    "type": "ending",
+    "title": "Bersama Beberapa Orang",
+    "prompt": "ending/HP/E-HP-02.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "be7d007b9e783c552c07ec6e98827e9f0e7a9ddb0ce56774997f15444f5d2d76"
+  },
+  {
+    "id": "E-HP-03",
+    "type": "ending",
+    "title": "Tidak Dapat Siapa-Siapa",
+    "prompt": "ending/HP/E-HP-03.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "cdea2bf7168acbf506f167d6ebc49a4557002b16673a454b7ca3ca9437d91e89"
+  },
+  {
+    "id": "E-HP-04",
+    "type": "ending",
+    "title": "Ditinggalkan Semua",
+    "prompt": "ending/HP/E-HP-04.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "805436ffd1a4caa8a5b2ed767fb56c0b666bf05ad2352276cbaf157b7896af38"
+  },
+  {
+    "id": "E-HP-05",
+    "type": "ending",
+    "title": "Tidak Pernah Mengejar Siapa Pun",
+    "prompt": "ending/HP/E-HP-05.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "1c230c377a644071a905d643ef7297559e26ff68490fe20324d737b2bac0e92f"
+  },
+  {
+    "id": "E-HP-06",
+    "type": "ending",
+    "title": "Cinta yang Datang Terlambat",
+    "prompt": "ending/HP/E-HP-06.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "a876716e471e38e9638f695d81cc4982cb90fdf1f53c449d205985a6a12fe7c0"
+  },
+  {
+    "id": "E-HP-07",
+    "type": "ending",
+    "title": "Patah Hati yang Diterima",
+    "prompt": "ending/HP/E-HP-07.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "ef9ccb546f3a7e1dacd10338a5e437a2c45d0451810623f6eb4098afa0a617f4"
+  },
+  {
+    "id": "E-NPC-01",
+    "type": "ending",
+    "title": "Dua Jas Putih",
+    "prompt": "ending/NPC/E-NPC-01.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "3f080acdd859dcd4a7a8e6644fdde386c1775f9929960b8dc2418db916c38cc6"
+  },
+  {
+    "id": "E-NPC-02",
+    "type": "ending",
+    "title": "Sahabat yang Memilih Sisi",
+    "prompt": "ending/NPC/E-NPC-02.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "25da785b4e43a4029510f08cfecfa384ee8db970845d8d8364d7d1546ad22d3d"
+  },
+  {
+    "id": "E-NPC-03",
+    "type": "ending",
+    "title": "Thrift Hari Minggu",
+    "prompt": "ending/NPC/E-NPC-03.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "4a20682016c418b4ee5ec9edd075c4a8d1e7a6faa904e4925581920d578bddca"
+  },
+  {
+    "id": "E-NPC-04",
+    "type": "ending",
+    "title": "Rina Tidak Memaafkan",
+    "prompt": "ending/NPC/E-NPC-04.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "0223843338469199ad5180aa64309360bc73cdebc5ec95ae858ec1a07e8f749a"
+  },
+  {
+    "id": "E-NPC-05",
+    "type": "ending",
+    "title": "Studio Berdua",
+    "prompt": "ending/NPC/E-NPC-05.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "0158134c1abf38991e94f1a34b70e97da35aca9368899ec755c32ba9b31eb77b"
+  },
+  {
+    "id": "E-NPC-06",
+    "type": "ending",
+    "title": "Rahasia yang Dititipkan",
+    "prompt": "ending/NPC/E-NPC-06.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "30093bed3dd6bd7d36aa4c3980efd80e118a0b198b07944fd2172a85f8b1d2eb"
+  },
+  {
+    "id": "E-NPC-07",
+    "type": "ending",
+    "title": "Pasal yang Membela",
+    "prompt": "ending/NPC/E-NPC-07.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "84af88ac64642fd38090ccfe1eae670a073122371fa62bf429dd07dfea85c50f"
+  },
+  {
+    "id": "E-NPC-08",
+    "type": "ending",
+    "title": "Rapat Terakhir BEM",
+    "prompt": "ending/NPC/E-NPC-08.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "30d7ce36fa8ce8492a3dbe0215e2f58c390f98e6bd239e59bf859fecabf50d58"
+  },
+  {
+    "id": "E-NPC-09",
+    "type": "ending",
+    "title": "Redaksi Berdua",
+    "prompt": "ending/NPC/E-NPC-09.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "cdc6e42e8e636feb28c6729ff6d59482d857bd6356df5b1cc3dabefe1c286608"
+  },
+  {
+    "id": "E-NPC-10",
+    "type": "ending",
+    "title": "Headline Terakhir",
+    "prompt": "ending/NPC/E-NPC-10.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "71cdaec8265e87fe88eaf409ef703effe395df6b88a6bcfe9dea5e0a21ef0135"
+  },
+  {
+    "id": "E-NPC-11",
+    "type": "ending",
+    "title": "Naskah dan Penyuntingnya",
+    "prompt": "ending/NPC/E-NPC-11.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "674c19431d86a9b339df959a1d6807954bfcae50f6742d0776c3e5f59084204f"
+  },
+  {
+    "id": "E-NPC-12",
+    "type": "ending",
+    "title": "Kontrak Diputus",
+    "prompt": "ending/NPC/E-NPC-12.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "d48a24ffbda6788a73bdb747df19d355576541e47e386dc39a7ff2aa9df40406"
+  },
+  {
+    "id": "E-NPC-13",
+    "type": "ending",
+    "title": "Kakak yang Dipilih",
+    "prompt": "ending/NPC/E-NPC-13.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "15d9ab7a0e59d5e70ea04b240680aecb3a07a65330462f5478050283e4206a74"
+  },
+  {
+    "id": "E-NPC-14",
+    "type": "ending",
+    "title": "Restu Sakurajima",
+    "prompt": "ending/NPC/E-NPC-14.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "e37485f44f889ab626e4ee631982e173e9344a41a7c036252c442bbb27b2bbfd"
+  },
+  {
+    "id": "E-NPC-15",
+    "type": "ending",
+    "title": "Esai untuk Satu Orang",
+    "prompt": "ending/NPC/E-NPC-15.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "c1256b35c06ecfa672bf6f208f44840171a2577baa03d654244ce11088010c6b"
+  },
+  {
+    "id": "E-NPC-16",
+    "type": "ending",
+    "title": "Saksi yang Menulis",
+    "prompt": "ending/NPC/E-NPC-16.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "3d5370fd08c8c0fb5dc675336cf9d61536938329a54b2a56d6202d0cd730f7c2"
+  },
+  {
+    "id": "E-NPC-17",
+    "type": "ending",
+    "title": "Informan yang Setia",
+    "prompt": "ending/NPC/E-NPC-17.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "23ffe1dbc03b4614eea1b04fba9d6ccce7ff56d43d3e5a727e146569de46972b"
+  },
+  {
+    "id": "E-NPC-18",
+    "type": "ending",
+    "title": "Maket Kedua",
+    "prompt": "ending/NPC/E-NPC-18.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "b8dba2724d675b7261c6125873e70412561abc3eec98cf104a6e6f33f880e2a7"
+  },
+  {
+    "id": "E-NPC-19",
+    "type": "ending",
+    "title": "Pewaris yang Membangkang",
+    "prompt": "ending/NPC/E-NPC-19.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "f05d8bb6e27485992cb94fd1d29e50f5f07711db56d4815f6b69f71a8fa50f92"
+  },
+  {
+    "id": "E-NPC-20",
+    "type": "ending",
+    "title": "Skandal Omiai",
+    "prompt": "ending/NPC/E-NPC-20.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "0287ad2422691acd0be6f6aa40cb86f78314d71bbd4ddfe5ab3e0b47f3c96f66"
+  },
+  {
+    "id": "E-NPC-21",
+    "type": "ending",
+    "title": "Kafe Pagi",
+    "prompt": "ending/NPC/E-NPC-21.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "d41b33639faadcd7ff4143eff1dfb28a44f949c7a4e3fe33fda84abc537dcfca"
+  },
+  {
+    "id": "E-NPC-22",
+    "type": "ending",
+    "title": "Batas Profesional",
+    "prompt": "ending/NPC/E-NPC-22.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "9ff18376224b0d5822f715ac8b7b807fb75ddec8b79566d83fe04686e542ecb2"
+  },
+  {
+    "id": "E-NPC-23",
+    "type": "ending",
+    "title": "Konseling Host",
+    "prompt": "ending/NPC/E-NPC-23.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "e5bd893bb25c5d4b7504eda4e210775a186dfc2a5c4c9b23184641a6bf8bd45d"
+  },
+  {
+    "id": "E-NPC-24",
+    "type": "ending",
+    "title": "Kepercayaan Kuroiwa",
+    "prompt": "ending/NPC/E-NPC-24.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "7547fa0f46472eb4ec4601b5b2460e54fa27969405be9d4637edfbefdf756e2c"
+  },
+  {
+    "id": "E-NPC-25",
+    "type": "ending",
+    "title": "Saksi yang Dipercaya",
+    "prompt": "ending/NPC/E-NPC-25.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "8872361a0f554845eaa3082e33ae0191745abd4a34ee5964c408e3f408c0b444"
+  },
+  {
+    "id": "E-NPC-26",
+    "type": "ending",
+    "title": "Penyusup",
+    "prompt": "ending/NPC/E-NPC-26.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "cd4f6a45e7aacd575c4fe653cee0cad1438bae8a22505735f4548b0e68e8f417"
+  },
+  {
+    "id": "E-NPC-27",
+    "type": "ending",
+    "title": "Penyusup yang Tertelan",
+    "prompt": "ending/NPC/E-NPC-27.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "4fed20caeccb91608f937a61463d0730f24c890df8883cb2a424152eef6bde0a"
+  },
+  {
+    "id": "E-X-01",
+    "type": "ending",
+    "title": "Harem yang Runtuh",
+    "prompt": "ending/X/E-X-01.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "c934d064fce733cf65596f88d9f1c10ca072a41ed1d69fb7e1b2507e6acbe3a8"
+  },
+  {
+    "id": "E-X-02",
+    "type": "ending",
+    "title": "Meja Panjang",
+    "prompt": "ending/X/E-X-02.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "cdad29d956bbdf43ac68f4ca0ac710ecbfdd1c0d7e8e9752d91efc9a9c65557d"
+  },
+  {
+    "id": "E-X-03",
+    "type": "ending",
+    "title": "Domino Shiori",
+    "prompt": "ending/X/E-X-03.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "1b5550a3f1a3301b5031a671052e0b5d20b69a2a845268fc69d3004c206a68d9"
+  },
+  {
+    "id": "E-X-04",
+    "type": "ending",
+    "title": "Musim Dingin Tanpa Moeka",
+    "prompt": "ending/X/E-X-04.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "8b1aa3fc02ca241914d4c9aa676258c7dacb86c08b41d3a76f60b01657085e65"
+  },
+  {
+    "id": "E-X-05",
+    "type": "ending",
+    "title": "Kursi Kosong di Wisuda",
+    "prompt": "ending/X/E-X-05.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "d71dd1a00bb167750d996514feef8a35f0b3efecfd5f3be8cdb0e938a47ddb07"
+  },
+  {
+    "id": "E-X-06",
+    "type": "ending",
+    "title": "Semua Orang Bebas",
+    "prompt": "ending/X/E-X-06.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "b1975c0b0a1b53a87f0d3baec8edfea949f10e39771a3b8cf292dbbfaa192dbd"
+  },
+  {
+    "id": "E-X-07",
+    "type": "ending",
+    "title": "Melawan Naskah Bersama",
+    "prompt": "ending/X/E-X-07.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "801303fddd3a0d95dcad80584812ebb2cd669e666e9d2f406777cf2f6210e583"
+  },
+  {
+    "id": "E-X-08",
+    "type": "ending",
+    "title": "Pengakuan di Depan Semua",
+    "prompt": "ending/X/E-X-08.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "ce3fb5de78973eb5ba379dd636e662c8589c8f94bf5975d044c6c13ac1429670"
+  },
+  {
+    "id": "E-X-09",
+    "type": "ending",
+    "title": "Dua Tragedi",
+    "prompt": "ending/X/E-X-09.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "76b04442f4f7a73a7880884928dd960ea41dd9becc654a87e6b3ba4e4aad4434"
+  },
+  {
+    "id": "E-X-10",
+    "type": "ending",
+    "title": "Kota yang Tahu Semuanya",
+    "prompt": "ending/X/E-X-10.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "309143686e8926e2479db3b2dade75cec84438a017b5b0c46c2848f13235903b"
+  },
+  {
+    "id": "E-X-11",
+    "type": "ending",
+    "title": "Pesta di Rumah Amamiya",
+    "prompt": "ending/X/E-X-11.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "8c8ebd46c8dd1d851fe099bbb5aa9938e2d874a964547ffef99fd4290177fe11"
+  },
+  {
+    "id": "E-X-12",
+    "type": "ending",
+    "title": "Dua Ratu",
+    "prompt": "ending/X/E-X-12.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "0132848f208c9fbf260c8b1a88a6d9742575051c933890b2ddd5b0104264f1fa"
+  },
+  {
+    "id": "E-X-13",
+    "type": "ending",
+    "title": "Tubuh yang Dibayar",
+    "prompt": "ending/X/E-X-13.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "d12c4280adf8ea05e0a92885e1acba4f6af56acb66543adaf67af975bcbede25"
+  },
+  {
+    "id": "E-X-14",
+    "type": "ending",
+    "title": "Dalang yang Tak Pernah Dicurigai",
+    "prompt": "ending/X/E-X-14.md",
+    "source": "game/kk_ending_story.rpy",
+    "source_sha256": "b10423f96d3f0aad8af7e7a0ae0c7708e266a1d86a236e1c85d69d5fa74b2e05"
+  }
+]

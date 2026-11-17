@@ -30,6 +30,17 @@ label kk_prologue:
     return
 
 # Draft editorial. Karakter/Event_Chiasa C01 dan Event_Yutaka Y01.
+# ┌─ PANDUAN CERITA · Y01 · Terbangun di Apartemen Mewah  (dipakai bila host = Yutaka)
+# │ LOKASI  : Apartemen Yutaka (prolog) · TERLIBAT: Kisaragi Yutaka (+ Koita bila relevan)
+# │ AWALAN  : pagi 7 April; prolog — pemain baru sadar ada di tubuh host.
+# │ INTI    : A periksa dompet & ponsel / B periksa cermin / C hubungi Koita / D tunggu notifikasi Sistem.
+# │ AKHIRAN : membentuk kesan_awal; A memberi tahu saldo.
+# ├─ PANDUAN CERITA · C01 · Terbangun di Kamar Chiasa   (dipakai bila host = Chiasa)
+# │ LOKASI  : Rumah Amamiya (prolog) · TERLIBAT: Amamiya Chiasa (+ Koita bila relevan)
+# │ AWALAN  : pagi 7 April; prolog.
+# │ INTI    : A cek cermin & buku sketsa / B cek ponsel / C turun sarapan / D menunggu Sistem.
+# │ AKHIRAN : kesan_awal; A mengungkap pita & ciri visual.
+# └─ tulis / perbaiki dialog di bawah ──
 label kk_first_morning:
     $ _opening = "Y01" if kk_host == "yutaka" else "C01"
     if kk_done(_opening):
@@ -46,22 +57,22 @@ label kk_first_morning:
     if kk_host == "yutaka":
         if _opening_key == "A":
             $ _balance = "¥{:,}".format(saldo)
-            nar "Nama Kisaragi tertera di layar ponsel. Saldo yang bisa kaugunakan hari ini [_balance]."
+            nar "Nama Kisaragi tertera di kartu dan layar ponsel. Saldo yang bisa kaugunakan hari ini [_balance]. Ada riwayat pembelian, pesan yang ramah, dan kehidupan yang tampaknya terbiasa mendapatkan jawaban. Kau belum mengenal satu pun pengirim pesan itu. Kekayaan ini tidak memberimu ingatan tentang bagaimana menjadi orang yang mereka tunggu."
         elif _opening_key == "B":
-            nar "Wajah Yutaka di cermin ikut mengangkat tangan saat kau menyentuh pipimu."
+            nar "Wajah Yutaka di cermin bergerak bersamaan denganmu. Kau mengenalinya dari halaman manga: lelaki yang selalu tampak punya tempat di samping Koita. Kini ada bekas bantal di pipinya dan ketakutan di matanya. Hal kecil yang tidak pernah digambar pengarang itu membuat semuanya terasa terlalu nyata."
         elif _opening_key == "C":
-            nar "Kau menemukan nama Koita di daftar kontak dan menekan tombol panggil."
+            nar "Koita menjawab sebelum kau selesai memutuskan apa yang akan dikatakan. Ia menanyakan apakah kalian tetap berangkat bersama. Suaranya biasa, sedikit mengantuk, sama sekali tidak tahu bahwa sahabat yang menelepon sedang mencari pegangan pada sapaan pertama. Kau mengatakan akan mengabarinya lagi dan merasa bersalah karena ia percaya."
         else:
-            nar "Kau meletakkan ponsel kembali dan menunggu."
+            nar "Kau duduk di apartemen yang terlalu luas untuk kebingungan seorang diri. Mesin pendingin berdengung; kota di balik jendela tidak berhenti karena kau belum memahami tempatmu. Jika ada sesuatu yang memindahkanmu ke sini, ia membiarkanmu menunggu cukup lama untuk bertanya apakah tubuh lamamu sudah benar-benar hilang."
     else:
         if _opening_key == "A":
-            nar "Di cermin kau melihat pita Chiasa. Kau membuka buku sketsa di dekatmu."
+            nar "Pita hitam mengikat sebagian rambut cokelat gelapmu. Mata keemasan di cermin menatap dengan takut yang tidak kautemukan dalam ingatan tentang Chiasa. Di dekatnya tergeletak buku sketsa penuh gambar yang hangat dan terampil. Kau mengenali tanda tangan Shena, lalu mencoba menarik garis di sudut kosong. Tangan ini sama; hasilnya bukan."
         elif _opening_key == "B":
-            nar "Kau menyalakan layar ponsel, mencari sesuatu yang terasa familier."
+            nar "Ponsel menyimpan pesan Haruka, pemberitahuan pekerjaan, dan percakapan keluarga yang tidak pernah kauikuti. Nama Ko-nii muncul begitu dekat dengan keseharian Chiasa hingga membacanya terasa seperti membuka surat pribadi. Kau belum mengetik balasan ketika dari bawah seseorang memanggil sarapan."
         elif _opening_key == "C":
-            nar "Kau meninggalkan kamar dan turun untuk sarapan."
+            nar "Kau menuruni tangga sambil mengingat nama orang yang mungkin ada di bawah. Yoshie menyuruhmu makan sebelum dingin, tanpa sedikit pun curiga pada cara kau memperhatikan kursimu. Di seberang meja, Koita mengangkat wajah. Menjadi Chiasa berarti duduk di antara orang yang merasa mengenalmu, sementara kau takut salah menjawab pertanyaan paling sederhana."
         else:
-            nar "Kau duduk kembali di tepi tempat tidur dan mendengarkan."
+            nar "Kau duduk di tepi ranjang, menunggu suara yang bisa menjelaskan semuanya. Dari bawah terdengar piring dan langkah seseorang. Di kamar ini ada jadwal kuliah, gambar yang belum selesai, dan pita cadangan. Pemilik kehidupan itu punya rencana untuk hari ini. Kau belum tahu apakah ia masih ada di suatu tempat, menunggumu mengembalikannya."
     return
 
 label kk_main:
@@ -142,6 +153,19 @@ label kk_evaluasi:
 
 label kk_show_ending(code):
     $ _e = kk_ending_data(code)
+    if code == "E-NA-07":
+        if kk_has("haruto_sekutu"):
+            $ _e = dict(_e, body="Haruto menelepon lagi. Kali ini yang terdengar lebih dulu justru suara Nagisa dari dapur. Ia sudah pulang. Besok kakaknya akan menemani sesi terapi pertamanya. Untuk urusan kampus, mereka punya waktu membicarakannya nanti.")
+        else:
+            $ _e = dict(_e, body="Di meja makan keluarga Sakurajima ada tempat untuk Nagisa lagi. Sepulang dari sesi terapi, ia duduk di sana dengan sketsa setengah jadi. Ibunya menggeser teko agar kertas itu bisa dibentangkan.")
+    elif code == "E-MI-02":
+        $ _e = dict(_e, body="Miyuki menaruh kursi kecil di dekat mejanya. Ketika orang tua pasien mulai menjawab, ia menunggu sebentar. Anak di kursi itu punya pertanyaannya sendiri. Miyuki meletakkan penanya dan mendengarkan.")
+    elif code == "E-SH-13":
+        $ _e = dict(_e, body="Di pameran dulu, Shiori bertanya sebagai pembaca. Kini Mio menerima pertanyaan yang sama, bersama salinan jawabanmu. Kali berikutnya kalian duduk membahas sampul, buku itu masih tertutup. Yang ingin Mio dengar lebih dulu adalah ceritamu tentang Shena.")
+    elif code == "E-SH-07":
+        $ _e = dict(_e, body="Shiori menutup map bertuliskan nama Tojo. Pertunangan itu sudah ia batalkan sendiri. Map berikutnya berisi rencana kerjanya. Kali ini, ketika ayahnya bertanya dari mana mereka harus mulai, Shiori membukanya di halaman yang ia pilih.")
+    elif code == "E-CF-01":
+        $ _e = dict(_e, body="Kunci rumah baru itu ada dua. Saat kalian pulang membawa dus terakhir, kau mendengar ia bertanya dari dapur di mana cangkir-cangkir disimpan. Kau belum tahu. Kalian membuka dus satu demi satu, bersama-sama.")
     scene black with fade
     call screen kk_ending_card(_e)
     return

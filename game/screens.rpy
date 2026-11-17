@@ -57,6 +57,7 @@ screen kk_hud():
         hbox:
             xalign 1.0 yalign .5 spacing 12
             if kk_host:
+                use kk_link("HP", Show("kk_phone_locator"))
                 use kk_link("Status", Show("kk_status"))
             use kk_link("Menu", ShowMenu("save"))
 
@@ -99,7 +100,8 @@ screen kk_choice_panel(rows, heading):
             vbox:
                 spacing 12
                 for index, (caption, operation, chosen) in enumerate(rows):
-                    use kk_link(caption, operation, 1500, chosen, index == 0)
+                    # Semua pilihan berwarna sama; tidak ada highlight 'terpilih' di dialog.
+                    use kk_link(caption, operation, 1500, False, index == 0)
 
 screen choice(items):
     use kk_choice_panel([(i.caption, i.action, i.chosen) for i in items], "Pilihanmu")

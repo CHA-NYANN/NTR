@@ -29,8 +29,10 @@ transform kk_enter:
 style kk_button is button:
     background Solid(kk_panel)
     hover_background Solid("#4a616b")
-    selected_background Solid("#705445")
-    selected_hover_background Solid("#815e4a")
+    # Status 'terpilih' memakai warna se-palet (bukan cokelat): hanya penanda halus
+    # untuk tab/togel menu; pilihan dialog tidak lagi memakai highlight sama sekali.
+    selected_background Solid("#34474f")
+    selected_hover_background Solid("#4a616b")
     insensitive_background Solid(kk_ink2)
     padding (24, 12)
     yminimum 58
@@ -39,7 +41,7 @@ style kk_button_text is button_text:
     size 25
     color kk_bone
     hover_color "#ffffff"
-    selected_color "#fff1df"
+    selected_color kk_bone
     insensitive_color "#849497"
 
 style kk_heading is default:

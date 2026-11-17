@@ -17,12 +17,16 @@ with tempfile.TemporaryDirectory(prefix="kouseikan-playtest-") as temp:
     sizes = ("1280x720","1366x768","1920x1080") if capture else ()
     if capture:
         capture.mkdir(parents=True,exist_ok=True)
-    runs = [("chiasa", size) for size in sizes] if capture else [("yutaka",None),("chiasa",None),("chiasa",None)]
-    for seq,(host,size) in enumerate(runs):
+    runs = ([("chiasa", size, None) for size in sizes] if capture else
+            [("yutaka", None, None), ("chiasa", None, None), ("chiasa", None, "artist")]
+            + [("chiasa", None, case) for case in ("keep", "reveal", "admit")] + [("yutaka",None,"clinic")])
+    for seq,(host,size,case) in enumerate(runs):
         env = dict(os.environ, RENPY_PATH_TO_SAVES=str(root/(host+"-"+str(seq))), KK_HOST=host,
                    RENPY_SIMPLE_EXCEPTIONS="1", RENPY_PERFORMANCE_TEST="0", SDL_AUDIODRIVER="dummy")
-        if not size and seq == 2:
+        if case == "artist":
             env["KK_ART_WIN"] = "1"
+        elif case:
+            env["KK_FAMILY_CASE"] = case
         if size:
             env.update(KK_CAPTURE=str(capture), KK_SIZE=size, RENPY_HIGHDPI="1")
         command = [str(exe),str(sdk/"renpy.py"),str(root)]
@@ -51,8 +55,8 @@ with tempfile.TemporaryDirectory(prefix="kouseikan-playtest-") as temp:
                 src = src.replace("action "+token,'id ("qa_" + '+variable+') action '+token)
             world.write_text(src,encoding="utf8")
         try:
-            subprocess.run(command,env=env,check=True,timeout=120)
-            result=root/((size or ("artist" if seq == 2 else host))+".ok")
+            subprocess.run(command,env=env,check=True,timeout=240 if case == "clinic" else 180)
+            result=root/((size or case or host)+".ok")
             assert result.is_file(), "Game exited before test completion"
             print(result.read_text(),flush=True)
         except Exception:

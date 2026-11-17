@@ -74,6 +74,8 @@ init python:
                 continue
             if old_month == month and kk_bulan != month and not kk_done(eid) and eid not in kk_missed:
                 store.kk_missed.append(eid)
+        if kk_bulan == 30 and kk_hari_n == 15:
+            kk_record_cbt_result()
         if old_month != kk_bulan:
             kk_monthly_income()
         if old_month != kk_bulan and kk_bulan >= 7:
@@ -154,16 +156,71 @@ init python:
         return kk_bulan == 2 and 3 <= kk_hari_n <= 6
 
     def kk_window(eid):
+        if eid == "S07":
+            return kk_hari_n == 24 and kk_slot == 3
+        if eid == "S18":
+            return stage.get("shiori",0) >= 2
+        if eid in ("S19","H19","Mo20","N19"):
+            return kk_tanabata()
+        if eid == "S14":
+            return stage.get("shiori",0) >= 2 and kk_hari_n == 24 and kk_slot == 3
+        if eid == "S15":
+            return kk_hari_n <= 3 and kk_slot in (0,1)
+        if eid == "S16":
+            return stage.get("shiori",0) >= 2 and kk_hari_n == 14 and kk_slot == 2
+        if eid == "Mi24":
+            return kk_has("cbt_miyuki_lulus") or kk_has("cbt_miyuki_gagal")
+        if eid == "S13":
+            return kk_get("daftar_kebohongan_shiori") > 0
         if eid == "C11":
             return kk_host == "chiasa" and kk_date().weekday() >= 5 and kk_slot == 2
         if eid == "C09":
             return kk_get("kemampuan_gambar") < 80
         if eid == "Y13":
             return kk_hari_n in (24,25) and kk_slot == 3
+        if eid in ("Y02","C02"):
+            return kk_hari_n < 19
+        if eid in ("C06","C12","Y07"):
+            return kk_hari_n in (24,25) and kk_slot == 3
+        if eid in ("C07","C10","C13","C14","C15","C16","C17",
+                   "Y03","Y04","Y06","Y08","Y11","Y12","Y14","Y15","Y16","Y18"):
+            return kk_slot == 3
         if eid == "H01":
             return kk_is_hanami_date() and kk_slot == 0
         if eid == "H03":
             return kk_slot == 3
+        if eid in ("N05","N08","N09","N10"):
+            return kk_slot in (1,2)
+        if eid == "K01":
+            return kk_slot in (0,1) and kk_hari_n < 19
+        if eid in ("K03","K10","K11"):
+            return kk_slot in (0,1)
+        if eid == "K06":
+            return kk_slot in (2,3)
+        if eid in ("K12","K15"):
+            return kk_slot in (0,1)
+        if eid == "K14":
+            return kk_slot in (2,3)
+        if eid == "K16":
+            return kk_slot == 4
+        if eid in ("K18","K19","K23","K24"):
+            return kk_slot in (0,1)
+        if eid == "K25":
+            return kk_hari_n in (24,25) and kk_slot == 4
+        if eid == "N20":
+            return kk_slot == 5
+        if eid == "K09":
+            return kk_hari_n <= 3 and kk_slot in (0,1)
+        if eid == "N07":
+            return kk_hari_n in (24,25) and kk_slot == 3
+        if eid == "H02":
+            return kk_slot in (1,2)
+        if eid == "H05":
+            return kk_slot == 2
+        if eid == "H10":
+            return kk_slot in (0,1)
+        if eid == "H22":
+            return kk_hari_n in (24,25) and kk_slot in (0,1)
         if eid == "H08":
             return kk_hari_n <= 3
         if eid in ("Mo01", "S01"):
@@ -178,9 +235,18 @@ init python:
             return kk_is_hanami()
         if eid == "Mi03":
             return kk_slot == 4
+        if eid == "Mi04":
+            return kk_slot in (1,2)
+        if eid == "Mi08":
+            return kk_slot in (2,3)
+        if eid == "Mi10":
+            return kk_hari_n <= 3 and kk_slot in (0,1)
         if eid == "N04":
             return kk_hari_n == 9 and kk_slot == 3
         return True
+
+    def kk_tanabata():
+        return kk_bulan == 28 and kk_hari_n == 7 and kk_slot in (1,2,3)
 
     def kk_planned_place(cid):
         # Jadwal verbal tanpa lokasi tertentu menghasilkan None.
@@ -188,8 +254,26 @@ init python:
         slot = kk_slot
         if cid == "nagisa" and kk_npc_rel.get("hari_harapan_turun") == kk_elapsed_days and slot == 3:
             return "Taman Lingkungan"
+        if cid == "koita" and kk_bulan == 10 and kk_hari_n <= 3 and slot in (0,1):
+            return "Kuil"
+        if cid == "miyuki" and kk_bulan == 10 and kk_hari_n <= 3 and slot in (0,1):
+            return "Kuil"
+        if kk_tanabata() and (cid in ("harumi","nagisa","shiori") or (cid == "moeka" and stage.get("moeka",0) < 3)):
+            return "Taman Kampus"
+        if cid == "shiori" and kk_bulan == 22 and kk_hari_n <= 3 and slot in (0,1):
+            return "Kuil"
+        if cid == "shiori" and kk_bulan == 23 and kk_hari_n == 14 and slot == 2:
+            return "Klub Catur"
+        if cid == "shiori" and kk_bulan in (9,21) and kk_hari_n == 24 and slot == 3:
+            return "Rumah Saionji"
         if cid == "shiori" and kk_bulan == 20 and week >= 5 and slot == 2:
             return "Gedung Seni Rupa & Studio"
+        if cid == "harumi" and kk_bulan == 6 and slot == 2:
+            return "Kafe Komorebi"
+        if cid == "harumi" and kk_bulan == 14 and week >= 5 and slot in (0,1):
+            return "Stasiun Kouseikan-mae"
+        if cid == "harumi" and kk_bulan == 33 and kk_hari_n in (24,25) and slot in (0,1):
+            return "Stasiun Kouseikan-mae"
         if cid == "harumi" and kk_is_hanami_date() and slot == 0:
             return "Gedung Sains & Lab"
         if cid == "harumi" and kk_bulan == 10 and kk_hari_n <= 3 and slot in (0,1):
@@ -214,7 +298,7 @@ init python:
             return "Rumah Sakit Tachibana"
         if cid == "miyuki" and kk_bulan in (9,21,33) and kk_hari_n in (24,25) and slot == 3:
             return "Rumah Sakit Tachibana"
-        if cid == "nagisa" and kk_bulan == 33 and kk_hari_n in (24,25) and slot == 3:
+        if cid == "nagisa" and kk_bulan in (9,33) and kk_hari_n in (24,25) and slot == 3:
             return "Rumah Sakurajima"
         if cid == "moeka" and stage.get(cid,0) >= 3 and slot in (1,2):
             return None
@@ -262,4 +346,5 @@ default kk_rel_base = {}
 
 label after_load:
     $ kk_upgrade_world()
+    $ store.pts.setdefault("orang_tua_kujo", 30)
     return

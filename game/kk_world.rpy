@@ -36,32 +36,185 @@ init -4 python:
     KK_DISTRICT_LOCS["onsen"] = ["Lobi ryokan", "Dapur ryokan", "Ruang bersama ryokan", "Taman luar ryokan"]
     KK_MILESTONE_MAP = [
         ("H01", 1, "d1", "Gedung Sains & Lab", "harumi"),
+        ("H02", 3, "d1", "Gedung Sains & Lab", "harumi"),
+        ("H05", 6, "d1", "Kafe Komorebi", "harumi"),
+        ("H10", 14, "d5", "Stasiun Kouseikan-mae", "harumi"),
+        ("H22", 33, "d5", "Stasiun Kouseikan-mae", "harumi"),
         ("H03", 4, "d1", "Asrama Putri", "harumi"),
         ("H08", 10, "d7", "Kuil", "harumi"),
         ("H09", 13, "d1", "Gedung Sains & Lab", "harumi"),
         ("Mo01", 1, "d1", "Taman Kampus", "moeka"),
+        ("S03", 3, "d3", "Klub Catur", "shiori"),
+        ("S06", 8, "d3", "Klub Catur", "shiori"),
+        ("S08", 11, "d3", "Klub Catur", "shiori"),
+        ("S11", 16, "d3", "Klub Catur", "shiori"),
+        ("S12", 18, "d3", "Klub Catur", "shiori"),
+        ("S10", 15, "d3", "Klub Catur", "shiori"),
+        ("N20", 29, "d2", "Taman Lingkungan", "nagisa"),
+        ("S07", 9, "d3", "Rumah Saionji", "shiori"),
+        ("S09", 12, "d3", "Klub Catur", "shiori"),
+        ("S14", 21, "d3", "Rumah Saionji", "shiori"),
+        ("S15", 22, "d7", "Kuil", "shiori"),
+        ("S16", 23, "d3", "Klub Catur", "shiori"),
+        ("S13", 20, "d3", "Klub Catur", "shiori"),
+        ("S18", 27, "d3", "Rumah Saionji", "shiori"),
+        ("S19", 28, "d1", "Taman Kampus", "shiori"),
+        ("H19", 28, "d1", "Taman Kampus", "harumi"),
+        ("Mo20", 28, "d1", "Taman Kampus", "moeka"),
+        ("N19", 28, "d1", "Taman Kampus", "nagisa"),
+        ("S17", 25, "d3", "Rumah Saionji", "shiori"),
         ("S01", 1, "d1", "Taman Kampus", "shiori"),
         ("Mo02", 2, "d5", "Stasiun Kouseikan-mae", "moeka"),
+        ("Mo03", 3, "d1", "Kantin Pusat", "moeka"),
+        ("Mo04", 5, "d1", "Kantin Pusat", "moeka"),
+        ("Mo05", 6, "d1", "Kantin Pusat", "moeka"),
+        ("Mo06", 7, "d1", "Kantin Pusat", "moeka"),
+        ("Mo08", 9, "d1", "Kantin Pusat", "moeka"),
+        ("Mo09", 10, "d1", "Kantin Pusat", "moeka"),
+        ("Mo10", 11, "d1", "Kantin Pusat", "moeka"),
+        ("Mo11", 15, "d1", "Kantin Pusat", "moeka"),
+        ("Mo12", 16, "d1", "Kantin Pusat", "moeka"),
+        ("Mo26", 33, "d1", "Kantin Pusat", "moeka"),
+        ("Mo13", 18, "d1", "Kantin Pusat", "moeka"),
+        ("Mo14", 19, "d1", "Kantin Pusat", "moeka"),
+        ("Mo15", 20, "d1", "Kantin Pusat", "moeka"),
+        ("Mo16", 22, "d1", "Kantin Pusat", "moeka"),
+        ("Mo17", 23, "d1", "Kantin Pusat", "moeka"),
+        ("Mo18", 26, "d1", "Kantin Pusat", "moeka"),
+        ("Mo19", 27, "d1", "Kantin Pusat", "moeka"),
+        ("Mo21", 29, "d1", "Kantin Pusat", "moeka"),
+        ("Mo22", 30, "d1", "Kantin Pusat", "moeka"),
+        ("Mo23", 31, "d1", "Kantin Pusat", "moeka"),
+        ("Mo24", 32, "d1", "Kantin Pusat", "moeka"),
+        ("Mo25", 34, "d1", "Kantin Pusat", "moeka"),
+        ("H04", 5, "d1", "Perpustakaan Pusat", "harumi"),
+        ("H06", 7, "d1", "Perpustakaan Pusat", "harumi"),
+        ("H07", 9, "d1", "Perpustakaan Pusat", "harumi"),
+        ("H11", 16, "d1", "Perpustakaan Pusat", "harumi"),
+        ("H12", 19, "d1", "Perpustakaan Pusat", "harumi"),
+        ("H13", 20, "d1", "Perpustakaan Pusat", "harumi"),
+        ("H14", 21, "d1", "Perpustakaan Pusat", "harumi"),
+        ("H15", 22, "d1", "Perpustakaan Pusat", "harumi"),
+        ("H16", 23, "d1", "Perpustakaan Pusat", "harumi"),
+        ("H17", 25, "d1", "Perpustakaan Pusat", "harumi"),
+        ("H18", 27, "d1", "Perpustakaan Pusat", "harumi"),
+        ("S04", 5, "d3", "Klub Catur", "shiori"),
+        ("S05", 7, "d3", "Klub Catur", "shiori"),
+        ("S20", 29, "d3", "Klub Catur", "shiori"),
+        ("S21", 30, "d3", "Klub Catur", "shiori"),
+        ("S22", 31, "d3", "Klub Catur", "shiori"),
+        ("S23", 32, "d3", "Klub Catur", "shiori"),
+        ("S24", 33, "d3", "Klub Catur", "shiori"),
+        ("H20", 29, "d1", "Perpustakaan Pusat", "harumi"),
+        ("H21", 30, "d1", "Perpustakaan Pusat", "harumi"),
+        ("H23", 34, "d1", "Perpustakaan Pusat", "harumi"),
+        ("Mo07", 8, "d1", "Kantin Pusat", "moeka"),
+        ("C06", 9, "d2", "Rumah Amamiya", "host"),
+        ("C07", 11, "d2", "Rumah Amamiya", "host"),
+        ("C10", 17, "d2", "Rumah Amamiya", "host"),
+        ("C12", 21, "d2", "Rumah Amamiya", "host"),
+        ("C13", 23, "d2", "Rumah Amamiya", "host"),
+        ("C14", 26, "d2", "Rumah Amamiya", "host"),
+        ("C15", 29, "d2", "Rumah Amamiya", "host"),
+        ("C16", 31, "d1", "Gedung Seni Rupa & Studio", "host"),
+        ("C17", 32, "d1", "Gedung Seni Rupa & Studio", "host"),
+        ("Y03", 1, "d3", "Apartemen Yutaka", "host"),
+        ("Y04", 4, "d3", "Apartemen Yutaka", "host"),
+        ("Y06", 8, "d3", "Apartemen Yutaka", "host"),
+        ("Y07", 9, "d3", "Apartemen Yutaka", "host"),
+        ("Y08", 11, "d3", "Apartemen Yutaka", "host"),
+        ("Y11", 17, "d2", "Rumah Amamiya", "host"),
+        ("Y12", 20, "d2", "Rumah Amamiya", "host"),
+        ("Y14", 23, "d3", "Apartemen Yutaka", "host"),
+        ("Y15", 26, "d3", "Apartemen Yutaka", "host"),
+        ("Y16", 29, "d2", "Rumah Amamiya", "host"),
+        ("Y18", 32, "d2", "Rumah Amamiya", "host"),
         ("S02", 2, "onsen", "Lobi ryokan", "shiori"),
         ("Mi02", 2, "onsen", "Dapur ryokan", "miyuki"),
         ("N02", 2, "onsen", "Ruang bersama ryokan", "nagisa"),
+        ("K02", 2, "onsen", "Taman luar ryokan", "koita"),
         ("N01", 1, "d1", "Gedung Arsitektur", "nagisa"),
         ("Mi01", 1, "d1", "Taman Kampus", "enter"),
         ("Mi07", 7, "d6", "Rumah Sakit Tachibana", "miyuki"),
+        ("Mi06", 6, "d1", "Gedung Kedokteran", "miyuki"),
+        ("Mi24", 30, "d6", "Rumah Sakit Tachibana", "miyuki"),
+        ("Mi21", 25, "d6", "Rumah Sakit Tachibana", "miyuki"),
+        ("Mi12", 13, "d1", "Gedung Kedokteran", "miyuki"),
+        ("Mi13", 14, "d6", "Rumah Sakit Tachibana", "miyuki"),
+        ("Mi11", 11, "d1", "Kafe Komorebi", "miyuki"),
         ("Mi09", 9, "d6", "Rumah Sakit Tachibana", "miyuki"),
         ("Mi18", 21, "d6", "Rumah Sakit Tachibana", "miyuki"),
         ("Mi25", 33, "d6", "Rumah Sakit Tachibana", "miyuki"),
+        ("Mi14", 15, "d6", "Rumah Sakit Tachibana", "miyuki"),
+        ("Mi15", 17, "d6", "Rumah Sakit Tachibana", "miyuki"),
+        ("Mi16", 19, "d6", "Rumah Sakit Tachibana", "miyuki"),
+        ("Mi17", 20, "d6", "Rumah Sakit Tachibana", "miyuki"),
+        ("Mi19", 23, "d6", "Rumah Sakit Tachibana", "miyuki"),
+        ("Mi20", 24, "d6", "Rumah Sakit Tachibana", "miyuki"),
+        ("Mi22", 27, "d6", "Rumah Sakit Tachibana", "miyuki"),
+        ("Mi23", 29, "d6", "Rumah Sakit Tachibana", "miyuki"),
+        ("Mi26", 34, "d6", "Rumah Sakit Tachibana", "miyuki"),
+        ("K07", 8, "d1", "Gedung Sastra", "koita"),
+        ("K08", 9, "d1", "Gedung Sastra", "koita"),
+        ("N11", 14, "d2", "Rumah Sakurajima", "nagisa"),
+        ("N12", 15, "d1", "Gedung Arsitektur", "nagisa"),
+        ("N13", 17, "d1", "Gedung Arsitektur", "nagisa"),
+        ("N14", 18, "d1", "Gedung Arsitektur", "nagisa"),
+        ("N15", 21, "d1", "Gedung Arsitektur", "nagisa"),
+        ("N16", 23, "d1", "Gedung Arsitektur", "nagisa"),
+        ("N17", 24, "d1", "Gedung Arsitektur", "nagisa"),
+        ("N18", 26, "d1", "Gedung Arsitektur", "nagisa"),
+        ("N21", 31, "d2", "Rumah Sakurajima", "nagisa"),
+        ("N23", 34, None, None, "desk"),
         ("N22", 33, "d2", "Rumah Sakurajima", "nagisa"),
+        ("C02", 1, "d2", "Rumah Amamiya", "host"),
+        ("C03", 4, "d2", "Rumah Amamiya", "host"),
+        ("C04", 5, "d2", "Rumah Amamiya", "host"),
+        ("C08", 13, "d1", "Gedung Seni Rupa & Studio", "host"),
         ("C05", 8, "d2", "Rumah Amamiya", "host"),
         ("C11", 20, "d1", "Gedung Seni Rupa & Studio", "shiori"),
         ("C09", 16, "d2", "Rumah Amamiya", "host"),
+        ("Y02", 1, "d2", "Rumah Amamiya", "host"),
+        ("Y05", 5, "d3", "Apartemen Yutaka", "host"),
+        ("Y10", 16, "d2", "Rumah Amamiya", "host"),
         ("Y09", 13, "d3", "Apartemen Yutaka", "host"),
         ("Y13", 21, "d2", "Rumah Amamiya", "host"),
         ("Y17", 31, "d3", "Apartemen Yutaka", "host"),
         ("N04", 5, "d7", "Tepi Sungai", "nagisa"),
+        ("N05", 6, "d1", "Gedung Arsitektur", "nagisa"),
+        ("N07", 9, "d2", "Rumah Sakurajima", "nagisa"),
+        ("N08", 11, "d1", "Gedung Arsitektur", "nagisa"),
+        ("N09", 12, "d1", "Gedung Arsitektur", "nagisa"),
+        ("N10", 13, "d1", "Gedung Arsitektur", "nagisa"),
+        ("K01", 1, "d1", "Gedung Sastra", "koita"),
+        ("K03", 4, "d1", "Gedung Sastra", "koita"),
+        ("K06", 6, "d1", "Kafe Komorebi", "koita"),
+        ("K09", 10, "d7", "Kuil", "koita"),
+        ("K10", 11, "d1", "Gedung Sastra", "koita"),
+        ("K11", 12, "d1", "Gedung Sastra", "koita"),
+        ("K12", 14, "d1", "Gedung Sastra", "koita"),
+        ("K14", 18, "d1", "Kafe Komorebi", "koita"),
+        ("K15", 19, "d1", "Gedung Sastra", "koita"),
+        ("K16", 21, "d2", "Rumah Amamiya", "koita"),
+        ("K18", 24, "d1", "Gedung Sastra", "koita"),
+        ("K19", 25, "d1", "Gedung Sastra", "koita"),
+        ("K23", 31, "d1", "Gedung Sastra", "koita"),
+        ("K24", 32, "d1", "Gedung Sastra", "koita"),
+        ("K25", 33, "d2", "Rumah Amamiya", "koita"),
+        ("K04", 5, "d1", "Gedung Sastra", "koita"),
+        ("K05", 5, "d2", "Rumah Amamiya", "koita"),
+        ("K13", 17, "d1", "Gedung Sastra", "koita"),
+        ("K17", 23, "d1", "Gedung Sastra", "koita"),
+        ("K20", 26, "d2", "Rumah Amamiya", "koita"),
+        ("K21", 29, "d2", "Rumah Amamiya", "koita"),
+        ("K22", 29, "d1", "Gedung Sastra", "koita"),
         ("N06", 7, "d1", "Gedung Arsitektur", "nagisa"),
         ("N03", 3, "d1", "Gedung Arsitektur", "nagisa"),
         ("Mi03", 4, "d6", "Rumah Sakit Tachibana", "miyuki"),
+        ("Mi04", 5, "d1", "Gedung Kedokteran", "miyuki"),
+        ("Mi05", 5, "d7", "Vila (Izu)", "miyuki"),
+        ("Mi08", 8, "d6", "Rumah Sakit Tachibana", "miyuki"),
+        ("Mi10", 10, "d7", "Kuil", "miyuki"),
     ]
 
     def kk_pending_enter(distrik, lokasi):
@@ -251,7 +404,7 @@ screen kk_location_view(distrik, lokasi):
                             style "kk_button" xysize (800, 78) action Return(("talk", cid))
                             hbox:
                                 yalign .5 spacing 18
-                                add Solid(meta["warna"]) xysize (10, 44) yalign .5
+                                add Solid(kk_line) xysize (10, 44) yalign .5
                                 text meta["nama"] size 25 bold True yalign .5
                 else:
                     text "Tidak ada orang yang kau kenal di sini sekarang." style "kk_caption"
@@ -273,9 +426,21 @@ screen kk_location_view(distrik, lokasi):
                     use kk_link("Bicarakan sketsa dengan Haruka", Return(("portfolio", None)), 800)
                 if kk_can_sketch(lokasi):
                     use kk_link("Latihan di buku sketsa", Return(("draw", None)), 800)
+                if kk_can_sit_with_miyuki(lokasi):
+                    button:
+                        id "miyuki_library_seat"
+                        style "kk_button" action Return(("sit_miyuki", None))
+                        text "Duduk di sebelah Miyuki" style "kk_button_text"
+                if kk_unfinished_board(lokasi):
+                    button:
+                        id "unfinished_board"
+                        style "kk_button" xysize (800, 72) action Return(("board", None))
+                        text "Perhatikan papan yang belum dibereskan" style "kk_button_text" yalign .5
+                if lokasi == home and kk_desk_event(lokasi):
+                    use kk_link("Periksa meja di kamar", Return(("desk", None)), 800)
                 if lokasi == home:
                     use kk_link("Beristirahat di kamar", Return(("sleep", None)), 800)
-                if not acts and not kk_art_studio_open(lokasi) and lokasi != home and distrik != "onsen" and not (lokasi == "Stasiun Kouseikan-mae" and kk_onsen_dates()):
+                if not acts and not kk_unfinished_board(lokasi) and not kk_art_studio_open(lokasi) and lokasi != home and distrik != "onsen" and not (lokasi == "Stasiun Kouseikan-mae" and kk_onsen_dates()):
                     text "Tidak ada aktivitas khusus di sini." style "kk_caption"
     fixed:
         pos (kk_margin, 980)
@@ -323,6 +488,9 @@ label kk_loc_list:
     elif kk_father_visit(_lokasi):
         call kk_visit_kisaragi
         $ kk_minutes(10)
+    elif kk_host_dyn(_distrik, _lokasi):
+        call kk_social_scene(kk_host_dyn(_distrik, _lokasi))
+        $ kk_minutes(10)
     jump kk_location_view_loop
 
 label kk_location_view_loop:
@@ -355,6 +523,15 @@ label kk_location_view_loop:
         jump kk_location_view_loop
     elif _c[0] == "portfolio":
         call kk_show_portfolio
+        jump kk_location_view_loop
+    elif _c[0] == "sit_miyuki":
+        call kk_library_rest(_lokasi)
+        jump kk_location_view_loop
+    elif _c[0] == "board":
+        call kk_inspect_board(_lokasi)
+        jump kk_location_view_loop
+    elif _c[0] == "desk":
+        call kk_check_desk
         jump kk_location_view_loop
     elif _c[0] == "draw":
         call kk_draw_at_home
@@ -407,7 +584,8 @@ label kk_generic_talk(cid, loc, known=True):
     $ fresh = not kk_has(_key)
     $ kk_flag(_key)
     call kk_scene_enter(cid, loc)
-    $ renpy.say(getattr(store, cid), "Oh, kau. Sedang apa di sini?")
+    $ _after = kk_afterglow(cid)
+    $ renpy.say(getattr(store, cid), _after or "Oh, kau. Sedang apa di sini?")
     menu:
         "Buka kembali soal yang kalian baca bersama." if cid == "harumi" and any(c["ev"] == "H01" and c["key"] == "A" for c in choices_log):
             harumi "Mari kita periksa dari langkah pertama."
