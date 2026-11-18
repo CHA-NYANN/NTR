@@ -147,8 +147,9 @@ screen kk_link(caption, operation, width=None, active=False, first=False):
         default_focus first
         xsize width
 
-screen kg_tool(icon, caption, operation, selected=False):
+screen kg_tool(icon, caption, operation, selected=False, identifier=None):
     button:
+        id identifier
         xysize (92,78)
         padding (0,0)
         background kg_image("tool-tag",92,78)
@@ -305,6 +306,24 @@ screen game_menu(title, scroll=None):
         use kg_button("Pengaturan",ShowMenu("preferences"),270,62)
         if not main_menu:
             use kg_button("Menu utama",MainMenu(),270,62)
+
+screen kg_pause_menu():
+    tag menu
+    key "game_menu" action Return()
+    use kg_panel("Menu"):
+        vbox:
+            spacing 28
+            text "Mau melanjutkan ke mana?" font kg_hand size 37 color kg_muted
+            grid 2 4:
+                spacing 25
+                use kg_button("Lanjut bermain",Return(),650,108,identifier="kg_resume")
+                use kg_button("Simpan",ShowMenu("save") if not main_menu else None,650,108)
+                use kg_button("Muat",ShowMenu("load"),650,108)
+                use kg_button("Pengaturan",ShowMenu("preferences"),650,108)
+                use kg_button("Galeri adegan",ShowMenu("kk_cutscene_gallery"),650,108)
+                use kg_button("System",ShowMenu("kk_system_menu"),650,108)
+                use kg_button("Menu utama",MainMenu(),650,108)
+                use kg_button("Keluar",Quit(),650,108)
 
 screen save():
     tag menu
@@ -611,7 +630,7 @@ screen kk_phone_locator():
                 use kg_tool("messages","Messages",SetScreenVariable("tab","messages"))
                 use kg_tool("location","Location",SetScreenVariable("tab","location"))
                 use kg_tool("status","Status",[Hide("kk_phone_locator"),Show("kk_status")])
-                use kg_tool("home","Home",SetScreenVariable("tab","home"))
+                use kg_tool("home","Menu game",[Hide("kk_phone_locator"),ShowMenu("kg_pause_menu")],identifier="kg_phone_menu")
             if tab != "home":
                 frame:
                     pos (15,437) xysize (470,400) background Frame(kg_root+"paper-panel.png",22,15) padding (24,22)

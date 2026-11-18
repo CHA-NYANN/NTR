@@ -14,7 +14,7 @@ game = root / "game"
 shutil.copytree(project / "game", game, ignore=shutil.ignore_patterns("saves", "cache", "*.rpyc", "*.rpymc", "*.log"))
 (root / "captures").mkdir()
 src = (game / "zz_kk_gui.rpy").read_text(encoding="utf-8-sig")
-names = ("main_menu", "say", "kk_world_district", "kk_world_location", "kg_travel_confirm", "preferences", "save", "load", "history", "kk_cutscene_gallery", "kk_system_menu", "kk_phone_locator", "kg_map_viewer", "kk_choice_panel")
+names = ("main_menu", "say", "kk_world_district", "kk_world_location", "kg_travel_confirm", "preferences", "save", "load", "history", "kk_cutscene_gallery", "kk_system_menu", "kk_phone_locator", "kg_map_viewer", "kk_choice_panel", "kg_pause_menu")
 for name in names:
     src = re.sub(r"(^screen " + name + r"\([^\n]*\):\n)", lambda m: m[0] + '    timer .7 repeat True action Function(kg_qa_input, "' + name + '", _update_screens=False)\n', src, flags=re.M)
 (game / "zz_kk_gui.rpy").write_text(src, encoding="utf-8")
@@ -38,6 +38,12 @@ init 100 python:
             assert tuple(renpy.get_displayable(name,"what").style.color) == tuple(Color(expected)), "Incorrect dialogue contrast"
             return renpy.queue_event("dismiss")
         if name == "kk_world_district":
+            if not getattr(store,"kg_qa_menu_returned",False):
+                if not renpy.get_screen("kk_phone_locator"):
+                    return renpy.run(Show("kk_phone_locator"))
+                return
+            assert not renpy.get_screen("kk_phone_locator"), "Phone blocked the game after resuming"
+            assert not renpy.get_screen("kg_pause_menu")
             assert sum(len(p) for d,n,p in KK_DISTRICTS) == 37
             for did, people in kg_map_people().items():
                 for cid, place in people:
@@ -51,11 +57,18 @@ init 100 python:
                 return renpy.run(Hide(name))
             return renpy.run([Hide(name), Return("Gedung Arsitektur")])
         if name == "kk_phone_locator":
-            if count == 0:
-                return renpy.run(SetScreenVariable("tab","location"))
+            if not getattr(store,"kg_qa_menu_returned",False):
+                return renpy.run(renpy.get_displayable(name,"kg_phone_menu").action)
             if count == 1:
+                return renpy.run(SetScreenVariable("tab","location"))
+            if count == 2:
                 return renpy.run(SetScreenVariable("tab","messages"))
             return renpy.run(Return())
+        if name == "kg_pause_menu":
+            assert not main_menu, "Home left the active game instead of opening its menu"
+            assert not renpy.get_screen("kk_phone_locator"), "Phone still blocks menu input"
+            store.kg_qa_menu_returned = True
+            return renpy.run(renpy.get_displayable(name,"kg_resume").action)
         if name == "kg_map_viewer":
             if count == 0:
                 return renpy.run(renpy.get_displayable(name,"qa_d1").action)
@@ -114,7 +127,7 @@ label kk_gui_qa:
     call screen kk_cutscene_gallery
     $ assert (kk_host,kk_bulan,saldo,list(choices_log)) == kg_qa_before_replay, "Replay changed active game state"
     call screen kk_system_menu
-    $ open(os.path.join(config.basedir,"gui.ok"),"w").write("PASS: real screens, schedule pins, 37 locations, map selection, cancel/confirm, phone tabs, read-only map, three dialogue skins + System, choice, settings, save/load display, history, gallery, system.")
+    $ open(os.path.join(config.basedir,"gui.ok"),"w").write("PASS: phone Home opens game menu and resumes world, real screens, schedule pins, 37 locations, map selection, cancel/confirm, phone tabs, read-only map, three dialogue skins + System, choice, settings, save/load display, history, gallery, system.")
     $ renpy.quit()
 ''', encoding="utf-8")
 env = dict(os.environ, RENPY_PATH_TO_SAVES=str(root / "isolated-saves"), RENPY_SIMPLE_EXCEPTIONS="1", SDL_AUDIODRIVER="dummy")

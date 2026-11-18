@@ -24,6 +24,7 @@ Figma sumber: https://www.figma.com/design/lYsY4q9tqchOPJv0JCjexD
 - Peta: tujuh distrik dan 37 lokasi dari registry game. Pemilihan distrik/lokasi mengembalikan nilai yang sama ke alur perjalanan yang sudah ada. Konfirmasi lokasi dapat dibatalkan. Biaya waktu tetap dihitung oleh alur lama.
 - Inisial pin berasal dari nama NPC dan lokasi `kk_daily_place`. Tidak ada potret sementara yang dipasangkan secara sembarang. HP menampilkan lokasi yang sama dan peta tinjau tanpa teleportasi.
 - Pesan HP membaca antrean pesan yang sudah tersedia. Penyampaian adegan pesan tetap menggunakan alur aktivitas game.
+- Tombol Home di HP membuka menu game: lanjut bermain, simpan, muat, pengaturan, galeri, System, menu utama dan keluar. HP ditutup saat menu dibuka sehingga tidak menghalangi input; lanjut bermain kembali ke keadaan permainan yang sama.
 - Status, transaksi, alat uji, aktivitas lokasi dan screen pendukung lama dipertahankan; warna, font dan tombol dasarnya mengikuti tema baru.
 
 Referensi peta 4:3 disesuaikan ke kanvas game **1920×1080**. Resolusi dasar proyek tidak diubah. Ilustrasi kota adalah aset raster tersendiri; label, inisial, waktu, daftar lokasi dan seluruh interaksi tetap terpisah.
