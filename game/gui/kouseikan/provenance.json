@@ -1,5 +1,12 @@
 {
-  "source": "Original editable Figma decorations exported without text",
+  "source": "Editable Figma decorations and native SVG variants, without game text",
+  "variants": {
+    "dialogue-neutral": "Gray/yellow palette of dialogue-yutaka before host selection",
+    "phone-launch-full": "Complete native SVG handset using the Figma phone symbol",
+    "phone-launch-neutral": "Gray/yellow complete handset",
+    "tool-tag-neutral": "Gray/yellow controls before host selection",
+    "phone-neutral": "Neutral vector wallpaper before host selection"
+  },
   "assets": [
     "action-hover.png",
     "action-idle.png",
@@ -8,6 +15,7 @@
     "city.png",
     "dialogue-chiasa.png",
     "dialogue-dark.png",
+    "dialogue-neutral.png",
     "dialogue-yutaka.png",
     "icon-back.png",
     "icon-bookmark.png",
@@ -35,7 +43,10 @@
     "paper-panel.png",
     "phone-chiasa.png",
     "phone-frame.png",
+    "phone-launch-full.png",
+    "phone-launch-neutral.png",
     "phone-launch.png",
+    "phone-neutral.png",
     "phone-yutaka.png",
     "pin.png",
     "polaroid.png",
@@ -47,6 +58,7 @@
     "settings-notebook.png",
     "star-thumb.png",
     "system-dialogue.png",
+    "tool-tag-neutral.png",
     "tool-tag.png"
   ],
   "runtime_canvas": [

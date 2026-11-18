@@ -34,10 +34,20 @@ init 100 python:
         if name == "say":
             scope=renpy.get_screen(name).scope
             skin=kg_dialogue_skin(scope["who"],scope["what"])
-            expected="#29165F" if skin == "system-dialogue" else ("#F8EDFF" if persistent.kk_gui_dark else kg_ink)
+            expected="#29165F" if skin == "system-dialogue" else "#3E4047" if skin == "dialogue-neutral" else "#F8EDFF" if skin == "dialogue-dark" else kg_ink
             assert tuple(renpy.get_displayable(name,"what").style.color) == tuple(Color(expected)), "Incorrect dialogue contrast"
+            launcher=renpy.get_displayable(name,"kg_phone_launcher")
+            x,y=launcher.get_placement()[:2]
+            w,h=renpy.render(launcher,1920,1080,0,0).get_size()
+            assert x >= 0 and y >= 0 and x+w <= 1920 and y+h <= 1080, "Phone launcher exceeds the viewport"
+            if not kk_host and skin != "system-dialogue":
+                assert skin == "dialogue-neutral", "Opening inherited a host color"
             return renpy.queue_event("dismiss")
         if name == "kk_world_district":
+            launcher=renpy.get_displayable(name,"kg_map_phone_launcher")
+            x,y=launcher.get_placement()[:2]
+            w,h=renpy.render(launcher,1920,1080,0,0).get_size()
+            assert x >= 0 and y >= 0 and x+w <= 1920 and y+h <= 1080, "Map phone launcher exceeds the viewport"
             if not getattr(store,"kg_qa_menu_returned",False):
                 if not renpy.get_screen("kk_phone_locator"):
                     return renpy.run(Show("kk_phone_locator"))
@@ -95,6 +105,15 @@ init 100 python:
         return renpy.run(Return())
 
 label kk_gui_qa:
+    $ kk_host = ""
+    $ _preferences.text_cps = 0
+    scene black
+    $ assert kg_dialogue_skin(None,"Prolog") == "dialogue-neutral"
+    nar "Di ujung terowongan yang gelap, dua sorot lampu kereta ekspres sudah menyala menyilaukan. Klakson panjang meraung memekakkan telinga, disusul gemuruh roda besi yang membelah rel dengan kecepatan penuh."
+    $ persistent.kk_gui_dark = True
+    $ assert kg_dialogue_skin(None,"Prolog") == "dialogue-neutral"
+    nar "Aku belum menjadi Yutaka atau Chiasa. Warna pembuka tetap netral sampai tubuh dipilih."
+    $ persistent.kk_gui_dark = False
     $ kk_host = "yutaka"
     $ kk_setup_state()
     scene expression Transform("gui/kouseikan/main-art.png",xysize=(1920,1080))
@@ -127,7 +146,7 @@ label kk_gui_qa:
     call screen kk_cutscene_gallery
     $ assert (kk_host,kk_bulan,saldo,list(choices_log)) == kg_qa_before_replay, "Replay changed active game state"
     call screen kk_system_menu
-    $ open(os.path.join(config.basedir,"gui.ok"),"w").write("PASS: phone Home opens game menu and resumes world, real screens, schedule pins, 37 locations, map selection, cancel/confirm, phone tabs, read-only map, three dialogue skins + System, choice, settings, save/load display, history, gallery, system.")
+    $ open(os.path.join(config.basedir,"gui.ok"),"w").write("PASS: neutral opening with dark preference on/off, complete phone buttons inside dialogue/map viewport, phone Home opens game menu and resumes world, schedule pins, 37 locations, map selection, cancel/confirm, phone tabs, read-only map, host dialogue skins + System, choice, settings, save/load, history, gallery, system.")
     $ renpy.quit()
 ''', encoding="utf-8")
 env = dict(os.environ, RENPY_PATH_TO_SAVES=str(root / "isolated-saves"), RENPY_SIMPLE_EXCEPTIONS="1", SDL_AUDIODRIVER="dummy")

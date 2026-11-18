@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="320" viewBox="0 0 240 320"><path d="m196 18 7-9m-2 27 13-2" stroke="#FFF5CB" stroke-width="5" stroke-linecap="round"/>
+    <g transform="translate(37 17) rotate(7 78 136)">
+    <rect x="12" y="10" width="156" height="270" rx="28" fill="#D9BB54"/>
+    <rect x="0" y="0" width="156" height="270" rx="28" fill="#E5E3D6" stroke="#FFF5CB" stroke-width="3"/>
+    <rect x="9" y="10" width="138" height="250" rx="21" fill="#5A5D64"/>
+    <path d="M47 10h64v9q0 9-10 9H57q-10 0-10-9Z" fill="#303238"/>
+    <path d="M20 58V40q0-16 16-16" fill="none" stroke="#FFF5CB" stroke-width="4" stroke-linecap="round" opacity=".7"/>
+    <circle cx="78" cy="140" r="49" fill="none" stroke="#FFF5CB" stroke-width="2" opacity=".55"/>
+    <ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="76" height="76" viewBox="0 0 40 40" fill="none" x="53" y="101">
+<ns0:path d="M11.9999 3C4.99987 6 5.99987 13 11.9999 22C17.9999 31 23.9999 37 29.9999 32L32.9999 27L23.9999 21L19.9999 25C15.3332 21 12.3332 17 10.9999 13L15.9999 10L11.9999 3Z" stroke="#FFF5CB" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+</ns0:svg><path d="M56 247h45" stroke="#FFF5CB" stroke-width="4" stroke-linecap="round"/>
+    </g></svg>

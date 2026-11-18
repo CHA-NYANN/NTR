@@ -20,6 +20,8 @@ init 25 python:
     def kg_dialogue_skin(who, what):
         if who and "SISTEM" in who.upper():
             return "system-dialogue"
+        if kk_host not in ("yutaka", "chiasa"):
+            return "dialogue-neutral"
         if persistent.kk_gui_dark:
             return "dialogue-dark"
         return "dialogue-chiasa" if kk_host == "chiasa" else "dialogue-yutaka"
@@ -113,6 +115,8 @@ transform kg_enter:
         alpha 0.0 yoffset 10
         easeout .18 alpha 1.0 yoffset 0
 
+image kk_continue = ConditionSwitch("not kk_host", Text("  ›", size=30, color="#B89B35"), "True", Text("  ›", size=30, color=kk_accent))
+
 style kg_button is button:
     background Frame("gui/kouseikan/ribbon.png", 22, 10)
     hover_background Frame("gui/kouseikan/ribbon-hover.png", 22, 10)
@@ -148,12 +152,13 @@ screen kk_link(caption, operation, width=None, active=False, first=False):
         xsize width
 
 screen kg_tool(icon, caption, operation, selected=False, identifier=None):
+    $ _kg_tag = "tool-tag-neutral" if not kk_host and not main_menu else "tool-tag"
     button:
         id identifier
         xysize (92,78)
         padding (0,0)
-        background kg_image("tool-tag",92,78)
-        hover_background Transform(kg_root+"tool-tag.png",xysize=(92,78),matrixcolor=BrightnessMatrix(.16))
+        background kg_image(_kg_tag,92,78)
+        hover_background Transform(kg_root+_kg_tag+".png",xysize=(92,78),matrixcolor=BrightnessMatrix(.16))
         action operation
         selected selected
         tooltip caption
@@ -216,7 +221,7 @@ screen say(who, what):
             background kg_image(_kg_skin,1596,348)
             if who:
                 text who id "who" font kg_body bold True size 25 color "#FFF7FF" pos (123,37) xmaximum 800
-            text what id "what" font kg_body size 32 color ("#F8EDFF" if persistent.kk_gui_dark else kg_ink) pos (126,116) xmaximum 1380 line_spacing 5
+            text what id "what" font kg_body size 32 color ("#3E4047" if _kg_skin == "dialogue-neutral" else "#F8EDFF" if _kg_skin == "dialogue-dark" else kg_ink) pos (126,116) xmaximum 1380 line_spacing 5
     use quick_menu
 
 screen quick_menu():
@@ -232,14 +237,15 @@ screen quick_menu():
             use kg_tool("save","Simpan",ShowMenu("save"))
             use kg_tool("load","Muat",ShowMenu("load"))
         button:
-            pos (1740,846) xysize (180,234) padding (0,0) background None
+            id "kg_phone_launcher"
+            pos (1758,820) xysize (144,216) padding (0,0) background None
             action Show("kk_phone_locator")
             alt "Buka HP"
-            add kg_image("phone-launch",241,234)
+            add kg_image("phone-launch-full" if kk_host else "phone-launch-neutral",144,216)
         if _preferences.afm_enable:
-            text "AUTO" font kg_hand size 24 color "#CEB9F0" pos (1600,108)
+            text "AUTO" font kg_hand size 24 color ("#B89B35" if not kk_host else "#CEB9F0") pos (1600,108)
         if GetTooltip():
-            text GetTooltip() font kg_hand size 24 color "#B893D3" xalign .5 ypos 99
+            text GetTooltip() font kg_hand size 24 color ("#B89B35" if not kk_host else "#B893D3") xalign .5 ypos 99
 
 screen kk_choice_panel(rows, heading):
     modal True
@@ -543,10 +549,11 @@ screen kg_city_map(travel=True):
                 add kg_image("pin",104,134)
                 text kg_initial(cid) font kg_hand size 43 color KK_CHARS[cid]["warna"] xalign .5 ypos 23
     button:
-        pos (1542,891) xysize (378,189) background None padding (0,0)
+        id "kg_map_phone_launcher"
+        pos (1762,828) xysize (144,216) background None padding (0,0)
         action Show("kk_phone_locator")
         alt "Buka HP"
-        add kg_image("phone-launch",378,367)
+        add kg_image("phone-launch-full" if kk_host else "phone-launch-neutral",144,216)
     if GetTooltip():
         frame:
             xalign .5 ypos 125 background Frame(kg_root+"ribbon.png",20,9) padding (22,9)
@@ -616,11 +623,13 @@ screen kk_phone_locator():
         add kg_image("phone-frame",610,1000) pos (35,0)
         frame:
             pos (89,44) xysize (501,875) padding (0,0) background None
-            if kk_host == "chiasa":
+            if not kk_host:
+                add kg_image("phone-neutral",501,875)
+            elif kk_host == "chiasa":
                 add kg_image("phone-chiasa",501,875)
             else:
                 add kg_image("phone-yutaka",501,875)
-            $ _pc = "#56354D" if kk_host == "chiasa" else "#FFFFFF"
+            $ _pc = "#41434B" if not kk_host else "#56354D" if kk_host == "chiasa" else "#FFFFFF"
             text kk_clock() font kg_body size 22 color _pc pos (23,19)
             text "Kouseikan" font kg_body size 21 color _pc xalign .5 ypos 118
             text kk_clock() font kg_body size 73 color _pc xalign .5 ypos 157

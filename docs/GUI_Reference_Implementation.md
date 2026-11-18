@@ -17,6 +17,8 @@ Figma sumber: https://www.figma.com/design/lYsY4q9tqchOPJv0JCjexD
 
 - Main menu: New Game, Continue, Settings, Gallery, Load Slots, System dan Exit memakai tindakan Ren'Py.
 - Dialog: varian Yutaka, Chiasa, gelap dan System neon. Nama, isi dialog dan pilihan adalah teks Ren'Py, dapat diedit dalam naskah `.rpy` yang bersangkutan.
+- Sebelum pemilihan tubuh (`kk_host` kosong), dialog, ikon kontrol dan HP memakai abu-abu dengan aksen kuning. Varian netral tetap digunakan bila pengaturan dialog gelap aktif; setelah pemilihan, warna mengikuti host. Panel System mempertahankan desain neon khususnya.
+- Ikon pembuka HP berupa handset utuh dengan batas gambar dan area klik yang sama, di dalam kanvas dialog maupun peta.
 - Bilah dialog: skip, baca otomatis, sembunyikan GUI, riwayat, simpan, muat dan HP.
 - Album save/load: enam slot per halaman, thumbnail save aktual, waktu, halaman manual/otomatis/cepat dan tombol hapus standar pada slot yang terfokus.
 - Settings: kecepatan teks, jeda otomatis, musik, efek suara, mode layar dan varian dialog gelap.
