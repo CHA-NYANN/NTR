@@ -55,7 +55,7 @@ label kkscene_N07:
         nagisa "Bukan bekal perpisahan dramatis. Kalau nggak dibawa, aku yang menghabiskan."
         nar "Di pintu ia mengucapkan selamat Natal lebih pelan. Saat kau menoleh terakhir kali, ia sedang memindahkan piring kedua dari meja, sementara Koko tetap di kursinya."
     else:
-        nar "Kau menghubungi Koita. Nagisa hendak melarang agar tidak kelihatan mengundang melalui orang lain, tetapi sudah terlambat menyamarkan kegembiraannya saat ia bersedia datang."
+        nar "Kau mengLangsung telepon siapapun di kontakmu yang bisa membantu. Nagisa hendak melarang agar tidak kelihatan mengundang melalui orang lain, tetapi sudah terlambat menyamarkan kegembiraannya saat ia bersedia datang."
         nagisa "Kalau begitu piringnya kurang. Tunggu, aku ambil."
         nar "Ia menyiapkan tempat ketiga, lalu memeriksa rambut di pantulan jendela. Kehadiranmu tetap dihargai; hanya saja malam itu harapan lamanya kembali mendapat kursi paling dekat."
     return

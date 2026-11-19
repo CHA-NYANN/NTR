@@ -1,0 +1,18 @@
+"""Render only secondary GUI objects; never rewrite protected reference art."""
+from pathlib import Path
+import resvg_py
+root=Path(__file__).resolve().parents[1]/'game/gui/kouseikan/secondary'
+root.mkdir(parents=True,exist_ok=True)
+def source(name,body,w,h):
+    (root/(name+'.svg')).write_text(f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">{body}</svg>',encoding='utf8')
+source('desk','<defs><radialGradient id="wash"><stop stop-color="#F8EEE5"/><stop offset="1" stop-color="#D8CDDD"/></radialGradient><pattern id="grain" width="13" height="17" patternUnits="userSpaceOnUse"><path d="m1 3 4 1m3 9 3-1" stroke="#7B6786" stroke-width=".5" opacity=".09"/></pattern></defs><rect width="1920" height="1080" fill="url(#wash)"/><rect width="1920" height="1080" fill="url(#grain)"/><path d="M-30 990C300 720 130 240 510 130S1420 320 1960 85" fill="none" stroke="#C797AA" stroke-width="2"/><g fill="#84688E" opacity=".2"><circle cx="80" cy="101" r="28"/><circle cx="1830" cy="950" r="52"/></g>',1920,1080)
+source('folio','<path d="M35 31 1621 15 1641 855 21 869Z" fill="#715771" opacity=".16"/><path d="M23 10 1607 0 1623 836 7 852Z" fill="#FCF5EA" stroke="#CCBBCD" stroke-width="2"/><path d="M587 20 601 824" stroke="#D8B9C6" stroke-width="3"/><path d="m600 26 11 790" stroke="#9C8799" opacity=".2"/><path d="m52 1 105 3-9 45-100-9Zm1382 818 130-7 15 47-136 4Z" fill="#CFABCC" opacity=".8"/>',1660,880)
+source('receipt','<path d="M14 0H824V750L804 773 783 750 761 773 739 750 716 773 694 750 672 773 650 750 628 773 606 750 584 773 562 750 540 773 518 750 496 773 474 750 452 773 430 750 408 773 386 750 364 773 342 750 320 773 298 750 276 773 254 750 232 773 210 750 188 773 166 750 144 773 122 750 100 773 78 750 56 773 35 750 14 773Z" fill="#FFF9E9" stroke="#D7C5B8" stroke-width="2"/><path d="M44 104H790M44 685H790" stroke="#B89DA5" stroke-dasharray="4 8"/>',850,800)
+source('cassette','<rect x="14" y="20" width="604" height="465" rx="46" fill="#4E3B60" stroke="#BFA7CA" stroke-width="5"/><rect x="44" y="50" width="544" height="130" rx="22" fill="#F0DFD8"/><g fill="#7D688D" stroke="#CCB8CC" stroke-width="7"><circle cx="163" cy="112" r="45"/><circle cx="469" cy="112" r="45"/></g><path d="M210 112H422" stroke="#B29AB6" stroke-width="4"/><path d="m40 426 23 29m476-13 26 12" stroke="#BFA7CA" stroke-width="3"/><rect x="84" y="216" width="180" height="205" rx="12" fill="#352840"/><rect x="368" y="216" width="180" height="205" rx="12" fill="#352840"/>',640,510)
+source('ticket','<path d="M8 12 467 0 480 111 19 128Z" fill="#FFF8EC" stroke="#CBB0C7" stroke-width="2"/><path d="m77 10 4 104" stroke="#CFADC3" stroke-width="2" stroke-dasharray="4 6"/><circle cx="43" cy="57" r="21" fill="#937B9D"/><path d="m429 4 40 0-34 32Z" fill="#DDB9CA"/>',490,136)
+source('contact','<path d="M8 8 213 0 225 218 4 228Z" fill="#FFF9F0" stroke="#D2BDCC" stroke-width="2"/><path d="m67 0 85 4-4 27-84-7Z" fill="#D8ACCA"/><circle cx="112" cy="77" r="39" fill="#E8DEE9"/><path d="M29 151H194" stroke="#DDBCCD"/>',236,240)
+source('button-small','<path d="m3 5 286-3 9 67-287 7Z" fill="#FFF7EA" stroke="#CDB4C9" stroke-width="2"/><path d="M14 14v43" stroke="#CDA6BF" stroke-dasharray="3 4"/><path d="m269 3 20-1-17 20Z" fill="#DAB2C5"/>',310,82)
+source('letter','<path d="M19 12 971 0 985 478 4 492Z" fill="#FFF6E5" stroke="#D5BFC5" stroke-width="2"/><path d="M80 34 91 453" stroke="#E1B7C9"/><path d="m816 0 110 8-21 36-111-7Z" fill="#D9B5CC"/><path d="M832 492 985 374 985 478Z" fill="#E6D1C2"/>',1000,510)
+for path in root.glob('*.svg'):
+    path.with_suffix('.png').write_bytes(resvg_py.svg_to_bytes(svg_string=path.read_text(encoding='utf8')))
+print('Rendered',len(list(root.glob('*.png'))),'secondary objects. Protected art untouched.')

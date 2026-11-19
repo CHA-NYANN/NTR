@@ -2,11 +2,11 @@
 errors listed below, and try again.
 
 
-The label kkscene_H09 is defined twice, at File "game/kk_cleanup_main.rpy", line 6:
-label kkscene_H09:
-and File "game/kk_harumi.rpy", line 29:
-label kkscene_H09:
+The label kkscene_C02 is defined twice, at File "game/kk_chiasa_host.rpy", line 11:
+label kkscene_C02:
+and File "game/kk_chiasa_host.rpy", line 63:
+label kkscene_C02:
 
 
 Ren'Py Version: Ren'Py 8.3.2.24090902
-Fri Nov 13 03:07:02 2026
+Thu Nov 19 09:52:56 2026

@@ -115,10 +115,10 @@ screen kk_route_select():
     add Solid("#13212bd9")
     vbox:
         xpos kk_margin yalign .48 spacing 30
-        text "Pilih tubuh" style "kk_heading"
+        text "Tangan mana yang akan kau raih?" style "kk_heading"
         hbox:
             spacing kk_gap
-            for host, name, route, detail, tint in [("yutaka","Kisaragi Yutaka","Male Route","Sahabat Koita sejak kecil.","#93b6df"), ("chiasa","Amamiya Chiasa","Female Route","Adik tiri Koita.",kk_accent)]:
+            for host, name, tint in [("yutaka","Tangan pria di sebelah kiri","#93b6df"), ("chiasa","Tangan wanita di sebelah kanan",kk_accent)]:
                 button:
                     style "kk_button" xysize (780, 300) padding (36, 36)
                     action Return(host)
@@ -126,7 +126,6 @@ screen kk_route_select():
                         spacing 18
                         add Solid(tint) xysize (68, 5)
                         text name size 46 bold True
-                        text detail style "kk_caption"
 
 screen kk_status():
     modal True
