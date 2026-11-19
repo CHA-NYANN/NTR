@@ -6,6 +6,8 @@ lock_path=root/'scope-lock.json'
 if not lock_path.exists() or '--portable' in sys.argv:
     lock_path=root/'tools/secondary_reference_lock.json'
 lock=json.loads(lock_path.read_text())
+# Owner explicitly replaced the assistant's text-based hand selection on 19 Nov 2026.
+lock['protected_screens'].pop('kk_route_select',None)
 def digest(path):
     raw=path.read_bytes()
     if lock.get('normalised') and path.suffix in ('.rpy','.svg'):

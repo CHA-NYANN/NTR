@@ -1,0 +1,37 @@
+{
+  "hand-male": {
+    "file": "game/gui/kouseikan/actions/hand-male.png",
+    "prompt": "Use case: illustration-story. Asset type: transparent PNG sprite, an actual clickable illustrated hand for an anime visual novel's life-or-death choice. One adult man's hand and forearm only, entering from the lower left toward the upper right, palm offered toward the viewer to take, strong elegant fingers slightly curled, anatomically correct exactly five fingers. Clean polished anime linework, restrained cel shading, soft cool violet rim light, warm skin, plain light gray shirt cuff. Strong readable silhouette, dramatic foreshortening, graceful natural anatomy. Fill the square composition generously with the complete hand and forearm, retain generous margins around every fingertip; forearm ends at bottom-left canvas edge. Actual transparent background, no black rectangle, no text, no labels, no UI, no symbols, no face, no body, no extra hands. The game will composite this single sprite against a nearly black void.",
+    "tool": "image_gen built-in"
+  },
+  "hand-female": {
+    "file": "game/gui/kouseikan/actions/hand-female.png",
+    "prompt": "Use case: illustration-story. Asset type: transparent PNG sprite, an actual clickable illustrated hand for an anime visual novel's life-or-death choice. One adult woman's delicate hand and forearm only, entering from the lower right toward the upper left, palm offered toward the viewer to take, slender fingers slightly curled, anatomically correct exactly five fingers. Clean polished anime linework, restrained cel shading, soft cool violet rim light, warm skin, plain ivory long sleeve cuff. Strong readable silhouette, dramatic foreshortening, graceful natural anatomy. Fill the square composition generously with the complete hand and forearm, retain generous margins around every fingertip; forearm ends at bottom-right canvas edge. Actual transparent background, no black rectangle, no text, no labels, no UI, no symbols, no face, no body, no extra hands. Match a cinematic anime game asset, not an icon. The game will composite this single sprite against a nearly black void.",
+    "tool": "image_gen built-in"
+  },
+  "mirror": {
+    "file": "game/gui/kouseikan/actions/mirror.png",
+    "prompt": "Use case: illustration-story. Asset type: one transparent PNG sprite that will itself be the clickable object in an anime visual novel. Clean polished anime linework and restrained cel shading, ivory/gray materials with soft violet-blue edge light. Large clear silhouette, isolated object, three-quarter view, generous transparent margins, no text, no letters, no UI frame, no hands, no people, no watermark. Actual transparent background. Subject: a tall oval freestanding tabletop mirror with a simple cream frame and a closed sketchbook and graphite pencil resting at its base. The mirror reflects only muted dark gray light, no person.",
+    "tool": "image_gen built-in"
+  },
+  "phone": {
+    "file": "game/gui/kouseikan/actions/phone.png",
+    "prompt": "Use case: illustration-story. Asset type: one transparent PNG sprite that will itself be the clickable object in an anime visual novel. Clean polished anime linework and restrained cel shading, ivory/gray materials with soft violet-blue edge light. Large clear silhouette, isolated object, three-quarter view, generous transparent margins, no text, no letters, no UI frame, no hands, no people, no watermark. Actual transparent background. Subject: a modern smartphone propped at a slight diagonal, screen lit with a simple abstract incoming-call handset glyph, no words or numbers. A plain pale phone case.",
+    "tool": "image_gen built-in"
+  },
+  "wallet": {
+    "file": "game/gui/kouseikan/actions/wallet.png",
+    "prompt": "Use case: illustration-story. Asset type: one transparent PNG sprite that will itself be the clickable object in an anime visual novel. Clean polished anime linework and restrained cel shading, ivory/gray materials with soft violet-blue edge light. Large clear silhouette, isolated object, three-quarter view, generous transparent margins, no text, no letters, no UI frame, no hands, no people, no watermark. Actual transparent background. Subject: an open charcoal leather wallet containing a few blank cream cards and blue banknotes, beside a modern smartphone with a dark screen. A single coherent arrangement.",
+    "tool": "image_gen built-in"
+  },
+  "door": {
+    "file": "game/gui/kouseikan/actions/door.png",
+    "prompt": "Use case: illustration-story. Asset type: one transparent PNG sprite that will itself be the clickable object in an anime visual novel. Clean polished anime linework and restrained cel shading, ivory/gray materials with soft violet-blue edge light. Large clear silhouette, isolated object, three-quarter view, generous transparent margins, no text, no letters, no UI frame, no hands, no people, no watermark. Actual transparent background. Subject: an open interior bedroom door with a glimpse of three steps leading downstairs into a warm dim hall. Isolated compact doorway and steps only, no wall or full room.",
+    "tool": "image_gen built-in"
+  },
+  "chair": {
+    "file": "game/gui/kouseikan/actions/chair.png",
+    "prompt": "Use case: illustration-story. Asset type: one transparent PNG sprite that will itself be the clickable object in an anime visual novel. Clean polished anime linework and restrained cel shading, ivory/gray materials with soft violet-blue edge light. Large clear silhouette, isolated object, three-quarter view, generous transparent margins, no text, no letters, no UI frame, no hands, no people, no watermark. Actual transparent background. Subject: a simple upholstered gray bedroom chair seen three-quarter view with one small cream pillow. Quiet contemplative mood, no person.",
+    "tool": "image_gen built-in"
+  }
+}

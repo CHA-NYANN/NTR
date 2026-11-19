@@ -19,13 +19,48 @@ init 45 python:
         capacity=max(16,int(width/(size*.53)))
         return sum(max(1,_ks_math.ceil(len(line)/float(capacity))) for line in plain.split("\n"))
 
+    def ks_dialog_metrics(who,what):
+        system=kg_dialogue_skin(who,what)=="system-dialogue"
+        width,size=(1110,35) if system else (1360,32)
+        probe=Text(renpy.substitute(what)+"  ›",font=kg_body,size=size,italic=who is None,bold=system,line_spacing=6 if system else 5,slow_cps=0)
+        rendered=renpy.render(probe,width,4096,0,0)
+        text_height=rendered.get_size()[1]
+        sample=Text("Ag",font=kg_body,size=size,italic=who is None,bold=system,line_spacing=6 if system else 5,slow_cps=0)
+        line_height=renpy.render(sample,width,4096,0,0).get_size()[1]+(6 if system else 5)
+        layout=probe.get_layout()
+        lines=len(layout.lines) if layout and hasattr(layout,"lines") else max(1,int(round((text_height+(6 if system else 5))/float(line_height))))
+        step,base=(60,320) if system else (52,190)
+        lines=max(lines,int(_ks_math.ceil(text_height/float(step))))
+        lines=min(11 if system else 14,lines)
+        height=base+step*lines
+        if not system: height=max(250,height)
+        return lines,height,text_height
+
     def ks_dialog_height(who,what):
-        system=bool(who and "SISTEM" in who.upper())
-        lines=ks_text_lines(what,1148 if system else 1380,35 if system else 32)
-        return min(756,max(420,315+lines*53)) if system else min(920,max(235,158+lines*49))
+        return ks_dialog_metrics(who,what)[1]
+
+    def ks_action_image(name,w,h,lit=False):
+        return Transform(kg_root+"actions/"+name+".png",xysize=(w,h),fit="contain",matrixcolor=BrightnessMatrix(.07 if lit else -.08))
+
+    def ks_action_set(rows,heading):
+        if heading=="Di situasi gila ini, apa langkah pertamamu?":
+            return (["wallet","mirror","phone","chair"] if kk_host=="yutaka" else ["mirror","phone","door","chair"])
+        # Dialogue answers keep their approved paper design. These are object actions.
+        result=[]
+        for caption,operation,chosen in rows:
+            cap=caption.lower()
+            art=next((art for word,art in (("cermin","mirror"),("dompet","wallet"),("ponsel","phone"),("telepon","phone"),("sketsa","book"),("tidur","bed"),("sarapan","meal"),("papan catur","chess")) if word in cap),None)
+            result.append(art)
+        return result if result and all(result) and heading not in ("Apa yang kau lakukan?","Pilihanmu","Pilihan") else None
 
     def ks_choice_height(caption):
-        return max(84,36+ks_text_lines(caption,558,27)*41)
+        return ks_choice_metrics(caption)[1]
+
+    def ks_choice_metrics(caption):
+        probe=Text(renpy.substitute(caption),font=kg_body,size=27,slow_cps=0)
+        height=renpy.render(probe,558,2048,0,0).get_size()[1]
+        lines=min(6,max(1,int(_ks_math.ceil(height/44.))))
+        return lines,max(84,36+lines*44)
 
     def ks_last_met(cid):
         if cid not in kk_last_met:
@@ -88,47 +123,111 @@ screen ks_close(operation):
         pos (1756,42) xysize (92,78)
         use kg_tool("close","Kembali",operation)
 
-# The same reference art, text style and controls; only paper height adapts.
+# Reflow from the source SVG: ornaments retain their shape and hole pitch.
 screen say(who,what):
     $ _skin=kg_dialogue_skin(who,what)
-    $ _height=ks_dialog_height(who,what)
+    $ _lines,_height,_text_height=ks_dialog_metrics(who,what)
     if _skin == "system-dialogue":
         window:
             id "window"
-            pos (224,int(666-_height*.5)) xysize (1472,_height) padding (0,0)
-            background Frame(kg_image("system-dialogue",1472,756),270,205,140,100)
-            text who id "who" font kg_hand size 29 color "#533582" pos (470,149)
-            text what id "what" font kg_body size 35 color "#29165F" pos (188,254) xmaximum 1148 line_spacing 6
+            pos (143,1036-_height) xysize (1472,_height) padding (0,0)
+            background Transform(kg_root+"adaptive/system-dialogue-"+str(_lines)+".png",xysize=(1472,_height))
+            viewport:
+                pos (188,200) xysize (1110,_height-320)
+                mousewheel True draggable renpy.variant("touch")
+                text what id "what" font kg_body bold True size 35 color "#29165F" xmaximum 1110 line_spacing 6
     else:
         window:
             id "window"
-            pos (162,1052-_height) xysize (1596,_height) padding (0,0)
-            background Frame(kg_image(_skin,1596,348),220,95,150,55)
+            pos (80,1036-_height) xysize (1596,_height) padding (0,0)
+            background Transform(kg_root+"adaptive/"+_skin+"-"+str(_lines)+".png",xysize=(1596,_height))
             if who:
                 text who id "who" font kg_body bold True size 25 color "#FFF7FF" pos (123,37) xmaximum 800
-            text what id "what" font kg_body size 32 color ("#3E4047" if _skin == "dialogue-neutral" else "#F8EDFF" if _skin == "dialogue-dark" else kg_ink) pos (126,116) xmaximum 1380 line_spacing 5
+            viewport:
+                pos (126,112) xysize (1360,_height-190)
+                mousewheel True draggable renpy.variant("touch")
+                text what id "what" font kg_body size 32 color ("#3E4047" if _skin == "dialogue-neutral" else "#F8EDFF" if _skin == "dialogue-dark" else kg_ink) xmaximum 1360 line_spacing 5
     use quick_menu
+
+transform ks_reach(index=0,taken=False,decided=False):
+    subpixel True
+    transform_anchor True
+    anchor (.5,.5)
+    on show:
+        alpha 0.0 yoffset 35
+        pause index*.12
+        easeout .65 alpha 1.0 yoffset 0
+    on hover:
+        easeout .22 zoom 1.035 yoffset -15
+    on idle:
+        ease .22 zoom 1.0 yoffset 0
+    on replace:
+        ease .3 zoom (1.11 if taken else 1.0) alpha (.18 if decided and not taken else 1.0)
+
+screen kk_route_select():
+    modal True
+    default selected=None
+    add Solid("#040509")
+    text "Tangan mana yang akan kau raih?" font kg_hand size 54 color "#F3EDF7" xalign .5 ypos 135
+    for index,host,art,cx in [(0,"yutaka","hand-male",460),(1,"chiasa","hand-female",1460)]:
+        imagebutton:
+            id ("ks_hand_"+host)
+            pos (cx,678)
+            idle ks_action_image(art,780,780)
+            hover ks_action_image(art,780,780,True)
+            focus_mask True
+            action SetScreenVariable("selected",host)
+            sensitive selected is None
+            alt ("Raih tangan pria di kiri" if host=="yutaka" else "Raih tangan wanita di kanan")
+            at ks_reach(index,selected==host,selected is not None)
+    if selected:
+        timer .38 action Return(selected)
+
+screen ks_illustrated_choices(rows,heading,art):
+    modal True
+    add Solid("#080A13EE")
+    text heading font kg_hand size 48 color "#FAF1FF" xalign .5 ypos 130 xmaximum 1540 text_align .5
+    $ _count=len(rows)
+    $ _span=min(1640,_count*390)
+    for index,(caption,operation,chosen) in enumerate(rows):
+        imagebutton:
+            id ("ks_action_"+str(index))
+            pos (int(960-_span*.5+(_span/_count)*(index+.5)),570)
+            idle ks_action_image(art[index],350,450)
+            hover ks_action_image(art[index],350,450,True)
+            focus_mask True
+            action operation
+            alt caption
+            tooltip caption
+            at ks_reach(index)
+    if GetTooltip():
+        text GetTooltip() font kg_body size 30 color "#F9F0FC" xalign .5 ypos 855 xmaximum 1400 text_align .5
 
 screen kk_choice_panel(rows,heading):
     modal True
-    add Solid("#17112842")
-    frame:
-        pos (1000,196) xysize (840,650) padding (25,20) background None at kg_enter
-        vbox:
-            spacing 17
-            text heading font kg_hand size 36 color "#FFF1FB" xmaximum 780 outlines [(1,"#342249",0,1)]
-            viewport:
-                xysize (790,540) mousewheel True draggable renpy.variant("touch") scrollbars "vertical" arrowkeys True
-                vbox:
-                    spacing 15 xsize 748
-                    for index,(caption,operation,chosen) in enumerate(rows):
-                        button:
-                            xysize (740,ks_choice_height(caption)) padding (90,18)
-                            background Frame(kg_image("choice-idle",740,108),82,64,60,12)
-                            hover_background Frame(kg_image("choice-hover",740,108),82,64,60,12)
-                            action operation
-                            default_focus index == 0
-                            text caption font kg_body size 27 color kg_ink yalign .5 xmaximum 558
+    $ _art=ks_action_set(rows,heading)
+    if _art:
+        use ks_illustrated_choices(rows,heading,_art)
+    else:
+        add Solid("#17112842")
+        frame:
+            pos (1000,196) xysize (840,650) padding (25,20) background None at kg_enter
+            vbox:
+                spacing 17
+                text heading font kg_hand size 36 color "#FFF1FB" xmaximum 780 outlines [(1,"#342249",0,1)]
+                viewport:
+                    xysize (790,540) mousewheel True draggable renpy.variant("touch") scrollbars "vertical" arrowkeys True
+                    vbox:
+                        spacing 15 xsize 748
+                        for index,(caption,operation,chosen) in enumerate(rows):
+                            $ _choice_lines,_choice_height=ks_choice_metrics(caption)
+                            button:
+                                xysize (740,_choice_height) padding (90,18)
+                                background Transform(kg_root+"adaptive/choice-idle-"+str(_choice_lines)+".png",xysize=(740,_choice_height))
+                                hover_background Transform(kg_root+"adaptive/choice-hover-"+str(_choice_lines)+".png",xysize=(740,_choice_height))
+                                action operation
+                                default_focus index == 0
+                                text caption font kg_body size 27 color kg_ink yalign .5 xmaximum 558
 
 screen ks_object_button(caption, icon, operation, art, px, py, width, height, angle=0, delay=0, identifier=None, departing=False, enabled=True):
     button:
@@ -645,7 +744,7 @@ screen kk_location_view(distrik, lokasi):
     vbox:
         xpos kk_margin ypos 150 spacing 8 xsize 820
         text KK_DISTRICT_NAME[distrik] style "kk_caption"
-        text lokasi style "kk_heading"
+        text lokasi font kg_hand bold False size 54 color kg_ink
         add Solid(kk_accent) xysize (72, 4)
         null height 6
         text KK_LOC_AMBIENCE.get(lokasi, "Tempat biasa. Dunia tetap berjalan di tempat lain.") style "kk_caption" xmaximum 760
@@ -674,37 +773,34 @@ screen kk_location_view(distrik, lokasi):
             vbox:
                 spacing 10
                 text "Isi waktumu" size 32 color kg_muted font kg_hand
-                for aid, a in acts:
-                    button:
-                        style "ks_button" xysize (800, 104) action Return(("act", aid)) sensitive a["ok"]()
-                        hbox:
-                            yalign .5 spacing 16
-                            text a["label"] size 24 bold True yalign .5 xsize 265
-                            text a["desc"] style "kk_caption" yalign .5 xmaximum 390
+                grid 2 max(1,(len(acts)+1)//2):
+                    spacing 28
+                    for aid, a in acts:
+                        use ks_activity({"makan":"meal","kerja":"work","belajar":"book","santai":"chair"}[aid],a["label"]+" · "+a["desc"],Return(("act", aid)),identifier="ks_act_"+aid,enabled=a["ok"]())
+                    if not acts or len(acts)%2:
+                        null width 340 height 230
+                    if not acts:
+                        null width 340 height 230
                 if lokasi == "Stasiun Kouseikan-mae" and kk_onsen_dates():
-                    use ks_link("Berangkat ke penginapan onsen", Return(("travel", None)), 800)
+                    use ks_activity("train","Berangkat ke penginapan onsen", Return(("travel", None)))
                 if distrik == "onsen":
-                    use ks_link("Duduk sejenak di penginapan", Return(("rest", None)), 800)
+                    use ks_activity("chair","Duduk sejenak di penginapan", Return(("rest", None)))
                 if kk_art_studio_open(lokasi):
-                    use ks_link("Bicarakan sketsa dengan Haruka", Return(("portfolio", None)), 800)
+                    use ks_activity("book","Bicarakan sketsa dengan Haruka", Return(("portfolio", None)))
                 if kk_can_sketch(lokasi):
-                    use ks_link("Latihan di buku sketsa", Return(("draw", None)), 800)
+                    use ks_activity("book","Latihan di buku sketsa", Return(("draw", None)))
                 if kk_can_sit_with_miyuki(lokasi):
-                    button:
-                        id "miyuki_library_seat"
-                        style "ks_button" action Return(("sit_miyuki", None))
-                        text "Duduk di sebelah Miyuki" style "ks_button_text"
+                    use ks_activity("chair","Duduk di sebelah Miyuki",Return(("sit_miyuki", None)),identifier="miyuki_library_seat")
                 if kk_unfinished_board(lokasi):
-                    button:
-                        id "unfinished_board"
-                        style "ks_button" xysize (800, 104) action Return(("board", None))
-                        text "Perhatikan papan yang belum dibereskan" style "ks_button_text" yalign .5
+                    use ks_activity("chess","Perhatikan papan yang belum dibereskan",Return(("board", None)),identifier="unfinished_board")
                 if lokasi == home and kk_desk_event(lokasi):
-                    use ks_link("Periksa meja di kamar", Return(("desk", None)), 800)
+                    use ks_activity("book","Periksa meja di kamar", Return(("desk", None)))
                 if lokasi == home:
-                    use ks_link("Beristirahat di kamar", Return(("sleep", None)), 800)
+                    use ks_activity("bed","Beristirahat di kamar", Return(("sleep", None)))
                 if not acts and not kk_unfinished_board(lokasi) and not kk_art_studio_open(lokasi) and lokasi != home and distrik != "onsen" and not (lokasi == "Stasiun Kouseikan-mae" and kk_onsen_dates()):
                     text "Tidak ada aktivitas khusus di sini." style "kk_caption"
+    if GetTooltip():
+        text GetTooltip() font kg_body size 25 color kg_ink pos (985,950) xmaximum 790
     fixed:
         pos (kk_margin, 980)
         use ks_link("‹ Pergi dari sini", Return(("leave", None)))
@@ -713,3 +809,17 @@ screen kk_location_view(distrik, lokasi):
 # ══════════════════════════════════════════════════════════════════════════
 # ALUR navigasi dunia
 # ══════════════════════════════════════════════════════════════════════════
+
+
+screen ks_activity(art,caption,operation,width=340,identifier=None,enabled=True):
+    imagebutton:
+        id identifier
+        idle ks_action_image(art,width,230)
+        hover ks_action_image(art,width,230,True)
+        insensitive Transform(ks_action_image(art,width,230),matrixcolor=SaturationMatrix(0),alpha=.45)
+        focus_mask True
+        action operation
+        sensitive enabled
+        tooltip caption
+        alt caption
+        at ks_motion(0)
