@@ -21,18 +21,19 @@ init 45 python:
 
     def ks_dialog_metrics(who,what):
         system=kg_dialogue_skin(who,what)=="system-dialogue"
-        width,size=(1110,35) if system else (1360,32)
-        probe=Text(renpy.substitute(what)+"  ›",font=kg_body,size=size,italic=who is None,bold=system,line_spacing=6 if system else 5,slow_cps=0)
+        width,size=(824,30) if system else (1360,32)
+        font=kg_system_dialogue if system else kg_dialogue
+        probe=Text(renpy.substitute(what)+"  ›",font=font,size=size,italic=who is None,bold=False,line_spacing=5,slow_cps=0)
         rendered=renpy.render(probe,width,4096,0,0)
         text_height=rendered.get_size()[1]
-        sample=Text("Ag",font=kg_body,size=size,italic=who is None,bold=system,line_spacing=6 if system else 5,slow_cps=0)
-        line_height=renpy.render(sample,width,4096,0,0).get_size()[1]+(6 if system else 5)
+        sample=Text("Ag",font=font,size=size,italic=who is None,bold=False,line_spacing=5,slow_cps=0)
+        line_height=renpy.render(sample,width,4096,0,0).get_size()[1]+5
         layout=probe.get_layout()
-        lines=len(layout.lines) if layout and hasattr(layout,"lines") else max(1,int(round((text_height+(6 if system else 5))/float(line_height))))
-        step,base=(60,320) if system else (52,190)
+        lines=len(layout.lines) if layout and hasattr(layout,"lines") else max(1,int(round((text_height+5)/float(line_height))))
+        step,base=(60*kg_system_scale,320*kg_system_scale) if system else (52,190)
         lines=max(lines,int(_ks_math.ceil(text_height/float(step))))
-        lines=min(11 if system else 14,lines)
-        height=base+step*lines
+        lines=min(4 if system else 14,lines)
+        height=int(_ks_math.ceil(base+step*lines))
         if not system: height=max(250,height)
         return lines,height,text_height
 
@@ -130,12 +131,13 @@ screen say(who,what):
     if _skin == "system-dialogue":
         window:
             id "window"
-            pos (143,1036-_height) xysize (1472,_height) padding (0,0)
-            background Transform(kg_root+"adaptive/system-dialogue-"+str(_lines)+".png",xysize=(1472,_height))
+            xalign .5 ypos (1036-_height) xysize (1120,_height) padding (0,0)
+            background Transform(kg_root+"adaptive/system-dialogue-"+str(_lines)+".png",xysize=(1120,_height))
             viewport:
-                pos (188,200) xysize (1110,_height-320)
-                mousewheel True draggable renpy.variant("touch")
-                text what id "what" font kg_body bold True size 35 color "#29165F" xmaximum 1110 line_spacing 6
+                id "ks_system_body"
+                pos (143,152) xysize (844,_height-244)
+                mousewheel True draggable renpy.variant("touch") scrollbars "vertical"
+                text what id "what" font kg_system_dialogue size 30 color "#29165F" xmaximum 824 line_spacing 5
     else:
         window:
             id "window"
@@ -146,7 +148,7 @@ screen say(who,what):
             viewport:
                 pos (126,112) xysize (1360,_height-190)
                 mousewheel True draggable renpy.variant("touch")
-                text what id "what" font kg_body size 32 color ("#3E4047" if _skin == "dialogue-neutral" else "#F8EDFF" if _skin == "dialogue-dark" else kg_ink) xmaximum 1360 line_spacing 5
+                text what id "what" font kg_dialogue size 32 color ("#3E4047" if _skin == "dialogue-neutral" else "#F8EDFF" if _skin == "dialogue-dark" else kg_ink) xmaximum 1360 line_spacing 5
     use quick_menu
 
 transform ks_reach(index=0,taken=False,decided=False):
@@ -594,7 +596,7 @@ screen history():
                     frame:
                         xsize 1130 padding (48,32)
                         background Frame("gui/kouseikan/secondary/letter.png",85,45,85,45)
-                        text renpy.filter_text_tags(h.what,allow=["b","i","u","ruby","rt"]) substitute False font kg_body size 29 color kg_ink xmaximum 1020 line_spacing 7
+                        text renpy.filter_text_tags(h.what,allow=["b","i","u","ruby","rt"]) substitute False font (kg_system_dialogue if h.who and "SISTEM" in h.who.upper() else kg_dialogue) size 29 color kg_ink xmaximum 1020 line_spacing 7
 
 screen confirm(message,yes_action,no_action):
     modal True

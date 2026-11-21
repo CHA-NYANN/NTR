@@ -124,7 +124,7 @@ label kk_sandbox_test:
     if kk_host == "chiasa":
         $ c02_before = kk_get("curiga_koita",0)
         $ kk_test_expect("C02 pending at breakfast", "C02" in kk_pending_enter("d2","Rumah Amamiya"))
-        $ kk_test_family_caption = "Panggil namanya saja."
+        $ kk_test_family_caption = "\"Iya, tolong. Makasih, Koita.\""
         call kk_play_scene("C02")
         $ kk_test_family_caption = None
         $ kk_test_expect("Wrong name raises Koita's suspicion", kk_done("C02") and kk_get("curiga_koita",0) == c02_before + 8)
@@ -175,7 +175,7 @@ label kk_sandbox_test:
         $ kk_test_expect("Rain tea bounded", kk_bulan == 3)
     $ tea_trust = kk_rel_get("harumi","trust")
     $ kk_test_speaker = "harumi"
-    $ kk_test_family_caption = "Puji rasanya dengan jujur."
+    $ kk_test_family_caption = "\"Harum banget, suhu sama rasanya pas sekali.\""
     call screen kk_location_view("d1","Gedung Sains & Lab")
     $ kk_test_expect("Rain tea button", _return == ("talk","harumi"))
     call kk_do_talk("d1","Gedung Sains & Lab","harumi")

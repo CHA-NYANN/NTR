@@ -9,25 +9,68 @@
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_Mi04:
     call kk_scene_enter("miyuki", "Gedung Kedokteran")
-    nar "Miyuki berdiri membelakangi cermin dengan dua ujung obi di tangan. Ia mencoba melihat simpulnya melalui bahu, lalu mendesah ketika kain itu kembali melorot."
-    miyuki "Aku bisa menghafal halaman-halaman anatomi. Ternyata kain sepanjang ini punya rencana sendiri."
-    nar "Di luar ruang ganti, rombongan mulai memanggil. Ia menjawab sebentar lagi dengan suara senpai yang sangat meyakinkan, lalu menatapmu meminta tolong."
+    if kk_host == "chiasa":
+        nar "Di dalam ruang ganti kecil yang dipinjam sebelum berangkat ke festival musim panas, aroma samar parfum bunga dan kayu kipas lipat memenuhi ruangan. Di depan cermin tinggi, Tachibana Miyuki berdiri membelakangi kaca sambil memegang kedua ujung tali obi berwarna merah anggur di punggungnya."
+        nar "Yukata biru tua bermotif bunga tipis yang ia kenakan tampak sangat serasi dengan rambut hitam lurus panjangnya—tetapi begitu ia mencoba menoleh lewat bahu untuk mengencangkan simpul di belakang pinggangnya, lipatan kain tebal itu kembali melorot pelan dan terlepas."
+        nar "Miyuki menghela napas panjang dengan bahu sedikit turun, menatap bayangannya sendiri di cermin dengan ekspresi kalah yang jarang sekali terlihat di depan umum."
+        miyuki "Ara... aku bisa menghafal ratusan halaman buku anatomi tanpa keliru satu saraf pun. Ternyata kain sepanjang ini punya rencananya sendiri."
+        nar "Dari balik pintu ruang ganti, suara teman-teman rombongan di lorong mulai memanggil menanyakan apakah kalian sudah siap berangkat. Seketika punggung Miyuki kembali tegak; ia menyahut dengan suara lembut dan tenang khas senior yang selalu serba beres."
+        miyuki "Iya, sebentar lagi kami keluar kok! Tunggu lima menit ya!"
+        nar "Begitu suara di lorong menjauh, ia langsung menoleh ke arahmu yang sudah selesai bersiap, kedua matanya yang biru sapphire memandangmu dengan senyum kikuk yang jujur meminta tolong."
+        miyuki "Chiasa-chan... boleh minta tolong sebentar? Sepertinya aku sudah kalah lima kali dari tali obi ini."
+    else:
+        nar "Miyuki berdiri membelakangi cermin dengan dua ujung obi di tangan. Ia mencoba melihat simpulnya melalui bahu, lalu mendesah ketika kain itu kembali melorot."
+        miyuki "Aku bisa menghafal halaman-halaman anatomi. Ternyata kain sepanjang ini punya rencana sendiri."
+        nar "Di luar ruang ganti, rombongan mulai memanggil. Ia menjawab sebentar lagi dengan suara senpai yang sangat meyakinkan, lalu menatapmu meminta tolong."
     call kk_family_menu("Mi04", ["Bantu rapikan talinya dengan hati-hati.", "Panggil Sena untuk membantunya.", "Goda kecanggungannya."])
     if _return == "A":
-        nar "Kau menanyakan apakah boleh membantu sebelum mendekat. Miyuki mengangguk dan mengangkat rambut agar kainnya terlihat."
-        miyuki "Jangan terlalu kencang. Aku masih ingin makan semua yang tadi kulihat di stan."
-        nar "Kau merapikannya perlahan sambil meminta ia memeriksa kenyamanannya. Sesudah selesai, ia tetap berdiri dekat sesaat lebih lama."
-        miyuki "Terima kasih. Senpai boleh nggak pandai satu hal di depanmu, ya."
+        if kk_host == "chiasa":
+            nar "Kau melangkah mendekat ke belakangnya, namun tetap berhenti setengah langkah untuk memastikan ia nyaman sebelum tanganmu menyentuh kainnya."
+            chiasa "Boleh kubantu rapikan dari belakang, Tachibana-senpai? Sini biar kupegang ujungnya."
+            nar "Miyuki mengangguk lega, lalu mengumpulkan rambut hitam panjangnya ke satu sisi bahu dengan kedua tangan agar punggung yukatanya terlihat jelas."
+            miyuki "Terima kasih, Chiasa-chan. Tolong jangan terlalu kencang ya—aku masih ingin mencicipi semua takoyaki dan es serut yang tadi kita lewati di depan stan."
+            chiasa "Tenang saja, nggak bakal bikin sesak. Begini sudah pas?"
+            nar "Kau merapikan lipatan kain tebal itu perlahan, menarik kedua ujungnya hingga simpul pitanya duduk tegak dan rapi di tengah punggungnya, lalu mengecek sekali lagi apakah ikatannya nyaman saat ia menarik napas."
+            nar "Ketika kau selesai dan menarik tanganmu, Miyuki memutar badan sedikit memeriksa bayangannya di cermin—tetapi ia tidak langsung melangkah menjauh. Ia tetap berdiri cukup dekat darimu sesaat lebih lama sambil tersenyum lembut tanpa sedikit pun topeng senior yang serba sempurna."
+            miyuki "Wah, rapi sekali... terima kasih banyak, Chiasa-chan. Ternyata Senpai boleh ya nggak pandai satu hal di depanmu."
+            chiasa "Tentu saja boleh, Senpai. Semua orang pasti ada bagian yang repot dikerjakan sendiri."
+            nar "Ia tertawa kecil yang tulus dan hangat sebelum meraih tas serutnya untuk berangkat bersama."
+        else:
+            nar "Kau menanyakan apakah boleh membantu sebelum mendekat. Miyuki mengangguk dan mengangkat rambut agar kainnya terlihat."
+            miyuki "Jangan terlalu kencang. Aku masih ingin makan semua yang tadi kulihat di stan."
+            nar "Kau merapikannya perlahan sambil meminta ia memeriksa kenyamanannya. Sesudah selesai, ia tetap berdiri dekat sesaat lebih lama."
+            miyuki "Terima kasih. Senpai boleh nggak pandai satu hal di depanmu, ya."
     elif _return == "B":
-        nar "Kau memanggil Sena. Ia datang, menahan tawa ketika melihat simpul yang nyaris terbalik, lalu mengambil alih dengan cekatan."
-        "Sena" "Lain kali minta tolong sebelum lima kali membongkar, boleh?"
-        miyuki "Aku ingin mencoba sendiri dulu. Lima kali itu masih mencoba."
-        nar "Ketika keluar, Miyuki berterima kasih kepadamu. Wajahnya sedikit malu, tetapi ia tidak lagi harus membuktikan bisa menyelesaikan semuanya sendiri sebelum menikmati festival."
+        if kk_host == "chiasa":
+            nar "Merasa seseorang yang benar-benar ahli mengikat obi akan jauh lebih cepat daripada tebakanmu sendiri, kau melangkah ke pintu ruang ganti dan memanggil sahabat dekat Miyuki yang sedang menunggu di lorong."
+            chiasa "Sena-san, tolong sebentar ke sini—Tachibana-senpai butuh bantuan merapikan obinya."
+            nar "Pintu langsung terbuka lebar. Sena melangkah masuk, langsung berhenti sejenak menahan tawa begitu melihat simpul kain yang nyaris terpasang terbalik di punggung Miyuki, lalu segera mengambil alih dengan tangan cekatan."
+            "Sena" "Astaga, Miyuki... lain kali minta tolong sebelum lima kali membongkar sendiri, boleh nggak? Lipatannya sampai kusut begini."
+            miyuki "Aku kan ingin mencoba sendiri dulu, Sena. Lima kali itu masih masuk hitungan berusaha, tahu."
+            "Sena" "Iya deh, calon dokter yang nggak mau kalah sama kain. Nah, tahan napas sedikit—beres!"
+            nar "Dalam kurang dari dua menit, simpul pita obi itu sudah duduk sempurna. Ketika kalian melangkah keluar menuju lorong tempat rombongan menunggu, Miyuki sempat menoleh kepadamu dengan rona malu tipis yang justru terlihat manis."
+            miyuki "Terima kasih ya sudah manggil Sena, Chiasa-chan. Agak malu sih ketahuan berantakan begitu... tapi lega juga ternyata aku nggak harus selalu membereskan semuanya sendiri dulu sebelum boleh ikut menikmati festival."
+        else:
+            nar "Kau memanggil Sena. Ia datang, menahan tawa ketika melihat simpul yang nyaris terbalik, lalu mengambil alih dengan cekatan."
+            "Sena" "Lain kali minta tolong sebelum lima kali membongkar, boleh?"
+            miyuki "Aku ingin mencoba sendiri dulu. Lima kali itu masih mencoba."
+            nar "Ketika keluar, Miyuki berterima kasih kepadamu. Wajahnya sedikit malu, tetapi ia tidak lagi harus membuktikan bisa menyelesaikan semuanya sendiri sebelum menikmati festival."
     else:
-        nar "Kau menggoda senpai yang biasanya begitu tenang kini dikalahkan oleh sehelai kain. Miyuki menggembungkan pipi, lalu hampir tertawa pada bayangannya sendiri."
-        miyuki "Jangan mengganggu konsentrasiku. Aku sedang bernegosiasi dengan obi."
-        nar "Ia mencoba lagi, kali ini tidak terlalu tegang. Saat rombongan memanggil, ia menyuruh mereka menunggu tanpa membuat alasan tambahan."
-        miyuki "Sebentar lagi. Kali ini sungguhan. Mungkin."
+        if kk_host == "chiasa":
+            nar "Melihat senior Kedokteran yang biasanya selalu tenang, anggun, dan serba bisa itu ternyata dibuat kewalahan oleh sehelai kain panjang, senyum jahil langsung muncul di bibirmu."
+            chiasa "Wah, ternyata Tachibana-senpai yang biasanya paling tenang di kampus bisa kalah juga sama tali obi, ya?"
+            nar "Miyuki langsung menoleh dari cermin sambil menggembungkan pipinya sedikit—ekspresi merajuk yang sangat jarang ia perlihatkan—tetapi sedetik kemudian ia sendiri hampir tertawa melihat bayangannya di kaca."
+            miyuki "Ih, Chiasa-chan jahat banget malah ngeledek! Jangan mengganggu konsentrasiku ya—aku ini sedang bernegosiasi serius dengan obi."
+            chiasa "Kalau negosiasinya gagal lagi nanti kembang apinya keburu selesai lho, Senpai."
+            miyuki "Nggak akan! Lihat saja kali ini pasti jadi!"
+            nar "Entah karena leluconmu berhasil mencairkan ketegangannya, tangannya kini bergerak jauh lebih santai saat kembali melipat kain itu. Ketika suara rombongan di luar kembali memanggil, Miyuki tidak lagi buru-buru membuat alasan sempurna."
+            miyuki "Tunggu sebentar lagi ya! Kali ini sungguhan... mungkin!"
+            nar "Tawa ringan kalian berdua terdengar sampai ke luar pintu, membuat persiapan festival malam itu terasa jauh lebih hangat daripada biasanya."
+        else:
+            nar "Kau menggoda senpai yang biasanya begitu tenang kini dikalahkan oleh sehelai kain. Miyuki menggembungkan pipi, lalu hampir tertawa pada bayangannya sendiri."
+            miyuki "Jangan mengganggu konsentrasiku. Aku sedang bernegosiasi dengan obi."
+            nar "Ia mencoba lagi, kali ini tidak terlalu tegang. Saat rombongan memanggil, ia menyuruh mereka menunggu tanpa membuat alasan tambahan."
+            miyuki "Sebentar lagi. Kali ini sungguhan. Mungkin."
     return
 
 # ┌─ PANDUAN CERITA · Mi08 · Sena dan Psikolog

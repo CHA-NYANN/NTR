@@ -471,6 +471,7 @@ label kk_loc_list:
         jump kk_evaluasi
     if _distrik == "onsen" and not kk_onsen_dates():
         jump kk_trip_return
+    $ kk_bgm_location(_distrik)
     call screen kk_world_location(_distrik)
     if _return == "back":
         if _distrik == "onsen":
@@ -478,6 +479,7 @@ label kk_loc_list:
         jump kk_world_loop
     $ _lokasi = _return
     $ kk_minutes(30)
+    $ kk_bgm_location(_distrik, _lokasi)
     if kk_graduated:
         jump kk_evaluasi
     # (3-4) peristiwa berkumpul yang muncul begitu kau tiba
@@ -503,6 +505,7 @@ label kk_location_view_loop:
     if _incoming:
         call expression _incoming[0][2]
         jump kk_location_view_loop
+    $ kk_bgm_location(_distrik, _lokasi)
     call screen kk_location_view(_distrik, _lokasi)
     $ _c = _return
     if _c[0] == "leave":

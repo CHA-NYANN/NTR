@@ -39,9 +39,19 @@ init 100 python:
             x,y=window.get_placement()[:2]
             w,h=renpy.render(window,1920,1080,0,0).get_size()
             text=renpy.get_displayable(name,"what")
-            tw,actual=renpy.render(text,1110 if kg_dialogue_skin(scope['who'],scope['what'])=='system-dialogue' else 1360,4096,0,0).get_size()
-            room=h-(320 if kg_dialogue_skin(scope['who'],scope['what'])=='system-dialogue' else 190)
-            assert actual<=room,(lines,actual,room,scope['what'])
+            system=kg_dialogue_skin(scope['who'],scope['what'])=='system-dialogue'
+            tw,actual=renpy.render(text,824 if system else 1360,4096,0,0).get_size()
+            room=h-(244 if system else 190)
+            if system:
+                assert w==1120 and h<=430,(w,h)
+                assert text.style.font==kg_system_dialogue,text.style.font
+                viewport=renpy.get_displayable(name,"ks_system_body")
+                vw,vh=renpy.render(viewport,844,room,0,0).get_size()
+                assert vw<=844 and vh==room,(vw,vh,room)
+                assert actual<=room or lines==4,(lines,actual,room)
+            else:
+                assert text.style.font==kg_dialogue,text.style.font
+                assert actual<=room,(lines,actual,room,scope['what'])
             assert x>=0 and x+w<1758 and y+h<=1036,(x,y,w,h)
             with open(os.path.join(config.basedir,"layout.txt"),"a") as f:f.write(str((scope['who'],lines,h,actual,room))+"\n")
             return renpy.queue_event("dismiss")

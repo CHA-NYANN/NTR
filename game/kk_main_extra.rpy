@@ -100,6 +100,7 @@ label kkscene_N11:
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_N12:
     call kk_scene_enter("nagisa", "Gedung Arsitektur · Hujan deras")
+    play sound "audio/sfx/rain.wav"
     nar "Nagisa muncul dengan payung tepat ketika kau bersiap menerobos hujan. Ia menarik ujung tasmu ke bawah atap, kemudian memberimu handuk kecil sambil mengomel tentang orang yang memperlakukan demam sebagai rencana akhir pekan."
     nagisa "Pakai. Bukan koleksi pameran, nggak perlu dilihat dulu. Rambutmu menetes ke mana-mana."
     nar "Satu bahunya sendiri basah karena payung tadi lebih banyak menutupimu. Ia tampak baru sadar ketika kau melihatnya."
