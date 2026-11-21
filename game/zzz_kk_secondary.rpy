@@ -200,11 +200,7 @@ screen ks_illustrated_choices(rows,heading,art):
             focus_mask True
             action operation
             alt caption
-            tooltip caption
             at ks_reach(index)
-    if GetTooltip():
-        text GetTooltip() font kg_body size 30 color "#F9F0FC" xalign .5 ypos 855 xmaximum 1400 text_align .5
-
 screen kk_choice_panel(rows,heading):
     modal True
     $ _art=ks_action_set(rows,heading)
@@ -241,18 +237,18 @@ screen ks_object_button(caption, icon, operation, art, px, py, width, height, an
         selected departing
         alt caption
         at ks_motion(angle,delay)
-        if art == "object-stamp":
-            add kg_image("icon-"+icon,52,52) pos (int(width*.32),int(height*.2))
-            text caption font kg_hand size 24 color "#FFF3ED" xalign .5 ypos int(height*.62)
-        elif art == "object-film":
+        if art == "object-film":
             add kg_image("main-art",int(width*.72),int(height*.48)) pos (int(width*.12),int(height*.16))
-            text caption font kg_hand size 34 color "#FFF3ED" pos (int(width*.12),int(height*.68))
-        elif art == "object-folder":
-            text caption font kg_hand size 35 color kg_ink pos (int(width*.1),int(height*.45))
+            add kg_image("icon-play",42,42) align (.5,.47)
         else:
-            text caption font kg_hand size (53 if art == "object-letter" else 37) color kg_ink pos (int(width*.09),int(height*.29)) xmaximum int(width*.72)
-            if art == "object-note":
-                text ("Tempo, suara, gerak" if caption == "Pengaturan" else "Tutup buku sebentar") font kg_body size 16 color kg_muted pos (int(width*.1),int(height*.72))
+            $ _ks_icon_size=min(88,int(min(width,height)*.46))
+            add Transform(kg_image("icon-"+icon,_ks_icon_size,_ks_icon_size),matrixcolor=TintMatrix("#FFF3ED" if art == "object-stamp" else "#513864")) align (.5,.5)
+
+transform ks_main_icon_motion:
+    on hover:
+        easeout (.12 if persistent.kk_secondary_motion else 0) yoffset -3
+    on idle:
+        ease (.12 if persistent.kk_secondary_motion else 0) yoffset 0
 
 
 screen kg_pause_menu():
@@ -281,10 +277,10 @@ screen kg_pause_menu():
         button:
             id "kg_resume"
             xysize (356,608) padding (0,0) background None action Return()
+            alt "Lanjut bermain"
             add kg_image("phone-frame",356,608)
             text kk_clock() font kg_body size 55 color "#FFF2E6" xalign .5 ypos 132
-            text "Lanjut bermain" font kg_hand size 34 color "#F7DCED" xalign .5 ypos 325
-            text "Ketuk, atau geser HP ke atas" font kg_body size 17 color "#BAA8CA" xalign .5 ypos 398
+            add kg_image("icon-play",66,66) xalign .5 ypos 328
             add Solid("#E6D3E5") pos (120,544) xysize (120,5)
 
 
@@ -801,8 +797,6 @@ screen kk_location_view(distrik, lokasi):
                     use ks_activity("bed","Beristirahat di kamar", Return(("sleep", None)))
                 if not acts and not kk_unfinished_board(lokasi) and not kk_art_studio_open(lokasi) and lokasi != home and distrik != "onsen" and not (lokasi == "Stasiun Kouseikan-mae" and kk_onsen_dates()):
                     text "Tidak ada aktivitas khusus di sini." style "kk_caption"
-    if GetTooltip():
-        text GetTooltip() font kg_body size 25 color kg_ink pos (985,950) xmaximum 790
     fixed:
         pos (kk_margin, 980)
         use ks_link("‹ Pergi dari sini", Return(("leave", None)))
@@ -822,6 +816,5 @@ screen ks_activity(art,caption,operation,width=340,identifier=None,enabled=True)
         focus_mask True
         action operation
         sensitive enabled
-        tooltip caption
         alt caption
         at ks_motion(0)

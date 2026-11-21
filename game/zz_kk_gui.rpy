@@ -164,9 +164,18 @@ screen kg_tool(icon, caption, operation, selected=False, identifier=None):
         hover_background Transform(kg_root+_kg_tag+".png",xysize=(92,78),matrixcolor=BrightnessMatrix(.16))
         action operation
         selected selected
-        tooltip caption
         alt caption
         add kg_image("icon-"+icon,40,40) align (.5,.5)
+
+screen kg_main_icon(icon,caption,operation):
+    imagebutton:
+        id ("kg_main_"+icon)
+        idle Transform(kg_root+"main-icons/"+icon+".png",xysize=(104,104))
+        hover Transform(kg_root+"main-icons/"+icon+".png",xysize=(104,104),matrixcolor=BrightnessMatrix(.10))
+        focus_mask True
+        action operation
+        alt caption
+        at ks_main_icon_motion
 
 screen main_menu():
     tag menu
@@ -191,14 +200,13 @@ screen main_menu():
         alt "Continue"
         text "Continue" font kg_body bold True italic True size 45 color "#FFFFFF" pos (146,36)
     hbox:
-        pos (1302,722) spacing 13
-        use kg_tool("settings","Pengaturan",ShowMenu("preferences"))
-        use kg_tool("gallery","Galeri cutscene",ShowMenu("kk_cutscene_gallery"))
-        use kg_tool("bookmark","Muat permainan",ShowMenu("load"))
-        use kg_tool("system","System",ShowMenu("kk_system_menu"))
-        use kg_tool("exit","Keluar",Quit(confirm=True))
-    if GetTooltip():
-        text GetTooltip() color "#FFF5FF" font kg_hand size 29 xalign .85 ypos 824
+        id "kg_main_icon_row"
+        pos (1238,710) spacing 14
+        use kg_main_icon("settings","Pengaturan",ShowMenu("preferences"))
+        use kg_main_icon("gallery","Galeri cutscene",ShowMenu("kk_cutscene_gallery"))
+        use kg_main_icon("bookmark","Muat permainan",ShowMenu("load"))
+        use kg_main_icon("system","System",ShowMenu("kk_system_menu"))
+        use kg_main_icon("exit","Keluar",Quit(confirm=True))
     text "KOUSEIKAN" font kg_body size 18 color "#FFFFFFAA" pos (44,1030)
 
 screen kk_hud():
@@ -247,9 +255,6 @@ screen quick_menu():
             add kg_image("phone-launch-full" if kk_host else "phone-launch-neutral",144,216)
         if _preferences.afm_enable:
             text "AUTO" font kg_hand size 24 color ("#B89B35" if not kk_host else "#CEB9F0") pos (1600,108)
-        if GetTooltip():
-            text GetTooltip() font kg_hand size 24 color ("#B89B35" if not kk_host else "#B893D3") xalign .5 ypos 99
-
 screen kk_choice_panel(rows, heading):
     modal True
     add Solid("#17112842")
@@ -547,7 +552,6 @@ screen kg_city_map(travel=True):
             button:
                 pos (_kg_pin_left+index*_kg_pin_gap,py-138-index%2*12) xysize (104,134) padding (0,0) background None
                 action (Return(("go",did)) if travel else SetScreenVariable("district",did))
-                tooltip (KK_CHARS[cid]["nama"]+" · "+place)
                 alt (KK_CHARS[cid]["nama"]+" di "+place)
                 add kg_image("pin",104,134)
                 text kg_initial(cid) font kg_hand size 43 color KK_CHARS[cid]["warna"] xalign .5 ypos 23
@@ -557,11 +561,6 @@ screen kg_city_map(travel=True):
         action Show("kk_phone_locator")
         alt "Buka HP"
         add kg_image("phone-launch-full" if kk_host else "phone-launch-neutral",144,216)
-    if GetTooltip():
-        frame:
-            xalign .5 ypos 125 background Frame(kg_root+"ribbon.png",20,9) padding (22,9)
-            text GetTooltip() font kg_body size 22 color kg_ink
-
 screen kk_world_location(distrik):
     tag kk_world
     use kg_district_detail(distrik,True)
