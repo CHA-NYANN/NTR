@@ -4,6 +4,9 @@ init offset = 20
 
 define kg_root = "gui/kouseikan/"
 define kg_body = "gui/kouseikan/fonts/Nunito.ttf"
+define kg_dialogue = "font/Buat dialog orang/BRLNSR.TTF"
+define kg_system_dialogue = "font/Buat dialog system/Blue Highway Rg.otf"
+define kg_system_scale = 1120.0 / 1472.0
 define kg_hand = "gui/kouseikan/fonts/Kalam-Bold.ttf"
 define kg_title = "gui/kouseikan/fonts/Tinos-Italic.ttf"
 define kg_ink = "#35234F"
@@ -213,7 +216,7 @@ screen say(who, what):
             pos (224,288) xysize (1472,756) padding (0,0)
             background kg_image("system-dialogue",1472,756)
             text who id "who" font kg_hand size 29 color "#533582" pos (470,149)
-            text what id "what" font kg_body size 35 color "#29165F" pos (188,254) xmaximum 1148 line_spacing 6
+            text what id "what" font kg_system_dialogue size 30 color "#29165F" pos (188,254) xmaximum 1148 line_spacing 5
     else:
         window:
             id "window"
@@ -221,7 +224,7 @@ screen say(who, what):
             background kg_image(_kg_skin,1596,348)
             if who:
                 text who id "who" font kg_body bold True size 25 color "#FFF7FF" pos (123,37) xmaximum 800
-            text what id "what" font kg_body size 32 color ("#3E4047" if _kg_skin == "dialogue-neutral" else "#F8EDFF" if _kg_skin == "dialogue-dark" else kg_ink) pos (126,116) xmaximum 1380 line_spacing 5
+            text what id "what" font kg_dialogue size 32 color ("#3E4047" if _kg_skin == "dialogue-neutral" else "#F8EDFF" if _kg_skin == "dialogue-dark" else kg_ink) pos (126,116) xmaximum 1380 line_spacing 5
     use quick_menu
 
 screen quick_menu():

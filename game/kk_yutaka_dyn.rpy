@@ -138,6 +138,7 @@ label kkscene_Y_D09:
     elif _return == "B":
         koita "Terima kasih sudah dengar. Aku masih sedih, tapi sekarang bisa pulang. ...Besok jangan merasa harus menganggap semuanya baik-baik saja. Tanya aku lagi, ya."
     else:
+        play sound "audio/sfx/door_close.wav"
         nar "Kau mengatakan tidak bisa menerimanya malam ini. Koita mengangguk sebelum kau selesai menjelaskan, lalu meminta maaf sekali lagi. Setelah pintu tertutup, apartemen kembali tenang. Kau tidak tahu ke mana ia pergi berikutnya, dan ketidaktahuan itu tinggal lebih lama daripada alasanmu menolak."
     return
 

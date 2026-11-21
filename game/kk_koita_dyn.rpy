@@ -266,6 +266,7 @@ label kkscene_K_D19:
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_K_D20:
     call kk_scene_enter("koita", "Gedung Sastra · Ketukan di pintu")
+    play sound "audio/sfx/door_knock.wav"
     nar "Matsuda datang tanpa membawa naskah atau alasan rapat klub. Ia mengetuk sampai Koita menjawab, kemudian berdiri cukup jauh dari ambang agar pintu bisa dibuka lebar."
     "Matsuda" "Aku sudah tanya ruang konseling. Sato bisa ketemu. Kamu nggak perlu menyiapkan cerita yang runtut."
     koita "Aku bahkan nggak tahu harus mulai dari apa."
@@ -275,6 +276,7 @@ label kkscene_K_D20:
         nar "Kau menyela, mengatakan Koita baik-baik saja dan hanya perlu istirahat. Matsuda tidak menatapmu; ia masih menunggu jawaban orang di ambang pintu."
         "Matsuda" "Aku ingin dengar dari dia."
         nar "Tetapi Koita sudah menangkap jalan termudah untuk mengakhiri percakapan. Ia mengangguk pada ucapanmu dan meminta maaf karena membuat khawatir."
+        play sound "audio/sfx/door_close.wav"
         nar "Matsuda meninggalkan cara menghubunginya sebelum pergi. Pintu tertutup, dan keheningan yang kaupertahankan kembali memenuhi kamar."
     elif _return == "B":
         nar "Kau bergeser memberi jalan. Matsuda menunggu Koita mengambil jaket, tidak mengomentari berapa lama waktu yang ia perlukan."
@@ -285,6 +287,7 @@ label kkscene_K_D20:
         nar "Kau menawarkan ikut sampai ruang tunggu. Koita memeriksa wajahmu, lalu mengangguk."
         koita "Tapi nanti di dalam aku sendiri. Ada hal yang mungkin belum bisa kukatakan di depan kalian."
         nar "Kau menyetujuinya. Di perjalanan kalian membicarakan jalan yang paling teduh, hal kecil yang tidak memerlukan Koita menjelaskan seluruh hidupnya."
+        play sound "audio/sfx/door_knock.wav"
         nar "Di depan ruang konseling ia berhenti, menarik napas, lalu mengetuk atas kemauannya sendiri. Kalian menunggu di luar."
     return
 

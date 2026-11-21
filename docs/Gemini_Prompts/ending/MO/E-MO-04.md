@@ -252,7 +252,7 @@ Status: fungsi dan persona dasar ✅, detail interaksi 🟡 usulan.
 - ✅ Tujuan kontrak: mengubah takdir romantis Koita secara berarti (dipantau lewat milestone Fate Deviation). Target NTR disembunyikan sampai evaluasi saat kelulusan. Persentase dan ambang disembunyikan.
 - ✅ Tidak mengendalikan emosi NPC dan tidak memberi karisma otomatis. Memberi informasi NPC secara terbatas.
 - ✅ Eskalasi hukuman untuk pembangkangan sengaja: peringatan → rasa sakit → pelemahan fisik → hukuman kritis → kematian. Harus membedakan kegagalan tulus dari pembangkangan.
-- 🟡 Nama panggilan pemain olehnya: "Host", "Tuan Rumah", "Pemeran Figuran".
+- 🟡 Nama panggilan pemain olehnya: "Host", "Manusia", "Pemeran Figuran".
 
 ## 2. Tampilan
 - ✅ Kotak notifikasi khusus + dialog persona.

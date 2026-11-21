@@ -9,24 +9,65 @@
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_N04:
     call kk_scene_enter("nagisa", "Tepi Sungai · Kembang api")
-    nar "Nagisa menunggu jeda ledakan untuk memanggil Koita. Ia menoleh; justru saat itu suara Nagisa mengecil, dan kembang api berikutnya menelan sisa kalimat."
-    koita "Apa? Mau lihat dari sebelah sana?"
-    nagisa "Bukan. Nggak jadi."
-    nar "Ia kembali duduk terlalu cepat. Jarinya terus meremas ujung lengan yukata meski sudah tak ada orang yang memintanya bicara."
+    play sound "audio/sfx/fireworks.wav"
+    if kk_host == "chiasa":
+        nar "Di tepi tanggul rumput yang menghadap langsung ke permukaan sungai, pantulan kembang api berpendar seperti pecahan cahaya di atas air yang gelap. Suara sorak penonton dari sisi jembatan terdengar bercampur dentuman demi dentuman di langit."
+        nar "Beberapa langkah di sebelahmu, Sakurajima Nagisa duduk di atas alas kain sambil memeluk lututnya. Dari samping, kau melihat jelas bagaimana bahunya menegang, kedua tangannya meremas ujung lengan yukatanya, dan bibirnya terbuka lalu tertutup lagi menunggu jeda singkat di antara dua ledakan besar."
+        nar "Begitu langit hening selama dua detik, Nagisa akhirnya menarik napas cepat dan menoleh ke arah Koita yang duduk tak jauh darinya."
+        nagisa "Ko-kun... dengar, sebenarnya aku sudah lama mau bilang—"
+        nar "Koita langsung menoleh dengan wajah penuh perhatian. Namun tepat di saat mata mereka bertemu, keberanian Nagisa seperti menyusut seketika—suaranya mengecil, dan di detik yang sama, rangkaian kembang api besar meledak beruntun di atas sungai, menelan habis sisa kalimatnya."
+        koita "Apa, Nagisa-chan? Suaranya ketutup kembang api—kamu mau pindah lihat dari sebelah sana yang lebih dekat air?"
+        nagisa "...Bukan. Nggak jadi."
+        nar "Nagisa langsung membuang muka dan kembali duduk tegak terlalu cepat. Di pangkuannya, jari-jarinya terus meremas kain lengan yukata dengan keras meski sudah tidak ada lagi yang memintanya berbicara."
+        nar "Koita sempat menatapnya sebentar dengan kening sedikit berkerut sebelum kembali menengadah ke langit saat ledakan baru mekar."
+    else:
+        nar "Nagisa menunggu jeda ledakan untuk memanggil Koita. Ia menoleh; justru saat itu suara Nagisa mengecil, dan kembang api berikutnya menelan sisa kalimat."
+        koita "Apa? Mau lihat dari sebelah sana?"
+        nagisa "Bukan. Nggak jadi."
+        nar "Ia kembali duduk terlalu cepat. Jarinya terus meremas ujung lengan yukata meski sudah tak ada orang yang memintanya bicara."
     call kk_family_menu("N04", ["Tetap di sampingnya.", "Beri dia kesempatan bicara berdua dengan Koita.", "Panggil Koita sebelum Nagisa melanjutkan."])
     if _return == "A":
-        nar "Kau duduk tanpa menyebut pengakuan yang gagal. Nagisa melirikmu beberapa kali sebelum akhirnya berhenti menjaga wajah."
-        nagisa "Aku sudah latihan. Di kepala semua orang diam sampai kalimatku selesai. Di dunia nyata ternyata aku sendiri yang kebanyakan berhenti."
-        nar "Ia menyandarkan tangan pada lutut, masih kecewa tetapi tidak harus mengubahnya menjadi marah kepada seseorang."
+        if kk_host == "chiasa":
+            nar "Kau tidak ikut menoleh ke arah Koita dan tidak pula menyinggung pengakuan yang baru saja kandas di tengah ledakan. Kau hanya bergeser duduk tenang di samping Nagisa, membiarkan bahu kalian nyaris sejajar sambil memandang pantulan cahaya di permukaan sungai."
+            nar "Nagisa melirikmu dua atau tiga kali dengan sudut mata—awalnya masih waspada seolah takut kau akan mengejeknya. Namun ketika ia melihatmu hanya duduk diam menemaninya tanpa satu pun senyum menyindir, bahunya yang kaku perlahan turun."
+            nagisa "...Bodoh banget, ya."
+            chiasa "Nggak ada yang bilang bodoh, Nagisa-senpai."
+            nagisa "Aku sudah latihan kalimatnya dari kemarin malam di kamar. Di kepalaku, semuanya diam sampai kalimatku selesai. Di dunia nyata... ternyata bahkan tanpa suara kembang api pun, aku sendiri yang kebanyakan berhenti."
+            nar "Ia melepaskan remasannya pada lengan yukata lalu menyandarkan kedua tangan di atas lututnya. Raut kecewa masih jelas di mata biru cerahnya, tetapi malam ini ia tidak lagi merasa harus mengubah rasa kecewa itu menjadi amarah kepada siapa pun."
+            nagisa "...Makasih sudah nggak nanya apa-apa, Chiasa."
+        else:
+            nar "Kau duduk tanpa menyebut pengakuan yang gagal. Nagisa melirikmu beberapa kali sebelum akhirnya berhenti menjaga wajah."
+            nagisa "Aku sudah latihan. Di kepala semua orang diam sampai kalimatku selesai. Di dunia nyata ternyata aku sendiri yang kebanyakan berhenti."
+            nar "Ia menyandarkan tangan pada lutut, masih kecewa tetapi tidak harus mengubahnya menjadi marah kepada seseorang."
     elif _return == "B":
-        nar "Kau memanggil perhatian Koita lalu memberi mereka ruang. Nagisa memelototimu, marah karena kesempatan lain juga berarti harus mencoba lagi."
-        nagisa "Koita, sebentar. Yang tadi bukan soal tempat menonton. Aku mau bicara kalau sudah agak sepi."
-        koita "Iya. Aku dengar sekarang."
-        nar "Kau menjauh sebelum tahu bagaimana percakapan itu berakhir. Kali ini ledakan bukan satu-satunya hal yang bisa disalahkan jika ia memilih diam."
+        if kk_host == "chiasa":
+            nar "Kau bangkit berdiri dari alas kain, menepuk pelan bahu Koita untuk menarik perhatiannya kembali, lalu mencondongkan badan sedikit dengan senyum ringan."
+            chiasa "Ko-nii, aku mau beli minuman dingin ke stan atas sebentar, ya. Tadi kelihatannya Nagisa-senpai ada yang mau dibicarakan berdua sama kamu sebelum kembang apinya selesai."
+            nar "Nagisa langsung mendongak memelototimu dengan mata biru membulat dan wajah memerah—setengah marah karena tiba-tiba didorong ke panggung, setengah panik karena kesempatan kedua berarti ia harus mencoba mengatakannya lagi."
+            nagisa "H-hei, Chiasa! Jangan seenaknya—"
+            nar "Namun sebelum ia sempat menyuruhmu duduk lagi, Koita sudah memutar badannya menghadap Nagisa dengan raut sungguh-sungguh. Nagisa menarik napas pendek, lalu menatap Koita dengan dagu terangkat."
+            nagisa "...Ko-kun, sebentar. Yang tadi bukan soal tempat menonton. Aku mau bicara sesuatu kalau sudah agak sepi nanti."
+            koita "Oh... iya, Nagisa-chan. Aku dengar sekarang kok."
+            nar "Kau melangkah pergi menaiki tanggul menuju kerumunan stan tanpa menoleh ke belakang lagi, meninggalkan ruang sepenuhnya untuk mereka berdua. Kali ini, ledakan kembang api bukan lagi satu-satunya hal yang bisa disalahkan jika ia kembali memilih diam."
+        else:
+            nar "Kau memanggil perhatian Koita lalu memberi mereka ruang. Nagisa memelototimu, marah karena kesempatan lain juga berarti harus mencoba lagi."
+            nagisa "Koita, sebentar. Yang tadi bukan soal tempat menonton. Aku mau bicara kalau sudah agak sepi."
+            koita "Iya. Aku dengar sekarang."
+            nar "Kau menjauh sebelum tahu bagaimana percakapan itu berakhir. Kali ini ledakan bukan satu-satunya hal yang bisa disalahkan jika ia memilih diam."
     else:
-        nar "Kau memanggil Koita untuk urusan lain sebelum Nagisa melanjutkan. Ia mengikuti, tak tahu ada kalimat yang baru saja kehilangan tempat."
-        nagisa "Kamu sengaja?"
-        nar "Tatapannya tajam, tetapi tangannya mulai mengendur. Ada marah karena dihalangi dan lega karena tidak harus menghadapi jawaban, bercampur begitu rapat sampai ia tak tahu yang mana hendak disampaikan kepadamu."
+        if kk_host == "chiasa":
+            nar "Tepat saat Nagisa mulai menarik napas lagi seolah hendak mencoba mengulangi kalimatnya, kau lebih dulu bangkit dan menarik ujung lengan baju Koita."
+            chiasa "Ko-nii, temani aku ke stan belakang sebentar yuk—tadi minuman kita ketinggalan di meja dekat lampion."
+            koita "Eh? Oh, iya, ayo cepat sebelum penuh—tunggu sebentar ya, Nagisa-chan!"
+            nar "Koita langsung berdiri mengikuti langkahmu tanpa sedikit pun sadar bahwa ada sebuah kalimat penting yang baru saja kehilangan tempatnya. Namun tepat sebelum kau ikut beranjak, suara rendah dan tajam dari arah alas kain menahan langkahmu sepersekian detik."
+            nagisa "Kamu sengaja, Chiasa?"
+            nar "Kau menoleh. Tatapan mata biru Nagisa menyala tajam menembus wajahmu—tetapi ketika matamu turun sedikit, kau melihat kedua tangannya yang tadi meremas yukata dengan keras kini justru perlahan mengendur di atas pangkuannya."
+            chiasa "Sengaja apa? Aku memang butuh bantuan bawa minumannya, Senpai."
+            nar "Nagisa menggigit bibir bawahnya, tidak langsung membalas. Di wajahnya, kemarahan karena dihalangi dan kelegaan diam-diam karena tidak harus menghadapi jawaban Koita malam ini bercampur begitu rapat sampai ia sendiri tampak bingung mana yang lebih dulu ingin ia ucapkan kepadamu."
+        else:
+            nar "Kau memanggil Koita untuk urusan lain sebelum Nagisa melanjutkan. Ia mengikuti, tak tahu ada kalimat yang baru saja kehilangan tempat."
+            nagisa "Kamu sengaja?"
+            nar "Tatapannya tajam, tetapi tangannya mulai mengendur. Ada marah karena dihalangi dan lega karena tidak harus menghadapi jawaban, bercampur begitu rapat sampai ia tak tahu yang mana hendak disampaikan kepadamu."
     return
 
 # ┌─ PANDUAN CERITA · N06 · Yuuto Menawarkan Bantuan
@@ -903,6 +944,7 @@ label kk_social_scene(eid):
     # Draft editorial dari pemicu dan pilihan katalog dinamis.
     if kk_done(eid):
         return
+    $ kk_bgm_event(eid)
     if eid in KK_DYNX:
         # Batch dinamis tambahan: tiap eid punya label kkscene_<eid> sendiri.
         call expression ("kkscene_" + eid.replace("-","_"))

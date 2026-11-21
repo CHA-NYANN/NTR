@@ -138,6 +138,7 @@ init 1 python:
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_N10:
     call kk_scene_enter("nagisa", "Studio Arsitektur")
+    play sound "audio/sfx/phone_vibrate.wav"
     nar "Ponsel Nagisa bergetar. Di layar: 'Kak Haruto'. Ia mengangkatnya sambil memutar matanya."
     nagisa "Iya, iya, aku makan teratur. ...Dia mau bicara denganmu, katanya."
     "Haruto" "Aku dengar namamu makin sering. Nagisa kalau pulang capek suka mengeluh, terus mendadak membela orang yang baru dikeluhkannya. Lumayan jelas polanya."

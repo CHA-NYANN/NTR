@@ -10,18 +10,100 @@
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_S03:
     call kk_scene_enter("shiori", "Klub Catur · Hujan")
-    nar "Hujan menahan Shiori di depan klub. Koita membuka payung dan menawarkan berjalan ke gerbang bersama, lalu tampak bingung ketika ia menanyakan apakah ia sendiri akan kebasahan."
-    shiori "Kau sudah membayangkan adegan yang baik, Amamiya. Belum menghitung lebar payungnya."
-    nar "Ia tersenyum, menerima kebaikan kecil itu tanpa terburu-buru menamainya ketertarikan. Ketika melihatmu, ia mengangkat alis sedikit, menunggu apakah kau ingin ikut menentukan siapa berjalan dengan siapa."
-    call kk_family_menu("S03", ["Sela dan tawarkan mengantarnya sendiri.", "Tawarkan payung kedua untuk mereka berdua.", "Biarkan saja mereka berdua."])
-    if _return == "A":
-        shiori "Oh? Kau cepat sekali menengahi. Menarik."
-        nar "Kau menawarkan mengantarnya sendiri. Shiori menanyakan mengapa sebelum mengubah rencana. Di depan pertanyaan yang sederhana itu, campur tanganmu harus mencari alasan yang dapat diucapkan terang-terangan."
-    elif _return == "B":
-        shiori "Sopan sekali. Aku mencatat itu."
-        nar "Payung kedua membuat tak seorang pun perlu berjalan terlalu dekat agar tetap kering. Shiori berterima kasih dan membiarkan Koita memutuskan sendiri apakah masih ingin berjalan ke arah yang sama."
+    if kk_host == "chiasa":
+        nar "Hujan sore yang deras menahan langkah beberapa mahasiswa di bawah kanopi pintu masuk gedung Klub Catur. Air mengalir kencang dari tepi atap, menciptakan tirai berkilau yang memisahkan teras batu dari jalan setapak menuju gerbang depan."
+        nar "Di tengah teras itu, Saionji Shiori berdiri dengan postur tegak dan tenang. Rambut putih keperakannya yang ditata menyilang bervolume di atas dan jatuh bergelombang melewati bahu sama sekali tak tersentuh tempias hujan. Ia melirik layar ponselnya sekali lalu memasukkannya kembali ke tas—mobil jemputannya rupanya tertahan macet di jalan utama dan baru bisa menunggu di dekat gerbang depan."
+        nar "Tepat saat kau baru saja keluar dari lorong samping sambil menenteng payung lipatmu, Amamiya Koita muncul dari pintu utama, berhenti di samping Shiori, lalu membuka payung lipatnya dengan senyum hangat yang begitu otomatis."
+        koita "Saionji-san, hujannya lumayan deras—kalau menunggu di sini terus nanti malah tambah sore dan dingin. Pakai payungku saja bareng sampai gerbang depan, yuk."
+        nar "Melihat adegan klise semacam itu berlangsung tepat di depan matamu membuatmu sempat terdiam di sisi kanopi. Shiori tidak langsung menolak ataupun tersipu. Ia menurunkan pandangannya ke payung lipat berukuran standar di tangan Koita, lalu melirik lebar bahu Koita sendiri sebelum menoleh dengan senyum sopan yang disisipi sindiran halus."
+        shiori "Kamu sudah membayangkan adegan yang cukup manis, Amamiya-san. Tapi sepertinya kamu belum menghitung lebar payungnya—kalau kita berjalan berdua di bawah itu, bukankah bahumu sendiri yang akan basah kuyup?"
+        koita "Eh—haha, iya juga ya... tapi kalau cuma basah sedikit sih aku nggak masalah kok, yang penting Saionji-san nggak kehujanan sampai ke gerbang."
+        nar "Shiori tersenyum ringan—senyum tipis yang nyaris mustahil ditebak apakah sedang geli, menilai, atau sekadar sopan. Ia menerima kebaikan kecil itu dengan anggun tanpa terburu-buru memberinya label ketertarikan apa pun."
+        nar "Namun tepat sebelum mereka sempat melangkah turun dari anak tangga teras, mata ungu amethyst Shiori bergeser menangkap sosokmu yang berdiri beberapa langkah di sisi kanopi sambil menggenggam payung lipatmu sendiri."
+        nar "Alis peraknya terangkat tipis sepersekian sentimeter. Tatapannya tenang, memberi ruang sekaligus menguji—seolah di atas papan permainan sore ini, ia sengaja menunggu apakah kau berniat melangkah maju dan ikut menentukan siapa yang berjalan dengan siapa di bawah hujan."
     else:
-        nar "Kau membiarkan mereka berangkat. Koita mendengarkan sindirannya dengan tawa malu, lalu memiringkan payung lebih jauh untuk melindungi bahunya. Shiori menyadari gerakan itu, tetapi belum memberinya arti lebih daripada perhatian yang sungguh dilakukan."
+        nar "Hujan sore yang deras memaksa beberapa mahasiswa tertahan di bawah kanopi batu di depan gedung Klub Catur. Air tumpah deras dari tepi atap, membentuk tirai putih yang memisahkan teras dari jalan setapak menuju gerbang depan."
+        nar "Di tengah teras itu, Saionji Shiori berdiri dengan postur tegak dan tenang. Rambut putih keperakannya yang ditata menyilang bervolume di atas dan jatuh bergelombang melewati bahu sama sekali tak tersentuh tempias hujan. Ia memeriksa layar ponselnya sekali lalu memasukkannya kembali ke tas—mobil jemputannya rupanya tertahan macet di jalan utama dan baru bisa menunggu di dekat gerbang depan."
+        nar "Baru saja kau melangkah keluar dari lorong samping sambil menenteng payung panjangmu yang masih tertutup, Koita muncul dari pintu utama di dekat Shiori. Tanpa ragu sedikit pun, sahabat masa kecilmu itu langsung membuka payung lipatnya dengan senyum ramah yang sudah seperti refleks otomatis setiap kali melihat orang kesulitan."
+        koita "Saionji-san, hujannya makin deras nih—kalau nunggu di sini terus nanti keburu gelap dan dingin. Pakai payungku saja bareng sampai gerbang depan, yuk."
+        nar "Kau berhenti di sisi pilar kanopi, menyaksikan adegan klise yang nyaris seperti halaman manga itu berlangsung tepat di depan mata. Shiori tidak langsung mengangguk ataupun tersipu; ia menurunkan tatapannya ke payung lipat berukuran standar di tangan Koita, lalu melirik lebar bahu Koita sendiri sebelum menoleh dengan senyum sopan yang disisipi sindiran halus."
+        shiori "Kamu sudah membayangkan adegan yang cukup manis, Amamiya-san. Tapi sepertinya kamu belum menghitung lebar payungnya—kalau kita berjalan berdua di bawah itu, bukankah bahumu sendiri yang akan basah kuyup?"
+        koita "Eh—haha, iya juga sih... tapi kalau cuma basah sedikit aku nggak masalah kok, yang penting Saionji-san nggak kehujanan sampai ke gerbang."
+        nar "Shiori tersenyum ringan—senyum tipis yang nyaris mustahil ditebak apakah sedang geli, menilai, atau sekadar sopan. Ia menerima kebaikan kecil itu dengan anggun tanpa terburu-buru memberinya label ketertarikan apa pun."
+        nar "Namun tepat sebelum mereka sempat melangkah turun dari anak tangga teras, mata ungu amethyst-nya bergeser menangkap sosokmu yang berdiri beberapa langkah di sisi kanopi sambil menggenggam payung panjangmu."
+        nar "Alis peraknya terangkat tipis sepersekian sentimeter. Tatapannya tenang namun tajam, jelas memberi ruang sekaligus menguji—seolah di atas papan permainan sore ini, ia sengaja menunggu apakah sahabat Amamiya-san sendiri berniat melangkah masuk dan ikut menentukan siapa yang berjalan dengan siapa di bawah hujan."
+    call kk_family_menu("S03", ["Sela dan tawarkan mengantarnya sendiri.", "Tawarkan payung kedua untuk mereka.", "Biarkan saja mereka berangkat berdua."])
+    if _return == "A":
+        if kk_host == "chiasa":
+            nar "Kau tidak membiarkan momen itu lewat begitu saja. Kau langsung melangkah maju mendekati tepi kanopi dan membuka payungmu sendiri dengan bunyi klik yang tegas, memotong jarak di antara Koita dan Shiori sebelum mereka sempat turun ke jalan setapak."
+            chiasa "Kalau payung Ko-nii terlalu sempit buat berdua, biar aku saja yang antar Saionji-senpai ke gerbang depan. Bahu kita sama-sama kecil, jadi lebih muat dan tidak ada yang harus basah."
+            koita "Lho, Chi-chan? Tumben lewat gedung sini—eh, nggak apa-apa kalau kau yang antar? Tadi aku sudah keburu menawarkan..."
+            nar "Panggilan 'Chi-chan' dari Koita terdengar refleks seperti biasa, sementara Shiori sama sekali tidak langsung mengiyakan tawaranmu. Ia justru memandangmu dari ujung mata dengan senyum tipis yang penuh minat, seolah baru saja melihat seseorang menggerakkan bidak mendahului gilirannya."
+            shiori "Oh? Kamu cepat sekali menengahi, Amamiya-san. Menarik sekali."
+            nar "Ia melangkah setengah langkah mendekat ke arahmu, tetapi tetap berhenti tepat di batas kering kanopi. Sebelum masuk ke bawah payungmu, ia melontarkan satu pertanyaan sederhana dengan tatapan lurus yang sulit dihindari."
+            shiori "Boleh aku tahu mengapa kamu menawarkan diri secepat itu? Apakah kamu memang searah denganku ke gerbang depan, atau ada alasan lain kamu tidak ingin kakakmu berjalan di bawah hujan bersamaku?"
+            nar "Nada suaranya tetap lembut dan sopan, tetapi pertanyaannya setajam ujung bidak yang langsung mengincar celah pertahananmu. Di depan tatapan seperti itu, campur tanganmu harus segera mencari alasan yang terdengar masuk akal untuk diucapkan terang-terangan."
+            chiasa "Aku memang mau ke arah gerbang depan, Saionji-senpai. Lagipula kalau Ko-nii kehujanan sampai masuk angin gara-gara sok kuat, nanti di rumah aku juga yang repot mengurusnya."
+            koita "Hei, aku nggak segampang itu masuk angin tahu!"
+            nar "Shiori menatapmu selama dua detik penuh, menimbang kejujuran di balik kalimat itu, lalu sudut bibirnya melengkung sedikit lebih jelas."
+            shiori "Alasan yang sangat praktis—dan cukup jujur. Baiklah, kalau begitu aku terima tawaranmu, Amamiya-san. Terima kasih atas niat baiknya juga, Amamiya-san."
+            nar "Ia melangkah masuk ke bawah payungmu dengan anggun, menjaga jarak yang pas namun cukup dekat untuk berbagi ruang teduh. Di belakang kalian, Koita hanya bisa berdiri di tepi kanopi sambil menggaruk tengkuknya dengan wajah bingung melihat rencana sederhananya mendadak diambil alih."
+        else:
+            nar "Kau tidak membiarkan momen itu lewat begitu saja. Kau langsung melangkah maju mendekati tepi anak tangga dan menekan tombol payung panjangmu hingga terbuka lebar dengan bunyi klik yang mantap, memotong jarak di antara Koita dan Shiori sebelum mereka sempat turun ke jalan setapak."
+            yutaka "Payung lipatmu terlalu sempit buat berdua, Koita—bahu kirimu pasti basah semua sebelum setengah jalan. Biar aku saja yang antar Saionji-san ke gerbang depan, payungku jauh lebih lebar."
+            koita "Lho, Yutaka? Tumben lewat gedung sini—eh, nggak apa-apa kalau kau yang antar? Tadi aku sudah keburu nawarin..."
+            nar "Shiori sama sekali tidak langsung menerima ataupun menolak. Ia memandangmu dari sudut matanya dengan senyum tipis yang penuh rasa ingin tahu, seolah baru saja melihat pemain lain mendadak ikut duduk di depan papan caturnya."
+            shiori "Oh? Kamu cepat sekali menengahi, Kisaragi-san. Menarik sekali."
+            nar "Ia melangkah setengah langkah ke arahmu, tetapi tetap berhenti tepat di batas kering kanopi. Sebelum melangkah masuk ke bawah payungmu, ia menatap matamu lurus-lurus dengan satu pertanyaan sederhana yang sulit dielakkan."
+            shiori "Boleh aku tahu mengapa kamu menawarkan diri secepat itu? Apakah kamu memang searah denganku ke gerbang depan, atau ada alasan khusus kamu tidak ingin temanmu berjalan berdua denganku?"
+            nar "Nada suaranya tetap ringan dan sopan, namun pertanyaannya setajam langkah pembuka yang langsung menguji niatmu. Di depan tatapan seterang itu, campur tanganmu harus segera menemukan alasan yang terdengar masuk akal untuk diucapkan terang-terangan."
+            yutaka "Aku memang searah ke gerbang depan, Saionji-san. Lagipula aku kenal Koita dari kecil—kalau dia nekat kehujanan begini, besok pasti demam dan ujung-ujungnya aku juga yang kena repot."
+            koita "Hei, aku nggak selemah itu tahu, Yutaka!"
+            nar "Shiori menimbang jawabanmu selama dua detik penuh dengan senyum yang tetap tak terbaca, lalu sudut bibirnya melengkung sedikit lebih jelas."
+            shiori "Alasan yang cukup masuk akal—dan payungmu memang lebih luas. Baiklah, kalau begitu aku terima tawaranmu, Kisaragi-san. Terima kasih juga atas niat baiknya, Amamiya-san."
+            nar "Ia melangkah masuk ke bawah payungmu dengan anggun, menjaga jarak yang rapi namun cukup dekat untuk berbagi ruang teduh. Di belakang kalian, Koita hanya bisa berdiri di tepi kanopi sambil menggaruk tengkuknya dengan wajah bingung melihat rencananya baru saja disela sahabatnya sendiri."
+    elif _return == "B":
+        if kk_host == "chiasa":
+            nar "Alih-alih memaksa masuk di antara mereka secara terang-terangan, kau melangkah maju dengan tenang dan menyodorkan payung lipatmu yang masih tergulung rapi langsung ke arah Shiori."
+            chiasa "Saionji-senpai, pakai payungku saja supaya tidak usah berdesakan di bawah satu payung."
+            koita "Eh—Chi-chan, nanti kamu sendiri pulang pakai apa?"
+            chiasa "Payungmu kan masih ada, Ko-nii. Aku bisa pulang bareng kamu atau menunggu sebentar sampai hujannya agak reda. Kalau Saionji-senpai pegang payung sendiri, tidak ada satu pun yang bahunya basah."
+            nar "Shiori menatap payung di tanganmu, lalu menatap wajahmu sejenak. Senyum tipis di bibirnya tampak benar-benar menghargai langkah yang bersih, efisien, dan tidak berlebihan itu."
+            shiori "Sopan sekali, Amamiya-san. Aku mencatat itu—terima kasih banyak. Besok pasti kukembalikan dalam keadaan bersih dan kering."
+            nar "Ia menerima payung lipatmu dengan kedua tangan secara anggun, membukanya dengan satu gerakan halus, lalu menoleh ringan ke arah Koita dengan sorot mata yang tenang."
+            shiori "Dengan begini, tidak ada yang harus kehujanan demi kesopanan. Nah, Amamiya-san—kalau kamu masih ingin berjalan ke arah gerbang depan, aku tidak keberatan. Tapi sekarang sepenuhnya keputusanmu sendiri, bukan karena aku butuh payung."
+            koita "Ah... iya, tentu! Aku juga memang searah ke depan kok—eh, tapi Chi-chan nanti ikut sekalian saja ya!"
+            nar "Dengan hilangnya alasan 'berbagi satu payung', suasana yang tadinya nyaris terasa seperti adegan romantis mendadak kembali menjadi perjalanan sore biasa. Mereka memang tetap berjalan ke arah gerbang yang sama, tetapi terpisah di bawah payung masing-masing tanpa jarak terlalu dekat yang bisa dipaksakan oleh hujan."
+        else:
+            nar "Alih-alih menyela secara terang-terangan, kau melangkah maju dengan santai lalu menyodorkan payung panjangmu yang masih tergulung rapi langsung ke hadapan Shiori."
+            yutaka "Pakai punyaku saja, Saionji-san, biar nggak perlu berdesakan di bawah satu payung kecil."
+            koita "Eh—Yutaka, terus kau sendiri pulang pakai apa?"
+            yutaka "Aku bisa nebeng payungmu atau tunggu sebentar di sini sampai hujannya agak reda. Yang penting nggak ada satu pun yang bahunya basah cuma gara-gara payung kekecilan."
+            nar "Shiori menatap gagang payung di tanganmu lalu melirik wajahmu sejenak. Senyum tipis di bibirnya tampak benar-benar menghargai langkah yang bersih, praktis, dan tidak memaksa itu."
+            shiori "Sopan sekali, Kisaragi-san. Aku mencatat itu—terima kasih banyak. Besok pasti kukembalikan dalam keadaan bersih dan kering."
+            nar "Ia menerima payung itu dengan kedua tangan secara anggun, membukanya dengan satu gerakan halus, lalu menoleh ringan ke arah Koita dengan sorot mata yang tenang."
+            shiori "Nah, dengan begini tidak ada satu pun yang harus kehujanan demi kesopanan. Amamiya-san, kalau kamu masih ingin berjalan ke arah gerbang depan, aku tidak keberatan—tapi sekarang sepenuhnya keputusanmu sendiri, bukan karena aku butuh payung."
+            koita "Ah... iya! Aku memang searah ke depan kok—ayo sekalian saja, Yutaka!"
+            nar "Dengan hilangnya alasan 'berbagi satu payung', momen yang tadi hampir berbelok ke arah romantis langsung kembali menjadi perjalanan pulang biasa—terpisah di bawah payung masing-masing, tanpa jarak terlalu dekat yang dipaksakan oleh hujan."
+    else:
+        if kk_host == "chiasa":
+            nar "Kau memilih tetap berdiri diam di sisi kanopi tanpa ikut campur, membiarkan mereka berdua menyelesaikan percakapan mereka sendiri sambil menggenggam gagang payungmu yang masih tertutup."
+            nar "Koita menanggapi sindiran Shiori dengan tawa kecil yang sedikit malu, lalu melangkah turun lebih dulu ke batas hujan sambil sengaja memiringkan gagang payungnya cukup jauh ke sisi kanan untuk melindungi bahu Shiori."
+            koita "Ayo, Saionji-san, sebelah sini lebih lebar ruangnya. Jalannya agak pelan saja biar sepatumu nggak kena cipratan genangan."
+            shiori "Kamu benar-benar memiringkannya sejauh itu, ya... lihat, bahu kirimu sudah mulai basah padahal kita baru melangkah tiga langkah."
+            koita "Nggak apa-apa, cuma sampai gerbang depan kok. Jaketku juga cepat kering."
+            shiori "Begitu. Kamu memang tipe orang yang tidak terlalu memikirkan kerugian kecil untuk diri sendiri, ya, Amamiya-san."
+            nar "Dari bawah kanopi, kau melihat punggung mereka perlahan menjauh menyusuri jalan setapak yang basah. Kau sempat menangkap bagaimana Shiori melirik bahu jaket Koita yang mulai gelap terkena air hujan."
+            nar "Ia jelas menyadari perhatian yang sungguh-sungguh dilakukan di balik gerakan kecil itu—meski dari langkahnya yang tetap teratur dan bahunya yang tak sedikit pun mendekat lebih jauh dari perlu, ia belum memberinya arti lebih daripada kebaikan seorang kenalan."
+        else:
+            nar "Kau memilih tetap bersandar tenang di dekat pilar kanopi sambil menyelipkan satu tangan ke saku celana, membiarkan mereka berdua menyelesaikan percakapan mereka sendiri tanpa ikut campur."
+            nar "Koita menanggapi sindiran Shiori dengan tawa kecil yang sedikit kikuk, lalu melangkah turun lebih dulu ke batas hujan sambil memiringkan payungnya cukup jauh ke sisi kanan untuk melindungi bahu Shiori."
+            koita "Ayo, Saionji-san, lewat sisi sini saja biar sepatumu nggak kena genangan."
+            shiori "Kamu benar-benar memiringkannya sejauh itu, ya... bahu kirimu sudah mulai basah padahal kita baru melangkah tiga langkah."
+            koita "Nggak apa-apa, cuma sampai gerbang depan kok. Jaketku cepat kering."
+            shiori "Begitu. Kamu memang tidak terlalu menghitung kerugian kecil untuk diri sendiri, ya, Amamiya-san."
+            nar "Dari bawah kanopi, kau memperhatikan punggung mereka perlahan menjauh di tengah tirai hujan. Kau sempat menangkap bagaimana Shiori melirik bahu jaket Koita yang mulai gelap tersiram air."
+            nar "Ia jelas menyadari perhatian tulus yang sungguh-sungguh dilakukan di balik gerakan kecil itu—meski dari langkahnya yang tetap teratur dan jarak bahunya yang terjaga, ia belum memberinya arti lebih jauh daripada kebaikan seorang kenalan."
     return
 
 # ┌─ PANDUAN CERITA · S06 · Turnamen Klub Catur

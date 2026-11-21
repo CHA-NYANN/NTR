@@ -13,14 +13,45 @@
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_Y03:
     call kk_scene_enter("yutaka", "Apartemen Yutaka · Julukan lama")
-    nagisa "Yuu-kun! ...Aneh, ya, sekarang memanggil begitu. Dulu kau selalu menoleh duluan kalau aku meneriakkannya. Kau masih ingat?"
-    call kk_family_menu("Y03", ["Jawab natural seolah memang ingat.", "Salah menyebut kenangannya.", "Pura-pura lupa sambil tersenyum."])
+    nar "Sore hari di apartemen mewah milik keluarga Kisaragi itu biasanya terlalu sunyi, tetapi kehadiran Sakurajima Nagisa yang mampir seusai kelas langsung membuat ruang tamu terasa jauh lebih hidup."
+    nar "Kau baru saja keluar dari dapur membawa dua gelas teh dingin ketika melihat gadis bertubuh mungil berambut pirang keemasan twin-tail itu berdiri di dekat rak televisi. Alih-alih langsung duduk di sofa, perhatiannya tertahan pada bingkai foto lama empat sekawan di festival musim panas yang terpajang di sana."
+    nar "Untuk beberapa detik, raut galak dan kompetitif yang biasa ia pasang di kampus menghilang sepenuhnya. Ia memandangi foto masa kecil itu dengan senyum tipis yang lembut—lalu, seolah terseret kenangan lama tanpa sadar, ia menoleh ke arahmu begitu mendengar bunyi gelas diletakkan di atas meja kaca."
+    nagisa "Yuu-kun! ...Eh—"
+    nar "Begitu julukan masa kecil itu keceplosan meluncur dari bibirnya, Nagisa sendiri langsung tersentak. Rona merah tipis naik ke ujung telinganya; ia buru-buru berdeham kecil sambil menyentuh bingkai foto di rak dengan jari telunjuknya, lalu tertawa canggung."
+    nagisa "...Aneh banget, ya, sekarang keceplosan memanggil begitu lagi. Padahal waktu SD dulu, setiap kali aku teriak 'Yuu-kun!' dari ujung gang, kau selalu yang paling pertama menoleh sebelum Koita sempat sadar. Kau masih ingat kan waktu kita hampir ketinggalan kembang api gara-gara nungguin Chiasa beli permen apel?"
+    nar "Mata biru cerah Nagisa menoleh lurus menatapmu, menunggu sahutan. Di dalam kepala, kau tahu persis bahwa tidak ada satu pun ingatan masa kecil Yutaka yang ikut diwariskan kepadamu—yang kaumiliki hanyalah foto di rak itu dan serpihan informasi umum dari manga."
+    call kk_family_menu("Y03", ["\"Mana mungkin lupa, kau kan selalu paling heboh.\"", "\"Ingat dong, waktu kau tersesat di dekat stan ikan mas itu, kan?\"", "\"Wah, jujur saja bagian itu sudah agak kabur di kepalaku.\""])
     if _return == "A":
-        nagisa "Masih ingat rupanya. Aku juga tidak ingat semuanya dengan tepat. Yang kuingat, kita selalu merasa besok bisa main lagi. ...Baguslah kau masih mau menoleh."
+        nar "Kau tidak membiarkan raut wajahmu membeku sedetik pun. Kau bersandar santai di pinggir sofa sambil menyilangkan tangan, lalu menarik sudut bibirmu menjadi senyum tipis yang terasa paling cocok dengan pembawaan santai pemilik tubuh ini."
+        yutaka "Mana mungkin lupa. Kalau aku nggak langsung menoleh waktu kau teriak dulu, nanti kau bakal makin keras teriaknya sampai satu gang keluar semua. Lagipula kalau nggak salah, waktu itu kau sendiri yang paling heboh berebut tempat duduk di dekat tangga kuil, kan?"
+        nar "Kau sengaja memilih detail yang paling sesuai dengan sifat keras kepala Nagisa—cukup masuk akal tanpa harus menebak hal spesifik yang berisiko meleset."
+        nar "Nagisa mengerjap sesaat, lalu tawa ringan yang tulus langsung pecah dari bibirnya. Wajahnya tampak jauh lebih rileks."
+        nagisa "Hei, itu kan supaya kita semua dapat pemandangan kembang api paling jelas! ...Masih ingat rupanya."
+        nar "Ia menunduk kembali memandangi bingkai foto di tangannya dengan tatapan hangat, lalu meletakkannya kembali dengan rapi di atas rak televisi."
+        nagisa "Jujur saja, aku sendiri juga tidak ingat semuanya dengan tepat. Yang paling kuingat cuma rasanya dulu—kita selalu merasa besok masih bisa main bareng lagi tanpa perlu mikir macam-macam."
+        nar "Ia berjalan menghampiri sofa, mengambil salah satu gelas teh dingin dari meja kaca, lalu menatapmu sebentar dengan sorot mata yang tenang."
+        nagisa "...Baguslah kalau sekarang pun kau masih mau menoleh, Yutaka."
+        nar "Di matanya, tidak ada sedikit pun keraguan tersisa. Kau mengangguk pelan sambil meneguk tehmu, menyadari betapa mudahnya satu jawaban tepat menenangkan kecurigaan sahabat masa kecilnya."
     elif _return == "B":
-        nar "Kau menyebut kenangan yang salah. Nagisa sempat tertawa, lalu berhenti ketika sadar kau sungguh mengiranya benar. Ia membetulkan satu nama dengan pelan. Kau mengikuti ceritanya sambil menyadari bahwa masa lalu mereka tidak bisa dipelajari seperti jawaban ujian."
+        nar "Merasa harus membuktikan bahwa kau benar-benar mengingat masa kecil mereka agar tidak dicurigai, kau nekat merangkai satu detail berdasarkan foto festival di rak televisi."
+        yutaka "Tentu saja ingat. Waktu itu kan gara-gara kau sempat tersesat di dekat stan ikan mas sampai Koita harus meminjamkan sandalnya dan kita semua baru ketemu lagi di depan gerbang taman kota, kan?"
+        nar "Nagisa sempat mengeluarkan tawa pendek karena mengira kau sedang sengaja mengarang lelucon untuk menggodanya."
+        nagisa "Haha, apaan sih, ngawur banget—tunggu dulu... kau nggak lagi bercanda ya?"
+        nar "Tawa Nagisa langsung terhenti di tenggorokan begitu ia melihat raut wajahmu yang tetap serius menunggu ia mengiyakan. Alisnya perlahan berkerut dalam."
+        nagisa "Yutaka... yang waktu itu tersesat di festival memang aku, tapi yang menemukan dan menenangkanku kan Chiasa—dan itu di dekat kuil sebelah timur, bukan di gerbang taman kota. Mana pernah juga Koita meminjamkan sandalnya."
+        nar "Suara Nagisa melambat dan turun, nada santainya lenyap sepenuhnya. Ia meletakkan kembali bingkai foto itu ke rak televisi dengan gerakan kaku, lalu menoleh menatapmu lebih lama seolah berusaha memahami bagaimana sahabat sejak TK-nya bisa meleset sejauh itu."
+        yutaka "Ah... maaf. Kayaknya kepalaku mencampuradukkan dua festival yang berbeda."
+        nagisa "...Mungkin. Tapi biasanya kau paling hafal hal-hal begini, bahkan hal yang aku sendiri sudah lupa."
+        nar "Ia duduk di ujung sofa dan mulai menceritakan ulang kejadian sebenarnya dengan nada pelan. Kau hanya bisa mengangguk mengikuti alurnya sambil menyadari satu kenyataan pahit: masa lalu mereka yang bertahun-tahun tidak bisa dipelajari atau ditebak seperti soal ujian."
     else:
-        nagisa "Lupa? Kau biasanya paling berisik mengingatkan hal begitu. ...Ya sudah, nanti kuceritakan. Tapi jangan cuma mengangguk kalau sebenarnya tidak ingat. Aku bisa kesal karena itu."
+        nar "Daripada nekat mengarang detail masa lalu dan berakhir salah sebut, kau memilih bersandar santai di sofa, mengangkat bahu ringan, lalu tersenyum tipis mengejek diri sendiri."
+        yutaka "Wah, jujur saja, bagian yang itu sudah agak kabur di kepalaku. Sudah bertahun-tahun lalu juga kan, Nagisa—akhir-akhir ini kepalaku keburu penuh sama materi Ekonomi."
+        nar "Nagisa langsung memutar badannya menghadapmu dengan mata biru membulat dan bibir mengerucut tidak percaya."
+        nagisa "Hah?! Lupa?! Serius kau bisa lupa?! Padahal biasanya kau yang paling berisik mengungkit kejadian waktu SD cuma buat ngeledek aku kalau kita lagi kumpul!"
+        nar "Ia menatapmu beberapa detik dengan sorot curiga tipis yang bercampur kesal, lalu menghela napas panjang dan menjatuhkan diri duduk di sofa sambil memeluk salah satu bantal."
+        nagisa "...Ya sudah, kalau memang lupa nanti kuceritakan lagi pelan-pelan. Tapi dengar ya, Yutaka—jangan pernah cuma mengangguk-angguk pura-pura paham kalau sebenarnya kau nggak ingat. Aku bisa benar-benar kesal kalau sahabat sendiri cuma iyain aku tanpa benar-benar dengar."
+        yutaka "Iya, maaf. Ceritakan saja lagi nanti."
+        nar "Nagisa mendengus kecil lalu meraih gelas teh dinginnya. Meski ia akhirnya kembali mengobrol tentang jadwal kuliah Arsitekturnya, sesekali matanya masih melirik ke arahmu dari balik gelas dengan kerutan samar di kening—merasa ada sesuatu pada sikapmu hari ini yang tidak sepenuhnya sama."
     return
 
 # ┌─ PANDUAN CERITA · Y04 · Kuliah Ekonomi: Ingatan yang Hilang
@@ -32,18 +63,38 @@ label kkscene_Y03:
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_Y04:
     call kk_scene_enter("yutaka", "Apartemen Yutaka · Kuis dadakan")
-    nar "Pengumuman kuis menyusul kuliah yang sebagian besar tidak kaupahami. Catatan lama Yutaka rapi dan penuh singkatan yang tampaknya cukup untuknya. Bagimu setiap halaman justru membuka pertanyaan baru. Punya kartu mahasiswa bukan berarti mewarisi tahun-tahun yang telah ia pelajari."
+    nar "Malam turun sunyi di apartemen Kisaragi yang luas. Hanya cahaya lampu meja belajar yang menyala, menyoroti tumpukan buku teks tebal dan map binder rapi yang terhampar di atas meja kayu gelap di hadapanmu."
+    nar "Siang tadi, dosen mata kuliah inti mengumumkan kuis dadakan untuk besok pagi—menutup rangkaian kuliah beberapa minggu terakhir yang sebagian besar hanya lewat di telingamu seperti bahasa asing."
+    nar "Kau membalik halaman demi halaman catatan lama milik Kisaragi Yutaka. Tulisannya bersih, terstruktur, dan penuh singkatan istilah serta kurva perhitungan yang tampaknya sudah lebih dari cukup untuk pemilik tubuh ini. Namun bagimu, setiap halaman yang kaubuka justru melahirkan tiga pertanyaan baru yang tidak tahu harus dijawab dari mana."
+    nar "Kau menyandarkan punggung ke kursi, mengusap wajah pelan sambil menatap kartu mahasiswa di sudut meja. Punya kartu mahasiswa, apartemen mewah, dan nama belakang yang dikenal dosen sama sekali tidak berarti kau mewarisi dua tahun ilmu yang pernah ia pelajari."
+    nar "Jam dinding sudah melewati pukul sembilan malam. Besok pagi lembar kuis akan tetap diletakkan di depan mejamu, peduli setan siapa sebenarnya yang sedang duduk di balik tubuh ini."
     $ _rows = [(c, Return(k), False) for k,c in zip("ABCD", ["Belajar semalaman mengejar ketertinggalan.", "Menyontek saat kuis.", "Jujur ke dosen soal kesulitanmu.", "Minta bantuan Daichi."])]
     call screen kk_choice_panel(_rows, "Pilihan")
     $ kk_record_choice("Y04", _return)
     if _return == "A":
-        nar "Kau menghabiskan malam mengejar dasar yang hilang. Ada soal yang akhirnya masuk akal, ada halaman yang tetap membingungkan. Saat berangkat, kau membawa pengetahuan yang terbatas tetapi milikmu sendiri. Nilai nanti akan mengukur pekerjaan malam ini, bukan reputasi orang yang namanya tertulis di lembar jawaban."
+        nar "Kau menarik napas panjang, beranjak ke dapur untuk menyeduh segelas kopi hitam pekat, lalu kembali duduk dan membuka buku pengantar dari bab paling dasar."
+        nar "Malam itu berjalan lambat ditemani goresan pensil, halaman buku yang dibalik bolak-balik, dan rumus-rumus yang harus kaubongkar ulang satu per satu tanpa jalan pintas. Beberapa konsep akhirnya mulai masuk akal menjelang pukul dua pagi; beberapa halaman lainnya tetap keras kepala membingungkan tidak peduli berapa kali kaubaca ulang."
+        nar "Ketika cahaya pucat fajar mulai menyelinap di sela tirai jendela apartemen, matamu terasa perih dan bahumu kaku. Namun saat kau mengemasi tas dan melangkah keluar menuju kampus, kau membawa pengetahuan yang terbatas—tetapi sepenuhnya milikmu sendiri."
+        nar "Nilai yang keluar nanti akan mengukur kerja kerasmu malam ini, bukan reputasi orang lain yang namanya tercetak di atas lembar jawaban."
     elif _return == "B":
-        nar "Kau menyontek. Kelegaan ketika jawaban terisi segera berubah menjadi takut saat pengawas berhenti di dekat mejamu. Di akhir kuis, lembar yang dikumpulkan bukan lagi sekadar hasil yang tidak kaumengerti: ada pelanggaran yang dapat menuntut pertanggungjawabanmu, dan kekayaan keluarga tidak menghapusnya."
+        nar "Melihat tumpukan bab yang mustahil kaukuasai dalam satu malam, kau mengambil jalan pintas. Kau menuliskan ringkasan rumus-rumus kunci dengan huruf sangat kecil di secarik kertas lipat yang kauselipkan di saku kemeja sebelum berangkat ke kelas."
+        nar "Saat kuis dimulai di ruang kuliah yang sunyi, jantungmu berdetak keras setiap kali kertas kecil itu kauintip cepat di bawah tepi meja. Kelegaan singkat ketika baris demi baris jawaban akhirnya terisi mendadak berubah menjadi dingin yang menusuk tengkuk saat langkah sepatu pengawas berhenti tepat di samping mejamu selama beberapa detik yang terasa seperti selamanya."
+        nar "Ia memang tidak langsung menegurmu di tempat dan hanya melanjutkan langkah ke barisan belakang—tetapi tatapan sekilasnya sebelum beranjak sudah cukup membuat tanganmu nyaris kaku sampai bel waktu selesai berbunyi."
+        nar "Saat lembar jawaban akhirnya dikumpulkan, kau sadar yang tergeletak di tumpukan depan bukan lagi sekadar materi yang tidak kaumengerti: ada pelanggaran nyata yang sewaktu-waktu bisa menuntut pertanggungjawabanmu, dan kekayaan keluarga Kisaragi tidak akan menghapusnya."
     elif _return == "C":
-        nar "Kau menemui dosen dan mengakui ada bagian dasar yang tertinggal. Ia tidak menjanjikan nilai aman, tetapi memberi kesempatan membahas kesulitan itu dan pekerjaan susulan yang harus kaujalani. Ditanya apa yang benar-benar kaupahami terasa memalukan; setidaknya kini kau tahu apa yang harus dipelajari."
+        nar "Alih-alih nekat menebak membabi buta atau mengambil risiko curang, keesokan paginya kau datang lebih awal dan menemui dosen mata kuliah tersebut langsung di ruangannya sebelum kuis dimulai."
+        yutaka "Permisi, Pak. Saya ingin bicara jujur sebelum kuis hari ini—ada beberapa bagian dasar dari materi beberapa minggu terakhir yang benar-benar tertinggal dan belum saya pahami dengan benar."
+        nar "Dosen itu sempat mengerutkan kening keheranan melirik daftar nilai lama atas nama Kisaragi Yutaka, lalu melepas kacamatanya dan menatapmu lurus-lurus. Ia tidak menjanjikan nilai aman ataupun kemudahan khusus; sebaliknya, ia langsung menanyakan bagian mana tepatnya yang benar-benar kau mengerti sekarang."
+        nar "Menjawab pertanyaan itu dengan jujur terasa cukup memalukan untuk seorang mahasiswa tahun kedua. Namun setelah mendengarkan jawabanmu tanpa menyela, dosen itu menuliskan daftar bacaan dasar serta tugas susulan yang harus kaukerjakan jika ingin mengejar ketertinggalan."
+        nar "Kau keluar dari ruangan itu dengan napas lega yang agak perih—setidaknya kini kau tidak lagi berpura-pura tahu, dan kau tahu persis dari mana harus mulai belajar."
     else:
-        "Daichi" "Tumben minta tolong soal kuliah. Boleh. Kita mulai dari bagian yang membuatmu tersesat, bukan dari soal terakhir. Makan siangnya belakangan saja; mukamu sudah seperti orang mau sidang."
+        nar "Menyadari membaca catatan singkatan Yutaka sendirian hanya akan membuatmu berputar di tempat, kau mengambil ponsel dan mengirim pesan singkat kepada Daichi, teman sekelasmu yang paling paham ritme dosen ini."
+        nar "Setengah jam kemudian, Daichi sudah duduk di ruang makan apartemenmu sambil meletakkan dua bungkus roti minimarket dan buku catatannya yang penuh tanda panah warna-warni. Ia menatap wajahmu yang kusut lalu mendengus geli."
+        "Daichi" "Wah, tumben banget seorang Kisaragi Yutaka minta tolong soal kuliah. Biasanya kau cuma tidur di barisan belakang tapi pas ujian nilaimu tetap aman."
+        yutaka "Jangan mulai mengejek dulu. Kali ini aku beneran mentok dari bab awalnya."
+        "Daichi" "Haha, oke, oke—boleh. Kita mulai dari bagian yang bikin kau tersesat, bukan dari soal terakhir. Makan siangnya belakangan saja; mukamu sudah kayak orang mau sidang."
+        nar "Sepanjang dua jam berikutnya, Daichi membongkar ulang konsep-konsep dasar itu dengan bahasa manusia biasa yang jauh lebih mudah dicerna daripada singkatan kaku di buku Yutaka."
+        nar "Tidak ada pertanyaan aneh darinya soal kenapa kau mendadak lupa materi dasar—hanya seorang teman sekelas yang sabar mengulang penjelasan sampai kau akhirnya benar-benar mengangguk paham."
     return
 
 # ┌─ PANDUAN CERITA · Y06 · Daichi Membocorkan
@@ -201,6 +252,7 @@ label kkscene_Y15:
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_Y16:
     call kk_scene_enter("yutaka", "Rumah Amamiya · Kembang api dan Chiasa")
+    play sound "audio/sfx/fireworks.wav"
     nar "Chiasa berdiri di sebelahmu ketika kembang api pertama menyala. Ia tidak sibuk mencari Koita di antara kerumunan. Di sela suara ledakan, percakapan kalian terputus lalu disambung dengan tawa kecil. Kau bertanya dalam hati apakah kedekatan ini masih ingin kausimpan sebagai kemungkinan yang tidak pernah dinamai."
     call kk_family_menu("Y16", ["Mengaku pada Chiasa.", "Bergandengan tangan tanpa kata.", "Menjaga jarak."])
     if _return == "A":

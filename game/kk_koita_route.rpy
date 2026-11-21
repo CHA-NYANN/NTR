@@ -14,32 +14,79 @@
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_K04:
     call kk_scene_enter("koita", "Gedung Sastra · Di bawah kembang api")
-    nar "Kilatan kembang api tiba lebih dahulu daripada bunyinya. Koita memandang langit, tetapi pertanyaannya tidak mengikuti apa yang sedang kalian lihat."
-    koita "Kalau kamu jadi aku, kamu akan memilih siapa?"
-    nar "Ia buru-buru tertawa ketika kau menoleh."
-    koita "Aneh, ya. Aku tahu itu nggak bisa diserahkan ke orang. Cuma kamu kelihatan lebih paham apa yang terjadi daripada aku."
+    play sound "audio/sfx/fireworks.wav"
+    if kk_host == "chiasa":
+        nar "Kilatan emas dan merah tua mekar di langit malam jauh lebih dahulu daripada dentuman gemanya yang menggetarkan dada. Kalian berdua berdiri agak terpisah dari kerumunan utama di tepi pagar batu yang agak tinggi, tempat suara riuh stan festival mereda menjadi dengung samar di kejauhan."
+        nar "Di sebelahmu, Amamiya Koita menengadah memandangi bunga api yang perlahan gugur menjadi percikan kecil di atas atap gedung kampus. Cahaya warna-warni itu menerangi wajahnya yang tenang—tetapi ketika ia akhirnya membuka suara di sela jeda dua ledakan, pertanyaannya sama sekali tidak mengikuti apa yang sedang kalian lihat di langit."
+        koita "Chi-chan... kalau kamu jadi aku, kamu akan memilih siapa?"
+        nar "Kau menoleh perlahan ke arahnya. Begitu mata kalian bertemu di bawah kilatan cahaya biru dari langit, Koita buru-buru mengeluarkan tawa pendek yang terdengar terlalu ringan untuk pertanyaan seberat itu."
+        koita "Haha—aneh banget ya aku nanya begitu. Aku tahu kok hal kayak gini nggak bisa diserahkan ke orang lain. Cuma... akhir-akhir ini kamu kelihatan jauh lebih tenang dan lebih paham apa yang sebenarnya terjadi di sekitar kita daripada aku sendiri."
+        nar "Ia kembali menatap ke depan, kedua tangannya bertumpu di pagar batu yang dingin. Di balik senyum kecilnya yang masih terpasang, ada keraguan nyata dari seseorang yang selama ini terlalu terbiasa menunda setiap pilihan."
+    else:
+        nar "Kilatan kembang api tiba lebih dahulu daripada bunyinya. Koita memandang langit, tetapi pertanyaannya tidak mengikuti apa yang sedang kalian lihat."
+        koita "Kalau kamu jadi aku, kamu akan memilih siapa?"
+        nar "Ia buru-buru tertawa ketika kau menoleh."
+        koita "Aneh, ya. Aku tahu itu nggak bisa diserahkan ke orang. Cuma kamu kelihatan lebih paham apa yang terjadi daripada aku."
     $ _rows = [(c, Return(k), False) for k,c in zip("ABCD", ["Jawab jujur siapa yang menurutmu tepat.", "Beri jawaban yang bukan pendapat sebenarnya.", "Balik bertanya siapa yang ia inginkan.", "Sebut namamu sendiri."])]
     call screen kk_choice_panel(_rows, "Di bawah kembang api")
     $ kk_record_choice("K04", _return)
     if _return == "A":
-        nar "Kau memberikan pendapatmu, termasuk alasan mengapa hubungan itu bisa menyulitkannya. Koita mendengar tanpa segera menyebut nama lain."
-        koita "Aku pikir kamu akan pilih yang paling gampang bagiku. Ternyata kamu mempertimbangkan dia juga."
-        nar "Ia menatap langit lagi."
-        koita "Makasih. Aku akan pikirkan. Bukan berarti nanti aku bisa bilang keputusan ini salahmu kalau gagal."
+        if kk_host == "chiasa":
+            nar "Kau menatap langit sebentar sebelum menjawab dengan jujur—menyebutkan tipe orang yang menurutmu paling tepat untuknya, lengkap dengan alasan mengapa hubungan itu tidak akan selalu mudah dan justru akan menuntut Koita untuk belajar jujur serta berhenti lari dari keputusan."
+            nar "Koita mendengarkan dari awal sampai akhir tanpa menyela, dan yang paling mengejutkan, tanpa buru-buru menyebut nama orang lain untuk menyeimbangkan pembicaraan."
+            koita "...Aku tadinya mengira kamu bakal menunjuk pilihan yang paling gampang dan paling aman buatku, Chi-chan. Ternyata kamu mempertimbangkan perasaannya juga, bukan cuma nyamanku."
+            chiasa "Kalau Ko-nii cuma cari yang paling gampang, nanti ujung-ujungnya malah nyakitin dua-duanya."
+            nar "Ia mengangguk pelan lalu kembali menengadah menatap kembang api perak yang mekar lebar di atas sana."
+            koita "Makasih sudah jawab serius. Aku bakal pikirkan baik-baik. Tenang saja—bukan berarti nanti kalau gagal aku bakal menyalahkanmu karena ini keputusanku sendiri."
+            nar "Untuk malam ini, di bawah gema kembang api, ia tampak satu langkah lebih dekat untuk memandang perasaan orang lain sebagai sesuatu yang nyata, bukan sekadar kehangatan yang boleh digantung."
+        else:
+            nar "Kau memberikan pendapatmu, termasuk alasan mengapa hubungan itu bisa menyulitkannya. Koita mendengar tanpa segera menyebut nama lain."
+            koita "Aku pikir kamu akan pilih yang paling gampang bagiku. Ternyata kamu mempertimbangkan dia juga."
+            nar "Ia menatap langit lagi."
+            koita "Makasih. Aku akan pikirkan. Bukan berarti nanti aku bisa bilang keputusan ini salahmu kalau gagal."
     elif _return == "B":
-        nar "Kau memberi jawaban yang bukan pendapatmu. Koita menerimanya dengan serius, mengajukan pertanyaan yang membuatmu harus menambahkan alasan yang juga tidak sungguh kaupercaya."
-        koita "Aku nggak pernah melihatnya dari situ."
-        nar "Kepercayaannya membuat kebohongan itu terasa lebih panjang daripada satu nama. Kini ada kemungkinan ia akan datang kepada seseorang dengan keberanian yang kauarahkan ke tempat yang salah."
+        if kk_host == "chiasa":
+            nar "Alih-alih memberikan pendapatmu yang sebenarnya, kau memilih satu jawaban yang sengaja kauarahkan—jawaban yang bukan sungguh kaupercaya tepat untuknya, namun terdengar cukup masuk akal untuk menggeser arah pikirannya."
+            nar "Koita tidak menertawakannya ataupun menebak bahwa kau sedang bermain peran. Sebaliknya, ia justru menerimanya dengan keseriusan yang tak terduga, memutar badannya menghadapmu penuh sambil bertanya lebih dalam."
+            koita "Oh... kamu beneran mikir begitu? Kenapa menurutmu dia yang paling cocok buatku, Chi-chan?"
+            nar "Pertanyaan susulan itu memaksamu menyusun satu demi satu alasan tambahan yang sama sekali tidak kauyakini—kata-kata yang meluncur mulus dari bibirmu di bawah suara dentuman kembang api."
+            koita "...Aku nggak pernah melihatnya dari sudut pandang itu. Pantas saja aku selalu bingung sendiri selama ini."
+            nar "Melihat betapa sungguh-sungguh ia menyimpan kalimatmu, kebohongan itu mendadak terasa jauh lebih panjang daripada sekadar satu nama. Kini ada kemungkinan nyata ia akan melangkah menghampiri seseorang dengan keberanian yang baru saja kauarahkan ke tempat yang keliru."
+        else:
+            nar "Kau memberi jawaban yang bukan pendapatmu. Koita menerimanya dengan serius, mengajukan pertanyaan yang membuatmu harus menambahkan alasan yang juga tidak sungguh kaupercaya."
+            koita "Aku nggak pernah melihatnya dari situ."
+            nar "Kepercayaannya membuat kebohongan itu terasa lebih panjang daripada satu nama. Kini ada kemungkinan ia akan datang kepada seseorang dengan keberanian yang kauarahkan ke tempat yang salah."
     elif _return == "C":
-        nar "Kau mengembalikan pertanyaan itu kepadanya. Koita membuka mulut, lalu menutupnya ketika jawaban yang biasa dipakai terasa terlalu mudah."
-        koita "Aku ingin nggak kehilangan siapa-siapa. Itu bukan jawaban yang sama, ya."
-        nar "Ledakan berikutnya membuat kalian diam sejenak."
-        koita "Ada orang yang bahkan nggak pernah kumasukkan ke daftar kemungkinan. Mungkin karena terlalu takut kalau memikirkannya akan mengubah segalanya."
+        if kk_host == "chiasa":
+            nar "Kau tidak memberinya nama siapa pun. Kau menoleh penuh ke arahnya dan mengembalikan pertanyaan itu tepat ke hadapannya."
+            chiasa "Kenapa malah tanya aku, Ko-nii? Yang bakal menjalaninya kan kamu—sebenarnya siapa yang kamu inginkan?"
+            nar "Mulut Koita sempat terbuka hendak menjawab secara otomatis, tetapi kalimat ringan yang biasa ia pakai untuk menghindar mendadak terasa terlalu murahan di bawah langit malam ini. Ia menutup mulutnya lagi, menunduk menatap tangannya di pagar batu."
+            koita "...Aku cuma ingin nggak kehilangan siapa-siapa. Tapi itu bukan jawaban yang sama, ya."
+            nar "Ledakan kembang api berikutnya bergema keras di kejauhan, membuat kalian berdua terdiam selama beberapa detik sementara cahaya kuning keemasan menyapu wajahnya."
+            koita "Sebenarnya... ada orang yang bahkan nggak pernah berani kumasukkan ke daftar kemungkinan, Chi-chan. Mungkin karena aku terlalu takut—kalau aku mulai memikirkannya serius, semuanya yang sudah nyaman selama ini bakal berubah total."
+            nar "Ia tidak menyebut nama siapa yang ia maksud, tetapi nada suaranya yang rendah dan jujur menyisakan gema yang jauh lebih lama daripada suara kembang api di atas kepala kalian."
+        else:
+            nar "Kau mengembalikan pertanyaan itu kepadanya. Koita membuka mulut, lalu menutupnya ketika jawaban yang biasa dipakai terasa terlalu mudah."
+            koita "Aku ingin nggak kehilangan siapa-siapa. Itu bukan jawaban yang sama, ya."
+            nar "Ledakan berikutnya membuat kalian diam sejenak."
+            koita "Ada orang yang bahkan nggak pernah kumasukkan ke daftar kemungkinan. Mungkin karena terlalu takut kalau memikirkannya akan mengubah segalanya."
     else:
-        nar "Kau menyebut namamu sendiri. Koita melihatmu tepat ketika cahaya di langit memudar; sesaat wajahnya terbuka tanpa bantuan lelucon."
-        koita "Kamu?"
-        nar "Ia tidak menertawakannya. Tidak pula memanggilmu dengan sebutan akrab yang bisa mengembalikan percakapan ke tempat aman."
-        koita "Aku belum tahu harus jawab apa. Tapi aku dengar. Aku nggak akan pura-pura kamu nggak pernah mengatakannya."
+        if kk_host == "chiasa":
+            nar "Kau tidak mengalihkan pandangan dari wajahnya. Tepat ketika kilatan kembang api di langit mulai memudar menjadi asap tipis dan keheningan turun selama dua detik, kau menjawab dengan suara yang tenang, jelas, dan tidak memberi ruang untuk dianggap candaan."
+            chiasa "Kalau aku jadi Ko-nii? Aku pilih aku."
+            nar "Koita langsung menoleh ke arahmu. Dalam sisa cahaya redup yang memudar di langit, seluruh raut santai dan senyum refleks yang biasa melindungi wajahnya lenyap tanpa bekas."
+            koita "...Kamu?"
+            nar "Ia tidak menertawakannya seperti setiap kali Chiasa dulu menggodanya di meja makan. Ia juga tidak memanggilmu 'Chi-chan' untuk mengembalikan percakapan ini ke wilayah aman antara kakak dan adik tiri."
+            nar "Jarak di antara kalian di tepi pagar batu mendadak terasa jauh lebih sempit daripada semenit lalu. Koita menatap matamu lurus-lurus, dadanya naik turun pelan menarik napas."
+            koita "Aku... aku belum tahu harus jawab apa sekarang. Jujur, kepalaku langsung kosong. Tapi aku dengar jelas apa yang barusan kamu bilang."
+            chiasa "Aku nggak minta jawaban malam ini kok, Ko-nii."
+            koita "Iya... dan aku nggak akan pura-pura kamu nggak pernah mengatakannya."
+            nar "Dentuman kembang api terakhir mekar di atas sana, tetapi tidak satu pun dari kalian yang kembali menengadah ke langit—karena batas aman di antara kalian berdua baru saja bergeser untuk selamanya."
+        else:
+            nar "Kau menyebut namamu sendiri. Koita melihatmu tepat ketika cahaya di langit memudar; sesaat wajahnya terbuka tanpa bantuan lelucon."
+            koita "Kamu?"
+            nar "Ia tidak menertawakannya. Tidak pula memanggilmu dengan sebutan akrab yang bisa mengembalikan percakapan ke tempat aman."
+            koita "Aku belum tahu harus jawab apa. Tapi aku dengar. Aku nggak akan pura-pura kamu nggak pernah mengatakannya."
     return
 
 # ┌─ PANDUAN CERITA · K05 · Malam di Dapur Vila

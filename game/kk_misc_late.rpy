@@ -9,6 +9,7 @@
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_S10:
     call kk_scene_enter("shiori", "Klub Catur · Hujan deras")
+    play sound "audio/sfx/rain.wav"
     nar "Kuroiwa menunggu di dekat mobil dengan payung besar. Shiori berhenti sebelum masuk ketika melihatmu memperhitungkan apakah tas dapat dijadikan pelindung dari hujan."
     shiori "Kamu boleh ikut diantar. Bukan ujian tentang kemandirian, hanya kursi yang masih kosong. Kalau lebih nyaman pulang sendiri, aku juga tidak tersinggung."
     menu:
@@ -36,6 +37,7 @@ label kkscene_N20:
     nar "Ia melepaskan lenganmu sesudah mengatakan itu. Kesungguhan gerakan kecil tersebut lebih jelas daripada kalimat yang masih terdengar ketus."
     call kk_family_menu("N20", ["Ikut dengannya menjauh dari keramaian.", "Tolak dan tetap di keramaian.", "Ajak ia bicara alih-alih pergi."])
     if _return == "A":
+        play sound "audio/sfx/fireworks.wav"
         nar "Kau ikut. Kalian menemukan tempat di mana ledakan masih terdengar utuh dan orang lain tidak cukup dekat untuk mendengar setiap kata."
         nagisa "Terima kasih. Aku tahu harus belajar bisa sendiri. Tapi malam ini aku senang kamu mau."
         nar "Ia tidak langsung meminta janji tentang festival berikutnya. Untuk beberapa menit, kebersamaan boleh berhenti sebagai sesuatu yang sedang terjadi."
@@ -46,6 +48,7 @@ label kkscene_N20:
     else:
         nar "Kau mengajaknya bicara di tempat kalian berdiri, menanyakan mengapa perlu membawa kalian menjauh. Nagisa hendak marah, lalu mengakui ia ingin merasa punya waktumu tanpa bersaing dengan wajah lain."
         nagisa "Aku tahu itu mulai terdengar seperti harus selalu dipilih. Aku nggak mau jadi orang yang cuma bisa tenang kalau yang lain hilang."
+        play sound "audio/sfx/fireworks.wav"
         nar "Kembang api terakhir membuat kalian berhenti. Sesudahnya, pembicaraan yang belum selesai tetap boleh dilanjutkan."
     return
 

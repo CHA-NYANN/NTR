@@ -42,6 +42,7 @@ label kkscene_H_D03:
     call screen kk_choice_panel(_rows, "Pintu lab jam sebelas")
     $ kk_record_choice("H-D03", _return)
     if _return == "A":
+        play sound "audio/sfx/door_knock.wav"
         nar "Kau mengetuk dan menanyakan Harumi. Ogawa membuka pintu dengan senyum yang segera membicarakan kesibukan riset."
         harumi "Aku mendengar ketukan. Aku ingin keluar sebentar."
         nar "Ia mengatakan itu sebelum diberi penjelasan mengapa sebaiknya tetap tinggal. Kehadiranmu membuat jeda yang tadi tidak berani ia minta menjadi mungkin."

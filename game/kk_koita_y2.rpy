@@ -10,6 +10,7 @@
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_K12:
     call kk_scene_enter("koita", "Kansai · Panggilan dari Koita")
+    play sound "audio/sfx/phone_vibrate.wav"
     nar "Nama Koita muncul lagi ketika kereta di Kansai memasuki stasiun. Tiga panggilan terlewat memenuhi layar; yang keempat bergetar di tanganmu sebelum kau selesai membaca pesan sebelumnya."
     koita "Kamu dengar? Di sana berisik sekali. Katanya nggak ada acara minggu ini. Kalian pergi?"
     nar "Ia tertawa pendek, lalu bertanya siapa saja yang ikut. Nama pertama terdengar santai. Pada nama berikutnya, ia mulai menunggu jawaban lebih lama."
