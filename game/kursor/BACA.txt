@@ -1,0 +1,9 @@
+KOUSEIKAN - Kursor Jari Tengah
+
+diam.png: gambar diam (128x128, transparan)
+klik_01.png s.d. klik_06.png: 6 frame animasi goyang (128x128, transparan)
+preview_goyang.gif: pratinjau bergerak otomatis (6 frame, 140 ms/frame)
+spritesheet_3x2.png: gabungan 6 frame, 3 kolom x 2 baris
+
+Catatan: GIF berulang otomatis. Untuk membuat animasi hanya muncul ketika klik, gunakan frame PNG dan logika interaksi mouse di Ren'Py.
+Titik aktif yang disarankan untuk gambar diam: sekitar (57,17) pada ukuran 128x128 (ujung jari).
