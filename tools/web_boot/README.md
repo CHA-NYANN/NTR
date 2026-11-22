@@ -14,7 +14,7 @@ Ren'Py membuat ulang index.html ketika export. Tool ini memasang ulang shell ke 
 
 Tool mempertahankan game.zip, vendor engine, service worker, manifest, input native, dan impor/ekspor save. Gambar presplash lama tidak lagi dimuat; file lama tidak dihapus. IndexedDB/save pemain tidak diubah. Bila proses export atau engine berubah, uji hook DOM dan first-frame handoff lagi.
 
-Logo `assets/studio-logo.jpg` adalah JPEG asli pemilik proyek, tanpa perubahan piksel. Bagian bantal dan tiga huruf ditampilkan lewat SVG clipping untuk animasi. Font Tinos Italic dan Nunito mengikuti aset yang sudah digunakan proyek.
+Logo `assets/studio-logo.jpg` adalah JPEG asli pemilik proyek, tanpa perubahan piksel. Bantal muncul dulu, lalu ekornya memantul dan terus bergoyang selama ketiga huruf Z muncul bergantian. SVG clipping memisahkan bantal, ekor, dan huruf dari gambar asli. Font Tinos Italic dan Nunito mengikuti aset yang sudah digunakan proyek.
 
 Pemeriksaan kontrak JavaScript (Node 18+):
 

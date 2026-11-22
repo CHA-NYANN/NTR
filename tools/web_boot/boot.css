@@ -30,8 +30,15 @@ body.kk-is-booting{overflow:hidden}
 .kk-studio{position:absolute;inset:0;width:100%;height:100%;border:0;padding:0;background:#fff;display:grid;place-items:center;cursor:pointer;transition:opacity .6s ease,visibility .6s;z-index:2}
 .kk-studio:focus-visible{outline:3px solid #bb8eaf;outline-offset:-12px}
 .kk-studio-logo{width:min(66vw,620px);height:auto;overflow:visible}
-.kk-pillow{transform-origin:400px 660px;animation:kk-pillow 2.5s both}
-.kk-z{animation:kk-logo-letter 1.1s both}.kk-z-one{animation-delay:.28s}.kk-z-two{animation-delay:.44s}.kk-z-three{animation-delay:.6s}
+.kk-pillow{transform-origin:385px 660px;animation:kk-pillow .46s ease-out both}
+.kk-tail{
+  transform-origin:365px 718px;
+  animation:kk-tail-pop .58s .58s both,kk-tail-wag .42s 1.16s 3;
+}
+.kk-z{animation:kk-logo-letter .48s both}
+.kk-z-one{transform-origin:703px 625px;animation-delay:1.19s}
+.kk-z-two{transform-origin:868px 648px;animation-delay:1.49s}
+.kk-z-three{transform-origin:1014px 648px;animation-delay:1.79s}
 .kk-boot[data-state="loading"] .kk-studio,.kk-boot[data-state="error"] .kk-studio{opacity:0;visibility:hidden;pointer-events:none}
 .kk-boot[data-state="studio"] .kk-loading{visibility:hidden}
 .kk-error{margin-top:20px;padding-top:15px;border-top:1px solid #d8bfcf}.kk-error p{font-size:14px;font-weight:700;margin:0 0 12px}.kk-error button{border:1px solid #a585ae;border-radius:5px;background:#665174;color:#fff4fb;padding:9px 20px;font:inherit;font-size:13px;cursor:pointer}.kk-error details{margin-top:13px;font-size:11px;max-height:160px;overflow:auto}.kk-error summary{cursor:pointer}.kk-error pre{white-space:pre-wrap;word-break:break-word;color:#76546e}
@@ -41,9 +48,30 @@ body.kk-is-booting:not(.kk-boot-error) #statusDiv{visibility:hidden!important;op
 #statusProgress{accent-color:#c592bd}
 #ContextContainer{z-index:70;left:12px!important;top:12px!important}#ContextContainer.shown{background:#261f35e8!important;border:1px solid #bd98c34d;border-radius:12px!important}#ContextButton{display:block!important;font-size:23px!important;padding:7px 12px!important;color:#f2e7f3!important}#ContextMenu a{background:#30243eea!important;border:1px solid #a68bb14d!important;font:13px KouseikanBody,system-ui,sans-serif;color:#f4e4f4!important;margin:5px 9px!important}
 #inputDiv{z-index:1200;box-sizing:border-box;top:30%!important;width:min(640px,92vw)!important;min-width:0!important;background:#fff3f5f5!important;color:#35233f;border:1px solid #c9a3c5;border-radius:10px!important;padding:16px 25px 24px!important}#inputPrompt,#inputText{color:#35233f!important;font-family:KouseikanBody,system-ui,sans-serif}#inputText{box-sizing:border-box;border:1px solid #ae8cb4;border-radius:4px;background:#fff9ff!important}
-@keyframes kk-pillow{0%{opacity:0;transform:translateY(10px) scale(.96)}25%{opacity:1;transform:translateY(0) scale(1)}56%{transform:translateY(-2px) scale(1.018,1.025)}85%,100%{opacity:1;transform:translateY(0) scale(1)}}
-@keyframes kk-logo-letter{0%{opacity:0;transform:translateY(13px)}75%,100%{opacity:1;transform:translateY(0)}}
+@keyframes kk-pillow{
+  0%{opacity:0;transform:translateY(10px) scale(.95,.91)}
+  74%{opacity:1;transform:translateY(-2px) scale(1.02,1.025)}
+  100%{opacity:1;transform:none}
+}
+@keyframes kk-tail-pop{
+  0%{opacity:0;transform:rotate(-13deg) scale(.33,.12)}
+  18%{opacity:1}
+  38%{transform:rotate(13deg) scale(1.04,1.23)}
+  63%{transform:rotate(-10deg) scale(.97,.86)}
+  83%{transform:rotate(7deg) scale(1.02,1.09)}
+  100%{opacity:1;transform:none}
+}
+@keyframes kk-tail-wag{
+  0%,100%{transform:none}
+  25%{transform:rotate(-10deg) scaleY(.94)}
+  75%{transform:rotate(10deg) scaleY(1.06)}
+}
+@keyframes kk-logo-letter{
+  0%{opacity:0;transform:translateY(19px) scale(.91)}
+  72%{opacity:1;transform:translateY(-3px) scale(1.02)}
+  100%{opacity:1;transform:none}
+}
 @keyframes kk-travel{from{left:2%}to{left:98%}}@keyframes kk-twinkle{50%{opacity:.15;transform:scale(.8)}}
 @media(max-width:600px){.kk-paper{width:90vw;padding:46px 35px 35px 57px;min-height:330px}.kk-scrap-back{width:89vw;height:325px;transform:translate(5px,15px) rotate(-4deg)}.kk-eyebrow{font-size:8px;letter-spacing:.23em}.kk-paper h1{font-size:clamp(46px,12vw,70px)}.kk-holes{left:17px;top:92px}.kk-holes i{width:7px;height:7px}.kk-title-flower{font-size:25px;right:-19px}.kk-caption{font-size:14px}.kk-progress-meta{font-size:10px;gap:9px}.kk-tape{left:15px;width:96px;height:30px}.kk-spark-one{left:7%;top:17%}.kk-spark-two{right:5%;bottom:14%}.kk-studio-logo{width:84vw}.kk-campus{height:15vh}}
 @media(max-height:480px){.kk-paper{min-height:0;width:min(84vw,610px);padding:29px 48px 25px 68px}.kk-scrap-back{height:250px;width:min(82vw,600px)}.kk-eyebrow{margin-bottom:7px;font-size:8px}.kk-paper h1{font-size:57px}.kk-title-rule{margin:5px 0 14px}.kk-caption{margin-bottom:15px;font-size:13px}.kk-holes{top:61px;gap:18px}.kk-progress-meta{margin-top:11px;font-size:10px}.kk-tape{height:25px;width:90px;top:0}.kk-studio-logo{width:min(57vw,550px)}.kk-campus{height:12vh}}
-@media(prefers-reduced-motion:reduce){.kk-pillow,.kk-z,.kk-spark,.kk-progress-star{animation:none!important;opacity:1;transform:none}.kk-studio,.kk-boot,.kk-progress>span,.kk-progress-star{transition:none!important}.kk-progress.is-indeterminate .kk-progress-star{left:50%}}
+@media(prefers-reduced-motion:reduce){.kk-pillow,.kk-tail,.kk-z,.kk-spark,.kk-progress-star{animation:none!important;opacity:1;transform:none}.kk-studio,.kk-boot,.kk-progress>span,.kk-progress-star{transition:none!important}.kk-progress.is-indeterminate .kk-progress-star{left:50%}}

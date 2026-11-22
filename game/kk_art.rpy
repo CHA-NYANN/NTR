@@ -8,14 +8,56 @@
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_C05:
     call kk_scene_enter("chiasa", "Rumah Amamiya")
-    nar "Nama Mio muncul tepat ketika kau sedang mencari alasan untuk menutup buku sketsa. Editor itu menyapamu sebagai Shena, hangat dan tanpa keraguan. Ia membicarakan jilid berikutnya, tokoh yang akan muncul di sampul, dan kesan sunyi yang dulu berhasil kautangkap. Semua pujian itu ditujukan kepada tangan yang sedang kaupakai, tetapi bukan kepada kemampuanmu."
-    call kk_family_menu("C05", ["Ucapkan terima kasih dan tolak dengan halus.", "Ambil proyeknya dan siapkan waktu untuk berlatih.", "Katakan kau perlu mendiskusikannya dengan Haruka."])
+    nar "Di atas meja belajar kamarmu, buku sketsa bersampul hitam milik Chiasa masih terbuka di halaman latihan anatomi tangan yang belum selesai. Beberapa lembar kertas buram yang penuh goresan kaku hasil latihanmu sendiri tergeletak di samping penghapus uli."
+    nar "Baru saja kamu meletakkan pensil mekanik dan hendak merenggangkan jari-jarimu yang pegal, ponsel di dekat tabung kuas bergetar panjang di atas permukaan meja kayu."
+    play sound "audio/sfx/phone_vibrate.wav"
+    nar "Layar ponsel menyala menampilkan nama pemanggil 'Higashiyama Mio (Redaksi Bunko)'."
+    nar "Kamu menatap nama itu selama dua dering penuh. Selama beberapa bulan terakhir, kiriman royalti cetak ulang sebesar lima puluh ribu yen dari penerbit selalu masuk otomatis ke rekening tanpa menuntut gambar baru. Panggilan telepon langsung di siang hari jelas bukan sekadar pemberitahuan transfer bank."
+    nar "Kamu menarik napas pendek, menggeser tombol hijau di layar, lalu menempelkan ponsel ke telinga."
+    chiasa "Halo, selamat siang, Mio-san."
+    "Mio" "Halo, Shena-sensei! Syukurlah langsung diangkat, aku takut tadi masih di dalam ruang studio kampus. Gimana kuliah semester pertamanya di Kouseikan? Sudah mulai terbiasa sama tugas-tugas jurusan seni?"
+    nar "Suara Mio di seberang telepon terdengar cerah, cepat, dan akrab seperti seorang editor yang sudah bekerja sama dengan pemilik tubuh ini sejak bangku SMA."
+    chiasa "Sudah mulai terbiasa kok, Mio-san. Dosen-dosennya juga baik, cuma jam praktiknya aja yang lumayan panjang."
+    "Mio" "Haha, anak seni rupa memang begitu semua keluhannya. Oh iya, Sensei, aku menelepon hari ini karena ada kabar bagus banget dari rapat redaksi pagi tadi. Naskah jilid keempat seri novel strategi yang Sensei pegang kemarin akhirnya sudah selesai ditulis!"
+    chiasa "Jilid keempat... sudah selesai naskahnya ya, Mio-san?"
+    "Mio" "Iya! Penulisnya kemarin malam baru kirim draf finalnya ke mejaku. Terus terang aja, hasil cetakan ulang jilid ketiga kemarin laris banget di toko buku, dan banyak pembaca yang nulis di kartu pos survei kalau mereka jatuh cinta sama ilustrasi sampul buatan Sensei."
+    chiasa "Wah... syukurlah kalau pembaca suka."
+    "Mio" "Apalagi cara Sensei menggambar sorot mata tokoh utamanya waktu berdiri di benteng salju itu, lho. Garisnya tipis tapi suasananya dingin dan hidup banget. Makanya kepala redaksi langsung minta aku hubungi Sensei hari ini buat mengamankan jadwal ilustrasi sampul sekaligus tiga gambar sisipan hitam-putih untuk jilid keempat."
+    nar "Pandanganmu turun menatap kertas latihan di meja belajarmu sendiri. Lingkaran proporsi wajah dan garis jari yang baru saja kamu buat sepuluh menit lalu tampak kaku dan patah-patah, terpisah jauh sekali dari goresan halus di cetakan sampul novel yang dipajang di rak buku kamar ini."
+    "Mio" "Untuk tenggat pengumpulannya masih sekitar dua bulan lagi sih sebelum naik cetak. Gimana menurut Sensei, jadwal kuliah bulan ini memungkinkan nggak buat ambil proyek jilid keempat?"
+    nar "Di seberang sambungan, terdengar bunyi klik pulpen Mio yang sudah siap mencatat jawabanmu di buku agendanya."
+    call kk_family_menu("C05", ["\"Terima kasih banyak tawarannya, Mio-san, tapi untuk jilid baru ini kayaknya aku belum bisa ambil dulu.\"", "\"Baik, Mio-san, aku ambil proyeknya. Boleh minta tenggat sketsa kasarnya agak longgar?\"", "\"Boleh aku minta waktu sebentar? Ada teman studio yang pengin kuajak diskusi dulu.\""])
     if _return == "A":
-        nar "Kau berterima kasih dan menolak pekerjaan baru. Mio terdiam, lalu menanyakan apakah kau perlu jeda lebih panjang. Tidak ada ancaman untuk mencabut royalti karya lama. Ketika telepon ditutup, kau merasakan kehilangan yang aneh: melepaskan kesempatan milik orang lain tetap terasa seperti gagal menjadi seseorang."
+        chiasa "Terima kasih banyak tawarannya, Mio-san. Aku senang banget dengar jilid sebelumnya laris. Tapi jujur aja, untuk jilid keempat ini kayaknya aku belum bisa ambil proyeknya dulu."
+        nar "Bunyi ketukan pulpen di seberang telepon langsung berhenti. Terdengar jeda hening selama dua detik sebelum Mio kembali bersuara dengan nada hati-hati."
+        "Mio" "Eh... belum bisa ambil ya, Shena-sensei? Jadwal tugas studio di kampus lagi padat banget ya bulan ini?"
+        chiasa "Iya, Mio-san. Tugas dasar semester awal ini banyak yang harus dikerjakan manual tiap sore, dan aku takut kalau kupaksakan ambil jadwal sampul sekarang, hasilnya malah nggak maksimal dan mengecewakan penulisnya."
+        "Mio" "...Begitu ya. Jujur aja sayang banget sih, soalnya penulisnya sudah berharap Sensei lagi yang pegang jilid ini. Tapi kalau memang jadwal kuliah tahun pertama lagi berat, aku nggak mungkin maksa Sensei begadang sampai sakit."
+        chiasa "Maaf banget ya, Mio-san, jadi bikin tim redaksi harus repot cari ilustrator pengganti buat jilid ini."
+        "Mio" "Nggak apa-apa, Sensei, bagian cari jadwal pengganti itu memang kerjaanku sebagai editor kok. Yang penting Sensei beresin dulu adaptasi kuliahnya di kampus. Oh iya, tenang aja, untuk royalti cetak ulang dari jilid satu sampai tiga tetap ditransfer tiap bulan seperti biasa ya, hak ciptanya kan tetap di tangan Sensei."
+        chiasa "Terima kasih banyak pengertiannya, Mio-san."
+        "Mio" "Sama-sama. Nanti kalau jadwal studio kampus sudah lebih longgar dan Sensei sudah siap pegang proyek buku lagi, langsung hubungi nomor pribadiku aja ya!"
+        nar "Sambungan telepon terputus. Kamu meletakkan ponsel kembali ke samping tabung kuas dan menutup buku sketsa hitam itu perlahan, mengamankan penyamaranmu dari tenggat penerbit setidaknya untuk musim ini."
     elif _return == "B":
-        nar "Kau menerima. Mio terdengar lega, dan kelegaannya membuat janji itu semakin berat. Sesudah telepon ditutup, kau membuka halaman latihan, bukan contoh sampul. Kau harus memulai dari garis yang sanggup kautarik hari ini, meskipun orang di ujung telepon mengira ia baru berbicara dengan ilustrator berpengalaman."
+        chiasa "Baik, Mio-san, aku ambil proyek jilid keempatnya. Cuma karena sore hari aku masih ada jadwal kelas studio di kampus, boleh aku minta tenggat buat pengiriman sketsa kasarnya agak dilonggarkan sedikit?"
+        nar "Terdengar helaan napas lega yang panjang dari seberang telepon, disusul bunyi lembaran kertas agenda yang dibalik cepat."
+        "Mio" "Wah, syukurlah Sensei bersedia! Kalau soal jadwal sketsa kasar, tentu aja bisa kugeser mundur dua minggu dari jadwal standar, Sensei. Bagian tata letak sampul biar kukosongkan duluan di percetakan."
+        chiasa "Kalau ada waktu tambahan dua minggu untuk sketsa awal, harusnya cukup kok, Mio-san."
+        "Mio" "Sip, sudah kucatat di jadwal redaksi! Nanti malam sekitar jam tujuh kukirimkan ringkasan bab penting jilid keempat beserta catatan adegan untuk tiga ilustrasi sisipannya lewat surel ya. Sensei baca-baca santai aja dulu sambil cari ide komposisinya."
+        chiasa "Baik, nanti malam langsung kuperiksa surelnya. Terima kasih ya, Mio-san."
+        "Mio" "Aku dan tim redaksi yang berterima kasih, Shena-sensei! Sampai ketemu di kiriman draf pertama ya, semangat kuliahnya!"
+        nar "Begitu panggilan berakhir, kamar yang tadinya tenang mendadak terasa jauh lebih sempit. Di layar ponselmu, pesan konfirmasi jadwal dari Mio langsung masuk hanya berselang satu menit."
+        nar "Kamu menyingkirkan kertas buram yang tadi penuh coretan ragu, menarik satu lembar kertas gambar baru dari laci meja, lalu membuka halaman-halaman lama buku sketsa Chiasa sebagai acuan. Dengan pensil mekanik di tangan, kamu mulai melatih ulang tarikan garis anatomi dan lipatan pakaian satu per satu dari dasar."
     else:
-        nar "Kau meminta waktu untuk membicarakannya dengan Haruka. Mio setuju menunggu kepastian; ia belum menganggap pekerjaan itu selesai hanya karena namamu tercantum. Dalam pesan kepada Haruka, kau menulis bahwa ada hal yang tidak bisa lagi kauberesi sendirian. Kali ini bantuan harus berarti lebih dari seseorang yang menyembunyikan kekuranganmu."
+        chiasa "Terima kasih banyak tawarannya, Mio-san. Tapi sebelum aku kasih kepastian sanggup atau nggaknya, boleh aku minta waktu satu atau dua hari dulu? Kebetulan ada teman dekat di studio kampus yang mau kuajak diskusi soal pembagian waktu latihan sama jadwal tugasku bulan ini."
+        "Mio" "Oh, mau mencocokkan jadwal sama teman studio dulu ya? Boleh banget kok, Shena-sensei. Rapat penetapan kontrak ilustratornya baru dikunci hari Jumat sore, jadi Sensei masih punya waktu buat hitung jadwal dengan tenang."
+        chiasa "Syukurlah kalau masih sempat. Sebelum hari Jumat pasti langsung kukabari keputusannya, Mio-san."
+        "Mio" "Oke, kutunggu kabarnya ya, Sensei. Jangan terlalu diporsir tenaganya di kampus!"
+        nar "Setelah menutup telepon dari Mio, kamu tidak meletakkan ponselmu. Kamu membuka aplikasi pesan singkat dan mencari nama kontak Ishikawa Haruka yang sejak awal semester selalu duduk satu meja studio denganmu."
+        nar "Kamu mengetik pesan dengan jujur tanpa berusaha terdengar seperti ilustrator mahir, menanyakan apakah besok sore sehabis kelas praktik studio Haruka langsung pulang dan apakah ia bersedia mengajarimu proporsi serta tarikan garis dasar dari awal."
+        play sound "audio/sfx/phone_buzz.wav"
+        nar "Kurang dari satu menit kemudian, ponsel di tanganmu bergetar oleh balasan antusias dari Haruka yang heran kamu tiba-tiba minta diajari gambar dasar, tetapi ia langsung mengiyakan dan mengajakmu memakai meja pojok studio sampai jam tutup besok."
+        nar "Kamu menyimpan ponsel ke atas meja dan menyiapkan buku sketsa kosong ke dalam tas kuliahmu untuk latihan besok sore."
     return
 
 # ┌─ PANDUAN CERITA · C09 · Buku Sketsa Kosong

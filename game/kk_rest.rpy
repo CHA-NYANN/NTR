@@ -7,7 +7,7 @@ default kk_rest_debt_minutes = 0
 label kk_rest_home:
     $ _sleep_rows = [(caption, Return(length), False) for caption,length in (("Pejamkan mata sebentar · 20 menit",20),("Pasang alarm · 90 menit",90),("Tidur enam jam",360),("Tidur delapan jam",480),("Tidur panjang · sepuluh jam",600))]
     $ _sleep_rows += [("Atur ponsel · " + kk_phone_mode.capitalize(), Return("phone"), False), ("Kembali", Return(None), False)]
-    call screen kk_choice_panel(_sleep_rows, "Berapa lama kau ingin tidur?")
+    call screen kk_choice_panel(_sleep_rows, "Berapa lama kamu ingin beristirahat?")
     if _return is None:
         return
     if _return == "phone":
@@ -15,11 +15,11 @@ label kk_rest_home:
         jump kk_rest_home
     $ _wake_contact = kk_sleep(_return)
     if _wake_contact:
-        nar "Bunyi ponsel menarik perhatianmu."
+        nar "Getaran dan bunyi notifikasi ponsel di samping tempat tidur menarik kesadaranmu bangun."
         $ _wake_scene = next(label for cid, eid, label in kk_incoming_messages() if cid == _wake_contact)
         call expression _wake_scene
     else:
-        nar "Kau membuka mata di kamarmu."
+        call kk_play_lines(kk_wake_lines())
     return
 
 label kk_bedside_phone:

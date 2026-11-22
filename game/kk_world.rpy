@@ -266,13 +266,13 @@ init -4 python:
 
     KK_ACTS = {
         "makan":   {"label": "Makan", "desc": "¥800 · lapar hilang, energi naik", "ok": _ok_makan,
-                    "fn": _fn_makan, "done": "Kau makan. Perutmu tenang.", "fail": "Saldo tidak cukup untuk makan di sini."},
+                    "fn": _fn_makan, "done": "Kamu menyantap makanan hangat hingga perutmu kembali tenang dan tenagamu pulih.", "fail": "Saldo tidak cukup untuk makan di sini."},
         "kerja":   {"label": "Kerja paruh waktu", "desc": "+¥3.000 · menguras energi", "ok": lambda: True,
-                    "fn": _fn_kerja, "done": "Shift selesai. ¥3.000 masuk ke saldomu.", "fail": ""},
+                    "fn": _fn_kerja, "done": "Jam kerja paruh waktu selesai. Tubuhmu terasa pegal, dan ¥3.000 masuk ke saldomu.", "fail": ""},
         "belajar": {"label": "Belajar", "desc": "energi turun · nilai akademik naik", "ok": lambda: True,
-                    "fn": _fn_belajar, "done": "Kau belajar beberapa jam. Kepalamu penuh.", "fail": ""},
+                    "fn": _fn_belajar, "done": "Kamu belajar beberapa jam penuh sambil merapikan catatan. Kepalamu terasa berat, tetapi pemahamanmu bertambah.", "fail": ""},
         "santai":  {"label": "Bersantai", "desc": "energi naik · stres turun", "ok": lambda: True,
-                    "fn": _fn_santai, "done": "Kau duduk sebentar, membiarkan waktu lewat.", "fail": ""},
+                    "fn": _fn_santai, "done": "Kamu duduk menghela napas sejenak, membiarkan waktu berjalan pelan sampai pikiranmu kembali jernih.", "fail": ""},
     }
     KK_ACT_BY_LOC = {
         "Kantin Pusat": ["makan"], "Restoran": ["makan"], "Kafe Komorebi": ["makan", "kerja"],
@@ -308,7 +308,7 @@ screen kk_world_district():
         xpos kk_margin ypos 150 spacing 10
         $ mt = kk_month_tuple()
         text (kk_hari + " · " + str(kk_hari_n) + " " + mt[1]) style "kk_caption"
-        text "Ke mana kau pergi?" style "kk_heading"
+        text "Ke mana kamu pergi?" style "kk_heading"
         text ("Hari ke-" + str(kk_hari_n) + " · " + KK_SLOTS[kk_slot] + ". Berpindah distrik memakan waktu.") style "kk_caption"
         null height 10
         for did, dnama, locs in KK_DISTRICTS:
@@ -407,7 +407,7 @@ screen kk_location_view(distrik, lokasi):
                                 add Solid(kk_line) xysize (10, 44) yalign .5
                                 text meta["nama"] size 25 bold True yalign .5
                 else:
-                    text "Tidak ada orang yang kau kenal di sini sekarang." style "kk_caption"
+                    text "Tidak ada orang yang kamu kenal di sini sekarang." style "kk_caption"
             vbox:
                 spacing 10
                 text "YANG BISA KAU LAKUKAN" size 20 color kk_dim font kk_mono
@@ -459,8 +459,11 @@ label kk_world_loop:
     if _r[0] == "skip":
         $ kk_skip_week()
         scene black with fade
+        call kk_scene_enter(kk_host, kk_hari + " · " + str(kk_hari_n) + " " + kk_month_tuple()[1])
+        call kk_play_lines(kk_weekly_lines())
         $ _mt = kk_month_tuple()
-        nar "Rutinitasmu berlanjut. [kk_hari], [kk_hari_n] [_mt[1]]."
+        nar "Kini memasuki [kk_hari], [kk_hari_n] [_mt[1]]."
+        hide screen kk_set
         jump kk_world_loop
     $ _distrik = _r[1]
     $ kk_minutes(60)
@@ -517,7 +520,8 @@ label kk_location_view_loop:
         $ kk_minutes(60)
         if kk_onsen_dates():
             $ _distrik = "onsen"
-            nar "Kau menyusul rombongan ke penginapan."
+            call kk_scene_enter(kk_host, "Perjalanan menuju penginapan onsen")
+            call kk_play_lines(KK_ONSEN_TRAVEL["to_onsen"])
             jump kk_loc_list
         nar "Kesempatan untuk menyusul rombongan sudah berlalu."
         jump kk_location_view_loop
@@ -550,7 +554,8 @@ label kk_trip_return:
     $ _distrik = "d5"
     $ _lokasi = "Stasiun Kouseikan-mae"
     $ kk_minutes(60)
-    nar "Kau kembali ke stasiun Kouseikan."
+    call kk_scene_enter(kk_host, "Perjalanan pulang · Stasiun Kouseikan-mae")
+    call kk_play_lines(KK_ONSEN_TRAVEL["from_onsen"])
     jump kk_location_view_loop
 
 label kk_do_talk(distrik, lokasi, cid):
@@ -558,7 +563,8 @@ label kk_do_talk(distrik, lokasi, cid):
         return
     $ known = cid in kk_last_met
     if kk_keep_promise(cid, lokasi):
-        nar "Kau datang seperti yang kalian janjikan."
+        call kk_scene_enter(cid, KK_DISTRICT_NAME[distrik] + " · " + lokasi)
+        call kk_play_lines(KK_DAILY_KEEP_PROMISE.get((cid, kk_host), [("nar", "Kamu datang sesuai janji kalian kemarin.")]))
     $ kk_contact(cid)
     $ _p = kk_pending_talk(cid, distrik, lokasi)
     if _p:
@@ -571,7 +577,8 @@ label kk_do_talk(distrik, lokasi, cid):
         call kk_social_scene(kk_social_event(cid, lokasi))
         return
     elif cid == "nagisa" and kk_has("nagisa_koita_ditolak") and not kk_has("heard_reply"):
-        nagisa "Dia bilang kita teman masa kecil. Seperti itu saja."
+        call kk_scene_enter("nagisa", KK_DISTRICT_NAME[distrik] + " · " + lokasi)
+        call kk_play_lines(KK_NAGISA_HEARD_REPLY[kk_host])
         $ kk_flag("heard_reply")
     else:
         call kk_generic_talk(cid, KK_DISTRICT_NAME[distrik] + " · " + lokasi, known)
@@ -579,7 +586,7 @@ label kk_do_talk(distrik, lokasi, cid):
     $ kk_advance()
     return
 
-# Obrolan ringan tanpa event: beberapa kata, tanpa pilihan abstrak.
+# Obrolan ringan tanpa event: pertemuan harian utuh dengan cerita mini per karakter & host.
 # Sekadar hadir & bicara menumbuhkan kedekatan sedikit, diam-diam.
 label kk_generic_talk(cid, loc, known=True):
     $ _name = KK_CHARS[cid]["nama"]
@@ -587,38 +594,66 @@ label kk_generic_talk(cid, loc, known=True):
     $ fresh = not kk_has(_key)
     $ kk_flag(_key)
     call kk_scene_enter(cid, loc)
+    $ _loc_desc = KK_LOC_DESC.get(_lokasi)
+    $ _slot_desc = KK_SLOT_MOOD.get(kk_slot, "")
+    if _loc_desc and _slot_desc:
+        nar "[_loc_desc] [_slot_desc]"
+    elif _loc_desc:
+        nar "[_loc_desc]"
     $ _after = kk_afterglow(cid)
-    $ renpy.say(getattr(store, cid), _after or "Oh, kau. Sedang apa di sini?")
+    if _after:
+        $ renpy.say(getattr(store, cid), _after)
+        $ _ag_rep = KK_DAILY_AFTERGLOW_REPLY.get((cid, kk_host))
+        if _ag_rep:
+            $ renpy.say(getattr(store, _ag_rep[0]), _ag_rep[1])
+    elif not known and (cid, kk_host) in KK_DAILY_OPEN_FIRST:
+        call kk_play_lines(KK_DAILY_OPEN_FIRST[(cid, kk_host)])
+    elif (cid, kk_host) in KK_DAILY_OPEN:
+        call kk_play_lines(kk_daily_pick(cid, KK_DAILY_OPEN[(cid, kk_host)]))
+    else:
+        $ renpy.say(getattr(store, cid), "Kebetulan sekali bertemu di sini. Kamu lagi senggang?")
     menu:
         "Buka kembali soal yang kalian baca bersama." if cid == "harumi" and any(c["ev"] == "H01" and c["key"] == "A" for c in choices_log):
-            harumi "Mari kita periksa dari langkah pertama."
+            call kk_play_lines(KK_DAILY_H01[kk_host])
             if fresh:
                 $ kk_rel("harumi", "trust", 1)
             $ kk_minutes(10)
         "Tanyakan bagaimana harinya." if known:
+            if (cid, kk_host) in KK_DAILY_CHAT:
+                call kk_play_lines(kk_daily_chat_lines(cid, kk_host))
+            else:
+                nar "Kalian duduk sebentar bertukar kabar tentang kegiatan kuliah masing-masing."
             if fresh:
                 $ kk_rel(cid, "trust", 1)
             $ kk_minutes(10)
         "Janjikan bertemu lagi di sini besok pada waktu yang sama." if fresh and cid not in kk_promises:
             $ kk_make_promise(cid, _lokasi)
             $ kk_minutes(1)
-            nar "Kalian sepakat bertemu lagi besok."
+            if (cid, kk_host) in KK_DAILY_PROMISE:
+                call kk_play_lines(KK_DAILY_PROMISE[(cid, kk_host)])
+            else:
+                nar "Kalian sepakat untuk bertemu lagi di tempat ini besok pada waktu yang sama."
         "Balas sapaannya lalu pamit.":
+            if (cid, kk_host) in KK_DAILY_BYE:
+                call kk_play_lines(KK_DAILY_BYE[(cid, kk_host)])
+            else:
+                nar "Kamu membalas sapaannya singkat lalu berpamitan melanjutkan langkahmu."
             if fresh:
                 $ kk_rel(cid, "aff", 2)
             $ kk_minutes(5)
         "Bawakan makanan untuk Miyuki." if cid == "miyuki" and saldo >= 800:
             $ kk_post_money(-800, "Makanan untuk Miyuki")
+            call kk_play_lines(KK_DAILY_MIYUKI_FOOD[kk_host])
             if fresh:
                 $ kk_adj("dimanja_miyuki",4)
                 $ kk_adj("kelelahan_miyuki",-8)
             $ kk_minutes(60)
         "Puji pastry yang ia bawa." if cid == "miyuki" and _lokasi == "Kafe Komorebi" and kk_hari == "Sabtu":
             $ kk_flag("puji_pastry")
+            call kk_play_lines(KK_DAILY_MIYUKI_PASTRY[kk_host])
             if fresh:
                 $ kk_rel(cid,"aff",2)
             $ kk_minutes(2)
-    nar "Kalian bertukar beberapa kata ringan. Setelah itu ia kembali ke kegiatannya."
     return
 
 label kk_do_activity(lokasi, actid):
@@ -629,7 +664,7 @@ label kk_do_activity(lokasi, actid):
     call kk_scene_enter(kk_host, lokasi)
     $ a["fn"]()
     $ kk_advance(1)   # (2) aktivitas memakan waktu
-    nar "[a['done']]"
+    call kk_play_lines(kk_act_lines(actid, lokasi))
     return
 
 # Beat sinematis masuk adegan (reuse latar kk_set milik sistem visual bersama).
@@ -663,6 +698,6 @@ init -4 python:
         "Perpustakaan Pusat": "Sepi dan dingin. Beberapa mahasiswa tertidur di meja sendiri.",
         "Kantin Pusat": "Jam makan selalu padat. Koita biasanya ada di salah satu meja.",
         "Rumah Sakit Tachibana": "Bau antiseptik dan lampu neon. Koridor mahasiswa kedokteran di ujung lorong.",
-        "Rumah Amamiya": "Rumah tempatmu — atau tempat yang harus kau anggap rumah sekarang.",
+        "Rumah Amamiya": "Rumah tempatmu tinggal sekarang, lengkap dengan kehangatan keluarga yang masih terasa asing.",
         "Klub Catur": "Jam dinding berdetak. Papan-papan tertata rapi menunggu lawan.",
     }

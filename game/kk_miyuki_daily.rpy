@@ -3,15 +3,15 @@
 # Besar kenaikan cemburu Nagisa (+5) adalah setelan prototipe.
 init 1 python:
     KK_AFTERGLOW = (
-        ("pudding_ditemani", "miyuki", "Soal puding malam itu. Terima kasih sudah duduk menemaniku. Aku tidak biasa meminta, dan ternyata tidak seburuk yang kukira."),
-        ("pudding_diantar", "miyuki", "Pudingnya sampai dengan baik. Terima kasih sudah repot, walau hanya sebentar."),
-        ("pudding_ditolak", "miyuki", "Soal puding itu, tidak apa-apa. Aku memang tidak seharusnya meminta selarut itu."),
-        ("pudding_ditertawakan", "miyuki", "Aku masih ingat balasanmu malam itu. Lain kali aku akan berpikir dua kali sebelum meminta apa pun."),
-        ("telepon_diabaikan", "miyuki", "Kau pasti mendengar telepon Ibu malam itu. Terima kasih sudah tidak membahasnya, walau aku tahu kau mendengarnya."),
-        ("telepon_ditanya", "miyuki", "Terima kasih sudah bertanya setelah telepon itu, bukan saat Ibu masih bicara. Aku sedang mencari kata-katanya."),
-        ("kenal_sayuri", "miyuki", "Ibu bilang kau sopan sekali di telepon. Sejak itu beliau agak lebih tenang soal aku. Sedikit saja."),
-        ("koita_mencatat_pastry", "koita", "Pastry dengan namamu kemarin. Aku cuma memperhatikan. Miyuki kelihatannya bersungguh-sungguh."),
-        ("nagisa_lihat_pastry", "nagisa", "Pastry itu ada namamu, kan? Aku cuma kebetulan lewat. Jangan salah paham."),
+        ("pudding_ditemani", "miyuki", "Soal puding malam itu, terima kasih banyak sudah duduk menemaniku ya. Aku memang jarang meminta tolong, dan ternyata rasanya nggak seburuk yang kubayangkan."),
+        ("pudding_diantar", "miyuki", "Pudingnya kemarin enak sekali. Terima kasih ya sudah repot-repot mengantarkannya walau cuma sebentar."),
+        ("pudding_ditolak", "miyuki", "Soal pesan puding malam itu, nggak apa-apa kok. Aku memang nggak seharusnya meminta hal seperti itu selarut itu."),
+        ("pudding_ditertawakan", "miyuki", "Aku masih ingat balasanmu malam itu. Lain kali aku akan berpikir dua kali sebelum merepotkanmu dengan permintaan apa pun."),
+        ("telepon_diabaikan", "miyuki", "Kamu pasti dengar suara telepon Ibu malam itu. Terima kasih sudah nggak membahasnya, walau aku tahu kamu mendengarnya."),
+        ("telepon_ditanya", "miyuki", "Terima kasih sudah menunggu sampai telepon Ibu selesai baru bertanya. Waktu itu aku memang masih mencari kata-kata yang pas."),
+        ("kenal_sayuri", "miyuki", "Ibu bilang kamu sopan sekali waktu bicara di telepon kemarin. Sejak itu beliau kelihatan agak lebih tenang soal aku. Sedikit saja sih."),
+        ("koita_mencatat_pastry", "koita", "Pastry yang ada namamu kemarin itu... aku cuma sempat memperhatikan. Tachibana-senpai kelihatannya sungguh-sungguh banget waktu bikinnya."),
+        ("nagisa_lihat_pastry", "nagisa", "Pastry kemarin itu beneran ada namamu kan? Aku cuma kebetulan lihat waktu lewat kok, jangan salah paham!"),
     )
 
     def kk_afterglow(cid):
@@ -83,22 +83,100 @@ label kk_overheard_call:
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_Mi11:
     call kk_scene_enter("miyuki","Kafe Komorebi")
-    nar "Kotak kue ketiga membuat meja Komorebi nyaris tak punya tempat untuk minuman. Miyuki menyebutnya salah hitung, tetapi semua porsinya rapi, seolah sejak awal ia sudah membayangkan akan ada banyak orang yang memerlukan dirinya."
-    miyuki "Tinggal satu loyang. Kalau kubawa pulang, Sena pasti tanya aku sebenarnya membuat untuk berapa orang. Aku juga belum punya jawaban yang bagus."
-    nar "Ia mengambil pisau lagi sebelum sempat mencicipi satu potong."
-    call kk_family_menu("Mi11", ["Tarik kursi dan makan bersamanya.", "Bantu bagikan kue selagi masih hangat.", "Minta satu kue khusus untukmu."])
-    if _return == "A":
-        nar "Kau menarik kursi dan menyiapkan piring untuknya juga. Miyuki semula memilih potongan paling rapi untukmu, lalu berhenti ketika kau menanyakan yang ia inginkan sendiri."
-        miyuki "Pinggirnya. Yang agak kecokelatan. Biasanya bagian itu kusimpan terakhir."
-        nar "Kalian makan sebelum ia beranjak membagikan yang lain. Ia menilai hasilnya dengan gembira kecil yang sempat hilang di antara kesibukan melayani."
-    elif _return == "B":
-        nar "Kau membantu menawarkan kue ke meja yang bersedia menerima. Tidak semua orang mau; kau mengatakan tidak apa-apa tanpa meminta Miyuki membuat rasa lain."
-        miyuki "Aku selalu mengira kalau ada yang menolak, berarti aku harus membetulkan sesuatu."
-        nar "Ia akhirnya duduk dan makan bagiannya. Menolak satu potong kue ternyata tidak harus berarti menolak orang yang membuatnya."
+    if kk_host == "chiasa":
+        nar "Kafe Komorebi di pertengahan Februari terasa hangat oleh aroma kopi sangrai dan wangi manis kue cokelat panggang yang baru dibuka dari kotak. Di meja pojok dekat jendela, di hadapan Tachibana Miyuki sudah berjajar tiga kotak kue ukuran besar hingga cangkir tehnya sendiri hampir tidak kebagian tempat di permukaan meja kayu."
+        nar "Di balik meja konter, pemilik kafe, Ito Shinji, hanya melirik sekilas sambil mengelap gelas dengan senyum tenang yang sudah sangat hafal dengan kebiasaan pelanggan tetapnya ini. Kamu menghampiri meja pojok sambil membawa tasmu dan melirik tumpukan kotak kue tersebut dengan mata melebar."
+        chiasa "Tachibana-senpai, ini beneran Senpai panggang sendiri semuanya? Meja Komorebi sampai penuh begini."
+        nar "Miyuki tertawa kecil sambil merapikan tumpukan piring kertas dan serbet yang ikut ia bawa dari apartemen."
+        miyuki "Ara, ketahuan ya, Chiasa-chan. Tadi di apartemen aku salah hitung takaran adonan waktu mulai memanggang, jadinya malah dapat tiga loyang sekaligus. Dua kotak tadi sebagian sudah kubagi ke teman sekelas sama perawat jaga di klinik, tinggal satu loyang besar ini."
+        nar "Ia menyebutnya salah hitung takaran. Namun setiap potongannya di dalam kotak sudah diiris seragam dan dihias krim cokelat dengan rapi, seolah sejak awal memanggang ia sudah membayangkan akan ada sangat banyak orang yang membutuhkannya hari ini."
+        miyuki "Kalau loyang terakhir ini kubawa pulang lagi ke apartemen, Sena pasti langsung menginterogasi aku sebenarnya bikin kue buat berapa puluh orang. Masalahnya, aku sendiri juga belum punya jawaban yang bagus buat Sena."
+        nar "Baru saja selesai bicara, Miyuki sudah kembali meraih pisau kue untuk memotong barisan berikutnya agar siap dibagikan. Di depan kursinya sendiri bahkan belum ada satu piring pun, dan ia sama sekali belum mencicipi secuil pun kue buatannya sendiri."
     else:
-        nar "Kau meminta satu yang ia pilih khusus untukmu. Miyuki menahan senyum, berpura-pura memeriksa seluruh loyang dengan sangat serius."
-        miyuki "Kalau khusus, ada syarat. Makan denganku. Jangan cuma dibawa pergi lalu bilang enak lewat pesan."
-        nar "Ia mengambil potongan yang lapisannya paling utuh dan satu lagi untuk dirinya. Kali ini ia berani meminta bagian kecil dari waktumu sebagai keinginan, bukan menyamarkannya sebagai pelayanan."
+        nar "Kafe Komorebi di pertengahan Februari terasa hangat oleh aroma kopi sangrai dan wangi manis kue cokelat panggang yang baru dibuka dari kotak. Di meja pojok dekat jendela, di hadapan Tachibana Miyuki berjajar tiga kotak kue ukuran besar hingga cangkir tehnya sendiri hampir tidak kebagian ruang di permukaan meja kayu."
+        nar "Di balik meja konter, pemilik kafe, Ito Shinji, melirik sekilas sambil mengelap gelas dengan senyum tenang yang sudah sangat hafal dengan kebiasaan pelanggan tetapnya ini. Kamu melangkah menghampiri meja pojok sambil menaruh tasmu di kursi kosong dan menatap tumpukan kotak kue itu dengan alis terangkat."
+        yutaka "Tachibana-senpai, ini beneran Senpai panggang sendiri semuanya? Meja Komorebi sampai penuh begini, cangkir kopiku nanti ditaruh di mana?"
+        nar "Miyuki tertawa kecil sambil merapikan tumpukan piring kertas dan serbet yang ikut ia bawa dari apartemen."
+        miyuki "Ara, ketahuan ya, Yutaka-kun. Tadi di apartemen aku salah hitung takaran adonan waktu mulai memanggang, jadinya malah dapat tiga loyang sekaligus. Dua kotak tadi sebagian sudah kubagi ke teman sekelas sama perawat jaga di klinik, tinggal satu loyang besar ini."
+        nar "Ia menyebutnya salah hitung takaran. Namun setiap potongannya di dalam kotak sudah diiris seragam dan dihias krim cokelat dengan rapi, seolah sejak awal memanggang ia sudah membayangkan akan ada sangat banyak orang yang membutuhkannya hari ini."
+        miyuki "Kalau loyang terakhir ini kubawa pulang lagi ke apartemen, Sena pasti langsung nanya aku sebenarnya bikin kue buat berapa puluh orang. Masalahnya, aku sendiri juga belum punya jawaban yang bagus buat Sena."
+        nar "Baru saja selesai bicara, Miyuki sudah kembali meraih pisau kue untuk memotong barisan berikutnya agar siap dibagikan. Di depan kursinya sendiri bahkan belum ada satu piring pun, dan ia sama sekali belum mencicipi secuil pun kue buatannya sendiri."
+    call kk_family_menu("Mi11", ["\"Taruh dulu pisaunya, Senpai. Duduk sini, kita makan kuenya bareng dulu.\"", "\"Sini aku bantu tawarin ke meja-meja sebelah mumpung kuenya masih hangat.\"", "\"Aku nggak mau potongan sisa bagi-bagi. Pilih satu potongan khusus buatku dong, Senpai.\""])
+    if _return == "A":
+        if kk_host == "chiasa":
+            chiasa "Taruh dulu pisaunya, Tachibana-senpai. Sebelum Senpai sibuk mikirin mau kasih ke siapa lagi, duduk dulu di sini. Kita makan kuenya bareng sekarang, Senpai sendiri kan belum nyicipin sama sekali dari tadi."
+            nar "Kamu menarik kursi di sebelahnya lalu mengambil dua piring kecil dan dua garpu kue dari nampan yang tadi disiapkan Ito Shinji. Miyuki sempat terdiam kaget mendengar ajakanmu, lalu tersenyum lembut dan segera mengambil satu potongan bagian tengah yang paling rapi dan utuh untuk ditaruh di piringmu."
+            miyuki "Nah, ini buat Chiasa-chan. Bagian tengahnya paling lembut."
+            chiasa "Terus buat Senpai sendiri mau potongan yang mana? Jangan bilang nanti aja ya."
+            nar "Gerakan tangan Miyuki yang tadi sudah hendak meletakkan pisau kue terhenti. Ia mengerjap pelan menatap loyang di depannya, seolah sudah lama sekali tidak ada yang menanyakan potongan mana yang paling ia inginkan sendiri."
+            miyuki "Kalau buatku sendiri... sebenarnya aku paling suka bagian pinggirnya, Chiasa-chan. Yang pinggirannya agak kering dan kecokelatan kena panas loyang."
+            chiasa "Lho, kirain Senpai suka bagian tengah yang banyak krimnya."
+            miyuki "Justru bagian pinggir itu wanginya paling keluar. Biasanya bagian itu selalu kusimpan paling terakhir setelah semua orang selesai makan, soalnya bentuknya kurang rapi kalau dikasih ke orang lain."
+            chiasa "Kalau gitu hari ini bagian pinggirnya dimakan duluan ya, Senpai. Sini piringnya."
+            nar "Kamu memotong bagian sudut yang kecokelatan itu, memindahkannya ke piring Miyuki, lalu menyodorkan garpu ke tangannya. Kalian duduk berdampingan menikmati kue bersama sebelum ia memikirkan tamu atau teman lainnya. Begitu gigitan pertama masuk ke mulutnya, senyum senang yang ringan muncul di wajah Miyuki, dan ia mulai bercerita antusias tentang bagaimana ia mencoba mengganti jenis bubuk kakao supaya rasa manisnya cocok diminum bersama teh hitam."
+        else:
+            yutaka "Taruh dulu pisaunya, Tachibana-senpai. Sebelum Senpai sibuk mikirin mau kasih ke siapa lagi, duduk dulu di sini. Kita makan kuenya bareng sekarang, Senpai sendiri kan belum nyicipin sama sekali dari tadi."
+            nar "Kamu menarik kursi di seberangnya lalu mengambil dua piring kecil dan dua garpu kue dari nampan di dekat konter. Miyuki sempat terdiam kaget mendengar ucapanmu, lalu tersenyum lembut dan langsung mengambil satu potongan bagian tengah yang paling rapi dan utuh untuk diletakkan di piringmu."
+            miyuki "Nah, ini buat Yutaka-kun. Bagian tengahnya paling lembut."
+            yutaka "Terus buat Senpai sendiri mau potongan yang mana? Jangan bilang nanti aja."
+            nar "Tangan Miyuki yang hendak meletakkan pisau kue langsung terhenti. Ia mengerjap pelan memandangi loyang di hadapannya, seolah sudah lama sekali tidak ada yang menanyakan bagian mana yang paling ia inginkan sendiri."
+            miyuki "Kalau buatku sendiri... sebenarnya aku paling suka bagian pinggirnya, Yutaka-kun. Yang pinggirannya agak kering dan kecokelatan kena panas loyang."
+            yutaka "Kirain Senpai suka bagian tengah yang banyak krimnya."
+            miyuki "Justru bagian pinggir itu aromanya paling keluar. Biasanya bagian itu selalu kusimpan paling terakhir setelah semua orang selesai makan, soalnya bentuknya kurang rapi kalau dikasih ke orang lain."
+            yutaka "Kalau gitu hari ini bagian pinggirnya dimakan duluan aja, Senpai. Sini piringnya."
+            nar "Kamu memotong bagian sudut yang kecokelatan itu, memindahkannya ke piring Miyuki, lalu menyodorkan garpu ke tangannya. Kalian duduk menikmati kue bersama sebelum ia beranjak memikirkan orang lain. Begitu gigitan pertama masuk ke mulutnya, senyum gembira yang ringan muncul di wajah Miyuki, dan ia mulai menilai hasil panggangan barunya dengan antusiasme kecil yang sempat hilang di tengah kesibukannya melayani semua orang."
+    elif _return == "B":
+        if kk_host == "chiasa":
+            chiasa "Mumpung kuenya masih hangat dan harum banget, sini aku bantu tawarin ke pelanggan di meja-meja sebelah ya, Tachibana-senpai. Sayang banget kalau sampai dingin di kotak."
+            miyuki "Eh, boleh memangnya kita bagi-bagi di kafe? Biar kutanya dulu ke Pak Ito."
+            nar "Dari balik meja konter, Ito Shinji mengangguk tenang sambil menyodorkan dua piring saji kayu bersih. Kalian menata beberapa potongan kue lalu berjalan pelan menghampiri tiga meja pelanggan lain di dalam kafe."
+            nar "Dua meja mahasiswa langsung menerima dengan wajah cerah sambil memuji aroma cokelatnya. Saat kalian mendekati meja paling pojok dekat rak majalah, seorang mahasiswa berkacamata yang sibuk mengetik di laptopnya mengangkat tangan sopan dan menolak karena ia baru saja selesai makan dan sedang menghindari makanan manis."
+            nar "Di sebelahmu, senyum ramah Miyuki langsung menegang tipis. Sebelum ia sempat membungkuk meminta maaf terlalu dalam atau menawarkan membikinkan rasa lain, kamu segera menyahut santai bahwa tidak masalah sama sekali, mengucapkan terima kasih, lalu menuntun lengan Miyuki kembali ke meja kalian."
+            chiasa "Sudah, nggak apa-apa kok, Senpai. Orangnya tadi bilang baru kelar makan aja, jadi memang lagi kenyang."
+            nar "Miyuki duduk kembali sambil memandangi potongan kue yang tersisa di piring saji kayu. Dahinya masih sedikit berkerut."
+            miyuki "Tadi aku sempat kepikiran... apa bau cokelatnya terlalu pekat ya, Chiasa-chan? Harusnya tadi aku bikin versi yang rasanya lebih ringan kayak teh hijau supaya semua orang bisa makan."
+            chiasa "Kuenya sudah enak banget kok, Senpai. Orang menolak satu potong kue itu cuma karena perutnya lagi kenyang, sama sekali nggak ada hubungannya sama kesalahan Senpai."
+            nar "Miyuki terdiam menatap piring di tangannya beberapa detik, lalu mengembuskan napas pendek dengan tawa kecil yang agak lelah."
+            miyuki "Lucu ya... dari dulu aku selalu mengira kalau ada seseorang yang menolak sesuatu yang kusiapkan, artinya aku harus segera membetulkan sesuatu dari diriku supaya mereka mau menerima lagi."
+            chiasa "Sekarang gantian Senpai yang duduk makan bagiannya sendiri ya. Nih, tehnya keburu dingin."
+            nar "Miyuki mengangguk pelan, mengambil garpu kue, lalu akhirnya mencicipi potongan kuenya sendiri dengan raut wajah yang jauh lebih tenang."
+        else:
+            yutaka "Mumpung kuenya masih hangat dan harum, sini kubantu tawarin ke meja-meja sebelah ya, Tachibana-senpai. Sayang kalau keburu dingin di kotak."
+            miyuki "Eh, boleh memangnya kita bagi-bagi di kafe? Biar kutanya dulu ke Pak Ito."
+            nar "Dari balik meja konter, Ito Shinji mengangguk tenang sambil menyodorkan dua piring saji kayu bersih. Kalian menata beberapa potongan kue lalu menghampiri tiga meja pelanggan lain di dalam kafe."
+            nar "Dua meja mahasiswa langsung menerima dengan wajah senang sambil memuji aroma cokelatnya. Saat kalian mendekati meja pojok dekat rak majalah, seorang mahasiswa berkacamata yang sibuk mengetik di laptop mengangkat tangan sopan dan menolak karena ia baru saja selesai makan dan sedang menghindari makanan manis."
+            nar "Di sebelahmu, senyum ramah Miyuki langsung menegang tipis. Sebelum ia sempat membungkuk meminta maaf terlalu dalam atau menawarkan membuat rasa lain, kamu segera menyahut santai bahwa tidak masalah sama sekali, mengucapkan terima kasih, lalu mengajak Miyuki kembali ke meja kalian."
+            yutaka "Sudah, santai aja, Senpai. Orangnya cuma baru kelar makan, jadi memang lagi kenyang aja."
+            nar "Miyuki duduk kembali sambil memandangi sisa potongan kue di piring saji kayu. Dahinya masih sedikit berkerut."
+            miyuki "Tadi aku sempat kepikiran... apa aroma cokelatnya terlalu pekat ya, Yutaka-kun? Harusnya tadi aku bikin versi teh hijau juga supaya semua orang bisa makan."
+            yutaka "Kuenya sudah enak banget kok, Senpai. Orang menolak satu potong kue itu ya cuma karena perutnya penuh, sama sekali nggak berarti ada yang salah dari kuenya atau dari Senpai."
+            nar "Miyuki terdiam menatap piring di tangannya beberapa detik, lalu mengembuskan napas pendek dengan tawa kecil yang agak lelah."
+            miyuki "Aneh ya... dari dulu aku selalu mengira kalau ada yang menolak sesuatu yang kusiapkan, berarti aku harus cepat-cepat membetulkan sesuatu dari diriku supaya mereka mau menerima lagi."
+            yutaka "Sekarang giliran Senpai duduk makan bagiannya sendiri. Nih, tehnya keburu dingin."
+            nar "Miyuki mengangguk pelan, mengambil garpu kue, lalu akhirnya mencicipi potongan kuenya sendiri dengan raut wajah yang jauh lebih tenang."
+    else:
+        if kk_host == "chiasa":
+            chiasa "Tachibana-senpai, aku nggak mau potongan acak dari sisa yang mau dibagi-bagi ke orang lain ya. Pilih satu potongan khusus buatku dong."
+            nar "Tangan Miyuki berhenti di atas gagang pisau kue. Ia menoleh menatapmu sambil menahan senyum jahil yang lembut, lalu berpura-pura mencondongkan tubuh untuk memeriksa seluruh permukaan loyang dengan keseriusan seperti dokter yang sedang memilih tindakan paling penting."
+            miyuki "Ara... Chiasa-chan minta potongan khusus pilihan Senpai sendiri ya? Boleh banget dong. Tapi kalau mau yang khusus, ada satu syarat yang harus kamu setujui dulu."
+            chiasa "Wah, pakai syarat segala. Syaratnya apa, Senpai?"
+            miyuki "Kamu harus duduk di sini dan makan kuenya bareng Senpai sekarang juga sampai habis. Jangan cuma dibungkus dibawa pulang ke rumah terus nanti malam baru kirim pesan bilang kuenya enak."
+            chiasa "Cuma itu syaratnya? Gampang banget, aku setuju."
+            nar "Miyuki tersenyum lebar, lalu mengiris satu potongan tengah yang lapisan cokelat dan krimnya paling utuh untuk diletakkan di depanmu. Setelah itu, ia memotong satu bagian lagi yang sama rapinya untuk dirinya sendiri dan menaruhnya di piring sebelah."
+            miyuki "Nah, ini potongan paling bagus di seluruh loyang hari ini. Dan karena kamu sudah setuju sama syaratnya, setengah jam ke depan waktumu jadi milik Senpai dulu ya, Chiasa-chan. Nggak boleh buru-buru lihat jam."
+            chiasa "Siap, Tachibana-senpai. Selamat makan."
+            nar "Miyuki mengambil garpunya dan menyuap potongan kuenya dengan sorot mata biru safir yang hangat. Kali ini ia berhenti menyembunyikan keinginannya di balik alasan melayani orang lain dan terang-terangan meminta sebagian kecil waktumu untuk duduk bersamanya."
+        else:
+            yutaka "Tachibana-senpai, aku nggak mau potongan sisa bagi-bagi ya. Pilih satu potongan khusus buatku dong."
+            nar "Tangan Miyuki berhenti di atas gagang pisau kue. Ia menoleh menatapmu sambil menahan senyum lembut yang sedikit jahil, lalu berpura-pura mencondongkan tubuh untuk memeriksa seluruh permukaan loyang dengan keseriusan yang dibuat-buat."
+            miyuki "Ara... Yutaka-kun minta potongan khusus pilihan Senpai sendiri ya? Boleh banget. Tapi kalau mau yang khusus, ada satu syarat yang harus kamu setujui dulu."
+            yutaka "Pakai syarat segala nih? Apa syaratnya, Senpai?"
+            miyuki "Kamu harus duduk di sini dan makan kuenya bareng Senpai sekarang juga. Jangan cuma dibungkus dibawa pulang ke apartemen terus nanti malam baru kirim pesan bilang kuenya enak."
+            yutaka "Cuma itu? Gampang banget, aku setuju."
+            nar "Miyuki tersenyum lebar, lalu mengiris satu potongan tengah yang lapisan cokelat dan krimnya paling utuh untuk diletakkan di depanmu. Setelah itu, ia memotong satu bagian lagi yang sama rapinya untuk dirinya sendiri dan menaruhnya di piring sebelah."
+            miyuki "Nah, ini potongan paling bagus di seluruh loyang hari ini. Dan karena kamu sudah sepakat sama syaratnya, setengah jam ke depan waktumu jadi milik Senpai dulu ya, Yutaka-kun. Nggak boleh buru-buru lihat jam tangan."
+            yutaka "Siap, Tachibana-senpai. Selamat makan."
+            nar "Miyuki mengambil garpunya dan menyuap potongan kuenya dengan sorot mata biru safir yang hangat. Kali ini ia berani meminta sebagian kecil waktumu secara langsung sebagai keinginannya sendiri tanpa menyamarkannya di balik alasan melayani orang lain."
     return
 
 # ┌─ PANDUAN CERITA · Mi-D12 · Ia Memilih Dirinya
@@ -262,20 +340,103 @@ init 1 python:
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_Mi06:
     call kk_scene_enter("miyuki","Gedung Kedokteran")
-    nar "Miyuki berhenti di depan gambar buatan anak-anak yang dipajang dekat gedung kuliah. Ia menunjuk seekor kucing berkaki enam dan tersenyum tanpa perlu memeriksa apakah kau ikut tersenyum."
-    miyuki "Aku suka saat anak akhirnya bertanya sendiri. Kadang semua orang dewasa sudah memberi jawaban sebelum dia tahu boleh bertanya apa."
-    miyuki "Aku ingin masuk pediatri. Bukan karena kupikir akan selalu menyenangkan. Justru karena banyak yang perlu didengar sebelum bisa ditolong."
-    call kk_family_menu("Mi06", ["Tanya apa lagi yang membuatnya ingin bekerja dengan anak-anak.", "Katakan cita-cita itu kedengarannya terlalu sederhana.", "Tanya apa Koita sudah tahu rencananya."])
-    if _return == "A":
-        miyuki "Kamu sungguh mau dengar? Kalau begitu jalan pelan sedikit. Aku bisa panjang sekali kalau mulai soal ini."
-        nar "Ia bercerita tentang ketakutan anak yang tidak dianggap serius, tentang keluarga yang juga perlu penjelasan, dan tentang betapa ia ingin belajar mendengarkan tanpa buru-buru merasa paling tahu."
-        nar "Kali ini kelelahannya tidak lenyap, tetapi ada keinginan miliknya sendiri yang cukup terang untuk terlihat di baliknya."
-    elif _return == "B":
-        miyuki "Kedengarannya sederhana karena aku belum menjelaskan pekerjaannya. Tapi keinginanku bukan hal kecil bagiku."
-        nar "Ia berhenti bercerita. Saat kalian berjalan lagi, ia membahas tugas kuliah yang tidak mengharuskan ia menyerahkan sesuatu yang begitu pribadi untuk dinilai."
+    if kk_host == "chiasa":
+        nar "Sore itu kamu berjalan beriringan dengan Tachibana Miyuki melewati koridor lantai dasar Gedung Kedokteran yang sudah mulai lengang selepas jam kuliah berakhir. Di sepanjang dinding sebelah kiri menuju pintu lobi, terpasang papan pajangan berkaca panjang yang berisi jadwal seminar serta dokumentasi kegiatan mahasiswa."
+        nar "Tepat di bagian tengah papan kaca itu, tertempel belasan kertas gambar penuh coretan krayon warna-warni hasil karya anak-anak dari acara kunjungan relawan di bangsal rumah sakit akhir pekan lalu."
+        nar "Langkah Miyuki tiba-tiba melambat, lalu berhenti tepat di depan deretan gambar anak-anak tersebut. Ia menunjuk selembar kertas gambar di baris bawah yang memperlihatkan seekor kucing besar berwarna biru tua dengan enam kaki, mata bulat yang besar sebelah, dan kumis keriting yang lebih panjang daripada tubuhnya."
+        nar "Tanpa menoleh untuk memeriksa apakah kamu ikut berhenti atau tidak, Miyuki tersenyum lepas seorang diri memandangi gambar krayon itu."
+        chiasa "Lucu banget gambar kucingnya, Tachibana-senpai. Kakinya sampai ada enam begitu, terus kumisnya panjang banget."
+        miyuki "Hehe, menggemaskan banget ya, Chiasa-chan? Yang menggambar ini pasien anak laki-laki umur enam tahun waktu acara menggambar bareng relawan hari Sabtu kemarin. Waktu kutanya kenapa kaki kucingnya ada enam, dia jawab dengan muka serius banget."
+        chiasa "Memangnya dia jawab kenapa, Senpai?"
+        miyuki "Katanya, kalau kucing biasa kakinya cuma empat, nanti gampang ketangkap waktu dikejar dokter yang bawa jarum suntik. Jadi harus dikasih dua kaki cadangan biar larinya secepat kereta ekspres."
+        chiasa "Haha, pintar banget anak umur enam tahun bisa kepikiran alasan kayak gitu."
+        miyuki "Iya. Padahal waktu hari pertama dia masuk ruang rawat, dia takut banget sampai nggak mau lepas dari jaket ibunya. Aku selalu senang setiap kali lihat anak kecil akhirnya merasa cukup aman buat bercerita atau bercanda seperti itu. Soalnya sering kali orang dewasa di sekitar mereka sudah buru-buru menyuruh diam atau memberi jawaban sebelum anaknya sendiri tahu boleh bertanya apa."
+        nar "Miyuki masih memandangi kertas gambar itu beberapa detik lagi, lalu kembali melangkah pelan di sampingmu menuju pintu kaca lobi dengan suara yang tenang dan mantap."
+        miyuki "Nanti setelah lulus ujian negara dan selesai masa residensi awal, aku pengin mengambil spesialisasi pediatri, Chiasa-chan. Bukan karena aku membayangkan bekerja di bangsal anak itu bakal selalu lucu dan menyenangkan setiap hari. Justru karena anak-anak punya banyak sekali ketakutan yang harus didengarkan dengan sabar sebelum kita bisa benar-benar mengobati mereka."
     else:
-        miyuki "Belum. Aku tadi sedang bercerita kepadamu."
-        nar "Senyumnya kembali, lebih tipis. Koita tetap penting baginya, tetapi memasukkan namanya ke setiap keinginan membuat Miyuki mendadak merasa cita-citanya sendiri perlu persetujuan seseorang yang tidak sedang berada di sana."
+        nar "Sore itu kamu melangkah keluar menyusuri lobi lantai satu Gedung Kedokteran bersama Tachibana Miyuki. Di dinding koridor dekat pintu utama, terdapat papan pengumuman kaca berukuran lebar yang memajang laporan kegiatan bakti sosial mahasiswa kedokteran."
+        nar "Di sudut tengah papan tersebut, berjajar kertas-kertas gambar penuh warna krayon buatan pasien anak-anak dari acara relawan rumah sakit minggu lalu."
+        nar "Langkah kaki Miyuki melambat lalu terhenti di depan kaca pajangan itu. Ia menunjuk selembar kertas di pojok bawah yang bergambar seekor kucing biru berkaki enam dengan kumis mencuat lebar, lalu tersenyum hangat seorang diri tanpa menoleh dulu ke arahmu."
+        yutaka "Kucing biru berkaki enam, Tachibana-senpai? Bebas banget ya imajinasi anak kecil."
+        miyuki "Hehe, iya kan, Yutaka-kun? Yang menggambar ini anak umur enam tahun waktu kami mengadakan sesi bermain di bangsal anak hari Sabtu lalu. Waktu kutanya kenapa kakinya ditambah dua, jawabannya serius sekali."
+        yutaka "Dia bilang kenapa memangnya, Senpai?"
+        miyuki "Katanya supaya kucingnya punya gigi persneling tambahan buat kabur kalau dikejar dokter yang bawa suntikan. Padahal waktu pertama kali datang ke ruang periksa, anak itu menangis terus karena takut lihat jas putih."
+        yutaka "Haha, ada-ada aja idenya."
+        miyuki "Aku suka sekali momen waktu anak-anak akhirnya berani membuka suara dan bercerita jujur seperti itu. Kadang orang dewasa di sekeliling mereka terlalu sibuk menenangkan dengan kalimat cepat, sampai anaknya sendiri tidak sempat menjelaskan bagian mana yang sebenarnya membuat mereka takut."
+        nar "Ia berdiri sejenak lagi menatap deretan gambar krayon itu, lalu kembali berjalan pelan di sebelahmu menuju pintu keluar gedung dengan nada bicara yang terdengar sangat yakin."
+        miyuki "Nanti kalau aku sudah lulus, aku ingin masuk spesialisasi pediatri, Yutaka-kun. Bukan karena kupikir merawat anak-anak itu pekerjaan yang ringan atau manis terus. Justru karena di sana ada banyak sekali hal yang harus didengarkan pelan-pelan sebelum mereka bisa ditolong dengan benar."
+    call kk_family_menu("Mi06", ["\"Keren banget, Senpai. Selain itu, apa lagi yang bikin Senpai yakin milih pediatri?\"", "\"Kedengarannya agak sederhana ya, Senpai?\"", "\"Koita sudah tahu rencana Senpai mau masuk pediatri ini?\""])
+    if _return == "A":
+        if kk_host == "chiasa":
+            chiasa "Keren banget tujuannya, Tachibana-senpai. Selain kejadian waktu acara relawan kemarin, apa lagi yang bikin Senpai yakin banget pengin ambil pediatri?"
+            nar "Mata biru safir Miyuki langsung berbinar hangat, tampak senang karena kamu menanyakan alasan di balik pilihannya secara sungguh-sungguh."
+            miyuki "Kamu beneran mau dengar ceritanya, Chiasa-chan? Kalau begitu kita jalan agak pelan lewat jalur taman samping ya. Kalau sudah mulai bicara soal pediatri, Senpai suka lupa waktu."
+            chiasa "Nggak apa-apa kok, Senpai, aku juga lagi nggak buru-buru pulang ke rumah. Cerita aja."
+            nar "Sepanjang jalan setapak yang dinaungi pepohonan kamper menuju gerbang depan kampus, Miyuki berbicara dengan antusiasme yang jarang ia perlihatkan saat sedang membahas urusan keluarganya."
+            miyuki "Waktu aku mulai ikut observasi klinik semester ini, aku sering lihat anak kecil yang gemetar waktu mau diperiksa, tapi dokter atau orang tuanya cuma bilang, 'Cuma sebentar kok, jangan cengeng.' Padahal buat anak sekecil itu, ketidaktahuan soal apa yang bakal dilakukan ke tubuh mereka itu jauh lebih menakutkan daripada rasa sakitnya sendiri."
+            chiasa "Kalau dipikir-pikir iya juga ya, Senpai. Jangankan anak kecil, kita aja kalau tiba-tiba disuruh berbaring tanpa dijelasin mau diapain pasti panik."
+            miyuki "Nah, persis itu! Dan bukan cuma pasien anaknya saja yang butuh ditenangkan. Ibu atau ayah yang mengantar mereka juga sering datang ke rumah sakit dengan wajah pucat karena menyalahkan diri sendiri saat anaknya jatuh sakit. Aku ingin belajar jadi dokter anak yang bisa mendengarkan kecemasan orang tuanya juga tanpa menghakimi mereka."
+            chiasa "Tapi jadwal jaga dan beban belajarnya pasti berat banget kan, Senpai?"
+            miyuki "Berat banget, jujur aja. Kadang kalau habis baca buku teks patologi sampai tengah malam di apartemen, punggungku rasanya mau patah. Tapi setiap kali aku teringat wajah anak-anak di bangsal kemarin, aku selalu tahu jelas untuk apa aku masih bertahan belajar setiap malam."
+            chiasa "Senpai pasti bakal jadi dokter anak yang hebat banget nanti. Anak-anak nggak bakal perlu gambar kucing kaki enam lagi buat kabur dari Senpai."
+            nar "Miyuki tertawa lepas sambil merapikan tali tas di bahunya, berjalan di sampingmu dengan langkah yang terasa jauh lebih ringan sampai kalian tiba di gerbang utama."
+        else:
+            yutaka "Pilihan yang keren, Tachibana-senpai. Selain cerita anak yang gambar kucing tadi, apa lagi yang bikin Senpai mantap banget memilih pediatri?"
+            nar "Mata biru safir Miyuki langsung tampak berbinar, terkejut sekaligus senang karena kamu tertarik mendengarkan pemikirannya lebih jauh."
+            miyuki "Kamu sungguh ingin dengar, Yutaka-kun? Kalau begitu kita jalan santai lewat pelataran samping ya. Senpai bisa bicara panjang lebar kalau sudah ditanya soal ini."
+            yutaka "Santai aja, Senpai. Sore ini jadwalku kosong kok."
+            nar "Sambil berjalan pelan menyusuri trotoar kampus yang mulai teduh, Miyuki bercerita dengan nada suara yang hidup dan penuh keyakinan."
+            miyuki "Selama ikut kegiatan observasi di rumah sakit, aku sering memperhatikan bagaimana ketakutan pasien anak-anak kadang dianggap remeh oleh orang dewasa. Mereka cuma disuruh diam supaya pemeriksaannya cepat selesai, padahal mereka menangis karena tidak mengerti alat apa yang sedang didekatkan ke mereka."
+            yutaka "Masuk akal sih. Orang dewasa aja kadang tegang kalau masuk ruang tindakan tanpa dikasih penjelasan."
+            miyuki "Betul sekali. Belum lagi orang tua yang membawa anak mereka ke ruang gawat darurat malam-malam, mereka sering kali jauh lebih panik dan merasa bersalah. Aku ingin jadi dokter yang punya kesabaran untuk menjelaskan pelan-pelan kepada anak maupun orang tuanya, tanpa bersikap menggurui."
+            yutaka "Kedengarannya butuh tenaga dan kesabaran ekstra setiap hari ya, Senpai."
+            miyuki "Sangat menguras tenaga memang. Kadang kalau pulang praktik malam, rasanya aku sudah terlalu lelah bahkan untuk memasak makan malam sendiri. Tapi setiap kali aku mengingat tujuan itu, rasa lelahnya jadi punya arti yang jelas."
+            yutaka "Bidang itu cocok banget sama pembawaan Senpai. Pasti banyak keluarga pasien yang bakal terbantu nanti."
+            nar "Miyuki tertawa lembut sambil membetulkan letak tasnya. Meskipun jadwal kuliah tahun ketiganya masih menumpuk, sore ini wajahnya tampak sangat cerah saat berjalan bersamamu menuju stasiun."
+    elif _return == "B":
+        if kk_host == "chiasa":
+            chiasa "Kedengarannya agak sederhana ya alasannya, Tachibana-senpai? Tadinya kukira Senpai bakal ngincar spesialisasi bedah utama atau manajemen rumah sakit besar seperti ayah dan ibu Senpai."
+            nar "Langkah kaki Miyuki yang tadinya ringan langsung melambat setengah ketukan. Senyum lepas yang sejak di depan papan pajangan tadi menghiasi wajahnya perlahan surut, berganti kembali dengan senyum formal seorang senior yang menjaga jarak."
+            miyuki "Kalau dari luar terdengar sederhana, mungkin karena aku belum menceritakan betapa rumitnya diagnosis klinis pada pasien anak yang belum bisa menjelaskan letak sakitnya sendiri, Chiasa-chan."
+            chiasa "Eh... bukan maksudku meremehkan bilang itu gampang kok, Senpai, aku cuma kaget aja—"
+            miyuki "Tidak apa-apa, Chiasa-chan. Di rumah pun orang tuaku sering mengatakan hal yang mirip, bahwa pediatri kurang bergengsi dibandingkan bedah. Tapi bagiku pribadi, pilihan ini sama sekali bukan hal yang kecil."
+            chiasa "Maaf ya, Senpai, ucapanku tadi kurang sopan."
+            miyuki "Sudah, tidak usah dipikirkan lagi. Ayo kita percepat sedikit jalannya, angin sorenya sudah mulai dingin. Kebetulan minggu ini jadwal praktikumku juga sedang padat, jadi aku harus mampir ke perpustakaan sebentar sebelum pulang."
+            chiasa "Praktikum mata kuliah apa minggu ini, Senpai?"
+            miyuki "Farmakologi klinis. Tenggat laporan penghitungan dosisnya hari Jumat besok, jadi malam ini aku masih harus merapikan beberapa tabel referensi."
+            chiasa "Semangat ya beresin laporannya, Senpai."
+            miyuki "Terima kasih, Chiasa-chan. Hati-hati di jalan pulang nanti ya."
+            nar "Sepanjang sisa perjalanan menuju persimpangan gerbang, Miyuki tetap berbicara dengan sangat sopan, tetapi ia tidak lagi menyebut sepatah kata pun tentang cita-cita maupun pasien anak-anaknya."
+        else:
+            yutaka "Kedengarannya agak sederhana ya, Tachibana-senpai? Kukira mahasiswa peringkat atas dari keluarga Tachibana bakal langsung ngincar bedah mayor atau manajemen rumah sakit seperti orang tua Senpai."
+            nar "Langkah Miyuki melambat sejenak. Senyum hangat yang tadi muncul di depan gambar krayon anak-anak perlahan memudar, digantikan ekspresi tenang dan rapi yang terasa berjarak."
+            miyuki "Mungkin terdengar sederhana karena aku baru menceritakan bagian menyenangkannya saja, belum bagian betapa sulitnya menangani pasien anak dalam kondisi kritis, Yutaka-kun."
+            yutaka "Ah, maaf, bukan maksudku bilang pediatri itu mudah kok, Senpai..."
+            miyuki "Tidak apa-apa, aku cukup sering mendengar komentar seperti itu dari lingkungan rekan ayahku. Hanya saja, untukku pribadi, rencana ini sama sekali bukan pilihan yang remeh."
+            yutaka "Maaf ya, Senpai. Tadi aku asal nyeletuk aja."
+            miyuki "Sudah, lupakan saja. Ayo kita jalan lebih cepat sedikit, langitnya sudah mulai mendung. Minggu ini aku juga masih punya tumpukan laporan praktikum yang harus diselesaikan malam ini."
+            yutaka "Laporan praktikum bagian apa minggu ini, Senpai?"
+            miyuki "Farmakologi klinis. Hari Jumat pagi sudah harus dikumpulkan ke dokter pembimbing, jadi malam ini aku harus memeriksa ulang tabel interaksi obatnya."
+            yutaka "Semoga cepat beres ya laporannya, Senpai."
+            miyuki "Terima kasih, Yutaka-kun. Hati-hati di jalan pulang."
+            nar "Miyuki menutup rapat topik tentang rencana masa depannya dan hanya membicarakan urusan akademik umum sampai kalian berpisah di depan gerbang kampus."
+    else:
+        if kk_host == "chiasa":
+            chiasa "Ngomong-ngomong, Ko-nii sudah tahu belum soal rencana Senpai mau masuk spesialisasi pediatri ini?"
+            nar "Langkah Miyuki sempat tertahan setengah detik di atas ubin lobi. Ia menoleh ke arahmu, dan senyum lembutnya yang biasa kembali terpasang, hanya saja kali ini tampak sedikit lebih tipis."
+            miyuki "Koita-kun? Belum, aku belum pernah cerita sedetail ini ke dia. Barusan kan aku memang sedang bercerita kepadamu, Chiasa-chan."
+            chiasa "Oh... kirain Senpai sudah pernah bahas duluan sama Ko-nii waktu kalian ketemu di perpustakaan atau kafe. Biasanya kan kalau soal rencana masa depan, teman-teman suka cerita ke Ko-nii."
+            miyuki "Nanti kalau kebetulan sedang mengobrol soal rencana lulus dan waktunya pas, mungkin aku akan cerita juga ke Koita-kun. Tapi keinginan masuk pediatri ini murni rencanaku sendiri kok, tidak ada hubungannya dengan siapa-siapa."
+            chiasa "Iya, tentu aja itu rencana Senpai sendiri."
+            nar "Miyuki merapikan letak buku di pelukannya dan kembali melangkah lurus melewati pintu kaca lobi. Kalian masih bertukar obrolan ringan soal jadwal kuliah sampai ke dekat gerbang, tetapi keterbukaan hangat yang tadi sempat muncul di depan gambar kucing berkaki enam itu sudah kembali disimpan olehnya."
+        else:
+            yutaka "Ngomong-ngomong, Koita sudah tahu belum soal rencana Senpai mau ambil spesialisasi pediatri ini?"
+            nar "Langkah Miyuki terhenti sepersekian detik sebelum mendorong pintu kaca lobi. Ia menoleh menatapmu dengan senyum sopan yang terasa sedikit menipis."
+            miyuki "Koita-kun? Belum. Tadi kan yang berdiri melihat gambar anak-anak di papan itu aku sama kamu, Yutaka-kun, jadi aku bercerita ke kamu."
+            yutaka "Oh... kukira Senpai sudah cerita lebih dulu ke Koita waktu ngumpul kemarin."
+            miyuki "Kalau nanti kebetulan ada pembicaraan soal rencana setelah lulus, mungkin aku akan cerita juga padanya. Tapi keputusan memilih pediatri ini sepenuhnya rencanaku sendiri sejak awal kuliah."
+            yutaka "Iya, benar juga sih, Senpai."
+            nar "Miyuki kembali melangkah menuruni tangga teras gedung sambil menatap jalan setapak di depannya. Percakapan kalian tetap berlangsung sopan sampai di persimpangan gerbang, sementara suasana akrab yang tadi terbuka di depan papan pajangan sudah tidak kembali lagi."
     return
 
 # ┌─ PANDUAN CERITA · Mi21 · Rotasi Klinik

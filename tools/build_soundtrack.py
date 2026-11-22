@@ -20,9 +20,23 @@ LYRICAL = (19, None, 14, 16, 19, 21, None, 14)
 QUESTION = (14, None, 19, None, 15, 17, None, 12)
 DANCE = (12, 19, 16, None, 21, 19, 14, 16)
 
+# Lead line in written pitch, with pickups and space for the piano response.
+TITLE_MELODY = (
+    ((0, 76), (0.75, 79), (1.5, 81), (2, 79), (3, 76), (3.5, 74)),
+    ((0, 74), (1, 71), (1.75, 74), (2.5, 79), (3.5, 78)),
+    ((0, 76), (0.75, 72), (1.5, 76), (2, 79), (3, 81)),
+    ((0, 77), (1, 74), (1.75, 72), (2.5, 69), (3.5, 74)),
+    ((0, 76), (0.75, 79), (1.5, 81), (2, 84), (3.25, 79)),
+    ((0, 81), (1, 76), (1.75, 74), (2.5, 71), (3.5, 74)),
+    ((0, 77), (0.75, 81), (1.5, 84), (2.5, 86), (3.25, 84)),
+    ((0, 83), (0.75, 79), (1.5, 77), (2, 74), (3, 79), (3.5, 74)),
+)
+
 # BPM, transposition, harmony, lead instrument, phrase, backing pattern.
 SCORE = {
-    "title": (76, 2, MAJOR, "piano", LYRICAL, "arpeggio"),
+    "title": (116, 0, [(48, 4, 7, 9), (43, 4, 7, 9), (45, 3, 7, 10), (41, 4, 7, 9),
+                       (48, 4, 7, 9), (40, 3, 7, 10), (41, 4, 7, 9), (43, 4, 7, 10)],
+              "bell", TITLE_MELODY, "title"),
     "campus": (104, 0, MAJOR, "pluck", DANCE, "arpeggio"),
     "city": (112, 5, MAJOR, "electric", DANCE, "pulse"),
     "home": (86, 5, MAJOR, "piano", LYRICAL, "arpeggio"),
@@ -85,9 +99,21 @@ def render(path, bpm, transpose, chords, lead, phrase, arrangement):
             right[position] += sample * level * (1 + pan)
 
     for bar in range(8):
-        root, third, fifth, color = chords[bar % 4]
+        root, third, fifth, color = chords[bar % len(chords)]
         root += transpose
         start = bar * 4
+        if arrangement == "title":
+            for offset, bass in ((0, root), (2, root if bar == 7 else root + fifth)):
+                note(start + offset, 0.86, bass - 12, "electric", 0.13, 0)
+            for offset in (0.5, 1.5, 2.75, 3.5):
+                for interval in (third, fifth, color):
+                    duration = min(0.56, 3.69 - offset) if bar == 7 else 0.56
+                    note(start + offset, duration, root + 12 + interval, "piano", 0.048, -0.31)
+            for offset, pitch in phrase[bar]:
+                duration = min(0.89, 3.69 - offset) if bar == 7 else 0.89
+                note(start + offset, duration, pitch, lead, 0.145, 0.23)
+                note(start + offset, min(0.62, duration), pitch - 12, "pluck", 0.055, -0.08)
+            continue
         note(start, 3.9, root - 12, "pad", 0.093, 0)
         note(start + 0.06, 4.13, root + third, "pad", 0.040, -0.27)
         note(start + 0.14, 4.02, root + color, "pad", 0.034, 0.28)
