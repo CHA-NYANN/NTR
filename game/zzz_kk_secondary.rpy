@@ -46,9 +46,8 @@ init 45 python:
     # Original 1536x864 package, scaled uniformly to the game's 1920x1080 canvas.
     # The background already contains both offered hands and the question.
     KS_HAND_ROOT = kg_root + "hand-choice/"
-    KS_HAND_FPS = 12
-    KS_HAND_FRAME_COUNT = 20
-    KS_HAND_DURATION = KS_HAND_FRAME_COUNT / float(KS_HAND_FPS)
+    KS_HAND_MOVE_TIME = 1.3
+    KS_HAND_DURATION = KS_HAND_MOVE_TIME + .3
     KS_HAND_BOUNDS = {
         "yutaka": (51, 0, 749, 801, "tangan_yutaka.png"),
         "chiasa": (1146, 0, 692, 766, "tangan_chiasa.png"),
@@ -58,8 +57,18 @@ init 45 python:
         x, y, w, h, filename = KS_HAND_BOUNDS[host]
         return Transform(KS_HAND_ROOT + "sprites/" + filename, xysize=(w,h))
 
-    def ks_hand_frame(host, index):
-        return KS_HAND_ROOT + "animation/pilih_" + host + "/frame_%03d.png" % index
+    # Final crop coordinates from the original package, uniformly scaled by 1.25.
+    KS_PLAYER_HANDS = {
+        "yutaka": (718, 479, 590, 601, 850),
+        "chiasa": (713, 529, 579, 551, 620),
+    }
+
+    def ks_player_hand_image(host):
+        x, y, w, h, start_x = KS_PLAYER_HANDS[host]
+        return Transform(KS_HAND_ROOT+"sprites/tangan_player_pilih_"+host+".png",xysize=(w,h))
+
+    # Retain the source frames in the repository, but omit unused sequences from exports.
+    build.classify("game/gui/kouseikan/hand-choice/animation/**", None)
 
     def ks_action_set(rows,heading):
         if heading=="Di situasi gila ini, apa langkah pertamamu?":
@@ -184,10 +193,21 @@ transform ks_reach(index=0,taken=False,decided=False):
     on replace:
         ease .3 zoom (1.11 if taken else 1.0) alpha (.18 if decided and not taken else 1.0)
 
+transform ks_player_hand_motion(host, motion=True):
+    subpixel True
+    anchor (0,0)
+    alpha 0.0
+    pos (KS_PLAYER_HANDS[host][4],1080)
+    on show, appear:
+        alpha 1.0
+        pos (KS_PLAYER_HANDS[host][4],1080)
+        easeout (KS_HAND_MOVE_TIME if motion else 0) xpos KS_PLAYER_HANDS[host][0] ypos KS_PLAYER_HANDS[host][1]
+    on hide:
+        alpha 0.0
+
 screen kk_route_select():
     modal True
     default selected=None
-    default selected_frame=0
     add Transform(KS_HAND_ROOT+"background.png",xysize=(1920,1080)) id "ks_hand_scene"
     for host in ("yutaka","chiasa"):
         $ _hx,_hy,_hw,_hh,_filename=KS_HAND_BOUNDS[host]
@@ -202,15 +222,11 @@ screen kk_route_select():
             action SetScreenVariable("selected",host)
             sensitive selected is None
             alt ("Raih tangan pria di kiri" if host=="yutaka" else "Raih tangan wanita di kanan")
+    for _reach_host in ("yutaka","chiasa"):
+        showif selected == _reach_host:
+            add ks_player_hand_image(_reach_host) id ("ks_player_reach_"+_reach_host) at ks_player_hand_motion(_reach_host,persistent.kk_secondary_motion)
     if selected:
-        if persistent.kk_secondary_motion:
-            add Transform(ks_hand_frame(selected,selected_frame),xysize=(1920,1080)) id "ks_player_reach"
-            # A clock local to this choice, independent of time spent waiting on it.
-            # Return only after every frame, including the held final pose, was shown.
-            timer (1.0/KS_HAND_FPS) repeat True action If(selected_frame<KS_HAND_FRAME_COUNT-1,SetScreenVariable("selected_frame",selected_frame+1),Return(selected))
-        else:
-            add Transform(ks_hand_frame(selected,KS_HAND_FRAME_COUNT-1),xysize=(1920,1080)) id "ks_player_reach"
-            timer .25 action Return(selected)
+        timer (KS_HAND_DURATION if persistent.kk_secondary_motion else .25) action Return(selected)
 
 screen ks_illustrated_choices(rows,heading,art):
     modal True

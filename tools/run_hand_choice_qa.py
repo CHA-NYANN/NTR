@@ -15,10 +15,16 @@ sdk, output, project = args.sdk.resolve(), args.output.resolve(), args.project.r
 if output.exists():
     raise SystemExit("Choose a new output directory; existing QA data is never overwritten")
 game = output / "game"
-shutil.copytree(project / "game", game, ignore=shutil.ignore_patterns("saves", "cache", "*.rpyc", "*.rpymc", "*.log"))
+def qa_ignore(directory, names):
+    ignored = set(shutil.ignore_patterns("saves", "cache", "*.rpyc", "*.rpymc", "*.log")(directory,names))
+    if Path(directory).resolve() == (project/"game/gui/kouseikan/hand-choice").resolve():
+        ignored.add("animation")  # Prove the new implementation runs without the old frames.
+    return ignored
+shutil.copytree(project / "game", game, ignore=qa_ignore)
 if args.overlay:
     shutil.copytree(args.overlay.resolve(), game, dirs_exist_ok=True)
 (output / "captures").mkdir()
+assert not (game / "gui/kouseikan/hand-choice/animation").exists()
 runtime = sdk / ("lib/py3-windows-x86_64/python.exe" if os.name == "nt" else "lib/py3-linux-x86_64/python")
 command = [str(runtime), str(sdk / "renpy.py"), str(output)]
 env = dict(os.environ, RENPY_PATH_TO_SAVES=str(output / "isolated-saves"), SDL_AUDIODRIVER="dummy", RENPY_SIMPLE_EXCEPTIONS="1")
@@ -41,9 +47,22 @@ init 100 python:
     kh_started = None
     kh_clicked = None
     kh_captures = set()
-    kh_frames = set()
+    kh_positions = []
     kh_case = 0
     kh_cases = [("yutaka",True,(1920,1080)),("chiasa",True,(1280,720)),("yutaka",False,(1366,768)),("chiasa",False,(1366,768)),("yutaka",True,(1280,720))]
+
+    def kh_motion_wrapper(host):
+        base = renpy.get_displayable("kk_route_select","ks_player_reach_"+host)
+        pending = [renpy.get_screen("kk_route_select").child]
+        seen = set()
+        while pending:
+            item = pending.pop()
+            if id(item) in seen: continue
+            seen.add(id(item))
+            if getattr(item,"child",None) is base and item.get_placement()[1] is not None:
+                return item
+            pending.extend(item.visit())
+        raise AssertionError("No positioned ATL wrapper for player hand")
 
     def kh_tick():
         global kh_started, kh_clicked
@@ -69,6 +88,7 @@ init 100 python:
                     assert mask.get_size()==(w,h), mask.get_size()
                     assert not mask.is_pixel_opaque(w-1,h-1), "Background must not be clickable"
                     assert any(mask.is_pixel_opaque(px,py) for px in range(w//3,2*w//3,15) for py in range(h//3,2*h//3,15)), "Hand must be clickable"
+                assert ("game/gui/kouseikan/hand-choice/animation/**",None) in build.base_patterns
             # Waiting longer than the animation tests that its clock starts at click.
             if now-kh_started > (2.1 if kh_case==4 else .35) and kh_clicked is None:
                 kh_clicked = now
@@ -76,16 +96,23 @@ init 100 python:
                 renpy.queue_event("button_select")
             return
         assert selected == host, (selected,host)
-        frame = scope["selected_frame"]
-        if not kh_frames:
-            assert frame < 4, "Animation must start from the beginning after click"
-        kh_frames.add(frame)
+        overlay = kh_motion_wrapper(host)
+        x,y = overlay.get_placement()[:2]
+        x = absolute.compute_raw(x,1920)
+        y = absolute.compute_raw(y,1080)
+        final_x,final_y,w,h,start_x = KS_PLAYER_HANDS[host]
+        if not kh_positions and motion:
+            assert y>final_y+100, ("Movement must start after click",x,y)
+        if kh_positions and motion:
+            assert y<=kh_positions[-1][1]+1, ("Reach must move upward",kh_positions[-1],(x,y))
+        kh_positions.append((x,y))
         assert kk_host is None, "Host state must remain unchanged until the screen returns"
         for target in ("yutaka","chiasa"):
             assert not renpy.get_displayable("kk_route_select","ks_hand_"+target).is_sensitive(), "Both choices must lock after selection"
         elapsed = now-kh_clicked
-        tag = "mid" if motion and frame<16 else "final"
-        capture_ready = frame>=8 if tag=="mid" else frame>=16 if motion else elapsed>=.1
+        final_pose = abs(x-final_x)<1 and abs(y-final_y)<1
+        tag = "final" if final_pose else "mid"
+        capture_ready = final_pose or (motion and final_y+60<y<1040)
         if capture_ready and tag not in kh_captures:
             kh_captures.add(tag)
             renpy.screenshot(os.path.join(config.basedir,"captures",stem+"-"+tag+".png"))
@@ -100,7 +127,7 @@ label kh_review:
         $ kh_started = None
         $ kh_clicked = None
         $ kh_captures = set()
-        $ kh_frames = set()
+        $ kh_positions = []
         $ persistent.kk_secondary_motion = kh_cases[kh_case][1]
         $ renpy.set_physical_size(kh_cases[kh_case][2])
         call screen kk_route_select
@@ -110,11 +137,10 @@ label kh_review:
         $ assert elapsed >= minimum-.07, (elapsed,minimum)
         $ assert "final" in kh_captures, kh_captures
         if persistent.kk_secondary_motion:
-            $ assert max(kh_frames)==19, kh_frames
-            $ assert len(kh_frames)>=16, kh_frames
+            $ assert len(set(kh_positions))>=8, kh_positions
         $ open(os.path.join(config.basedir,"timing.txt"),"a").write(str((kh_cases[kh_case],elapsed,renpy.get_physical_size()))+"\n")
         $ kh_case += 1
-    $ open(os.path.join(config.basedir,"review.ok"),"w").write("PASS: both host returns, real button selection, contour masks, locked choices, 20 frames/12 FPS, last-pose hold, reduced motion, repeat visit and three viewport requests")
+    $ open(os.path.join(config.basedir,"review.ok"),"w").write("PASS: both host returns, real button selection, contour masks, locked choices, PNG position tween and final pose, reduced motion, delayed selection, repeat visit, three viewport requests; old animation frames absent")
     $ renpy.quit()
 ''', encoding="utf-8")
 try:
