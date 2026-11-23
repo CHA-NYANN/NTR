@@ -1,0 +1,83 @@
+{
+  "source": "Original 3 uploaded user images; four extracted PNG sprites",
+  "canvas": [
+    1536,
+    864
+  ],
+  "frame_count": 20,
+  "fps": 12,
+  "sprites": {
+    "tangan_yutaka": {
+      "source": "1000351675.png",
+      "cropped_png": "sprites/cropped/tangan_yutaka.png",
+      "full_canvas_png": "sprites/full_canvas/tangan_yutaka_1536x864.png",
+      "bbox_xyxy": [
+        41,
+        0,
+        640,
+        641
+      ],
+      "position_for_crop_xy": [
+        41,
+        0
+      ]
+    },
+    "tangan_chiasa": {
+      "source": "1000351675.png",
+      "cropped_png": "sprites/cropped/tangan_chiasa.png",
+      "full_canvas_png": "sprites/full_canvas/tangan_chiasa_1536x864.png",
+      "bbox_xyxy": [
+        917,
+        0,
+        1471,
+        613
+      ],
+      "position_for_crop_xy": [
+        917,
+        0
+      ]
+    },
+    "tangan_player_pilih_yutaka": {
+      "source": "1000351677.png",
+      "cropped_png": "sprites/cropped/tangan_player_pilih_yutaka.png",
+      "full_canvas_png": "sprites/full_canvas/tangan_player_pilih_yutaka_1536x864.png",
+      "bbox_xyxy": [
+        574,
+        383,
+        1046,
+        864
+      ],
+      "position_for_crop_xy": [
+        574,
+        383
+      ]
+    },
+    "tangan_player_pilih_chiasa": {
+      "source": "1000351676.png",
+      "cropped_png": "sprites/cropped/tangan_player_pilih_chiasa.png",
+      "full_canvas_png": "sprites/full_canvas/tangan_player_pilih_chiasa_1536x864.png",
+      "bbox_xyxy": [
+        570,
+        423,
+        1033,
+        864
+      ],
+      "position_for_crop_xy": [
+        570,
+        423
+      ]
+    }
+  },
+  "sequences": {
+    "pilih_yutaka": {
+      "full_scene_frames": "animation/pilih_yutaka/full_scene_frames/frame_000.png ... frame_019.png",
+      "player_overlay_frames": "animation/pilih_yutaka/player_only_frames/frame_000.png ... frame_019.png",
+      "preview_gif": "preview/pilih_yutaka_preview.gif"
+    },
+    "pilih_chiasa": {
+      "full_scene_frames": "animation/pilih_chiasa/full_scene_frames/frame_000.png ... frame_019.png",
+      "player_overlay_frames": "animation/pilih_chiasa/player_only_frames/frame_000.png ... frame_019.png",
+      "preview_gif": "preview/pilih_chiasa_preview.gif"
+    }
+  }
+}

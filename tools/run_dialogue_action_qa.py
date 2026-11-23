@@ -58,11 +58,11 @@ init 100 python:
         if name=="kk_route_select":
             scope=renpy.get_screen(name).scope
             button=renpy.get_displayable(name,"ks_hand_"+ks_review_host)
-            assert button.style.focus_mask is True
-            art="hand-male" if ks_review_host=="yutaka" else "hand-female"
-            rendered=renpy.render(ks_action_image(art,780,780),780,780,0,0)
-            assert not rendered.is_pixel_opaque(779,0)
-            assert rendered.is_pixel_opaque(390,390)
+            assert button.style.focus_mask not in (None,True)
+            x,y,w,h,_=KS_HAND_BOUNDS[ks_review_host]
+            rendered=renpy.render(button.style.focus_mask,w,h,0,0)
+            assert not rendered.is_pixel_opaque(w-1,h-1)
+            assert any(rendered.is_pixel_opaque(px,py) for px in range(w//3,2*w//3,15) for py in range(h//3,2*h//3,15))
             if scope['selected'] is None:
                 renpy.set_focus(name,"ks_hand_"+ks_review_host)
                 return renpy.run(button.action)

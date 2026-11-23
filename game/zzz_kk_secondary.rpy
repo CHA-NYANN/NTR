@@ -43,6 +43,24 @@ init 45 python:
     def ks_action_image(name,w,h,lit=False):
         return Transform(kg_root+"actions/"+name+".png",xysize=(w,h),fit="contain",matrixcolor=BrightnessMatrix(.07 if lit else -.08))
 
+    # Original 1536x864 package, scaled uniformly to the game's 1920x1080 canvas.
+    # The background already contains both offered hands and the question.
+    KS_HAND_ROOT = kg_root + "hand-choice/"
+    KS_HAND_FPS = 12
+    KS_HAND_FRAME_COUNT = 20
+    KS_HAND_DURATION = KS_HAND_FRAME_COUNT / float(KS_HAND_FPS)
+    KS_HAND_BOUNDS = {
+        "yutaka": (51, 0, 749, 801, "tangan_yutaka.png"),
+        "chiasa": (1146, 0, 692, 766, "tangan_chiasa.png"),
+    }
+
+    def ks_hand_mask(host):
+        x, y, w, h, filename = KS_HAND_BOUNDS[host]
+        return Transform(KS_HAND_ROOT + "sprites/" + filename, xysize=(w,h))
+
+    def ks_hand_frame(host, index):
+        return KS_HAND_ROOT + "animation/pilih_" + host + "/frame_%03d.png" % index
+
     def ks_action_set(rows,heading):
         if heading=="Di situasi gila ini, apa langkah pertamamu?":
             return (["wallet","mirror","phone","chair"] if kk_host=="yutaka" else ["mirror","phone","door","chair"])
@@ -169,21 +187,30 @@ transform ks_reach(index=0,taken=False,decided=False):
 screen kk_route_select():
     modal True
     default selected=None
-    add Solid("#040509")
-    text "Tangan mana yang akan kau raih?" font kg_hand size 54 color "#F3EDF7" xalign .5 ypos 135
-    for index,host,art,cx in [(0,"yutaka","hand-male",460),(1,"chiasa","hand-female",1460)]:
+    default selected_frame=0
+    add Transform(KS_HAND_ROOT+"background.png",xysize=(1920,1080)) id "ks_hand_scene"
+    for host in ("yutaka","chiasa"):
+        $ _hx,_hy,_hw,_hh,_filename=KS_HAND_BOUNDS[host]
+        $ _hand=ks_hand_mask(host)
         imagebutton:
             id ("ks_hand_"+host)
-            pos (cx,678)
-            idle ks_action_image(art,780,780)
-            hover ks_action_image(art,780,780,True)
-            focus_mask True
+            pos (_hx,_hy)
+            idle Transform(_hand,alpha=0.0)
+            hover Transform(_hand,matrixcolor=BrightnessMatrix(.08))
+            insensitive Transform(_hand,alpha=0.0)
+            focus_mask _hand
             action SetScreenVariable("selected",host)
             sensitive selected is None
             alt ("Raih tangan pria di kiri" if host=="yutaka" else "Raih tangan wanita di kanan")
-            at ks_reach(index,selected==host,selected is not None)
     if selected:
-        timer .38 action Return(selected)
+        if persistent.kk_secondary_motion:
+            add Transform(ks_hand_frame(selected,selected_frame),xysize=(1920,1080)) id "ks_player_reach"
+            # A clock local to this choice, independent of time spent waiting on it.
+            # Return only after every frame, including the held final pose, was shown.
+            timer (1.0/KS_HAND_FPS) repeat True action If(selected_frame<KS_HAND_FRAME_COUNT-1,SetScreenVariable("selected_frame",selected_frame+1),Return(selected))
+        else:
+            add Transform(ks_hand_frame(selected,KS_HAND_FRAME_COUNT-1),xysize=(1920,1080)) id "ks_player_reach"
+            timer .25 action Return(selected)
 
 screen ks_illustrated_choices(rows,heading,art):
     modal True
