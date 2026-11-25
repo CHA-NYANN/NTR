@@ -219,6 +219,11 @@ label kkscene_N15:
         nagisa "Tadi Onii-chan kirim pesan, katanya proyek kantornya lembur sampai tanggal dua puluh enam. Ia cuma kirim dua baris pesan minta maaf sama transfer uang jajan tambahan, seolah kupon kue bisa bikin meja makan rumah nggak kosong lagi kayak tahun lalu."
         chiasa "Ah... maaf, Nagisa-senpai, aku nggak tahu... Kalau Senpai masih mau membereskan meja dulu, biar aku bantu merapikan gulungan kertasnya terus kita turun ke stasiun bareng."
         nagisa "Nggak usah minta maaf. Aku sudah biasa melihat lampu ruang tengah rumah cuma menyala satu setiap akhir tahun. Lucu ya, bikin maket rumah mungil yang lampunya kelihatan hangat begini gampang banget, tinggal pasang baterai kecil. Tapi bikin orang beneran betah tinggal di dalam rumah yang asli susah banget."
+        chiasa "Nagisa-senpai... dari tadi kamu sudah makan sesuatu belum selain cokelat panas dari mesin minuman itu? Wajahmu kelihatan agak pucat lho."
+        nagisa "Sudah makan setengah roti manis tadi di koridor kok. Perutku nggak terlalu lapar kalau kepalaku lagi penuh pikiran."
+        chiasa "Harusnya Senpai langsung meneleponku sejak tadi kalau memang lagi nggak enak hati, jangan duduk diam sendirian di studio dingin begini berjam-jam."
+        nagisa "Kalau aku menelepon setiap kali merasa sepi, lama-lama kamu pasti juga bakal capek dengar suaraku, Chiasa-chan."
+        nar "Kamu menatap wajahnya yang terlalu tenang di samping lampu maket yang berpendar lembut, baru menyadari betapa lama ia telah duduk menatap layar ponsel kosong di ruangan yang makin sepi ini."
         nar "Nagisa meletakkan ponselnya dalam posisi terbalik di atas meja maket. Saat ia mengangkat wajahnya, mata biru cerahnya menatapmu lurus tanpa air mata ataupun amarah yang meledak. Justru ketenangan suaranya terasa terlalu datar untuk kalimat yang sudah jelas ia timbang sejak lama."
         nagisa "Aku tadinya mau mengirimnya lewat pesan aja, Chiasa-chan. Tapi aku capek kalau nanti pesanku cuma kamu balas pakai stiker lucu atau janji ketemu lain hari. Jadi aku hapus semua biar bisa kukatakan langsung di depanmu."
         chiasa "Senpai... tanganmu dingin banget kelihatannya. Kenapa suaramu mendadak serius begitu? Ada masalah lagi sama anak-anak studio?"
@@ -250,11 +255,18 @@ label kkscene_N15:
             nar "Ia mengangguk-angguk cepat dengan mata biru yang masih berkilau basah, lalu segera menghapus jejak air matanya sendiri dengan punggung tangan. Tangannya mematikan sakelar kecil lampu maket rumah di atas meja, lalu merogoh buku agenda saku bersampul merah muda dari dalam tasnya."
             nar "Belum sampai satu menit setelah tangisnya reda, nada suaranya sudah kembali rapat oleh ketegangan baru yang menyamar sebagai rencana liburan."
             nagisa "Kalau begitu, kita tulis sekarang aja ya jadwal liburannya biar jelas! Tanggal dua puluh empat, dua puluh lima, sama dua puluh enam kamu kosong buatku kan? Jam berapa kita ketemu supaya nggak ada yang sempat bikin janji duluan sama kamu?"
-            nar "Ia membuka halaman kalender bulan Desember di buku agenda merah mudanya, lalu menyodorkan buku itu ke depan sikumu sambil menatap kalender di layar ponselmu."
-            chiasa "Eh... iya, nanti kita atur jamnya pelan-pelan ya, Senpai. Tapi aku juga masih harus izin sebentar di rumah."
+            nar "Ia membuka halaman kalender bulan Desember di buku agenda merah mudanya, lalu menyodorkan pena gel berwarna merah muda ke tanganmu sambil menatap kalender di layar ponselmu."
+            nagisa "Tulis sendiri namamu di kotak tanggal dua puluh empat sama dua puluh lima pakai penaku ya, Chiasa-chan. Biar tiap aku bangun tidur dan buka buku ini, aku lihat tulisan tanganmu sendiri dan tahu ini beneran bukan cuma kalimat pengantar tidur."
+            chiasa "Eh... iya, sebentar aku tulis. Tapi nanti aku tetap harus izin sebentar di rumah ya, Senpai."
+            nar "Kamu sempat menahan napas setengah detik menatap kotak tanggal yang kosong di buku agenda itu, lalu menuliskan namamu perlahan. Begitu ujung penamu terangkat, Nagisa langsung mendekap buku agenda terbuka itu sebentar di depan dadanya dengan raut lega yang teramat dalam."
+            nar "Jari ibu jarinya menyentuh pelan tepi kertas di dekat goresan tinta merah muda namamu, seolah sedang memastikan huruf-huruf itu sungguh ada dan tidak akan memudar begitu halaman ditutup."
+            nagisa "Akhirnya kotak tanggal merah bulan Desember di bukuku nggak kosong lagi tahun ini..."
+            chiasa "Tulisan tanganku agak berantakan ya gara-gara jariku dingin."
+            nagisa "Nggak apa-apa, justru aku suka banget. Jadi aku tahu persis kamu sendiri yang menulisnya di sini."
+            nar "Ia mengembalikan tutup pena dengan gerakan lembut, tetapi sorot mata biru cerahnya yang masih agak basah segera kembali menyiratkan kecemasan yang terlalu mudah terusik."
             nar "Nagisa menyandarkan keningnya sebentar ke bahu mantelmu, suaranya mendadak melirih nyaris seperti anak kecil yang kelelahan berjaga sendirian."
             nagisa "Aku sebenarnya benci banget kelihatan serba menuntut begini, Chiasa-chan... aku cuma takut banget kalau aku lengah satu detik aja, semua orang lain langsung menarikmu pergi lagi."
-            nagisa "Kalau misal tanggal dua puluh empat nanti Koita-kun mendadak telepon minta bantuan di jam yang sama, kamu tetap mendahulukan janji sama aku kan?"
+            nagisa "Kalau misal tanggal dua puluh empat nanti Koita-kun mendadak telepon minta bantuan di jam yang sama, kamu tetap mendahulukan janji sama aku kan? Dan tolong jangan matikan suara ponselmu selama liburan ya."
             chiasa "Aku sudah bilang aku memilihmu, Nagisa-senpai. Aku nggak bakal membatalkan janji kita begitu saja."
             nagisa "Nggak masalah, yang penting kamu langsung kasih tahu aku duluan setiap kali ponselmu bunyi ada pesan dari anak klub lain atau dari rumah ya. Soalnya aku nggak mau ada salah paham kecil lagi kayak kemarin."
             nagisa "Kalau kita saling kasih tahu setiap rencana dari awal dan nggak ada yang disembunyikan, nggak bakal ada orang luar yang bisa nyelip di tengah-tengah kita lagi."
@@ -280,7 +292,13 @@ label kkscene_N15:
             chiasa "Bukan begitu, Senpai! Duduk dulu dua menit saja dan tarik napas sebentar! Aku benar-benar peduli sama Senpai sejak musim gugur kemarin, tapi kalau hubungan dibangun dengan membuang semua orang di sekitar kita, ujung-ujungnya kita berdua juga yang bakal terluka!"
             nar "Nagisa menggeleng tajam hingga ujung rambut pirang twin-tail berpita hitam-pink miliknya terayun cepat. Mata birunya tampak berkaca-kaca tipis, tetapi ia menahannya keras agar tidak satu tetes pun jatuh di depanmu."
             nagisa "Kalau kamu bilang peduli tapi tetap nggak berani melepaskan satu orang pun demi aku, bedanya kamu sama Koita-kun yang ramah ke semua orang apa, Chiasa-chan?"
-            nar "Perbandingan tajam itu langsung menghantam dadamu hingga kalimat pembelaanmu tertahan di tenggorokan."
+            nar "Perbandingan tajam itu langsung menghantam dadamu hingga kalimat pembelaanmu tertahan di tenggorokan. Kamu menelan gugup lalu menjawab sepelan dan sejujur yang kamu mampu."
+            chiasa "Aku nggak pernah menganggap Senpai cadangan! Aku cuma nggak percaya kedekatan yang sehat bisa tumbuh kalau aku harus membuang semua orang lain dari hidupku."
+            nagisa "Mudah sekali bicara soal hubungan yang sehat kalau rumahmu selalu ada lampu menyala dan suara orang yang menunggumu pulang, Chiasa-chan."
+            nar "Kamu refleks melangkah maju setengah tapak sambil mengulurkan tangan hendak menyentuh lengan sweternya pelan, berharap suaramu masih bisa menembus dingin yang baru saja turun di antara kalian."
+            chiasa "Nagisa-senpai, aku tahu rasanya kesepian di rumah besar yang kosong itu berat banget, tapi tolong jangan tutup telinga dulu..."
+            nar "Nagisa langsung mundur setengah langkah menghindari sentuhan jarimu dengan tatapan yang begitu dingin hingga tanganmu tertahan di udara."
+            nagisa "Kamu nggak tahu rasanya pulang ke rumah yang sama sekali nggak ada suara orang lain selama berhari-hari, Chiasa-chan. Jangan pura-pura paham cuma buat menenangkan aku lima menit."
             nagisa "Nggak usah mengajari aku soal luka, Chiasa-chan. Aku sudah hafal rasanya jauh sebelum kamu pindah masuk ke kampus ini."
             nar "Ia memutar badan cepat membelakangimu dan mulai memasukkan buku catatan, penggaris skala, serta tempat pensilnya ke dalam tas kain. Kamu bisa melihat jelas kedua tangannya gemetar saat menarik ritsleting tas sampai tempat pensilnya tergelincir jatuh ke lantai kayu."
             nar "Begitu kamu refleks membungkuk hendak mengambilkannya, Nagisa langsung menyambar tempat pensil itu lebih cepat sampai ujung jarinya hampir menyentuh tanganmu, sementara gantungan kunci Koko berayun keras membentur tepi meja."
@@ -288,7 +306,8 @@ label kkscene_N15:
             nagisa "Nggak usah. Jangan sentuh barangku. Kamu kan sibuk harus menjaga perasaan banyak orang. Jangan buang waktumu mengantar orang yang cuma bikin repot."
             nar "Nagisa menyampirkan mantelnya terburu-buru di atas satu bahu, meraih tali tasnya erat, lalu melangkah cepat melewati dirimu tanpa sedikit pun menoleh lagi. Pintu kayu studio berderit lalu menutup cukup keras menggema di koridor kosong."
             nar "Kamu sempat melangkah dua tapak menuju ambang pintu, tetapi bunyi langkah sepatu cepatnya sudah menghilang menuruni tangga darurat Gedung Arsitektur. Di atas meja maket hanya tersisa dua gelas kertas cokelat panas yang sudah dingin total dan lampu kecil maket rumah yang masih menyala sendirian."
-            nar "Kamu berjalan perlahan kembali ke meja kayu itu, menemukan satu jepit rambut kecil berbentuk silang merah muda milik Nagisa yang terlepas di samping alas potong maket. Kamu memungutnya pelan dan mematikan sakelar lampu studio satu per satu seorang diri."
+            nar "Kamu berjalan perlahan kembali ke meja kayu itu, menemukan satu jepit rambut kecil berbentuk silang merah muda milik Nagisa yang terlepas di samping alas potong maket. Kamu memungutnya pelan, lalu menekan sakelar baterai kecil di bawah maket rumah agar lampu mungilnya tidak terus menyala sendirian sampai habis di ruang kosong."
+            nar "Setelah memastikan semua lampu neon studio padam satu per satu, kamu melangkah keluar ke koridor yang dingin sambil menggenggam jepit rambut merah muda itu di saku mantelmu."
             chiasa "{i}Aku tahu aku nggak boleh tunduk pada ultimatum itu... tapi melihat tangannya gemetar waktu pergi sendirian barusan, aku sama sekali nggak tenang memikirkan siapa yang bakal ia hubungi selanjutnya.{/i}"
             nar "Kamu berdiri lama di tengah studio yang hening, tidak tahu apakah ia akan pulang menemui Haruto, mengurung diri sendirian, atau membiarkan rasa takutnya di dalam kepala berubah pelan-pelan menjadi tindakan yang tidak lagi bisa kamu cegah."
         else:
@@ -298,7 +317,9 @@ label kkscene_N15:
             chiasa "Mana mungkin aku lupa sama Senpai cuma gara-gara urusan lain? Kalau Senpai butuh aku, aku selalu usahakan datang buat Senpai kan? Jadi nggak usah mikir yang berat-berat lagi ya pas liburan Natal begini."
             nar "Sorot mata biru Nagisa menyipit sejenak menyaring seluruh kalimatmu. Ia belum langsung melepaskan ketegangan di bahunya, justru memiringkan wajah untuk menguji apakah kalimat manismu itu benar-benar memiliki isi."
             nagisa "...Jadi tempatku memang berbeda dari mereka semua? Berarti kalau nanti Koita-kun atau anak-anak klub lain mengajakmu pergi di hari yang sama, kamu bakal mengutamakan aku duluan kan, Chiasa-chan?"
-            chiasa "Aduh, Senpai, tentu saja aku bakal cari cara buat nemuin Senpai duluan kok. Buatku waktu berdua sama Senpai selalu beda rasanya dibanding keramaian di klub. Mana mungkin aku membiarkan Senpai nunggu sendirian. Sekarang wajahnya jangan tegang lagi ya, nanti pusing lho."
+            chiasa "Aduh, Senpai, tentu saja aku bakal cari cara buat nemuin Senpai duluan kok. Buatku waktu berdua sama Senpai selalu beda rasanya dibanding keramaian di klub. Mana mungkin aku membiarkan Senpai nunggu sendirian."
+            nagisa "Kalau tengah malam aku telepon karena rumah terlalu sepi juga kamu nggak bakal bilang lagi sibuk sama orang lain kan?"
+            chiasa "Mana mungkin aku mengabaikan telepon Senpai kalau Senpai lagi sedih sendirian di rumah? Sekarang wajahnya jangan tegang lagi ya, nanti pusing lho."
             nar "Kamu sengaja menjaga nada suaramu selembut dan sehangat mungkin agar tidak satu pun kalimatmu terasa seperti penolakan, sekaligus tanpa pernah berjanji secara nyata akan memutus hubungan dengan siapa pun."
             nar "Persis seperti seseorang yang terlalu lelah menahan napas, Nagisa akhirnya memilih menyingkirkan seluruh kata bersyarat di belakang ucapanmu dan hanya menggenggam erat potongan kalimat yang terdengar paling pasti agar dadanya bisa bernapas lega."
             nar "Ketegangan di bahu Nagisa langsung luruh dalam satu tarikan napas panjang. Senyum lega perlahan kembali naik ke bibirnya, meski sorot matanya masih memegang kalimatmu dengan kesungguhan yang jauh lebih keras dari niatmu."
@@ -310,7 +331,11 @@ label kkscene_N15:
             chiasa "Ah... iya, Nagisa-senpai."
             nagisa "Kalau begitu ayo kita turun bareng sampai gerbang depan. Di dekat stasiun ada toko kue tart stroberi kecil yang kemarin kulihat di majalah, besok kita mampir ke sana ya mumpung kamu sudah nggak perlu sibuk mengurus rencana Koita-kun atau Tachibana-san lagi."
             chiasa "Iya, nanti kita lihat jam bukanya bareng ya, Senpai."
-            nar "Nagisa tersenyum manis sambil menggandeng ujung lengan mantelmu menuju pintu studio, langkahnya jauh lebih ringan dari sepuluh menit lalu. Gantungan Koko di tasnya berayun tenang mengikuti setiap langkahnya menuruni tangga Gedung Arsitektur."
+            nar "Nagisa tersenyum manis sambil menepuk lembut gantungan boneka Koko di ritsleting tasnya lalu menggandeng ujung lengan mantelmu menuju pintu studio, langkahnya jauh lebih ringan dari sepuluh menit lalu."
+            nar "Menuruni tangga Gedung Arsitektur yang sepi, jari-jarinya melingkar hangat di lenganmu sambil terus bercerita riang soal hiasan etalase kue tart, sementara setiap kalimat rencananya mengunci hari-harimu satu per satu."
+            nagisa "Oh iya, kamu masih ingat kan rasa kue yang paling kusuka waktu kita pertama kali beli jajan bareng di musim semi dulu?"
+            chiasa "Kue tart stroberi yang krimnya nggak terlalu manis kan, Senpai?"
+            nagisa "Fufu, tuh kan! Kamu memang paling ingat hal-hal kecil tentangku dibanding siapa pun. Rasanya lega banget tahu aku nggak salah memilih untuk percaya sama kamu."
             nar "Kamu membalas celotehannya tentang kue tart dengan senyum kaku sambil merasakan jerat halus dari kata-katamu sendiri mulai mengencang."
             chiasa "{i}Suasana memang langsung tenang lagi... tapi aku tahu persis ia pulang membawa janji yang sebenarnya nggak sanggup kutanggung kalau hari itu benar-benar datang.{/i}"
             nar "Ia pulang dengan membawa keyakinan mutlak yang tidak pernah benar-benar kamu niatkan untuk ditepati. Kedamaian sesaat di libur Natal ini baru saja kamu beli dengan utang luka yang jauh lebih besar ketika makna kata-kata kalian akhirnya bertabrakan nanti."
@@ -419,4 +444,16 @@ label kkscene_N18:
 init 1 python:
     _hook("N14-A", lambda: (kk_rel("nagisa","trust",4), kk_nagisa_stage(3)))
     _hook("N14-B", lambda: (kk_rel("nagisa","jeal",10), kk_nagisa_stage(3)))
-    _hook("N14-C", lambda: (kk_adj("luka_bohong",10), kk_nagisa_stage(3), kk_flag("rute_y
+    _hook("N14-C", lambda: (kk_adj("luka_bohong",10), kk_nagisa_stage(3), kk_flag("rute_yandere_nagisa")))
+    _hook("N15-A", lambda: (kk_adj("kelekatan_nagisa",15), kk_nagisa_stage(4), kk_flag("nagisa_dipilih")))
+    _hook("N15-B", lambda: (kk_rel("nagisa","fear",8), kk_nagisa_stage(4)))
+    _hook("N15-C", lambda: (kk_adj("luka_bohong",12), kk_nagisa_stage(4)))
+    _hook("N16-A", lambda: (kk_rel("nagisa","intim",8), kk_flag("nagisa_diterima")))
+    _hook("N16-B", lambda: (kk_rel("nagisa","jeal",12), kk_flag("nagisa_ditolak_keras")))
+    _hook("N16-C", lambda: kk_rel("nagisa","jeal",6))
+    _hook("N17-A", lambda: (kk_rel("nagisa","trust",5), kk_flag("nagisa_pemulihan_terakhir")))
+    _hook("N17-B", lambda: (kk_nagisa_stage(5), kk_flag("nagisa_jebakan_dipasang")))
+    _hook("N17-C", lambda: kk_rel("nagisa","jeal",8))
+    _hook("N18-A", lambda: (kk_rel("nagisa","trust",4), kk_flag("nagisa_dihentikan")))
+    _hook("N18-B", lambda: (kk_nagisa_stage(5), kk_flag("yuuto_disabotase")))
+    _hook("N18-C", lambda: (kk_adj("kelekatan_nagisa",20), kk_nagisa_stage(5), kk_flag("nagisa_distorted")))
