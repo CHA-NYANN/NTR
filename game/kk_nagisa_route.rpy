@@ -238,7 +238,10 @@ label kkscene_N15:
         nagisa "Jangan jawab ini bukan perlombaan, dan jangan jawab semuanya penting. Aku sudah hafal kalimat itu, dan aku tahu kok Koita-kun, teman-teman seni rupamu, Tachibana-san, dan semua orang lain di sekitarmu itu memang penting buatmu."
         nagisa "Setiap kali seseorang bilang semua orang sama-sama penting, ujung-ujungnya selalu sama, aku yang duduk sendirian di ruang kosong sambil melihat semua orang lain pulang bareng orang pilihan mereka."
         nagisa "Aku nggak nanya siapa saja yang kamu anggap baik. Aku ingin tahu siapa yang akan kamu tinggalkan kalau hari ini kamu cuma boleh mempertahankan satu sisi."
+        chiasa "Nagisa-senpai..."
+        nagisa "Kamu diam ya? Padahal kalau pertanyaan ini ditanyakan soal orang lain, kamu selalu cepat sekali punya alasan buat menenangkan mereka."
         nar "Kamu tertegun memandangi sosok bertubuh mungil setinggi seratus lima puluh lima sentimeter di depanmu itu. Bahunya sedikit tegang di balik sweter rajutnya, dan jemarinya diam-diam meremas ujung tali tas tepat di samping gantungan Koko."
+        nar "Detik jam dinding di atas pintu studio berbunyi pelan, seolah menghitung berapa lama lagi kamu berani menunda jawaban di depan tatapan biru cerahnya yang tidak bergeming sedikit pun."
         nar "Ia tidak lagi sekadar meminta ditemani makan kue atau menghabiskan waktu Natal bersama. Di ruang studio yang hening ini, Nagisa sedang meminta seluruh peta hubunganmu menjadi jaminan mutlak bahwa dirinya tidak akan pernah lagi berada di urutan kedua lalu ditinggalkan."
         chiasa "{i}Kalau aku menjawab asal-asalan sekarang, tidak ada satu pun kalimat manis yang bisa meredam apa yang sedang menumpuk di belakang mata birunya.{/i}"
         call kk_family_menu("N15", ["\"Aku pilih kamu, Nagisa-senpai. Aku di sisimu.\"", "\"Maaf, Senpai, aku nggak bisa menerima ultimatum seperti itu.\"", "Tenangkan ia seolah ia menang tanpa benar-benar memutus yang lain."])
@@ -308,8 +311,9 @@ label kkscene_N15:
             nar "Kamu sempat melangkah dua tapak menuju ambang pintu, tetapi bunyi langkah sepatu cepatnya sudah menghilang menuruni tangga darurat Gedung Arsitektur. Di atas meja maket hanya tersisa dua gelas kertas cokelat panas yang sudah dingin total dan lampu kecil maket rumah yang masih menyala sendirian."
             nar "Kamu berjalan perlahan kembali ke meja kayu itu, menemukan satu jepit rambut kecil berbentuk silang merah muda milik Nagisa yang terlepas di samping alas potong maket. Kamu memungutnya pelan, lalu menekan sakelar baterai kecil di bawah maket rumah agar lampu mungilnya tidak terus menyala sendirian sampai habis di ruang kosong."
             nar "Setelah memastikan semua lampu neon studio padam satu per satu, kamu melangkah keluar ke koridor yang dingin sambil menggenggam jepit rambut merah muda itu di saku mantelmu."
+            nar "Saat berhenti di depan jendela besar dekat tangga lantai dua, kamu sempat melihat sosok kecil berambut pirang twin-tail melangkah cepat menyeberangi halaman kampus menuju gerbang tanpa sedikit pun menoleh ke belakang."
             chiasa "{i}Aku tahu aku nggak boleh tunduk pada ultimatum itu... tapi melihat tangannya gemetar waktu pergi sendirian barusan, aku sama sekali nggak tenang memikirkan siapa yang bakal ia hubungi selanjutnya.{/i}"
-            nar "Kamu berdiri lama di tengah studio yang hening, tidak tahu apakah ia akan pulang menemui Haruto, mengurung diri sendirian, atau membiarkan rasa takutnya di dalam kepala berubah pelan-pelan menjadi tindakan yang tidak lagi bisa kamu cegah."
+            nar "Kamu berdiri lama di depan kaca dingin koridor yang hening itu, tidak tahu apakah ia akan pulang menemui Haruto, mengurung diri sendirian, atau membiarkan rasa takutnya di dalam kepala berubah pelan-pelan menjadi tindakan yang tidak lagi bisa kamu cegah."
         else:
             nar "Kamu melihat betapa tegangnya bahu Nagisa dan betapa rapuh ketenangannya di balik ultimatum itu. Kamu tidak ingin memutus seluruh hubunganmu dengan orang lain, tetapi kamu juga tidak sanggup menghadapi ledakan jika menolak langsung. Maka kamu memilih merangkai jawaban lunak yang terdengar seperti kemenangan baginya."
             chiasa "Nagisa-senpai, dengar aku dulu ya. Senpai tuh nggak perlu bikin perbandingan aneh-aneh sama mereka semua. Dari dulu kamu kan sudah tahu sendiri tempat Senpai di hidupku itu beda banget dibanding teman-teman kampus lain."
@@ -337,6 +341,7 @@ label kkscene_N15:
             chiasa "Kue tart stroberi yang krimnya nggak terlalu manis kan, Senpai?"
             nagisa "Fufu, tuh kan! Kamu memang paling ingat hal-hal kecil tentangku dibanding siapa pun. Rasanya lega banget tahu aku nggak salah memilih untuk percaya sama kamu."
             nar "Kamu membalas celotehannya tentang kue tart dengan senyum kaku sambil merasakan jerat halus dari kata-katamu sendiri mulai mengencang."
+            nar "Begitu kalian mencapai pintu kaca lantai bawah yang berembun dingin, Nagisa melepaskan gandengannya sebentar lalu melambaikan tangan dengan senyum paling cerah yang pernah kamu lihat sepanjang bulan Desember."
             chiasa "{i}Suasana memang langsung tenang lagi... tapi aku tahu persis ia pulang membawa janji yang sebenarnya nggak sanggup kutanggung kalau hari itu benar-benar datang.{/i}"
             nar "Ia pulang dengan membawa keyakinan mutlak yang tidak pernah benar-benar kamu niatkan untuk ditepati. Kedamaian sesaat di libur Natal ini baru saja kamu beli dengan utang luka yang jauh lebih besar ketika makna kata-kata kalian akhirnya bertabrakan nanti."
     else:

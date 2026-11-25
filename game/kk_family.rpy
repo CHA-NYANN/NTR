@@ -656,7 +656,7 @@ label kkscene_Mi18:
             nar "Tachibana Sayuri menutup bibirnya dengan kaku tanpa membantah keputusan suaminya, sementara Kazuhiro merapikan map jadwal putih itu kembali ke sisi meja dengan gerakan berat."
             nar "Tidak lama kemudian, kalian berdua melangkah keluar menuju koridor lantai atas yang sepi. Begitu pintu mahoni menutup di belakang punggung kalian, Miyuki akhirnya mengembuskan napas panjang sambil bersandar pelan di pilar marmer."
             chiasa "Tachibana-senpai... tadi di dalam jelas dan tegas sekali. Bahkan Oji-san langsung menutup map jadwalnya tanpa bisa memaksa lebih jauh."
-            miyuki "Padahal tepat sebelum kalimat itu keluar, suaraku hampir saja pecah lho, Chiasa-chan. Rasanya beda sekali dibanding Natal tahun lalu saat aku cuma bisa berdiri gugup di lorong ini memutar gelangku sendiri. Terima kasih sudah tetap di sini bersamaku."
+            miyuki "Padahal tepat sebelum kalimat itu keluar, suaraku hampir saja bergetar hebat lho, Chiasa-chan. Rasanya beda sekali dibanding Natal tahun lalu saat aku cuma bisa berdiri gugup di lorong ini memutar gelangku sendiri. Terima kasih sudah tetap di sini bersamaku."
             chiasa "Tangan Senpai bahkan sudah nggak dingin lagi sekarang. Ayo kita keluar cari minuman hangat dulu buat merayakan langkah pertama ini."
             miyuki "Fufu, ide bagus. Aku benar-benar butuh teh hangat yang manis sekarang. Nanti begitu aku pulang ke rumah orang tua, pasti Ibu masih akan mengajak bicara panjang soal kejadian di ruangan tadi."
             chiasa "Kalau perlu teman cerita habis dari rumah orang tua, tinggal kirim pesan atau telepon aku ya, Senpai."

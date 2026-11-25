@@ -190,6 +190,12 @@ init python:
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
 
+    ## Folder referensi/scratch di root proyek - bukan aset game, jangan ikut
+    ## ter-bundle ke distribusi (termasuk build web).
+    build.classify('qa-dialogue-*/**', None)
+    build.classify('Karakter/**', None)
+    build.classify('asset/**', None)
+
     ## Untuk mengarsipkan file, mengklasifikasikannya sebagai 'archive'.
 
     # build.classify('game/**.png', 'archive')
