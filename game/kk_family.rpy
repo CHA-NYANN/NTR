@@ -658,7 +658,9 @@ label kkscene_Mi18:
             chiasa "Tachibana-senpai... tadi di dalam jelas dan tegas sekali. Bahkan Oji-san langsung menutup map jadwalnya tanpa bisa memaksa lebih jauh."
             miyuki "Padahal tepat sebelum kalimat itu keluar, suaraku hampir saja pecah lho, Chiasa-chan. Rasanya beda sekali dibanding Natal tahun lalu saat aku cuma bisa berdiri gugup di lorong ini memutar gelangku sendiri. Terima kasih sudah tetap di sini bersamaku."
             chiasa "Tangan Senpai bahkan sudah nggak dingin lagi sekarang. Ayo kita keluar cari minuman hangat dulu buat merayakan langkah pertama ini."
-            miyuki "Fufu, ide bagus. Aku benar-benar butuh teh hangat yang manis sekarang."
+            miyuki "Fufu, ide bagus. Aku benar-benar butuh teh hangat yang manis sekarang. Nanti begitu aku pulang ke rumah orang tua, pasti Ibu masih akan mengajak bicara panjang soal kejadian di ruangan tadi."
+            chiasa "Kalau perlu teman cerita habis dari rumah orang tua, tinggal kirim pesan atau telepon aku ya, Senpai."
+            miyuki "Pasti, Chiasa-chan. Kali ini aku nggak bakal menghadapi mereka sambil menunduk sendirian lagi."
             nar "Langkah itu belum menjadi kemenangan penuh, tetapi akhirnya membuka satu ruang nyata di tengah meja keluarga yang kini mau tidak mau harus diisi oleh suaranya sendiri."
     else:
         nar "Keluarga Hayase datang dengan bingkisan dan pilihan tanggal untuk acara berikutnya. Pertemuan belum dimulai, tetapi di meja sudah ada terlalu banyak benda yang membuat penolakan terasa seperti merusak pekerjaan banyak orang."
