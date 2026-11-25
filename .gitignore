@@ -35,5 +35,9 @@ Thumbs.db
 venv/
 .env
 
+# Folder scratch hasil tools/run_dialogue_action_qa.py (salinan game + capture
+# sementara, bukan sumber asli) - jangan ikut di-commit.
+/qa-dialogue-*/
+
 # Tetap simpan file sumber .rpy/.rpym, dokumen desain,
 # gambar aset, dan file konfigurasi yang memang dibutuhkan proyek.

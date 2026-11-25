@@ -11,7 +11,7 @@
 - **Yuu-kun** mempunyai sejarah masa kecil. Dalam matriks terbaru, Nagisa mengikuti **Yutaka → Yuu-kun** dan Chiasa mengikuti **Yutaka-kun → Yuu-kun** ketika makin dekat. Koita tetap memanggil **Yutaka**, sesuai tabel; jangan menambahkan tahap Yuu-kun pada baris Koita hanya karena profil lama menyebutnya.
 - **Yuu-oniichan** tetap tercatat sebagai panggilan masa kecil Chiasa kepada Yutaka, tetapi bukan tahap panggilan masa kini dalam tabel terbaru.
 - Moeka memanggil Nagisa **Nacchan**, mengikuti tabel pengguna. Julukan Moeka yang lain juga disengaja: **Kocchi, Yutayuta, Chimian, Miyumiyu-senpai, Hahamama**. Jangan membetulkan ejaan atau menggantinya dengan julukan dari draf lama.
-- **Shena** adalah identitas pena Chiasa. Jangan dipakai orang yang belum mengetahuinya. Mio mengenal identitasnya; Shiori tidak otomatis tahu sejak awal.
+- **Shena** adalah identitas pena Chiasa. Jangan dipakai orang yang belum mengetahuinya. Miono mengenal identitasnya; Shiori tidak otomatis tahu sejak awal.
 
 ## Aturan dasar
 
@@ -65,14 +65,23 @@ Catatan pembacaan tabel:
 | Mendekati romansa | Permintaan memakai nama depan bisa menjadi adegan tersendiri. Jangan jadikan pergantian nama bukti hubungan sudah resmi. |
 | Memanggil pihak yang tidak hadir | Nama boleh menyesuaikan pendengar agar jelas, tanpa mengubah kebiasaan sapaan langsung. |
 
-## NPC dan keluarga: pegangan awal untuk tahap berikutnya
+## NPC dan keluarga: aturan terkunci (seluruh panggilan bergaya Jepang)
 
-- Orang tua di rumah: Ibu/Ayah bila sesuai hubungan; pemain yang sedang menyamar dapat ragu, tetapi jangan membuat semua anggota keluarga mengganti panggilan tanpa alasan.
-- Teman anak kepada orang tua Amamiya: usulan Pak Daisuke/Bu Yoshie, bukan otomatis Ayah/Ibu. Kedekatan keluarga pilihan tidak langsung menghapus batas sapaan.
-- Dosen: Pak/Bu atau Prof. sesuai konteks; hindari menumpuk “Bu Mizuhara-sensei”.
-- Chiasa → Mio: usulan Mio-san; Mio → Chiasa dalam pekerjaan: Shena-sensei. Keadaan pribadi tidak otomatis sama dengan pekerjaan.
-- Chiasa ↔ Haruka: usulan nama depan tanpa honorifik sebagai sahabat.
-- Miyuki ↔ Sena dan Moeka ↔ Rina: usulan nama depan tanpa honorifik.
+- **Kaidah Umum Panggilan Jepang (DIKUNCI):** Seluruh panggilan antarkarakter di dalam dialog (termasuk ke saudara, senior kampus, orang tua teman, dosen, maupun staf/pengelola) **wajib menggunakan panggilan bahasa Jepang**, jangan memakai `Kak`, `Kakak`, `Mas`, `Mbak`, `Tante`, `Om`, `Paman`, `Bibi`, `Pak`, `Bu`, atau `Senior` sebagai sapaan langsung.
+- **Sakurajima Haruto (DIKUNCI):**
+  - **Nagisa → Haruto:** `Onii-chan` (termasuk nama kontak di ponsel Nagisa: `Onii-chan`).
+  - **Chiasa → Haruto:** `Haru nii-san`.
+  - **Koita & Yutaka → Haruto:** `Haru-nii`.
+- **Adik-adik Kohinata (Reito, Soura, Hinari) → Moeka & Tamu (DIKUNCI):**
+  - **Hinari → Moeka:** `Onee-chan`; ke tamu perempuan/laki-laki: `Onee-san` / `Onii-san`.
+  - **Reito & Soura → Moeka:** `Moeka-nee`; ke tamu perempuan/laki-laki: `Onee-san` / `Onii-san`.
+- **Senior / Kakak Tingkat Kampus (DIKUNCI):** Selalu panggil **`Senpai`** (bukan `Kak` atau `Senior`).
+- **Orang Tua di Rumah:** `Ayah` / `Ibu` tetap wajar dalam terjemahan dialog keluarga inti; untuk orang tua teman atau kerabat non-inti gunakan **`Daisuke-san` / `Yoshie-san`** (orang tua Amamiya), **`Oji-san` / `Oba-san`** (orang tua Saionji atau sapaan sopan orang tua teman), atau **`Tachibana-san`** (formal ke keluarga Tachibana).
+- **NPC Dewasa / Staf / Dosen:** `Ito-san` (Ito Shinpei, pemilik Kafe Komorebi), `Kuroiwa-san` (pengawal Saionji), `Okami-san` (pengelola ryokan), `Ogiwara-san` (pengelola asrama), `Mizuhara-sensei` / `Prof. Mizuhara` (dosen; hindari menumpuk `Bu Mizuhara-sensei`), `Sensei` (panggilan guru/dokter).
+- Chiasa → Miono: `Miono-san`; Miono → Chiasa dalam pekerjaan: `Shena-sensei`. Keadaan pribadi tidak otomatis sama dengan pekerjaan.
+- Chiasa ↔ Karuha: nama depan tanpa honorifik sebagai sahabat (`Karuha` / `Chiasa`).
+- Miyuki ↔ Yuina dan Moeka ↔ Ryena: nama depan tanpa honorifik (`Yuina` / `Ryena`).
+- **Daftar Nama Resmi NPC yang Diperbarui (Bukan Julukan, Nama Tetap Resmi):** `Hoshino Ryena`, `Akiyama Yuina`, `Kurosawa Meisa`, `Higashiyama Miono`, `Ishikawa Karuha`, `Kohinata Yaeka`, `Nakamura Kaichi`, `Mochizuki Fuuto`, `Kohinata Reito / Soura / Hinari`, `Hayase Tatsuru`, `Matsuda Tazumi`, `Kuga Renma`, `Fujisawa Sayane`, `Ito Shinpei`.
 - Sistem → pemain: tetapkan sapaan dasar terpisah jika diperlukan. Ejekan situasional bukan nama tetap dan tidak harus diulang setiap baris.
 - NPC baru mengikuti lingkungan, umur, hubungan dan jarak sosial; jangan langsung mempunyai akses ke julukan pribadi orang lain.
 

@@ -47,30 +47,30 @@ label kkscene_K_D02:
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_K_D03:
     call kk_scene_enter("koita", "Apartemen · Permintaan ganjil")
-    nar "Koita menunjukkan dua benda dalam keranjang belanja daring: sebuah hadiah dan bungkus yang harganya hampir seperempat hadiah itu. Jarinya menutupi nama penerima pada catatan pesanan."
-    koita "Menurutmu bungkus yang ini terlalu niat? Aku mau kelihatan serius, tapi nggak mau bikin dia merasa harus jawab sesuatu."
-    yutaka "Kalau kamu memang serius, bukannya wajar dia ingin tahu maksudmu?"
-    nar "Koita mengunci layar. Sesudah jeda yang kurang nyaman, ia menanyakan uang."
-    koita "Boleh bantu bayar sebagian? Bukan pinjaman, sih. Aku belum tahu kapan bisa ganti. Kalau nggak bisa, bilang saja."
+    nar "Di ruang tengah apartemenmu, Koita mencondongkan layar ponselnya memperlihatkan halaman keranjang belanja daring. Di dalamnya ada satu kotak hadiah elegan dan pilihan bungkus premium yang harganya hampir seperempat harga barangnya sendiri. Ibu jarinya sengaja menutupi baris nama penerima pada catatan pesanan."
+    koita "Menurutmu bungkus yang ini terlalu niat nggak, Yutaka? Aku pengin kelihatan serius, tapi di sisi lain nggak mau bikin orangnya merasa tertekan harus langsung jawab sesuatu."
+    yutaka "Kalau kamu memang serius, bukannya wajar banget kalau dia pengin tahu maksudmu apa?"
+    nar "Koita mengunci layar ponselnya pelan. Setelah jeda canggung yang sedikit terlalu panjang, ia mengusap tengkuknya lalu mengangkat suara agak pelan."
+    koita "Eh, Yutaka... boleh nggak aku minta tolong tambahin bayar sebagian? Terus terang ini bukan pinjaman pasti sih, aku belum tahu bulan mana sanggup balikin. Kalau nggak bisa, bilang terus terang aja ya."
     call kk_family_menu("K-D03", ["Berikan uangnya.", "Tolak dengan halus.", "Tanya hadiah itu untuk siapa."])
     if _return == "A":
-        nar "Kau memberikan uang yang dimintanya. Koita menghitung sekali, lalu menyimpannya tanpa lagi membicarakan bungkus."
-        koita "Makasih, Yutaka. Aku tahu ini agak keterlaluan."
-        yutaka "Hadiah darimu tetap harus kamu yang menjelaskan maksudnya. Aku cuma membantu uangnya."
-        koita "Iya. Aku nggak akan pakai namamu kalau dia bertanya."
-        nar "Ia membuka pesanan kembali. Kali ini ia memilih kotak untuk menulis pesan, bukan pilihan hiasan."
+        nar "Kamu mengeluarkan beberapa lembar uang dari dompet dan meletakkannya di meja tanpa memperpanjang pertanyaan. Koita menghitung sekilas lalu menyimpannya ke saku, tak lagi membahas soal bungkus mahal tadi."
+        koita "Makasih banyak, Yutaka. Aku tahu permintaan barusan agak keterlaluan."
+        yutaka "Nggak masalah soal uangnya. Cuma ingat ya, hadiah dari kamu tetap harus kamu sendiri yang menjelaskan maksudnya. Aku cuma bantu nutup harganya."
+        koita "Iya, aku paham. Aku nggak bakal bawa-bawa namamu kalau dia tanya."
+        nar "Ketika ia membuka halaman pesanan kembali, jarinya justru menekan kolom pesan kartu ucapan alih-alih kolom pita hiasan."
     elif _return == "B":
-        yutaka "Maaf, uangku sudah ada keperluannya. Aku nggak bisa."
-        koita "Oh. Iya, tentu. Aku cuma tanya."
-        nar "Ia menutup keranjang terlalu cepat, seolah barang-barang itu bisa melihat penolakannya."
-        koita "Aku pikir kalau hadiahnya cukup bagus... ya, sudahlah. Aku cari yang sesuai uangku saja."
-        nar "Kalimatnya berakhir kecil. Kau tak tahu apakah yang terasa ditolak baginya adalah permintaan uang atau keberanian yang baru ia kumpulkan."
+        yutaka "Maaf ya, Koita, uang bulananku sudah kepakai buat keperluan lain jadi kali ini aku nggak bisa bantu."
+        koita "Oh... iya, tentu aja. Wajar kok, aku tadi cuma iseng nanya."
+        nar "Ia mematikan layar ponsel terlalu cepat seolah barang di keranjang itu ikut mendengar penolakannya."
+        koita "Kupikir kalau hadiahnya cukup bagus bakal langsung kerasa niatnya... ya sudah, aku cari yang sesuai uangku sendiri aja."
+        nar "Ujung suaranya mengecil, meninggalkan tanda tanya apakah yang baru saja terasa ditolak baginya adalah permintaan uang atau keberanian yang susah payah baru ia kumpulkan."
     else:
-        yutaka "Sebelum soal uang, ini untuk siapa? Kamu bicara seperti dia akan tahu maksudmu dari kertas kado."
-        nar "Koita membuka layar lagi dan memperlihatkan nama pada catatan pesanan. Ia menyebut alasan yang sangat khusus: sesuatu yang pernah diinginkan orang itu, dalam percakapan yang ternyata ia ingat."
-        koita "Aku ingat hal begini. Terus aku mengira itu sudah cukup sebagai jawaban."
-        yutaka "Mengingat dan menjawab kan beda."
-        koita "Iya. Kayaknya itu bagian yang selama ini sengaja kulewati."
+        yutaka "Tunggu dulu. Sebelum bahas uang, hadiah itu sebenarnya buat siapa? Kamu ngomong seolah dia bisa membaca isi kepalamu cuma dari warna kertas kadonya."
+        nar "Koita sempat terdiam ragu, lalu membuka layar ponselnya lagi dan membiarkanmu melihat nama penerima beserta catatan kecil di bawahnya. Ia menyebutkan sebuah detail sangat spesifik tentang barang yang pernah disinggung orang itu dalam obrolan lama yang ternyata ia ingat persis."
+        koita "Aku selalu ingat hal-hal kecil begini, Yutaka. Terus selama ini aku selalu ngira mengingat detail begitu saja sudah cukup buat jadi jawaban."
+        yutaka "Mengingat sesuatu sama berani menjawab itu dua hal yang beda jauh, Koita."
+        koita "...Iya. Kayaknya memang bagian itu yang selama ini sengaja terus kulewati."
     return
 
 # ┌─ PANDUAN CERITA · K-D04 · Dua Pesan yang Sama
@@ -111,28 +111,35 @@ label kkscene_K_D04:
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_K_D06:
     call kk_scene_enter("koita", "Klub Sastra · Debat")
-    nar "Matsuda tidak mengembalikan lembar cerpen Koita setelah sesi baca. Ia menunjuk satu paragraf ketika anggota lain sudah mulai membereskan tas."
-    "Matsuda" "Tokohmu bilang dia nggak pernah menjanjikan apa-apa. Terus narator menyebut perempuan yang menunggunya terlalu menuntut. Kenapa cuma dia yang diberi hak menjelaskan?"
-    koita "Karena sudut pandangnya dari dia. Tokoh yang salah juga boleh punya cerita, kan?"
-    "Matsuda" "Boleh. Aku bertanya kenapa ceritanya selalu membenarkan dia."
-    nar "Tas-tas berhenti dibereskan. Koita menatapmu sekilas; biasanya pada titik ini seseorang akan membantu mengubah ketegangan menjadi lelucon."
+    nar "Seusai sesi bedah karya di ruang Klub Sastra, anggota lain sudah mulai membereskan alat tulis ketika Matsuda Tazumi menahan lembar cerpen Koita di atas meja. Jari Matsuda berhenti pada satu paragraf di halaman ketiga."
+    "Matsuda" "Di sini tokoh utamamu terus bilang dia nggak pernah menjanjikan apa-apa. Lalu narator langsung melabeli perempuan yang menunggunya sebagai pihak yang terlalu menuntut. Kenapa cuma pihak laki-lakinya yang dikasih hak menjelaskan diri?"
+    koita "Ya karena sudut pandang ceritanya memang dari dia, Matsuda. Tokoh yang nggak sempurna kan tetap boleh punya cerita sendiri."
+    "Matsuda" "Boleh banget. Yang kutanyakan itu kenapa susunan ceritamu selalu muter balik buat membenarkan sikapnya."
+    nar "Suara ritsleting tas di meja lain serentak berhenti. Koita menoleh sekilas ke arahmu, persis seperti saat ia berharap seseorang segera melempar candaan untuk melunakkan ketegangan."
     call kk_family_menu("K-D06", ["Dukung Matsuda.", "Bela Koita.", "Tetap diam."])
     if _return == "A":
-        nar "Kau menunjuk bagian ketika perempuan itu meminta kepastian. Tak ada tuntutan agar cintanya dibalas, hanya permintaan agar ia tak terus diminta menunggu."
-        "Matsuda" "Itu. Dia minta jawaban, bukan hadiah karena bersabar."
-        koita "Aku bisa menulis ulang bagian itu."
-        nar "Tak seorang pun menuduh Koita secara langsung. Namun ia menarik lembar cerpennya lebih dekat, seperti melindungi sesuatu yang jauh lebih pribadi."
+        if kk_host == "chiasa":
+            chiasa "Kalau kubaca lagi dialog di halaman tiga itu, tokoh perempuannya sebenarnya nggak menuntut cintanya dibalas kok, Ko-nii. Dia cuma minta kepastian biar nggak terus disuruh nunggu tanpa arah."
+        else:
+            yutaka "Poin Matsuda masuk akal juga, Koita. Di adegan itu tokoh perempuannya nggak minta dibalas perasaannya, dia cuma minta jawaban tegas supaya bisa berhenti menunggu."
+        "Matsuda" "Tepat di situ maksudku. Dia meminta jawaban yang jelas daripada terus digantung dengan alasan sabar."
+        koita "...Iya, mengerti. Nanti bagian paragraf itu kucoba tulis ulang lagi."
+        nar "Tidak seorang pun di ruangan itu menyinggung kehidupan pribadi Koita secara langsung. Meski begitu, caranya segera menarik lembar cerpen itu mendekat ke dada terasa seperti melindungi sesuatu yang jauh lebih personal daripada sekadar tugas klub."
     elif _return == "B":
-        nar "Kau membela hak Koita menulis tokoh yang tidak menyenangkan. Beberapa anggota mengangguk, lega mendapat jalan keluar dari pembicaraan yang mulai terasa pribadi."
-        koita "Iya. Itu maksudku. Makasih."
-        "Matsuda" "Hak menulisnya nggak sedang kucabut. Aku sedang membaca akibat dari cara dia menulis."
-        nar "Tetapi waktunya sudah lewat. Seseorang mengusulkan membeli minuman, dan Koita berdiri di dekatmu ketika kelompok mulai beranjak."
-        koita "Tadi kupikir kamu juga akan ikut menyerang. Syukurlah."
+        if kk_host == "chiasa":
+            chiasa "Tapi memang banyak cerita fiksi yang sengaja pakai sudut pandang tokoh yang nggak objektif kan, Matsuda-san? Justru itu hak penulis buat bikin pembaca menilai sendiri."
+        else:
+            yutaka "Namanya juga fiksi sudut pandang orang pertama, Matsuda. Penulisnya berhak penuh bikin tokoh yang bias tanpa harus jadi hakim moral di tiap paragraf."
+        nar "Beberapa anggota klub mengangguk cepat, lega mendapatkan celah untuk mengembalikan obrolan ke teori sastra."
+        koita "Nah, itu maksudku dari tadi. Makasih sudah paham."
+        "Matsuda" "Aku nggak lagi mencabut hak menulis siapa pun. Aku cuma membaca dampak dari cara cerita itu disusun."
+        nar "Ketegangan perlahan bubar saat seorang anggota mengajak membeli minuman di luar. Koita berjalan rapat di sampingmu menuju pintu."
+        koita "Jujur aja, tadi kupikir kamu juga bakal ikut nyerang tulisanku. Syukurlah kamu masih di pihakku."
     else:
-        nar "Kau tetap duduk. Matsuda menunggu sebentar, lalu menyerahkan lembar cerpen itu langsung kepada Koita."
-        "Matsuda" "Pikirkan saja. Aku sudah menuliskan catatanku."
-        koita "Iya. Nanti kubaca."
-        nar "Pembicaraan berikutnya tentang jadwal klub. Koita ikut menjawab dengan nada biasa, tetapi kertas Matsuda tidak ia masukkan bersama catatan anggota lain."
+        nar "Kamu tetap duduk tenang di kursimu tanpa memihak siapa pun. Matsuda menunggu dua detik, lalu menggeser kembali lembar cerpen itu langsung ke depan Koita."
+        "Matsuda" "Pikirkan saja pelan-pelan. Catatanku sudah kutulis rapi di pinggir kertas."
+        koita "Iya, nanti kubaca ulang di rumah."
+        nar "Obrolan segera beralih ke jadwal penerbitan antologi klub. Koita ikut menanggapi dengan nada ringan seperti biasa, tetapi kamu melihat ia menyelipkan kertas catatan Matsuda ke saku terpisah, jauh dari kumpulan catatan anggota lain."
     return
 
 # ┌─ PANDUAN CERITA · K-D07 · Pelukan di Stasiun

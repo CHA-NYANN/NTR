@@ -1,9 +1,9 @@
-# Akiyama Sena — sahabat Miyuki
+# Akiyama Yuina — sahabat Miyuki
 
 Status: 🟡 seluruhnya usulan (tidak ada di canon). Dibuat sebagai orang yang menyadari perubahan Miyuki.
 
 ## 1. Identitas dan peran
-- 🟡 Akiyama Sena. 21 tahun. Tahun ketiga Kedokteran, teman sekelas Miyuki sejak tahun pertama.
+- 🟡 Akiyama Yuina. 21 tahun. Tahun ketiga Kedokteran, teman sekelas Miyuki sejak tahun pertama.
 - 🟡 Peran: orang paling dekat yang paling cepat melihat tanda Rute Masokis Miyuki. Sekutu atau rival pemain.
 
 ## 2. Penampilan 🟡
@@ -44,4 +44,4 @@ Status: 🟡 seluruhnya usulan (tidak ada di canon). Dibuat sebagai orang yang m
 ## 9. Keputusan yang sudah kuisi (🟡)
 - **Kanji:** 秋山 世奈.
 - **Bisa didekati secara romantis:** tidak. Ia karakter pendukung.
-- **Kemungkinan tragis:** bila Miyuki jatuh ke tahap akhir Rute Masokis, Sena bisa memutus pertemanan karena merasa gagal menolongnya.
+- **Kemungkinan tragis:** bila Miyuki jatuh ke tahap akhir Rute Masokis, Yuina bisa memutus pertemanan karena merasa gagal menolongnya.

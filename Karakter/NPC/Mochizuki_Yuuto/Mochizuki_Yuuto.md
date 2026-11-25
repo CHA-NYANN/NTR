@@ -1,4 +1,4 @@
-# Mochizuki Yuuto — teman sekelas Nagisa
+# Mochizuki Fuuto — teman sekelas Nagisa
 
 Status: 🟡 seluruhnya usulan. Pengejar sepihak, bukan pasangan jadi.
 
@@ -14,7 +14,7 @@ Alternatif tulus bagi Nagisa. Pengingat bahwa orang lain bisa mencintainya tanpa
 - Dengan Nagisa: Aff Tinggi (satu arah), Trust Sedang. Nagisa menghargainya sebagai rekan.
 - Nagisa bisa tersentuh pada akhirnya bila cintanya pada Koita tak berbalas.
 - Rute Yandere: ia dijadikan korban sabotase atau bahan ancaman Nagisa terhadap pemain.
-- Bila pemain mengejar Nagisa: Yuuto tidak melawan; ia diam, menjaga jarak, dan bisa sedih.
+- Bila pemain mengejar Nagisa: Fuuto tidak melawan; ia diam, menjaga jarak, dan bisa sedih.
 - Event 🟡: begadang tugas, kompetisi maket, hari di mana ia berani bilang sesuatu yang penting.
 
 ## Gaya bicara

@@ -120,7 +120,7 @@ Penambahan NPC naratif **bukan izin** menambah rute, menu, label, ID event, mete
 
 ## 7. Pegangan karakter dan dunia yang jangan tertukar
 
-- Koita protagonis manga asli, bukan otomatis pemain. Ia baik, naif dan mudah tersanjung di awal; kebiasaan menggantung punya akibat. Perubahan kesadaran atau keretakan harus sesuai tahap, bukan terjadi mendadak.
+- Koita MC manga asli, bukan otomatis pemain. Ia baik, naif dan mudah tersanjung di awal; kebiasaan menggantung punya akibat. Perubahan kesadaran atau keretakan harus sesuai tahap, bukan terjadi mendadak.
 - Pemain menghuni **Yutaka atau Chiasa**, bukan keduanya dan bukan tubuh ketiga. Kesadaran pemilik asli hilang; jangan membuat pemain mengobrol dengan pemilik tubuh sebagai orang terpisah.
 - Pemain tidak mewarisi ingatan pribadi, pengetahuan kuliah, skill game profesional Yutaka, atau keterampilan ilustrasi Chiasa. Kebiasaan/refleks sederhana boleh tetap ada sesuai profil.
 - Yutaka hangat, santai dan jahil dengan kesepian di baliknya. Ia tidak punya kunci cadangan rumah Amamiya.

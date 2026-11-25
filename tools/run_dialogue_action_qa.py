@@ -97,7 +97,7 @@ label ks_review:
     nar "Kau tersentak bangun dengan napas memburu. Kedua tanganmu refleks mencengkeram dada, bersiap merasakan tulang rusuk yang remuk dihantam baja kereta."
     chiasa "Kamu pilih: masuk sekarang?\nKelasnya bahkan belum dimulai."
     sistem "Bangun juga akhirnya. Kukira jiwamu ikut penyok tertabrak kereta tadi, Sampah Peron."
-    sistem "Aturannya sangat sederhana: kau punya waktu tiga tahun sampai Amamiya Koita lulus kuliah untuk menyimpangkan takdir romantisnya sejauh mungkin dari jalur asli. Evaluasinya hanya dilakukan satu kali, tepat saat ia menerima ijazah wisuda. Kalau sampai hari itu skenario romansa sang protagonis masih berjalan mulus... jantung barumu akan kubuat berhenti berdetak di tempat."
+    sistem "Aturannya sangat sederhana: kau punya waktu tiga tahun sampai Amamiya Koita lulus kuliah untuk menyimpangkan takdir romantisnya sejauh mungkin dari jalur asli. Evaluasinya hanya dilakukan satu kali, tepat saat ia menerima ijazah wisuda. Kalau sampai hari itu skenario romansa sang MC masih berjalan mulus... jantung barumu akan kubuat berhenti berdetak di tempat."
     $ persistent.kk_gui_dark=True
     chiasa "Kamu pilih: masuk sekarang?\nKelasnya bahkan belum dimulai."
     $ persistent.kk_gui_dark=False

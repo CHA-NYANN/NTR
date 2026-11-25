@@ -827,7 +827,7 @@ screen kk_location_view(distrik, lokasi):
                 if distrik == "onsen":
                     use ks_activity("chair","Duduk sejenak di penginapan", Return(("rest", None)))
                 if kk_art_studio_open(lokasi):
-                    use ks_activity("book","Bicarakan sketsa dengan Haruka", Return(("portfolio", None)))
+                    use ks_activity("book","Bicarakan sketsa dengan Karuha", Return(("portfolio", None)))
                 if kk_can_sketch(lokasi):
                     use ks_activity("book","Latihan di buku sketsa", Return(("draw", None)))
                 if kk_can_sit_with_miyuki(lokasi):

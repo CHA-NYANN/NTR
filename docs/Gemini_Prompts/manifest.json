@@ -4644,7 +4644,7 @@
   {
     "id": "E-SH-09",
     "type": "ending",
-    "title": "Ratu Menjatuhkan Protagonis",
+    "title": "Ratu Menjatuhkan MC",
     "prompt": "ending/SH/E-SH-09.md",
     "source": "game/kk_ending_story.rpy",
     "source_sha256": "38bea86ec85b9e0cde081785c1c0c3eaf95e142afd92893e884744daff1896ec"
@@ -4996,7 +4996,7 @@
   {
     "id": "E-KO-13",
     "type": "ending",
-    "title": "Protagonis yang Terbangun",
+    "title": "MC yang Terbangun",
     "prompt": "ending/KO/E-KO-13.md",
     "source": "game/kk_ending_story.rpy",
     "source_sha256": "6b29f4ea5b14d7acd1429f584de7080671be0c2e2057bd3e3e082756adab396b"

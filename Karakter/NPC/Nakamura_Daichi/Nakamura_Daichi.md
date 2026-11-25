@@ -1,4 +1,4 @@
-# Nakamura Daichi — teman Yutaka di Ekonomi
+# Nakamura Kaichi — teman Yutaka di Ekonomi
 
 Status: 🟡 seluruhnya usulan.
 

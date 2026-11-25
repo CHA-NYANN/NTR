@@ -34,7 +34,7 @@ Status: fungsi dan persona dasar ✅, detail interaksi 🟡 usulan.
 - "Selamat pagi, Host. Kau punya 3 hari untuk membuat seorang gadis berhenti menunggu seseorang. Santai saja, aku sudah memesan popcorn."
 - "Peringatan. Kau baru saja membohongi seseorang tanpa alasan produktif. Menarik, tapi aku akan mencatatnya."
 - "Quest gagal. Bukan salahmu sepenuhnya. Salahmu 74%."
-- "Kau tahu, Koita itu protagonis. Kau cuma figuran yang kebetulan pintar. Jangan salahkan aku kalau naskahnya membencimu."
+- "Kau tahu, Koita itu MC. Kau cuma figuran yang kebetulan pintar. Jangan salahkan aku kalau naskahnya membencimu."
 
 ## 6. Relasi
 - Dengan pemain: pengawas, pengejek, dan satu-satunya yang tahu kebenaran.

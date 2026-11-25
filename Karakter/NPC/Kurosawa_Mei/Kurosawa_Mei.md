@@ -1,4 +1,4 @@
-# Kurosawa Mei — admin akun gosip "Kouseikan Whisper"
+# Kurosawa Meisa — admin akun gosip "Kouseikan Whisper"
 
 Status: 🟡 seluruhnya usulan.
 
@@ -12,10 +12,10 @@ Mesin rumor dan media sosial (✅ GDD: rumor, unggahan, bukti digital). Penyebar
 
 ## Hubungan dan fungsi
 - Aff Rendah dengan semua orang, Trust Rendah; ia bersahabat dengan informasi.
-- Rumor dapat benar, salah, atau dimanipulasi (✅). Mei menyaring sedikit, tetapi bisa tertipu.
+- Rumor dapat benar, salah, atau dimanipulasi (✅). Meisa menyaring sedikit, tetapi bisa tertipu.
 - Pemain bisa memberi informasi (risiko: terlacak), membayar (ekonomi), atau mengancam (risiko balik).
 - Dampak: reputasi sosial per lingkungan (✅), kecemburuan, krisis heroine.
-- Rute Revenge (Shiori): Mei bisa menjadi alat penyebar informasi.
+- Rute Revenge (Shiori): Meisa bisa menjadi alat penyebar informasi.
 - Event 🟡: unggahan viral, postingan anonim, foto yang tertangkap kamera.
 
 ## Gaya bicara

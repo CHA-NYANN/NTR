@@ -25,6 +25,9 @@ label kkscene_N04:
         nagisa "Aku bilang nggak jadi ya nggak jadi, Ko-kun! Lihat ke langit saja sana!"
         koita "Oh... oke, oke, maaf kalau salah dengar."
         nar "Nagisa langsung membuang muka ke arah sungai dan kembali duduk tegak dengan kaku. Di atas pangkuannya, jari-jarinya terus meremas kain lengan yukata dengan keras meskipun Koita sudah kembali menengadah memandangi langit."
+        nar "Pantulan cahaya merah dari bunga api berikutnya menyinari pipi Nagisa yang memanas karena malu pada dirinya sendiri."
+        nar "Kamu yang duduk hanya berjarak satu rentangan tangan darinya dapat mendengar helaan napas pendek yang ia tahan di sela keriuhan penonton di sekitar tanggul."
+        nar "Di tengah jeda sebelum peluncuran babak berikutnya dimulai, kamu tahu sikap yang kamu ambil detik ini akan menentukan apakah kegagalan kecilnya malam ini berakhir begitu saja atau berbelok ke arah lain."
     else:
         nar "Di tepi tanggul rumput yang menghadap langsung ke permukaan sungai, pantulan kembang api berpendar seperti pecahan cahaya emas dan biru di atas air yang gelap. Suara sorak penonton dari arah jembatan bercampur dengan dentuman demi dentuman di langit malam Agustus."
         nar "Kalian menggelar alas kain biru di lereng rumput yang agak tinggi. Di sampingmu, Sakurajima Nagisa duduk memeluk lutut dengan bahu menegang. Dari sudut matamu, kamu melihat jelas kedua tangannya meremas ujung lengan yukatanya sementara ia terus memperhatikan Koita dan menunggu jeda sunyi di antara dua peluncuran kembang api."
@@ -40,6 +43,9 @@ label kkscene_N04:
         nagisa "Sudah lupakan saja, lihat kembang apinya sana!"
         koita "Iya deh, maaf..."
         nar "Ia kembali duduk tegak dengan wajah memaling ke arah sungai. Di atas pangkuannya, jari-jarinya masih mencengkeram kain lengan yukata erat-erat meski Koita sudah kembali menengadah ke langit."
+        nar "Bias cahaya biru dan perak dari langit sungai memantul di matanya yang meredup kesal karena lagi-lagi membiarkan nyalinya runtuh di detik terakhir."
+        nar "Koita sendiri tampak benar-benar mengira Nagisa hanya sedang mengeluhkan posisi duduk, sama sekali tidak menyadari ketegangan yang baru saja meletup di sampingnya."
+        nar "Menyaksikan kebuntuan yang berulang di depan matamu itu, kamu menimbang apakah akan menemaninya menenangkan diri, membuka jalan agar mereka bicara berdua, atau justru memotong kesempatannya sekalian."
     call kk_family_menu("N04", ["Tetap di sampingnya.", "Beri dia kesempatan bicara berdua dengan Koita.", "Panggil Koita sebelum Nagisa melanjutkan."])
     if _return == "A":
         if kk_host == "chiasa":
@@ -59,6 +65,12 @@ label kkscene_N04:
             nar "Nagisa membuka tutup botol, menyesap teh dingin itu pelan, lalu menempelkan dinding botol yang berembun ke pipinya yang masih agak memerah. Remasan tangannya pada lengan yukata akhirnya terlepas."
             nagisa "...Terima kasih ya sudah duduk diam di sebelahku dan nggak nanya macam-macam, Chiasa. Sungguh, kalau kamu tadi ikutan nanya tadi aku mau ngomong apa, aku mungkin sudah lari pulang dari tanggul ini."
             chiasa "Aku duduk di sini saja sampai babak kembang apinya selesai, Senpai."
+            nagisa "Iya, jangan pindah ke mana-mana dulu. Lihat tuh, kembang api bentuk bunga krisan besarnya baru mau diluncurkan dari tongkang tengah sungai."
+            chiasa "Warnanya bagus sekali kalau memantul di permukaan air sungai yang gelap begitu."
+            nagisa "Hehe, iya... setidaknya malam ini pemandangan kembang apinya nggak gagal kayak nyaliku tadi."
+            chiasa "Simpan saja sisa tenagamu buat menikmati malam ini dulu, Senpai."
+            nagisa "Iya. Nanti waktu turun dari tanggul kita mampir beli permen apel di stan bawah bareng-bareng ya, Chiasa."
+            nar "Ia menggeser duduknya sedikit lebih rapat di atas alas kain biru sambil menyandarkan sikunya di lutut, membiarkan keheningan hangat di antara kalian meredakan sisa detak jantungnya yang sempat memburu."
             nar "Kalian kembali memandangi pantulan warna emas di permukaan sungai berdampingan, membiarkan malam musim panas itu lewat tanpa ada satu pun tuntutan."
         else:
             nar "Kamu tidak melontarkan ledekan dan tidak pula mengungkit kalimatnya yang baru saja terputus di tengah ledakan. Kamu hanya duduk tenang di sampingnya dengan satu lutut ditekuk, lalu menggeser sebotol teh dingin dari kantong plastik ke dekat tangannya."
@@ -76,8 +88,12 @@ label kkscene_N04:
             yutaka "Sekali-sekali boleh lah. Minum dulu tehmu."
             nar "Ia membuka tutup botol minuman dingin itu dan meneguknya pelan, lalu menyandarkan kedua tangannya di atas lutut dengan napas yang jauh lebih teratur."
             nagisa "...Makasih ya sudah duduk di sini tanpa ngeledek aku, Yutaka. Serius, rasanya kepalaku agak lebih tenang sekarang."
-            yutaka "Santai saja. Lihat tuh, babak penutupnya sudah mulai naik."
-            nar "Kalian kembali menatap cahaya di atas sungai dalam diam yang nyaman."
+            yutaka "Santai saja. Lihat tuh, babak penutupnya sudah mulai naik dari perahu peluncur di tengah sungai."
+            nagisa "Oh, iya! Yang rentetan warna emas beruntun itu kan babak terakhirnya!"
+            yutaka "Makanya tonton saja dulu langitnya, urusan pusingnya dipikir besok lagi."
+            nagisa "Hehe, bener juga. Habis ini temani aku beli yakisoba di stan dekat jembatan ya, tiba-tiba perutku lapar lagi habis tegang dari sore."
+            yutaka "Siap, nanti kita mampir sebelum pulang."
+            nar "Nagisa mengangguk kecil dengan senyum yang jauh lebih lepas. Kalian kembali menatap cahaya yang mekar bertubi-tubi di atas sungai dalam diam yang nyaman."
     elif _return == "B":
         if kk_host == "chiasa":
             nar "Melihat Nagisa yang masih tampak menyesal karena kehilangan momennya barusan, kamu bangkit berdiri dari alas kain, menepuk pelan bahu Koita untuk menarik perhatiannya dari langit, lalu mencondongkan badan sedikit."
@@ -91,7 +107,8 @@ label kkscene_N04:
             nagisa "...Iya, Ko-kun. Tunggu sebentar, yang mau kubilang tadi memang bukan soal pindah tempat duduk. Kalau babak kembang api yang ini selesai dan orang-orang mulai jalan turun, aku mau bicara sebentar sama kamu."
             koita "Oke, Nagisa-chan. Aku nggak bakal ke mana-mana, nanti kita jalan belakangan habis kembang apinya selesai ya."
             nagisa "Awas kalau kamu lupa atau malah sibuk ngobrol sama yang lain!"
-            koita "Nggak bakal lupa, janji."
+            koita "Nggak bakal lupa, janji. Aku duduk di sini terus kok sampai peluncurannya habis."
+            nar "Saat kamu merapikan lipatan yukatamu dan berbalik menuju jalur tangga tanggul, Nagisa sempat menoleh singkat ke arahmu dengan sorot mata yang mencampurkan rasa gugup dan ucapan terima kasih yang tertahan."
             nar "Kamu melangkah menaiki tangga batu tanggul menuju keramaian stan festival tanpa menoleh ke belakang lagi, memberikan ruang penuh yang sudah begitu lama tertunda di antara mereka berdua."
         else:
             nar "Melihat Nagisa yang masih menggigit bibirnya karena menyesal kehilangan kesempatan barusan, kamu langsung bangkit berdiri, menepuk bahu Koita, lalu menunjuk ke arah deretan stan pedagang di atas tanggul."
@@ -105,7 +122,8 @@ label kkscene_N04:
             nagisa "...Iya, Ko-kun. Yang tadi itu memang nggak ada hubungannya sama tempat duduk. Nanti begitu kembang api penutupnya selesai dan kerumunannya mulai agak sepi, ada yang mau kubicarakan sebentar sama kamu."
             koita "Iya, Nagisa-chan. Aku janji dengerin sampai selesai nanti."
             nagisa "Jangan sampai keburu pergi duluan!"
-            koita "Iya, aku tunggu di sini sama kamu."
+            koita "Iya, aku tunggu di sini sama kamu sampai semua orang bubar."
+            nar "Ketika kamu melangkah meninggalkan tepi alas kain, Nagisa sempat melirik ke arah punggungmu dengan wajah merah padam, menyadari bahwa dorongan mendadakmu barusan telah memaksanya berhenti menunda-nunda lagi."
             nar "Kamu melangkah menaiki lereng tanggul menuju deretan lampion stan tanpa menoleh lagi, memastikan malam ini tidak ada gangguan luar yang bisa menghalangi mereka berbicara."
     else:
         if kk_host == "chiasa":
@@ -119,9 +137,11 @@ label kkscene_N04:
             nagisa "...Jangan pura-pura bodoh. Kamu jelas-jelas lihat aku baru narik napas mau ngomong sama Ko-kun tadi."
             chiasa "Oh, tadi Senpai mau lanjut ngomong ya? Kirain sudah nggak jadi kayak yang Senpai bilang keras-keras barusan."
             nagisa "...Dasar."
+            chiasa "Kalau Senpai memang sudah siap bicara, nanti waktu kami balik bawa minuman juga masih ada waktu sebelum pulang kok."
+            nagisa "Diamlah, nggak usah sok ngatur waktuku."
             koita "Chi-chan! Ayo buruan, nanti keburu macet di tangga!"
             chiasa "Sebentar, Ko-nii! Kalau begitu kami ambil barang dulu ya, Nagisa-senpai."
-            nar "Nagisa menggigit bibir bawahnya dan memalingkan wajah ke arah sungai tanpa membalas lebih jauh. Di raut wajahnya, rasa marah karena kalimatnya dipotong paksa dan rasa lega karena malam ini ia tidak jadi mempertaruhkan hubungannya dengan Koita bercampur begitu rapat hingga ia tidak mampu menahanmu pergi."
+            nar "Nagisa menggigit bibir bawahnya dan memalingkan wajah ke arah sungai tanpa membalas lebih jauh. Di raut wajahnya, rasa marah karena kalimatnya dipotong paksa dan rasa lega karena malam ini ia tidak jadi mempertaruhkan hubungannya dengan Koita tampak begitu rapat hingga ia tidak mampu menahanmu pergi."
         else:
             nar "Tepat ketika jeda sunyi di langit kembali turun dan Nagisa menarik napas panjang hendak mencoba mengulang pengakuannya, kamu lebih dulu bangkit berdiri dan menepuk pundak Koita."
             yutaka "Koita, ikut aku ke stan belakang sebentar. Kantong minuman sama makanan ringan yang kita beli tadi masih ketinggalan di meja dekat tiang lampion, repot kalau kubawa sendiri semuanya."
@@ -133,12 +153,14 @@ label kkscene_N04:
             nagisa "...Kamu tahu persis aku lagi ngumpulin nyali buat bicara sama Ko-kun barusan."
             yutaka "Tadi kamu sendiri yang teriak bilang nggak jadi ngomong. Kalau kamu kelihatan setegang orang mau loncat ke sungai begitu, mana mungkin kubiarkan."
             nagisa "...Dasar menyebalkan."
+            yutaka "Kalau kamu beneran mau bicara tanpa gemetaran, tunggu kepala sama napasmu tenang dulu."
+            nagisa "Aku nggak gemetaran tahu! Sudah sana pergi!"
             koita "Yutaka! Ayo, tangganya mulai padat nih!"
             yutaka "Iya, sebentar. Jaga alasnya ya, Nagisa."
-            nar "Nagisa menggigit bibirnya dan membuang pandangannya ke arah pantulan air sungai. Kemarahan karena dihalangi dan kelegaan diam-diam karena ia punya alasan untuk menunda pengakuannya malam ini bercampur aduk di wajahnya saat kamu berbalik menyusul Koita."
+            nar "Nagisa menggigit bibirnya dan membuang pandangannya ke arah pantulan air sungai. Kemarahan karena dihalangi dan kelegaan diam-diam karena ia punya alasan untuk menunda pengakuannya malam ini tampak jelas di wajahnya saat kamu berbalik menyusul Koita."
     return
 
-# ┌─ PANDUAN CERITA · N06 · Yuuto Menawarkan Bantuan
+# ┌─ PANDUAN CERITA · N06 · Fuuto Menawarkan Bantuan
 # │ LOKASI  : Kampus Kouseikan · Gedung Arsitektur
 # │ TERLIBAT: Sakurajima Nagisa (+ Koita bila relevan)
 # │ AWALAN  : Mochizuki membantu maket.
@@ -154,36 +176,36 @@ label kkscene_N06:
             nar "Kamu mampir ke lantai dua Gedung Arsitektur untuk mengembalikan penggaris siku milik Nagisa yang sempat terbawa di mapmu kemarin. Dari ambang pintu ruang studio yang terbuka separuh, terdengar suara gesekan karton dan percakapan tenang di dekat meja kerja tengah."
         nar "Di sana, Sakurajima Nagisa sedang membungkuk memeriksa sambungan maket gedung bertingkat dari karton putih tebal. Di seberang mejanya, seorang mahasiswa laki-laki berkacamata dengan rambut hitam agak berantakan dan kemeja flanel yang lengannya digulung tampak berdiri menahan sisi dinding maket tersebut dengan kedua tangan agar tidak bergeser."
         nar "Keduanya berbicara dengan kalimat pendek-pendek yang sudah terbiasa saling mengisi, layaknya rekan studio yang sudah beberapa kali melewati lembur bersama."
-        "Yuuto" "Sisi dinding yang sebelah timur ini kutahan dari luar dulu biar nggak melengkung ya. Kamu cek kerataan sudut bawahnya dulu aja, Sakurajima-san."
+        "Fuuto" "Sisi dinding yang sebelah timur ini kutahan dari luar dulu biar nggak melengkung ya. Kamu cek kerataan sudut bawahnya dulu aja, Sakurajima-san."
         nagisa "Oke, tahan sebentar di situ ya, Mochizuki. Bagian siku bawahnya tadi lem kayunya kurang rata sedikit, mau kutambah pakai ujung tusuk gigi."
-        "Yuuto" "Iya, santai aja, nggak pegal kok. Kalau posisinya kurang rapat setengah milimeter bilang ya, nanti kudorong pelan dari sini."
+        "Fuuto" "Iya, santai aja, nggak pegal kok. Kalau posisinya kurang rapat setengah milimeter bilang ya, nanti kudorong pelan dari sini."
         nar "Baru ketika kamu mengetuk daun pintu kayu yang terbuka itu dua kali, Nagisa dan mahasiswa berkacamata tersebut menoleh bersamaan ke arah pintu."
         chiasa "Permisi, Nagisa-senpai. Lagi sibuk banget ngerjain maket ya? Aku mau balikin penggaris siku yang kemarin."
         nagisa "Oh, Chiasa! Masuk aja, pintunya memang nggak dikunci kok. Ini kami baru aja selesai pasang rangka dinding maket kelompok yang tadi hampir miring. Kenalin dulu, ini Mochizuki, teman satu kelas studioku."
-        "Yuuto" "Halo, Amamiya-san. Aku Mochizuki Yuuto. Maaf ya meja tengahnya lagi penuh potongan karton begini."
+        "Fuuto" "Halo, Amamiya-san. Aku Mochizuki Fuuto. Maaf ya meja tengahnya lagi penuh potongan karton begini."
         if "N03" in kk_missed:
             nagisa "Waktu maketku kena tampias hujan deras beberapa bulan lalu itu, Mochizuki juga yang kebetulan masih di kampus dan bantu aku bawain papan karton pengganti dari koperasi ke studio."
         chiasa "Oh, salam kenal, Mochizuki-senpai. Aku Amamiya Chiasa dari gedung sebelah."
-        "Yuuto" "Tentu, Sakurajima-san beberapa kali sempat cerita soal kamu di studio."
-        nar "Yuuto tersenyum agak malu-malu dan mengangguk sopan kepadamu, sementara kedua tangannya tetap setia menahan tegak lembaran dinding maket itu supaya lem yang baru dioleskan Nagisa tidak bergeser."
+        "Fuuto" "Tentu, Sakurajima-san beberapa kali sempat cerita soal kamu di studio."
+        nar "Fuuto tersenyum agak malu-malu dan mengangguk sopan kepadamu, sementara kedua tangannya tetap setia menahan tegak lembaran dinding maket itu supaya lem yang baru dioleskan Nagisa tidak bergeser."
     else:
         if kk_slot >= 3:
             nar "Malam itu kamu melangkah naik ke Studio Arsitektur untuk melihat apakah Nagisa masih lembur dan mau pulang bareng ke arah stasiun. Dari celah pintu studio yang terbuka di bawah lampu neon panjang, kamu melihat Nagisa sedang menunduk serius di depan meja kerjanya yang dipenuhi potongan karton maket berwarna putih."
         else:
             nar "Kamu melangkah naik ke Studio Arsitektur untuk melihat apakah Nagisa sudah selesai kuliah dan mau pulang bareng ke arah stasiun. Dari celah pintu studio yang terbuka, kamu melihat Nagisa sedang menunduk serius di depan meja kerjanya yang dipenuhi potongan karton maket berwarna putih."
         nar "Ia tidak bekerja sendirian. Di sisi seberang meja, seorang mahasiswa berkacamata berambut hitam agak acak-acakan berdiri dengan sabar menahan salah satu sudut dinding maket agar tetap tegak lurus. Cara mereka berdua membagi tugas terdengar sangat kompak dan tenang."
-        "Yuuto" "Bagian dinding timur ini kutahan dulu ya biar nggak goyang. Kamu periksa aja dulu sambungan sudut bawahnya, Sakurajima-san."
+        "Fuuto" "Bagian dinding timur ini kutahan dulu ya biar nggak goyang. Kamu periksa aja dulu sambungan sudut bawahnya, Sakurajima-san."
         nagisa "Sip, tahan sebentar ya, Mochizuki. Lem di pojok bawahnya tadi agak kurang merata, mau kutambal sedikit pakai pinset."
-        "Yuuto" "Iya, nggak usah buru-buru. Kalau kurang lurus bilang aja, nanti kugeser pelan."
+        "Fuuto" "Iya, nggak usah buru-buru. Kalau kurang lurus bilang aja, nanti kugeser pelan."
         nar "Ketika kamu mengetuk kusen pintu studio, barulah keduanya mengangkat kepala menoleh ke arahmu."
         yutaka "Masih lembur maket, Nagisa? Kirain jam segini sudah beres."
         nagisa "Eh, Yutaka. Masuk aja. Ini tinggal nunggu lem rangka dinding utamanya kering kok, tadi hampir aja miring sebelah. Kenalin, ini Mochizuki, teman sekelasku di sini."
-        "Yuuto" "Halo, Kisaragi-san. Aku Mochizuki Yuuto. Maaf mejanya lagi berantakan banget."
+        "Fuuto" "Halo, Kisaragi-san. Aku Mochizuki Fuuto. Maaf mejanya lagi berantakan banget."
         if "N03" in kk_missed:
             nagisa "Waktu tugas maketku rusak kena hujan deras di studio dulu, Mochizuki ini juga yang kebetulan lewat dan bantu bawain bahan karton baru ke sini."
         yutaka "Oh, salam kenal, Mochizuki. Aku Kisaragi Yutaka."
-        "Yuuto" "Salam kenal juga, Kisaragi-san. Sakurajima-san lumayan sering menyebut namamu waktu kita istirahat."
-        nar "Yuuto mengangguk sopan dengan senyum canggung khas orang pemalu, sementara jari-jarinya tetap menahan dinding karton maket itu dengan stabil agar pekerjaan Nagisa tidak terganggu."
+        "Fuuto" "Salam kenal juga, Kisaragi-san. Sakurajima-san lumayan sering menyebut namamu waktu kita istirahat."
+        nar "Fuuto mengangguk sopan dengan senyum canggung khas orang pemalu, sementara jari-jarinya tetap menahan dinding karton maket itu dengan stabil agar pekerjaan Nagisa tidak terganggu."
     call kk_family_menu("N06", ["\"Lanjutin dulu aja, aku tunggu di dekat jendela biar nggak ganggu.\"", "\"Sini biar aku aja yang gantiin nahan bagian ini.\"", "\"Kalau lagi butuh bantuan begini, sebenarnya aku pengin kamu minta tolong ke aku juga.\""])
     if _return == "A":
         if kk_host == "chiasa":
@@ -192,16 +214,18 @@ label kkscene_N06:
             chiasa "Nggak apa-apa, aku juga lagi santai kok hari ini."
             nar "Kamu menarik kursi di dekat jendela dan membiarkan mereka menyelesaikan pemasangan dinding maket tersebut. Dari tempat dudukmu, kamu bisa mendengar bagaimana Nagisa berbicara dengan nada yang jauh lebih tenang dan tanpa gengsi saat bekerja dengan teman sekelasnya itu."
             nagisa "Mochizuki, tolong dorong bagian atas kirinya sekitar dua milimeter ke dalam dong, masih agak renggang sedikit dari garis alasnya."
-            "Yuuto" "Begini sudah pas belum? Aku tekan pelan dari siku bawahnya juga ya supaya nempel rata."
+            "Fuuto" "Begini sudah pas belum? Aku tekan pelan dari siku bawahnya juga ya supaya nempel rata."
             nagisa "Nah, pas banget! Akhirnya berdiri tegak lurus juga! Terima kasih banyak ya, Mochizuki, sekarang sudah boleh dilepas kok tangannya."
-            "Yuuto" "Coba kucek sekali lagi dari sisi samping... iya, sudah kuat menempel. Syukurlah nggak jadi bongkar ulang."
-            nar "Nagisa tersenyum lebar penuh kelegaan kepada Yuuto, sama sekali tidak menoleh untuk memeriksa reaksimu di dekat jendela."
-            "Yuuto" "Kalau begitu aku balik beresin meja gambarku di baris belakang dulu ya, Sakurajima-san. Permisi, Amamiya-san."
+            "Fuuto" "Coba kucek sekali lagi dari sisi samping... iya, sudah kuat menempel. Syukurlah nggak jadi bongkar ulang."
+            nar "Nagisa tersenyum lebar penuh kelegaan kepada Fuuto, sama sekali tidak menoleh untuk memeriksa reaksimu di dekat jendela."
+            "Fuuto" "Kalau begitu aku balik beresin meja gambarku di baris belakang dulu ya, Sakurajima-san. Permisi, Amamiya-san."
             chiasa "Iya, terima kasih, Mochizuki-senpai."
-            nar "Setelah Yuuto kembali ke mejanya di ujung ruangan, Nagisa baru melambai memanggilmu mendekat ke meja tengah."
+            nar "Setelah Fuuto kembali ke mejanya di ujung ruangan, Nagisa baru melambai memanggilmu mendekat ke meja tengah."
             nagisa "Chiasa, sini lihat deh! Rapi banget kan sambungan dindingnya sekarang? Kalau tadi Mochizuki nggak bantu nahanin dari seberang, pasti sudah miring lagi."
             chiasa "Rapi banget, Senpai. Kalian berdua kelihatan sudah kompak banget kerjanya."
             nagisa "Iya, dia orangnya sabar sekali kalau diajak ngecek ukuran milimeter begini. Enak diajak kerja bareng."
+            chiasa "Kalau begitu penggaris sikunya sudah kutaruh di kotak alat Senpai ya, aku balik ke gedung sebelah dulu."
+            nagisa "Oke, makasih banyak sudah repot-repot mengantar ke lantai dua ya, Chiasa!"
             nar "Nagisa mengangguk puas sambil membersihkan sisa lem di ujung pinsetnya dengan tisu, tampak sangat nyaman dengan rekan sekelasnya itu."
         else:
             yutaka "Beresin dulu aja sampai lemnya nempel kuat, Nagisa, Mochizuki. Aku duduk nunggu di bangku dekat jendela sana ya biar nggak ngalangin lampu meja kalian."
@@ -209,78 +233,90 @@ label kkscene_N06:
             yutaka "Santai, aku nggak buru-buru."
             nar "Kamu menepi ke bangku dekat jendela dan memperhatikan keduanya menyelesaikan pekerjaan itu tanpa menyela. Dari sana terlihat jelas betapa lancarnya mereka berdua bekerja sama tanpa ada perdebatan kecil sedikit pun."
             nagisa "Mochizuki, geser ujung atasnya dua milimeter ke kiri dong, tadi agak miring sedikit waktu kutekan."
-            "Yuuto" "Segini cukup, Sakurajima-san? Kutahan bagian bawahnya sebentar ya biar nggak geser lagi."
+            "Fuuto" "Segini cukup, Sakurajima-san? Kutahan bagian bawahnya sebentar ya biar nggak geser lagi."
             nagisa "Sip, lurus sempurna! Makasih banyak ya, Mochizuki, sudah boleh dilepas kok sekarang."
-            "Yuuto" "Kuperiksa sudut belakangnya sekali lagi... aman, sudah lurus. Untung langsung kencang lemnya."
-            nar "Nagisa tersenyum cerah ke arah Yuuto dengan wajah lega, tidak sedikit pun melirik ke arahmu untuk mengecek reaksimu."
-            "Yuuto" "Aku balik ke mejaku di belakang dulu ya, Sakurajima-san. Permisi, Kisaragi-san."
+            "Fuuto" "Kuperiksa sudut belakangnya sekali lagi... aman, sudah lurus. Untung langsung kencang lemnya."
+            nar "Nagisa tersenyum cerah ke arah Fuuto dengan wajah lega, tidak sedikit pun melirik ke arahmu untuk mengecek reaksimu."
+            "Fuuto" "Aku balik ke mejaku di belakang dulu ya, Sakurajima-san. Permisi, Kisaragi-san."
             yutaka "Iya, duluan aja, Mochizuki."
-            nar "Begitu Yuuto berjalan kembali ke meja kerjanya sendiri, Nagisa langsung memanggilmu mendekat sambil menunjuk bangunan miniatur tersebut."
+            nar "Begitu Fuuto berjalan kembali ke meja kerjanya sendiri, Nagisa langsung memanggilmu mendekat sambil menunjuk bangunan miniatur tersebut."
             nagisa "Yutaka, sini lihat! Tegak banget kan dinding timurnya sekarang? Untung tadi ada Mochizuki di studio, jadi nggak perlu kubongkar dari awal."
             yutaka "Iya, rapi banget sambungannya. Kompak juga kalian berdua."
             nagisa "Dia memang paling telaten di kelas kami kalau soal menahan rangka maket begini. Nggak gampang capek tangannya."
+            yutaka "Kalau maketmu sudah selesai dipasang, berarti kita bisa langsung turun pulang sekarang?"
+            nagisa "Tunggu dua menit aku tutup botol lem sama beresin pisau cutter ini dulu ya!"
             nar "Nagisa tersenyum senang sambil mulai memasukkan pisau cutter dan penggarisnya ke dalam kotak alat."
     elif _return == "B":
         if kk_host == "chiasa":
-            nar "Kamu tidak menepi ke bangku jendela. Kamu langsung melangkah ke sisi meja tempat Yuuto berdiri dan menatap dinding karton yang sedang ia pegangi."
+            nar "Kamu tidak menepi ke bangku jendela. Kamu langsung melangkah ke sisi meja tempat Fuuto berdiri dan menatap dinding karton yang sedang ia pegangi."
             chiasa "Mochizuki-senpai kan pasti punya tugas maket sendiri yang harus diberesin di meja belakang. Sini, biar aku aja yang gantiin nahan sisi dinding yang ini, supaya Senpai bisa lanjut ngerjain tugas Senpai sendiri."
-            nar "Yuuto mengerjap kaget di balik kacamatanya, lalu tetap tidak langsung melepaskan tangannya dari maket tersebut. Ia menoleh menatap Nagisa terlebih dahulu, menyerahkan keputusan sepenuhnya kepada Nagisa tentang siapa yang ia inginkan membantu di mejanya."
-            "Yuuto" "Sebenarnya tugasku sendiri sudah hampir selesai kok, aku nggak keberatan nunggu sampai lemnya kering, Sakurajima-san. Tapi kalau memang mau digantikan..."
+            nar "Fuuto mengerjap kaget di balik kacamatanya, lalu tetap tidak langsung melepaskan tangannya dari maket tersebut. Ia menoleh menatap Nagisa terlebih dahulu, menyerahkan keputusan sepenuhnya kepada Nagisa tentang siapa yang ia inginkan membantu di mejanya."
+            "Fuuto" "Sebenarnya tugasku sendiri sudah hampir selesai kok, aku nggak keberatan nunggu sampai lemnya kering, Sakurajima-san. Tapi kalau memang mau digantikan..."
             nagisa "Eh? Chiasa mau bantu? Sebenarnya kalau kamu mau bantu, masih ada potongan atap di sebelah kanan itu sih. Tapi... ya sudah deh, kamu gantiin tahan sisi dinding timur ini sebentar ya."
-            nar "Begitu mendengar persetujuan Nagisa, Yuuto mengangguk tenang dan menggeser jari-jarinya satu per satu secara hati-hati saat kedua tanganmu mengambil alih menahan dinding karton tersebut."
-            "Yuuto" "Tekan bagian tengahnya pelan aja ya, Amamiya-san. Kalau nanti butuh bantuan potong bagian lain, panggil aja ya, Sakurajima-san. Aku ke meja belakang dulu."
+            nar "Begitu mendengar persetujuan Nagisa, Fuuto mengangguk tenang dan menggeser jari-jarinya satu per satu secara hati-hati saat kedua tanganmu mengambil alih menahan dinding karton tersebut."
+            "Fuuto" "Tekan bagian tengahnya pelan aja ya, Amamiya-san. Kalau nanti butuh bantuan potong bagian lain, panggil aja ya, Sakurajima-san. Aku ke meja belakang dulu."
             nagisa "Oke, makasih banyak ya, Mochizuki!"
-            nar "Setelah Yuuto menyingkir kembali ke mejanya, Nagisa menunduk merapikan sisa lem di sudut bawah sambil melirik tanganmu dengan senyum kecil yang berusaha ia sembunyikan."
+            nar "Setelah Fuuto menyingkir kembali ke mejanya, Nagisa menunduk merapikan sisa lem di sudut bawah sambil melirik tanganmu dengan senyum kecil yang berusaha ia sembunyikan."
             nagisa "Tumben banget kamu langsung maju ngambil alih kerjaan orang, Chiasa. Tahan yang lurus lho ya, jangan sampai goyang!"
             chiasa "Iya, ini sudah kutahan lurus kok, Nagisa-senpai. Tangan kiriku nggak gerak sama sekali."
             nagisa "Bagus. Tunggu dua menit lagi sampai lemnya bening, habis itu baru bantu aku cek bagian atapnya."
+            chiasa "Bagian atapnya pakai karton abu-abu yang sudah dipotong di sudut meja itu ya, Senpai?"
+            nagisa "Iya, yang itu. Nanti tinggal kita pasang lis pinggirannya saja."
             nar "Meskipun mulutnya tetap memberi instruksi cerewet soal posisi jari, rona tipis di pipi Nagisa menunjukkan ia cukup senang melihatmu berebut ingin membantunya."
         else:
-            nar "Alih-alih duduk menunggu di pinggir, kamu langsung melangkah menghampiri sisi meja tempat Yuuto berdiri dan menunjuk dinding karton yang sedang ia tahan."
+            nar "Alih-alih duduk menunggu di pinggir, kamu langsung melangkah menghampiri sisi meja tempat Fuuto berdiri dan menunjuk dinding karton yang sedang ia tahan."
             yutaka "Mochizuki pasti masih ada kerjaan maket sendiri kan di meja belakang? Sini biar aku aja yang gantiin nahan bagian dinding ini, biar kamu nggak keteteran sama tugasmu sendiri."
-            nar "Yuuto tidak langsung menarik tangannya. Ia melirik ke arah Nagisa lebih dulu dengan tenang, memastikan apakah Nagisa memang ingin berganti orang atau tidak."
-            "Yuuto" "Punyaku tinggal tahap akhir kok, Sakurajima-san, aku nggak masalah nahanin ini sebentar lagi. Tapi kalau temanmu mau gantian..."
+            nar "Fuuto tidak langsung menarik tangannya. Ia melirik ke arah Nagisa lebih dulu dengan tenang, memastikan apakah Nagisa memang ingin berganti orang atau tidak."
+            "Fuuto" "Punyaku tinggal tahap akhir kok, Sakurajima-san, aku nggak masalah nahanin ini sebentar lagi. Tapi kalau temanmu mau gantian..."
             nagisa "Eh? Kalau kamu mau ikut bantu, sebenarnya masih ada bagian tangga di sebelah sana sih, Yutaka. Tapi... ya sudah, sini kamu tahan dinding yang ini dulu aja sampai kering."
-            nar "Setelah Nagisa mengiyakan, barulah Yuuto melepaskan tumpuan jarinya perlahan-lahan begitu tanganmu menggantikan posisinya menahan karton tersebut."
-            "Yuuto" "Jangan ditekan terlalu keras ke dalam ya, Kisaragi-san. Kalau butuh apa-apa lagi panggil aja di belakang ya, Sakurajima-san."
+            nar "Setelah Nagisa mengiyakan, barulah Fuuto melepaskan tumpuan jarinya perlahan-lahan begitu tanganmu menggantikan posisinya menahan karton tersebut."
+            "Fuuto" "Jangan ditekan terlalu keras ke dalam ya, Kisaragi-san. Kalau butuh apa-apa lagi panggil aja di belakang ya, Sakurajima-san."
             nagisa "Siap, makasih banyak tadi, Mochizuki!"
-            nar "Begitu Yuuto kembali ke meja kerjanya di baris belakang, Nagisa melirik ke arahmu sambil menahan senyum tipis di sudut bibirnya."
+            nar "Begitu Fuuto kembali ke meja kerjanya di baris belakang, Nagisa melirik ke arahmu sambil menahan senyum tipis di sudut bibirnya."
             nagisa "Tumben banget seorang Kisaragi Yutaka rajin nawarin diri sampai nyuruh orang minggir. Pegang yang stabil ya, kalau sampai miring setengah milimeter aja kamu yang harus potong ulang!"
             yutaka "Tenang aja, tanganku stabil kok. Nggak bakal miring."
             nagisa "Tunggu dua menit lagi sampai lemnya kencang, habis itu sekalian bantu aku rapikan potongan tangga di sebelah kanan."
+            yutaka "Potongan anak tangga kecil yang berjejer di atas tatakan kertas biru itu kan?"
+            nagisa "Iya, nanti tinggal ditempel satu-satu pakai ujung pinset."
             nar "Ia kembali menunduk memeriksa sambungan lem dengan pinsetnya, tampak jelas merasa senang karena kamu tidak rela membiarkan orang lain yang membantunya."
     else:
         if kk_host == "chiasa":
-            nar "Kamu berhenti tepat di pinggir meja kerja itu, menatap tangan Yuuto yang menahan maket, lalu menatap Nagisa dengan raut wajah serius tanpa basa-basi."
+            nar "Kamu berhenti tepat di pinggir meja kerja itu, menatap tangan Fuuto yang menahan maket, lalu menatap Nagisa dengan raut wajah serius tanpa basa-basi."
             chiasa "Nagisa-senpai... kalau Senpai lagi repot butuh bantuan ngerjain maket kayak begini, sebenarnya aku pengin Senpai minta tolongnya ke aku juga."
-            nar "Pinset besi di tangan Nagisa langsung berhenti bergerak. Di seberang meja, Yuuto ikut mengerjap canggung merasakan perubahan suasana yang begitu mendadak di antara kalian berdua."
+            nar "Pinset besi di tangan Nagisa langsung berhenti bergerak. Di seberang meja, Fuuto ikut mengerjap canggung merasakan perubahan suasana yang begitu mendadak di antara kalian berdua."
             nagisa "H-hah?! Kamu tiba-tiba ngomong apa sih di depan orang, Chiasa?!"
             chiasa "Aku serius, Senpai. Gedung sebelah sama gedung ini kan dekat banget, kalau Senpai kirim pesan minta bantuan tahanin maket atau potong karton, aku kan bisa langsung lari ke sini."
-            nar "Wajah Nagisa langsung memerah sampai ke cuping telinganya. Yuuto yang peka membaca situasi segera memeriksa sudut karton di bawah jarinya lalu berdeham pelan."
-            "Yuuto" "Ehm... Sakurajima-san, kayaknya lem di dinding timur ini sudah cukup kering dan kuat kok. Aku balik ke mejaku di belakang dulu ya. Permisi, Amamiya-san."
-            nar "Yuuto melepas tangannya dengan sopan lalu melangkah cepat kembali ke mejanya sendiri. Begitu tinggal kalian berdua di meja tengah, Nagisa langsung membuang muka sedikit sambil merapikan penggarisnya dengan gerakan gugup."
+            nar "Wajah Nagisa langsung memerah sampai ke cuping telinganya. Fuuto yang peka membaca situasi segera memeriksa sudut karton di bawah jarinya lalu berdeham pelan."
+            "Fuuto" "Ehm... Sakurajima-san, kayaknya lem di dinding timur ini sudah cukup kering dan kuat kok. Aku balik ke mejaku di belakang dulu ya. Permisi, Amamiya-san."
+            nar "Fuuto melepas tangannya dengan sopan lalu melangkah cepat kembali ke mejanya sendiri. Begitu tinggal kalian berdua di meja tengah, Nagisa langsung membuang muka sedikit sambil merapikan penggarisnya dengan gerakan gugup."
             nagisa "K-kenapa kamu nggak pernah bilang dari kemarin-kemarin coba?! Aku kan mikirnya kamu sibuk sama tugas lukismu sendiri, jadi mana berani aku ganggu nyuruh-nyuruh ke sini."
             chiasa "Makanya sekarang kubilang nggak bakal ganggu. Kalau Senpai butuh sepasang tangan tambahan, kirim pesan aja ke aku."
             nagisa "Huh, ngomongnya gampang sekali... ya sudah, pegang kata-katamu sendiri ya."
             chiasa "Pasti. Jadi bagian mana lagi yang belum selesai sekarang, Senpai?"
             nagisa "...Nih, tolong potongin kertas karton tipis buat bingkai jendela yang sudah kugarisin pensil ini. Awas ya kalau potongannya miring!"
             chiasa "Siap, kukerjakan serapi mungkin."
+            nagisa "Kalau tanganmu pegal waktu menekan cutter-nya, berhenti dulu sebentar biar garisnya nggak melenceng."
+            chiasa "Tenang saja, Senpai, aku sudah biasa memotong kertas tebal buat alas kanvas di studio."
+            nar "Nagisa menggeser lampu belajar mejanya sedikit ke arahmu supaya garis pensil di atas karton putih itu terlihat lebih jelas."
             nar "Ia menyodorkan lembaran karton dan pisau cutter cadangan kepadamu dengan pipi yang masih bersemu merah, dan sepanjang setengah jam berikutnya ia jauh lebih sering melirik ke arah tanganmu daripada memeriksa maketnya sendiri."
         else:
             nar "Kamu berdiri di tepi meja kerja itu, melirik maket yang sedang dikerjakan berdua tersebut, lalu menatap Nagisa lurus-lurus tanpa nada bercanda sedikit pun."
             yutaka "Kalau kamu lagi kerepotan butuh bantuan ngerjain maket kayak gini, sebenarnya aku pengin kamu minta tolongnya ke aku juga, Nagisa."
-            nar "Tangan Nagisa yang sedang memegang pinset langsung membeku. Di seberang meja, Yuuto ikut mengerjap kikuk melihat tatapanmu yang begitu serius ke arah Nagisa."
+            nar "Tangan Nagisa yang sedang memegang pinset langsung membeku. Di seberang meja, Fuuto ikut mengerjap kikuk melihat tatapanmu yang begitu serius ke arah Nagisa."
             nagisa "H-hah?! Apaan sih kamu tiba-tiba ngomong gitu di studio, Yutaka?!"
             yutaka "Aku serius. Dari gedung kuliahku ke sini kan nggak sampai lima menit jalan kaki. Kalau kamu butuh orang buat bantu nahan maket atau lembur potong bahan, tinggal telepon atau kirim pesan aja ke aku."
-            nar "Rona merah langsung menjalar naik ke pipi dan telinga Nagisa. Yuuto yang langsung menangkap suasana pribadi di meja itu segera menarik tangannya perlahan dari dinding maket yang sudah berdiri kokoh."
-            "Yuuto" "Ehm... lem bagian dinding ini kayaknya sudah kering sempurna kok, Sakurajima-san. Aku kembali ke meja kerjaku di belakang dulu ya. Permisi, Kisaragi-san."
-            nar "Setelah Yuuto menyingkir dengan sopan ke ujung ruangan, Nagisa langsung mendengus pelan sambil menghindari kontak mata langsung denganmu."
+            nar "Rona merah langsung menjalar naik ke pipi dan telinga Nagisa. Fuuto yang langsung menangkap suasana pribadi di meja itu segera menarik tangannya perlahan dari dinding maket yang sudah berdiri kokoh."
+            "Fuuto" "Ehm... lem bagian dinding ini kayaknya sudah kering sempurna kok, Sakurajima-san. Aku kembali ke meja kerjaku di belakang dulu ya. Permisi, Kisaragi-san."
+            nar "Setelah Fuuto menyingkir dengan sopan ke ujung ruangan, Nagisa langsung mendengus pelan sambil menghindari kontak mata langsung denganmu."
             nagisa "Kenapa baru ngomong sekarang coba? Selama ini kan aku mikir kamu paling malas kalau disuruh berurusan sama kerjaan tangan yang ribet begini, makanya aku nggak enak minta tolong."
             yutaka "Kalau kamu yang minta tolong ya nggak bakal kutolak. Lain kali panggil aku duluan."
             nagisa "Iya, iya, nggak usah diulang-ulang keras-keras di ruangan begini! Sekarang bagian mana yang mau kamu bantu?"
             yutaka "Kasih aja yang paling lama dikerjakan."
             nagisa "...Nih, tolong iris bagian lis jendela yang sudah kutandain pakai pensil ini. Ikutin penggaris besinya yang bener, jangan sampai melenceng!"
             yutaka "Beres, serahkan padaku."
+            nagisa "Pakai alas potong hijau yang di sebelah kanan itu supaya mata pisau cutter-nya nggak cepat tumpul kena meja kayu."
+            yutaka "Siap, alas potongnya sudah kupasang di bawah karton."
+            nar "Nagisa menarik kursi kayu cadangan ke tepat di sebelah kursinya sendiri agar kamu tidak perlu membungkuk terlalu lama saat memotong."
             nar "Nagisa menyerahkan lembaran karton dan cutter cadangan itu dengan wajah yang masih merah, dan sepanjang tiga puluh menit berikutnya di meja studio, pandangannya berkali-kali mencuri lihat ke arahmu."
     return
 
@@ -295,22 +331,55 @@ label kk_phone_rematch:
     if not kk_phone_event():
         return
     $ _msg = KK_DYN_BY_ID["N-D01"]
-    nar "Pukul dua, pesan Nagisa muncul dengan undangan bertanding. Ia mengatakan satu ronde, lalu mengirim ulang karena mengira pesan pertama tidak masuk."
-    nagisa "Masih bangun? Satu pertandingan. Aku sudah tahu kesalahanku tadi. Kali ini jangan kabur sebelum kubuktikan."
+    play sound "audio/sfx/phone_buzz.wav"
+    nar "Menjelang pukul dua dini hari, layar ponselmu menyala dua kali berturut-turut di tengah kamar yang gelap. Pesan pertama datang dari Nagisa membawa tautan ruang permainan daring, lalu tiga detik kemudian pesan kedua menyusul karena ia tampaknya mengira pesan pertama tidak masuk."
+    if kk_host == "chiasa":
+        "Pesan Nagisa" "Chiasa, masih melek kan? Satu ronde lagi aja. Aku baru sadar di mana letak salahku pas tanding kemarin, kali ini jangan kabur duluan sebelum kubalas."
+        chiasa "Jam dua pagi masih nyari tanding ulang, Nagisa-senpai? Kamu belum tidur dari tadi?"
+        play sound "audio/sfx/phone_buzz.wav"
+        "Pesan Nagisa" "Habis beresin gambar, terus kepikiran skor kemarin jadi nggak bisa merem! Cepat masuk ruangnya, aku sudah siapkan kursinya nih."
+    else:
+        "Pesan Nagisa" "Yutaka, masih melek kan? Satu pertandingan lagi sekarang. Aku baru sadar salah langkahku kemarin di mana, jangan kabur dulu sebelum kubuktikan."
+        yutaka "Ini jam dua pagi lho, Nagisa. Kamu serius nggak bisa tidur cuma gara-gara mikirin skor pertandingan kemarin?"
+        play sound "audio/sfx/phone_buzz.wav"
+        "Pesan Nagisa" "Berisik! Habis beresin tugas gambar terus kepikiran, jadinya kesel sendiri! Cepat buka aplikasinya, ruangnya sudah kubuka."
     $ _opts = [(caption, Return(i), False) for i, caption in enumerate(_msg["choices"])]
     call screen kk_choice_panel(_opts, "Pesan dari Nagisa")
     $ _reply = _return
     if kk_record_choice("N-D01", ("A","B","C")[_reply]):
         if _reply == 1:
-            nagisa "Ya sudah. Besok. Jangan menyebut tidur sebagai strategi menghindari kekalahanmu, ya."
-            nar "Gurauannya diikuti ucapan selamat malam yang lebih pendek. Kalian tetap bisa bermain lain hari; malam ini kau memilih menutup layar sebelum tubuhmu harus membayar lebih jauh."
+            if kk_host == "chiasa":
+                chiasa "Maaf ya, Nagisa-senpai, mataku sudah berat banget buat melek lagi. Besok aja ya tanding ulangnya, kamu juga cepat istirahat."
+                "Pesan Nagisa" "Tch... ya sudah, besok! Tapi jangan jadikan alasan tidur buat kabur dari tantangan ulangku ya, Chiasa."
+                "Pesan Nagisa" "Selamat malam. Besok siang nggak ada alasan lagi."
+            else:
+                yutaka "Besok aja ya, Nagisa. Kalau kuladeni sekarang, besok pagi aku pasti ketiduran di kelas. Kamu juga cepat tidur."
+                "Pesan Nagisa" "Ya sudah, besok! Jangan coba-coba menyebut tidur sebagai strategi buat menghindari kekalahanmu ya, Yutaka."
+                "Pesan Nagisa" "Selamat malam. Jangan telat bangun."
+            nar "Gurauan singkat itu langsung diikuti ucapan selamat malam yang lebih pendek dan lembut. Kamu mematikan layar ponsel sebelum tubuhmu harus membayar harga begadang yang terlalu mahal."
         else:
             if _reply == 2:
-                nagisa "Kamu sengaja kalah, ya? Cara mainmu beda. Aku bukan minta hadiah kemenangan."
-                nar "Ia meminta ulang. Kemenangan yang kauberikan untuk mengakhiri malam justru membuatnya ingin terus bermain sampai tahu apakah dirinya sungguh bisa mengalahkanmu."
+                nar "Kamu masuk ke ruang permainan dan sengaja memperlambat refleks beberapa detik di babak penentuan agar serangan terakhir Nagisa masuk dengan mulus. Layar langsung menampilkan kemenangan untuk akunnya, tetapi ruang obrolan suara di headset justru hening dua detik."
+                if kk_host == "chiasa":
+                    nagisa "Tunggu dulu, Chiasa. Kamu barusan sengaja kalah ya? Pertahananmu di pojok kiri biasanya nggak selonggar itu. Aku nggak minta dikasih hadiah kemenangan!"
+                    chiasa "Eh, ketahuan ya? Habisnya sudah malam banget, aku kira kalau kamu menang sekali bisa langsung lega terus tidur."
+                    nagisa "Mana ada lega kalau dikasih begitu! Ulang lagi sekarang, main yang benar sampai selesai! Nggak usah pakai rasa kasihan segala!"
+                else:
+                    nagisa "Hei, Yutaka. Kamu barusan sengaja mengalah ya? Cara mainmu beda banget sama kemarin, tadi kamu jelas-jelas bisa blokir langkahku. Aku nggak minta dikasih menang!"
+                    yutaka "Ketahuan juga ya. Kupikir kalau rondenya cepat beres kamu bisa langsung istirahat."
+                    nagisa "Enak aja! Menang hasil dikasih begini malah bikin makin nggak bisa tidur! Mulai ulang sekarang, kali ini jangan berani-berani nahan tangan lagi!"
+                nar "Kemenangan palsu yang tadi kamu berikan demi cepat mengakhiri malam justru membuatnya menuntut tanding ulang ronde demi ronde hingga langit di luar jendela mulai membiru pucat."
             else:
-                nagisa "Menang tipis jangan besar kepala. Tadi satu langkah lagi aku dapat. Ulang."
-                nar "Satu pertandingan menjadi beberapa. Di antara protesnya ada tawa yang tidak muncul di pesan siang hari. Saat berhenti, pagi sudah dekat dan keakraban itu datang bersama kantuk yang harus kalian bawa menjalani hari."
+                nar "Kamu menegakkan duduk, memasang headset, dan meladeni setiap serangannya dengan serius hingga skor saling kejar sampai menit terakhir. Saat poin kemenangan akhirnya jatuh tipis ke sisimu, suara protes Nagisa langsung meledak pelan di balik mikrofon."
+                if kk_host == "chiasa":
+                    nagisa "Argh, tipis banget! Satu detik lagi padahal seranganku masuk! Jangan besar kepala dulu ya, Chiasa, ulang satu ronde lagi!"
+                    chiasa "Tadi bilangnya cuma satu ronde lho, Nagisa-senpai. Tapi boleh deh, ayo satu lagi."
+                    nagisa "Hahaha, iya, iya, aku lupa! Tapi ronde ini serius bakal kubalikkan!"
+                else:
+                    nagisa "Argh, beda tipis banget! Tadi satu langkah lagi padahal kena! Menang tipis jangan besar kepala ya, Yutaka. Ulang!"
+                    yutaka "Katanya tadi cuma satu pertandingan, Nagisa. Tapi kalau kamu masih penasaran, ayo kuladeni lagi."
+                    nagisa "Hahaha, diam deh! Ronde ini nggak bakal kulepas lagi!"
+                nar "Satu pertandingan meluas menjadi lima ronde beruntun. Di sela omelan dan adu strategi, terdengar tawa lepas Nagisa yang jarang muncul pada siang hari di kampus. Ketika kalian akhirnya sepakat berhenti, fajar sudah dekat dan rasa kantuk datang bersama keakraban baru."
             $ kk_minutes((6 - kk_slot) * 240 - kk_minute)
     return
 
@@ -834,7 +903,11 @@ init python:
                 return "S-D10"
             if kk_has("tojo_aktif") and not kk_done("S-D06"):
                 return "S-D06"
-            if kk_host == "chiasa" and not kk_done("S-D05"):
+            if (kk_host == "chiasa" and not kk_done("S-D05")
+                    and not kk_has("shiori_tahu_shena")
+                    and (stage.get("shiori",0) >= 1 or kk_rel_get("shiori","trust") >= 25)
+                    and (kk_done("C05") or kk_has("kesan_awal_C01_A") or kk_has("kesan_awal_C01_B")
+                         or kk_done("C-D02") or kk_done("C-D03") or kk_done("C-D07"))):
                 return "S-D05"
             if stage.get("shiori",0) >= 3 and not kk_done("S-D02"):
                 return "S-D02"
@@ -1183,43 +1256,83 @@ label kk_social_scene(eid):
         call kk_dorm_tea
         return
     if eid == "N-D02":
-        nar "Nagisa menyodorkan bekal tambahan dengan isi yang terlalu tepat mengikuti kesukaanmu untuk disebut kebetulan. Ia sudah menyiapkan alasan sebelum kau membuka."
-        nagisa "Aku salah hitung. Jangan lihat aku begitu. Orang bisa salah hitung satu porsi lengkap."
+        nar "Pada jam makan siang itu, Nagisa mengeluarkan dua kotak bekal dari tas kainnya lalu mendorong salah satunya ke depanmu dengan gerakan yang terlalu cepat untuk terlihat santai. Saat kamu melirik ke balik tutup beningnya, potongan telur gulung manis dan lauk pendamping di dalamnya terlalu tepat mengikuti seleramu untuk disebut kebetulan."
+        if kk_host == "chiasa":
+            chiasa "Eh? Ini buatku, Nagisa-senpai? Lauknya rapi banget sampai ada potongan wortel bentuk bunga segala."
+            nagisa "Tadi pagi aku salah hitung takaran nasi sama lauk, Chiasa! Jangan lihat aku begitu dong. Orang kan bisa aja nggak sengaja bikin kelebihan satu porsi lengkap. Daripada mubazir, habiskan aja!"
+        else:
+            yutaka "Wah, kotak bekal tambahan ya? Lauknya kebetulan banget semua yang biasa kupesan di kantin, Nagisa."
+            nagisa "Aku salah hitung takaran tadi pagi, Yutaka! Jangan pasang senyum begitu dong. Orang kan bisa aja salah hitung satu porsi lengkap. Daripada basi di tas, makan aja sana!"
+        nar "Ia sudah menyiapkan pembelaan rapi bahkan sebelum kamu sempat membuka pengait kotak makannya."
     else:
-        nar "Miyuki membuka kotak kecil dengan hati-hati. Di atas pastry ada tulisan namamu yang sedikit miring, jelas dibuat dengan tangan. Ia menutup sebagian kotak ketika menyadari orang lain bisa membacanya."
-        miyuki "Kamu pernah bilang suka. Jadi kali ini kubuat satu yang nggak perlu dibagi. Tulisannya agak jelek, ya. Aku bisa buat lapisan rapi, ternyata namamu lebih susah."
+        nar "Miyuki mengeluarkan sebuah kotak kue mungil dari tasnya lalu membuka tutupnya dengan gerakan hati-hati di meja. Di atas lapisan pastry cokelat yang mengilap, terukir tulisan namamu dari lelehan krim putih yang sedikit miring dan jelas ditulis langsung dengan tangannya."
+        nar "Begitu menyadari beberapa mahasiswa lain melintas di dekat meja, Miyuki refleks mencondongkan tubuh untuk menutupi sebagian tutup kotak agar tidak langsung terbaca dari jauh."
+        if kk_host == "chiasa":
+            miyuki "Chiasa-chan pernah bilang suka pastry panggang yang kulitnya renyah kan? Jadi kali ini kubuatkan satu khusus buat Chiasa-chan biar nggak perlu dibagi-bagi. Maaf ya tulisannya agak miring, aku bisa bikin lapisan adonan rapi tapi ternyata menulis namamu jauh lebih bikin gugup."
+            chiasa "Tachibana-senpai sampai nulis namaku sendiri di atas kuenya... kelihatan enak banget!"
+        else:
+            miyuki "Yutaka-kun pernah bilang suka pastry panggang yang kulitnya renyah kan? Jadi kali ini kubuatkan satu yang nggak perlu dibagi ke siapa-siapa. Tulisannya agak miring ya, aku biasa bikin lapisan rapi tapi ternyata menulis namamu di atas kue malah lebih susah."
+            yutaka "Wah, ini beneran ditulis tangan sama Tachibana-senpai? Sayang banget rasanya kalau langsung dipotong."
     $ _row = KK_DYN_BY_ID[eid]
     $ _rows = [(caption, Return(key), False) for key, caption in zip("ABC", _row["choices"]) if not (eid == "Mi-D03" and key == "A" and kk_daily_place("koita") != _lokasi)]
-    call screen kk_choice_panel(_rows, "Apa yang kau lakukan?")
+    call screen kk_choice_panel(_rows, "Apa yang kamu lakukan?")
     $ _key = _return
     $ kk_record_choice(eid,_key)
     if eid == "Mi-D03":
         $ kk_pastry_witnessed(_key, _lokasi)
     if eid == "N-D02":
         if _key == "A":
-            nagisa "Pelankan suaramu! Orang-orang jadi lihat ke sini."
-            nar "Ia melirik sekitar, lalu memastikan kotakmu tidak miring. Protes terhadap perhatian orang lain belum cukup kuat untuk mengalahkan keinginannya melihat kau makan."
+            if kk_host == "chiasa":
+                chiasa "Wah, ini enak banget lho, Nagisa-senpai! Telur gulungnya manis pas banget, jauh lebih enak daripada beli di luar!"
+            else:
+                yutaka "Serius nih, Nagisa, masakanmu enak banget! Bumbunya pas semua, kalau salah hitung bisa selezat ini aku nggak keberatan dapat tiap minggu."
+            nagisa "Sst, pelankan suaramu! Meja sebelah jadi pada noleh ke sini tahu!"
+            nar "Telinga Nagisa memerah cepat sambil melirik sekitar, tetapi tangannya tetap ikut menggeser kotak bekalmu agar lebih nyaman dijangkau sumpit. Protesnya atas perhatian orang lain ternyata kalah jauh oleh keinginannya melihat kamu menyuap habis."
+            nagisa "Sudah, makan aja yang benar, nggak usah pakai teriak-teriak muji segala..."
         elif _key == "B":
-            nagisa "Kalau suka, habiskan. Nanti aku tahu porsinya kebanyakan atau nggak."
-            nar "Ia baru sadar perkataan itu mengandaikan bekal berikutnya. Kau memilih tidak menunjukkannya, memberi ruang agar perhatian yang baru berani ditawarkan tidak harus segera dibela."
+            if kk_host == "chiasa":
+                chiasa "Enak banget, Nagisa-senpai... makasih banyak ya sudah repot-repot buatin sampai seenak ini."
+            else:
+                yutaka "Jujur aja, ini enak banget, Nagisa. Makasih ya sudah buatin bekal serapi ini buatku."
+            nar "Kamu memujinya dengan suara rendah yang hanya terdengar di meja kalian berdua. Bahu Nagisa yang tadi menegang perlahan turun, dan senyum kecil sempat lolos sebelum ia cepat-cepat menunduk."
+            nagisa "...Kalau memang suka, habiskan sampai bersih ya. Biar nanti aku tahu porsinya kebanyakan atau kurang."
+            nar "Ia terhenti sepersekian detik saat sadar kalimatnya barusan menyiratkan akan ada bekal-bekal berikutnya. Kamu memilih tidak menggodanya, memberi ruang aman agar perhatian yang baru berani ia tunjukkan tidak perlu ia tarik lagi."
         else:
-            nar "Ia mengambil bekal itu kembali, mengunci tutup lebih keras daripada perlu."
-            nagisa "Iya. Nggak apa-apa. Aku kan cuma menawarkan."
-            nar "Kotak itu masuk ke tas. Ia kembali membahas tugas, menjaga agar kau tidak perlu menyaksikan betapa lama ia tadi memilih apa yang akan dimasukkan ke dalamnya."
+            if kk_host == "chiasa":
+                chiasa "Maaf ya, Nagisa-senpai, tadi aku sudah sempat beli roti sebelum ke sini, jadi kayaknya nggak bakal habis. Kubalikin dulu ya biar nggak mubazir."
+            else:
+                yutaka "Maaf ya, Nagisa, perutku masih kenyang banget habis makan tadi. Lebih baik kamu simpan aja atau bawa pulang biar nggak kebuang."
+            nar "Nagisa mengambil kotak itu kembali dan menutup pengait plastiknya dengan bunyi klik yang sedikit terlalu keras."
+            nagisa "Oh, iya. Nggak apa-apa kok. Aku kan cuma menawarkan daripada tersisa."
+            nar "Kotak bekal itu langsung masuk kembali ke dalam tas kainnya. Detik berikutnya ia segera mengalihkan obrolan ke jadwal kelas siang, menyembunyikan berapa lama ia tadi pagi berdiri di dapur menata isi kotak tersebut."
     else:
         if _key == "A":
-            nar "Kau membiarkan kotak terbuka di dekat Koita. Ia membaca tulisan itu, lalu menatap Miyuki sedikit lebih lama daripada seharusnya."
-            koita "Dibuat khusus, ya. Kelihatannya enak."
-            miyuki "Iya. Khusus untuknya."
-            nar "Miyuki menjawab pelan, tetapi tidak menyebutnya kebetulan atau sisa adonan. Koita mengangguk, kini harus mengingat bahwa perhatiannya bukan satu-satunya yang bisa menjadi istimewa."
+            nar "Kamu membiarkan tutup kotak terbuka jelas di atas meja tepat saat Koita melangkah mendekat sambil membawa minuman. Pandangan Koita langsung tertuju pada ukiran namamu di atas kue, lalu naik menatap Miyuki sedikit lebih lama dari biasanya."
+            koita "Wah, kelihatannya enak banget tuh. Ada tulisan namanya segala... Miyuki-senpai bikin khusus ya?"
+            miyuki "Iya, Koita-kun. Kali ini memang kubuat khusus."
+            if kk_host == "chiasa":
+                chiasa "Makasih ya, Tachibana-senpai, aku makan sekarang mumpung kulitnya masih renyah!"
+                koita "Haha, enak banget tuh Chi-chan dapat perlakuan khusus dari Senpai."
+            else:
+                yutaka "Enak banget lho, Koita. Kulitnya masih renyah persis kayak yang kubilang kemarin."
+                koita "...Iya, kelihatan banget niat bikinnya. Selamat makan, Yutaka."
+            nar "Miyuki menjawab dengan suara lembut tanpa berusaha menyebutnya sisa adonan atau kebetulan. Koita mengangguk pelan, baru benar-benar menangkap bahwa perhatian Miyuki kini tidak lagi hanya berputar di sekitar dirinya."
         elif _key == "B":
-            nar "Kau menyimpan kotak sebelum tulisan itu dibaca orang lain. Miyuki memerhatikan gerakanmu, belum tahu apakah kau ingin melindungi sesuatu yang pribadi atau menyembunyikan kedekatan yang membuatmu malu."
-            miyuki "Makan nanti, ya. Aku ingin tahu rasanya menurutmu."
-            nar "Ia tidak menanyakan alasanmu di depan orang. Pastry itu tetap utuh, bersama pertanyaan kecil yang nanti mungkin perlu kaujawab."
+            nar "Kamu buru-buru merapatkan tutup kotak dan memasukkannya ke dalam tas sebelum tulisan namamu sempat dibaca mahasiswa lain di meja sebelah. Miyuki memperhatikan gerakan tanganmu dengan raut tenang yang agak sulit ditebak."
+            if kk_host == "chiasa":
+                chiasa "Biar kusimpan dulu buat kumakan pelan-pelan di rumah ya, Tachibana-senpai, sayang kalau dimakan buru-buru di sini."
+            else:
+                yutaka "Kusimpan dulu ya, Tachibana-senpai, biar nanti bisa kunikmati tenang di apartemen tanpa diganggu keramaian."
+            miyuki "Baiklah... makan nanti ya kalau sudah santai. Aku ingin tahu rasanya cocok atau nggak di lidahmu."
+            nar "Ia tidak mempertanyakan keputusanmu di depan umum, meski kamu sadar ia belum sepenuhnya yakin apakah kamu ingin menjaga momen pribadi atau justru canggung mengakui kedekatan kalian."
         else:
-            nar "Kau membagikan pastry di tempat. Tulisan namamu terpotong lebih dahulu, berubah menjadi potongan huruf yang diambil bersama makanan."
-            miyuki "Oh, dibagi. Iya, tentu. Semoga cukup."
-            nar "Ia ikut mengambil piring sebelum sempat menentukan apakah ia kecewa. Bagi orang lain itu makanan yang manis; baginya ada perhatian yang semula hendak diberikan kepada satu orang dan kini harus ia biarkan menjadi milik meja."
+            if kk_host == "chiasa":
+                chiasa "Kelihatannya gede banget buat kumakan sendiri, Tachibana-senpai. Boleh kubagi sekalian ke teman-teman meja sebelah biar pada ikut nyicipin enaknya buatan Senpai?"
+            else:
+                yutaka "Porsinya lumayan besar nih, Tachibana-senpai. Gimana kalau kita potong terus bagi ke yang lain sekalian biar ramai?"
+            nar "Kamu memotong pastry itu di tempat. Pisau plastik membelah tepat di tengah ukiran namamu hingga huruf-huruf krim itu terpisah menjadi potongan biasa di atas piring kertas."
+            miyuki "Oh... dibagi ke semuanya ya. Iya, tentu saja boleh. Semoga potongannya cukup."
+            nar "Miyuki ikut membantu menyodorkan piring kecil dengan senyum terlatih sebelum sempat menimbang apakah ia sebenarnya kecewa. Bagi orang-orang di meja itu hanyalah camilan manis, sedangkan bagi Miyuki perhatian yang semula ia tulis khusus untuk satu nama kini harus ia relakan menjadi milik semua orang."
     $ kk_minutes(10)
     return
 
@@ -1231,30 +1344,56 @@ label kk_social_scene(eid):
 # │ AKHIRAN : dimanja +10 / +5 / −5 / −10; Intim
 # └─ tulis / perbaiki dialog di bawah ──
 label kk_pudding:
-    nar "Pesan pertama Miyuki hanya menanyakan apakah kau masih bangun. Pesan berikutnya hilang sebelum selesai muncul. Barulah setelah beberapa saat ia benar-benar menyampaikan permintaan."
-    miyuki "Kalau lewat konbini, boleh titip puding? Nggak harus kalau jauh. Aku tahu sudah malam. Aku cuma sedang ingin sesuatu yang manis dan nggak ingin keluar sendirian."
-    nar "Ia menambahkan bahwa uangnya akan diganti, lalu satu pesan lagi: tidak apa-apa kalau tak bisa. Permintaan kecil itu datang dengan terlalu banyak pintu untuk membatalkannya."
+    play sound "audio/sfx/phone_buzz.wav"
+    nar "Menjelang pukul sebelas malam, ponselmu bergetar menampilkan satu pesan singkat dari Miyuki yang sekadar menanyakan apakah kamu masih bangun. Setelah kamu membuka ruang obrolan, tanda sedang mengetik sempat muncul lama lalu hilang kembali, sebelum akhirnya sebuah pesan yang tampak ditulis sangat hati-hati masuk."
+    if kk_host == "chiasa":
+        "Pesan Miyuki" "Chiasa-chan, maaf mengganggu malam-malam. Kalau kebetulan masih belum tidur dan lewat toko serba ada dekat sini, boleh nggak... sekali ini aja aku titip dibelikan puding karamel? Nggak usah kalau jauh atau sudah mau tidur ya."
+        "Pesan Miyuki" "Nanti uangnya langsung kuganti kok. Aku cuma lagi kepengin sesuatu yang manis, tapi rasanya malas keluar sendirian jam segini. Beneran nggak apa-apa banget kalau nggak bisa ya, Chiasa-chan."
+    else:
+        "Pesan Miyuki" "Yutaka-kun, maaf mengganggu selarut ini. Kalau kebetulan kamu belum tidur dan lewat toko serba ada, boleh nggak... sekali ini aja aku titip puding karamel? Nggak harus sama sekali kalau jauh atau kamu sudah capek."
+        "Pesan Miyuki" "Uangnya pasti langsung kuganti begitu sampai. Aku cuma lagi kepengin yang manis tapi nggak mau jalan keluar sendirian malam-malam. Sungguh nggak apa-apa kalau kamu nggak sempat ya."
+    nar "Permintaan kecil itu tiba dibungkus begitu banyak jalan keluar untuk membatalkannya, seolah Miyuki sudah menyiapkan diri untuk mundur begitu kamu menunjukkan sedikit saja tanda keberatan."
     $ _rows = [(caption, Return(key), False) for key, caption in zip("ABCD",KK_DYN_BY_ID["Mi-D01"]["choices"])]
     call screen kk_choice_panel(_rows, "Balas pesan Miyuki")
     $ _key = _return
     $ kk_record_choice("Mi-D01", _key)
     if _key == "A":
         $ kk_rel("miyuki","intim",1)
-        nar "Kau datang dengan puding dan menawarkan duduk. Miyuki mengeluarkan dua sendok, lalu tertawa ketika sadar ia telah melakukannya sebelum bertanya apakah kau mau."
-        miyuki "Aku sebenarnya bukan cuma ingin puding. Ternyata boleh bilang begitu, ya."
-        nar "Kalian makan pelan di meja dapur. Ia tidak menyiapkan hiburan atau tugas untuk membuat waktumu terasa berguna. Malam itu kehadiranmu cukup diterima sebagai sesuatu yang ingin ia nikmati."
+        nar "Kamu langsung menyambar jaket, membeli dua cangkir puding karamel di toko serba ada yang masih terang, lalu mengantarkannya ke pintu apartemen Miyuki. Begitu pintu terbuka dan kamu menawarkan ikut duduk sebentar, Miyuki segera mengambil dua sendok dari dapur lalu tertawa kecil menyadari tangannya bergerak otomatis sebelum sempat bertanya apakah kamu mau."
+        if kk_host == "chiasa":
+            miyuki "Haha, ketahuan ya, Chiasa-chan? Aku bahkan sudah siapin dua sendok duluan sebelum nanya kamu mau makan juga apa nggak."
+            chiasa "Kebetulan aku juga beli dua kok, Tachibana-senpai. Makanya nggak usah buru-buru, kita habiskan pelan-pelan aja."
+            miyuki "...Sebenarnya malam ini aku memang nggak cuma kepengin pudingnya doang sih. Ternyata rasanya lega banget ya kalau boleh jujur bilang begitu."
+        else:
+            miyuki "Haha, ketahuan ya, Yutaka-kun? Tanganku sudah keburu ambil dua sendok padahal belum nanya kamu mau ikut makan atau nggak."
+            yutaka "Tenang aja, aku memang sengaja beli dua cangkir kok, Tachibana-senpai. Jadi kita duduk santai aja sebentar."
+            miyuki "...Sebenarnya malam ini aku nggak cuma pengin makan puding doang. Ternyata boleh ya bilang pengin ditemani tanpa harus cari alasan dulu."
+        nar "Kalian menyendok puding pelan di meja kecil dapur. Malam itu Miyuki tidak sibuk menyiapkan camilan lain ataupun mencari topik serius demi membuat waktumu terasa berguna. Kehadiranmu cukup diterima apa adanya sebagai sesuatu yang ingin ia nikmati."
     elif _key == "B":
-        nar "Kau mengantarkan puding dan menjelaskan perlu segera pergi. Miyuki menerima tanpa mencoba menahanmu dengan permintaan lain."
-        miyuki "Terima kasih sudah menyempatkan. Aku senang kamu bilang bisa bantu sampai sini. Jadi aku nggak perlu menebak kapan mulai merepotkan."
-        nar "Ia melambaikan tangan dari pintu. Setelah itu ada foto puding yang sudah dibuka, disertai kabar singkat bahwa rasanya enak."
+        nar "Kamu mampir membeli puding karamel dan mengantarkannya langsung ke depan pintu apartemen Miyuki, lalu menjelaskan dengan jujur bahwa kamu harus segera pulang karena besok ada urusan pagi."
+        if kk_host == "chiasa":
+            chiasa "Ini pudingnya, Tachibana-senpai. Maaf aku nggak bisa mampir lama ya, besok ada kelas pagi jadi harus langsung pulang."
+            miyuki "Terima kasih banyak sudah jauh-jauh menyempatkan, Chiasa-chan! Justru aku senang kamu langsung bilang waktumu sampai sini saja, jadi aku nggak perlu nebak-nebak kapan aku mulai merepotkan."
+        else:
+            yutaka "Ini puding karamelnya, Tachibana-senpai. Maaf aku langsung balik ya, besok jadwal pagiku lumayan padat."
+            miyuki "Terima kasih banyak sudah menyempatkan jalan ke sini, Yutaka-kun. Aku malah lega kamu bilang batasnya terus terang, jadi aku nggak terus merasa bersalah sudah menahanmu."
+        nar "Miyuki melambaikan tangan hangat dari ambang pintu. Sepuluh menit setelah kamu berjalan menjauh, satu foto puding yang tutupnya baru dibuka masuk ke ponselmu disertai pesan singkat bahwa rasanya manis dan lezat sekali."
     elif _key == "C":
-        nar "Kau mengatakan tidak bisa. Balasannya datang cepat, meyakinkanmu bahwa ia tidak keberatan."
-        miyuki "Baik. Maaf minta mendadak. Aku buat teh saja."
-        nar "Sesudahnya ia tidak mengirim apa pun lagi. Penolakanmu sah, tetapi Miyuki masih harus belajar agar satu permintaan yang tak bisa dipenuhi tidak menjadi bukti bahwa meminta sejak awal adalah kesalahan."
+        if kk_host == "chiasa":
+            chiasa "Maaf banget ya, Tachibana-senpai, malam ini aku sudah siap tidur dan di luar lagi dingin banget. Lain waktu aja ya."
+        else:
+            yutaka "Maaf ya, Tachibana-senpai, malam ini aku belum bisa keluar ke toko serba ada soalnya sudah mau istirahat."
+        nar "Balasan Miyuki masuk kurang dari lima detik kemudian, terlalu cepat untuk menutupi rasa canggung karena telanjur meminta."
+        "Pesan Miyuki" "Oh, baik, nggak apa-apa sama sekali! Maaf banget sudah kirim pesan mendadak selarut ini. Aku bikin teh hangat sendiri aja di dapur, selamat istirahat ya."
+        nar "Setelah pesan itu tidak ada lagi lanjutan obrolan. Penolakanmu jelas wajar dan sah, tetapi kamu tahu Miyuki masih harus belajar agar satu permintaan yang tidak bisa dipenuhi tidak langsung ia catat sebagai bukti bahwa meminta sejak awal adalah kesalahan."
     else:
-        nar "Kau membalas dengan tawa, membuat permintaannya terdengar kekanak-kanakan. Tanda sedang mengetik muncul, lenyap, lalu muncul lagi."
-        miyuki "Maaf. Lupakan saja. Aku cuma bercanda."
-        nar "Ia tidak bercanda saat meminta. Sekarang ia harus berpura-pura begitu agar tak merasa telah menyerahkan kebutuhan kecil yang bisa dipakai untuk mempermalukannya. Pada percakapan berikutnya ia akan lebih dahulu menanyakan kabarmu, menjaga agar tak ada permintaan lain yang telanjur keluar."
+        if kk_host == "chiasa":
+            chiasa "Haha, Tachibana-senpai yang biasanya paling dewasa ternyata jam sebelas malam bisa ngidam puding kayak anak kecil juga ya?"
+        else:
+            yutaka "Hahaha, serius nih Tachibana-senpai jam sebelas malam mendadak ngidam puding kayak anak kecil begitu?"
+        nar "Indikator mengetik di sisi Miyuki muncul, menghilang beberapa detik, muncul kembali, lalu berhenti cukup lama sebelum akhirnya satu balasan pendek masuk."
+        "Pesan Miyuki" "Maaf, lupakan saja pesan tadi ya. Aku tadi cuma bercanda kok. Selamat tidur."
+        nar "Kamu tahu betul ia sama sekali tidak sedang bercanda saat mengetik permintaan pertamanya tadi. Kini ia terpaksa bersembunyi di balik dalih candaan agar tidak merasa telah mempermalukan dirinya sendiri, dan pada obrolan berikutnya ia pasti akan kembali sibuk menanyakan kabarmu lebih dulu agar tidak ada keinginan kecilnya yang telanjur keluar lagi."
     $ kk_minutes(15)
     return
 

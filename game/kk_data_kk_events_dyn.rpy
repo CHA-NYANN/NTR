@@ -27,7 +27,7 @@ init -5 python:
        "foto",
        "pindahkan ke ruang jaga"
       ],
-      "effect": "Intim +, kelelahan −5; foto bisa sampai ke Mei"
+      "effect": "Intim +, kelelahan −5; foto bisa sampai ke Meisa"
      },
      {
       "id": "Mi-D03",
@@ -57,13 +57,13 @@ init -5 python:
       "id": "Mi-D05",
       "name": "Tangga Darurat Jam Tiga",
       "trigger": "Tahun 3; jaga malam; luka[[diri] ≥ 50; pemain di RS saat Dini Hari",
-      "desc": "ia duduk sendirian di tangga darurat. Duduk di sebelahnya / panggil Sena / pergi diam-diam",
+      "desc": "ia duduk sendirian di tangga darurat. Duduk di sebelahnya / panggil Yuina / pergi diam-diam",
       "choices": [
        "Duduk di sebelahnya",
-       "panggil Sena",
+       "panggil Yuina",
        "pergi diam-diam"
       ],
-      "effect": "luka[[diri] −15 / Sena menjadi sekutu / tidak ada"
+      "effect": "luka[[diri] −15 / Yuina menjadi sekutu / tidak ada"
      },
      {
       "id": "Mi-D06",
@@ -82,14 +82,14 @@ init -5 python:
       "id": "Mi-D07",
       "name": "Hayase di Kafe",
       "trigger": "omiai_takeru ≥ 40; pemain di Kafe Komorebi hari Sabtu",
-      "desc": "Takeru mengajak bicara. Hadapi / bersekutu / pancing ia jujur / rekam diam-diam",
+      "desc": "Tatsuru mengajak bicara. Hadapi / bersekutu / pancing ia jujur / rekam diam-diam",
       "choices": [
        "Hadapi",
        "bersekutu",
        "pancing ia jujur",
        "rekam diam-diam"
       ],
-      "effect": "Takeru bisa mengaku ia tidak mencintai Miyuki; rekaman menjadi bukti sekaligus risiko"
+      "effect": "Tatsuru bisa mengaku ia tidak mencintai Miyuki; rekaman menjadi bukti sekaligus risiko"
      },
      {
       "id": "Mi-D08",
@@ -120,7 +120,7 @@ init -5 python:
       "id": "Mi-D10",
       "name": "Resep yang Salah Tulis",
       "trigger": "kelelahan ≥ 85",
-      "desc": "hampir salah menulis resep; Sena menangkapnya. Paksa ia cuti / bantu menyembunyikan / laporkan ke pembimbing",
+      "desc": "hampir salah menulis resep; Yuina menangkapnya. Paksa ia cuti / bantu menyembunyikan / laporkan ke pembimbing",
       "choices": [
        "Paksa ia cuti",
        "bantu menyembunyikan",
@@ -214,13 +214,13 @@ init -5 python:
      },
      {
       "id": "N-D04",
-      "name": "Tawaran Kedua Yuuto",
+      "name": "Tawaran Kedua Fuuto",
       "trigger": "tenggat studio; pemain absen",
-      "desc": "Yuuto membantu maket. Datang membantu / biarkan / alihkan Yuuto",
+      "desc": "Fuuto membantu maket. Datang membantu / biarkan / alihkan Fuuto",
       "choices": [
        "Datang membantu",
        "biarkan",
-       "alihkan Yuuto"
+       "alihkan Fuuto"
       ],
       "effect": "studio +; kelekatan ke pemain turun bila pemain absen"
      },
@@ -447,14 +447,14 @@ init -5 python:
      {
       "id": "H-D10",
       "name": "Permintaan Komentar",
-      "trigger": "rumor tentang Harumi; Mei menghubungi pemain",
+      "trigger": "rumor tentang Harumi; Meisa menghubungi pemain",
       "desc": "bantah / diam / beri informasi",
       "choices": [
        "bantah",
        "diam",
        "beri informasi"
       ],
-      "effect": "reputasi Harumi; Mei mendapat bahan"
+      "effect": "reputasi Harumi; Meisa mendapat bahan"
      },
      {
       "id": "H-D11",
@@ -508,7 +508,7 @@ init -5 python:
      },
      {
       "id": "Mo-D03",
-      "name": "Kostum untuk Hinata",
+      "name": "Kostum untuk Hinari",
       "trigger": "adik bungsunya ikut pentas sekolah",
       "desc": "Moeka menjahit kostum dan mengajak pemain. Datang ke pentas / bantu menjahit malam itu / tidak bisa",
       "choices": [
@@ -534,12 +534,12 @@ init -5 python:
       "id": "Mo-D05",
       "name": "Lokasi dari Kuga",
       "trigger": "kuga_tekanan ≥ 40",
-      "desc": "Kuga mengirim lokasi pemotretan malam; Moeka bertanya \"temani?\". Temani / larang / laporkan / minta Rina menemani",
+      "desc": "Kuga mengirim lokasi pemotretan malam; Moeka bertanya \"temani?\". Temani / larang / laporkan / minta Ryena menemani",
       "choices": [
        "Temani",
        "larang",
        "laporkan",
-       "minta Rina menemani"
+       "minta Ryena menemani"
       ],
       "effect": "jalur Kuga; bukti untuk E-NPC-26"
      },
@@ -557,7 +557,7 @@ init -5 python:
      },
      {
       "id": "Mo-D07",
-      "name": "Rina Bertanya",
+      "name": "Ryena Bertanya",
       "trigger": "rina_curiga ≥ 50",
       "desc": "\"Kamu tahu sesuatu?\" Jujur / sangkal / ajak bekerja sama",
       "choices": [
@@ -565,7 +565,7 @@ init -5 python:
        "sangkal",
        "ajak bekerja sama"
       ],
-      "effect": "Rina menjadi sekutu; kesempatan kedua di Mo25"
+      "effect": "Ryena menjadi sekutu; kesempatan kedua di Mo25"
      },
      {
       "id": "Mo-D08",
@@ -583,11 +583,11 @@ init -5 python:
       "id": "Mo-D09",
       "name": "Cocok sebagai Donor",
       "trigger": "ayah memburuk",
-      "desc": "Moeka diam-diam tes kecocokan. Dukung / tentang / beri tahu Aya / temani ke RS (Miyuki melihat)",
+      "desc": "Moeka diam-diam tes kecocokan. Dukung / tentang / beri tahu Yaeka / temani ke RS (Miyuki melihat)",
       "choices": [
        "Dukung",
        "tentang",
-       "beri tahu Aya",
+       "beri tahu Yaeka",
        "temani ke RS (Miyuki melihat)"
       ],
       "effect": "cabang donor; stres[[ayah] −40 bila jadi; beasiswa terancam"
@@ -608,18 +608,18 @@ init -5 python:
       "id": "Mo-D11",
       "name": "Barang yang Dikembalikan",
       "trigger": "tahap 4",
-      "desc": "ia mengembalikan barang pinjaman lama. Tanya kenapa / terima / ceritakan pada Rina",
+      "desc": "ia mengembalikan barang pinjaman lama. Tanya kenapa / terima / ceritakan pada Ryena",
       "choices": [
        "Tanya kenapa",
        "terima",
-       "ceritakan pada Rina"
+       "ceritakan pada Ryena"
       ],
       "effect": "tanda bahaya; menerima tanpa bertanya = jendela kecil terlewat"
      },
      {
       "id": "Mo-D12",
       "name": "Pertanyaan Langsung",
-      "trigger": "tahap ≥ 3; pemain mengenali tanda (Intim ≥ 55 atau Rina memberi tahu)",
+      "trigger": "tahap ≥ 3; pemain mengenali tanda (Intim ≥ 55 atau Ryena memberi tahu)",
       "desc": "pilihan bertanya langsung dan tenang muncul. Tanya langsung lalu tetap tinggal / tanya sambil bercanda / tidak berani",
       "choices": [
        "Tanya langsung lalu tetap tinggal",
@@ -632,10 +632,10 @@ init -5 python:
       "id": "Mo-D13",
       "name": "Sketsa Label Pertama",
       "trigger": "stres_total < 40; Aff ≥ 55",
-      "desc": "ia menunjukkan rancangan label sendiri. Dukung / ajak Rina / kritik",
+      "desc": "ia menunjukkan rancangan label sendiri. Dukung / ajak Ryena / kritik",
       "choices": [
        "Dukung",
-       "ajak Rina",
+       "ajak Ryena",
        "kritik"
       ],
       "effect": "E-MO-08 menguat"
@@ -788,11 +788,11 @@ init -5 python:
       "id": "S-D13",
       "name": "Rahasia Palsu",
       "trigger": "Trust Sedang",
-      "desc": "Shiori menitipkan \"rahasia\" kecil pada pemain, sebenarnya umpan. Simpan / ceritakan ke orang lain / jual ke Mei",
+      "desc": "Shiori menitipkan \"rahasia\" kecil pada pemain, sebenarnya umpan. Simpan / ceritakan ke orang lain / jual ke Meisa",
       "choices": [
        "Simpan",
        "ceritakan ke orang lain",
-       "jual ke Mei"
+       "jual ke Meisa"
       ],
       "effect": "bila rahasia itu muncul di mana pun, ia tahu sumbernya; ujian gagal dan marah[[pemain] naik"
      },
@@ -861,11 +861,11 @@ init -5 python:
       "id": "C-D02",
       "name": "Dua Sketsa Berdampingan",
       "trigger": "Chiasa host; shena_risiko ≥ 40",
-      "desc": "Haruka meletakkan sketsa lama dan baru berdampingan. Jujur / beri alasan / minta Haruka mengajar",
+      "desc": "Karuha meletakkan sketsa lama dan baru berdampingan. Jujur / beri alasan / minta Karuha mengajar",
       "choices": [
        "Jujur",
        "beri alasan",
-       "minta Haruka mengajar"
+       "minta Karuha mengajar"
       ],
       "effect": "rahasia Shena dibagi, atau curiga naik"
      },
@@ -873,11 +873,11 @@ init -5 python:
       "id": "C-D03",
       "name": "Tangan yang Gemetar",
       "trigger": "Chiasa host; berlatih saat Sangat Lelah",
-      "desc": "berhenti dan tidur / paksa sampai pagi / minta Haruka mengajar",
+      "desc": "berhenti dan tidur / paksa sampai pagi / minta Karuha mengajar",
       "choices": [
        "berhenti dan tidur",
        "paksa sampai pagi",
-       "minta Haruka mengajar"
+       "minta Karuha mengajar"
       ],
       "effect": "kemampuan_gambar hanya naik sedikit saat lelah; tubuh menanggung"
      },
@@ -885,11 +885,11 @@ init -5 python:
       "id": "C-D04",
       "name": "Hari Pertama",
       "trigger": "Chiasa host; siklus jatuh di hari penting",
-      "desc": "tetap hadir / izin / minta bantuan Haruka atau Yoshie lewat video call",
+      "desc": "tetap hadir / izin / minta bantuan Karuha atau Yoshie lewat video call",
       "choices": [
        "tetap hadir",
        "izin",
-       "minta bantuan Haruka atau Yoshie lewat video call"
+       "minta bantuan Karuha atau Yoshie lewat video call"
       ],
       "effect": "hasil event hari itu bergeser; Yoshie menjadi lebih dekat"
      },
@@ -915,7 +915,7 @@ init -5 python:
      },
      {
       "id": "C-D07",
-      "name": "Pesan Mio Jam Sebelas",
+      "name": "Pesan Miono Jam Sebelas",
       "trigger": "Chiasa host; ada proyek",
       "desc": "mengaku tidak sanggup / minta perpanjangan / sewa ilustrator / begadang",
       "choices": [
@@ -966,7 +966,7 @@ init -5 python:
       "id": "C-D11",
       "name": "Karya yang Dibeli Diam-diam",
       "trigger": "Male Route",
-      "desc": "Yutaka membeli karya Chiasa secara anonim; Haruka mengetahuinya. Akui / sangkal",
+      "desc": "Yutaka membeli karya Chiasa secara anonim; Karuha mengetahuinya. Akui / sangkal",
       "choices": [
        "Akui",
        "sangkal"
@@ -1000,7 +1000,7 @@ init -5 python:
      {
       "id": "C-D14",
       "name": "Pengakuan Setengah",
-      "trigger": "Trust Haruka atau yutaka_harap Sedang+; framing_koita terpasang",
+      "trigger": "Trust Karuha atau yutaka_harap Sedang+; framing_koita terpasang",
       "desc": "Chiasa hampir mengaku pada satu orang, lalu membungkusnya sebagai \"perlu dilakukan\". Biarkan mereka tahu sebagian / tarik kembali ucapan / mengaku penuh",
       "choices": [
        "Biarkan mereka tahu sebagian",
@@ -1311,9 +1311,9 @@ init -5 python:
      },
      {
       "id": "Y-D04",
-      "name": "Daichi Menginap",
-      "trigger": "kenal Daichi",
-      "desc": "Daichi menginap dan melihat catatan pemain tentang heroine. Jelaskan / sembunyikan / sogok",
+      "name": "Kaichi Menginap",
+      "trigger": "kenal Kaichi",
+      "desc": "Kaichi menginap dan melihat catatan pemain tentang heroine. Jelaskan / sembunyikan / sogok",
       "choices": [
        "Jelaskan",
        "sembunyikan",
@@ -1416,7 +1416,7 @@ init -5 python:
        "bela Nagisa",
        "pergi"
       ],
-      "effect": "stres Moeka; tahap Nagisa; bila pemain tidak ada, Rina mendengar ceritanya besok"
+      "effect": "stres Moeka; tahap Nagisa; bila pemain tidak ada, Ryena mendengar ceritanya besok"
      },
      {
       "id": "X-D02",
@@ -1468,13 +1468,13 @@ init -5 python:
      },
      {
       "id": "X-D06",
-      "name": "Wawancara Mei",
-      "trigger": "Mei menulis tentang pemain",
-      "desc": "Mei mewawancarai heroine satu per satu. Hentikan Mei / biarkan / bayar Mei",
+      "name": "Wawancara Meisa",
+      "trigger": "Meisa menulis tentang pemain",
+      "desc": "Meisa mewawancarai heroine satu per satu. Hentikan Meisa / biarkan / bayar Meisa",
       "choices": [
-       "Hentikan Mei",
+       "Hentikan Meisa",
        "biarkan",
-       "bayar Mei"
+       "bayar Meisa"
       ],
       "effect": "jawaban tiap heroine mengikuti keadaannya; reputasi"
      },
@@ -1492,7 +1492,7 @@ init -5 python:
      },
      {
       "id": "X-D08",
-      "name": "Rina dan Sena Bertukar Cerita",
+      "name": "Ryena dan Yuina Bertukar Cerita",
       "trigger": "rina_curiga dan sena_curiga ≥ 50",
       "desc": "dua sahabat membandingkan catatan tentang pemain. Temui mereka / hindari / jujur",
       "choices": [

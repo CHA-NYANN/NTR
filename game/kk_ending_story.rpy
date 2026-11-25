@@ -28,7 +28,7 @@ init python:
 
 Miyuki tidak langsung memeluknya. Ia menanyakan orang-orang lain, pesan-pesan yang perlu dijelaskan, dan apa yang akan berubah setelah malam ini. Koita menjawab satu per satu. Ada jawaban yang buruk; kali ini ia membiarkannya terdengar buruk daripada membuatnya indah dan kabur.
 
-Mereka mulai bersama tanpa menganggap penantian sebagai bukti bahwa hubungan ini pasti berhasil. Pada hari Miyuki pulang terlalu lelah untuk bersikap manis, Koita tetap datang. Ia belajar bahwa dipilih seseorang juga berarti hadir pada saat dirinya tidak sedang dibuat merasa istimewa."""
+Pada malam Miyuki pulang dari rumah sakit terlalu lelah untuk bersikap manis, Koita sudah menunggu di dapur apartemennya. Ia mematikan kompor, menyelimuti Miyuki yang tertidur di sofa dengan jas putih masih di pangkuan, lalu mencuci dua piring di bak tanpa membangunkannya."""
 
     # ┌─ ENDING · E-KO-02 · Dipilih: Nagisa  [Koita · host Y/C]
     # │ KAPAN   : harapan_koita Nagisa tegak
@@ -38,7 +38,7 @@ Mereka mulai bersama tanpa menganggap penantian sebagai bukti bahwa hubungan ini
 
 Koita tidak menjawab dengan kisah boneka kelinci atau masa kecil. Ia menyebut Nagisa yang sekarang: keras kepala, mudah khawatir, dan berhak pergi jika ia kembali menggantungnya. Barulah Nagisa menangis, kesal karena tangisnya datang sebelum ia sempat terlihat anggun.
 
-Koko tetap duduk di kamarnya, kini tanpa tugas menjamin masa depan. Mereka masih bertengkar tentang waktu, pesan yang terlambat, dan hal-hal kecil yang dahulu dipendam demi mempertahankan kedekatan. Bedanya, Koita tidak lagi menjadikan teman masa kecil sebagai alasan untuk menghindari nama hubungan mereka."""
+Koko tetap duduk di rak kamar Nagisa, di sebelah maket yang belum selesai. Mereka masih berdebat soal jam pulang dan pesan yang terlambat dibalas, tetapi saat teman studio bertanya siapa yang menunggu di bawah, Nagisa menyebut nama Koita sebagai pacarnya tanpa menoleh untuk memeriksa reaksi."""
 
     # ┌─ ENDING · E-KO-03 · Dipilih: Harumi  [Koita · host Y/C]
     # │ KAPAN   : Harumi tahap ≤ 2; Koita memilihnya
@@ -48,7 +48,7 @@ Koko tetap duduk di kamarnya, kini tanpa tugas menjamin masa depan. Mereka masih
 
 Ia memilih Harumi. Ia ingin menjadi pasangannya. Ia memahami bahwa jawaban Harumi belum tentu sama.
 
-Harumi diam lama, lalu mengatakan ya dengan suara yang nyaris hilang di antara rak buku. Setelah itu ia justru membicarakan batas waktunya: penelitian, tidur, hal-hal yang tidak akan ia korbankan untuk membuktikan kasih sayang. Koita mendengarkan tanpa menawar. Variabel tetap yang akhirnya mereka pertahankan bukan seseorang yang selalu mengalah, melainkan hak keduanya untuk tetap menjadi diri sendiri."""
+Harumi diam lama, lalu mengatakan ya dengan suara yang nyaris hilang di antara rak buku. Setelah itu ia langsung membuka buku agenda dan membacakan batas waktunya: jam laboratorium, jadwal tidur, serta malam-malam ketika ia tidak ingin diganggu. Koita mencatat semuanya di ponselnya sendiri, lalu menggeser cangkir teh hangat ke dekat tangan Harumi."""
 
     # ┌─ ENDING · E-KO-04 · Dipilih: Moeka  [Koita · host Y/C]
     # │ KAPAN   : Moeka selamat; hatinya ke Koita
@@ -58,7 +58,7 @@ Harumi diam lama, lalu mengatakan ya dengan suara yang nyaris hilang di antara r
 
 Perhatian sederhana itu tidak menyembuhkan semua yang pernah terjadi. Keluarga Moeka masih memerlukan bantuan, beasiswanya masih menuntut kerja, dan ada pagi ketika bangun terasa jauh lebih berat daripada yang terlihat dari fotonya. Namun Koita berhenti menawarkan janji besar yang bisa ia lupakan setelah suasana membaik.
 
-Ia datang pada waktu yang disepakati. Jika tidak bisa, ia memberi kabar. Moeka belajar mengatakan sedang tidak baik tanpa harus tertawa sesudahnya. Cinta mereka tumbuh di antara hal-hal biasa itu, dalam hidup yang masih boleh sulit dan tetap layak dijalani."""
+Ia datang pada waktu yang disepakati, dan jika terlambat lima menit, pesannya sudah masuk lebih dulu. Ketika Moeka suatu sore berkata kepalanya pusing dan ia tidak sanggup bercanda, Koita hanya membelikan air hangat dari mesin penjual otomatis lalu duduk diam di sebelahnya sampai kereta berikutnya tiba."""
 
     # ┌─ ENDING · E-KO-05 · Dipilih: Shiori  [Koita · host Y/C]
     # │ KAPAN   : cinta Koita tumbuh di S08
@@ -68,7 +68,7 @@ Ia datang pada waktu yang disepakati. Jika tidak bisa, ia memberi kabar. Moeka b
 
 Di hadapannya, Shiori tidak menjadi hadiah untuk keberanian seorang pemuda baik. Ia mempertanyakan kebiasaannya, menolak kecenderungannya meminta persetujuan semua orang, dan tertawa ketika ia akhirnya mampu membantah dengan alasan yang jujur. Ketertarikan mereka yang tumbuh sejak pertemuan lama kini punya ruang untuk menjadi sesuatu yang dipilih.
 
-Koita tetap canggung di rumah Saionji. Shiori tetap harus menghadapi tuntutan keluarganya. Tetapi saat memperkenalkannya, ia menyebut nama dan hubungan mereka sendiri sebelum siapa pun sempat menawarkan gelar yang lebih menguntungkan."""
+Koita tetap salah memegang cangkir saat bertamu ke kediaman Saionji, dan Shiori tetap harus meladeni tatapan dingin kerabatnya di ruang depan. Namun sebelum pamannya sempat membuka pembicaraan soal perjodohan, Shiori lebih dulu menarik kursi di sebelahnya dan memperkenalkan Koita sebagai kekasihnya."""
 
     # ┌─ ENDING · E-KO-06 · Dipilih: Chiasa  [Koita · host Y/C]
     # │ KAPAN   : Koita Success (NPC atau host)
@@ -78,7 +78,7 @@ Koita tetap canggung di rumah Saionji. Shiori tetap harus menghadapi tuntutan ke
 
 Koita berhenti membiarkan Chiasa mengucapkan seluruh keinginan sementara ia berlindung dalam diam. Ia menyebut pilihannya sebagai pilihannya sendiri. Chiasa, untuk pertama kalinya, tidak menyambut itu dengan janji bahwa ia akan selalu menyediakan segala sesuatu di rumah.
 
-Mereka menghadapi akibat sosial dan keluarga tanpa menganggap penolakan orang lain bukti bahwa cinta mereka lebih luhur. Hubungan itu baru bisa berjalan ketika keduanya belajar bahwa tinggal bersama tidak memberi hak untuk menentukan hidup yang lain."""
+Di meja makan, Yoshie masih sering terdiam setiap kali melihat mereka duduk berdampingan. Koita yang kini mencuci piring setelah makan malam dan menjawab pertanyaan ayahnya tanpa menoleh ke arah Chiasa untuk meminta bantuan, sementara Chiasa kembali ke kamarnya sendiri untuk menyelesaikan gambar sebelum pukul sepuluh."""
 
     # ┌─ ENDING · E-KO-07 · Sendiri  [Netral · host Y/C]
     # │ KAPAN   : semua heroine menjauh; Koita tidak runtuh
@@ -88,7 +88,7 @@ Mereka menghadapi akibat sosial dan keluarga tanpa menganggap penolakan orang la
 
 Tak ada yang kembali karena melihat ia mulai membaik. Ia mengembalikan buku, meminta maaf kepada orang yang bersedia mendengar, dan menerima bahwa beberapa permintaan maaf tidak dibalas. Hari-hari itu tidak menyenangkan, tetapi tidak semuanya kosong. Ada kuliah yang masih bisa diselesaikan, janji konseling yang bisa ditepati, dan tulisan yang tak harus membuat pembacanya mencintai dirinya.
 
-Ketika seseorang bertanya apakah ia sedang sendiri, Koita menjawab ya. Ia tidak tertawa untuk menutupinya. Untuk pertama kalinya, kata itu terdengar seperti keadaan yang sedang dijalani, bukan vonis tentang seluruh sisa hidupnya."""
+Ketika seorang teman sekelas bertanya apakah ia pulang sendirian sore itu, Koita mengangguk tanpa tertawa canggung atau mengarang janji lain. Ia merapikan buku catatannya ke dalam tas, mengunci pintu ruang klub, dan berjalan menyusuri trotoar stasiun seorang diri."""
 
     # ┌─ ENDING · E-KO-08 · Tetap Menggantung  [Buruk · host Y/C]
     # │ KAPAN   : pola tidak pernah terbongkar
@@ -98,7 +98,7 @@ Ketika seseorang bertanya apakah ia sedang sendiri, Koita menjawab ya. Ia tidak 
 
 Di tempat kerja pertamanya ada seseorang yang menyukai buku, seseorang yang sering lupa makan, seseorang yang merasa akhirnya diperhatikan. Koita mengingat detail kecil tentang mereka. Ia masih bisa sangat baik. Justru itu yang membuat pesan-pesannya terasa sulit dipertanyakan.
 
-Saat ditanya apakah ia menyukai seseorang, ia mengusap tengkuk dan mengatakan belum mengerti perasaannya sendiri. Orang di seberang meja tersenyum, mengira sedang dipercaya mendengar sebuah keraguan yang istimewa. Kalender berganti; penantian hanya berpindah pemilik."""
+Saat ditanya apakah ia sedang dekat dengan seseorang, ia mengusap tengkuk dan berkata belum mengerti perasaannya sendiri. Gadis di seberang meja tersenyum sambil menunduk mengaduk kopinya, sementara ponsel Koita di saku jaket kembali bergetar menampilkan dua nama lain."""
 
     # ┌─ ENDING · E-KO-09 · Hancur  [Buruk · host Y/C]
     # │ KAPAN   : pola_koita_publik tinggi; atau E-SH-09
@@ -108,7 +108,7 @@ Saat ditanya apakah ia menyukai seseorang, ia mengusap tengkuk dan mengatakan be
 
 Orang-orang tidak serentak membencinya. Ada yang marah, ada yang malu pernah membelanya, ada yang cukup lelah untuk pergi tanpa berdebat. Koita mendapati bahwa kehilangan akses kepada seseorang bisa lebih sunyi daripada pertengkaran.
 
-Di klub, kursi sebelahnya tidak lagi diperebutkan. Ia pulang membawa naskah yang tidak diminta siapa pun. Yang terbongkar memang perbuatannya sendiri; akibatnya tetap menyakitkan, dan rasa sakit itu tidak memberinya hak meminta orang-orang yang dilukai kembali untuk merawatnya."""
+Di ruang klub, kursi di sebelahnya tetap kosong sampai rapat bubar. Ia pulang saat hujan mulai turun, mendekap map naskah yang tak seorang pun minta dibacakan, dan melewati gerbang kampus tanpa satu pun payung yang berhenti menunggunya."""
 
     # ┌─ ENDING · E-KO-10 · Koita Membalas  [Buruk · host Y/C]
     # │ KAPAN   : manuver balik berhasil; pemain kalah perang reputasi
@@ -118,7 +118,7 @@ Di klub, kursi sebelahnya tidak lagi diperebutkan. Ia pulang membawa naskah yang
 
 Kedekatan yang kaurebut berbalik meninggalkanmu. Beberapa orang memilih kembali berada di sisinya; yang lain sekadar menolak meneruskan hubungan denganmu. Dalam percakapan kampus, namamu menjadi jeda canggung sebelum seseorang mengganti topik.
 
-Koita menang dalam perang reputasi itu. Ia berdiri kembali di tengah kelompok yang pernah kaubayangkan sudah menjadi milikmu. Namun ada sesuatu yang lebih terukur dalam caranya melihat reaksi orang sekarang. Kekalahanmu tidak menjamin ia belajar mencintai dengan lebih jujur; ia telah belajar seberapa besar kuasa yang dimiliki orang yang dipercaya lebih dahulu."""
+Koita kembali duduk di kursi tengah kantin, dikelilingi tawa yang dulu kaubayangkan sudah berpindah ke sisimu. Saat matanya bersirobok denganmu yang melintas membawa nampan sendirian, ia tidak membuang muka; ia hanya mengangkat cangkirnya sedikit, memastikan kau melihat siapa yang sedang mendengarkannya berbicara."""
 
     # ┌─ ENDING · E-KO-11 · Penulis yang Jujur  [Netral · host Y/C]
     # │ KAPAN   : K19 dibantu jujur; K20 diisi kebenaran sebagian
@@ -128,7 +128,7 @@ Koita menang dalam perang reputasi itu. Ia berdiri kembali di tengah kelompok ya
 
 Koita mengerjakannya setelah skripsi, setelah percakapan yang tidak seluruhnya menyenangkan, setelah ia mulai membedakan memahami diri dari membenarkan diri. Ia menghapus bagian yang terlalu jelas meminjam luka orang lain hanya untuk membuat tokohnya tampak dalam.
 
-Tidak semua orang membaca bukunya. Tidak semua yang membaca menyukainya. Ia menyimpan tanggapan yang keras bersama yang baik dan tetap menulis halaman berikutnya. Kali ini pekerjaan itu tidak bergantung pada keyakinan bahwa setiap orang di sekelilingnya harus terus menyayanginya."""
+Tidak semua orang membaca bukunya, dan beberapa ulasan di internet menilainya terlalu dingin. Koita mencetak potongan ulasan itu, menyelipkannya di antara tumpukan kertas revisi di meja kamar, lalu membuka dokumen kosong baru dan mulai mengetik bab pertama berikutnya."""
 
     # ┌─ ENDING · E-KO-12 · Pergi  [Netral · host Y/C]
     # │ KAPAN   : K23-A didukung pergi
@@ -138,9 +138,9 @@ Tidak semua orang membaca bukunya. Tidak semua yang membaca menyukainya. Ia meny
 
 Di kota baru tidak ada orang yang tahu makanan kesukaannya atau kisah boneka masa kecil. Ia harus memperkenalkan diri tanpa bantuan kenangan bersama. Pekerjaannya lebih banyak merapikan naskah orang lain daripada menulis miliknya sendiri.
 
-Kadang ia mengirim kabar. Pesannya tidak lagi diakhiri pertanyaan yang memancing orang mengatakan rindu. Koita belum tentu berubah sepenuhnya, tetapi jarak membuat kebiasaannya terlihat. Untuk bertahan di tempat baru, ia harus belajar meminta sesuatu dengan jelas dan menerima ketika jawabannya tidak."""
+Sesekali ia masih mengirim foto langit sore dari balkon sempitnya ke grup lama, tanpa embel-embel kalimat yang memancing orang berkata rindu. Ketika pukul sembilan malam tiba dan tak ada balasan selain satu tanda jempol, ia meletakkan ponsel di meja, mematikan lampu kamar, dan menyiapkan kemeja untuk jam kerja esok pagi."""
 
-    # ┌─ ENDING · E-KO-13 · Protagonis yang Terbangun  [Khusus · host Y/C]
+    # ┌─ ENDING · E-KO-13 · MC yang Terbangun  [Khusus · host Y/C]
     # │ KAPAN   : koita_tahu_naskah percaya
     # │ ISI SKRG: Koita sengaja melawan plot armor-nya; pilihannya kini benar-benar miliknya
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
@@ -148,7 +148,7 @@ Kadang ia mengirim kabar. Pesannya tidak lagi diakhiri pertanyaan yang memancing
 
 Ketika hujan menahan seseorang di sebelahnya, ia menanyakan apakah orang itu ingin ditinggal sendiri. Ketika kesempatan pengakuan terasa terlalu sempurna, ia memberi ruang untuk jawaban yang tidak sempurna. Beberapa orang pergi, dan dunia tidak runtuh untuk mengantar mereka kembali.
 
-Sistem boleh menyebutnya protagonis. Koita mulai menolak perlakuan yang menempatkan orang lain sebagai hadiah. Pada hari ia memilih jalan yang membuatnya pulang sendirian, tak ada cahaya atau musik kemenangan. Hanya keputusan kecil yang akhirnya ia percaya sebagai miliknya."""
+Pada sore hari kelulusan, ketika kerumunan mulai terpecah di dekat gerbang utama, Koita sengaja mengambil gang kecil menuju stasiun yang berlawanan arah dengan rombongan klubnya. Sepatunya menginjak genangan sisa hujan, angin sore mengibaskan ujung jasnya, dan sampai kereta tiba di peron, tak seorang pun berlari menyusulnya."""
 
     # ┌─ ENDING · E-KO-14 · Persahabatan yang Diakhiri  [Netral · host Y/C]
     # │ KAPAN   : Koita tahu semua manipulasi pemain; tidak runtuh
@@ -158,7 +158,7 @@ Sistem boleh menyebutnya protagonis. Koita mulai menolak perlakuan yang menempat
 
 Ia mengatakan hubungan kalian selesai. Jika ada urusan yang belum beres, ia akan menyelesaikannya melalui orang lain. Setelah itu ia pergi sebelum percakapan berubah menjadi permintaan agar ia mendengarkan satu alasan lagi.
 
-Kau masih melihatnya sesekali. Ia bisa tertawa bersama orang lain, tampak lelah, atau berjalan sendiri. Tidak satu pun keadaan itu menjadi undangan untuk mendekat. Keputusan paling tegas yang pernah ia buat tentangmu adalah menolak membiarkan kehadiranmu terus menentukan hari-harinya."""
+Kau masih berpapasan dengannya beberapa kali di tangga perpustakaan atau di depan minimarket dekat stasiun. Setiap kali langkah kalian berselisih, ia tidak mempercepat jalan maupun menoleh; ia hanya melewati bahumu seperti melewati tiang lampu di tepi trotoar."""
 
     # ┌─ ENDING · E-KO-15 · Toga yang Tidak Dipakai  [Buruk · host Y/C]
     # │ KAPAN   : K19 disabotase atau Koita runtuh di Tahun 3
@@ -168,7 +168,7 @@ Kau masih melihatnya sesekali. Ia bisa tertawa bersama orang lain, tampak lelah,
 
 Sistem tetap melakukan evaluasi pada hari yang sudah ditentukan. Kalendernya tidak menunggu seseorang yang kehilangan kemampuan mengikuti kalender sendiri. Kau menerima hasil sementara Koita menatap pesan administrasi tentang semester tambahan.
 
-Gagal lulus tepat waktu bukan akhir seluruh hidupnya. Namun saat itu ia belum mampu melihat lebih jauh daripada nama-nama yang telah pindah ke daftar alumni. Ketika ditanya kapan menyusul, ia mengatakan belum tahu. Ia tidak punya tenaga untuk menambahkan senyum yang biasanya membuat orang merasa pertanyaan mereka tidak melukai."""
+Sore itu ia duduk di bangku kayu dekat gedung fakultas sementara rombongan wisudawan berfoto di bawah pohon sakura. Ketika seorang adik kelas menghampiri dan bertanya kapan ia akan menyusul sidang, Koita hanya menjawab belum tahu, lalu menunduk mengikat tali sepatunya yang sebenarnya tidak lepas."""
 
     # ┌─ ENDING · E-KO-16 · Semua Pergi  [Khusus · host Y/C]
     # │ KAPAN   : orbit_koita 0; sebagian besar heroine pergi sendiri (pola terbongkar atau memilih mandiri); runtuh_koita ≥ 80; tanpa penopang
@@ -178,7 +178,7 @@ Gagal lulus tepat waktu bukan akhir seluruh hidupnya. Namun saat itu ia belum ma
 
 Ia berhenti datang ke kelas. Naskahnya tertutup berhari-hari, lalu berminggu-minggu. Orang mengira ia sedang menghindari malu; di dalam kamar, hal sesederhana mandi dan menjawab satu pesan sudah memerlukan tenaga yang sulit ia kumpulkan.
 
-Tak ada penopang yang berhasil menjangkaunya sebelum hari evaluasi. Kehancuran itu tidak membuat orang-orang wajib kembali, dan tidak membuktikan bahwa mereka salah pergi. Tetapi di balik hasil sempurna yang dicatat Sistem, ada seseorang yang kehilangan keseharian, masa depan yang pernah bisa dibayangkan, dan cara meminta tolong tanpa merasa sedang meminta cinta."""
+Sampai hari evaluasi tiba, tirai kamarnya tetap tertutup rapat dari pagi hingga petang. Di atas meja belajarnya, layar laptop yang berdebu memantulkan bayangan mangkuk mi instan kering dari tiga hari lalu, sementara telepon rumah di lantai bawah berdering panjang tanpa seorang pun naik untuk memanggil namanya."""
 
     # ┌─ ENDING · E-KO-17 · Pusat yang Berpindah  [Khusus · host Y/C]
     # │ KAPAN   : orbit_koita 0; minimal tiga heroine kini di orbit pemain, karena memilih pemain atau terikat lewat ancaman atau Force ; Koita tahu; runtuh_koita ≥ 80
@@ -188,19 +188,19 @@ Tak ada penopang yang berhasil menjangkaunya sebelum hari evaluasi. Kehancuran i
 
 Namun wajah-wajah di dekatmu tidak bisa dibaca sebagai satu kemenangan. Orang yang memilihmu bebas bisa tertawa dan pergi tanpa takut. Pada orang yang bertahan karena ancaman, yang terlihat adalah kewaspadaan. Luka akibat paksaan tidak berubah menjadi cinta hanya karena jaraknya dekat dengan tubuhmu.
 
-Sistem menghitung pusat yang berpindah. Koita kehilangan lingkarannya dan nyaris seluruh pegangan pada dirinya sendiri. Di sekelilingmu, tiap orang masih membawa kehendak dan luka yang berbeda. Angka yang menyamakan semuanya sebagai keberhasilan adalah bagian terakhir yang membuat pemandangan itu terasa begitu dingin."""
+Saat jendela Sistem menutup hitungan keberhasilannya di sudut matamu, Koita berdiri beberapa langkah di belakang kerumunan dekat gerbang tanpa seorang pun menyisakan ruang untuknya. Di sebelahmu, seorang gadis tertawa menyambut ajakan makan malammu, sementara gadis di sisi lainnya diam-diam mencengkeram tali tasnya setiap kali lenganmu bergerak terlalu dekat."""
 
     # ┌─ ENDING · E-KO-18 · Naskah yang Kosong  [Khusus · host Y/C]
     # │ KAPAN   : syarat E-KO-16 atau E-KO-17; Koita tahu soal naskah dan percaya; plot armor padam (K-D14)
-    # │ ISI SKRG: Koita sadar ia protagonis yang ditinggalkan naskahnya sendiri; kebetulan tidak pernah datang lagi. Sistem membacakan: "Protagonis selesai."
+    # │ ISI SKRG: Koita sadar ia MC yang ditinggalkan naskahnya sendiri; kebetulan tidak pernah datang lagi. Sistem membacakan: "MC selesai."
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
     KK_END_TEXT["E-KO-18"] = """Koita kembali ke tempat kebetulan dulu selalu datang. Ia menunggu melewati jam yang masuk akal, melewati penutupan toko, sampai petugas meminta jalan masuk dikosongkan. Tidak ada siapa pun yang tiba terlambat untuk menjadi penutup yang manis.
 
 Ia sudah percaya pada keberadaan naskah. Kini ia mempercayai sesuatu yang lebih menghancurkan: bahwa naskah itu berhenti menginginkannya. Buku catatannya tetap kosong karena setiap awal kalimat terdengar seperti meniru suara yang sudah pergi.
 
-Protagonis selesai, kata Sistem.
+MC selesai, kata Sistem.
 
-Koita mendengar atau tidak mendengar kalimat itu; akibatnya sama-sama tinggal dalam hidup yang terus berjalan. Keesokan paginya matahari masih masuk melalui tirai. Seseorang yang tidak lagi dianggap pusat cerita tetap harus bangun di dalam tubuhnya sendiri, tanpa petunjuk tentang bagaimana menjadi orang biasa."""
+Keesokan paginya sinar matahari tetap menembus celah tirai kamarnya yang kusut. Koita bangun karena bunyi truk sampah di jalan depan, menatap pulpen yang tergeletak di sebelah buku catatan kosong, lalu turun ke dapur untuk merebus air sendirian."""
 
     # ┌─ ENDING · E-KO-19 · Yang Tidak Bisa Ia Hentikan  [Hancur · host Y/C]
     # │ KAPAN   : Koita menyaksikan Force; trust_koita masih tinggi saat itu (ia masih percaya dan dekat dengan pemain), sehingga ia membeku alih-alih bertindak; korban tidak kembali padanya
@@ -210,7 +210,7 @@ Koita mendengar atau tidak mendengar kalimat itu; akibatnya sama-sama tinggal da
 
 Orang yang dilukai tidak kembali kepadanya. Koita tidak berhak menuntut itu sebagai bukti bahwa ia telah diampuni. Namun tanpa seseorang yang membantu membedakan tanggung jawab pelaku dari kegagalannya bertindak, ia mulai menganggap kedekatannya sendiri selalu membawa bahaya.
 
-Ia menjauh dari teman, menolak ajakan, dan tersentak pada suara tertentu yang tak dimengerti orang lain. Di luar, namanya mungkin hanya muncul sebagai saksi yang diam. Di dalam, peristiwa itu terus terjadi ulang, merusak kemampuan mempercayai diri dan orang lain."""
+Ia berhenti datang ke kantin, menolak ajakan belajar kelompok, dan selalu tersentak setiap kali pintu ruangan ditutup terlalu keras dari belakang. Bahkan saat duduk di kereta yang lengang, tangannya terus meremas ujung lengan kemejanya sendiri sampai buku-buku jarinya memutih."""
 
     # ┌─ ENDING · E-KO-20 · Saksi yang Bersuara  [Netral · host Y/C]
     # │ KAPAN   : Koita menyaksikan atau mengetahui Force saat trust_koita sudah rendah (sudah lama curiga atau lepas dari pemain), sehingga ia bisa bertindak alih-alih membeku
@@ -220,7 +220,7 @@ Ia menjauh dari teman, menolak ajakan, dan tersentak pada suara tertentu yang ta
 
 Ia hadir kembali saat diperlukan. Ia menerima bahwa korban boleh memilih didampingi orang lain, boleh tidak ingin bertemu dengannya, dan tidak berkewajiban membenarkan rasa bersalahnya. Kesaksian itu membantu meruntuhkan kebebasan yang selama ini kaunikmati di balik kepercayaan orang.
 
-Koita tetap sendiri pada banyak hari setelahnya. Tetapi ia tidak lagi memakai kesendirian sebagai alasan untuk tunduk kepada orang yang berbahaya. Ketika seseorang berterima kasih karena ia bersuara, ia tidak menyebut dirinya penyelamat. Ia mengatakan ada hal yang akhirnya tidak ia biarkan lewat."""
+Koita tetap pulang sendirian pada banyak sore setelah pemeriksaan berakhir. Ketika salah seorang teman korban menemuinya di selasar gedung administrasi untuk mengucapkan terima kasih, ia hanya menggeleng pelan, menyerahkan salinan berkas jadwal sidang dari tasnya, lalu berpamitan sebelum hujan turun."""
 
     # ┌─ ENDING · E-KO-21 · Dituduh atas Luka yang Menimpanya  [Hancur · host C]
     # │ KAPAN   : jalur manipulasi pembalikan Chiasa (06_Chiasa.md §14) bertahan; runtuh_koita ≥ 80
@@ -230,7 +230,7 @@ Koita tetap sendiri pada banyak hari setelahnya. Tetapi ia tidak lagi memakai ke
 
 Tidak ada saksi yang berhasil menembus versi yang telanjur dipercaya sebelum evaluasi berakhir. Orang-orang menjauh dengan keyakinan sedang melindungi seseorang. Koita kehilangan ruang aman sekaligus hak untuk dikenali sebagai orang yang telah dilukai.
 
-Ia mulai menghindari cermin, telepon, bahkan bunyi langkah di depan rumah. Fitnah yang bertahan tidak mengubah siapa yang melakukan kekerasan. Kebenaran itu tetap ada, tetapi sendirian bersamanya di kamar yang makin jarang dibuka, tanpa suara lain yang cukup kuat untuk membuat dunia mendengar."""
+Ia mulai membalik cermin kecil di mejanya, mencabut kabel telepon kamar, dan menahan napas setiap kali ada langkah kaki berhenti di depan pintu. Saat malam turun, ia duduk di sudut lantai dengan lutut ditekuk ke dada, menatap celah cahaya dari lorong rumah yang tak lagi berani ia buka."""
 
     # ┌─ ENDING · E-BL-01 · Berkomitmen  [Romantis · host Y]
     # │ KAPAN   : B6 memilih; dibuka terbuka
@@ -240,7 +240,7 @@ Ia mulai menghindari cermin, telepon, bahkan bunyi langkah di depan rumah. Fitna
 
 Tidak semua percakapan sesudahnya mudah. Ada perasaan orang lain yang harus dijawab, ada gurauan yang perlu dihentikan, ada kebiasaan Koita menyenangkan semua orang yang muncul saat ia takut. Yutaka tidak mengambil alih seluruh percakapan itu. Ia berdiri di sebelahnya, memberi waktu, lalu meminta jawaban yang sungguhan.
 
-Mereka pulang bersama dan bertengkar tentang siapa yang lupa membeli beras. Hal biasa itu membuat Koita tertawa lebih lega daripada ucapan selamat seharian. Hubungan mereka akhirnya punya masa depan yang bisa diperdebatkan, direncanakan, dan dijalani oleh dua orang yang sama-sama memilih tinggal."""
+Malam itu mereka pulang bersama dan berdebat di depan minimarket tentang siapa yang kemarin lupa membeli beras. Koita tertawa sambil mengambil kantong lima kilogram dari rak bawah, sementara Yutaka mengeluarkan dompet di kasir dan menyelipkan struk belanja ke saku jaket Koita."""
 
     # ┌─ ENDING · E-BL-02 · Ditolak dan Retak  [Netral · host Y]
     # │ KAPAN   : B6 menolak
@@ -250,7 +250,7 @@ Mereka pulang bersama dan bertengkar tentang siapa yang lupa membeli beras. Hal 
 
 Yutaka berhenti datang tanpa kabar. Koita beberapa kali mengetik cerita yang dahulu pasti dikirim kepadanya, lalu menghapusnya. Persahabatan sejak kecil ternyata tidak kebal terhadap satu keinginan yang tidak bisa dibalas.
 
-Mereka tidak membuat janji untuk segera kembali seperti semula. Ketika akhirnya bertemu di kampus, sapaan mereka pendek dan sopan. Ada kasih yang tidak hilang seketika, ada jarak yang diperlukan untuk bertahan, dan tidak seorang pun berutang hubungan romantis demi menyelamatkan masa lalu."""
+Mereka tidak membuat janji untuk segera kembali akrab seperti dulu. Ketika akhirnya berpapasan di dekat tangga gedung kuliah, Yutaka hanya mengangguk singkat sambil memindahkan map ke tangan kiri, dan Koita membalas sapaan itu setengah detik setelah punggung sahabatnya sudah melewatinya."""
 
     # ┌─ ENDING · E-BL-03 · Kembali ke Pola Lama  [Netral · host Y]
     # │ KAPAN   : B6 lari; Yutaka mundur
@@ -260,7 +260,7 @@ Mereka tidak membuat janji untuk segera kembali seperti semula. Ketika akhirnya 
 
 Lalu Koita kembali dengan cerita kecil, foto makanan, pertanyaan apakah ia sudah tidur. Tidak ada pembicaraan tentang apa yang pernah diminta Yutaka. Kedekatan itu terasa begitu akrab sehingga mudah diterima, sampai ia menyadari nama lain juga mendapat undangan untuk datang saat Koita kesepian.
 
-Kini Yutaka termasuk di antara orang-orang yang diberi cukup kehangatan untuk bertahan dan terlalu sedikit kepastian untuk melangkah. Koita tidak menyebutnya cinta. Ia juga tidak membiarkannya menjadi sekadar persahabatan. Pola lama mendapatkan satu orang lagi yang tahu betapa manisnya seseorang dapat terdengar saat menghindari jawaban."""
+Lewat tengah malam, ponsel Yutaka kembali menyala menampilkan pesan pendek dari Koita yang mengeluh tidak bisa tidur. Yutaka menatap layar itu lama di kamar yang gelap, menarik napas panjang, lalu tetap menyambar jaket dari sandaran kursi untuk keluar membelikan minuman hangat."""
 
     # ┌─ ENDING · E-BL-04 · Kolaps  [Buruk · host Y]
     # │ KAPAN   : semua orang, termasuk Yutaka, mundur darinya
@@ -270,7 +270,7 @@ Kini Yutaka termasuk di antara orang-orang yang diberi cukup kehangatan untuk be
 
 Ia berhenti menjaga waktu. Pagi dan malam ditentukan oleh kapan ia sanggup membuka mata, bukan jadwal kuliah. Pesan yang menanyakan kabarnya dibiarkan karena menjawab satu berarti mengakui bahwa keadaan memang sudah separah itu.
 
-Kehancurannya tidak membuktikan bahwa Yutaka seharusnya menerima perasaan yang tidak ingin diterima. Itu menunjukkan betapa lama Koita menggantungkan seluruh rasa aman pada kesediaan orang lain untuk tidak pernah pergi. Pada hari evaluasi, kamar itu masih tertutup, dan bantuan yang ia perlukan belum berhasil menjadi sesuatu yang berani ia minta."""
+Pada pagi hari evaluasi, pintu kamarnya masih terkunci dari dalam sementara tumpukan surat kampus menumpuk di bawah celah kayu. Ponselnya tergeletak mati di dekat bantal dengan layar terakhir masih terbuka pada riwayat panggilan ke nomor Yutaka yang tidak pernah ia tekan."""
 
     # ┌─ ENDING · E-BL-05 · Rahasia di Apartemen  [Romantis · host Y]
     # │ KAPAN   : B6 memilih; disembunyikan
@@ -280,7 +280,7 @@ Kehancurannya tidak membuktikan bahwa Yutaka seharusnya menerima perasaan yang t
 
 Chiasa mengetahui lebih dahulu daripada orang lain. Ia tidak menjadikan pengetahuan itu tiket untuk masuk ke setiap urusan mereka, tetapi tatapannya membuat Koita sadar bahwa diam pun dapat melukai orang yang belum diberi jawaban.
 
-Mereka tetap bersama. Pada kalender dapur, keduanya menandai hari untuk membicarakan kembali apa yang akan mereka sembunyikan dan sampai kapan. Hubungan itu nyata di balik pintu apartemen. Agar bertahan, mereka perlu memastikan pintu tersebut menjadi tempat pulang, bukan tempat salah seorang dikurung oleh ketakutan yang lain."""
+Mereka tetap tinggal bersama di balik pintu itu. Pada kalender kertas yang tergantung di sebelah kulkas, Yutaka melingkari tanggal akhir bulan dengan spidol merah, dan malam itu Koita duduk di meja dapur sambil menyiapkan daftar nama keluarga yang akan mereka temui satu per satu."""
 
     # ┌─ ENDING · E-BL-06 · Restu di Meja Makan  [Romantis · host Y]
     # │ KAPAN   : B6 memilih; Daisuke dan Yoshie menerima
@@ -300,7 +300,7 @@ Sesudah hidangan selesai, Yutaka ikut membereskan. Mangkuknya diletakkan bersama
 
 Apartemen Yutaka tidak mendadak menjadi rumah yang mudah. Mereka menghitung pengeluaran, membagi ruang, dan belajar bahwa menolong pasangan tidak berarti menjadi satu-satunya penopang yang boleh ia punya. Koita kadang menangis setelah panggilan keluarga yang pendek.
 
-Ia merindukan rumah dan tetap tidak pulang untuk menyerahkan pilihannya. Cinta memberi tempat sementara untuk beristirahat; ia tidak menghapus kehilangan. Di antara barang yang belum dibongkar, mereka mulai membangun hari-hari yang cukup aman untuk menampung keduanya, termasuk kesedihan yang belum selesai."""
+Setiap Minggu sore Koita masih berhenti sebentar di depan rak minimarket yang menjual teh kesukaan ibunya, sebelum beralih mengambil bahan makan malam untuk dua orang. Di apartemen, di sela kardus buku yang belum sempat dibongkar, Yutaka sudah menyiapkan meja lipat kecil dan dua pasang sumpit."""
 
     # ┌─ ENDING · E-BL-08 · Ia Lari dari Pintu Itu  [Netral · host Y]
     # │ KAPAN   : B4 dominan tanpa kehangatan
@@ -310,19 +310,19 @@ Ia merindukan rumah dan tetap tidak pulang untuk menyerahkan pilihannya. Cinta m
 
 Ketika ia akhirnya berkata berhenti, suaranya hampir tidak keluar. Ia mengambil tas dan pergi sebelum percakapan bisa berubah menjadi bujukan lain. Setelah itu ia menghindari tempat-tempat yang mempertemukan mereka, bahkan ketika jarak tersebut membuatnya kehilangan teman yang tak tahu apa-apa.
 
-Yutaka tidak mendapatkan hubungan hanya karena pernah menjadi orang paling dekat. Di depan pintu yang tidak lagi dibuka untuknya, ketegasan tanpa kehangatan kehilangan nama yang dahulu dipakainya. Koita pergi dengan rasa takut, membawa hak yang terlambat ia percayai: ia boleh menolak, juga kepada orang yang pernah ia cintai."""
+Ketika Yutaka datang mengetuk pintu rumah Amamiya sore berikutnya, hanya Yoshie yang keluar membawakan buku catatan yang pernah dipinjam anaknya. Di kamar lantai dua, Koita berdiri beberapa langkah di belakang jendela yang tertutup rapat, menunggu sampai bayangan di jalan depan benar-benar berbalik pergi."""
 
 
     # ═════ Miyuki ═════
     # ┌─ ENDING · E-MI-01 · Jas Putih yang Ringan  [Romantis · host Y/C]
-    # │ KAPAN   : tahap ≤ 3 atau pulih; Affection dan Trust tinggi ke pemain; tanpa Force; Sena tidak memusuhi
+    # │ KAPAN   : tahap ≤ 3 atau pulih; Affection dan Trust tinggi ke pemain; tanpa Force; Yuina tidak memusuhi
     # │ ISI SKRG: hubungan setara; ia belajar meminta tolong dan tetap menuju pediatri
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
     KK_END_TEXT["E-MI-01"] = """Miyuki pulang dengan jas putih tersampir di lengan dan permintaan yang dahulu hampir mustahil diucapkannya: hari ini ia ingin ditemani tanpa harus menyiapkan apa pun. Kau menggeser buku dari sofa, memberinya tempat, dan menunggu ia memilih antara bercerita atau diam.
 
-Hubungan kalian tidak menggantikan cita-citanya menjadi dokter anak. Ada jadwal yang harus dihormati, kencan yang dipindahkan, malam ketika kalian sama-sama lelah. Sena tetap bisa mengajaknya makan tanpa membuatmu merasa tersaingi. Miyuki pun belajar bahwa menerima bantuan tidak mengurangi kemampuannya merawat orang lain.
+Hubungan kalian tidak menggantikan cita-citanya menjadi dokter anak. Ada jadwal yang harus dihormati, kencan yang dipindahkan, malam ketika kalian sama-sama lelah. Yuina tetap bisa mengajaknya makan tanpa membuatmu merasa tersaingi. Miyuki pun belajar bahwa menerima bantuan tidak mengurangi kemampuannya merawat orang lain.
 
-Pada suatu pagi ia lupa membuatkan teh untukmu karena terlalu asyik menceritakan pasien kecil yang akhirnya berani menyapanya. Ia baru sadar di tengah cerita, lalu tertawa. Kau tetap mendengarkan. Ia dicintai bahkan ketika tidak sedang menyediakan sesuatu."""
+Pada suatu pagi ia lupa menyeduh teh untukmu karena terlalu asyik menceritakan pasien kecil yang akhirnya berani menyapanya. Ia baru sadar di tengah cerita ketika melihat cangkir kosong di meja, lalu tertawa sementara kau sendiri yang bangun menyalakan ketel untuk kalian berdua."""
 
     # ┌─ ENDING · E-MI-02 · Dokter Anak  [Netral · host Y/C]
     # │ KAPAN   : tahap ≤ 2; karier lancar; hati tidak ke siapa pun
@@ -330,7 +330,7 @@ Pada suatu pagi ia lupa membuatkan teh untukmu karena terlalu asyik menceritakan
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
     KK_END_TEXT["E-MI-02"] = """Jalan menuju pediatri belum selesai saat Miyuki meninggalkan masa kuliahnya. Masih ada pendidikan, penilaian, dan hari-hari ketika pengetahuan terasa terlalu kecil di hadapan ketakutan sebuah keluarga. Ia tetap melangkah ke sana, kali ini dengan kebiasaan meminta bantuan sebelum kelelahan mengambil seluruh suaranya.
 
-Tidak ada pasangan yang menunggunya sebagai hadiah atas pertumbuhan itu. Ia punya Sena, rekan yang bisa dipercaya, dan apartemen yang mulai diisinya dengan barang-barang untuk dirinya sendiri. Kesendirian kadang terasa sepi; ia tidak lagi menyamakan rasa sepi dengan bukti bahwa dirinya kurang berguna.
+Tidak ada pasangan yang menunggunya sebagai hadiah atas pertumbuhan itu. Ia punya Yuina, rekan yang bisa dipercaya, dan apartemen yang mulai diisinya dengan barang-barang untuk dirinya sendiri. Kesendirian kadang terasa sepi; ia tidak lagi menyamakan rasa sepi dengan bukti bahwa dirinya kurang berguna.
 
 Dalam foto yang dikirim pada musim semi, Miyuki berdiri di depan bangsal anak. Senyumnya hangat dan sedikit gugup. Di bawahnya ia menulis bahwa ia ingin menjadi dokter yang baik, lalu menambahkan bahwa malam itu ia sudah berjanji akan tidur cukup."""
 
@@ -350,9 +350,9 @@ Sesudahnya ia memasak untuk dua orang karena ingin, bukan karena takut tempatnya
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
     KK_END_TEXT["E-MI-04"] = """Cincin keluarga Hayase tampak tepat di tangan Miyuki. Foto pertunangannya mendapat pujian tentang keserasian dua keluarga, masa depan yang terjamin, dan betapa beruntungnya ia. Tidak banyak yang menanyakan apakah senyum di foto itu menyerupai senyumnya saat tak ada kamera.
 
-Takeru berbicara sopan tentang rencana yang sudah dibahas para orang tua. Miyuki belajar menyampaikan keberatan sebagai penyesuaian kecil agar tetap boleh didengar. Ia belum menemukan cara menolak seluruh rencana tanpa merasa telah mengecewakan semua orang sekaligus.
+Tatsuru berbicara sopan tentang rencana yang sudah dibahas para orang tua. Miyuki belajar menyampaikan keberatan sebagai penyesuaian kecil agar tetap boleh didengar. Ia belum menemukan cara menolak seluruh rencana tanpa merasa telah mengecewakan semua orang sekaligus.
 
-Ia tetap menempuh jalan kedokteran, membawa pertunangan sebagai bagian lain dari kewajiban keluarga. Di apartemennya, kotak cincin disimpan rapi di samping buku. Ada hari ketika ia lupa mengenakannya sampai telepon ibunya masuk. Kealpaan kecil itu menjadi satu-satunya percakapan jujur antara tangannya dan sesuatu yang belum berani ia katakan."""
+Ia tetap menempuh jalan kedokteran, membawa pertunangan sebagai bagian lain dari kewajiban keluarga. Di apartemennya, kotak cincin itu sering dibiarkan tertutup di samping tumpukan buku anatomi sampai telepon ibunya berdering mengingatkan makan malam akhir pekan."""
 
     # ┌─ ENDING · E-MI-05 · Kereta Pagi Tanpa Tujuan  [Romantis · host Y/C]
     # │ KAPAN   : Mi25-C kabur bersama pemain
@@ -362,7 +362,7 @@ Ia tetap menempuh jalan kedokteran, membawa pertunangan sebagai bagian lain dari
 
 Keluarganya memutus dukungan dan hubungan. Pendidikan tertunda; uang yang dahulu tidak perlu dihitung kini dibagi antara tempat tinggal, makan, dan kemungkinan kembali kuliah. Pada malam-malam tertentu cinta kalian dipaksa berbicara dalam bentuk tagihan dan kesabaran yang menipis.
 
-Miyuki tidak menyesali haknya memilih. Ia juga tidak selalu bahagia dengan harga yang dibayar. Kalian bertahan hanya jika pengorbanan itu tidak dijadikan utang yang harus ia lunasi dengan terus mencintaimu. Di kamar kecil dekat rel, ia menyimpan buku kedokterannya tetap terbuka, menolak menyerahkan seluruh masa depan kepada satu pagi pelarian."""
+Di kamar sewaan kecil dekat rel kereta, Miyuki masih menyalakan lampu meja setiap habis giliran kerja paruh waktunya untuk membaca buku pediatri yang dibawanya dalam koper. Saat kau pulang membawa belanjaan malam, ia menggeser tumpukan catatan itu agar kalian bisa makan di meja yang sama."""
 
     # ┌─ ENDING · E-MI-06 · Lampu Bangsal Padam  [Buruk · host Y/C]
     # │ KAPAN   : kelelahan ekstrem; tanpa bantuan; CBT gagal
@@ -372,7 +372,7 @@ Miyuki tidak menyesali haknya memilih. Ia juga tidak selalu bahagia dengan harga
 
 Ia meninggalkan kedokteran. Untuk beberapa waktu jas putihnya tetap tergantung seolah pemiliknya hanya sedang libur. Telepon keluarga berubah menjadi pembicaraan tentang kesempatan yang disia-siakan, membuat ia makin jarang menjawab.
 
-Cita-citanya tidak hilang dengan rapi. Ia masih menoleh pada suara anak menangis dan masih tahu apa yang ingin ia lakukan jika punya tenaga. Pada hari evaluasi, kehilangan itu belum menemukan bentuk kehidupan pengganti. Orang yang selama ini paling pandai merawat orang lain kini kesulitan percaya bahwa dirinya sendiri layak dirawat tanpa lebih dahulu berguna."""
+Suatu sore di depan stasiun, ia masih refleks menoleh ketika mendengar seorang anak kecil menangis di dekat bangku tunggu. Setelah ibu anak itu datang menggendongnya pergi, Miyuki merapatkan syalnya dan kembali berjalan pelan membawa kantong belanjaan ke apartemennya yang sunyi."""
 
     # ┌─ ENDING · E-MI-07 · Kenyamanan yang Salah  [Terdistorsi · host Y/C]
     # │ KAPAN   : tahap 5 permanen; arah_luka pemain
@@ -380,9 +380,9 @@ Cita-citanya tidak hilang dengan rapi. Ia masih menoleh pada suara anak menangis
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
     KK_END_TEXT["E-MI-07"] = """Miyuki mulai gelisah pada hari ketika kau memperlakukannya dengan tenang. Ia mencari kesalahan kecil yang bisa menjelaskan mengapa perhatianmu terasa begitu jauh. Jika akhirnya kau meninggikan suara, tubuhnya justru mengendur, lega karena kembali tahu cara mendapatkan tempat di hadapanmu.
 
-Ia menyebutnya cocok. Katanya hanya kalian yang memahami bentuk kasih sayang itu. Sena mendengar kalimat tersebut dan tidak ikut tersenyum. Di mata sahabatnya, Miyuki makin sulit meminta sesuatu tanpa terlebih dahulu merendahkan diri.
+Ia menyebutnya cocok. Katanya hanya kalian yang memahami bentuk kasih sayang itu. Yuina mendengar kalimat tersebut dan tidak ikut tersenyum. Di mata sahabatnya, Miyuki makin sulit meminta sesuatu tanpa terlebih dahulu merendahkan diri.
 
-Hubungan kalian terus berlangsung. Kedekatan tidak berarti aman, dan kepatuhannya tidak membuat luka menjadi keinginan yang bebas. Pada meja dapur, teh selalu siap sebelum kau meminta. Miyuki menunggu reaksimu untuk mengetahui apakah ia boleh merasa dicintai hari ini."""
+Di meja dapur apartemennya, cangkir teh hangat selalu sudah terhidang sepuluh menit sebelum jadwal kedatanganmu. Miyuki berdiri menunggu di dekat pintu dengan jari-jari saling menggenggam, memperhatikan cara kau melepas sepatu untuk menebak apakah hari ini ia akan dimarahi atau dipeluk."""
 
     # ┌─ ENDING · E-MI-08 · Penebusan Tanpa Akhir  [Terdistorsi · host Y/C]
     # │ KAPAN   : tahap 5; arah_luka diri
@@ -392,7 +392,7 @@ Hubungan kalian terus berlangsung. Kedekatan tidak berarti aman, dan kepatuhanny
 
 Jam kerjanya menjadi bentuk hukuman yang diterima orang sebagai pengabdian. Ia jarang pulang sebelum benar-benar habis tenaga. Undangan makan ditolak dengan alasan sibuk, lalu ia merasa lega karena tidak perlu menjelaskan mengapa bersenang-senang terdengar seperti sesuatu yang belum pantas didapatkan.
 
-Di bangsal ia tetap hangat. Pasien tidak selalu melihat apa yang dikorbankan setelah pintu tertutup. Hidupnya tampak berhasil dari luar, sementara setiap keberhasilan segera berubah menjadi tuntutan berikutnya. Tidak ada angka yang akhirnya membuatnya merasa sudah cukup membayar."""
+Di ruang jaga pukul tiga pagi, ketika bangsal akhirnya tenang dan perawat lain sudah bergantian memejamkan mata, Miyuki masih berdiri di depan papan jadwal minggu depan untuk menulis namanya di tiga kolom lembur yang masih kosong."""
 
     # ┌─ ENDING · E-MI-09 · Menunggu yang Menyakitkan  [Terdistorsi · host Y/C]
     # │ KAPAN   : tahap 5; arah_luka Koita; Koita tetap menggantung
@@ -402,7 +402,7 @@ Di bangsal ia tetap hangat. Pasien tidak selalu melihat apa yang dikorbankan set
 
 Kadang Koita memberinya malam yang hangat, lalu menghilang ke kesibukan orang lain. Miyuki menyalahkan dirinya karena menginginkan lebih. Ketika seorang teman mengatakan ia layak mendapat kepastian, ia membela Koita lebih keras daripada yang Koita pernah lakukan untuk hubungan mereka.
 
-Di apartemen, ia menyiapkan makanan untuk kemungkinan kedatangan yang tidak dijanjikan. Ada hari ketika makanan itu habis sendiri, ada yang harus dibuang. Penantian berlangsung tanpa membutuhkan janji baru, sebab ia sudah belajar menjadikan sakitnya sendiri sebagai alasan untuk tetap tinggal."""
+Di dapur apartemennya, ia tetap memasak dua porsi setiap Jumat malam meski belum ada pesan yang menjanjikan kedatangan. Ketika jarum jam melewati tengah malam, ia memindahkan porsi kedua ke wadah plastik dengan senyum tipis, lalu memasukkannya ke deretan kotak serupa di dalam kulkas."""
 
     # ┌─ ENDING · E-MI-10 · Cuti Satu Tahun  [Netral · host Y/C]
     # │ KAPAN   : pulih sebagian lewat Sato; CBT tertunda
@@ -412,27 +412,27 @@ Di apartemen, ia menyiapkan makanan untuk kemungkinan kedatangan yang tidak dija
 
 Keputusan itu tetap diambil. Ujian ditunda, kalender dikosongkan sebagian, dan ia belajar bahwa sehari tanpa pencapaian tidak harus diakhiri dengan rasa bersalah. Pemulihannya tidak lurus. Ada pagi ketika ia bangun panik karena mengira terlambat praktik, lalu perlu waktu untuk memahami bahwa tak ada yang sedang ia kecewakan.
 
-Pada musim semi ia mengirim pesan pendek: hari ini membuat sarapan untuk diri sendiri, rasanya enak. Tidak ada janji kapan kembali sepenuhnya. Masa depannya masih terbuka, dan untuk pertama kalinya ruang yang belum terisi itu tidak hanya terasa sebagai kegagalan."""
+Pada awal musim semi, ponselmu menerima satu foto darinya: sepiring telur gulung yang agak miring dan secangkir teh di meja balkon, disertai pesan pendek bahwa pagi ini ia bangun tanpa alarm."""
 
-    # ┌─ ENDING · E-MI-11 · Pintu yang Ditutup Sena  [Buruk · host Y/C]
-    # │ KAPAN   : pemain memanfaatkan di depan umum; Sena memutus
-    # │ ISI SKRG: Miyuki terisolasi; Sena menjadi penghalang pemain di semua lingkungan medis
+    # ┌─ ENDING · E-MI-11 · Pintu yang Ditutup Yuina  [Buruk · host Y/C]
+    # │ KAPAN   : pemain memanfaatkan di depan umum; Yuina memutus
+    # │ ISI SKRG: Miyuki terisolasi; Yuina menjadi penghalang pemain di semua lingkungan medis
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
-    KK_END_TEXT["E-MI-11"] = """Sena melihat cukup banyak untuk berhenti menyebut perlakuanmu salah paham. Ia berdiri di antara kau dan Miyuki ketika penghinaan yang kauanggap biasa kembali terjadi di depan orang lain. Kali ini tidak ada tawa yang dibiarkan menyamarkannya.
+    KK_END_TEXT["E-MI-11"] = """Yuina melihat cukup banyak untuk berhenti menyebut perlakuanmu salah paham. Ia berdiri di antara kau dan Miyuki ketika penghinaan yang kauanggap biasa kembali terjadi di depan orang lain. Kali ini tidak ada tawa yang dibiarkan menyamarkannya.
 
-Aksesmu ke lingkungan medis mulai tertutup. Sena tidak bersedia mengantarkan pesan, mencarikan alasan, atau memberimu kesempatan mendekat lewat nama orang yang pernah kauperlakukan sebagai alat. Ia mengatakan apa yang diketahuinya ketika diperlukan.
+Aksesmu ke lingkungan medis mulai tertutup. Yuina tidak bersedia mengantarkan pesan, mencarikan alasan, atau memberimu kesempatan mendekat lewat nama orang yang pernah kauperlakukan sebagai alat. Ia mengatakan apa yang diketahuinya ketika diperlukan.
 
-Miyuki tetap sulit dijangkau. Rasa malu membuatnya menarik diri bahkan dari orang yang berusaha membantu, dan pintu yang ditutup Sena tidak otomatis membuka jalan pemulihan. Yang berakhir adalah kemudahanmu memanfaatkan keramahan semua orang. Di baliknya masih ada seseorang yang harus belajar bahwa menerima perlindungan tidak berarti kehilangan hak menentukan hidup sendiri."""
+Setiap kali kau mencoba menunggu di dekat lobi gedung fakultas kedokteran, Yuina sudah lebih dulu keluar bersama dua senior laboratorium dan mengapit Miyuki menuju pintu samping sampai bayangan mereka hilang di balik koridor."""
 
     # ┌─ ENDING · E-MI-12 · Napas yang Tertahan  [Hancur · host Y/C]
     # │ KAPAN   : pemain pelaku Force terhadapnya
-    # │ ISI SKRG: trauma terpisah dari Rute Masokis; jalur Sena, Sato, dan hukum; tanpa romansa dengan pelaku
+    # │ ISI SKRG: trauma terpisah dari Rute Masokis; jalur Yuina, Sato, dan hukum; tanpa romansa dengan pelaku
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
     KK_END_TEXT["E-MI-12"] = """Setelah kekerasan itu, Miyuki sulit mengenali tubuh yang selama ini ia paksa untuk selalu dapat diandalkan. Ia bisa menyebut apa yang terjadi dengan istilah yang tepat dan tetap kehilangan suara ketika harus mengucapkannya sebagai sesuatu yang menimpa dirinya.
 
-Sena datang tanpa meminta cerita lengkap. Sato menyediakan ruang yang tidak menuntutnya segera pulih. Dukungan dan jalan hukum dibicarakan sesuai kesiapan serta kehendaknya; kedokteran yang semula menjadi seluruh identitasnya kini harus memberi ruang bagi pemulihan yang tidak mengikuti kalender ujian.
+Yuina datang tanpa meminta cerita lengkap. Sato menyediakan ruang yang tidak menuntutnya segera pulih. Dukungan dan jalan hukum dibicarakan sesuai kesiapan serta kehendaknya; kedokteran yang semula menjadi seluruh identitasnya kini harus memberi ruang bagi pemulihan yang tidak mengikuti kalender ujian.
 
-Perbuatanmu tidak menjadi bagian dari romansa, dan kerentanan Miyuki sebelumnya bukan persetujuan. Ia boleh marah, diam, atau menolak bertemu orang yang pernah dekat dengannya. Pada hari ia akhirnya mengatakan bahwa ia tidak ingin melihatmu lagi, kalimat itu tidak memerlukan penerimaanmu untuk berlaku."""
+Pada pertemuan resmi terakhir melalui perantara kuasa hukumnya, pernyataan tertulis Miyuki hanya memuat satu kalimat penutup yang menolak segala bentuk kontak darimu, dan Yuina sendiri yang menutup pintu ruang mediasi tepat di hadapanmu."""
 
     # ┌─ ENDING · E-MI-13 · Sandiwara yang Jadi Nyata  [Romantis · host Y/C]
     # │ KAPAN   : pasangan palsu dipertahankan sampai Mi18, lalu diakui jujur
@@ -445,14 +445,14 @@ Dua keluarga marah karena telah dipermainkan. Percakapan panjang mengikuti, penu
 Ketika makan malam berikutnya tiba, Miyuki masih gugup. Kau tidak lagi perlu menghafal tanggal rekaan atau kebiasaan yang dibuat agar tampak mesra. Di bawah meja ia menggenggam tanganmu, lalu membiarkannya terlihat. Kali ini kedekatan itu tidak bergantung pada siapa yang sedang menonton."""
 
     # ┌─ ENDING · E-MI-14 · Sandiwara Terbongkar  [Buruk · host Y/C]
-    # │ KAPAN   : pasangan palsu terbongkar oleh Takeru atau orang tua
+    # │ KAPAN   : pasangan palsu terbongkar oleh Tatsuru atau orang tua
     # │ ISI SKRG: malu di depan keluarga; Miyuki menjauh dari pemain dan menerima omiai
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
     KK_END_TEXT["E-MI-14"] = """Kebenaran tentang pasangan palsu muncul di tengah pertemuan keluarga, pada saat semua orang sudah cukup jauh membicarakan masa depan untuk merasa dipermalukan oleh masa lalu. Miyuki mencoba menjelaskan tekanan yang membuatnya setuju. Penjelasan itu terdengar seperti alasan di telinga orang yang lebih marah karena kehilangan kendali.
 
 Ia menjauh darimu setelahnya. Bukan hanya karena sandiwara terbongkar, melainkan karena setiap percakapan denganmu mengembalikannya pada ketakutan bahwa ia telah membuat hidupnya semakin sulit untuk ditentukan sendiri.
 
-Miyuki menerima omiai. Ia hadir dengan pakaian yang disiapkan rapi dan jawaban yang tidak lagi menyisakan ruang bagi lelucon pribadi kalian. Kebohongan yang dahulu dimaksudkan untuk membuka jalan keluar justru memberatkan pintu itu, sampai ia terlalu lelah untuk mencoba membukanya lagi."""
+Bulan berikutnya Miyuki hadir di ruang makan hotel bersama keluarga Tatsuru dengan kimono merah muda yang dipilihkan ibunya. Ketika ponselnya di dalam tas kecil bergetar oleh pesanmu, ia mematikan daya perangkat itu tanpa melirik layarnya sebelum menunduk menyapa calon tunangannya."""
 
 
     # ═════ Nagisa ═════
@@ -474,7 +474,7 @@ Maket rumah itu belum menjadi alamat. Namun saat Nagisa menunjukkan jendela yang
 
 Ia tidak memilih pasangan. Ada rasa sepi pada beberapa malam, terutama ketika teman menganggap kemandiriannya harus terdengar bangga setiap saat. Ia belajar membiarkan dua hal berlaku sekaligus: kadang ingin ditemani, dan tetap tidak ingin menyerahkan hidup kepada seseorang hanya agar tidak sendiri.
 
-Koko masih ada di kamarnya. Masa kecil tidak dibuang, hanya dipindahkan dari posisi sebagai rencana masa depan. Di meja gambar, Nagisa mulai membuat garis yang tidak perlu menunggu siapa pun menjawab perasaannya agar dapat diselesaikan."""
+Koko masih duduk di sudut rak bukunya di kamar. Di meja gambar dekat jendela, Nagisa memasang kertas kalkir baru dengan selotip di keempat sudutnya, lalu menarik garis denah pertamanya untuk proyek magang musim semi."""
 
     # ┌─ ENDING · E-NA-03 · Pengakuan yang Akhirnya Sampai  [Koita · host Y/C]
     # │ KAPAN   : harapan_koita tegak; Koita memilih Nagisa di K26
@@ -494,7 +494,7 @@ Pada festival berikutnya Koita menanyakan apakah boleh menggenggam tangannya. Na
 
 Ia meninggalkan impian arsitektur sedikit demi sedikit, menyebutnya keputusan sendiri karena merasa lebih berguna di sisimu. Kau menerima semua ruang yang dikosongkannya. Ketika teman bertanya apa yang sedang dikerjakan, ia menjawab dengan cerita tentangmu.
 
-Hubungan itu bertahan, tetapi dunianya makin sempit. Setiap kepergianmu menjadi keadaan darurat sebab ia tak lagi mempunyai banyak hal lain untuk ditempati. Rumah yang ia bangun di sekelilingmu akhirnya tak punya cukup jendela untuk melihat dirinya sendiri. Ia menyebutnya cinta, takut jika memakai kata lain maka seluruh pengorbanannya kehilangan arti."""
+Tabung-tabung gambarnya kini tersimpan di bagian belakang lemari pakaian di bawah tumpukan cucian yang sudah disetrika. Setiap kali kau meraih gagang pintu untuk keluar sebentar saja, Nagisa sudah berdiri di lorong depan sambil memegang jaketmu dan menanyakan jam berapa persisnya kau akan kembali."""
 
     # ┌─ ENDING · E-NA-05 · Kamar yang Dikunci  [Buruk · host Y/C]
     # │ KAPAN   : tahap 4–5; ditinggal; tanpa keluarga
@@ -514,7 +514,7 @@ Pesan kampus tentang tenggat lewat tanpa balasan. Di dalam kamar Koko dipeluk sa
 
 Lalu ia mendengar akibat pada orang yang dilukainya. Tidak ada pengakuan cinta yang dapat menghapus tubuh lain yang menanggung ketakutannya. Ia ditangkap; rencana kuliah dan masa depannya berhenti mengikuti jadwal yang pernah dibuat.
 
-Haruto datang dengan wajah yang tak lagi mengenal cara bercanda. Ia tetap kakaknya, dan tetap harus menerima bahwa mencintai Nagisa tidak berarti membenarkan perbuatannya. Di ruang tunggu, ia menatap telepon yang penuh pertanyaan. Adik yang dahulu ingin dibantunya merasa aman kini harus bertanggung jawab karena telah merampas rasa aman seseorang yang lain."""
+Di bangku panjang ruang tunggu kantor polisi, Haruto duduk membungkuk dengan wajah tertutup kedua telapak tangan sementara ponsel di sakunya terus bergetar oleh panggilan dari rumah."""
 
     # ┌─ ENDING · E-NA-07 · Pulang ke Rumah Sakurajima  [Netral · host Y/C]
     # │ KAPAN   : Haruto sekutu (N21-A) atau N22 dihadiri
@@ -534,7 +534,7 @@ Ia belum kembali pada semua impiannya. Tetapi suatu sore Haruto menemukannya men
 
 Ia memutus hubungan dengan Koita dan denganmu. Tidak ada pidato tentang memaafkan; ia hanya menyampaikan bahwa ia tidak ingin meneruskan kedekatan tersebut. Berkas studi arsitektur di luar negeri diselesaikannya dengan bantuan orang yang menghormati keputusan itu tanpa menjadikannya kesempatan mendekat.
 
-Di kota baru ia kadang menyesali cara meninggalkan Koko. Penyesalan tersebut tidak membuatnya menghubungi kalian kembali. Ia belajar bahwa satu keputusan dapat terasa perlu sekaligus menyedihkan. Rumah yang akan dirancangnya nanti masih boleh hangat, meski tak lagi dibangun untuk mengembalikan orang-orang yang telah ia tinggalkan."""
+Di kamar asrama kota barunya yang menghadap pelabuhan, rak di atas tempat tidurnya hanya diisi buku-buku struktur bangunan dan satu pot tanaman kecil. Ketika notifikasi ulang tahun dari kontak lama muncul di layar laptopnya, ia menutup jendela pengingat itu dan kembali mengukur maket kayu di mejanya."""
 
     # ┌─ ENDING · E-NA-09 · Empat Orang di Foto Lama  [Netral · host Y/C]
     # │ KAPAN   : tahap ≤ 2; tidak ada pengkhianatan besar di geng masa kecil
@@ -554,7 +554,7 @@ Nagisa menyimpan foto tersebut di samping yang lama. Mereka tidak lagi serupa an
 
 Koita akhirnya tidak berada di tengah setiap percakapan. Mereka harus mengenal satu sama lain tanpa memakai perbandingan siapa yang lebih lama menunggu atau paling memahami. Nagisa menemukan Chiasa bisa lelah; Chiasa belajar bahwa penolakan Nagisa tidak selalu permainan untuk dibujuk lebih keras.
 
-Pada suatu sore Chiasa memanggil Nacchan-oneechan dengan sungguh-sungguh. Nagisa tersipu, mengomel, lalu menggenggam tangannya sendiri. Kenangan lama memperoleh arti baru tanpa harus menyangkal bahwa dulu mereka pernah saling melukai. Kali ini gengsi bukan satu-satunya cara menjaga sesuatu yang penting."""
+Pada suatu sore di jalan pulang dari stasiun, Chiasa memanggil Nacchan-oneechan dengan suara pelan yang sungguh-sungguh. Nagisa tersipu dan mengomel sepanjang setengah blok, tetapi tangannya sendiri yang lebih dulu menyelinap masuk ke saku mantel Chiasa untuk menggenggam jari-jarinya."""
 
     # ┌─ ENDING · E-NA-11 · Bayangan di Bawah Jendela  [Terdistorsi · host Y/C]
     # │ KAPAN   : pemain menolak; Nagisa terus menguntit; pemain melapor ke Hanabusa
@@ -564,7 +564,7 @@ Pada suatu sore Chiasa memanggil Nacchan-oneechan dengan sungguh-sungguh. Nagisa
 
 Laporan kepada Hanabusa mengubah apa yang selama ini disebut urusan pribadi. Ada batas yang kini ditegakkan dari luar, perintah menjauh yang tak bisa dibatalkan dengan tangis atau kenangan. Kampus mulai mengenal namanya melalui keluhan dan pemeriksaan, bukan karya studionya.
 
-Nagisa kehilangan ruang belajar dan nama baik sambil tetap merasa sedang dibuang karena terlalu peduli. Ia belum sanggup memahami bahwa kepedulian yang menolak hak orang lain untuk merasa aman telah menjadi sesuatu yang berbeda. Di seberang jendela, lampu yang ia tunggu tidak lagi memberi izin untuk mendekat."""
+Saat petugas keamanan kampus mengantarnya keluar dari gedung arsitektur dengan kardus peralatan gambarnya, Nagisa masih sempat menoleh ke arah jendela lantai dua tempat kelasmu berlangsung, sebelum Haruto menarik lengannya masuk ke kursi penumpang mobil keluarga."""
 
     # ┌─ ENDING · E-NA-12 · Gengsi yang Retak  [Hancur · host Y/C]
     # │ KAPAN   : pemain pelaku Force terhadapnya
@@ -574,7 +574,7 @@ Nagisa kehilangan ruang belajar dan nama baik sambil tetap merasa sedang dibuang
 
 Haruto mendengarkan dengan amarah yang harus ia tahan agar tidak mengambil alih keputusan adiknya. Ia menjadi lawan serius bagimu: hadir ketika diperlukan, membantu menjangkau dukungan, dan tidak bersedia membiarkan perbuatanmu menyusut menjadi rumor tentang hubungan yang rumit.
 
-Nagisa tidak menjadi pasanganmu karena kau telah melukainya. Gengsinya yang retak bukan pintu menuju kepemilikan. Pemulihannya panjang, dan ada hari ia bahkan tidak ingin disentuh keluarganya. Di antara hal-hal yang lambat ia ambil kembali adalah hak mengucapkan tidak tanpa lebih dahulu harus terdengar kuat agar dipercaya."""
+Setiap kali ada keperluan administrasi yang mengharuskan berkas Nagisa dibawa ke kampus, Haruto sendiri yang datang menyerahkannya ke meja komite sambil berdiri berjaga di depan pintu sampai seluruh urusan selesai tanpa kehadiranmu."""
 
     # ┌─ ENDING · E-NA-13 · Ambulans di Malam Valentine  [Buruk · host Y/C]
     # │ KAPAN   : N15-B ditolak; tanpa Haruto, keluarga, atau pemain di sisinya
@@ -584,7 +584,7 @@ Nagisa tidak menjadi pasanganmu karena kau telah melukainya. Gengsinya yang reta
 
 Pemulihannya melibatkan hari-hari yang tidak dramatis: makan, tidur, janji perawatan, dan orang yang bersedia tetap hadir tanpa menuntut kabar baik. Kunjunganmu, jika terjadi, tidak boleh berubah menjadi tawaran cinta sebagai pengganti pertolongan yang ia perlukan. Ketidakhadiranmu pun tidak menentukan apakah hidupnya layak diteruskan.
 
-Pada hari evaluasi, masa depannya belum selesai diputuskan. Ada luka yang masih perlu dirawat dan percakapan yang harus dilanjutkan di luar kalian berdua. Yang ia butuhkan tidak muat dalam satu pengakuan atau satu penyesalan yang terlambat."""
+Pada hari evaluasi, di meja nakas ruang rawatnya hanya ada satu termos air hangat yang dibawa ibunya dan buku sketsa kecil yang halamannya baru terisi setengah garis pensil."""
 
     # ┌─ ENDING · E-NA-14 · Senjata yang Kau Arahkan  [Terdistorsi · host Y/C]
     # │ KAPAN   : senjata aktif sampai M35
@@ -594,7 +594,7 @@ Pada hari evaluasi, masa depannya belum selesai diputuskan. Ada luka yang masih 
 
 Sampai hari evaluasi ia masih berada di sisimu. Sesudahnya, pertanyaan kecil mulai muncul: mengapa hanya ia yang diminta mengambil risiko, mengapa ceritamu berubah ketika tidak ada saksi, mengapa rasa bersalah selalu berakhir dengan permintaan agar ia membuktikan kesetiaan lagi.
 
-Kesadaran bahwa dirinya dipakai tidak menghapus tanggung jawab atas apa yang sudah diperbuat. Ia dapat runtuh di bawah keduanya atau membalikkan kemarahan ke arahmu. Yang kauanggap alat ternyata masih seseorang yang bisa mengingat, menilai ulang, dan suatu hari menyebut namamu dalam cerita yang tidak lagi kausunting."""
+Malam itu di apartemenmu, Nagisa berhenti di tengah dapur sambil memegang ponselnya yang masih menampilkan riwayat pesan suruhanmu dari bulan lalu, lalu menatap punggungmu lama tanpa menjawab ketika kau menanyakan makan malam."""
 
 
     # ═════ Harumi ═════
@@ -606,7 +606,7 @@ Kesadaran bahwa dirinya dipakai tidak menghapus tanggung jawab atas apa yang sud
 
 Kalian belajar menyebut perasaan tanpa menjadikannya ujian dengan satu jawaban benar. Kadang ia baru memahami cemburu setelah beberapa jam; kadang kau salah membaca diamnya dan perlu bertanya lagi. Kesalahan itu dibicarakan sebelum berubah menjadi kewajiban bagi salah seorang untuk selalu mengalah.
 
-Hipotesis bahwa ia merasa lebih tenang di dekatmu mendapat banyak bukti. Yang paling berarti justru hari ketika ia tidak tenang dan masih boleh mengatakan tidak. Harumi menyimpan hak itu bersama kasih sayangnya, dua hal yang akhirnya tidak perlu saling membatalkan."""
+Pada suatu malam ketika ia terlalu lelah sepulang dari laboratorium, ia langsung menggeleng saat kau hendak menyalakan televisi, lalu menarik ujung lengan bajumu agar kau tetap duduk diam di sebelahnya sampai tehnya habis."""
 
     # ┌─ ENDING · E-HA-02 · Laboratorium di Seberang Laut  [Netral · host Y/C]
     # │ KAPAN   : studi luar negeri diterima; pulih sebagian
@@ -616,7 +616,7 @@ Hipotesis bahwa ia merasa lebih tenang di dekatmu mendapat banyak bukti. Yang pa
 
 Di seberang laut, pemulihannya tetap ikut dalam barang bawaan. Ada pembicaraan akademik yang membuatnya takut tanpa sebab yang mudah dijelaskan, ada hari ketika perhatian senior terasa sulit dipercaya. Ia belajar mencari dukungan tanpa menyerahkan seluruh penilaiannya kepada satu orang lagi.
 
-Suratnya datang setiap musim. Mulanya penuh rincian riset dan cuaca; belakangan terselip cerita teman, makanan gagal, dan keputusan yang membuatnya bangga secara pribadi. Harumi masih ingin menjadi profesor. Kini keinginan itu tidak lagi harus dibayar dengan memberikan orang lain hak atas seluruh hidupnya."""
+Suratnya datang setiap pergantian musim. Amplop terakhir yang tiba di kotak suratmu berisi tiga lembar cerita tentang percobaan yang berhasil, satu foto roti gosong dari dapur asramanya, dan sehelai daun maple kering yang diselipkan di lipatan kertas."""
 
     # ┌─ ENDING · E-HA-03 · Data yang Dihapus  [Netral · host Y/C]
     # │ KAPAN   : lepas dari Ogawa; tetap di Kouseikan
@@ -636,7 +636,7 @@ Masa depan akademiknya disusun ulang, lebih sempit di beberapa bagian dan masih 
 
 Ia tidak lagi hanya menjadi orang yang mengajari kelompok belajar atau menyediakan penjelasan bagi semua yang bingung. Ada hari ketika ia ingin bercerita tanpa memberi kesimpulan; Koita belajar tidak segera mengubahnya menjadi permintaan bantuan. Harumi belajar bahwa menyukai seseorang tidak berarti harus selalu menjadi bagian yang paling berguna dalam hidupnya.
 
-Teh mereka kadang dingin karena pembicaraan terlalu lama. Harumi masih memakai istilah variabel tetap, lalu menambahkan koreksi: yang tetap adalah kemauan untuk bertanya lagi, sebab perasaan dan manusia tidak wajib berhenti berubah agar bisa dicintai."""
+Teh di meja mereka kadang sudah dingin karena pembicaraan terlalu panjang. Saat Koita hendak bangkit memanaskan air lagi, Harumi menahan ujung jarinya sebentar di atas meja hanya untuk memastikan ia kembali duduk di kursi yang sama."""
 
     # ┌─ ENDING · E-HA-05 · Persamaan Transaksi  [Terdistorsi · host Y/C]
     # │ KAPAN   : validasi_dari banyak orang; tahap 6
@@ -644,9 +644,9 @@ Teh mereka kadang dingin karena pembicaraan terlalu lama. Harumi masih memakai i
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
     KK_END_TEXT["E-HA-05"] = """Harumi mengatakan ia akhirnya mengerti hubungan manusia. Waktu, perhatian, tubuh, uang, akses: semuanya dapat diberi nilai sehingga tidak ada lagi rasa bingung tentang mengapa orang datang atau pergi. Jika sesuatu menyakitkan, ia menganggapnya biaya yang belum dihitung dengan tepat.
 
-Ia tampak lebih lancar berbicara, lebih cepat membaca keinginan orang, dan makin sulit menjawab pertanyaan sederhana tentang apa yang diinginkannya sendiri. Validasi datang dari banyak arah. Masing-masing membawa syarat yang ia sebut wajar karena sudah terbiasa menghubungkan kedekatan dengan pembayaran.
+Ia tampak lebih lancar berbicara, lebih cepat membaca keinginan orang, dan makin sulit menjawab pertanyaan sederhana tentang apa yang diinginkannya sendiri. Pengakuan datang dari banyak arah. Masing-masing membawa syarat yang ia sebut wajar karena sudah terbiasa menghubungkan kedekatan dengan pembayaran.
 
-Ketika seseorang menawarkan duduk tanpa meminta apa pun, Harumi justru mencari maksud tersembunyi. Kerangka yang membuatnya merasa memahami dunia kini menolak pengalaman yang bisa membantahnya. Ia telah mendapatkan persamaan yang selalu menghasilkan jawaban, dengan menghapus bagian dirinya yang berhak mengatakan hasilnya tidak cukup."""
+Ketika seorang adik kelas di perpustakaan menawarkan membelikannya minuman hangat tanpa meminta bantuan tugas apa pun, Harumi menatap kaleng teh itu lama di atas meja, lalu membuka buku catatannya untuk mencari tahu apa yang sebenarnya sedang ditagih darinya."""
 
     # ┌─ ENDING · E-HA-06 · Lampu Merah di Distrik Empat  [Buruk · host Y/C]
     # │ KAPAN   : putus kuliah; Ogawa menang atau pergi; tanpa penjaga
@@ -656,7 +656,7 @@ Ketika seseorang menawarkan duduk tanpa meminta apa pun, Harumi justru mencari m
 
 Yang menghancurkan bukan sebuah penilaian tentang dirinya sebagai pekerja, melainkan betapa sempit pilihan yang tersisa setelah eksploitasi. Ia masih berpikir dalam jadwal dan target, mencoba mempertahankan kendali pada hal-hal yang dapat dihitung. Ada malam ketika namanya sendiri terasa seperti nama orang lain yang dahulu punya laboratorium untuk dituju.
 
-Jika masih ada orang yang mencarinya dengan niat membantu, jalan keluar belum tertutup seluruhnya. Ia memerlukan dukungan yang menghormati keputusan dan keselamatannya, bukan seseorang yang datang untuk merasa telah menyelamatkan perempuan yang rusak. Pada hari evaluasi, ketukan yang seperti itu belum sampai atau belum berani ia jawab."""
+Pada pagi hari evaluasi, saat lampu neon di gang bawah mulai dipadamkan satu per satu, ponsel pribadinya yang lama disimpan di laci meja rias sempat menyala oleh satu panggilan dari nomor Kouseikan yang ia biarkan berhenti berdering sendiri."""
 
     # ┌─ ENDING · E-HA-07 · Ogawa Jatuh  [Netral · host Y/C]
     # │ KAPAN   : H18-A bersaksi; bukti_ogawa cukup
@@ -676,7 +676,7 @@ Mizuhara membantu menyusun ulang pekerjaan. Orang-orang yang dipercaya belajar m
 
 Kesempatan akademiknya menyusut. Pertanyaan tentang riset berubah menjadi pertanyaan tentang sikap dan keputusan pribadinya, seolah hanya ia yang wajib menjelaskan mengapa relasi kuasa itu terjadi. Ia mulai menolak undangan sebelum harus merasakan tatapan yang sama lagi.
 
-Kau menyaksikan dari jarak yang cukup aman untuk menyebut semuanya rumit. Harumi tidak memiliki kemewahan jarak itu. Di meja kerjanya, berkas yang tidak berhasil membuat orang percaya tersusun di samping penelitian yang kehilangan masa depan. Kekalahan dalam proses tidak membuat perbuatan Ogawa benar; hanya membuat kebenaran lebih berat ditanggung orang yang telah dilukai."""
+Kau menyaksikan semuanya dari koridor yang aman. Di ruang baca lantai tiga yang sepi, Harumi memasukkan bundel salinan laporannya yang ditolak ke dalam kardus bersama buku-buku referensinya, lalu meninggalkan kunci loker laboratoriumnya di meja tata usaha."""
 
     # ┌─ ENDING · E-HA-09 · Rumah Teh di Kansai  [Netral · host Y/C]
     # │ KAPAN   : orang tua Kujo menjadi sekutu (H10, H22)
@@ -696,7 +696,7 @@ Suatu hari ayahnya meminta ia mengajarkan cara menyeduh teh yang benar. Tidak ad
 
 Ia menyebut ketergantungan tersebut kedekatan. Setiap kali ragu, ia menukar sesuatu yang pribadi untuk mendapatkan kepastian sebentar. Perhatianmu menjadi alat ukur yang terus berpindah, membuat ia bekerja lebih keras untuk hasil yang tak pernah benar-benar selesai.
 
-Pada hari evaluasi ia masih berada di dekatmu. Sistem dapat menghitung keberhasilan, tetapi tidak akan menuliskan percakapan kecil ketika ia berkata tidak tahu apa yang diinginkan sebelum kau menjawab lebih dahulu. Kau tahu itu bukan sifat asal Harumi. Ada percobaan yang kaumulai, dan seseorang yang terus menanggung hasilnya."""
+Pada hari evaluasi, ia tetap duduk menunggu di bangku depan ruang kelasmu sambil memangku buku catatan kecilnya. Begitu kau keluar dari pintu, hal pertama yang ia tanyakan dengan suara pelan adalah apakah hari ini ia sudah bersikap seperti yang kauinginkan."""
 
     # ┌─ ENDING · E-HA-11 · Rumus Tanpa Variabel Cinta  [Netral · host Y/C]
     # │ KAPAN   : kejelasan_emosi tinggi; hati tidak ke siapa pun
@@ -716,7 +716,7 @@ Ketika ditanya apakah kelak berubah pikiran, ia mengatakan mungkin, sebagaimana 
 
 Penelitiannya berhenti. Mizuhara dan Ogiwara membantunya menjangkau dukungan serta mendorong jalan pelaporan tanpa meminta ia berpura-pura siap setiap saat. Mereka belajar bertanya sebelum menyentuh, menunggu sebelum mengulang pertanyaan, dan tidak menganggap ketenangan sebagai bukti bahwa luka itu kecil.
 
-Tidak ada hubungan romantis denganmu yang lahir dari perbuatan tersebut. Kesulitan Harumi memberi nama pada perasaan tidak pernah berarti ia kehilangan hak atas tubuhnya. Ia mulai mengambil kembali keputusan yang paling sederhana, termasuk siapa yang boleh hadir di ruangan. Namamu tidak ada dalam daftar itu."""
+Di pintu laboratorium lantai empat, daftar nama yang diizinkan masuk kini ditempel baru di bawah tanda tangan Mizuhara, sementara Harumi hanya datang pada jam ketika Ogiwara sudah berdiri menjemputnya di tangga lobi."""
 
     # ┌─ ENDING · E-HA-13 · Seni dan Sains  [Romantis · host C]
     # │ KAPAN   : Chiasa host; kolaborasi berjalan sejak Tahun 1
@@ -736,7 +736,7 @@ Hubungan mereka tidak menyatukan seni dan sains menjadi satu bahasa yang sempurn
 
 Kalian meninggalkan Jepang. Bahasa baru dan jadwal laboratorium membuat hari-hari pertama jauh dari gambaran keberangkatan yang manis. Kadang kalian saling merindukan meski tinggal di kamar yang sama, masing-masing terlalu lelah untuk menerjemahkan dirinya.
 
-Quest Sistem tetap mencapai kesadaranmu dari jauh. Evaluasinya tiba pada hari wisuda yang telah ditentukan, meski halaman Kouseikan kini berada di zona waktu lain. Harumi sedang menyeduh teh saat itu. Kehidupan yang kalian pilih telah bergerak melampaui tempat evaluasi, tetapi akibat keputusan lama tetap dapat menyusul ke mana pun kalian pergi."""
+Quest Sistem tetap mencapai kesadaranmu dari jauh, dan jendela evaluasinya muncul tepat ketika pagi di Kouseikan tiba. Di dapur kecil apartemen kalian yang masih gelap oleh selisih zona waktu, Harumi baru saja menyalakan ketel teh sambil memanggilmu dari balik pintu kamar."""
 
 
     # ═════ Moeka ═════
@@ -746,9 +746,9 @@ Quest Sistem tetap mencapai kesadaranmu dari jauh. Evaluasinya tiba pada hari wi
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
     KK_END_TEXT["E-MO-01"] = """Moeka menelepon untuk meminta tolong sebelum keadaan menjadi darurat. Ia masih membuka dengan lelucon, kemudian mengoreksi dirinya: ia lelah, ada pekerjaan yang tidak sanggup diselesaikan, dan ia ingin ditemani membicarakannya. Kau datang sesuai janji. Jika tak bisa, kau mengatakan sejak awal dan membantu mencari pilihan lain.
 
-Keluarganya mulai lebih stabil, meski tidak mendadak bebas dari masalah. Rina tetap punya tempat, bantuan kampus tetap diurus, dan cinta kalian tidak dibangun dengan menjadikanmu satu-satunya orang yang boleh mengetahui hari buruknya.
+Keluarganya mulai lebih stabil, meski tidak mendadak bebas dari masalah. Ryena tetap punya tempat, bantuan kampus tetap diurus, dan cinta kalian tidak dibangun dengan menjadikanmu satu-satunya orang yang boleh mengetahui hari buruknya.
 
-Pada suatu sore ia memperlihatkan rancangan yang dibuat karena ingin, bukan karena harus segera dijual. Ketika kau memujinya, ia membantah bagian yang belum disukai lalu tertawa. Keceriaan itu tidak lagi harus membuktikan bahwa semuanya baik. Ia boleh senang pada satu hal sementara hidupnya masih berusaha pulih."""
+Pada suatu sore ia memperlihatkan sketsa jaket yang dibuat karena suka, bukan karena harus segera dijual. Ketika kau memuji potongan kerahnya, ia langsung menunjuk jahitan saku yang menurutnya masih miring, lalu tertawa sambil menyerahkan penggaris ke tanganmu."""
 
     # ┌─ ENDING · E-MO-02 · Cuti Setahun  [Netral · host Y/C]
     # │ KAPAN   : selamat; beasiswa dicabut
@@ -758,7 +758,7 @@ Pada suatu sore ia memperlihatkan rancangan yang dibuat karena ingin, bukan kare
 
 Setahun itu penuh jadwal yang tidak difoto: perjalanan pagi, upah yang langsung dibagi, formulir yang dibuka lagi saat malam. Ia belajar membatasi bantuan yang bisa diberikan kepada rumah agar dirinya tetap punya jalan kembali. Tidak selalu berhasil; ada bulan ketika rencana itu tampak terlalu jauh.
 
-Setahun kemudian Moeka kembali ke kampus. Adik-adiknya mengantarkan dengan candaan yang terlalu ramai, Rina memotret dari samping. Ia tidak mengejar semua orang yang telah lulus lebih dahulu. Di depan studio, ia berhenti sebentar, lalu masuk sebagai seseorang yang masih berhak melanjutkan sesuatu miliknya sendiri."""
+Setahun kemudian Moeka kembali ke kampus. Adik-adiknya mengantar sampai gerbang dengan candaan yang terlalu ramai, sementara Ryena memotret dari samping. Di depan pintu studio desain, Moeka berhenti sebentar untuk merapikan tali tasnya, lalu mendorong pintu kayu itu dan masuk."""
 
     # ┌─ ENDING · E-MO-03 · Topeng Sempurna  [Terdistorsi · host Y/C]
     # │ KAPAN   : selamat; topeng tidak pernah dibuka; pemain satu-satunya andalan
@@ -768,19 +768,17 @@ Setahun kemudian Moeka kembali ke kampus. Adik-adiknya mengantarkan dengan canda
 
 Hanya kepadamu ia memberi tanda bahwa hari tertentu terlalu berat, sering begitu kecil sampai mudah terlewat. Ia menyesuaikan seluruh kebutuhan dengan kapan kau tersedia, takut kehilangan satu-satunya tempat yang masih dianggap boleh menampung dirinya tanpa panggung. Di luar hubungan itu ia tetap ceria, tetap menawarkan bantuan, tetap tidak punya kata untuk meminta pertolongan.
 
-Kau menjadi andalan yang hampir seluruh hidupnya bertumpu kepadamu. Kedekatan itu terlihat manis dari luar dan terasa menakutkan setiap kali satu pesan terlambat dijawab. Topengnya tidak pecah; ia justru menjadi begitu mahir memakainya sampai kesendirian yang paling berbahaya tak lagi terlihat berbeda dari hari yang baik."""
+Setiap kali pesanmu terlambat dibalas sepuluh menit saja, Moeka berhenti bicara di tengah kerumunan teman-temannya dan mengunci diri di bilik kamar mandi kampus. Begitu layar ponselnya menyala menampilkan namamu, ia langsung membasuh wajah di wastafel, memoles ulang lipstiknya, dan keluar dengan tawa paling nyaring di koridor."""
 
     # ┌─ ENDING · E-MO-04 · Malam Tanpa Balasan  [Buruk · host Y/C]
     # │ KAPAN   : Mo25 terlewati
-    # │ ISI SKRG: Moeka meninggal. Yang ditampilkan: kabar, duka, pemakaman, Rina, Aya, adik-adik, penyesalan pemain. Tanpa metode. Sistem diam
+    # │ ISI SKRG: Moeka meninggal. Yang ditampilkan: kabar, duka, pemakaman, Ryena, Yaeka, adik-adik, penyesalan pemain. Tanpa metode. Sistem diam
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
     KK_END_TEXT["E-MO-04"] = """Kabar kematian Moeka datang dalam kalimat yang mula-mula tidak dapat kaumengerti. Namanya tetap ada di grup, fotonya tetap tersenyum, dan pesan terakhir masih tampak seperti sesuatu yang dapat dibalas jika kau cukup cepat membuka layar.
 
-Pada pemakaman, Rina tidak memintamu menjelaskan. Diamnya lebih sulit dihadapi daripada pertanyaan. Aya berulang kali mengucapkan terima kasih kepada tamu sampai kehilangan suara. Adik-adik Moeka duduk berdekatan; salah seorang masih ingin menunjukkan sesuatu yang disiapkan untuk kakaknya, kemudian teringat tak ada lagi orang yang akan pulang menerimanya.
+Pada pemakaman, Ryena tidak memintamu menjelaskan. Diamnya lebih sulit dihadapi daripada pertanyaan. Yaeka berulang kali mengucapkan terima kasih kepada tamu sampai kehilangan suara. Adik-adik Moeka duduk berdekatan; salah seorang masih ingin menunjukkan sesuatu yang disiapkan untuk kakaknya, kemudian teringat tak ada lagi orang yang akan pulang menerimanya.
 
-Kau mencari satu titik yang seandainya berbeda dapat mengembalikan seluruh cerita. Duka tidak memberimu kepastian sesederhana itu. Ada kesempatan yang terlewat dan bantuan yang tidak sampai, ada hidup yang tak boleh diringkas sebagai kegagalan seseorang mencintai dengan cukup baik.
-
-Sistem diam. Hari-hari sesudahnya tetap meminta keluarga membayar tagihan, membereskan kamar, dan belajar menyebut nama Moeka tanpa menunggu jawaban dari pintu."""
+Di ruang tengah rumah mereka yang sempit, tumpukan amplop belasungkawa diletakkan di sebelah mesin jahit yang sudah ditutup kain. Sistem diam sepanjang hari itu, sementara di dapur, Yaeka merebus air untuk tamu yang sudah pulang dan lupa mematikan kompor sampai peluit ceretnya menjerit."""
 
     # ┌─ ENDING · E-MO-05 · Tepat Waktu  [Koita · host Y/C]
     # │ KAPAN   : Mo25-E pemain mengirim Koita, atau andalan_moeka Koita dan Koita menjawab
@@ -790,17 +788,17 @@ Sistem diam. Hari-hari sesudahnya tetap meminta keluarga membayar tagihan, membe
 
 Moeka mulai mempercayainya sebagai seseorang yang menjawab. Perasaannya kembali menuju Koita, tumbuh bersama janji kecil yang akhirnya ditepati, bukan karena ia wajib mencintai orang yang tiba pada malam krisis.
 
-Kau melihat mereka sesekali setelahnya. Moeka belum selalu ceria, dan Koita tidak selalu tahu harus berkata apa. Ada hari ketika mereka hanya duduk, membiarkan bantuan orang lain tetap masuk. Jika dunia menyebut malam itu penyelamatan, hari-hari berikutnya mengingatkan bahwa tetap hidup memerlukan lebih dari satu momen yang tepat."""
+Kau melihat mereka sesekali dari seberang halaman fakultas. Moeka tidak lagi melambai dari jauh dengan suara keras, dan Koita sering kali hanya berjalan pelan menyesuaikan langkah di sebelahnya sambil membawakan tabung gambar sampai ke halte bus."""
 
-    # ┌─ ENDING · E-MO-06 · Rina Mengetuk Pintu  [Netral · host Y/C]
-    # │ KAPAN   : Mo25-B, atau Rina sekutu sejak Mo18
-    # │ ISI SKRG: Rina tiba lebih dulu; dirawat; persahabatan pemain dan Rina menentukan epilog
+    # ┌─ ENDING · E-MO-06 · Ryena Mengetuk Pintu  [Netral · host Y/C]
+    # │ KAPAN   : Mo25-B, atau Ryena sekutu sejak Mo18
+    # │ ISI SKRG: Ryena tiba lebih dulu; dirawat; persahabatan pemain dan Ryena menentukan epilog
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
-    KK_END_TEXT["E-MO-06"] = """Rina mengetuk sampai mendapat jawaban, lalu mencari bantuan yang tidak bisa diberikan seorang sahabat sendirian. Moeka mendapat perawatan. Ketika ia akhirnya bisa berbicara, hal pertama yang keluar justru permintaan maaf karena telah merepotkan.
+    KK_END_TEXT["E-MO-06"] = """Ryena mengetuk sampai mendapat jawaban, lalu mencari bantuan yang tidak bisa diberikan seorang sahabat sendirian. Moeka mendapat perawatan. Ketika ia akhirnya bisa berbicara, hal pertama yang keluar justru permintaan maaf karena telah merepotkan.
 
-Rina tetap datang tanpa membiarkan rasa bersalah itu menjadi syarat agar Moeka tampak pulih. Mereka membicarakan dukungan profesional, kabar kepada keluarga, dan cara menjalani satu hari sebelum melompat ke seluruh masa depan. Ada marah karena terlalu lama tidak dipercaya untuk mendengar; ada kasih yang cukup untuk tetap duduk setelah marah itu disebutkan.
+Ryena tetap datang tanpa membiarkan rasa bersalah itu menjadi syarat agar Moeka tampak pulih. Mereka membicarakan dukungan profesional, kabar kepada keluarga, dan cara menjalani satu hari sebelum melompat ke seluruh masa depan. Ada marah karena terlalu lama tidak dipercaya untuk mendengar; ada kasih yang cukup untuk tetap duduk setelah marah itu disebutkan.
 
-Tempatmu dalam epilog bergantung pada bagaimana kau memperlakukan persahabatan tersebut. Rina dapat menjadi rekan dalam membantu Moeka, atau batas yang menahanmu di luar. Yang pasti, Moeka tetap hidup sebagai seseorang yang pantas ditolong, tanpa harus menjadi alasan bagi siapa pun merasa paling berjasa."""
+Setiap Selasa sore, Ryena sudah berdiri di depan gedung konseling dengan dua kotak susu stroberi di saku jaketnya. Jika kau datang menjemput bersama mereka, Ryena hanya mengangguk singkat dan menyerahkan tas kain Moeka ke tanganmu sebelum mereka berjalan beriringan menuju stasiun."""
 
     # ┌─ ENDING · E-MO-07 · Kontrak Kuga  [Terdistorsi · host Y/C]
     # │ KAPAN   : Mo23 kontrak dibiarkan; selamat
@@ -810,17 +808,17 @@ Tempatmu dalam epilog bergantung pada bagaimana kau memperlakukan persahabatan t
 
 Ia mengirim uang ke rumah. Keluarganya melihat bantuan yang datang sebelum memahami harga yang tidak tertulis dalam kabar baiknya. Ada pekerjaan yang disetujui karena takut kehilangan akses pada pekerjaan berikutnya, ada keberatan yang berhenti di mulut karena seluruh hidup terasa bergantung pada satu nama.
 
-Moeka selamat, tetapi makin sulit mengenali keinginan sendiri di bawah tuntutan kontrak. Ketika seseorang dari kampus menanyakan apakah ia senang, ia mengirim foto terbaru dan stiker tertawa. Jawaban itu tampak lengkap bagi orang yang tidak tahu bagaimana membaca jeda panjang sebelum gambar dikirim."""
+Ketika seorang teman lama dari kampus mengirim pesan menanyakan kabarnya, Moeka memotret cermin ruang rias yang penuh lampu dan menempelkan stiker tawa besar di sudut gambar. Begitu tombol kirim ditekan, ia meletakkan ponsel dengan layar menghadap meja dan kembali memejamkan mata sementara penata rambut menarik kerah bajunya."""
 
     # ┌─ ENDING · E-MO-08 · Label di Garasi  [Netral · host Y/C]
-    # │ KAPAN   : berhenti kuliah; stres keluarga turun; Rina sekutu
-    # │ ISI SKRG: merintis label fesyen kecil bersama Rina; adik-adik membantu
+    # │ KAPAN   : berhenti kuliah; stres keluarga turun; Ryena sekutu
+    # │ ISI SKRG: merintis label fesyen kecil bersama Ryena; adik-adik membantu
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
-    KK_END_TEXT["E-MO-08"] = """Garasi keluarga berubah menjadi ruang kerja dengan dua meja, kain sisa, dan kotak pesanan yang tidak pernah benar-benar seragam. Moeka tidak kembali ke jalur kuliah yang dahulu dibayangkan. Ia dan Rina mulai membangun label kecil dari pekerjaan yang cukup sedikit untuk dipelajari dan cukup nyata untuk menghasilkan sesuatu.
+    KK_END_TEXT["E-MO-08"] = """Garasi keluarga berubah menjadi ruang kerja dengan dua meja, kain sisa, dan kotak pesanan yang tidak pernah benar-benar seragam. Moeka tidak kembali ke jalur kuliah yang dahulu dibayangkan. Ia dan Ryena mulai membangun label kecil dari pekerjaan yang cukup sedikit untuk dipelajari dan cukup nyata untuk menghasilkan sesuatu.
 
 Adik-adiknya membantu melipat, menempel label, lalu bertengkar soal siapa yang paling berjasa. Moeka mengusir mereka ketika mulai mengantuk, tidak lagi menerima semua pengorbanan sebagai hal yang otomatis baik. Beban keluarga yang mereda memberinya ruang untuk memilih desain karena suka.
 
-Tidak setiap bulan untung. Ada kiriman salah dan pesanan yang dibatalkan. Tetapi saat nama label pertama kali dicetak, Moeka menangis di depan Rina tanpa lelucon untuk menutupinya. Masa depan itu kecil, belum pasti, dan akhirnya mempunyai bentuk yang ikut ia tentukan."""
+Tidak setiap bulan pesanan mereka ramai, dan kadang masih ada gulungan kain salah warna yang menumpuk di pojok garasi. Namun saat gulungan label bordir pertama tiba dari percetakan, Moeka menempelkan satu ke punggung tangan Ryena, lalu menangis sambil tertawa tanpa berusaha menutupi wajahnya."""
 
     # ┌─ ENDING · E-MO-09 · Banding yang Dimenangkan  [Netral · host Y/C]
     # │ KAPAN   : beasiswa diselamatkan lewat Fujisawa, Sato, atau banding
@@ -830,7 +828,7 @@ Tidak setiap bulan untung. Ada kiriman salah dan pesanan yang dibatalkan. Tetapi
 
 Ia mempertahankan beasiswa dan menyelesaikan kuliah. Keluarganya bertahan, belum tanpa kesulitan, tetapi tidak lagi menggantungkan seluruh rencana pada Moeka yang harus selalu sanggup. Ia belajar membicarakan bantuan sebelum menyerahkan jatah makan atau tidur sebagai jawaban pertama.
 
-Tidak ada romansa yang menutup kelulusannya. Rina datang, adik-adiknya ribut di belakang kamera, dan Moeka tertawa karena foto pertama gagal. Di antara semua formulir yang pernah membuatnya merasa hanya angka yang terancam hilang, ijazah itu kini dipegang seseorang yang masih punya waktu untuk membayangkan hidup sesudahnya."""
+Pada hari kelulusan, Ryena datang membawa buket bunga kertas, sementara adik-adik Moeka berebut memegang ujung toganya di belakang kamera. Foto pertama mereka buram karena Moeka tertawa terlalu keras saat topi wisudanya miring tertiup angin halaman."""
 
     # ┌─ ENDING · E-MO-10 · Doa yang Tidak Terkabul  [Netral · host Y/C]
     # │ KAPAN   : ayah_status meninggal; minimal 3 jendela diambil
@@ -840,7 +838,7 @@ Tidak ada romansa yang menutup kelulusannya. Rina datang, adik-adiknya ribut di 
 
 Orang-orang di sisinya tidak membiarkan pikiran itu menjadi satu-satunya suara. Mereka datang dengan makanan, menemani urusan rumah, dan mendengarkan cerita tentang ayahnya sebagai manusia yang lebih luas daripada penyakit. Moeka boleh marah kepada doa yang tidak terkabul tanpa dianggap berhenti menyayangi keluarganya.
 
-Ia bertahan. Duka tidak menghilang pada hari ia kembali tertawa, sebagaimana tawa tidak membatalkan kehilangan. Pada peringatan berikutnya ia membawa desain yang belum sempat diperlihatkan kepada ayah. Sesudah pulang ia menelepon seseorang dan mengatakan malam itu terasa berat. Kali ini ia tidak mengucapkan tidak apa-apa sebelum jawaban datang."""
+Pada peringatan kematian ayahnya tahun berikutnya, Moeka meletakkan buku sketsa terakhirnya di depan altar rumah. Sepulang dari makam, ketika hujan turun dan lampu teras belum dinyalakan, ia mengeluarkan ponsel di tangga depan dan menelepon untuk berkata bahwa malam ini ia tidak ingin tidur sendirian."""
 
     # ┌─ ENDING · E-MO-11 · Topeng yang Pecah  [Hancur · host Y/C]
     # │ KAPAN   : pemain pelaku Force terhadapnya
@@ -848,9 +846,9 @@ Ia bertahan. Duka tidak menghilang pada hari ia kembali tertawa, sebagaimana taw
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
     KK_END_TEXT["E-MO-11"] = """Kekerasan yang kaulakukan merusak tempat terakhir tempat Moeka mengira boleh menurunkan kewaspadaan. Ia mencoba kembali tertawa, lalu merasa mual saat mendengar suaranya sendiri. Orang yang sebelumnya menganggapnya selalu baik kini harus belajar bahwa senyum tidak pernah dapat dipakai sebagai bukti ia menyetujui atau telah pulih.
 
-Risiko krisisnya meningkat. Rina, keluarga, dan bantuan profesional tetap dapat menjangkaunya; tidak satu pun kesempatan itu menjadikan pelaku sebagai pusat pemulihan. Ia tidak berutang penjelasan, pertemuan, atau cinta kepadamu karena pernah mempercayaimu.
+Risiko krisisnya meningkat. Ryena, keluarga, dan bantuan profesional tetap dapat menjangkaunya; tidak satu pun kesempatan itu menjadikan pelaku sebagai pusat pemulihan. Ia tidak berutang penjelasan, pertemuan, atau cinta kepadamu karena pernah mempercayaimu.
 
-Pada hari evaluasi tidak ada ketenangan yang pantas disebut hasil hubungan kalian. Ada kehidupan yang perlu dilindungi dari akibat perbuatanmu, dan seorang perempuan yang tetap memiliki masa depan meskipun belum sanggup membayangkannya. Topeng yang pecah tidak menyingkap milikmu. Ia memperlihatkan seseorang yang selama ini kaulukai."""
+Sampai hari evaluasi tiba, nomor teleponmu telah diblokir dari seluruh kontak keluarganya dan Ryena selalu berdiri di depan pintu studio setiap kali jadwal kelas kalian berdekatan. Saat tidak sengaja melihat siluet yang mirip denganmu di koridor lantai satu, Moeka langsung berbalik masuk ke ruang dosen dan baru keluar setelah bel perkuliahan berikutnya berbunyi."""
 
     # ┌─ ENDING · E-MO-12 · Selamat, Tapi Bukan Karenamu  [Netral · host Y/C]
     # │ KAPAN   : pemain melewatkan banyak jendela; orang lain menyelamatkannya
@@ -860,7 +858,7 @@ Pada hari evaluasi tidak ada ketenangan yang pantas disebut hasil hubungan kalia
 
 Sesudah cukup kuat menentukan batas, ia memutus hubungan denganmu. Ia tidak menyusun daftar kesempatan yang terlewat agar kau dapat memperdebatkan mana yang sebenarnya bukan kewajibanmu. Ia hanya mengatakan tidak ingin melanjutkan kedekatan yang membuatnya semakin sendirian.
 
-Kau masih melihat wajahnya di foto teman. Kadang ia tersenyum, kadang memilih tidak ikut dipotret. Hidup itu berlangsung di luar aksesmu. Menyesali jarak tidak memberimu hak memasuki lagi ruang yang ia tutup. Moeka selamat, dan salah satu keputusan yang dapat ia ambil sesudahnya adalah memilih siapa yang tidak lagi ingin dibawa ke masa depan."""
+Kau masih sesekali melihat wajahnya di unggahan foto teman-teman seangkatan. Dalam potret grup terbaru di depan ruang pameran fakultas, Moeka berdiri di barisan tengah sambil merangkul pundak Ryena, sementara akunmu sudah sejak musim gugur lalu tak lagi bisa membuka halaman profilnya."""
 
     # ┌─ ENDING · E-MO-13 · Ginjal untuk Ayah  [Romantis · host Y/C]
     # │ KAPAN   : cabang donor diambil; pemain mendampingi
@@ -870,7 +868,7 @@ Kau masih melihat wajahnya di foto teman. Kadang ia tersenyum, kadang memilih ti
 
 Ayahnya pulih. Moeka mengambil cuti dan menjalani pemulihan sendiri, tidak langsung kembali mengejar semua pekerjaan yang tertunda. Ia tidak menyesali pilihannya, tetapi belajar bahwa keputusan yang dipilih dengan cinta tetap memerlukan perawatan, waktu, dan dukungan setelahnya.
 
-Hubungan kalian tumbuh di hari yang lambat: berjalan sebentar, makanan yang tidak selalu dihabiskan, kegelisahan tentang studi yang didengarkan tanpa disuruh bersyukur saja. Moeka mulai membicarakan rencana kembali kuliah. Untuk pertama kalinya dalam waktu lama, masa depan ayah dan masa depannya sendiri tidak harus ditempatkan sebagai dua hal yang saling mengorbankan."""
+Sore itu kalian berjalan pelan mengelilingi taman rumah sakit selama dua puluh menit sesuai anjuran dokter. Moeka berhenti di bangku dekat pohon kamper, menghabiskan setengah potong apel yang kauupaskan, lalu membuka katalog mata kuliah semester depan di pangkuannya."""
 
 
     # ═════ Shiori ═════
@@ -882,7 +880,7 @@ Hubungan kalian tumbuh di hari yang lambat: berjalan sebentar, makanan yang tida
 
 Kepercayaan kalian tidak terbentuk karena tak pernah berselisih, melainkan karena kau memilih mengatakan hal sulit sebelum dipaksa oleh bukti. Ia pun belajar menyebut cemburu atau terluka tanpa menjadikannya ujian yang tak diketahui aturannya oleh orang lain.
 
-Kalian masih bertanding. Kadang ia menang, kadang ia meminta satu ronde lagi dengan nada yang terlalu tenang. Namun ketika papan ditutup, tidak ada yang perlu membawa pulang ketakutan bahwa kalah berarti kehilangan hak dicintai. Lawan sepadan itu kini juga orang yang boleh melihatnya tak memiliki langkah yang sudah disiapkan."""
+Kalian masih sering bertanding di ruang tatami saat akhir pekan. Kadang ia menang dalam tiga puluh langkah, kadang ia meminta satu ronde lagi dengan kening berkerut tipis, lalu ketika papan ditutup ia menggeser bantal duduknya mendekat dan menyandarkan dagu di pundakmu."""
 
     # ┌─ ENDING · E-SH-02 · Skakmat  [Buruk · host Y/C]
     # │ KAPAN   : tahap 5; sasaran pemain; tanpa pengakuan
@@ -892,7 +890,7 @@ Kalian masih bertanding. Kadang ia menang, kadang ia meminta satu ronde lagi den
 
 Kau dikeluarkan dan dijauhi lingkungan yang dahulu tampak dapat diatur satu per satu. Semua target quest menjauh; tidak ada lagi kedekatan yang bisa dipakai sebagai jalan memutar kembali ke kehidupan semula.
 
-Shiori tidak datang menikmati pembelaan terakhirmu. Ia telah memastikan hasil yang diinginkannya lalu menutup akses. Pada pertemuan terakhir sebelum itu, senyumnya sama seperti ketika mengajak bermain pertama kali. Kau baru memahami betapa sedikit kesamaan ekspresi dapat menjelaskan apa yang sebenarnya sedang dilakukan seseorang kepadamu."""
+Shiori bahkan tidak hadir ketika kau mengemasi barang dari loker kampus untuk terakhir kalinya. Di atas tumpukan surat pencabutan status mahasiswamu, hanya ada satu bidak catur kayu putih yang dititipkan lewat petugas tata usaha tanpa secarik catatan pun."""
 
     # ┌─ ENDING · E-SH-03 · Gencatan Senjata  [Netral · host Y/C]
     # │ KAPAN   : pemain mengaku di S22 atau S24
@@ -902,7 +900,7 @@ Shiori tidak datang menikmati pembelaan terakhirmu. Ia telah memastikan hasil ya
 
 Ada hal yang tetap harus kauselesaikan dan orang yang tetap berhak menolakmu. Shiori tidak menghapus keterangan yang benar hanya agar gencatan senjata terasa manis. Yang berakhir adalah keinginannya membuat setiap sisa kehidupanmu menjadi bagian dari pertarungan kalian.
 
-Sesudahnya kalian tidak lagi berbicara. Jika berpapasan, ia tidak menyiapkan sindiran atau kesempatan kedua. Keheningan itu bukan undangan menunggu sampai amarahnya reda. Ia memilih hidup yang tidak memerlukan namamu hadir setiap hari, dan kau ditinggalkan dengan tanggung jawab yang tak lagi bisa kauserahkan kepada permusuhannya."""
+Sesudah sore itu kalian tidak pernah lagi berbicara. Saat berpapasan di lorong perpustakaan utama, Shiori tidak melirik ataupun memperlambat langkah; ia hanya menutup buku catatannya, masuk ke ruang baca khusus di sebelah kanan, dan membiarkan pintu kaca menutup di antara kalian."""
 
     # ┌─ ENDING · E-SH-04 · Ratu Tanpa Kepercayaan  [Terdistorsi · host Y/C]
     # │ KAPAN   : tahap 5 tuntas; tidak ada yang ia percaya lagi
@@ -912,7 +910,7 @@ Sesudahnya kalian tidak lagi berbicara. Jika berpapasan, ia tidak menyiapkan sin
 
 Ia tidak mendapatkan kembali kemudahan percaya. Undangan tulus dibaca sebagai kemungkinan motif, bantuan diperiksa untuk mencari harga, dan setiap kedekatan dipertahankan pada jarak yang memungkinkan ia pergi lebih dahulu. Orang tuanya tetap menyayanginya, tetapi bahkan dukungan mereka sering ia sambut sebagai sesuatu yang harus dibuktikan lagi.
 
-Di klub, orang menyebutnya lebih mengagumkan daripada sebelumnya. Ia tersenyum, menata bidak, dan menunggu lawan berikutnya. Di luar papan ia tidak lagi tahu bagaimana menginginkan seseorang tinggal tanpa sekaligus menyusun cara menghukum jika orang itu kelak pergi. Segala sesuatu telah dapat dipertahankan, kecuali tempat untuk merasa aman di dalam kemenangan."""
+Di ruang klub, anggota baru masih berbisik kagum setiap kali melihatnya merapikan papan setelah menang tanpa kehilangan satu pun perwira utama. Ketika semua orang sudah pulang dan lampu koridor diredupkan, Shiori tetap duduk sendirian di balik meja kayu itu, memutar-mutar bidak raja di antara jari-jarinya yang dingin."""
 
     # ┌─ ENDING · E-SH-05 · Langkah Koita  [Koita · host Y/C]
     # │ KAPAN   : cinta Koita tumbuh di S08; Koita memilihnya di K26
@@ -922,7 +920,7 @@ Di klub, orang menyebutnya lebih mengagumkan daripada sebelumnya. Ia tersenyum, 
 
 Namun saat Koita memilihnya, ia tetap meminta jawaban yang jelas tentang orang-orang lain. Kekaguman tidak membuat Shiori tiba-tiba mau menjadi bagian dari penantian yang sama. Koita menjawab dan menyelesaikan percakapan yang dahulu dihindarinya.
 
-Ia belajar menerima bahwa Koita tidak selalu secepat dirinya memahami keadaan. Koita belajar bahwa senyum Shiori tidak otomatis berarti baik-baik saja. Pada hari mereka berkencan tanpa alasan festival atau kebetulan hujan, Shiori datang lebih awal, lalu tampak sedikit kesal karena kegembiraannya ternyata cukup mudah dibaca."""
+Pada hari mereka berkencan tanpa alasan festival atau kebetulan hujan, Shiori sudah berdiri di bawah jam stasiun lima belas menit sebelum waktu janji. Begitu melihat Koita berlari kecil dari ujung peron sambil memegangi syalnya, Shiori memalingkan wajah sedikit ke arah papan jadwal untuk menyembunyikan senyumnya."""
 
     # ┌─ ENDING · E-SH-06 · Sekutu di Papan yang Sama  [Netral · host Y/C]
     # │ KAPAN   : pemain memberitahunya soal Sistem; tahu_sistem percaya
@@ -932,7 +930,7 @@ Ia belajar menerima bahwa Koita tidak selalu secepat dirinya memahami keadaan. K
 
 Ketika akhirnya menerima bahwa ada naskah yang ikut menggeser keadaan, ia memilih menjadi sekutumu melawan kuasanya. Persahabatan itu memiliki syarat yang jelas: informasi dibagikan, keputusan yang menyangkut orang lain tidak diambil sendirian, dan angka keberhasilan bukan alasan membenarkan luka.
 
-Tidak ada pengakuan cinta yang menutup kerja sama mereka. Shiori masih bisa marah kepadamu dan tetap datang membawa pertanyaan yang belum terpikir. Di meja yang sama, kalian belajar bahwa menolak sebuah naskah juga berarti berhenti meniru kebiasaannya menempatkan manusia sebagai bidak yang boleh dikorbankan demi akhir yang menarik."""
+Tidak ada pengakuan cinta yang menutup kerja sama kalian. Pada malam sebelum evaluasi, Shiori masih datang ke meja pojok kafe membawa buku catatan bersampul hitam, mencoret tiga baris skenario di kertasmu dengan pena merah, lalu memesan dua cangkir teh tawar untuk kalian habiskan sambil menunggu pagi."""
 
     # ┌─ ENDING · E-SH-07 · Pewaris dengan Caranya Sendiri  [Netral · host Y/C]
     # │ KAPAN   : tanpa rute aktif; S17 didukung
@@ -942,7 +940,7 @@ Tidak ada pengakuan cinta yang menutup kerja sama mereka. Shiori masih bisa mara
 
 Ia memilih fokus pada studi dan tanggung jawab yang memang ingin diterima. Tidak ada pasangan yang dijadikan bukti kemenangan atau kemerdekaan. Kedekatan keluarga tetap punya tempat, juga orang-orang yang dapat mengkritik langkahnya tanpa takut dibalas.
 
-Pada pertemuan bisnis pertama yang dipimpinnya, Shiori meminta pendapat seseorang yang tidak sepakat. Ia mendengarkan sampai selesai sebelum membantah. Menjadi pewaris dengan caranya sendiri ternyata tidak hanya soal berhak menentukan langkah; ia juga perlu tahu kapan kekuasaan membuat ruangan terlalu sunyi untuk memberi jawaban yang jujur."""
+Pada rapat kerja pertama yang dipimpinnya di gedung yayasan, Shiori sengaja meminta staf termuda yang sejak tadi mengernyit untuk berbicara lebih dulu. Ia meletakkan pulpennya di atas berkas, menyimak bantahan itu sampai kalimat terakhir, lalu mengangguk dan meminta bagian proposal tersebut ditulis ulang."""
 
     # ┌─ ENDING · E-SH-08 · Bidak Bernama Tojo  [Terdistorsi · host Y/C]
     # │ KAPAN   : S21 Tojo dipakai sampai M35
@@ -952,9 +950,9 @@ Pada pertemuan bisnis pertama yang dipimpinnya, Shiori meminta pendapat seseoran
 
 Tojo mendapat foto dan pengumuman yang diinginkan lingkungannya. Shiori mendapat posisi yang dapat dipakai, bersama hari-hari yang semakin terasa seperti perpanjangan acara formal. Mereka belajar tersenyum pada saat yang sama tanpa harus saling mengenal lebih jauh.
 
-Kuroiwa pernah bertanya apakah ia masih ingin menjalaninya. Shiori menjawab sudah memutuskan. Ia tidak mengatakan bahagia. Dalam setiap foto berikutnya senyumnya tetap sempurna, dan semua orang yang hanya melihat hasilnya dapat mengira dua hal itu berarti sama."""
+Kuroiwa pernah bertanya di dekat pintu mobil apakah ia sungguh ingin tetap memakai cincin itu. Shiori hanya menjawab bahwa tanggalnya sudah dicetak di kartu undangan, lalu merapikan lipatan sarung tangannya dan melangkah masuk ke aula jamuan dengan senyum yang persis sama seperti di sampul majalah keluarga."""
 
-    # ┌─ ENDING · E-SH-09 · Ratu Menjatuhkan Protagonis  [Khusus · host Y/C]
+    # ┌─ ENDING · E-SH-09 · Ratu Menjatuhkan MC  [Khusus · host Y/C]
     # │ KAPAN   : sasaran_balas Koita
     # │ ISI SKRG: Koita dijatuhkan di depan semua orang; deviasi sangat tinggi; E-KO-09 terkunci
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
@@ -962,17 +960,17 @@ Kuroiwa pernah bertanya apakah ia masih ingin menjalaninya. Shiori menjawab suda
 
 Ia jatuh di depan lingkungan yang paling mengenalnya. Ada tuduhan yang dapat dijawab dengan fakta, ada luka yang tak selesai oleh pembelaan bahwa ia tidak pernah bermaksud menyakiti. Setelah hari itu, sapaan hangat yang diandalkannya tidak lagi cukup membuat orang mau tinggal.
 
-Shiori mendapat hasil yang diinginkan. Ia melihat Koita berusaha menahan wajah tetap biasa dan mengetahui tepat kapan usaha itu gagal. Yang tersisa bukan perasaan puas yang sesederhana dugaan semula, melainkan keputusan untuk tetap menyebut akibat tersebut layak. Ratu telah menjatuhkan protagonis; orang-orang di sekelilingnya kini harus menjalani hidup setelah pertunjukan selesai."""
+Dari balkon lantai dua gedung klub, Shiori memperhatikan Koita merapikan tasnya buru-buru di halaman bawah sementara dua anggota lama berbalik menghindari tatapannya. Begitu punggung pemuda itu menghilang di balik pagar kampus, Shiori menutup jendela kaca dan kembali menyusun bidak untuk pertandingan sore."""
 
     # ┌─ ENDING · E-SH-10 · Keadilan yang Tersenyum  [Khusus · host Y/C]
-    # │ KAPAN   : sasaran_balas Ogawa, Kuga, atau Mei; pemain memberi bukti
+    # │ KAPAN   : sasaran_balas Ogawa, Kuga, atau Meisa; pemain memberi bukti
     # │ ISI SKRG: pelaku dijatuhkan; Shiori dan pemain menjadi sekutu yang saling waspada
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
-    KK_END_TEXT["E-SH-10"] = """Bukti yang kauberikan membantu Shiori menjatuhkan pihak yang telah memakai orang lain: Ogawa, Kuga, atau Mei, sesuai perbuatan yang akhirnya dapat dibuktikan. Kuasa yang mereka andalkan mulai kehilangan perlindungan ketika cerita tak lagi dapat dikendalikan satu pihak.
+    KK_END_TEXT["E-SH-10"] = """Bukti yang kauberikan membantu Shiori menjatuhkan pihak yang telah memakai orang lain: Ogawa, Kuga, atau Meisa, sesuai perbuatan yang akhirnya dapat dibuktikan. Kuasa yang mereka andalkan mulai kehilangan perlindungan ketika cerita tak lagi dapat dikendalikan satu pihak.
 
 Orang-orang yang dilukai tetap memerlukan dukungan setelah hasil itu tiba. Shiori tidak berhak menjadikan pemulihan mereka panggung untuk menunjukkan kecerdasannya, dan kau beberapa kali mengingatkan hal tersebut dengan hati-hati. Ia mendengar, meski tidak selalu menyukai waktunya.
 
-Kalian menjadi sekutu yang tahu cukup banyak tentang kemampuan satu sama lain untuk tidak sepenuhnya santai. Ada hormat, ada kewaspadaan, dan sebuah kesepakatan bahwa kebenaran harus tetap dapat diperiksa bahkan ketika hasilnya terasa memuaskan. Senyum Shiori kembali hangat pada beberapa hari, tanpa membuat siapa pun lupa seberapa jauh ia bersedia bergerak saat merasa perlu."""
+Sesekali kalian masih minum teh bersama di teras kafetaria setelah berkas pemeriksaan resmi ditutup. Shiori meletakkan cangkirnya tanpa suara, menanyakan kabar proyekmu pekan ini, lalu menatap matamu dua detik lebih lama sebelum tersenyum dan mengganti pokok bahasan."""
 
     # ┌─ ENDING · E-SH-11 · Jalur Hukum  [Hancur · host Y/C]
     # │ KAPAN   : pemain pelaku Force terhadapnya
@@ -982,7 +980,7 @@ Kalian menjadi sekutu yang tahu cukup banyak tentang kemampuan satu sama lain un
 
 Proses akademik mengakhiri tempatmu di kampus, lalu proses pidana berakhir dengan hukuman penjara. Pengaruh sosial mempersempit akses yang dahulu memudahkanmu menghindari akibat, tetapi hasil tersebut tidak mengembalikan hari-hari Shiori seperti semula.
 
-Ia tidak menyebut penuntutan sebagai cara mendapatkanmu kembali dalam bentuk lain. Tidak ada romansa yang bertahan di balik kekerasan. Ketika namamu akhirnya tidak perlu disebut setiap minggu, Shiori meminta semua orang berhenti menanyakan apakah ia puas. Ia ingin hidupnya mempunyai lebih banyak isi daripada hasil hukuman seseorang yang pernah melukainya."""
+Ketika putusan pengadilan akhirnya dibacakan dan namamu tidak lagi perlu disebut dalam jadwal mingguan keluarga Saionji, Shiori meminta Kuroiwa menyimpan seluruh map perkara ke lemari arsip bawah tanah. Sore itu ia kembali ke ruang klub setelah berbulan-bulan kosong, membuka jendela lebar-lebar, dan mengelap debu di papan kayu sendirian."""
 
     # ┌─ ENDING · E-SH-12 · Shena dan Pembacanya  [Romantis · host C]
     # │ KAPAN   : Chiasa mengaku sebagai Shena sebelum Shiori menemukannya sendiri; respek ≥ 70; tanpa kebohongan lain yang ia temukan
@@ -992,7 +990,7 @@ Ia tidak menyebut penuntutan sebagai cara mendapatkanmu kembali dalam bentuk lai
 
 Shiori tetap pembaca yang cerewet. Ia mengingat ilustrasi lama yang bahkan pembuatnya sudah lupa, menanyakan keputusan warna, lalu mendengarkan ketika Chiasa mengatakan ada hal yang belum dapat dikerjakan seperti dulu. Kekaguman pada karya tidak dijadikan syarat agar orang di depannya terus sama dengan harapannya.
 
-Hubungan tumbuh dari keberanian untuk terlihat tanpa seluruh keahlian sebagai pelindung. Pada buku berikutnya Shiori melihat namanya dalam ucapan terima kasih, kecil di antara yang lain. Ia menggoda tentang ukuran huruf, kemudian menyimpan dua eksemplar tanpa menganggap perlu menjelaskan mengapa satu saja tidak cukup."""
+Pada buku ilustrasi berikutnya, Shiori menemukan namanya tercetak kecil di baris ucapan terima kasih halaman belakang. Ia sempat menyindir ukuran hurufnya sambil menyeruput teh di studio Chiasa, tetapi sepulang dari sana ia membeli dua eksemplar sekaligus di toko buku stasiun dan membungkus satu dengan kertas sampul bening."""
 
     # ┌─ ENDING · E-SH-13 · Shena dan Penipunya  [Buruk · host C]
     # │ KAPAN   : Chiasa berbohong soal Shena lalu ketahuan
@@ -1002,7 +1000,7 @@ Hubungan tumbuh dari keberanian untuk terlihat tanpa seluruh keahlian sebagai pe
 
 Balasannya menyasar tempat kebohongan itu memperoleh manfaat. Karier Shena diperiksa, relasi profesional menuntut penjelasan, dan rahasia Chiasa yang selama ini disimpan dalam lingkungan terpisah bertemu di hadapan orang-orang yang sama. Tidak ada lagi kemudahan mengganti versi berdasarkan siapa yang bertanya.
 
-Chiasa berusaha menjelaskan bagian yang sulit dipercayai. Shiori meminta bukti dan menolak menyebut keterlambatan sebagai keberanian. Kekaguman seorang pembaca telah berubah menjadi ketelitian seorang lawan yang terluka. Setiap halaman yang dahulu mempertemukan mereka kini juga mengingatkan hal yang sengaja disembunyikan di luar gambar."""
+Di meja redaksi penerbit, Shiori menyerahkan tumpukan tangkapan layar dan riwayat pesan yang telah diberi penanda tanggal satu per satu. Ketika Chiasa mencoba meraih ujung map itu untuk menjelaskan, Shiori menggeser berkasnya menjauh dan meminta sekretaris ruangan mencatat jam berakhirnya pertemuan."""
 
     # ┌─ ENDING · E-SH-14 · Lawan Tanpa Nama  [Romantis · host Y/C]
     # │ KAPAN   : akun anonim aktif lama; pemain mengaku sendiri sebelum ketahuan; respek ≥ 70; tanpa kebohongan lain yang ia temukan
@@ -1012,7 +1010,7 @@ Chiasa berusaha menjelaskan bagian yang sulit dipercayai. Shiori meminta bukti d
 
 Ia menanyakan mengapa identitas itu disimpan dan mendengar jawabanmu sebelum menetapkan apa artinya. Pengakuan yang datang atas kemauan sendiri membuat kedekatan daring tidak berubah menjadi bukti bahwa seluruh pertemuan kalian telah disusun untuk mempermainkannya.
 
-Kini lawan di layar dapat duduk di hadapannya. Ada kecanggungan baru ketika giliran bergerak bercampur dengan keinginan memperhatikan tangan atau wajah orang lain. Pada malam pertama sesudah kencan, Shiori tetap mengirim undangan bermain. Ia menambahkan pesan bahwa kali ini ia tahu siapa yang ditunggu, dan ternyata menunggu itu menjadi lebih sulit."""
+Kini lawan di layar itu duduk langsung di seberang mejanya dengan lutut yang sesekali bersentuhan di bawah papan. Malam pertama sepulang dari kencan mereka, ponselmu tetap berdenting tepat pukul sebelas menampilkan undangan pertandingan daring dari akun Shiori, lengkap dengan pesan singkat: jangan berani-berani mengalah."""
 
     # ┌─ ENDING · E-SH-15 · Pion di Papan Orang Lain  [Terdistorsi · host Y/C]
     # │ KAPAN   : Shiori memegang semua rahasia pemain tetapi memilih tidak menghancurkannya
@@ -1022,7 +1020,7 @@ Kini lawan di layar dapat duduk di hadapannya. Ada kecanggungan baru ketika gili
 
 Kau mulai meminta izin sebelum membuat keputusan yang dahulu sederhana. Siapa yang ditemui, kapan pergi, bagian mana yang boleh diceritakan: setiap pilihan diperiksa terhadap kemungkinan membuatnya memakai pengetahuan yang kini hanya ditahan.
 
-Jika berpapasan, Shiori tersenyum dengan sopan. Orang lain menganggap kalian akrab. Kau tahu keramahan itu bukan jaminan keselamatan, hanya pengingat bahwa kehancuran belum dipilih hari ini. Menjadi pion yang tetap berdiri ternyata memberi lebih banyak waktu untuk takut daripada dikeluarkan dari papan sekaligus."""
+Setiap kali kalian berpapasan di tangga gedung utama, Shiori selalu menyapamu dengan anggukan sopan yang membuat teman-teman di sekitarmu mengira kalian akrab. Begitu ia lewat, layar ponsel di sakumu menyala menampilkan satu pesan singkat darinya yang mengingatkan jam berapa kau harus sudah pulang malam ini."""
 
     # ┌─ ENDING · E-SH-16 · Senyum Terakhir  [Buruk · host Y/C]
     # │ KAPAN   : S-D15 umpan berhasil; pemain membuka rahasia terakhirnya padanya
@@ -1032,7 +1030,7 @@ Jika berpapasan, Shiori tersenyum dengan sopan. Orang lain menganggap kalian akr
 
 Pada hari evaluasi, ia menunjukkan apa yang sebenarnya telah dipahami. Cerita yang kaubawa sebagai kemenangan bertemu bukti dan akibat yang disusun tanpa sepengetahuanmu. Dalam satu hari, hubungan, akses, dan posisi yang dahulu terasa kokoh kehilangan tempat untuk berdiri.
 
-Shiori tersenyum ketika kau menyebut perasaannya. Ia tidak memberimu kepastian apakah pernah ada sesuatu yang tulus di antara langkah-langkah itu. Kau ditinggalkan dengan kenangan yang kini tidak bisa dibaca tanpa takut. Kekalahan terakhirnya bagimu adalah merampas kemudahan mempercayai versimu sendiri tentang bagaimana kau pernah dicintai."""
+Ketika kau menghampirinya di koridor setelah pengumuman skorsing keluar dan menanyakan apakah semua malam di ruang klub hanyalah jebakan, Shiori hanya memiringkan kepala sambil menutup payungnya. Ia tidak menjawab ya atau tidak, hanya melangkah masuk ke mobil hitam keluarga Saionji dan membiarkan kaca jendelanya naik perlahan."""
 
 
     # ═════ Chiasa ═════
@@ -1044,7 +1042,7 @@ Shiori tersenyum ketika kau menyebut perasaannya. Ia tidak memberimu kepastian a
 
 Mereka sama-sama mengenal kesepian dan belajar agar pengetahuan itu tidak menjadi alasan menahan pasangan dari kehidupan di luar rumah. Chiasa tetap menggambar; Yutaka punya tanggung jawab yang tidak selalu membuatnya bisa pulang cepat. Ada pesan yang dijawab terlambat tanpa langsung menjadi sidang tentang kesetiaan.
 
-Kunci mereka diletakkan pada dua kait sejajar. Rumah itu tidak menjanjikan bahwa tak seorang pun akan pernah ingin pergi. Ia memberi alasan untuk kembali, dengan tempat yang dibangun oleh dua orang yang masih boleh menginginkan sesuatu miliknya sendiri."""
+Di balik pintu masuk apartemen baru mereka, dua gantungan kunci diletakkan berdampingan di papan kayu kecil. Malam itu Chiasa masih menyalakan lampu meja gambarnya sampai pukul sebelas, sementara Yutaka keluar dari dapur membawa dua cangkir susu hangat dan meletakkan satu di dekat kotak pensilnya."""
 
     # ┌─ ENDING · E-CH-02 · Diterima  [Koita · host Y]
     # │ KAPAN   : Koita Success NPC; Daisuke dan Yoshie menerima
@@ -1054,7 +1052,7 @@ Kunci mereka diletakkan pada dua kait sejajar. Rumah itu tidak menjanjikan bahwa
 
 Chiasa semula menyangka pengakuan Koita akan mengakhiri seluruh takutnya. Ia menemukan masih perlu belajar memberi ruang, tidak memeriksa setiap keterlambatan sebagai kemungkinan ditinggalkan. Koita pun tidak lagi boleh bersembunyi di balik kebiasaan serumah untuk menunda jawaban.
 
-Pada makan malam pertama sesudah keputusan keluarga, Chiasa mengambil piring untuk dirinya lebih dahulu. Sesuatu yang kecil berubah: ia tidak harus menyediakan segalanya agar tempatnya tetap diakui."""
+Pada makan malam pertama sesudah pembicaraan panjang itu selesai, Chiasa mengambil piring untuk dirinya sendiri lebih dulu sebelum menyendokkan nasi untuk Koita. Saat tangan mereka bersentuhan di dekat teko teh, Yoshie yang duduk di seberang meja hanya menghela napas pelan lalu meneruskan memotong buah."""
 
     # ┌─ ENDING · E-CH-03 · Berpisah Baik-baik  [Netral · host Y]
     # │ KAPAN   : Koita Success NPC; keduanya memilih berpisah
@@ -1064,7 +1062,7 @@ Pada makan malam pertama sesudah keputusan keluarga, Chiasa mengambil piring unt
 
 Kembali menjadi keluarga memerlukan jarak. Chiasa berhenti menyiapkan rutinitas untuk memastikan Koita selalu pulang kepadanya; Koita tidak lagi memakai kelembutan yang ambigu saat merasa sepi. Keduanya perlu menerima kehilangan tanpa meminta yang lain segera bersikap biasa.
 
-Suatu hari mereka kembali makan di meja yang sama dan membicarakan hal sederhana tanpa mempertahankan peran. Bekasnya tetap ada, tetapi tidak semua bekas harus menjadi luka yang terus dibuka. Rumah mereka pelan-pelan menemukan cara menampung keluarga yang sudah berubah."""
+Pada Minggu sore beberapa bulan kemudian, mereka kembali duduk di meja makan yang sama untuk mengupas jeruk sambil menonton televisi ruang tengah. Ketika acara selesai, Koita membawa piring kotornya sendiri ke dapur, dan Chiasa naik ke lantai dua sambil melambai singkat dari anak tangga."""
 
     # ┌─ ENDING · E-CH-04 · Dipisah Paksa  [Buruk · host Y]
     # │ KAPAN   : Koita Success NPC; keluarga menolak keras
@@ -1074,7 +1072,7 @@ Suatu hari mereka kembali makan di meja yang sama dan membicarakan hal sederhana
 
 Koita mungkin yang pergi, mungkin Chiasa yang dipindahkan; rumah yang ditinggalkan keduanya sama-sama kehilangan keseharian yang dahulu terasa aman. Panggilan telepon menjadi pendek, penuh pertanyaan yang harus dijawab hati-hati agar tak membangkitkan pertengkaran berikutnya.
 
-Pemisahan tidak otomatis mematikan perasaan, juga tidak membuatnya lebih luhur. Chiasa harus belajar hidup di tempat yang tidak dibangun dari jam pulang Koita. Pada hari evaluasi, ia masih menyimpan satu barang dari rumah, belum tahu apakah benda itu akan membantu merawat kenangan atau membuatnya terus merasa belum sungguh pergi."""
+Di kamar kos barunya yang menghadap jalan raya, Chiasa mengeluarkan satu cangkir keramik bergambar kelinci yang terbawa dari lemari dapur rumah Amamiya. Ia meletakkannya di rak paling atas dekat jendela, lalu duduk di tepi kasur yang masih terbungkus plastik sambil menatap layar ponsel yang sunyi."""
 
     # ┌─ ENDING · E-CH-05 · Digantung Lagi  [Buruk · host Y]
     # │ KAPAN   : Koita Success NPC; Koita kembali ke pola lama
@@ -1084,7 +1082,7 @@ Pemisahan tidak otomatis mematikan perasaan, juga tidak membuatnya lebih luhur. 
 
 Kini ia berada di dalam pola itu. Setiap keberatan disebut terlalu sensitif, setiap janji baru cukup hangat untuk menunda keberanian pergi. Tinggal serumah membuatnya lebih dekat dan sekaligus lebih sulit mengambil jarak.
 
-Chiasa mulai menunggu bunyi kunci dengan perasaan yang berubah-ubah: lega, marah, lalu malu karena masih lega. Yang paling pahit adalah mengetahui ia dahulu mengira kedekatan keluarga akan membuatnya menjadi pengecualian. Koita kembali tidak memilih, dan ia menjadi orang berikutnya yang diminta menyebut penantian itu pengertian."""
+Pukul sebelas malam, Chiasa kembali memanaskan sup di dapur setiap kali terdengar bunyi langkah kaki di gang depan rumah. Ketika pintu akhirnya terbuka dan Koita masuk sambil tersenyum meminta maaf karena sudah makan di luar bersama teman, Chiasa hanya mematikan kompor dan menuang sup itu kembali ke panci."""
 
     # ┌─ ENDING · E-CH-06 · Shena Saja  [Netral · host Y]
     # │ KAPAN   : tanpa romansa; Chiasa pindah dan fokus seni
@@ -1094,7 +1092,7 @@ Chiasa mulai menunggu bunyi kunci dengan perasaan yang berubah-ubah: lega, marah
 
 Karier Shena berjalan. Ia belajar membuat janji profesional yang dapat ditepati tanpa menghabiskan seluruh malam, menerima kritik yang tidak perlu dianggap penolakan terhadap dirinya. Tidak ada hubungan romantis yang dijadikan pusat perpindahan itu.
 
-Rumah Amamiya tetap dapat dihubungi, tetapi tidak lagi menentukan seluruh isi harinya. Chiasa kadang kesepian dan tetap memilih tinggal. Pada sampul berikutnya namanya kecil seperti biasa. Ia tahu berapa banyak hidup yang diperlukan untuk membuat gambar tersebut, dan kali ini cukup banyak bagian hidup itu memang dipilihnya sendiri."""
+Pada sampul buku cetakan terbaru yang tiba lewat kurir pagi itu, nama Shena tercetak kecil di sudut bawah ilustrasi. Chiasa merobek kardus pembungkusnya di lantai studio, memajang satu eksemplar di rak dekat jendela, lalu kembali menyalakan tablet gambarnya sebelum kopi di mejanya dingin."""
 
     # ┌─ ENDING · E-CH-07 · Tersisih Dua Kali  [Buruk · host Y]
     # │ KAPAN   : Rute BL berhasil; Chiasa tidak didekati
@@ -1104,7 +1102,7 @@ Rumah Amamiya tetap dapat dihubungi, tetapi tidak lagi menentukan seluruh isi ha
 
 Ia tidak bisa menuntut cinta sebagai upah karena tumbuh bersama. Mengetahui itu tidak membuat sakitnya menjadi lebih rapi. Untuk beberapa waktu ia menolak undangan yang akan mempertemukan mereka bertiga, memilih diam daripada harus menampilkan dukungan yang belum sanggup dirasakan.
 
-Chiasa menjauh dari keduanya. Di kamar, ia menggambar sampai larut lalu berhenti sebelum kelelahan mengambil seluruh pikiran. Masa depannya belum menemukan bentuk lain, tetapi ia mulai mengerti bahwa memberi jarak tidak selalu berarti menghukum. Kadang itu satu-satunya cara agar dirinya tetap punya ruang untuk pulih."""
+Chiasa berhenti datang ke acara makan malam yang mempertemukan mereka bertiga. Di kamarnya yang hanya diterangi lampu meja, ia menarik garis sketsa baru sampai pukul satu malam, mematikan ponsel sebelum tidur, dan menggantung jadwal kelas minggu depan di atas foto lama mereka yang sudah dibalik menghadap dinding."""
 
     # ┌─ ENDING · E-CH-08 · Sekutu Paling Setia  [Khusus · host Y]
     # │ KAPAN   : Rute BL; Yutaka jujur pada Chiasa sejak awal
@@ -1114,7 +1112,7 @@ Chiasa menjauh dari keduanya. Di kamar, ia menggambar sampai larut lalu berhenti
 
 Ketika ia akhirnya berdiri di depan keluarga untuk membela hubungan mereka, ia tidak sedang menyerahkan hidupnya agar dua orang lain bahagia. Ia menyebut bahwa Koita harus menjawab sendiri, Yutaka harus bertanggung jawab atas pilihannya, dan keluarga perlu mendengar sebelum menganggap semua telah diputuskan bagi mereka.
 
-Sesudah percakapan panjang, Chiasa pulang ke kamarnya dan menutup pintu untuk menggambar. Ia telah memilih menjadi sekutu. Dukungan itu berharga justru karena ia masih punya kehidupan yang tidak seluruhnya harus berputar di sekitar keduanya."""
+Sesudah perdebatan panjang di ruang tamu itu mereda, Chiasa menepuk pundak Yutaka sekali di dekat rak sepatu lalu naik ke kamarnya sendiri. Ia menutup pintu pelan, menyalakan lampu meja gambar, dan memasang penyumbat telinga sambil membuka lembar kanvas baru."""
 
     # ┌─ ENDING · E-CH-09 · Rumah yang Tidak Aman  [Hancur · host Y]
     # │ KAPAN   : pemain pelaku Force terhadapnya
@@ -1124,7 +1122,7 @@ Sesudah percakapan panjang, Chiasa pulang ke kamarnya dan menutup pintu untuk me
 
 Ia tetap tinggal bersama Koita. Daisuke dan Yoshie pulang dengan kecewa serta amarah yang harus diarahkan kepada pelaku, bukan kepada keputusan Chiasa sesudahnya. Mereka mencari cara mendukung tanpa mengambil alih seluruh pilihannya.
 
-Tidak ada cinta yang membuatmu berhak kembali. Rumah mulai menegakkan batas tentang siapa yang boleh masuk, dan namamu berada di sisi yang ditutup. Chiasa belum selalu dapat merasa aman di kamarnya, tetapi kunci itu kembali menjadi sesuatu yang boleh dipegang untuk melindungi dirinya."""
+Kunci pintu rumah Amamiya diganti pada pekan berikutnya, dan paket atau surat tanpa nama pengirim langsung ditahan Daisuke di teras depan. Di kamarnya, Chiasa memasang gerendel tambahan dari besi di sebelah gagang kayu, lalu baru bisa menyalakan lampu meja gambarnya setelah memeriksa kunci itu dua kali."""
 
     # ┌─ ENDING · E-CH-10 · Adik yang Kembali  [Netral · host Y]
     # │ KAPAN   : tidak ada rute romansa dengan Chiasa; keluarga utuh
@@ -1134,7 +1132,7 @@ Tidak ada cinta yang membuatmu berhak kembali. Rumah mulai menegakkan batas tent
 
 Keluarga tetap utuh. Ada makan bersama yang tidak lengkap karena jadwal berbeda, ada tugas yang dibagi lebih adil, ada hari ketika Chiasa memilih menggambar daripada mengurus seluruh rumah. Koita belajar menanyakan sebelum mengandalkan kebiasaannya menyediakan.
 
-Pada foto berikutnya ia tidak lagi berusaha selalu berdiri paling dekat. Rumah itu punya tempat baginya tanpa perlu diukur dari jumlah sentimeter di sebelah seseorang. Ia belum tahu seluruh yang akan diinginkan setelah wisuda, dan untuk sekarang ketidaktahuan tersebut tidak terasa seperti ancaman."""
+Dalam foto keluarga terbaru yang diambil di halaman depan sebelum berangkat wisuda, Chiasa berdiri di sisi ibunya sambil memegang map sketsa, tidak lagi mendesak masuk ke sela antara Koita dan Yutaka. Begitu kamera selesai memotret, ia langsung berbalik masuk lebih dulu untuk mengambil jaketnya."""
 
     # ┌─ ENDING · E-CH-11 · Bukan Piala  [Buruk · host Y]
     # │ KAPAN   : Yutaka merebut Chiasa hanya untuk menyakiti Koita, lalu ketahuan
@@ -1144,7 +1142,7 @@ Pada foto berikutnya ia tidak lagi berusaha selalu berdiri paling dekat. Rumah i
 
 Ia menolak Yutaka, lalu menolak berlindung kembali pada Koita hanya karena yang satu sudah membuatnya kecewa. Keduanya tidak diberi kesempatan menjadikan keputusan itu pertarungan lanjutan tentang siapa lebih pantas mendapatkannya.
 
-Chiasa pergi dengan barang yang memang miliknya. Pada percakapan terakhir ia mengatakan tidak mau dibahas seperti benda yang direbut atau dikembalikan. Suaranya pelan dan sangat jelas. Sesudahnya ia tidak menunggu apakah mereka akhirnya memahami; ia perlu mulai menjalani hidup yang tak bergantung pada keberhasilan dua orang itu menghormatinya."""
+Chiasa mengemasi kotak cat dan buku sketsanya dari ruang klub sore itu juga, menolak tangan Yutaka maupun Koita yang hendak membawakan tasnya di pintu. Ia menuruni tangga gedung sendirian, dan ketika keduanya memanggil dari lantai atas, ia terus berjalan menembus halaman sampai keluar gerbang."""
 
     # ┌─ ENDING · E-CF-01 · Rumah Baru  [Romantis · host C]
     # │ KAPAN   : yuri dengan heroine utama; deviasi cukup
@@ -1154,7 +1152,7 @@ Chiasa pergi dengan barang yang memang miliknya. Pada percakapan terakhir ia men
 
 Reaksi keluarga Amamiya memberi warna pada hari pertama: dukungan dapat membuat kepindahan hangat, keraguan meninggalkan percakapan yang perlu dilanjutkan, penolakan membuat beberapa perayaan terasa kehilangan kursi. Hubungan kalian tidak otomatis menghapus bagian yang sakit itu.
 
-Di rumah ini kau dipanggil Chiasa oleh seseorang yang mengenal pilihan-pilihanmu sekarang. Pertanyaan tentang identitas dan hidup yang diwarisi belum seluruhnya selesai. Namun kebersamaan tersebut mulai dapat diuji melalui hal nyata: kalian mendengar, bertengkar, mengoreksi, dan tetap memberi ruang agar cinta tidak berubah menjadi kewajiban untuk terus sama."""
+Malam pertama di apartemen itu, kotak kardus masih menumpuk di lorong sempit dekat kamar mandi. Pasanganmu memanggil namamu dari dapur untuk menanyakan letak gunting, dan saat kau menyerahkannya di bawah lampu kuning yang baru dipasang, ia mencium pipimu sekilas sebelum kembali membuka bungkusan piring."""
 
     # ┌─ ENDING · E-CF-02 · Diterima  [Koita · host C]
     # │ KAPAN   : Koita Success; keluarga menerima
@@ -1164,7 +1162,7 @@ Di rumah ini kau dipanggil Chiasa oleh seseorang yang mengenal pilihan-pilihanmu
 
 Kau menjalani penerimaan itu dalam tubuh Chiasa, dengan kedekatan masa lalu yang tidak seluruhnya menjadi ingatanmu sendiri. Koita pun mulai mengenal dirimu sekarang sebagai seseorang yang boleh berbeda dari kebiasaan adiknya dahulu.
 
-Panggilan Ko-nii masih datang pada saat tertentu, membawa sejarah yang tak dapat dirapikan dengan keputusan baru. Kalian tidak perlu berpura-pura semua mudah. Yang disetujui keluarga adalah ruang untuk menjalani pilihan secara bertanggung jawab, bukan jaminan bahwa satu pengakuan akan menghapus seluruh akibat atau keraguan."""
+Panggilan Ko-nii kadang masih terlepas dari mulutmu saat memintanya mengambilkan garam di meja makan, membuat Daisuke terbatuk kecil di balik korannya. Koita tidak lagi pura-pura tidak mendengar; ia menyerahkan botol garam itu ke tanganmu, lalu menuangkan teh ke cangkirmu di depan kedua orang tua kalian."""
 
     # ┌─ ENDING · E-CF-03 · Berpisah Baik-baik  [Netral · host C]
     # │ KAPAN   : Koita Success; keduanya mundur
@@ -1174,7 +1172,7 @@ Panggilan Ko-nii masih datang pada saat tertentu, membawa sejarah yang tak dapat
 
 Kembali menjadi saudara tiri bukan gerakan yang menghapus semua kenangan. Kalian mengubah batas dalam keseharian: mengetuk pintu, bertanya sebelum menyentuh, tidak memakai kesepian sebagai alasan menghidupkan lagi harapan yang telah ditutup.
 
-Sistem tetap menunggu evaluasi terhadap deviasi yang dibuat. Di luar perhitungannya, ada satu hubungan keluarga yang perlu dirawat dengan lebih jujur. Pada suatu pagi Koita menanyakan apakah kau mau sarapan bersama. Kau menjawab sesuai keinginan hari itu, tak lagi merasa setiap iya atau tidak harus menjelaskan seluruh perasaan di antara kalian."""
+Pagi itu Koita mengetuk pintu kamarmu dua kali sebelum membukanya sedikit untuk menanyakan apakah kau mau sarapan bersama di bawah. Kau melihat jam meja, mengatakan masih ingin tidur lima belas menit lagi, dan ia mengangguk singkat lalu menutup kembali pintunya rapat-rapat."""
 
     # ┌─ ENDING · E-CF-04 · Dipisah Paksa  [Buruk · host C]
     # │ KAPAN   : Koita Success; keluarga memisahkan
@@ -1184,7 +1182,7 @@ Sistem tetap menunggu evaluasi terhadap deviasi yang dibuat. Di luar perhitungan
 
 Kau menjalani perpindahan dengan barang Chiasa, pertanyaanmu sendiri, dan percakapan yang terputus ketika semua orang terlalu marah untuk mendengar. Kedekatan tidak lenyap hanya karena alamat berubah; justru pada beberapa malam ia terasa lebih sulit karena tak dapat lagi dijalani melalui hal biasa.
 
-Sistem menilai perubahan tanpa memedulikan koper yang belum dibongkar. Bagimu akibatnya lebih konkret: tidak ada lagi kursi sarapan yang otomatis dapat diduduki. Hidup berikutnya tetap harus dibangun, sebelum kau tahu apakah perpisahan ini akan menjadi jeda, akhir, atau luka keluarga yang terlalu lama dibiarkan tanpa kata."""
+Pada malam pertama di kamar sewaan barumu, dua koper pakaian Chiasa masih berdiri belum dibuka di dekat lemari. Kau duduk di lantai beralas karpet tipis, menyantap nasi kotak dari minimarket sendirian sementara bunyi kereta rel layang menggantikan suara televisi ruang tengah rumah Amamiya."""
 
     # ┌─ ENDING · E-CF-05 · Digantung Lagi  [Buruk · host C]
     # │ KAPAN   : Koita Success; Koita kembali menggantung
@@ -1194,7 +1192,7 @@ Sistem menilai perubahan tanpa memedulikan koper yang belum dibongkar. Bagimu ak
 
 Kini pengetahuan katalog tak membantu menenangkan tubuh yang menunggu jawaban. Kau dapat menamai setiap penghindaran sambil tetap ingin mempercayai satu kalimat yang menjanjikan semuanya berbeda denganmu.
 
-Chiasa tidak lagi sekadar tubuh yang kautempati atau hubungan yang bisa digeser dalam evaluasi. Kau hidup di dalam akibatnya, mengetahui bahwa orang dapat sangat sadar sedang disakiti dan tetap kesulitan pergi. Pada malam Koita terlambat pulang, kau mendapati dirimu menyiapkan dua piring, lalu berdiri lama sebelum memutuskan apa yang sebenarnya ingin dilakukan dengan yang kedua."""
+Pada malam Koita kembali pulang lewat pukul sepuluh tanpa mengabari, kau mendapati dirimu sudah menata dua piring makan malam di meja ruang tengah. Kau berdiri lama menatap piring kedua yang mulai dingin, lalu membungkusnya dengan plastik penutup dan memasukkannya ke kulkas sebelum bunyi kunci terdengar di pintu depan."""
 
     # ┌─ ENDING · E-CF-06 · Bersama Yutaka  [Koita · host C]
     # │ KAPAN   : Chiasa × Yutaka
@@ -1204,27 +1202,27 @@ Chiasa tidak lagi sekadar tubuh yang kautempati atau hubungan yang bisa digeser 
 
 Kalian mulai hidup bersama dengan kebiasaan yang perlu dipelajari. Ada saat kau merasa dicintai sebagai Chiasa yang dikenalnya dahulu, lalu perlu mengatakan bahwa keinginanmu kini berbeda. Yutaka belajar mendengar bagian itu tanpa menganggapnya penolakan atas seluruh kenangan.
 
-Hubungan tersebut sendiri mengikuti kemungkinan yang juga dimiliki cerita lama. Ia tidak otomatis meloloskan evaluasi Sistem; deviasi lain tetap menentukan hasil akhirnya. Di meja dapur, kehidupan yang kaupilih terasa nyata. Kenyataan itu tidak membuat aturan penilaian menjadi lebih murah hati."""
+Di meja dapur, Yutaka sedang merapikan daftar belanja mingguan kalian sambil bersenandung pelan ketika jendela biru Sistem berkedip tipis di sudut pandanganmu. Kau menggenggam jemarinya yang hangat di atas kertas catatan itu, menatap angka evaluasi yang terus berjalan mundur di balik punggungnya."""
 
     # ┌─ ENDING · E-CF-07 · Nama Pena yang Runtuh  [Buruk · host C]
     # │ KAPAN   : rahasia Shena terbongkar sebagai kebohongan
-    # │ ISI SKRG: kontrak Mio diputus; pembaca marah
+    # │ ISI SKRG: kontrak Miono diputus; pembaca marah
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
-    KK_END_TEXT["E-CF-07"] = """Nama Shena runtuh ketika penjelasan tentang karya dan kemampuan yang berubah tidak lagi dapat dipertemukan. Mio meminta jawaban profesional, Haruka memandang garis yang tak sesuai kebohonganmu, dan pembaca bereaksi pada janji yang merasa pernah dibeli bersama buku.
+    KK_END_TEXT["E-CF-07"] = """Nama Shena runtuh ketika penjelasan tentang karya dan kemampuan yang berubah tidak lagi dapat dipertemukan. Miono meminta jawaban profesional, Karuha memandang garis yang tak sesuai kebohonganmu, dan pembaca bereaksi pada janji yang merasa pernah dibeli bersama buku.
 
 Kontrak diputus. Kau kehilangan akses yang dahulu diwarisi begitu saja, bersama kenyamanan menganggap nama pena akan terus menanggung ketidaksanggupanmu menjadi pemiliknya yang lama.
 
-Di meja ada kertas kosong yang tidak menuntut ditandatangani sebagai Shena. Namun memulai dari namamu sendiri terasa menakutkan ketika bahkan nama yang dipakai sehari-hari berasal dari kehidupan orang lain. Kerusakan karier itu tidak menentukan kau tak bisa belajar, tetapi ia mengakhiri kemudahan hidup dari kepercayaan yang belum sungguh dibangun oleh tanganmu sendiri."""
+Di atas meja kerjamu kini hanya ada selembar kertas gambar putih yang tidak lagi boleh dibubuhi tanda tangan Shena. Kau memegang pensil kayu dengan jari yang kaku selama beberapa menit, menarik satu garis lengkung yang miring di tengah halaman, lalu menghapusnya lagi sampai permukaan kertas itu berbulu."""
 
     # ┌─ ENDING · E-CF-08 · Gaya Baru Shena  [Romantis · host C]
     # │ KAPAN   : pemain belajar menggambar sungguhan sampai layak
-    # │ ISI SKRG: Shena kembali dengan gaya baru; Mio dan Haruka menjadi saksi
+    # │ ISI SKRG: Shena kembali dengan gaya baru; Miono dan Karuha menjadi saksi
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
     KK_END_TEXT["E-CF-08"] = """Garis barumu tidak persis seperti Chiasa dahulu. Setelah cukup lama belajar, kesamaan itu tidak lagi menjadi satu-satunya ukuran yang dikejar. Kau dapat menjelaskan keputusan gambar, menerima kritik, dan mengulang tanpa harus menyembunyikan seluruh proses di balik alasan sedang lelah.
 
-Mio melihat pekerjaan yang dapat ditepati. Haruka melihat usaha yang tidak lagi hanya berlatih meniru. Ketika Shena kembali menerbitkan karya, pembaca masih memperdebatkan perubahannya, tetapi kali ini ada jawaban yang dapat kauakui sebagai hasil tanganmu sendiri.
+Miono melihat pekerjaan yang dapat ditepati. Karuha melihat usaha yang tidak lagi hanya berlatih meniru. Ketika Shena kembali menerbitkan karya, pembaca masih memperdebatkan perubahannya, tetapi kali ini ada jawaban yang dapat kauakui sebagai hasil tanganmu sendiri.
 
-Kedekatan yang menyertai jalan itu tumbuh melalui orang yang melihatmu gagal dan tetap mau mengenal. Pada malam karya selesai, kau mengirim foto sketsa pertama di sebelah hasil akhir. Bukan untuk membuktikan dirimu telah menjadi orang lama, melainkan bahwa hidup baru ini akhirnya mempunyai sesuatu yang benar-benar kaubuat."""
+Pada malam buku cetakan pertama dengan gaya barumu selesai dijilid, kau memotret lembar sketsa kasar pertamamu di sebelah sampul jadi yang masih berbau tinta. Kau mengirim foto itu ke ponsel Miono dan Karuha, lalu mematikan layar tablet dan tidur nyenyak sampai pagi."""
 
     # ┌─ ENDING · E-CF-09 · Rumah Amamiya Retak  [Buruk · host C]
     # │ KAPAN   : Koita Success atau kejahatan memecah keluarga
@@ -1234,7 +1232,7 @@ Kedekatan yang menyertai jalan itu tumbuh melalui orang yang melihatmu gagal dan
 
 Percakapan yang dahulu berakhir dengan siapa mau makan berubah menjadi urusan kapan mengambil barang. Koita dan Chiasa tetap membawa hubungan mereka ke mana pun tinggal, tetapi kenangan serumah tidak lagi cukup untuk mempertemukan semua orang di meja yang sama.
 
-Kau mendengar ruang kosong dengan tubuh yang hafal suara rumah itu. Sistem mungkin mencatat perubahan besar. Bagimu perubahan itu juga berbentuk sandal yang tidak lagi berpasangan dekat pintu, satu lampu yang tak perlu dinyalakan, dan kebenaran bahwa tidak semua akibat dapat diperbaiki hanya karena penyesalan akhirnya datang."""
+Di rak dekat pintu masuk rumah Amamiya, kini hanya tersisa dua pasang sandal rumah yang jarang bergeser dari tempatnya. Saat kau pulang sore hari dan membuka pintu depan, lampu lorong tetap gelap, dan tak ada lagi aroma masakan atau suara televisi dari ruang tengah."""
 
     # ┌─ ENDING · E-CF-10 · Studio Sendiri  [Netral · host C]
     # │ KAPAN   : tanpa romansa
@@ -1244,7 +1242,7 @@ Kau mendengar ruang kosong dengan tubuh yang hafal suara rumah itu. Sistem mungk
 
 Tidak ada romansa yang menandai keberangkatan. Kau tetap terhubung dengan beberapa orang, mengambil jarak dari yang lain, dan belajar menjalani nama Chiasa tanpa setiap keputusan harus meniru harapan pemilik hidup sebelumnya.
 
-Di luar jendela, tanggal evaluasi tetap mendekat. Kemandirian ini tidak otomatis berarti lolos; deviasi yang dibuat di tempat lain masih menentukan penilaian. Namun hari-hari sebelum putusan itu menjadi milikmu untuk dijalani dengan sungguh-sungguh. Kau menyelesaikan satu gambar, menyiapkan makan, dan menyadari hidup sendiri pun dapat berisi keputusan yang layak dipertahankan."""
+Menjelang petang di hari sebelum tanggal evaluasi, cahaya matahari miring jatuh tepat di atas meja gambar tunggal di sudut studiomu. Kau menyimpan berkas ilustrasi terakhir, merebus sepanci kecil sup tahu di kompor listrik satu tungku, dan membuka jendela sedikit untuk membiarkan angin sore masuk."""
 
     # ┌─ ENDING · E-CF-11 · Lingkaran yang Runtuh  [Buruk · host C]
     # │ KAPAN   : beberapa hubungan yuri sekaligus terbongkar
@@ -1254,7 +1252,7 @@ Di luar jendela, tanggal evaluasi tetap mendekat. Kemandirian ini tidak otomatis
 
 Mereka pergi dengan cara berbeda. Ada yang memintamu mendengar marahnya sampai selesai, ada yang hanya mengirim satu kalimat, ada yang memerlukan teman agar sanggup mengambil barang. Kebersamaan tidak menjadi masalah karena jumlah orang semata, melainkan karena kehendak mereka ditentukan oleh informasi yang sengaja kausimpan.
 
-Rumah kembali sepi. Kau tidak dapat menjadikan kesepian itu alasan meminta mereka menebus akibat pilihanmu. Di ponsel masih ada foto saat semua tampak bahagia. Kini kau tahu betapa banyak hal yang tidak terlihat pada gambar, termasuk kesempatan yang seharusnya mereka punya untuk memilih dengan kebenaran yang utuh."""
+Menjelang tengah malam, ruang tamu kembali lengang dengan tiga cangkir teh yang ditinggalkan setengah penuh di atas meja. Di layar ponselmu masih tersimpan foto swafoto dari pekan lalu ketika mereka semua tersenyum, tepat di bawah deretan ruang pesan yang kini tak lagi menampilkan foto profil."""
 
     # ┌─ ENDING · E-CF-12 · Korban yang Ia Ciptakan  [Khusus · host C]
     # │ KAPAN   : jalur manipulasi pembalikan (§14); framing bertahan; nurani_chiasa < 70 sebelum M35
@@ -1264,7 +1262,7 @@ Rumah kembali sepi. Kau tidak dapat menjadikan kesepian itu alasan meminta merek
 
 Kau tidak mendapatkan hubungan romantis dari hasil itu. Ada simpati yang diberikan kepada cerita palsu, ada pintu yang dibuka karena orang mengira sedang menolong, dan semakin banyak percakapan yang harus dijalani tanpa mengakui siapa yang telah kaulukai.
 
-Ketika Koita akhirnya berhenti mencoba menjelaskan kepadamu, keheningan itu sempat terasa nyaman. Lalu kau menyadari setiap orang yang mengetahui sebagian kebenaran masih hidup di luar kendalimu. Evaluasi berakhir tanpa membatalkan masa lalu. Fitnah yang bertahan hari ini tetap sesuatu yang dapat terbuka besok, dan kehancuran yang telah dibuat tidak akan menjadi benar hanya karena cukup lama dipercaya."""
+Ketika Koita akhirnya berhenti mencoba menghadangmu di lorong rumah untuk meminta penjelasan, meja makan lantai satu menjadi jauh lebih sunyi. Namun setiap kali ponselmu berdering dengan nomor tak dikenal atau langkah seseorang melambat di belakangmu di koridor kampus, tanganmu refleks menutup layar dan memeriksa siapa yang sedang menatapmu."""
 
     # ┌─ ENDING · E-CF-13 · Pengakuan yang Tidak Diminta  [Khusus · host C]
     # │ KAPAN   : nurani_chiasa ≥ 70 sebelum M35; framing pernah terpasang lalu dicabut sendiri
@@ -1274,7 +1272,7 @@ Ketika Koita akhirnya berhenti mencoba menjelaskan kepadamu, keheningan itu semp
 
 Nama Koita mulai dibersihkan. Sebagian orang meminta maaf, sebagian menghindar karena malu, dan tidak semua kerusakan dapat dipulihkan oleh berita koreksi. Kepercayaan antara kalian tidak kembali menjadi kehidupan serumah yang lama.
 
-Kerja sama dalam mengungkap kebenaran membuat akibat terhadapmu lebih ringan daripada bila terus menutupinya, tetapi tidak menghapus tanggung jawab sosial dan proses yang tetap harus dijalani. Pada hari Koita memilih tidak bertemu, kau membiarkan jawabannya berlaku. Itu bukan penebusan yang selesai, hanya satu keputusan untuk berhenti menjadikan kebutuhanmu pusat dari luka yang menimpanya."""
+Pada sore ketika Koita akhirnya kembali mengambil buku-bukunya dari rumah ditemani seorang teman, kau tetap berdiri di dekat tangga tanpa menyusulnya ke pintu depan. Ia menutup pintu tanpa menoleh ke arahmu, dan kau kembali ke meja ruang tengah untuk menandatangani sisa berkas keterangan yang harus diserahkan ke kampus esok pagi."""
 
 
     # ═════ Yutaka ═════
@@ -1286,7 +1284,7 @@ Kerja sama dalam mengungkap kebenaran membuat akibat terhadapmu lebih ringan dar
 
 Hubungan kalian tumbuh dalam hal kecil: menunggu kelas selesai, bertengkar tentang waktu, mengaku cemburu sebelum candaan menjadi kejam. Ia belajar bahwa mencintai Chiasa tidak memberinya hak menebak seluruh isi kepalamu. Kau belajar menerima perhatian tanpa menjadikannya bukti bahwa kehidupan pinjaman ini sudah sepenuhnya milikmu.
 
-Di depan rumah Amamiya, ia menggenggam tanganmu setelah bertanya apakah boleh. Masa depan itu sungguh kalian inginkan. Di tempat yang tidak dapat didengarnya, kontrak masih menunggu perhitungan lain. Kebahagiaan kalian tidak otomatis membatalkan ancaman yang sejak awal tidak peduli pada cinta."""
+Di depan gerbang rumah Amamiya, Yutaka bertanya pelan apakah ia boleh menggenggam tanganmu sebelum kalian masuk. Kau mengulurkan jari-jarimu ke dalam genggamannya yang hangat, sementara di sudut penglihatanmu, baris hitungan kontrak Sistem masih menyala redup menunggu sisa deviasi yang belum terpenuhi."""
 
     # ┌─ ENDING · E-YU-02 · Mundur ke Luar Negeri  [Netral · host C]
     # │ KAPAN   : Yutaka mundur demi Koita
@@ -1296,7 +1294,7 @@ Di depan rumah Amamiya, ia menggenggam tanganmu setelah bertanya apakah boleh. M
 
 Di bandara, kau menawarkan tetap berkabar. Ia mengangguk dan mengatakan bahwa kadang ia mungkin tidak akan langsung menjawab. Itu bukan hukuman. Ia membutuhkan hidup yang tidak setiap harinya menunggu perubahan perasaanmu.
 
-Foto pertama datang beberapa minggu kemudian: jalan yang tidak kaukenal, makan malam sederhana, satu keluhan tentang pekerjaan. Kau membacanya dengan lega yang juga sedih. Jarak belum menyembuhkan semuanya. Untuk pertama kalinya, ia sedang membuat sesuatu yang tidak harus berakhir dengan kembali kepadamu."""
+Foto pertama darinya masuk ke ponselmu tiga minggu kemudian: sepiring roti panggang yang agak gosong, jalan berbatu yang masih basah oleh kabut pagi, dan satu keluhan pendek tentang jam masuk kantornya. Kau menyimpan gambar itu ke galeri, lalu menutup aplikasi pesan tanpa mengetik balasan yang memintanya pulang."""
 
     # ┌─ ENDING · E-YU-03 · Retak dan Menutup Diri  [Buruk · host C]
     # │ KAPAN   : Chiasa menolak lalu menggantung
@@ -1306,7 +1304,7 @@ Foto pertama datang beberapa minggu kemudian: jalan yang tidak kaukenal, makan m
 
 Apartemennya tetap terang pada malam hari. Permainan menyala, makanan datang, dan pesan kepada Koita dibiarkan sama lamanya dengan pesanmu. Ia malu karena merasa dipermainkan, lalu marah pada dirinya sendiri karena masih berharap satu pemberitahuan bisa mengubah semuanya.
 
-Kau tidak mendapat adegan penutupan yang rapi. Ada orang yang pelan-pelan meninggalkan percakapan karena terlalu lama diminta menunggu jawaban yang tidak sungguh ingin diberikan. Di layar, namanya masih ada. Kebiasaan memanggilnya ketika membutuhkan kenyamanan kini hanya memperjelas mengapa ia berhenti datang."""
+Di daftar kontak ponselmu, nama Yutaka masih tersemat di urutan teratas panggilan cepat. Namun setiap kali kau melewati gedung apartemennya saat pulang kuliah, tirai jendela lantai tiga itu selalu tertutup rapat, dan pesan ucapan selamat tahun baru yang kauikirim tetap berhenti pada satu tanda centang tanpa pernah dibaca."""
 
     # ┌─ ENDING · E-YU-04 · Sekutu Chiasa  [Khusus · host C]
     # │ KAPAN   : Chiasa jujur padanya
@@ -1316,7 +1314,7 @@ Kau tidak mendapat adegan penutupan yang rapi. Ada orang yang pelan-pelan mening
 
 Ia membantumu menghadapi percakapan sulit, tetap mengingatkan ketika kau mulai membenarkan perlakuan buruk kepada orang lain. Menjadi sekutu tidak berarti setuju pada setiap rencana. Kadang dukungan terpentingnya adalah menolak membiarkanmu memakai rasa takut sebagai alasan untuk melukai Koita.
 
-Pada hari yang panjang itu, ia menunggumu dengan dua minuman. Tidak ada tagihan perasaan di balik bantuannya. Kalian belum tahu akan menjadi apa setelah semua selesai, tetapi persahabatan ini akhirnya berdiri di atas pengetahuan yang lebih benar daripada dugaan dan harapan diam-diam."""
+Pada sore sesudah pertemuan yang menguras tenaga itu berakhir, Yutaka sudah duduk menunggumu di bangku dekat mesin penjual otomatis dengan dua kaleng teh hangat. Ia melemparkan satu kaleng ke tanganmu, menggeser tasnya agar kau bisa duduk, dan tidak menanyakan sepatah kata pun sampai kau sendiri yang membuka suara."""
 
     # ┌─ ENDING · E-YU-05 · Tahu Dipakai  [Buruk · host C]
     # │ KAPAN   : Chiasa memperalat Yutaka dan ia mengetahuinya
@@ -1326,7 +1324,7 @@ Pada hari yang panjang itu, ia menunggumu dengan dua minuman. Tidak ada tagihan 
 
 Ia meminta satu pertemuan untuk mengakhiri semuanya. Ketika kau mencoba mengingatkan kenangan masa kecil, ia mengatakan kenangan itu justru alasan perbuatanmu begitu menyakitkan. Koita juga kehilangan tempat di sisinya, terseret ke dalam hubungan yang sudah terlalu penuh rahasia untuk dipisahkan dengan bersih.
 
-Sesudah itu ia tidak membalas. Di rumah Amamiya, kursi yang biasa ia pilih tidak langsung diisi orang lain. Kau berhasil memakai kepercayaannya saat masih ada. Kehilangan yang tersisa tidak menjadi lebih ringan hanya karena baru sekarang kau mengerti berapa lama kepercayaan itu dibangun."""
+Sesudah pertemuan di kafe dekat stasiun itu, Yutaka tidak pernah lagi membalas pesan maupun mengangkat telepon dari rumah Amamiya. Di ruang tamu kalian, bantalan kursi pojok yang biasa ia pakai bersandar saat bermain gim tetap rapi di tempatnya, dan tak seorang pun berani memindahkannya selama berbulan-bulan."""
 
     # ┌─ ENDING · E-YU-06 · Membela Koita  [Netral · host C]
     # │ KAPAN   : Yutaka melihat Chiasa menyakiti Koita
@@ -1336,7 +1334,7 @@ Sesudah itu ia tidak membalas. Di rumah Amamiya, kursi yang biasa ia pilih tidak
 
 Koita tampak malu membutuhkan pembelaan. Yutaka memberinya waktu, mendengarkan, dan mengingatkan teman-teman lain agar tidak memperlakukan luka itu sebagai gosip. Terhadapmu ia menjaga jarak yang jelas. Perasaan yang dulu dimilikinya tidak lagi dapat kaupanggil sebagai alasan agar ia berpihak.
 
-Kalian masih mungkin bertemu di kampus. Sapaan tetap sopan, percakapan tidak pernah lama. Di antara kalian ada keputusan sederhana yang tidak dapat kauubah dengan godaan: ia memilih membantu orang yang sedang kausakiti, sekalipun orang yang menyakiti adalah kau."""
+Kalian masih sesekali berpapasan di pelataran gedung fakultas saat pergantian jam kuliah. Yutaka hanya membalas anggukanmu dengan wajah datar sambil tetap berjalan di sisi kiri Koita, memastikan pundaknya sendiri menghalangi jalurmu setiap kali kau hendak mendekat."""
 
     # ┌─ ENDING · E-YU-07 · Pewaris Kisaragi  [Buruk · host C]
     # │ KAPAN   : keluarga menekan di M31; Chiasa tidak hadir
@@ -1346,7 +1344,7 @@ Kalian masih mungkin bertemu di kampus. Sapaan tetap sopan, percakapan tidak per
 
 Koita beberapa kali mengajaknya makan. Yutaka selalu punya alasan yang masuk akal. Di foto acara perusahaan, ia tersenyum dengan ketepatan yang dulu dipakai untuk menggoda teman. Sekarang tidak ada yang tahu kapan senyum itu berakhir setelah kamera diturunkan.
 
-Ia menjadi pewaris yang dapat diandalkan. Orang tuanya puas pada kemandiriannya, tanpa melihat betapa mirip jarak yang ia bangun dengan jarak mereka sendiri. Di apartemen, hadiah jam dari Daisuke tetap disimpan. Ia jarang memakainya ke kantor."""
+Di acara jamuan akhir tahun perusahaan Kisaragi, wajah Yutaka muncul di halaman buletin bisnis dengan jas gelap dan senyum tipis yang rapi. Di laci meja nakas apartemennya, jam tangan pemberian Daisuke dari masa SMA tetap tersimpan di dalam kotak beludru, berhenti berdetak sejak baterainya habis bulan lalu."""
 
     # ┌─ ENDING · E-YU-08 · Sahabat Lagi  [Netral · host C]
     # │ KAPAN   : Chiasa menolak dengan jujur dan konsisten
@@ -1356,7 +1354,7 @@ Ia menjadi pewaris yang dapat diandalkan. Orang tuanya puas pada kemandiriannya,
 
 Ketika ia akhirnya datang lagi ke rumah Amamiya, percakapan sempat canggung. Nagisa membuat gurauan buruk, Koita salah mengambil gelas, dan Chiasa tertawa sebelum tahu harus berkata apa. Tidak ada yang memaksa keakraban kembali dalam satu malam.
 
-Bulan-bulan berikutnya, kalian dapat berkumpul tanpa seluruh suasana bergantung pada perasaan yang tidak berbalas. Yutaka masih berarti bagimu, dan ia mulai percaya arti itu tidak harus romantis untuk nyata. Geng masa kecil bertahan karena seseorang akhirnya berani memberikan jawaban yang konsisten."""
+Bulan-bulan berikutnya, Yutaka kembali datang membawa kantong camilan setiap kali kalian berempat berkumpul menonton film di ruang tengah rumah Amamiya. Saat Chiasa bangun untuk mengambil minum ke dapur, Yutaka tetap duduk bersila di karpet sambil berebut remot dengan Nagisa tanpa lagi menyusulnya ke belakang."""
 
     # ┌─ ENDING · E-YH-01 · Pewaris yang Berbeda  [Netral · host Y]
     # │ KAPAN   : Y17-A; keluarga berdamai
@@ -1366,7 +1364,7 @@ Bulan-bulan berikutnya, kalian dapat berkumpul tanpa seluruh suasana bergantung 
 
 Hari-hari pertama tidak menyerupai kedudukan seorang pangeran. Ada laporan yang salah, karyawan yang lebih mengerti pekerjaan, dan rasa malu ketika nama keluarga mendahului kemampuanmu. Kau mulai datang untuk mendengar sebelum meminta dipercaya.
 
-Di sela pekerjaan, kau menelepon rumah tanpa menunggu ada urusan uang. Kadang percakapan tetap kaku. Kadang ibu menceritakan hal kecil yang dulu dianggap tidak perlu. Menjadi pewaris tidak mengharuskanmu mengulang seluruh cara hidup mereka; perbedaan itu harus terus kaubuat, satu kebiasaan setiap hari."""
+Di sela tumpukan berkas magang sore itu, kau mengangkat telepon meja dan menghubungi nomor rumah hanya untuk menanyakan apakah ibumu sudah makan malam. Setelah hening tiga detik di ujung sambungan, suara ibumu menjawab pelan dan mulai menceritakan bunga kamelia di halaman belakang yang baru saja mekar."""
 
     # ┌─ ENDING · E-YH-02 · Bekerja di Luar  [Netral · host Y]
     # │ KAPAN   : Y17-B
@@ -1376,7 +1374,7 @@ Di sela pekerjaan, kau menelepon rumah tanpa menunggu ada urusan uang. Kadang pe
 
 Kau belajar menyesuaikan pengeluaran dan menerima pekerjaan yang tidak selalu menyenangkan. Orang tua Kisaragi belum sepenuhnya memahami pilihan itu. Mereka kini harus bertanya bagaimana harimu jika ingin tahu, sebab hidupmu tidak lagi dapat dibaca dari rekening yang mereka isi.
 
-Pada akhir pekan, kau membeli makan dengan uang sendiri dan mengajak seseorang yang ingin kautemui. Pilihan itu sederhana. Justru kesederhanaannya membuat masa depan terasa dapat dijalani, bukan hanya dipertahankan sampai evaluasi berikutnya."""
+Pada Sabtu sore setelah gajian pertama itu cair, kau membeli dua porsi daging panggang di kedai kecil dekat stasiun dan mentraktir seorang teman dengan uang tunai dari dompetmu sendiri. Saat keluar dari kedai, kau melipat struk pembayarannya rapi-rapi dan menyimpannya di saku kemeja."""
 
     # ┌─ ENDING · E-YH-03 · Keluarga Pilihan  [Romantis · host Y]
     # │ KAPAN   : hubungan dengan keluarga Amamiya tinggi; tanpa kejahatan
@@ -1386,7 +1384,7 @@ Pada akhir pekan, kau membeli makan dengan uang sendiri dan mengajak seseorang y
 
 Kau tetap harus mengetuk atau mengabari sebelum datang. Kedekatan tidak berubah menjadi hak memasuki setiap ruang. Di rumah itu, batas yang sederhana justru membuat penerimaan terasa aman; kau tidak perlu membuktikan keakraban dengan melanggarnya.
 
-Suatu malam mereka menyuruhmu membawa pulang makanan. Kau berdiri di depan pintu dengan kotak hangat dan menyadari tidak ada pertunjukan yang perlu kauberikan sebagai imbalan. Kau diterima karena telah hidup bersama mereka dengan jujur, bukan karena berhasil menjadi salinan sempurna anak yang dahulu mereka kenal."""
+Suatu malam selepas makan bersama, Yoshie membungkuskan sisa kari hangat ke dalam kotak plastik dan menyuruhmu membawanya pulang untuk sarapan besok. Kau berdiri di bawah lampu teras rumah Amamiya sambil mendekap bungkusan yang masih mengepul itu, lalu melambai sampai Daisuke mengunci pintu depan."""
 
     # ┌─ ENDING · E-YH-04 · Dicoret  [Buruk · host Y]
     # │ KAPAN   : membangkang keluarga berulang atau skandal besar
@@ -1396,7 +1394,7 @@ Suatu malam mereka menyuruhmu membawa pulang makanan. Kau berdiri di depan pintu
 
 Kau berkemas di ruangan yang pernah terasa terlalu luas. Ada barang yang dijual, ada yang ternyata tidak berarti tanpa tempat untuk menyimpannya. Perselisihan atau skandal yang membawa kalian ke sini tidak menghilang bersama alamat lama. Jika ada orang yang kaulukai, kesulitanmu bukan pengganti pertanggungjawaban kepada mereka.
 
-Malam pertama di tempat baru terdengar berbeda. Kau menghitung uang, mencari kerja, dan memutuskan siapa yang masih bisa kauberi kabar dengan jujur. Hidup belum selesai. Tetapi untuk meneruskannya, kau tidak lagi memiliki kemewahan menganggap kebutuhan dasar sebagai sesuatu yang selalu akan disediakan orang lain."""
+Malam pertama di kamar kos sempit dekat jalur kereta barang, kau duduk di bawah lampu neon yang berdengung sambil menghitung sisa lembaran uang di atas kardus pindahan. Setelah mencatat jadwal wawancara kerja paruh waktu untuk besok pagi, kau mematikan lampu dan menarik selimut tipis sampai ke dagu."""
 
     # ┌─ ENDING · E-YH-05 · Ketahuan Bukan Yutaka  [Khusus · host Y]
     # │ KAPAN   : minimal dua orang dekat yakin ia bukan Yutaka
@@ -1406,7 +1404,7 @@ Malam pertama di tempat baru terdengar berbeda. Kau menghitung uang, mencari ker
 
 Kau tidak punya cara mengembalikan kesadaran yang dahulu tinggal di sini. Pengakuan itu tidak membuat kehilangan mereka lebih mudah diterima. Ada yang masih menghubungimu untuk mengenal orang yang kini hadir; ada yang memerlukan jarak setiap kali mendengar suaramu.
 
-Tidak ada upacara yang menobatkanmu sebagai Yutaka baru. Kau menjalani hari dengan nama yang masih membuat sebagian orang berduka, berusaha tidak menuntut penerimaan sebagai pembayaran atas kejujuran. Setiap hubungan yang tersisa harus tumbuh dengan pengetahuan bahwa menyayangimu dan merindukannya dapat terjadi pada waktu yang sama."""
+Pada hari ulang tahun Yutaka bulan berikutnya, Koita dan Chiasa tetap datang ke apartemen membawa kue kecil tanpa lilin. Mereka duduk makan bersamamu di meja rendah, sesekali tertawa mendengar ceritamu, lalu sama-sama terdiam menatap foto masa SMP di dinding sebelum berpamitan pulang."""
 
     # ┌─ ENDING · E-YH-06 · Pergi Jauh  [Netral · host Y]
     # │ KAPAN   : Y17-C magang luar negeri
@@ -1416,17 +1414,17 @@ Tidak ada upacara yang menobatkanmu sebagai Yutaka baru. Kau menjalani hari deng
 
 Lalu pesan dari Kouseikan datang. Perbedaan waktu mengubah percakapan menjadi balasan yang saling menunggu. Kontrak tetap bergerak bersama kalender di sana, dan jarak tidak membuatmu berhenti memikirkan akibat keputusan yang sudah kaubuat.
 
-Dari jendela tempat tinggal sementara, kau melihat jalan yang tidak pernah muncul di manga. Dunia ini lebih luas daripada panggung yang diberikan kepadamu. Ancaman evaluasi tetap ada, tetapi untuk pertama kalinya kau punya bukti bahwa ada kehidupan di luar lingkaran yang selama ini kausahakan menguasai."""
+Dari jendela kamar sewaan di lantai empat, kau menatap trem malam yang melintas di jalan basah kota asing yang tak pernah digambar di halaman manga mana pun. Di sudut meja belajar, layar laptopmu masih menampilkan hitung mundur kalender Kouseikan, sementara kau menutup tirai dan menyeduh kopi untuk giliran kerja pagi."""
 
     # ┌─ ENDING · E-YH-07 · Informan yang Menagih  [Buruk · host Y]
     # │ KAPAN   : daichi_status penagih
-    # │ ISI SKRG: Daichi memeras pemain dengan semua yang ia tahu
+    # │ ISI SKRG: Kaichi memeras pemain dengan semua yang ia tahu
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
-    KK_END_TEXT["E-YH-07"] = """Daichi tidak lagi mengajak makan dengan nada bercanda. Ia menyebut hal yang diketahuinya, lalu kebutuhan yang katanya mendesak. Kau mengerti hubungan itu telah berubah sebelum jumlah uang diucapkan.
+    KK_END_TEXT["E-YH-07"] = """Kaichi tidak lagi mengajak makan dengan nada bercanda. Ia menyebut hal yang diketahuinya, lalu kebutuhan yang katanya mendesak. Kau mengerti hubungan itu telah berubah sebelum jumlah uang diucapkan.
 
 Setiap permintaan membuatmu mengira pembayaran berikut akan menjadi yang terakhir. Setelahnya, kau tetap memeriksa ponsel dengan cemas. Rahasia yang dipakai untuk merugikan orang lain kini juga mengatur kapan kau dapat tidur tenang.
 
-Daichi bertanggung jawab atas pemerasannya, dan perbuatanmu sendiri tetap milikmu. Tidak ada yang menjadi benar karena kini kau juga diperlakukan buruk. Di antara kalian tidak tersisa kesetiaan seorang informan, hanya transaksi yang membuat masa lalu terus memasuki hari-hari yang ingin kaujalani sebagai orang lain."""
+Setiap tanggal dua puluh lima malam, layar ponselmu menyala menampilkan nomor rekening dan nominal singkat dari Kaichi tanpa sapaan pembuka. Kau mentransfer angka itu dari tepi tempat tidur dengan tangan dingin, lalu menghapus riwayat transaksi sebelum memejamkan mata yang tak kunjung bisa terlelap."""
 
 
     # ═════ Lintas / NPC / Harem ═════
@@ -1438,7 +1436,7 @@ Daichi bertanggung jawab atas pemerasannya, dan perbuatanmu sendiri tetap milikm
 
 Ada yang marah keras, ada yang terlalu tenang. Salah seorang meminta barangnya dikembalikan melalui teman. Yang lain hanya menghapus rencana minggu depan. Tak satu pun bersedia menenangkanmu karena kau kini takut kehilangan mereka.
 
-Menjelang malam, ruangan menjadi kosong. Kau masih memiliki pesan-pesan lama yang dulu dibaca sebagai bukti kasih sayang. Kini setiap kalimat memperlihatkan betapa banyak orang telah mencoba mempercayaimu secara bersamaan, dan betapa sengaja kau membiarkan mereka tidak saling tahu."""
+Menjelang malam, ruang tamumu kosong dan kunci cadangan yang pernah kaupinjamkan sudah diletakkan berjajar di atas meja kopi. Di layar ponselmu, tiga ruang obrolan yang kemarin masih penuh pesan selamat malam kini hanya menyisakan pemberitahuan bahwa kontak tidak lagi menerima pesan."""
 
     # ┌─ ENDING · E-X-02 · Meja Panjang  [Romantis · host Y/C]
     # │ KAPAN   : hubungan terbuka yang disepakati semua pihak
@@ -1448,7 +1446,7 @@ Menjelang malam, ruangan menjadi kosong. Kau masih memiliki pesan-pesan lama yan
 
 Kalian membahas waktu, kecemburuan, privasi, dan hak untuk berubah pikiran. Ada kesepakatan yang harus diperbaiki setelah ternyata menyakiti seseorang. Tidak ada orang yang diminta bertahan agar kalian terlihat berhasil di depan orang lain.
 
-Malam itu, seseorang meminta lauk diteruskan dan candaan akhirnya terdengar wajar. Kalian belum menemukan bentuk hidup tanpa kesulitan. Kalian telah memilih bentuk yang tidak bergantung pada kebohongan, dan menerima bahwa persetujuan setiap orang harus tetap bisa didengar besok."""
+Malam itu seseorang meminta mangkuk lauk diteruskan ke ujung meja dan tawa akhirnya pecah karena dua orang meraih sendok sayur bersamaan. Sebelum pulang, kalender dinding di dapur sudah ditempeli catatan warna-warni untuk jadwal minggu depan."""
 
     # ┌─ ENDING · E-X-03 · Domino Shiori  [Buruk · host Y/C]
     # │ KAPAN   : Shiori tahap 5 dengan daftar_kebohongan panjang
@@ -1458,17 +1456,17 @@ Malam itu, seseorang meminta lauk diteruskan dan candaan akhirnya terdengar waja
 
 Hubungan-hubunganmu berubah dalam hitungan hari. Ada percakapan yang tidak lagi bisa dibatasi dengan meminta orang menjaga privasi, sebab permintaan itu sudah terlalu sering dipakai untuk melindungimu. Mereka perlu bicara agar memahami apa yang terjadi kepada diri masing-masing.
 
-Shiori tidak terlihat puas ketika semuanya selesai. Balas dendam menghabiskan sesuatu dalam dirinya juga. Kau ditinggalkan bersama cerita yang kini tidak bisa kausunting seorang diri. Orang-orang yang semula kaudekati sebagai pilihan mulai menyusun hidup yang tidak memberimu posisi di tengahnya."""
+Ketika semuanya selesai dibentangkan di ruang klub sore itu, Shiori menutup mapnya tanpa senyum dan keluar paling dulu, disusul satu per satu orang yang dulu pernah menunggu pesanmu sampai tak seorang pun tersisa di ruangan selain dirimu."""
 
     # ┌─ ENDING · E-X-04 · Musim Dingin Tanpa Moeka  [Buruk · host Y/C]
     # │ KAPAN   : E-MO-04
     # │ ISI SKRG: semua epilog berubah menjadi versi duka
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
-    KK_END_TEXT["E-X-04"] = """Musim dingin datang sesudah kematian Moeka dan membuat tempat-tempat biasa terasa salah. Konbini tetap buka. Kelas tetap dimulai. Rina berhenti pada rak barang yang pernah mereka komentari bersama, lalu berjalan lagi tanpa membeli apa pun.
+    KK_END_TEXT["E-X-04"] = """Musim dingin datang sesudah kematian Moeka dan membuat tempat-tempat biasa terasa salah. Konbini tetap buka. Kelas tetap dimulai. Ryena berhenti pada rak barang yang pernah mereka komentari bersama, lalu berjalan lagi tanpa membeli apa pun.
 
 Di antara teman-teman, ada yang ingin terus membicarakannya dan ada yang tidak sanggup mendengar nama itu setiap hari. Perbedaan cara berduka sempat membuat mereka saling menyakiti. Tidak satu pun memiliki kalimat yang cukup baik untuk menutup pertanyaan tentang malam terakhirnya.
 
-Rencana masa depan tetap dibuat, tetapi selalu ada bentuk kehilangan di tepinya. Saat seseorang tertawa dan mendadak terdiam, yang lain belajar tidak menuntut penjelasan. Moeka tidak menjadi pelajaran yang rapi bagi hidup orang lain. Ia tetap seseorang yang seharusnya punya hari-hari berikutnya."""
+Pada acara kumpul akhir tahun, satu kursi di dekat jendela tetap dibiarkan tanpa piring sementara syal rajut lama milik Moeka masih tersangkut di gantungan ruang studio desain."""
 
     # ┌─ ENDING · E-X-05 · Kursi Kosong di Wisuda  [Khusus · host Y/C]
     # │ KAPAN   : semua heroine lepas dari Koita
@@ -1478,7 +1476,7 @@ Rencana masa depan tetap dibuat, tetapi selalu ada bentuk kehilangan di tepinya.
 
 Ia membantu seorang teman mengambil foto, lalu memeriksa pesan di ponselnya. Ada ucapan selamat, ada urusan pekerjaan. Kursi yang kosong di dekatnya tidak otomatis berarti hidupnya sudah habis, meskipun kau tahu betapa jauh semua ini menyimpang dari kisah yang pernah kaubaca.
 
-Kau memandangnya dari kerumunan. Sistem akan menghitung jarak antara naskah dan kenyataan. Koita masih harus memutuskan apa yang hendak dibuat dari kenyataan itu. Untuk pertama kalinya, ia tidak diberi romansa sebagai jawaban siap pakai atas pertanyaan tentang siapa dirinya."""
+Kau memandangnya dari sela kerumunan sementara angka deviasi di sudut matamu melonjak melewati batas tertinggi. Koita memasukkan ponsel ke saku jasnya, merapikan tabung ijazahnya, dan berjalan keluar lewat pintu samping aula sendirian."""
 
     # ┌─ ENDING · E-X-06 · Semua Orang Bebas  [Romantis · host Y/C]
     # │ KAPAN   : semua heroine pulih dan mandiri; tidak ada yang bersama Koita atau pemain
@@ -1488,7 +1486,7 @@ Kau memandangnya dari kerumunan. Sistem akan menghitung jarak antara naskah dan 
 
 Beberapa hubungan pernah terasa hampir romantis. Ada yang berakhir dengan sedih, ada yang berubah menjadi persahabatan yang lebih tenang. Koita mendengar mereka tanpa mengira semua rencana itu diam-diam masih menunggunya. Kau juga tidak meminta hasil dari bantuan yang pernah kauberikan.
 
-Setelah makan, kalian berjalan ke arah yang berbeda. Tidak ada orang yang pulang sebagai hadiah untuk orang lain. Kelegaan itu sederhana dan luas: mereka tetap hidup, pulih dengan cara masing-masing, dan bebas menginginkan masa depan yang tidak menempatkan siapa pun di pusat seluruh pilihan."""
+Setelah makan malam di kedai dekat stasiun selesai dan tagihan dibagi rata di meja kasir, kalian berpamitan di bawah lampu penyeberangan lalu berpencar menuju peron dan arah kereta masing-masing."""
 
     # ┌─ ENDING · E-X-07 · Melawan Naskah Bersama  [Khusus · host Y/C]
     # │ KAPAN   : E-KO-13 dan persahabatan atau Rute BL
@@ -1498,7 +1496,7 @@ Setelah makan, kalian berjalan ke arah yang berbeda. Tidak ada orang yang pulang
 
 Kau menceritakan yang kautahu tanpa mengaku menguasai seluruh aturan. Ada hal yang membuatnya marah kepadamu, dan kalian tidak menyelesaikannya dengan memanggil diri sendiri korban keadaan. Melawan naskah bersama menuntutmu mengakui kapan kau sendiri pernah memanfaatkan naskah itu.
 
-Keesokan hari, kalian membuat rencana kecil yang tidak bergantung pada seseorang jatuh cinta atau patah. Koita membawa dua minuman dan menanyakan apakah kau siap. Untuk pertama kalinya, keberanian itu bukan adegan penyelamatan seorang protagonis. Ia seorang manusia yang bersedia menghadapi ketidakpastian bersamamu."""
+Keesokan paginya kalian sengaja melewati rute jalan yang berlawanan dari jadwal pertemuan di buku catatan itu. Di depan mesin penjual minuman dekat gedung olahraga, Koita melemparkan satu kaleng kopi hangat ke tanganmu, lalu tersenyum dan menanyakan langkah kalian berikutnya."""
 
     # ┌─ ENDING · E-X-08 · Pengakuan di Depan Semua  [Khusus · host Y/C]
     # │ KAPAN   : pemain membuka Sistem kepada seluruh lingkaran di M35
@@ -1508,7 +1506,7 @@ Keesokan hari, kalian membuat rencana kecil yang tidak bergantung pada seseorang
 
 Harumi meminta rincian yang dapat diperiksa. Shiori menanyakan apa yang selama ini kausengaja. Miyuki memikirkan siapa yang sedang terancam; Nagisa marah karena perasaannya pernah diperlakukan sebagai bagian perhitungan. Orang-orang lain membawa luka dan pertanyaannya sendiri. Tidak ada jawaban bersama yang membuat pengakuan itu mudah.
 
-Sebagian percaya, sebagian belum. Mereka sepakat setidaknya pada satu hal: ancaman yang kautanggung tidak memberi hak atas kehidupan mereka. Malam itu kau kehilangan perlindungan dari rahasia. Jika masih ada hubungan yang bertahan, ia harus tumbuh setelah mereka tahu apa yang sebenarnya sedang dipertaruhkan."""
+Malam itu dua orang memilih langsung mengambil tas dan meninggalkan ruangan, sementara tiga lainnya masih tetap duduk di meja dengan wajah tegang dan meminta kau menceritakan semuanya dari hari pertama kontrak itu muncul."""
 
     # ┌─ ENDING · E-X-09 · Dua Tragedi  [Buruk · host Y/C]
     # │ KAPAN   : dua rute distorsi berakhir Bad dan saling memicu
@@ -1518,17 +1516,17 @@ Sebagian percaya, sebagian belum. Mereka sepakat setidaknya pada satu hal: ancam
 
 Mereka mengingat percakapan yang terlewat, pertolongan yang tidak datang, dan luka yang saling membuat keadaan lebih buruk. Tidak semua dugaan dapat dibuktikan, tidak semua penyesalan berarti seseorang memiliki kuasa mencegah segalanya. Tetapi pilihan yang disengaja tetap harus disebut dengan namanya, terutama jika seseorang telah mengambil untung dari kerentanan orang lain.
 
-Sesudahnya, lingkaran itu tidak kembali ke bentuk lama. Ada orang yang pindah, ada yang menjalani pendampingan, ada yang hanya berusaha melewati hari tanpa kehilangan lagi. Masa depan tetap ada, terasa lebih berat karena dua tempat di dalamnya tidak akan lagi diisi."""
+Sesudah musim dingin berakhir, ruang klub dan meja kantin yang biasa ditempati kelompok itu tak pernah lagi terisi penuh. Dua loker di koridor gedung fakultas dikosongkan pihak kampus pada pekan yang sama, menyisakan pita penanda putih di gagang besinya."""
 
     # ┌─ ENDING · E-X-10 · Kota yang Tahu Semuanya  [Buruk · host Y/C]
-    # │ KAPAN   : Mei menerbitkan semuanya
+    # │ KAPAN   : Meisa menerbitkan semuanya
     # │ ISI SKRG: reputasi semua orang yang terlibat hancur
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
-    KK_END_TEXT["E-X-10"] = """Tulisan Mei tersebar melampaui orang yang mula-mula ingin membaca gosip kampus. Nama, hubungan, dan pengakuan pribadi menjadi bahan komentar orang yang tidak mengenal satu pun wajah di baliknya.
+    KK_END_TEXT["E-X-10"] = """Tulisan Meisa tersebar melampaui orang yang mula-mula ingin membaca gosip kampus. Nama, hubungan, dan pengakuan pribadi menjadi bahan komentar orang yang tidak mengenal satu pun wajah di baliknya.
 
 Kebenaran tentang perbuatanmu perlu diketahui mereka yang dirugikan. Namun bagian kehidupan orang lain yang ikut diumbar membuat luka baru. Ada korban yang harus menjelaskan dirinya berkali-kali, teman yang diseret hanya karena pernah terlihat bersama, dan keluarga yang mengetahui semuanya dari orang asing.
 
-Kota tampak tahu segalanya, padahal yang dimilikinya hanyalah cerita yang terus dipotong dan diteruskan. Kau tidak bisa lagi menyelamatkan reputasimu. Mereka yang terseret juga harus berjuang mendapatkan kembali hak atas kisah hidup sendiri, jauh sesudah orang berhenti membicarakannya."""
+Bahkan di kedai kopi luar stasiun yang berjarak tiga pemberhentian dari Kouseikan, dua penumpang kereta di meja sebelah masih berbisik sambil memperlihatkan tangkapan layar artikel itu ketika kau masuk mencari kursi."""
 
     # ┌─ ENDING · E-X-11 · Pesta di Rumah Amamiya  [Romantis · host Y/C]
     # │ KAPAN   : semua pulih; Koita memilih dengan tulus; pemain bersama seseorang; geng masa kecil utuh
@@ -1548,7 +1546,7 @@ Daisuke mengambil foto tanpa menyuruh semua orang berpose sempurna. Hasilnya mir
 
 Shiori membawa kemarahan yang disusun menjadi keputusan. Nagisa membawa ketakutan kehilangan yang berubah menjadi tuntutan untuk menguasai. Mereka saling menguatkan pada bagian yang paling sulit dihentikan, sementara orang-orang di sekitar mulai takut berbicara karena semua percakapan terasa dapat dianggap sebagai keberpihakan.
 
-Kau tidak lagi menghadapi dua hubungan yang dapat dipisahkan. Di antara akibat kebohonganmu, tumbuh kerja sama yang juga dapat melukai mereka sendiri. Tak ada kemenangan romantis dalam pengawasan dan ancaman itu. Yang tersisa adalah lingkaran permusuhan, semakin rapat setiap kali seseorang menyebut kendali sebagai perlindungan."""
+Saat kau keluar dari ruang kelas sore itu, Nagisa sudah berdiri menunggu di ujung tangga timur sementara Shiori menutup jalan di depan pintu perpustakaan barat sambil memegang ponsel yang mencatat setiap menit kepergianmu."""
 
     # ┌─ ENDING · E-X-13 · Tubuh yang Dibayar  [Khusus · host Y/C]
     # │ KAPAN   : pemain menyelamatkan minimal tiga heroine dari rute distorsi sambil terus memaksa tubuh
@@ -1558,7 +1556,7 @@ Kau tidak lagi menghadapi dua hubungan yang dapat dipisahkan. Di antara akibat k
 
 Untuk sekali ini, mereka datang menolongmu tanpa menanyakan apakah bantuan itu cukup berguna untuk dihitung. Kau harus belajar menerima makanan, istirahat, dan pendampingan tanpa mengubahnya menjadi utang yang akan segera kaubayar.
 
-Harga yang telah ditanggung tubuhmu tidak membuat segala pilihan dahulu menjadi bijaksana. Mereka bersyukur kau hadir, sekaligus sedih karena kau mengira kehadiran harus dibuktikan dengan terus mengabaikan diri sendiri. Masa depan kalian kini juga memuat pekerjaan merawat orang yang sempat merasa hanya berhak menjadi penolong."""
+Pada sore hari wisuda, mereka bergantian duduk di sekitar ranjang ruang istirahat klinik kampus sambil membawa termos bubur hangat dan bunga sakura dari halaman luar agar kau tidak perlu memaksakan diri berdiri di aula."""
 
     # ┌─ ENDING · E-X-14 · Dalang yang Tak Pernah Dicurigai  [Khusus · host Y/C]
     # │ KAPAN   : force_bersih[[x] bertahan untuk setiap korban Force; NTR sempurna tercapai (07_Koita_dan_BL.md §14, 09_Force_dan_Kriminal.md §10)
@@ -1568,127 +1566,127 @@ Harga yang telah ditanggung tubuhmu tidak membuat segala pilihan dahulu menjadi 
 
 Ada yang semakin takut keluar, ada yang tidak sanggup menjelaskan perubahan dirinya, ada yang bertahan dengan bantuan kecil yang tidak pernah kauberikan. Ketidaktahuan dunia membuat mereka lebih sendirian. Itu tidak mengubah kekerasan menjadi hubungan, atau ketakutan mereka menjadi persetujuan.
 
-Sistem menyatakan hasilmu sangat tinggi. Kau selamat dari evaluasi dan tidak dikejar hukum. Di balik angka yang disebutnya keberhasilan, ada kehidupan yang sengaja kaurusak dan kebenaran yang belum pernah didengar. Dunia tidak menghukummu dalam akhir ini. Naskah pun tidak akan menyebut kebebasan pelakunya sebagai akhir bahagia bagi orang yang disakitinya."""
+Di atas panggung wisuda, kau menerima map ijazah sambil disambut tepuk tangan hadirin sementara jendela Sistem mencatat angka deviasi tertinggi di sudut matamu. Dari barisan kursi belakang yang gelap, dua bangku kosong milik mereka yang tak sanggup hadir tetap menganga sampai aula dibubarkan."""
 
     # ┌─ ENDING · E-NPC-01 · Dua Jas Putih  [Romantis · host Y/C]
-    # │ KAPAN   : romansa tulus dengan Sena; Miyuki tidak disakiti
+    # │ KAPAN   : romansa tulus dengan Yuina; Miyuki tidak disakiti
     # │ ISI SKRG: dua calon dokter yang saling menjaga jam tidur
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
-    KK_END_TEXT["E-NPC-01"] = """Di ruang istirahat, dua jas putih tergantung bersebelahan: milik Sena dan Miyuki. Kau datang membawa makanan setelah memastikan mereka memang bisa berhenti sebentar. Sena membuka bungkusnya dan langsung menanyakan apakah kau sendiri sudah makan.
+    KK_END_TEXT["E-NPC-01"] = """Di ruang istirahat, dua jas putih tergantung bersebelahan: milik Yuina dan Miyuki. Kau datang membawa makanan setelah memastikan mereka memang bisa berhenti sebentar. Yuina membuka bungkusnya dan langsung menanyakan apakah kau sendiri sudah makan.
 
 Hubungan kalian tidak membuatnya meninggalkan persahabatan atau cita-citanya. Ia tetap blak-blakan, tidak memuji pengorbanan yang sebenarnya hanya menyembunyikan kebiasaan buruk mengabaikan diri. Kau belajar menerima bahwa perhatian kadang terdengar seperti teguran yang sangat tepat.
 
-Miyuki pulang lebih dahulu malam itu. Sena duduk di sampingmu, menyandarkan kepalanya sejenak tanpa perlu menjelaskan lelahnya. Kau tidak menjadi dokter karena mencintainya. Kau menjadi seseorang yang mengenal jadwalnya dan tetap mengingat bahwa orang di balik jas itu juga perlu dijaga."""
+Miyuki pulang lebih dahulu malam itu. Yuina duduk di sampingmu di bangku panjang koridor, menyandarkan kepalanya ke bahumu sambil memejamkan mata, dan kau memasang alarm lima belas menit di ponselmu sebelum giliran jaganya dimulai lagi."""
 
     # ┌─ ENDING · E-NPC-02 · Sahabat yang Memilih Sisi  [Buruk · host Y/C]
-    # │ KAPAN   : pemain menyakiti Miyuki sambil mendekati Sena
-    # │ ISI SKRG: Sena memilih Miyuki dan menutup pintu
+    # │ KAPAN   : pemain menyakiti Miyuki sambil mendekati Yuina
+    # │ ISI SKRG: Yuina memilih Miyuki dan menutup pintu
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
-    KK_END_TEXT["E-NPC-02"] = """Sena memintamu berhenti menemui Miyuki dengan janji yang terus membuatnya terluka. Ketika kau berusaha mengalihkan percakapan kepada kedekatan kalian sendiri, wajah Sena mengeras.
+    KK_END_TEXT["E-NPC-02"] = """Yuina memintamu berhenti menemui Miyuki dengan janji yang terus membuatnya terluka. Ketika kau berusaha mengalihkan percakapan kepada kedekatan kalian sendiri, wajah Yuina mengeras.
 
 Ia tidak bersedia menjadikan perhatianmu kepadanya sebagai pengganti pertanggungjawaban kepada sahabatnya. Pesanmu dijawab hanya jika ada urusan yang memang perlu diselesaikan. Setiap usaha menyebut Miyuki terlalu sensitif membuat jarak itu semakin jelas.
 
-Di kampus, kau melihat keduanya makan bersama. Sena mendengarkan sementara Miyuki mencoba mengatakan sesuatu tanpa tersenyum untuk melunakkan semuanya. Kau tidak mendapat tempat dalam percakapan itu. Ia telah memilih menjaga seseorang yang kauharapkan akan ditinggalkannya demi dirimu."""
+Di kantin fakultas kedokteran, kau melihat keduanya duduk makan di meja pojok dekat jendela. Begitu menyadari langkahmu mendekat, Yuina langsung menarik kursinya merapat ke sisi Miyuki dan memunggungi lorong tempatmu berdiri."""
 
     # ┌─ ENDING · E-NPC-03 · Thrift Hari Minggu  [Romantis · host Y/C]
-    # │ KAPAN   : romansa tulus dengan Rina; Moeka selamat
+    # │ KAPAN   : romansa tulus dengan Ryena; Moeka selamat
     # │ ISI SKRG: Minggu pagi di toko bekas, bertiga dengan Moeka
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
-    KK_END_TEXT["E-NPC-03"] = """Rina mengajakmu ke toko barang bekas pada Minggu pagi. Moeka datang terlambat dengan alasan yang ditertawakan mereka berdua sebelum kau sempat bertanya. Ia masih punya masalah, tetapi hari ini ia boleh hanya menjadi teman yang sedang mencari jaket.
+    KK_END_TEXT["E-NPC-03"] = """Ryena mengajakmu ke toko barang bekas pada Minggu pagi. Moeka datang terlambat dengan alasan yang ditertawakan mereka berdua sebelum kau sempat bertanya. Ia masih punya masalah, tetapi hari ini ia boleh hanya menjadi teman yang sedang mencari jaket.
 
-Rina menggandeng tanganmu di antara rak, lalu melepaskan sebentar untuk memeriksa jahitan baju. Kehidupan bersama ternyata penuh perhatian yang tidak dramatis: mengingat ukuran, membagi ongkos, bertanya apakah seseorang sungguh ingin ikut atau hanya takut mengecewakan.
+Ryena menggandeng tanganmu di antara rak, lalu melepaskan sebentar untuk memeriksa jahitan baju. Kehidupan bersama ternyata penuh perhatian yang tidak dramatis: mengingat ukuran, membagi ongkos, bertanya apakah seseorang sungguh ingin ikut atau hanya takut mengecewakan.
 
-Kalian makan setelah berbelanja. Moeka memotret Rina yang sedang memprotes hasil temuannya sendiri. Saat melihat foto itu, kau tahu kebahagiaan ini juga ditopang oleh orang-orang yang tetap diberi tempat, bukan oleh keberhasilan membuat pasanganmu melupakan semua orang selain dirimu."""
+Kalian makan mi kuah di kedai seberang toko setelah selesai berbelanja. Moeka memotret Ryena yang sedang mengomel karena kancing jaket pilihannya longgar satu, sementara kau mengeluarkan jarum kecil dan benang cadangan dari tas Ryena ke atas meja."""
 
-    # ┌─ ENDING · E-NPC-04 · Rina Tidak Memaafkan  [Buruk · host Y/C]
+    # ┌─ ENDING · E-NPC-04 · Ryena Tidak Memaafkan  [Buruk · host Y/C]
     # │ KAPAN   : Moeka meninggal atau disakiti pemain
-    # │ ISI SKRG: Rina menjadi saksi paling keras terhadap pemain
+    # │ ISI SKRG: Ryena menjadi saksi paling keras terhadap pemain
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
-    KK_END_TEXT["E-NPC-04"] = """Rina tidak menerima penjelasan yang mengubah penderitaan Moeka menjadi cerita tentang betapa sulitnya posisimu. Ia menyebut apa yang diketahuinya dengan jelas dan menolak diminta diam demi nama baik.
+    KK_END_TEXT["E-NPC-04"] = """Ryena tidak menerima penjelasan yang mengubah penderitaan Moeka menjadi cerita tentang betapa sulitnya posisimu. Ia menyebut apa yang diketahuinya dengan jelas dan menolak diminta diam demi nama baik.
 
 Jika ada orang bertanya, ia menjawab sebatas yang dapat dipertanggungjawabkan. Ia tidak menyerahkan kehidupan pribadi Moeka kepada rasa ingin tahu mereka. Kemarahannya tidak membuatnya lupa kepada siapa kesetiaan itu seharusnya diberikan.
 
-Kau pernah mengira keramahan Rina berarti ia akan selalu mencari alasan untuk memaafkan. Kini ia melewatimu tanpa berhenti. Apa yang kaulakukan kepada sahabatnya telah mengakhiri kemungkinan itu, dan ia tidak merasa berkewajiban memberimu percakapan terakhir agar kau lebih mudah melanjutkan hidup."""
+Saat kalian berpapasan di gerbang gedung desain pada sore terakhir semester, kau berhenti dan membuka mulut hendak menyapanya. Ryena menatap lurus menembus bahumu, merapatkan tali tas kameranya, dan berjalan melewatinya tanpa memperlambat langkah sedikit pun."""
 
     # ┌─ ENDING · E-NPC-05 · Studio Berdua  [Romantis · host Y/C]
-    # │ KAPAN   : romansa dengan Haruka
+    # │ KAPAN   : romansa dengan Karuha
     # │ ISI SKRG: dua meja gambar dalam satu studio
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
-    KK_END_TEXT["E-NPC-05"] = """Dua meja berada di studio yang sama, menghadap cahaya yang berbeda. Haruka tidak memindahkan semua barangnya untuk menyatukan selera kalian. Kau menyukai kebebasan kecil itu: kedekatan tidak berarti setiap sudut harus kehilangan pemiliknya.
+    KK_END_TEXT["E-NPC-05"] = """Dua meja berada di studio yang sama, menghadap cahaya yang berbeda. Karuha tidak memindahkan semua barangnya untuk menyatukan selera kalian. Kau menyukai kebebasan kecil itu: kedekatan tidak berarti setiap sudut harus kehilangan pemiliknya.
 
 Ada hari ketika pekerjaan berjalan baik dan kalian makan terlambat karena terlalu sibuk mengobrol. Ada hari ketika kritik terdengar terlalu pribadi, lalu perlu dibicarakan lagi sesudah marah mereda. Tak seorang pun mengerjakan karya atas nama yang lain untuk menghindari percakapan sulit.
 
-Menjelang malam, Haruka bertanya apakah kau mau melihat sesuatu yang belum selesai. Kau menutup pekerjaanmu dan mendekat setelah ia mengangguk. Di antara dua meja itu, cinta tumbuh sebagai izin saling melihat proses, termasuk bagian yang belum cukup indah untuk dipamerkan."""
+Menjelang tengah malam, Karuha memutar kursinya dan bertanya apakah kau mau melihat sketsa kasarnya yang belum selesai. Kau meletakkan penamu, menarik bangku kayu ke sebelah mejanya, dan memperhatikan ujung jarinya menunjuk garis arsir yang masih basah."""
 
     # ┌─ ENDING · E-NPC-06 · Rahasia yang Dititipkan  [Netral · host C]
-    # │ KAPAN   : Haruka tahu rahasia Shena dan menjaganya
+    # │ KAPAN   : Karuha tahu rahasia Shena dan menjaganya
     # │ ISI SKRG: persahabatan yang lebih kuat dari rahasia
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
-    KK_END_TEXT["E-NPC-06"] = """Haruka tahu ada jarak antara Chiasa yang ia kenal dan orang yang sekarang memegang pensil. Ia tidak menuntut satu cerita yang langsung membuat semua perbedaan masuk akal. Ia meminta kau berhenti berjanji dapat melakukan pekerjaan yang belum sanggup kaulakukan.
+    KK_END_TEXT["E-NPC-06"] = """Karuha tahu ada jarak antara Chiasa yang ia kenal dan orang yang sekarang memegang pensil. Ia tidak menuntut satu cerita yang langsung membuat semua perbedaan masuk akal. Ia meminta kau berhenti berjanji dapat melakukan pekerjaan yang belum sanggup kaulakukan.
 
 Rahasia Shena tidak dijadikannya mata uang. Ia menjaganya sambil mendorongmu membuat keputusan jujur mengenai proyek baru dan bantuan yang perlu diakui. Kadang kau kesal karena ia tidak membiarkanmu bersembunyi di balik rasa takut.
 
-Pada suatu sesi latihan, ia memuji bagian kecil yang membaik. Kau tidak perlu memeriksa apakah pujian itu sebenarnya ditujukan kepada pemilik tangan dahulu. Haruka sedang melihat pekerjaanmu hari ini. Persahabatan itu memberimu tempat untuk memulai tanpa harus berpura-pura sudah sampai."""
+Pada suatu sesi latihan sore, ia mengetuk sudut kertas gambar tempatmu baru saja menyelesaikan sketsa lipatan kain dan bergumam bahwa garisnya sudah jauh lebih bersih. Setelah itu ia meletakkan penghapusnya di mejamu dan menyuruhmu menggambar ulang bagian pergelangan tangan sekali lagi."""
 
     # ┌─ ENDING · E-NPC-07 · Pasal yang Membela  [Romantis · host Y/C]
-    # │ KAPAN   : romansa atau aliansi dengan Ayane
-    # │ ISI SKRG: Ayane membela pemain di kampus dan Moeka di sidang banding
+    # │ KAPAN   : romansa atau aliansi dengan Sayane
+    # │ ISI SKRG: Sayane membela pemain di kampus dan Moeka di sidang banding
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
-    KK_END_TEXT["E-NPC-07"] = """Ayane datang ke pertemuan dengan dokumen rapi dan pertanyaan yang tidak membiarkan orang bersembunyi di balik jabatan. Di kampus ia membantumu mendapat kesempatan menjawab secara adil. Dalam banding yang menyangkut Moeka, ia menolak membiarkan keadaan sulit dipakai sebagai alasan mengabaikan haknya.
+    KK_END_TEXT["E-NPC-07"] = """Sayane datang ke pertemuan dengan dokumen rapi dan pertanyaan yang tidak membiarkan orang bersembunyi di balik jabatan. Di kampus ia membantumu mendapat kesempatan menjawab secara adil. Dalam banding yang menyangkut Moeka, ia menolak membiarkan keadaan sulit dipakai sebagai alasan mengabaikan haknya.
 
-Kedekatan kalian tidak membuat Ayane menjanjikan kemenangan. Ia memintamu berkata benar, datang tepat waktu, dan memahami bahwa membela seseorang tidak berarti menghapus pertanggungjawabannya.
+Kedekatan kalian tidak membuat Sayane menjanjikan kemenangan. Ia memintamu berkata benar, datang tepat waktu, dan memahami bahwa membela seseorang tidak berarti menghapus pertanggungjawabannya.
 
-Sesudah hari yang melelahkan, kalian duduk makan tanpa membicarakan perkara untuk beberapa saat. Kau belajar menyukai suaranya ketika tidak sedang berdebat. Ia pun mulai percaya bahwa di hadapanmu ia boleh lelah, tanpa harus selalu menjadi orang paling siap di ruangan."""
+Sesudah sidang sore yang melelahkan itu ditutup, kalian duduk di kedai udon dekat stasiun dengan tumpukan map masih di kursi sebelah. Sayane melepas kacamatanya, memijat pangkal hidungnya yang memerah, lalu membiarkanmu mengambilkan segelas air hangat untuknya."""
 
     # ┌─ ENDING · E-NPC-08 · Rapat Terakhir BEM  [Buruk · host Y/C]
-    # │ KAPAN   : Ayane mengetahui manipulasi pemain
+    # │ KAPAN   : Sayane mengetahui manipulasi pemain
     # │ ISI SKRG: ia mengecam pemain di depan umum
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
-    KK_END_TEXT["E-NPC-08"] = """Pada rapat terakhir BEM, Ayane meminta waktu bicara. Ia menjelaskan manipulasi yang diketahuinya, membedakan fakta dari dugaan, dan menolak usahamu menjadikan hubungan pribadi sebagai alasan agar persoalan itu ditutup.
+    KK_END_TEXT["E-NPC-08"] = """Pada rapat terakhir BEM, Sayane meminta waktu bicara. Ia menjelaskan manipulasi yang diketahuinya, membedakan fakta dari dugaan, dan menolak usahamu menjadikan hubungan pribadi sebagai alasan agar persoalan itu ditutup.
 
-Ruangan tidak langsung berpihak serentak. Ada pertanyaan, keberatan, dan orang yang tampak menyesal telah terlalu mudah percaya. Ayane mendengarkan semuanya tanpa mencabut inti pernyataannya: jabatan dan kedekatan tidak boleh menjadi perlindungan bagi orang yang menyakiti.
+Ruangan tidak langsung berpihak serentak. Ada pertanyaan, keberatan, dan orang yang tampak menyesal telah terlalu mudah percaya. Sayane mendengarkan semuanya tanpa mencabut inti pernyataannya: jabatan dan kedekatan tidak boleh menjadi perlindungan bagi orang yang menyakiti.
 
-Sesudah rapat, ia mengembalikan barang yang masih dititipkan kepadanya. Tidak ada percakapan untuk memperbaiki hubungan malam itu. Kau telah mengenal ketegasannya sebagai sesuatu yang menguntungkanmu. Kini kau harus menerima bahwa prinsip yang sama juga berlaku ketika orang yang perlu dihentikan adalah dirimu."""
+Sesudah rapat dibubarkan, ia meletakkan kunci cadangan dan map catatan yang pernah kautitipkan tepat di ujung mejamu. Tanpa menunggu kau mengemasi kertas-kertasmu, ia merapikan tas kerjanya sendiri dan keluar paling dulu dari ruang sidang."""
 
     # ┌─ ENDING · E-NPC-09 · Redaksi Berdua  [Romantis · host Y/C]
-    # │ KAPAN   : romansa dengan Mei; pemain jujur padanya
+    # │ KAPAN   : romansa dengan Meisa; pemain jujur padanya
     # │ ISI SKRG: akun gosip berhenti menulis tentang pemain
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
-    KK_END_TEXT["E-NPC-09"] = """Mei berhenti menulis tentangmu untuk akun gosipnya. Ia mengatakan kedekatan kalian membuatnya tidak bisa berpura-pura menjadi pengamat yang tidak berkepentingan. Kau menertawakan cara ia mengucapkannya seperti catatan redaksi, lalu menyadari betapa seriusnya ia sedang berusaha berlaku benar.
+    KK_END_TEXT["E-NPC-09"] = """Meisa berhenti menulis tentangmu untuk akun gosipnya. Ia mengatakan kedekatan kalian membuatnya tidak bisa berpura-pura menjadi pengamat yang tidak berkepentingan. Kau menertawakan cara ia mengucapkannya seperti catatan redaksi, lalu menyadari betapa seriusnya ia sedang berusaha berlaku benar.
 
 Kalian masih berdebat tentang cerita, batas pribadi, dan orang yang tidak hadir untuk membela dirinya. Kejujuranmu tidak memberinya hak menerbitkan semua hal, dan perasaannya tidak memberimu hak menyuruhnya membentuk berita sesuai keinginanmu.
 
-Malam di redaksi berakhir dengan makanan dingin dan tulisan yang belum selesai. Mei mematikan layar saat kau mengatakan sudah terlalu larut. Untuk sekali ini, cerita terbaik yang kalian punya tidak perlu dibaca siapa pun selain kalian berdua."""
+Malam di ruang redaksi itu berakhir dengan dua bungkus roti dingin dan draf artikel kampus yang belum selesai. Meisa menutup layar laptopnya saat kau mengingatkan sudah lewat pukul sepuluh, lalu menyodorkan satu payung lipat untuk kalian pakai berdua menuju stasiun."""
 
     # ┌─ ENDING · E-NPC-10 · Headline Terakhir  [Buruk · host Y/C]
-    # │ KAPAN   : Mei dipakai lalu dibuang
-    # │ ISI SKRG: Mei menerbitkan semua yang ia tahu
+    # │ KAPAN   : Meisa dipakai lalu dibuang
+    # │ ISI SKRG: Meisa menerbitkan semua yang ia tahu
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
-    KK_END_TEXT["E-NPC-10"] = """Mei menerbitkan tulisan terakhir tentangmu setelah menyadari seberapa jauh dirinya telah dipakai. Ia tidak mengirim draf untuk meminta persetujuan. Orang-orang lain membacanya lebih dahulu sebelum kau menemukan keberanian membuka tautan itu.
+    KK_END_TEXT["E-NPC-10"] = """Meisa menerbitkan tulisan terakhir tentangmu setelah menyadari seberapa jauh dirinya telah dipakai. Ia tidak mengirim draf untuk meminta persetujuan. Orang-orang lain membacanya lebih dahulu sebelum kau menemukan keberanian membuka tautan itu.
 
-Tulisan tersebut memuat hal yang benar-benar kautakuti diketahui. Kemarahan Mei juga melampaui batas pada bagian yang menyeret kehidupan pribadi orang lain. Kebenaran tentang perbuatanmu tidak membenarkan setiap pilihan yang ia buat untuk menyebarkannya.
+Tulisan tersebut memuat hal yang benar-benar kautakuti diketahui. Kemarahan Meisa juga melampaui batas pada bagian yang menyeret kehidupan pribadi orang lain. Kebenaran tentang perbuatanmu tidak membenarkan setiap pilihan yang ia buat untuk menyebarkannya.
 
-Kau kehilangan perlindungan dari reputasi, Mei kehilangan alasan menganggap dirinya tidak pernah ikut bermain. Hubungan itu berakhir dalam cerita yang terus dibaca orang asing, sementara mereka yang terseret harus hidup jauh lebih lama dengan akibatnya daripada lamanya tulisan itu menjadi pembicaraan."""
+Keesokan paginya di lorong fakultas, orang-orang berhenti mengobrol setiap kali kau lewat sambil melirik layar ponsel di tangan mereka. Di ujung koridor dekat papan buletin, Meisa sendiri sedang mengemasi barangnya dari ruang pers di bawah pengawasan staf kemahasiswaan tanpa menoleh ke arahmu."""
 
     # ┌─ ENDING · E-NPC-11 · Naskah dan Penyuntingnya  [Romantis · host C]
-    # │ KAPAN   : romansa dengan Mio
+    # │ KAPAN   : romansa dengan Miono
     # │ ISI SKRG: hubungan kerja menjadi lebih dari itu
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
-    KK_END_TEXT["E-NPC-11"] = """Mio mengajakmu makan sesudah rapat kerja, lalu dengan kikuk menjelaskan bahwa undangan itu bukan bagian dari proyek. Untuk pertama kalinya, ia tidak membawa daftar revisi sebagai alasan bertemu.
+    KK_END_TEXT["E-NPC-11"] = """Miono mengajakmu makan sesudah rapat kerja, lalu dengan kikuk menjelaskan bahwa undangan itu bukan bagian dari proyek. Untuk pertama kalinya, ia tidak membawa daftar revisi sebagai alasan bertemu.
 
 Kalian membicarakan batas pekerjaan sebelum hubungan pribadi tumbuh lebih jauh. Penilaian karya dan keputusan kontrak perlu ditangani tanpa menjadikan cinta sebagai imbalan. Prosesnya tidak selalu nyaman, tetapi tidak ada yang ingin setiap penolakan revisi berubah menjadi keraguan terhadap kasih sayang.
 
-Suatu malam, Mio membaca halaman yang tidak sedang dikejar tenggat. Kau duduk di dekatnya, menikmati kehadiran seseorang yang mengenal namamu di balik Shena. Ketika ia menutup buku dan mulai bercerita tentang harinya sendiri, kau tahu percakapan kalian akhirnya lebih luas daripada pekerjaan yang mempertemukan kalian."""
+Suatu malam di apartemennya, Miono membaca buku novel terjemahan yang sama sekali tidak sedang dikejar tenggat kantor. Kau duduk di ujung sofa yang sama sambil mengupas jeruk, dan ketika ia menutup halaman babnya, ia menggeser kakinya mendekat agar bisa bersandar di lututmu."""
 
     # ┌─ ENDING · E-NPC-12 · Kontrak Diputus  [Buruk · host C]
-    # │ KAPAN   : hubungan dengan Mio rusak
-    # │ ISI SKRG: Mio memutus kontrak Shena
+    # │ KAPAN   : hubungan dengan Miono rusak
+    # │ ISI SKRG: Miono memutus kontrak Shena
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
-    KK_END_TEXT["E-NPC-12"] = """Mio memutus hubungan kerja yang tidak lagi bisa dipertahankan dengan kepercayaan. Ia membicarakan penyelesaian kewajiban yang masih ada tanpa mengubahnya menjadi serangan pribadi. Kesopanan itu membuat akhir kontrak terdengar lebih pasti daripada pertengkaran.
+    KK_END_TEXT["E-NPC-12"] = """Miono memutus hubungan kerja yang tidak lagi bisa dipertahankan dengan kepercayaan. Ia membicarakan penyelesaian kewajiban yang masih ada tanpa mengubahnya menjadi serangan pribadi. Kesopanan itu membuat akhir kontrak terdengar lebih pasti daripada pertengkaran.
 
 Kau kehilangan tawaran baru dan tempat yang selama ini diberikan nama Shena di meja penerbit. Karya lama tetap mempunyai riwayatnya sendiri; masalah yang terjadi tidak dapat diperbaiki hanya dengan meminta orang mengingat betapa bagusnya sampul terdahulu.
 
-Sesudah pertemuan, Mio tidak menelepon untuk membujukmu kembali bekerja. Kau pulang membawa catatan yang harus diselesaikan. Jika kelak ingin menggambar lagi, kau harus memulai dari keputusan yang dapat kaupertanggungjawabkan, bukan dari anggapan bahwa seseorang akan terus menunggu hanya karena pernah percaya."""
+Sesudah pertemuan itu selesai, Miono mengantar sampai ke depan lift gedung redaksi, membungkuk singkat, dan menekan tombol turun untukmu. Kau pulang membawa amplop cokelat berisi salinan penghentian kontrak, sementara kartu akses tamu di sakumu sudah harus dikembalikan di meja resepsionis lantai dasar."""
 
     # ┌─ ENDING · E-NPC-13 · Kakak yang Dipilih  [Romantis · host Y]
     # │ KAPAN   : romansa dengan Haruto
@@ -1698,7 +1696,7 @@ Sesudah pertemuan, Mio tidak menelepon untuk membujukmu kembali bekerja. Kau pul
 
 Ia membawa perasaan dan sejarahnya sendiri ke dalam kabar itu. Kau tidak memaksanya memberi restu dengan cepat. Haruto tetap kakaknya, dan mencintaimu tidak boleh menghapus tanggung jawabnya mendengar adiknya tanpa selalu membela diri.
 
-Perlahan, kunjungan ke rumah Sakurajima menemukan kebiasaan baru. Haruto masih canggung ketika menunjukkan perhatian di depan keluarga. Kau menyukainya justru ketika ia berhenti berusaha terlihat paling tenang. Hubungan kalian tumbuh sebagai pilihan dua orang dewasa, dengan ruang bagi keluarga untuk mengenal bentuknya."""
+Beberapa bulan kemudian, kunjungan akhir pekan ke rumah Sakurajima sudah menjadi kebiasaan baru. Haruto masih sering salah tingkah setiap kali menyodorkan piring buah ke dekatmu di depan ibunya, lalu buru-buru mengajakmu keluar mencuci mobil di halaman hanya agar bisa menggenggam tanganmu sebentar."""
 
     # ┌─ ENDING · E-NPC-14 · Restu Sakurajima  [Netral · host Y/C]
     # │ KAPAN   : Haruto menjadi sekutu
@@ -1708,7 +1706,7 @@ Perlahan, kunjungan ke rumah Sakurajima menemukan kebiasaan baru. Haruto masih c
 
 Ia mempercayaimu karena telah melihat caramu memperlakukan Nagisa saat tidak ada keuntungan yang bisa diminta sebagai balasan. Kepercayaan itu tidak membuatnya berhenti bertanya. Justru karena kalian dapat bicara terus terang, ia tidak perlu selalu berdiri di antara kalian dengan kecurigaan.
 
-Di ruang keluarga, Nagisa mengeluhkan sesuatu yang remeh dan orang tuanya menanggapi sambil tersenyum. Kau duduk sebagai tamu yang diterima. Restu mereka bukan hak atas hidup anaknya; ia kesempatan untuk terus membuktikan bahwa kedekatan ini aman bagi semua orang yang ada di dalamnya."""
+Di ruang keluarga, Nagisa sedang mengomel soal tugas maketnya sementara ibunya meletakkan sepiring kue beras hangat di meja rendah. Haruto menepuk bahumu sambil menunjuk bantal duduk yang kosong di dekat meja, lalu ikut duduk menyeduh teh untuk kalian berempat."""
 
     # ┌─ ENDING · E-NPC-15 · Esai untuk Satu Orang  [Romantis · host Y]
     # │ KAPAN   : romansa dengan Matsuda
@@ -1718,7 +1716,7 @@ Di ruang keluarga, Nagisa mengeluhkan sesuatu yang remeh dan orang tuanya menang
 
 Ketika kautanya apakah itu tentang kalian, Matsuda mengatakan tidak semua tulisan bisa dipakai untuk bersembunyi dari jawaban pribadi. Ia menyukaimu. Kalimat itu diucapkan tanpa kutipan, tanpa tokoh pengganti, tanpa ejekan yang membuatnya mudah ditarik kembali.
 
-Kau menyimpan esainya bersama catatan tentang hari biasa yang kalian lalui. Di luar halaman, pilihan masih perlu dibuat berkali-kali. Matsuda tetap tajam, kau tetap tidak selalu mengerti maksudnya, tetapi kini kalian dapat saling bertanya daripada menunggu seseorang menulis penjelasan yang sempurna."""
+Kau melipat bundel esai itu ke dalam tasmu sementara cahaya sore meredup di jendela ruang klub. Matsuda menutup buku catatannya, mengambil jaket dari sandaran kursi, dan menanyakan apakah kau mau mampir makan ramen sebelum kereta malam penuh."""
 
     # ┌─ ENDING · E-NPC-16 · Saksi yang Menulis  [Buruk · host Y/C]
     # │ KAPAN   : Matsuda membongkar manipulasi pemain
@@ -1728,27 +1726,27 @@ Kau menyimpan esainya bersama catatan tentang hari biasa yang kalian lalui. Di l
 
 Koita membacanya tanpa tertawa. Beberapa orang menghubungimu dengan pertanyaan yang tidak lagi dapat dijawab melalui gurauan. Matsuda tidak mengaku mengetahui semua isi kepalamu; ia menulis tentang pola tindakan yang sudah terlalu lama dilihat orang tanpa diberi nama.
 
-Kau tidak dapat menuntut sebuah esai menggantikan proses yang adil, tetapi juga tidak dapat menghapus pengalaman yang membuat orang mengenalinya. Di fakultas, cara mereka menyambutmu berubah. Kalimat yang dulu kaubuat terdengar masuk akal kini selalu disusul pertanyaan tentang siapa yang akan membayar akibatnya."""
+Ketika kau masuk ke ruang baca fakultas sore itu, tiga mahasiswa yang sedang memegang selebaran jurnal klub langsung menutup halaman mereka dan pindah ke meja seberang. Di sudut ruangan, Matsuda tetap mengetik di laptopnya tanpa mengangkat kepala sedikit pun saat kau melintas."""
 
     # ┌─ ENDING · E-NPC-17 · Informan yang Setia  [Romantis · host Y]
-    # │ KAPAN   : romansa dengan Daichi
+    # │ KAPAN   : romansa dengan Kaichi
     # │ ISI SKRG: informan yang berhenti menjual pemain
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
-    KK_END_TEXT["E-NPC-17"] = """Daichi datang membawa makanan dan informasi yang kali ini tidak dipasangi harga. Ketika kau bertanya, ia menjawab bahwa ia ingin tahu apakah kalian masih bisa mengobrol tanpa salah seorang menawarkan sesuatu.
+    KK_END_TEXT["E-NPC-17"] = """Kaichi datang membawa makanan dan informasi yang kali ini tidak dipasangi harga. Ketika kau bertanya, ia menjawab bahwa ia ingin tahu apakah kalian masih bisa mengobrol tanpa salah seorang menawarkan sesuatu.
 
-Kalian perlu belajar berhenti memakai rahasia sebagai alat tawar. Tidak semua kebiasaan hilang karena pengakuan cinta. Daichi kadang masih menyembunyikan gugup di balik lelucon soal utang, dan kau mengingatkannya bahwa perhatianmu tidak sedang diperjualbelikan.
+Kalian perlu belajar berhenti memakai rahasia sebagai alat tawar. Tidak semua kebiasaan hilang karena pengakuan cinta. Kaichi kadang masih menyembunyikan gugup di balik lelucon soal utang, dan kau mengingatkannya bahwa perhatianmu tidak sedang diperjualbelikan.
 
-Pada malam ketika ia terlalu lelah untuk tampil menarik, ia tetap mengetuk pintu. Kau membiarkannya duduk tanpa meminta kabar kampus. Kesetiaan itu mulai terasa nyata ketika kalian dapat berada bersama tanpa informasi baru, hanya dua orang yang memilih tidak menjual satu sama lain kepada rasa takut."""
+Pada malam hujan ketika ia pulang dari kerja paruh waktu dengan kemeja basah dan wajah pucat karena kelelahan, ia tetap mengetuk pintu apartemenmu. Kau menariknya masuk, menyerahkan handuk kering tanpa menanyakan kabar kampus sepatah kata pun, lalu memanaskan sisa sup di dapur."""
 
     # ┌─ ENDING · E-NPC-18 · Maket Kedua  [Romantis · host Y]
-    # │ KAPAN   : romansa dengan Yuuto
-    # │ ISI SKRG: Yuuto berhenti mengejar Nagisa
+    # │ KAPAN   : romansa dengan Fuuto
+    # │ ISI SKRG: Fuuto berhenti mengejar Nagisa
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
-    KK_END_TEXT["E-NPC-18"] = """Yuuto berhenti mencari alasan untuk terus berada dekat Nagisa. Ia mengakui bahwa perasaan tidak memberinya hak menunggu seseorang sampai lelah menolak. Pengakuan itu membuat percakapan kalian lebih jujur daripada pujian yang dahulu ia siapkan untuk orang lain.
+    KK_END_TEXT["E-NPC-18"] = """Fuuto berhenti mencari alasan untuk terus berada dekat Nagisa. Ia mengakui bahwa perasaan tidak memberinya hak menunggu seseorang sampai lelah menolak. Pengakuan itu membuat percakapan kalian lebih jujur daripada pujian yang dahulu ia siapkan untuk orang lain.
 
-Di studio arsitektur, kalian mengerjakan maket kedua. Ada bagian yang miring, jadwal yang terlalu padat, dan perselisihan tentang cara memperbaiki pekerjaan. Yuuto mulai bertanya pendapatmu tanpa menjadikanmu saksi betapa besar usahanya mendapatkan seseorang.
+Di studio arsitektur, kalian mengerjakan maket kedua. Ada bagian yang miring, jadwal yang terlalu padat, dan perselisihan tentang cara memperbaiki pekerjaan. Fuuto mulai bertanya pendapatmu tanpa menjadikanmu saksi betapa besar usahanya mendapatkan seseorang.
 
-Sesudah maket selesai, ia mengajakmu keluar sebagai kencan dan menyebutnya begitu. Kau menerima dengan lega karena tidak harus menebak peranmu. Hubungan ini tidak dibangun sebagai tempat pelarian dari Nagisa, melainkan ruang baru yang kalian pilih setelah ia sungguh berhenti mengejarnya."""
+Sesudah maket kayu balsa itu selesai dikeringkan pada Jumat petang, Fuuto membersihkan sisa lem di jari-jarinya lalu mengajakmu menonton film malam. Saat keluar dari gedung studio, ia meraih tanganmu di tangga batu dan berjalan bersisian menuju gerbang."""
 
     # ┌─ ENDING · E-NPC-19 · Pewaris yang Membangkang  [Romantis · host Y]
     # │ KAPAN   : romansa dengan Tojo
@@ -1758,17 +1756,17 @@ Sesudah maket selesai, ia mengajakmu keluar sebagai kencan dan menyebutnya begit
 
 Kau tidak menerima kedekatan Tojo sebagai bukti bahwa cara lamanya memperlakukan orang tiba-tiba tidak penting. Ia harus belajar mendengar penolakan dan melepaskan anggapan bahwa masa depan seseorang dapat ditentukan karena hubungan itu menguntungkan.
 
-Saat ia datang menemuimu tanpa membawa rencana besar, suaranya terdengar kurang pasti. Kau menyukai kemungkinan perubahan itu, bukan jabatan pewaris yang dibawanya. Masa depan kalian bergantung pada apa yang ia lakukan sesudah berani membangkang, termasuk ketika orang yang perlu ia hormati sedang tidak memujinya."""
+Sore itu ia datang menemuimu di kafe dekat stasiun tanpa sopir keluarga dan tanpa setelan resmi yang biasa dipakainya. Dengan kemeja yang agak kusut karena naik kereta komuter, ia meletakkan dua tiket pameran akhir pekan di meja dan bertanya pelan apakah jadwalmu kosong."""
 
     # ┌─ ENDING · E-NPC-20 · Skandal Omiai  [Khusus · host Y]
-    # │ KAPAN   : romansa dengan Takeru
+    # │ KAPAN   : romansa dengan Tatsuru
     # │ ISI SKRG: omiai Miyuki runtuh dalam skandal
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
-    KK_END_TEXT["E-NPC-20"] = """Omiai yang seharusnya mempertemukan Takeru dan Miyuki berakhir dalam percakapan yang tidak disiapkan keluarga mana pun. Takeru mengakui hubungan yang ingin dijalaninya denganmu. Miyuki menatapnya lama, kemudian meminta mereka berhenti membicarakan masa depannya seolah ia hanya perlu menerima keputusan yang tersisa.
+    KK_END_TEXT["E-NPC-20"] = """Omiai yang seharusnya mempertemukan Tatsuru dan Miyuki berakhir dalam percakapan yang tidak disiapkan keluarga mana pun. Tatsuru mengakui hubungan yang ingin dijalaninya denganmu. Miyuki menatapnya lama, kemudian meminta mereka berhenti membicarakan masa depannya seolah ia hanya perlu menerima keputusan yang tersisa.
 
 Kabar itu menjadi skandal karena orang-orang di sekeliling terlalu banyak menanam harapan tanpa bertanya. Kalian harus menghadapi kemarahan dan komentar yang tidak semuanya adil. Namun kegaduhan tersebut juga tidak menghapus kewajiban berkata jujur kepada orang yang telah dibawa masuk ke rencana ini.
 
-Sesudahnya, hubungan kalian bergerak jauh dari meja perjodohan. Takeru masih bekerja, kau masih harus memilih apakah kedekatan ini sanggup hidup tanpa kesenangan melawan orang lain. Miyuki akhirnya mendapat ruang menyusun hidup yang tidak lagi menunggu keputusan seorang calon pasangan."""
+Dua bulan sesudah pertemuan keluarga yang gaduh itu, Tatsuru menjemputmu sepulang jam jaganya dengan mobil kecil yang baru ia cicil sendiri. Di kursi penumpang masih ada kardus buku medis dari rumah orang tuanya, dan ia menggeser tumpukan itu ke bagasi belakang agar kau bisa duduk di sebelahnya."""
 
     # ┌─ ENDING · E-NPC-21 · Kafe Pagi  [Netral · host Y/C]
     # │ KAPAN   : kerja tetap di Kafe Komorebi
@@ -1778,7 +1776,7 @@ Sesudahnya, hubungan kalian bergerak jauh dari meja perjodohan. Takeru masih bek
 
 Pagi-pagi di kafe punya urutan yang dapat dipelajari: membuka ruangan, menyiapkan meja, menyapa pelanggan. Kau makan pada waktunya dan tidur karena esok harus benar-benar hadir, bukan karena tubuh akhirnya tidak sanggup menolak.
 
-Hidupmu tidak berubah menjadi mudah. Tetapi ketika mengangkat tirai pada pagi yang cerah, tubuhmu tidak lagi terasa seperti benda yang harus terus dipaksa. Ito menyerahkan cangkir dan menyuruhmu minum sebelum ramai. Kau menerima perhatian sederhana itu tanpa lebih dulu bertanya apakah kau telah pantas mendapatkannya."""
+Pukul tujuh kurang sepuluh, kau memutar papan tanda buka di pintu kaca depan sementara sinar matahari pagi jatuh ke lantai kayu yang baru dipel. Di balik meja bar, Ito menggeser secangkir kopi susu hangat dan sepiring roti panggang ke arahmu sebelum lonceng pintu berbunyi menyambut pelanggan pertama."""
 
     # ┌─ ENDING · E-NPC-22 · Batas Profesional  [Netral · host Y/C]
     # │ KAPAN   : pemain mengejar Sato secara romantis
@@ -1788,7 +1786,7 @@ Hidupmu tidak berubah menjadi mudah. Tetapi ketika mengangkat tirai pada pagi ya
 
 Penolakan itu tidak disertai ejekan atau hukuman. Ia membicarakan perpindahan pendampingan agar kau tetap bisa memperoleh bantuan tanpa harus terus menahan rasa tidak nyaman di ruangan yang sama. Kau boleh sedih; kesedihan itu tidak dipakai untuk mengubah batasnya.
 
-Pada sesi pertama dengan rekan lain, kau hampir membatalkan kedatangan karena malu. Akhirnya kau masuk. Apa yang terjadi dengan Sato bukan kegagalan untuk layak dicintai. Ia telah menjaga hubungan profesional agar kebutuhanmu akan pertolongan tetap dapat diterima dengan aman."""
+Pada sesi pertama dengan konselor rujukan yang baru pekan berikutnya, tanganmu sempat berhenti lama di gagang pintu ruang tunggu karena malu. Ketika pintu akhirnya dibuka dan konselor itu mempersilakan duduk, kau meletakkan tasmu di kursi dan menyerahkan lembar rujukan bertanda tangan Sato."""
 
     # ┌─ ENDING · E-NPC-23 · Konseling Host  [Netral · host Y/C]
     # │ KAPAN   : konseling rutin dengan Sato
@@ -1798,7 +1796,7 @@ Pada sesi pertama dengan rekan lain, kau hampir membatalkan kedatangan karena ma
 
 Konseling tidak menghapus kontrak dari duniamu. Ia membantumu membedakan rasa takut, kebutuhan tubuh, dan keputusan yang tetap berada dalam tanggung jawabmu. Perlahan kau berhenti menganggap setiap jeda sebagai waktu yang dicuri dari tugas menjaga hidup.
 
-Dalam catatan profesional, cerita tentang Sistem dicatat sebagai keyakinan yang disampaikan. Di ruangan itu, kau juga seseorang yang belum makan, merindukan rumah, dan ingin bisa menutup mata tanpa menghitung ancaman. Bantuan yang kauterima tidak membutuhkan semua orang memahami asal ketakutanmu dengan cara yang sama."""
+Dalam map arsip klinik, cerita tentang Sistem tertulis rapi sebagai keyakinan pasien. Ketika jam dinding ruang konseling berdentang pukul empat sore, Sato menutup buku catatannya, mengingatkanmu untuk makan malam sebelum pukul delapan, dan menjadwalkan pertemuan kamis depan."""
 
     # ┌─ ENDING · E-NPC-24 · Kepercayaan Kuroiwa  [Netral · host Y/C]
     # │ KAPAN   : Kuroiwa mempercayai pemain
@@ -1808,7 +1806,7 @@ Dalam catatan profesional, cerita tentang Sistem dicatat sebagai keyakinan yang 
 
 Kepercayaannya memberimu peringatan lebih dini, bukan izin memasuki kehidupan Shiori tanpa batas. Ia menegur saat kau mulai menganggap pengetahuannya sebagai jalan menghindari percakapan langsung. Kesetiaannya tetap kepada orang yang selama ini ia bantu tumbuh, termasuk ketika ia percaya kau tidak bermaksud buruk.
 
-Pada kunjungan berikutnya, ia menyambutmu tanpa pemeriksaan panjang. Kau telah belajar menjawab dengan jelas dan pergi ketika memang waktunya pulang. Di antara kalian ada rasa hormat yang tidak perlu dibuat akrab untuk menjadi berarti."""
+Pada kunjungan berikutnya ke kediaman Saionji, Kuroiwa membukakan pintu samping tanpa lagi menahanmu di beranda untuk memeriksa keperluanmu. Ia hanya mengambil mantelmu, menunjuk arah ruang teh di ujung lorong, lalu kembali ke posnya dengan anggukan singkat."""
 
     # ┌─ ENDING · E-NPC-25 · Saksi yang Dipercaya  [Netral · host Y/C]
     # │ KAPAN   : pemain membantu Hanabusa
@@ -1818,7 +1816,7 @@ Pada kunjungan berikutnya, ia menyambutmu tanpa pemeriksaan panjang. Kau telah b
 
 Kesaksianmu membantu perkara terhadap orang yang selama ini merasa aman dari pertanyaan. Mereka yang dirugikan tetap harus menjalani proses yang berat, tetapi kini tidak seluruh pengalaman mereka berdiri sendirian di hadapan penyangkalan.
 
-Sesudah semuanya, Hanabusa hanya mengucapkan terima kasih karena telah datang dan menjawab. Tidak ada gelar penyelamat yang diberikan kepadamu. Kau pulang memahami bahwa kepercayaan itu dibangun dengan membiarkan kebenaran tetap lebih penting daripada keinginanmu tampil berguna."""
+Sesudah berita acara terakhir ditandatangani, Hanabusa merapikan map ke dalam laci besinya dan hanya mengucapkan terima kasih singkat karena kau sudah datang tepat waktu. Kau keluar ke pelataran gedung komite yang mulai gelap, mengancingkan jaketmu, dan berjalan pulang menuju stasiun."""
 
     # ┌─ ENDING · E-NPC-26 · Penyusup  [Khusus · host Y/C]
     # │ KAPAN   : penyamaran berhasil; bukti cukup
@@ -1828,7 +1826,7 @@ Sesudah semuanya, Hanabusa hanya mengucapkan terima kasih karena telah datang da
 
 Apa yang diketahui selama penyamaran kini harus diperiksa melalui proses yang nyata. Kau tidak diminta memperindah peranmu. Ada tindakan yang perlu kauberi penjelasan sendiri, dan orang yang dirugikan tidak otomatis berutang rasa terima kasih karena rencanamu berhasil.
 
-Sesudah memberi keterangan, kau merasa asing pada cara bicara yang sempat terlalu lama kaupalsukan. Di luar ruangan, seseorang memanggil namamu tanpa sandi atau maksud tersembunyi. Kau menoleh dengan kelegaan yang terlambat: akhirnya tidak perlu berpura-pura menjadi bagian dari sesuatu yang ingin kauhentikan."""
+Sesudah selesai menyerahkan rekaman dan salinan dokumen di ruang pemeriksaan lantai tiga, kau mencopot kartu tanda anggota dari kerah kemejamu dan meletakkannya di meja petugas. Di luar gedung, seorang teman lama memanggil namamu dari dekat rak sepeda, dan kau menoleh sambil mengembuskan napas panjang."""
 
     # ┌─ ENDING · E-NPC-27 · Penyusup yang Tertelan  [Buruk · host Y/C]
     # │ KAPAN   : penyamaran terlalu lama
@@ -1838,7 +1836,7 @@ Sesudah memberi keterangan, kau merasa asing pada cara bicara yang sempat terlal
 
 Ketika perkara terbongkar, namamu ikut disebut karena perbuatanmu sendiri. Niat awal tidak menghapus orang yang dirugikan selama kau menunggu saat yang dianggap tepat. Kau diminta menjelaskan apa yang diketahui, apa yang dilakukan, dan mengapa tidak berhenti ketika masih bisa.
 
-Tidak ada pengungkapan terakhir yang memisahkanmu dengan bersih dari lingkaran itu. Kau telah terlalu lama mengambil manfaat dari tempatmu di dalamnya. Orang yang dulu kauanggap sasaran kini duduk dalam perkara yang juga menyangkutmu, sementara mereka yang berharap kau membantu harus menghadapi bentuk pengkhianatan yang baru."""
+Di ruang tunggu pemeriksaan, kursi tempatmu duduk hanya berjarak tiga meter dari orang yang dulu kaujadikan target penyelidikan. Ketika petugas keluar memanggil daftar nama terperiksa berikutnya, namamu dibacakan tepat sesudah namanya dalam berkas perkara yang sama."""
 
     # ┌─ ENDING · E-HP-01 · Bersama Satu Orang  [Romantis · host Y/C]
     # │ KAPAN   : satu hubungan romantis bertahan sampai M36
@@ -1848,7 +1846,7 @@ Tidak ada pengungkapan terakhir yang memisahkanmu dengan bersih dari lingkaran i
 
 Kalian tidak berhenti berbeda pendapat. Ada janji yang perlu diperbaiki dan masa depan yang belum dapat ditentukan dalam satu percakapan. Namun tak seorang pun harus menebak apakah hubungan ini masih ada setiap kali hari menjadi sulit.
 
-Setelah acara selesai, ia mencarimu di kerumunan dan menanyakan mau makan di mana. Pertanyaan itu terasa sederhana sesudah semua ancaman yang pernah kauhadapi. Kau menjawab dengan memikirkan seleranya juga. Hidup bersama dimulai lagi dari pilihan kecil yang tetap kalian buat untuk dua orang."""
+Setelah upacara di aula selesai, ia mencarimu di sela kerumunan toga dan menanyakan mau makan malam di mana. Kau menyebutkan kedai dekat stasiun yang menyisakan menu kesukaannya, lalu menggenggam tangannya sambil berjalan keluar gerbang kampus."""
 
     # ┌─ ENDING · E-HP-02 · Bersama Beberapa Orang  [Khusus · host Y/C]
     # │ KAPAN   : lebih dari satu hubungan bertahan, terbuka atau rahasia
@@ -1858,7 +1856,7 @@ Setelah acara selesai, ia mencarimu di kerumunan dan menanyakan mau makan di man
 
 Pada bagian yang dibicarakan terbuka, ada jadwal, kecemburuan, dan hak menarik diri yang harus dihormati. Pada bagian yang disembunyikan, setiap ketenangan masih berdiri di atas sesuatu yang belum boleh dipilih orang yang terlibat. Jumlah hubungan tidak mengatakan mana yang sedang kalian jalani dengan jujur.
 
-Kau menatap pesan yang masuk bergantian. Setelah kelulusan, tidak ada layar hasil yang dapat mengerjakan percakapan ini untukmu. Apa pun bentuk hubungan yang bertahan, orang-orang di dalamnya tetap berhak mengetahui kehidupan yang sedang mereka setujui."""
+Di bawah pohon sakura dekat gerbang, ponsel di tanganmu bergetar menampilkan dua pesan berturut-turut yang menanyakan posisimu sekarang. Kau menoleh ke arah aula wisuda sementara langkah seseorang sudah mendekat dari belakang untuk memanggil namamu."""
 
     # ┌─ ENDING · E-HP-03 · Tidak Dapat Siapa-Siapa  [Netral · host Y/C]
     # │ KAPAN   : pernah mengejar, tetapi tidak ada yang bertahan
@@ -1868,7 +1866,7 @@ Kau menatap pesan yang masuk bergantian. Setelah kelulusan, tidak ada layar hasi
 
 Di wisuda, kau menyalami teman dan mengambil foto. Ada saat ketika melihat pasangan lain membuat dadamu nyeri, lalu ada percakapan biasa yang membuatmu tertawa tanpa merasa sedang menutupi apa pun.
 
-Kau pulang sendiri dan menyiapkan makanan yang kausukai. Kehidupan yang tersisa bukan hadiah penghibur karena gagal mendapatkan seseorang. Ia masih milikmu untuk dijalani, dengan pekerjaan, persahabatan, dan kemungkinan yang tidak harus dibuktikan hari ini."""
+Sore itu kau pulang ke kamar dengan tabung ijazah di tangan, mampir membeli bahan makan malam kesukaanmu di supermarket stasiun, lalu menggantung jas wisudamu di lemari sebelum menyalakan kompor."""
 
     # ┌─ ENDING · E-HP-04 · Ditinggalkan Semua  [Buruk · host Y/C]
     # │ KAPAN   : semua orang yang dikejar pergi karena kebohongan atau luka
@@ -1878,7 +1876,7 @@ Kau pulang sendiri dan menyiapkan makanan yang kausukai. Kehidupan yang tersisa 
 
 Kau tidak dapat lagi memanggil kenangan hangat tanpa mengingat apa yang menyusul sesudahnya. Beberapa orang memblokir nomor, yang lain menjawab hanya untuk menyelesaikan urusan. Mereka berhak menolak percakapan yang kaubutuhkan demi merasa telah dimaafkan.
 
-Di akhir hari, kau sendirian dengan pengetahuan bahwa kesepian ini mempunyai riwayat. Jika ingin berubah, pekerjaan itu harus dilakukan juga ketika tidak ada orang yang bersedia kembali untuk menyaksikannya. Tidak ada pasangan yang tersisa untuk kaubebani sebagai bukti bahwa kau kini layak dipercaya."""
+Saat kerumunan wisudawan berkumpul di pelataran gedung utama untuk berfoto per angkatan, tak seorang pun memanggilmu bergabung ketika kau berdiri di tepi tangga. Kau memasukkan kedua tangan ke saku jas, berbalik meninggalkan halaman kampus lebih awal, dan pulang dengan kereta siang yang masih lengang."""
 
     # ┌─ ENDING · E-HP-05 · Tidak Pernah Mengejar Siapa Pun  [Netral · host Y/C]
     # │ KAPAN   : tidak pernah memulai romansa
@@ -1888,7 +1886,7 @@ Di akhir hari, kau sendirian dengan pengetahuan bahwa kesepian ini mempunyai riw
 
 Sebagian orang mengira kau menyembunyikan cinta besar. Kau belajar tidak harus memberi kisah yang mereka harapkan. Hidupmu tetap berisi kedekatan, pertentangan, kerja, dan keputusan yang mengubah orang di sekitarmu dengan cara yang tidak selalu romantis.
 
-Pada hari kelulusan, kau tidak mencari seseorang untuk mengisi ruang di sampingmu agar foto terlihat lengkap. Perhitungan kontrak mempunyai urusannya sendiri. Ketiadaan romansa, pada dirinya sendiri, tidak membuat tiga tahun itu kosong atau menjadikan dirimu seseorang yang belum selesai."""
+Pada hari kelulusan, kau meminta seorang teman sekelas memotretmu sendirian di depan plakat gerbang Kouseikan. Setelah memeriksa hasilnya di layar kamera dan mengucapkan terima kasih, kau menyampirkan tas di bahu dan melangkah keluar menuju jalan raya."""
 
     # ┌─ ENDING · E-HP-06 · Cinta yang Datang Terlambat  [Khusus · host Y/C]
     # │ KAPAN   : seseorang mengaku di M35 atau M36 setelah pemain menyerah
@@ -1898,7 +1896,7 @@ Pada hari kelulusan, kau tidak mencari seseorang untuk mengisi ruang di sampingm
 
 Kau mendengar tanpa memutuskan bahwa keterlambatan itu pasti romantis. Ada hidup yang telah kaususun setelah menyerah, luka yang mungkin belum selesai, dan kemungkinan yang masih dapat kainginkan. Semua itu pantas hadir dalam jawabanmu.
 
-Ia mengatakan kau boleh berpikir. Untuk pertama kalinya, masa depan tidak menyerupai pintu yang harus dimasuki sebelum tertutup selamanya. Kau menarik napas dan mulai menjawab dengan apa yang sungguh kauinginkan hari ini. Halaman terakhir berhenti di sana, pada suaramu yang akhirnya tidak dipinjam dari harapan orang lain."""
+Di bawah pohon dekat pagar belakang kampus yang mulai sepi, ia berdiri dua langkah di depanmu sambil meremas ujung map ijazahnya dan mengatakan kau tidak harus menjawab sekarang. Kau menarik napas panjang, menatap matanya, lalu membuka mulut untuk mengucapkan kalimat pertamamu."""
 
     # ┌─ ENDING · E-HP-07 · Patah Hati yang Diterima  [Netral · host Y/C]
     # │ KAPAN   : ditolak dengan jujur, dan pemain menerimanya
@@ -1908,7 +1906,7 @@ Ia mengatakan kau boleh berpikir. Untuk pertama kalinya, masa depan tidak menyer
 
 Ada hari ketika kau perlu menjaga jarak. Kau menjelaskannya tanpa menjadikannya ancaman agar ia berubah pikiran. Perlahan, keinginan menghubungi setiap kali merasa sepi mulai berkurang, memberi tempat bagi hidup yang selama ini tertahan oleh satu harapan.
 
-Saat bertemu lagi, kau bisa menyapa tanpa menuntut wajahnya menunjukkan penyesalan. Perasaanmu pernah nyata, demikian juga jawabannya. Kau pulang dengan hati yang belum melupakan semuanya, tetapi sudah tidak berperang melawan hak seseorang memilih lain."""
+Saat kalian berpapasan lagi di halaman wisuda, kau berhenti sebentar untuk mengucapkan selamat dan menyalami tangannya dengan wajar. Setelah ia tersenyum dan kembali ke rombongan teman-temannya, kau membetulkan letak tas di pundakmu dan melanjutkan langkah menuju gerbang stasiun."""
 
 
     # ═════ Sistem / Force ═════
@@ -1920,7 +1918,7 @@ Saat bertemu lagi, kau bisa menyapa tanpa menuntut wajahnya menunjukkan penyesal
 
 Ia menambahkan satu ejekan tentang betapa lama waktu yang kaubutuhkan. Kau hampir membalas, lalu berhenti. Tidak ada tugas baru menyusul, tidak ada ancaman kecil diselipkan setelah kalimat terakhir. Untuk pertama kalinya, diam di kepalamu bukan jeda sebelum perintah berikutnya.
 
-Seseorang memanggilmu dari kerumunan. Kau menoleh dan berjalan ke arahnya tanpa memeriksa apakah pertemuan itu berguna bagi apa pun. Masa depan tidak tiba-tiba menjadi aman atau mudah. Ia akhirnya menjadi sesuatu yang dapat kaupikirkan tanpa lebih dahulu meminta izin kepada suara yang tidak pernah mencintai hidupmu."""
+Seseorang memanggil namamu dari bawah pohon sakura di dekat gerbang. Kau berkedip melihat udara kosong tempat jendela biru itu baru saja lenyap, lalu melangkah turun dari tangga aula untuk menghampirinya."""
 
     # ┌─ ENDING · E-SI-02 · Nyaris  [Khusus · host Y/C]
     # │ KAPAN   : deviasi tipis di atas ambang
@@ -1930,7 +1928,7 @@ Seseorang memanggilmu dari kerumunan. Kau menoleh dan berjalan ke arahnya tanpa 
 
 Tanganmu masih gemetar saat menyadari kau selamat. Orang yang berdiri di dekatmu mengira kau gugup karena hari kelulusan. Kau tidak membetulkannya. Ada jarak yang sangat tipis antara dunia ini tetap dapat kaulihat dan semua hal yang tak akan pernah sempat kaulakukan.
 
-Sistem tidak pernah bicara lagi. Lama sesudah hari itu, kau kadang terbangun untuk memastikan masih ada suara kota di luar. Perlahan, keheningan di kepalamu berubah dari sesuatu yang mencurigakan menjadi tempat yang cukup luas untuk keinginanmu sendiri."""
+Sistem tidak pernah bicara lagi sesudah detik itu. Beberapa bulan kemudian, saat terbangun tengah malam karena bunyi hujan di atap kamar, kau masih sempat menatap langit-langit gelap untuk menunggu suara di kepalamu sebelum berbalik memeluk bantal dan kembali tidur."""
 
     # ┌─ ENDING · E-SI-03 · Penonton Terakhir  [Romantis · host Y/C]
     # │ KAPAN   : deviasi tinggi; rapport_sistem tinggi
@@ -1940,7 +1938,7 @@ Sistem tidak pernah bicara lagi. Lama sesudah hari itu, kau kadang terbangun unt
 
 Kau tidak lupa bahwa ia mengancammu. Kedekatan yang terbentuk tidak membuat kontrak itu baik. Namun ketika ia mengatakan kau lolos, ada jeda yang tidak menyerupai ejekan. Ia menyebutmu penonton yang terlalu jauh masuk ke cerita, kemudian mengaku penasaran apa yang akan kaulakukan tanpa dirinya.
 
-Kau menjawab bahwa itu bukan urusannya lagi. Ia tertawa, atau mengeluarkan suara yang cukup mirip tawa, lalu berpamitan. Tidak ada janji akan bertemu kembali. Kau berdiri sebentar, berduka pada sesuatu yang tidak pernah layak disebut teman sepenuhnya, sebelum kembali kepada orang yang masih bisa kausentuh."""
+Kau bergumam bahwa itu bukan urusannya lagi. Terdengar dengung pendek yang mirip tawa sebelum titik cahaya terakhir di sudut matamu padam, menyisakan bayangan halaman kampus dan tangan seseorang yang baru saja menepuk pundakmu."""
 
     # ┌─ ENDING · E-SI-04 · Kontrak Baru  [Khusus · host Y/C]
     # │ KAPAN   : deviasi tinggi; sikap penyelidik
@@ -1950,7 +1948,7 @@ Kau menjawab bahwa itu bukan urusannya lagi. Ia tertawa, atau mengeluarkan suara
 
 Kau membaca tanpa segera menjawab. Tiga tahun pertama mengajarimu bahwa kata yang tidak ditanyakan dapat berubah menjadi ancaman, dan bahwa rasa ingin tahu bukan alasan menyerahkan hidup tanpa mengetahui harga.
 
-Jendela itu tetap menunggu. Di luar, ada orang yang mengharapkanmu datang merayakan kelulusan. Kau memiliki pilihan yang dulu tidak pernah diberikan pada awal kontrak: membiarkan tawaran terbuka sambil memutuskan apakah benar ada jawaban di baliknya yang lebih berharga daripada hidupmu sekarang."""
+Di halaman depan gedung wisuda, teman-teman seangkatanmu sudah melambai memanggilmu untuk berfoto bersama. Jendela biru berisi dua kotak pilihan itu masih melayang diam di depan wajahmu sementara jari tanganmu terangkat perlahan di udara."""
 
     # ┌─ ENDING · E-SI-05 · Gagal di Bawah Sakura  [Buruk · host Y/C]
     # │ KAPAN   : deviasi kurang; pemain di kampus
@@ -1960,7 +1958,7 @@ Jendela itu tetap menunggu. Di luar, ada orang yang mengharapkanmu datang meraya
 
 Kau mencoba menyebut nama seseorang. Orang-orang yang melihatmu mendadak berhenti segera mendekat dan mencari pertolongan. Mereka tidak tahu ada kontrak yang telah memutuskan akhir ini; yang mereka lihat adalah seseorang yang seharusnya masih memiliki banyak hari sesudah kelulusan.
 
-Kelopak jatuh di dekat tanganmu. Sesudahnya, dunia tetap berlanjut dengan pertanyaan yang tidak dapat dijawab oleh mereka yang tinggal. Kegagalan yang dihitung Sistem tidak menjelaskan seluruh hidupmu. Ia hanya kekuasaan yang menolak memberimu kesempatan berikutnya."""
+Sehelai kelopak merah muda jatuh menempel di punggung tanganmu yang tergeletak di atas batu trotoar. Suara langkah sepatu yang berlari mendekat dan teriakan panik yang memanggil ambulans terdengar makin jauh sebelum pandanganmu gelap sepenuhnya."""
 
     # ┌─ ENDING · E-SI-06 · Cinta yang Tidak Dihitung  [Buruk · host C]
     # │ KAPAN   : Chiasa × Yutaka saja
@@ -1970,7 +1968,7 @@ Kelopak jatuh di dekat tanganmu. Sesudahnya, dunia tetap berlanjut dengan pertan
 
 Sistem mengatakan hubungan kalian bukan penyimpangan yang dimintanya. Dalam perhitungannya, hidup Koita belum cukup berubah. Kau telah mengetahui peringatan itu, tetapi tetap sempat berharap kebahagiaan yang nyata dapat membuat aturan yang kejam merasa malu.
 
-Tidak ada rasa malu dalam suaranya. Yutaka memanggil namamu ketika kau mulai kehilangan kekuatan. Cinta kalian sungguh ada; justru itu yang membuat akhir ini tidak dapat dianggap bukti bahwa ia tidak cukup berharga. Yang tidak menghitungnya adalah sesuatu yang sejak awal hanya peduli pada kontrak."""
+Ketika lututmu mendadak lemas di tengah trotoar, Yutaka langsung menahan bahumu dan memanggil namamu dengan suara yang pecah oleh panik. Hal terakhir yang kaulihat sebelum matamu tertutup adalah wajahnya yang menunduk dekat sekali di atasmu sambil berteriak meminta tolong."""
 
     # ┌─ ENDING · E-SI-07 · Tubuh Pinjaman Menyerah  [Buruk · host Y/C]
     # │ KAPAN   : mati karena tubuh sebelum wisuda
@@ -1980,7 +1978,7 @@ Tidak ada rasa malu dalam suaranya. Yutaka memanggil namamu ketika kau mulai keh
 
 Orang-orang mencari pertolongan dan menunggu kabar. Sebagian baru mengetahui betapa lama kau menyembunyikan kelelahan dan sakit. Sistem tidak memberi waktu tambahan karena kau sudah berusaha keras. Tubuh yang dipinjamkan kepadamu tidak menjadi lebih kebal hanya karena ada ancaman di dalam kepalamu.
 
-Hari kelulusan datang kemudian, tanpa dirimu. Mereka yang mengenangmu juga harus hidup dengan kemarahan karena kau merasa perlu terus memaksa agar layak tinggal. Tidak ada perhitungan yang dapat mengembalikan kesempatan sederhana untuk berhenti, meminta bantuan, dan membiarkan esok datang."""
+Ketika musim semi akhirnya tiba dan aula Kouseikan dipenuhi wisudawan, mejamu di kamar tetap menyimpan tumpukan buku catatan yang berhenti di pertengahan Februari. Di atasnya terletak seikat bunga putih yang baru diletakkan keluargamu pagi itu."""
 
     # ┌─ ENDING · E-SI-08 · Pembangkang  [Buruk · host Y/C]
     # │ KAPAN   : hukuman kritis karena pembangkangan sengaja
@@ -1990,7 +1988,7 @@ Hari kelulusan datang kemudian, tanpa dirimu. Mereka yang mengenangmu juga harus
 
 Hukuman datang sebelum hari yang selama ini dijadikan batas. Kau tidak mempunyai pidato yang membuatnya kehilangan kuasa. Di sekelilingmu, orang lain terus menjalani hari biasa, tidak tahu bahwa sebuah keputusan tentang hidupmu baru saja diambil oleh sesuatu yang tidak dapat mereka temui.
 
-Penolakanmu tetap milikmu, tetapi tidak membuat akibatnya indah. Mereka yang menemukanmu memanggil bantuan dan namamu berkali-kali. Kisah ini berakhir sebelum kontrak selesai, meninggalkan keberanian, kemarahan, dan kesedihan tanpa menyatukannya menjadi kemenangan yang mudah."""
+Cangkir di tanganmu terlepas dan pecah di lantai koridor sementara angka hitungan mundur di matamu berhenti pada nol. Dua mahasiswa yang kebetulan melintas langsung berlari menahan tubuhmu yang merosot ke dinding sambil memanggil namamu berkali-kali."""
 
     # ┌─ ENDING · E-SI-09 · Lolos di Balik Jeruji  [Khusus · host Y/C]
     # │ KAPAN   : lolos; sedang dipenjara
@@ -2000,7 +1998,7 @@ Penolakanmu tetap milikmu, tetapi tidak membuat akibatnya indah. Mereka yang men
 
 Kau duduk tanpa menjawab. Selamat dari kontrak tidak mengubah putusan, menghapus kejahatan, atau memulihkan orang yang dirugikan. Waktu yang dahulu kauhitung menuju wisuda kini diukur dengan jadwal yang ditentukan orang lain.
 
-Ketika jendela biru lenyap, ruangan tidak berubah. Ada langkah petugas di lorong dan suara orang lain menunggu panggilan. Kau masih hidup, dengan hari-hari yang harus dijalani serta pertanggungjawaban yang tidak dapat kauselesaikan hanya karena ancaman paling aneh dalam kepalamu sudah pergi."""
+Ketika jendela biru itu akhirnya lenyap, dinding beton sempit di hadapanmu tidak berubah sedikit pun. Dari ujung lorong terdengar bunyi sepatu bot petugas dan gemerincing kunci besi yang mendekat untuk pemeriksaan jam makan siang."""
 
     # ┌─ ENDING · E-SI-10 · Gagal di Balik Jeruji  [Buruk · host Y/C]
     # │ KAPAN   : gagal; sedang dipenjara
@@ -2010,7 +2008,7 @@ Ketika jendela biru lenyap, ruangan tidak berubah. Ada langkah petugas di lorong
 
 Kau memanggil, lalu kehilangan kemampuan menyelesaikan kalimat. Orang di dekatmu menyadari ada yang salah; bantuan dicari melalui pintu dan lorong yang membatasi setiap gerakan. Mereka tidak mempunyai cara melawan sesuatu yang bahkan tidak mereka ketahui ada.
 
-Sesudah kematianmu, berkas hukum tetap mencatat kehidupan yang membawamu ke sini. Orang yang pernah kaulukai tetap memiliki urusan pemulihannya sendiri. Akhir kontrak tidak menyelesaikan kisah mereka, dan kematian pelaku tidak mewajibkan siapa pun mengubah kesaksian menjadi pengampunan."""
+Tanganmu merosot dari tepi dipan besi tepat ketika kunci pintu sel diputar dari luar. Di kejauhan sana, lonceng upacara kelulusan Kouseikan selesai berbunyi tanpa seorang pun di aula menyebut namamu."""
 
     # ┌─ ENDING · E-SI-11 · Hidup Tanpa Nama  [Khusus · host Y/C]
     # │ KAPAN   : lolos; reputasi hancur di semua lingkungan
@@ -2020,7 +2018,7 @@ Sesudah kematianmu, berkas hukum tetap mencatat kehidupan yang membawamu ke sini
 
 Di tempat yang pernah kaukenal, orang menghindar atau berbicara seperlunya. Reputasi yang hancur tidak membedakan setiap kesalahan dengan adil, tetapi ada perbuatan nyata yang tidak dapat kausangkal hanya karena kini rasanya menyakitkan menjadi orang yang dijauhi.
 
-Kau mencari tempat tinggal dan pekerjaan yang tidak menanyakan lebih banyak daripada yang sanggup kaujawab. Hidup terus tersedia, tanpa penonton yang menjanjikan perubahanmu akan disambut. Apa yang akan kaulakukan dengannya tidak lagi diatur Sistem. Itu kebebasan yang kecil, keras, dan sepenuhnya membutuhkan tanggung jawabmu."""
+Sore itu kau mengangkat koper terakhirmu ke dalam gerbong kereta antarkota menuju distrik tempat tak seorang pun mengenal nama kampusmu. Saat kereta mulai bergerak meninggalkan peron, kau menyelipkan ponsel yang bisu ke saku mantel dan menatap tiket sewa kamar bulanan di tanganmu."""
 
     # ┌─ ENDING · E-SI-12 · Figuran yang Baik  [Romantis · host Y/C]
     # │ KAPAN   : pemain berhenti memanipulasi dan membantu heroine pulih; mereka lepas dari Koita dan berdiri sendiri
@@ -2030,7 +2028,7 @@ Kau mencari tempat tinggal dan pekerjaan yang tidak menanyakan lebih banyak dari
 
 Kau membantu tanpa meminta cinta sebagai imbalan. Ada pertolongan yang diteruskan orang lain, pemulihan yang tetap sulit, dan penolakan yang harus kauhormati. Perubahan itu cukup nyata untuk melewati ambang yang selama ini menakutkanmu.
 
-Kau lolos. Ketika suara Sistem menghilang, tidak ada mahkota yang menggantikan ancamannya. Hanya pesan seorang teman tentang rencana makan dan hari esok yang belum ditulis. Kau membalas, senang karena tidak perlu menjadi tokoh terpenting dalam hidup mereka untuk tetap mempunyai tempat."""
+Kau dinyatakan lolos. Begitu suara Sistem menghilang dari kepalamu, layar ponsel di tanganmu menyala menampilkan pesan di grup makan malam yang menanyakan apakah kau mau mampir membeli minuman dingin sebelum menyusul mereka ke kedai."""
 
     # ┌─ ENDING · E-SI-13 · Kebaikan yang Tidak Dihitung  [Buruk · host Y/C]
     # │ KAPAN   : pemain berbuat baik tetapi deviasi kurang
@@ -2040,7 +2038,7 @@ Kau lolos. Ketika suara Sistem menghilang, tidak ada mahkota yang menggantikan a
 
 Orang yang kaupertahankan tetap hidup. Ada yang berani mencari bantuan, ada yang terbebas dari orang yang memanfaatkannya, ada yang akhirnya dapat tidur tanpa takut. Semua itu nyata, bahkan ketika Sistem menyebut hasil akhirnya gagal.
 
-Kematianmu meninggalkan kesedihan yang tidak dapat dibayar dengan menyebut pengorbananmu indah. Mereka lebih suka kau masih ada untuk makan bersama. Dunia yang ditinggalkan memang lebih baik pada beberapa bagiannya, dan justru karena itu kehilanganmu terasa begitu tidak perlu serta begitu kejam."""
+Pada meja kedai yang sudah dipesan untuk merayakan kelulusan sore itu, satu kursi tetap kosong sampai makanan di piring mulai dingin. Teman-teman yang dulu pernah kaubantu bertahan masih terus menelepon nomormu ketika kabar dari rumah sakit akhirnya masuk ke ponsel salah seorang dari mereka."""
 
     # ┌─ ENDING · E-SI-14 · Jauh dari Panggung  [Khusus · host Y/C]
     # │ KAPAN   : pemain di kota atau negara lain saat wisuda
@@ -2050,7 +2048,7 @@ Kematianmu meninggalkan kesedihan yang tidak dapat dibayar dengan menyebut pengo
 
 Hasil evaluasi tetap mengikuti apa yang sungguh berubah selama tiga tahun, bukan seberapa jauh kau pergi sesudahnya. Jarak memberimu jalan lain, pekerjaan lain, dan orang yang tidak mengenal cerita lama. Ia tidak menghapus keputusan yang telah membawamu ke saat ini.
 
-Kau menatap jendela dan memikirkan halaman kampus yang tidak sedang kaulihat. Pengumuman itu sampai juga. Nasibmu ditetapkan tanpa tepuk tangan wisuda, di tempat yang mungkin tidak akan pernah mengetahui mengapa kau mendadak terdiam ketika hari masih berjalan."""
+Kau berhenti melangkah di tengah penyeberangan jalan kota asing itu ketika deretan huruf biru membentang di depan matamu. Orang-orang berlalu-lalang melewati bahumu dalam bahasa yang berbeda, tak seorang pun tahu mengapa kau mendadak berdiri kaku menatap udara kosong."""
 
     # ┌─ ENDING · E-SI-15 · Pengakuan yang Tidak Dipercaya  [Khusus · host Y/C]
     # │ KAPAN   : rahasia Sistem dibuka luas; dianggap gila
@@ -2060,7 +2058,7 @@ Kau menatap jendela dan memikirkan halaman kampus yang tidak sedang kaulihat. Pe
 
 Ketidakpercayaan mereka tidak memberi kepastian tentang kontrak. Pada jam evaluasi, suara itu datang hanya kepadamu. Hasilnya mengikuti perubahan hidup yang sudah terjadi, tanpa terpengaruh oleh sebutan yang dipakai orang lain untuk menjelaskan keyakinanmu.
 
-Di luar jendela, cahaya bergeser seperti pada hari lain. Ada orang yang mengetuk sebelum masuk dan menanyakan keadaanmu. Apa pun hasil yang dibawa Sistem, pertanyaan itu tetap datang dari seorang manusia yang sedang berusaha merawat, bukan dari penonton yang ingin menentukan apakah ceritamu cukup masuk akal."""
+Di luar jendela bangsal, bayangan dahan pohon bergeser di atas dinding putih. Tepat ketika jendela Sistem menutup baris terakhirnya, seorang perawat mengetuk pintu dua kali lalu masuk membawa nampan makan siang dan segelas air hangat untukmu."""
 
     # ┌─ ENDING · E-SI-16 · Tagihan dari Orang Lain  [Buruk · host Y/C]
     # │ KAPAN   : dibunuh atau dilukai fatal oleh NPC
@@ -2070,7 +2068,7 @@ Di luar jendela, cahaya bergeser seperti pada hari lain. Ada orang yang mengetuk
 
 Kau meninggal sebelum evaluasi. Orang yang menyerang tidak mendapat kembali kehidupan yang dirusak dengan menghilangkan hidupmu. Ia juga harus menghadapi akibat tindakannya, sementara orang-orang lain menanggung kejutan kehilangan dan pertanyaan yang tidak selesai.
 
-Sistem tidak memberikan penutupan yang memuaskan. Perbuatanmu dan perbuatan penyerang tetap dua tanggung jawab yang berbeda. Di akhir ini, rasa sakit tidak memulihkan siapa pun dengan sendirinya; ia berpindah ke lebih banyak rumah, lebih banyak percakapan, dan hari-hari yang akan sulit dijalani."""
+Sirene ambulans dan mobil patroli memantul di dinding gang basah tempat tubuhmu tergeletak, sementara tanggal evaluasi di jendela Sistem terhenti sebelum sempat mencapai hari wisuda."""
 
     # ┌─ ENDING · E-SI-17 · Penipu yang Tertipu  [Buruk · host Y/C]
     # │ KAPAN   : hasil yang dinilai hanyalah sandiwara
@@ -2080,7 +2078,7 @@ Sistem tidak memberikan penutupan yang memuaskan. Perbuatanmu dan perbuatan peny
 
 Sistem berhenti pada bagian yang tidak berubah. Perasaan yang hanya diperagakan tidak menjadi nyata karena disepakati beberapa orang, dan hidup Koita tidak sungguh menyimpang hanya karena kau membuatnya tampak demikian dari luar. Untuk pertama kalinya, tidak ada kalimat tambahan yang dapat memperpanjang permainan itu.
 
-Hasilnya gagal. Kau mendengar penipuanmu disebut dengan ketenangan yang hampir menyamai caramu dahulu menjelaskan semuanya kepada orang lain. Di sekitar, mereka masih mengira pertunjukan telah selesai dengan baik. Mereka baru menyadari ada sesuatu yang sungguh terjadi ketika kau tidak lagi dapat menjawab."""
+Angka deviasi di layar biru itu merosot tajam melewati batas merah tepat di depan matamu. Di sekelilingmu, teman-teman yang kauajak bersandiwara masih mengobrol santai sambil merapikan toga, sebelum akhirnya menjerit ketika tubuhmu ambruk ke lantai aula."""
 
     # ┌─ ENDING · E-SI-18 · Celah yang Tidak Pernah Dicatat  [Khusus · host Y/C]
     # │ KAPAN   : koita_bebas_naskah benar — nyaris mustahil, lihat bagian 11
@@ -2088,9 +2086,9 @@ Hasilnya gagal. Kau mendengar penipuanmu disebut dengan ketenangan yang hampir m
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
     KK_END_TEXT["E-SI-18"] = """Koita memilih keluar dari peran yang terus disediakan baginya. Ia tidak menyerahkan seluruh cinta kepada satu pemenang, tidak menunggu orang lain menjadi alasan untuk berubah, dan tidak meminta kau menggantikannya sebagai pusat cerita.
 
-Sistem mencoba menghitung dengan ukuran lama, lalu berhenti. Kontraknya mengandaikan seorang protagonis yang terus menjalankan naskah, sehingga penyimpangan hanya dapat dibaca sebagai sesuatu yang diambil darinya. Kini Koita sendiri telah memilih kehidupan yang tidak mengikuti anggapan itu.
+Sistem mencoba menghitung dengan ukuran lama, lalu berhenti. Kontraknya mengandaikan seorang MC yang terus menjalankan naskah, sehingga penyimpangan hanya dapat dibaca sebagai sesuatu yang diambil darinya. Kini Koita sendiri telah memilih kehidupan yang tidak mengikuti anggapan itu.
 
-Tidak ada hubungan yang perlu direbut agar kau tetap hidup. Jendela biru menghilang tanpa ejekan terakhir. Koita bertanya apa yang akan kalian lakukan besok. Kau melihat seseorang yang bebas menanyakan itu, lalu menyadari untuk pertama kalinya bahwa kau juga bebas menjawab tanpa mencari celah lain dalam ancaman."""
+Jendela biru itu berkedip dua kali dengan baris galat yang kosong sebelum padam tanpa ejekan terakhir. Di sebelahmu, Koita merentangkan kedua lengan di bawah langit halaman kampus, lalu menoleh dan bertanya kalian mau makan apa untuk merayakan sore ini."""
 
     # ┌─ ENDING · E-FO-01 · Jeruji  [Buruk · host Y/C]
     # │ KAPAN   : laporan atau bukti kuat; investigasi tuntas
@@ -2100,7 +2098,7 @@ Tidak ada hubungan yang perlu direbut agar kau tetap hidup. Jendela biru menghil
 
 Korban tidak datang untuk memberikan pengampunan pada hari terakhir. Ia berhak menjaga jarak, meminta perlindungan, dan memilih siapa yang menemaninya menghadapi proses. Pemenjaraanmu tidak serta-merta membuat tidurnya tenang atau menghapus ketakutan yang telah kautinggalkan.
 
-Di sel, kau mendengar kalender tetap berjalan menuju wisuda. Kontrak belum berakhir, tetapi kehidupan di luar tidak ditunda demi hasil evaluasimu. Ada tanggung jawab hukum yang harus dijalani, dan ada kerusakan yang tidak akan lunas hanya karena kau telah kehilangan kebebasan."""
+Di dinding sel yang dingin, kau menghitung goresan tanggal yang terus bergerak mendekati hari wisuda angkatanmu. Ketika lampu lorong dipadamkan tepat pukul sembilan malam, hanya tersisa bayangan jeruji besi di lantai dan hitung mundur evaluasi yang masih menyala di sudut matamu."""
 
     # ┌─ ENDING · E-FO-02 · Dikeluarkan dan Hancur Sosial  [Buruk · host Y/C]
     # │ KAPAN   : bukti cukup untuk kampus, tidak cukup untuk penjara
@@ -2110,7 +2108,7 @@ Di sel, kau mendengar kalender tetap berjalan menuju wisuda. Kontrak belum berak
 
 Perkara belum menghasilkan pemenjaraan. Itu tidak mengubah keputusan disiplin menjadi kebohongan atau luka korban menjadi sesuatu yang kurang nyata. Ia tetap menghadapi hari-hari sulit dan kebutuhan akan ruang yang aman tanpa bertemu denganmu.
 
-Kau menjalani hidup di luar kampus dengan reputasi yang hancur. Sistem masih menghitung dari kejauhan. Dunia yang dulu dapat kaudatangi sesuka hati kini mempunyai batas yang ditujukan kepadamu, dan tak seorang pun wajib membukakannya hanya karena kau merasa masa depanmu telah menyempit."""
+Saat kau melewati jalan depan gerbang Kouseikan dengan kardus berisi sisa barang lokermu, petugas keamanan langsung melangkah maju memastikan kau tidak berbelok masuk. Dari seberang pagar besi itu, tak seorang pun dari teman lama yang menoleh ke arahmu."""
 
     # ┌─ ENDING · E-FO-03 · Lolos tapi Dihantui  [Khusus · host Y/C]
     # │ KAPAN   : force_bersih[[korban] bertahan (§10); tidak pernah terbongkar
@@ -2120,7 +2118,7 @@ Kau menjalani hidup di luar kampus dengan reputasi yang hancur. Sistem masih men
 
 Korban menghadapi akibatnya tanpa kepastian bahwa orang lain akan memahami. Ada hari yang terlewat, percakapan yang diputus karena terlalu berat, dan rasa aman yang tidak kembali hanya karena ia berhasil tampak tenang. Kau tidak berhak menafsirkan diam sebagai bukti bahwa ia sudah baik-baik saja.
 
-Ingatan itu tetap memasuki hidupmu, melalui tempat, nama, dan jeda ketika orang menyebut kepercayaan. Ketakutanmu terhadap pengungkapan tidak setara dengan luka yang kautimbulkan. Dalam akhir ini kau lolos dari hukum, tetapi tidak mendapat kebenaran yang menjadikan dirimu tak bersalah."""
+Setiap kali seseorang di meja makan menyebut nama gedung atau tanggal malam itu secara kebetulan, tanganmu yang memegang gelas langsung menegang. Di koridor seberang, sosok yang pernah kaulukai langsung berbalik turun melalui tangga darurat begitu melihat bayanganmu dari ujung lorong."""
 
     # ┌─ ENDING · E-FO-04 · Mengaku dan Menjalani Proses  [Netral · host Y/C]
     # │ KAPAN   : pelaku mengaku
@@ -2130,7 +2128,7 @@ Ingatan itu tetap memasuki hidupmu, melalui tempat, nama, dan jeda ketika orang 
 
 Korban menerima kabar melalui orang yang ia pilih untuk mendampingi. Ia tidak berkewajiban menemuimu, mendengar penyesalanmu, atau menjawab surat. Pengakuanmu baru menghentikan sebagian penyangkalan; ia belum memperbaiki hidup yang telah kaurusak.
 
-Hari-hari berikutnya dipenuhi kewajiban yang lebih konkret daripada rasa bersalah. Kau harus menjawab dengan benar dan menjalani hasil proses. Jika perubahan akan terjadi, ia tidak boleh bergantung pada seseorang yang pernah kausakiti bersedia kembali untuk meyakinkanmu bahwa kau sudah menjadi lebih baik."""
+Pagi itu kau duduk di bangku kayu ruang tunggu pemeriksaan sambil memegang map panggilan resmi di pangkuanmu. Ketika pintu besi di ujung ruangan terbuka dan namamu dipanggil petugas, kau berdiri dan melangkah masuk sendirian."""
 
     # ┌─ ENDING · E-FO-05 · Buron  [Buruk · host Y/C]
     # │ KAPAN   : pelaku lari
@@ -2140,7 +2138,7 @@ Hari-hari berikutnya dipenuhi kewajiban yang lebih konkret daripada rasa bersala
 
 Di tempat yang ditinggalkan, korban dan orang yang mendampingi tetap menjalani proses tanpa kehadiranmu. Kepergianmu menambah penundaan dan ketidakpastian, bukan membatalkan yang telah terjadi. Orang-orang yang pernah membela namamu harus menghadapi kenyataan bahwa kau memilih menghindar.
 
-Kontrak juga tidak menerima pelarian sebagai hasil. Sistem menagih pembangkangan sementara hidupmu semakin sempit oleh ketakutan sendiri. Kau jauh dari kampus, tetapi tidak bebas dari akibat perbuatanmu. Tidak ada alamat baru yang mengubah lari menjadi penyelesaian."""
+Di kamar penginapan murah dekat pelabuhan yang tirainya tak pernah dibuka, peringatan merah dari Sistem berkedip makin cepat di sudut pandanganmu. Setiap kali ada sirene melintas di jalan raya bawah, kau langsung mematikan lampu dan duduk membeku di tepi kasur."""
 
     # ┌─ ENDING · E-FO-06 · Kakak yang Tidak Menunggu Polisi  [Buruk · host Y/C]
     # │ KAPAN   : Haruto, Kuroiwa, atau kerabat lain tahu lebih dulu
@@ -2150,17 +2148,17 @@ Kontrak juga tidak menerima pelarian sebagai hasil. Sistem menagih pembangkangan
 
 Kau mengalami cedera berat, dan kabar tentang keadaanmu kini berjalan bersama kabar penangkapan orang yang membalas. Korban kembali dikelilingi pertanyaan, kali ini juga tentang seseorang yang mungkin selama ini menjadi tempatnya merasa aman.
 
-Pembalasan itu tidak memulihkan apa yang telah kauambil. Ia menambah rumah yang harus menunggu kabar dan orang yang perlu menjalani proses hukum. Jika hidupmu berakhir di sini, kejahatanmu tetap harus disebut; jika bertahan, keadaanmu tidak membuat luka korban menjadi hilang. Tidak ada penyelamatan romantis dalam lingkaran kekerasan yang semakin luas ini."""
+Di balik tirai plastik ruang gawat darurat, bunyi monitor detak jantung berdengung bersahutan dengan suara langkah dua petugas polisi yang sudah menunggu di luar pintu bangsalmu dengan map pemeriksaan di tangan."""
 
     # ┌─ ENDING · E-FO-07 · Saksi yang Memeras  [Khusus · host Y/C]
-    # │ KAPAN   : saksi (Daichi atau Mei) menyimpan bukti
+    # │ KAPAN   : saksi (Kaichi atau Meisa) menyimpan bukti
     # │ ISI SKRG: pemain diperas sampai akhir game
     # └─ tulis isi penuh di baris bawah (hapus "# ", isi di antara kutip) ──
     KK_END_TEXT["E-FO-07"] = """Seseorang yang mengetahui kekerasan itu memilih memerasmu. Ia menahan apa yang diketahuinya sebagai ancaman, meminta bayaran atau bantuan, lalu membiarkanmu menunggu kapan tuntutan berikutnya datang.
 
 Kau mulai mengatur hidup berdasarkan pesan yang ditakuti. Sementara itu, korban belum mendapatkan keadilan dari pengetahuan yang diperdagangkan tersebut. Perbuatannya dijadikan alat tawar oleh orang lain, dan penderitaannya kembali ditempatkan setelah kepentingan orang yang memegang kuasa.
 
-Pemeras bertanggung jawab atas tindakannya. Kau tetap bertanggung jawab atas kekerasan yang membuat ancaman itu mungkin dipakai. Akhir ini tidak menawarkan pelaku baru agar kau bisa merasa peranmu telah berubah menjadi korban satu-satunya. Ada seseorang di luar transaksi itu yang terus menanggung akibat terberat."""
+Pada malam sebelum wisuda, ponselmu kembali bergetar menampilkan foto potongan bukti beserta lokasi pertemuan baru untuk besok sore. Kau menatap layar itu di kamar yang gelap dengan dompet yang sudah nyaris kosong di atas meja."""
 
     # ┌─ ENDING · E-FO-08 · Kasus yang Dibuka Kembali  [Khusus · host Y/C]
     # │ KAPAN   : bukti ditemukan belakangan
@@ -2170,7 +2168,7 @@ Pemeras bertanggung jawab atas tindakannya. Kau tetap bertanggung jawab atas kek
 
 Kehidupan yang tampak mapan berhenti di tengah rencana biasa. Kau harus menjelaskan hal yang dahulu berhasil tidak dijawab. Orang-orang yang mengenalmu kemudian melihat riwayat yang selama ini tidak pernah masuk ke cerita tentang dirimu.
 
-Bagi korban, terbukanya perkara tidak berarti semua luka langsung sembuh. Ia harus memilih lagi siapa yang dipercaya, bagian mana yang sanggup diceritakan, dan dukungan apa yang dibutuhkan. Waktu yang berlalu tidak mengubah perbuatanmu menjadi sesuatu yang boleh dilupakan hanya karena kau sudah berhasil melanjutkan hidup."""
+Pagi itu dua penyidik bersetelan gelap sudah berdiri menunggu di depan pintu apartemenmu saat kau baru saja hendak berangkat kerja. Ketika mereka menunjukkan surat panggilan resmi dengan tanggal kejadian dari masa kuliahmu, tas kerja di tanganmu terasa mendadak berat."""
 
     # ┌─ ENDING · E-FO-09 · Kejahatan Berantai  [Buruk · host Y/C]
     # │ KAPAN   : lebih dari satu kejahatan; satu membongkar yang lain
@@ -2180,7 +2178,7 @@ Bagi korban, terbukanya perkara tidak berarti semua luka langsung sembuh. Ia har
 
 Pemeriksaan tidak lagi berhenti pada penjelasan yang kausiapkan untuk satu kejadian. Setiap tindakan tetap perlu dinilai dengan fakta masing-masing. Kau kehilangan kemampuan memisahkan orang-orang yang dirugikan ke dalam ruang kebisuan yang berbeda.
 
-Akibatnya menjangkau kampus, keluarga, dan proses hukum. Bagi mereka yang bersaksi, mengetahui tidak sendirian dapat memberi kekuatan sekaligus duka baru. Bagi dirimu, tidak ada lagi cerita tentang satu kesalahan yang berdiri sendiri. Yang harus dihadapi adalah rangkaian keputusan yang selama ini kaulanjutkan meski tahu ada orang yang terluka."""
+Di atas meja ruang pemeriksaan, tiga map perkara dengan nama pelapor berbeda diletakkan berjajar tepat di hadapanmu. Ketika penyidik membuka map kedua dan membacakan tanggal yang sama persis dengan alibimu pada kasus pertama, kau tak lagi mampu mengangkat kepala."""
 
     # ┌─ ENDING · E-FO-10 · Skorsing dan Catatan  [Netral · host Y/C]
     # │ KAPAN   : hanya kejahatan ringan–sedang
@@ -2190,7 +2188,7 @@ Akibatnya menjangkau kampus, keluarga, dan proses hukum. Bagi mereka yang bersak
 
 Kau meninggalkan kampus sementara teman-teman meneruskan jadwal mereka. Ada kesempatan kembali dengan syarat yang jelas, dan ada hubungan yang tidak akan kembali hanya karena masa skorsing selesai.
 
-Ketika membuka kalender semester berikutnya, kau tidak dapat menandai tanggal kepulangan sebagai tanggal semuanya dilupakan. Hidup masih berjalan, dengan kesempatan bekerja dan belajar lagi. Kesempatan itu menuntut perubahan yang dapat dilihat melalui tindakan, tanpa meminta orang yang dirugikan menanggung tugas mengawasimu."""
+Ketika semester baru dimulai dan kau kembali mengantre di loket registrasi ulang, lembar persetujuan di tanganmu harus melewati cap pengawasan khusus sebelum diterima petugas. Di koridor belakangmu, teman-teman seangkatanmu sudah lebih dulu masuk ke ruang seminar akhir."""
 
     # ┌─ ENDING · E-FO-11 · Saksi di Ambang Pintu  [Buruk · host Y/C]
     # │ KAPAN   : Force disaksikan Koita; korban melapor sendiri, atau trust_koita sudah rendah sehingga Koita sendiri mencari bantuan
@@ -2200,7 +2198,7 @@ Ketika membuka kalender semester berikutnya, kau tidak dapat menandai tanggal ke
 
 Perkara kemudian mendapat laporan dan kesaksian yang kuat. Pada bagian yang dapat diucapkan, Koita menjawab; pada bagian yang membuatnya membeku, ia perlu waktu dan pendampingan. Korban tidak kehilangan hak dipercaya hanya karena saksi juga mengalami ketakutan.
 
-Kau menghadapi proses yang semakin sulit dielakkan. Persahabatan lama tidak lagi dapat dipakai untuk membujuk Koita menutup mata. Apa pun yang terjadi pada keberaniannya sesudah hari itu, ia telah melihat sesuatu yang tidak akan berubah menjadi cinta dengan diberi nama lain, dan dunia mulai mendengar apa yang selama ini ingin kausimpan di balik pintu."""
+Di ruang pemeriksaan, Koita duduk di kursi saksi tanpa sekali pun menoleh ke arah tempatmu berdiri ketika kamu mencoba memanggil namanya. Begitu petugas selesai mencatat keterangannya dan menutup pintu ruangan, borgol di pergelangan tanganmu terasa semakin dingin."""
 
     # ┌─ ENDING · E-FO-12 · Kurungan Tanpa Jeruji  [Khusus · host Y/C]
     # │ KAPAN   : korban tidak melapor dan tetap terikat pada pemain lewat takut, ancaman, atau ketergantungan
@@ -2210,7 +2208,7 @@ Kau menghadapi proses yang semakin sulit dielakkan. Persahabatan lama tidak lagi
 
 Di dalamnya ada takut, ancaman, atau ketergantungan yang membuat pilihan terasa sempit. Kedekatan itu bukan persetujuan yang bebas, dan keberadaannya di sisimu bukan akhir romantis. Ia tetap seseorang yang memiliki keinginan sendiri, meskipun kau terus memperlakukan ketidakmampuannya pergi sebagai kemenangan.
 
-Sistem dapat menghitung jaraknya dari Koita. Perhitungan itu tidak mengubah kurungan menjadi rumah. Ada sahabat yang masih mencoba mendekat, ada pertanyaan yang belum berhenti, dan kemungkinan bahwa suatu hari korban akan mendapat ruang cukup aman untuk berbicara tanpa memeriksa reaksimu lebih dahulu."""
+Di meja kafe tempat kalian duduk berdua, jemarinya langsung gemetar dan menarik diri ke bawah meja setiap kali kau meraih cangkir terlalu cepat. Sementara itu dari balik kaca jendela seberang jalan, sahabatnya masih berdiri memperhatikan kalian sambil menggenggam ponsel yang siap melakukan panggilan."""
 
     # ┌─ ENDING · E-FO-13 · Kebetulan yang Datang Tepat Waktu  [Buruk · host Y/C]
     # │ KAPAN   : plot armor membawa Koita sebelum terjadi
@@ -2220,7 +2218,7 @@ Sistem dapat menghitung jaraknya dari Koita. Perhitungan itu tidak mengubah kuru
 
 Korban mendapat jarak untuk meminta pertolongan. Koita tetap bersamanya sampai ada orang lain yang ia percaya. Kedatangan tepat waktu itu tidak menghapus ancaman yang telah terjadi, tetapi memberi kesempatan agar kejadian hari itu tidak diteruskan sesuai kehendakmu.
 
-Laporan, pemeriksaan kampus, dan pembicaraan yang menyusul tetap menyangkut pilihanmu. Kau tidak berhak menyebut semuanya tidak berarti hanya karena percobaan gagal. Orang yang hampir kausakiti tetap perlu memulihkan rasa aman, dan keberhasilan ia keluar dari keadaan itu bukan sesuatu yang dapat kauklaim sebagai kebaikanmu."""
+Keesokan paginya surat panggilan komite disiplin dan skorsing sementara sudah menempel di lokermu, sementara Koita beserta dua teman korban berdiri berjaga di depan ruang administrasi sampai petugas keamanan datang menjemputmu."""
 
     # ┌─ ENDING · E-FO-14 · Dua Orang yang Diam  [Khusus · host Y/C]
     # │ KAPAN   : Koita menyaksikan tetapi diam karena takut, malu, atau diancam
@@ -2230,7 +2228,7 @@ Laporan, pemeriksaan kampus, dan pembicaraan yang menyusul tetap menyangkut pili
 
 Kau tetap bebas dari proses hukum dalam akhir ini. Di luar, hubungan sosial tampak terus berjalan. Di dalam dua kehidupan lain, ada kejadian yang kembali melalui tidur, tempat, dan pertemuan yang tidak lagi terasa biasa.
 
-Kebisuan mereka bukan persekutuan denganmu. Membeku bukan persetujuan, dan tidak melapor bukan pembatalan kekerasan. Mereka sama-sama tahu sesuatu yang tidak diketahui dunia. Setiap hari yang berlalu tanpa pengungkapan memperpanjang kesendirian itu, sementara hak mereka mendapat pertolongan tetap ada meski belum sanggup diminta."""
+Setiap kali kalian bertiga tidak sengaja berada di koridor yang sama, percakapan langsung terputus dan Koita segera menunduk menatap lantai dengan wajah pucat. Di ujung lorong, korban berbalik masuk ke tangga samping tanpa suara, meninggalkanmu berdiri di tengah keheningan yang kaku."""
 
     # ┌─ ENDING · E-FO-15 · Pembalikan yang Terbongkar  [Buruk · host C]
     # │ KAPAN   : jalur manipulasi pembalikan Chiasa (06_Chiasa.md §14); framing runtuh
@@ -2240,4 +2238,4 @@ Kebisuan mereka bukan persekutuan denganmu. Membeku bukan persetujuan, dan tidak
 
 Kekerasan yang dilakukan Chiasa tidak menghilang di balik terbongkarnya fitnah. Kini proses juga menyangkut tuduhan palsu dan upaya menghalangi kebenaran. Koita perlu mendapatkan kembali namanya, sementara orang lain yang dirugikan tetap mempunyai luka yang tidak dapat dirangkum menjadi skandal keluarga.
 
-Daisuke dan Yoshie datang dengan wajah yang lelah. Mereka tetap orang tua, tetapi tidak menjanjikan perlindungan dari pertanggungjawaban. Bagi Chiasa, tidak ada akhir berupa pelukan yang mengubah semua ini menjadi cinta yang salah jalan. Yang tersisa adalah kebenaran yang akhirnya didengar, proses yang harus dijalani, dan hak orang yang disakiti untuk menjauh."""
+Daisuke dan Yoshie datang ke ruang tunggu kantor pemeriksaan dengan wajah pucat dan bahu yang merosot, hanya menyerahkan tas berisi pakaian ganti tanpa memelukmu. Ketika Koita keluar dari pintu sebelah didampingi penasihat hukumnya, ia melewati kursimu tanpa menoleh sedikit pun."""

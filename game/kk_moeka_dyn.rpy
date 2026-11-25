@@ -19,25 +19,49 @@ init 1 python:
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_Mo_D01:
     call kk_scene_enter("moeka", "Konbini · Dini hari")
-    nar "Lampu konbini terlalu terang untuk jam tiga pagi. Moeka duduk di pojok makan, sebungkus onigiri setengah dibuka, senyumnya dipasang bahkan di sini."
-    moeka "Lho, kamu juga belum tidur? Aku mau bilang cuma lapar tengah malam, tapi jamnya sudah lebih dekat ke sarapan, ya."
-    nar "Ia menertawakan kalimatnya sendiri sebelum menoleh ke kaca. Pantulan lampu membuat kelelahan di wajahnya sulit disembunyikan."
+    nar "Lampu neon toko serba ada terasa terlalu putih dan tajam untuk pukul tiga dini hari. Di sudut meja makan dekat kaca depan, Moeka duduk sendirian menghadap sebungkus onigiri yang plastik pembungkusnya baru terbuka separuh. Bahkan pada jam selarut ini, begitu mendengar bunyi lonceng pintu, senyum cerahnya langsung terpasang otomatis."
+    if kk_host == "chiasa":
+        moeka "Lho, Chimian juga masih melek jam segini? Aku tadinya mau bilang cuma lapar tengah malam, tapi jam tiga pagi begini sudah lebih dekat ke sarapan ya, haha!"
+        chiasa "Moemoe-senpai sendiri baru selesai kerja paruh waktu ya? Wajah Senpai kelihatan lelah banget di bawah lampu sini."
+    else:
+        moeka "Eh, Yutayuta belum tidur jam segini? Aku mau bilang cuma cari camilan tengah malam, tapi jam segini kayaknya sudah masuk hitungan sarapan kepagian ya, haha!"
+        yutaka "Kamu baru kelar shift malam, Kohinata? Pantulan wajahmu di kaca kelihatan capek sekali."
+    nar "Moeka menertawakan candaannya sendiri sebelum pandangannya sempat jatuh ke pantulan kaca jendela. Di bawah sinar putih terang itu, lingkar lelah di bawah matanya terlalu jelas untuk disembunyikan."
     $ _rows = [(c, Return(k), False) for k,c in zip("ABCD", KK_DYN_BY_ID["Mo-D01"]["choices"])]
     call screen kk_choice_panel(_rows, "Jam tiga pagi di konbini")
     $ kk_record_choice("Mo-D01", _return)
     if _return == "A":
-        moeka "Kau mau duduk? ...Terima kasih. Rasanya aneh makan sendirian terus."
-        nar "Kau membeli makanan untuk diri sendiri agar ia tidak merasa sedang diawasi makan. Beberapa menit kemudian bahunya turun dan leluconnya berhenti berdesakan."
-        moeka "Aku nggak harus punya cerita yang seru supaya boleh ditemani, kan?"
+        nar "Kamu mengambil satu kotak sup hangat dan segelas teh dari rak lalu duduk di kursi sebelah Moeka agar ia tidak merasa sedang diawasi makan sendirian."
+        if kk_host == "chiasa":
+            chiasa "Aku juga lapar nih, Moemoe-senpai. Aku duduk makan bareng sini ya, nggak usah repot-repot nyari bahan bercanda."
+            moeka "Chimian mau duduk nemenin? ...Makasih ya. Jujur aja, rasanya sepi banget tiap malam makan sendirian terus di pojok begini."
+        else:
+            yutaka "Kebetulan perutku juga kosong, Kohinata. Aku ikut duduk makan di sini ya, santai aja."
+            moeka "Yutayuta mau duduk bareng? ...Makasih banget. Aneh ya, biasanya aku selalu ramai di kampus, tapi makan sendirian jam segini rasanya dingin sekali."
+        nar "Beberapa menit kemudian bahu Moeka perlahan meluruh dan deretan candaannya akhirnya berhenti berdesakan."
+        moeka "Aku nggak harus punya cerita seru dulu supaya boleh ditemani duduk, kan?"
     elif _return == "B":
-        moeka "Kenapa aku di sini jam segini? ...Pertanyaan yang tidak kusiapkan jawabannya."
-        nar "Kau bertanya apakah ia aman dan apakah ada tempat untuk pulang. Moeka mengangguk, lalu mengaku beberapa jam di luar lebih mudah daripada menghadapi kamar dengan tagihan dan pekerjaan tertunda."
+        if kk_host == "chiasa":
+            chiasa "Moemoe-senpai, jujur aja, kenapa jam tiga pagi masih duduk di sini belum pulang ke kos? Di rumah baik-baik saja kan?"
+        else:
+            yutaka "Kohinata, kamu aman kan? Kenapa jam tiga pagi begini masih duduk di toko serba ada daripada langsung istirahat di kos?"
+        moeka "Kenapa aku di sini jam segini ya... pertanyaan yang ternyata nggak kusiapkan jawaban lucunya."
+        nar "Moeka menunduk memainkan bungkus onigiri di jarinya lalu mengangguk kecil."
+        moeka "Kosku aman kok, nggak ada apa-apa. Cuma kadang duduk dua jam di bawah lampu toko serba ada itu rasanya jauh lebih gampang daripada pulang buka pintu kamar terus langsung berhadapan sama tumpukan struk tagihan dan tugas yang belum kelar."
     elif _return == "C":
-        moeka "Hahaha, gaya hidup selebritas konbini. Nanti kita bikin pemotretan dekat rak minuman."
-        nar "Kau menimpali, dan ia terus menyediakan bahan. Hal yang membuatnya duduk di sana tidak menjadi bagian percakapan; ia kembali tahu cara ditemani asalkan tetap menyenangkan."
+        if kk_host == "chiasa":
+            chiasa "Haha, keren juga gaya hidup anak malam nongkrong di toko serba ada jam tiga pagi, Moemoe-senpai!"
+        else:
+            yutaka "Wah, jangan-jangan ini gaya hidup baru selebritas toko serba ada ya, Kohinata?"
+        moeka "Hahaha, bener banget! Nanti kita bikin sesi pemotretan edisi spesial di samping rak minuman dingin ya!"
+        nar "Kamu menimpali candaannya, dan Moeka segera menyuguhkan lelucon demi lelucon seperti biasa. Alasan sebenarnya mengapa ia terdampar di sudut itu kembali tenggelam di balik tawa yang rapi."
     else:
-        nar "Kau menawarkan mengantar dan menerima setelah ia menyetujuinya. Di depan kos Moeka berhenti lama, lalu mengatakan terima kasih tanpa menambahkan bahwa kau tak perlu repot."
-        moeka "Besok aku coba hubungi Rina. Ada hal yang sudah terlalu lama kubilang nanti."
+        if kk_host == "chiasa":
+            chiasa "Sudah hampir pagi, Moemoe-senpai. Kalau onigirinya sudah habis, yuk aku antar jalan pulang sampai depan kos biar nggak jalan sendirian."
+        else:
+            yutaka "Habiskan dulu onigirinya, Kohinata. Habis ini kuantar sampai depan kos, jalanan jam segini sepi sekali."
+        nar "Moeka mengangguk pelan tanpa menolak. Sepanjang jalan pulang kalian tidak banyak bicara, lalu di depan pintu gerbang kosnya ia berhenti sejenak dan menatapmu dengan mata jauh lebih tenang."
+        moeka "Terima kasih ya sudah mengantar sampai sini. ...Besok aku mau coba hubungi Ryena deh. Kayaknya ada beberapa hal yang sudah kelamaan kubilang nanti saja."
     return
 
 # ┌─ PANDUAN CERITA · Mo-D02 · Panggilan Empat Detik
@@ -62,7 +86,7 @@ label kkscene_Mo_D02:
         nar "Ia tidak menanyakan mengapa kau tidak menghubungi. Kebutuhan yang nyaris disampaikan semalam kini harus menemukan keberanian baru untuk muncul."
     return
 
-# ┌─ PANDUAN CERITA · Mo-D03 · Kostum untuk Hinata
+# ┌─ PANDUAN CERITA · Mo-D03 · Kostum untuk Hinari
 # │ LOKASI  : (dinamis — muncul dari kondisi)
 # │ TERLIBAT: Kohinata Moeka
 # │ AWALAN  : adik bungsunya ikut pentas sekolah
@@ -71,18 +95,38 @@ label kkscene_Mo_D02:
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_Mo_D03:
     call kk_scene_enter("moeka", "Kos Moeka · Mesin jahit")
-    nar "Kain satin dan benang berserakan. Moeka menjahit kostum kecil untuk pentas sekolah adik bungsunya, Hinata."
-    moeka "Hinata jadi bintang. Bukan bintang utama, maksudku bintang sungguhan, pakai lima sudut. Dia sudah mengancam melapor ke Ibu kalau sudutnya nggak sama."
-    nar "Moeka tertawa, kali ini karena sungguh geli. Di tengah segala yang menuntutnya kuat, kegembiraan adiknya memberinya sesuatu yang ingin dikerjakan dengan sukarela."
+    nar "Di kamar kos Moeka yang sempit tapi hangat, potongan kain satin kuning pucat, jarum pentul, dan gulungan benang berserakan rapi di sekitar mesin jahit portabelnya. Moeka sedang membungkuk tekun menjahit kostum mungil untuk pentas sekolah adik bungsunya, Hinari."
+    if kk_host == "chiasa":
+        chiasa "Lucu banget bentuknya, Moemoe-senpai! Itu buat pementasan sekolahnya Hinari ya?"
+        moeka "Iya, Chimian! Hinari dapat peran jadi bintang. Maksudku bintang sungguhan yang pakai lima sudut di panggung ya, haha! Dia bahkan sudah ngancam mau ngadu ke Ibu kalau lima sudutnya nggak sama panjang!"
+    else:
+        yutaka "Kamu jahit kostum anak kecil dari nol begini, Kohinata? Kelihatannya niat sekali."
+        moeka "Iya dong, Yutayuta! Hinari dapat peran jadi bintang buat pentas sekolahnya. Bintang beneran bersudut lima di atas panggung! Dia sudah ngancam bakal lapor ke Ibu kalau ujung bintangnya ada yang miring sebelah, haha!"
+    nar "Moeka tertawa lepas, dan kali ini tawa itu datang sepenuhnya dari rasa geli yang tulus. Di tengah segala beban yang menuntutnya terus kuat, antusiasme adiknya memberinya satu pekerjaan yang sungguh ingin ia kerjakan dengan sukarela."
     call kk_family_menu("Mo-D03", ["Datang menonton pentasnya.", "Bantu menjahit malam ini.", "Kali ini aku tidak bisa."])
     if _return == "A":
-        moeka "Kau mau datang? Hinata pasti heboh. ...Aku juga."
-        nar "Ia memberi waktu dan tempat, kemudian mengingatkan bahwa pentas anak pasti tidak tepat jadwal. Pada hari itu ia bertepuk tangan tanpa sibuk memotret setiap detik, membiarkanmu membantu menyimpan kenangan."
+        if kk_host == "chiasa":
+            chiasa "Kapan pentasnya, Moemoe-senpai? Aku boleh ikut datang nonton Hinari tampil nggak?"
+            moeka "Eh, Chimian beneran mau datang?! Wah, Hinari pasti langsung heboh pamer ke teman-temannya... dan jujur aja, aku juga senang banget kalau kamu ikut!"
+        else:
+            yutaka "Pentasnya hari apa, Kohinata? Kalau jadwalku cocok, aku mau datang ikut nonton Hinari tampil."
+            moeka "Serius nih Yutayuta mau datang ke pentas anak SD?! Hinari pasti heboh banget... aku sendiri juga senang banget dengarnya!"
+        nar "Ia langsung menyebutkan hari dan lokasi aula sekolah sambil mengingatkan bahwa acara anak-anak tidak pernah tepat jadwal. Pada hari pentas tiba, Moeka akhirnya bisa bertepuk tangan santai menikmati panggung tanpa sibuk terus mengarahkan kamera karena kamu membantunya merekam kenangan itu."
     elif _return == "B":
-        moeka "Berdua jadi lebih cepat. Lihat, kau tidak payah memegang jarum."
-        nar "Kau mengambil bagian yang bisa ditangani dan membiarkan potongan sulit menjadi pekerjaannya. Kostum selesai dengan beberapa jahitan berbeda, dan Moeka mengatakan justru itu bukti ada yang mau repot bersama."
+        if kk_host == "chiasa":
+            chiasa "Sini, bagian kelim pinggir yang lurus biar aku bantu jahit tangan ya, Moemoe-senpai, biar cepat selesai malam ini."
+            moeka "Wah, dikerjain berdua langsung ngebut jadinya! Eh, lihat deh, Chimian ternyata rapi banget lho megang jarumnya!"
+        else:
+            yutaka "Ada bagian gampang yang bisa kubantu nggak, Kohinata? Pasang jarum pentul atau jahit sisi lurusnya biar cepat kelar."
+            moeka "Boleh banget! ...Wah, ternyata Yutayuta nggak payah-payah amat lho pegang jarum, lumayan lurus nih jahitannya!"
+        nar "Kamu menangani bagian-bagian sederhana dan menyerahkan sudut rumit ke tangan cekatan Moeka. Kostum bintang itu rampung lebih cepat dengan sedikit perbedaan garis jahitan yang justru membuat Moeka tersenyum lega karena kali ini ada orang yang mau ikut repot bersamanya."
     else:
-        nar "Ia menerima bahwa kau tak bisa, lalu kembali ke mesin jahit. Percakapan berikutnya dikirim sebagai foto kostum selesai, tanpa menyebut betapa larut ia menuntaskan sudut yang terakhir."
+        if kk_host == "chiasa":
+            chiasa "Maaf ya, Moemoe-senpai, jadwal tugasku minggu ini lagi padat banget jadi belum bisa bantu banyak. Semangat ya jahitnya buat Hinari!"
+        else:
+            yutaka "Maaf, Kohinata, minggu ini jadwalku lagi bentrok jadi aku nggak bisa ikut datang atau bantu beresin malam ini."
+        moeka "Oh, nggak apa-apa banget kok! Nanti begitu jadi langsung kukirimi fotonya waktu dipakai Hinari ya."
+        nar "Ia kembali ke mesin jahit dengan senyum ceria yang biasa. Keesokan harinya foto kostum yang sudah sempurna masuk ke ponselmu, tanpa sebaris pun cerita betapa larut ia menuntaskan sudut terakhirnya sendirian."
     return
 
 # ┌─ PANDUAN CERITA · Mo-D04 · Struk di Lantai
@@ -112,7 +156,7 @@ label kkscene_Mo_D04:
 # │ LOKASI  : (dinamis — muncul dari kondisi)
 # │ TERLIBAT: Kohinata Moeka
 # │ AWALAN  : kuga_tekanan ≥ 40
-# │ INTI    : A Temani / B larang / C laporkan / D minta Rina menemani
+# │ INTI    : A Temani / B larang / C laporkan / D minta Ryena menemani
 # │ AKHIRAN : jalur Kuga; bukti untuk E-NPC-26
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_Mo_D05:
@@ -131,8 +175,8 @@ label kkscene_Mo_D05:
         nar "Kau membantu melaporkan kekhawatiran berdasarkan pesan yang benar-benar ada, bukan cerita tambahan untuk membuatnya terdengar lebih buruk. Moeka meminta tahu siapa yang akan menerima laporan dan bagaimana keterangannya dipakai."
         moeka "Aku ingin dibantu tanpa kehilangan suara dalam ceritaku sendiri. Tolong terus kabari aku."
     else:
-        moeka "Rina yang menemani? ...Boleh. Dia tidak akan membiarkanku ceroboh."
-        nar "Rina bersedia dan langsung menanyakan rincian kepada Moeka. Ketika keduanya menyusun rencana bersama, ketakutan yang tadi disembunyikan mulai berubah menjadi pertanyaan yang dapat diucapkan dengan jelas."
+        moeka "Ryena yang menemani? ...Boleh. Dia tidak akan membiarkanku ceroboh."
+        nar "Ryena bersedia dan langsung menanyakan rincian kepada Moeka. Ketika keduanya menyusun rencana bersama, ketakutan yang tadi disembunyikan mulai berubah menjadi pertanyaan yang dapat diucapkan dengan jelas."
     return
 
 # ┌─ PANDUAN CERITA · Mo-D06 · Ulang Tahun yang Ia Lupakan
@@ -144,40 +188,53 @@ label kkscene_Mo_D05:
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_Mo_D06:
     call kk_scene_enter("moeka", "Hari ulang tahun Moeka")
-    nar "Moeka menyebut tanggal hari ini sebagai tenggat kirim uang. Ia baru sadar itu ulang tahunnya sendiri ketika kau berhenti menunggu kelanjutan kalimat."
-    moeka "Oh. Benar. Seharusnya aku punya pidato soal makin dewasa, tapi otakku masih menghitung ongkos pulang."
+    nar "Sambil mencoret angka di kalender saku kecilnya, Moeka menyebut tanggal hari ini dengan nada datar sebagai batas akhir transfer uang belanja ke rumah. Ia baru berhenti bicara dan mengerjap kaget ketika kamu tetap diam menatapnya sambil menunggu kelanjutan kalimat."
+    if kk_host == "chiasa":
+        chiasa "...Moemoe-senpai, tanggal hari ini bukannya ulang tahun Senpai sendiri?"
+        moeka "Eh... oh! Astaga, bener juga, Chimian! Harusnya aku sudah siapin pidato keren soal tambah dewasa ya, padahal dari pagi otakku cuma muter ngitung ongkos kereta pulang sama transferan rumah."
+    else:
+        yutaka "Kohinata, kamu sadar nggak tanggal yang baru saja kamu lingkari itu hari ulang tahunmu sendiri?"
+        moeka "Eh... hah?! Bener juga, Yutayuta! Lucu banget, harusnya aku punya rencana merayakan tambah umur, tapi kepalaku dari pagi cuma ingat tanggal kirim uang."
     call kk_family_menu("Mo-D06", ["Kejutan kecil berdua saja.", "Pesta besar dengan teman-teman.", "Tinggalkan kue di depan pintunya."])
     if _return == "A":
-        moeka "Cuma kita berdua, dan kue sekecil ini... Kenapa justru ini yang membuatku mau menangis?"
-        nar "Kau membiarkan air matanya ada tanpa meminta segera memotret senyum. Ia memakan satu potong perlahan, tak perlu membagi lebih banyak daripada yang diinginkannya malam itu."
+        nar "Kamu mengajak Moeka duduk di bangku tenang lalu mengeluarkan satu potong kue stroberi kecil dan sebatang lilin sederhana yang sempat kamu siapkan."
+        if kk_host == "chiasa":
+            chiasa "Selamat ulang tahun ya, Moemoe-senpai. Nggak usah ada pidato keren, cukup duduk makan kue santai aja berdua."
+        else:
+            yutaka "Selamat ulang tahun, Kohinata. Nggak usah mikirin ongkos atau jadwal dulu buat tiga puluh menit ke depan."
+        moeka "Cuma kita berdua sama kue sekecil ini... aneh ya, kenapa justru yang begini yang bikin mataku mendadak panas mau nangis?"
+        nar "Kamu membiarkan air mata di sudut matanya jatuh perlahan tanpa buru-buru memintanya tersenyum ke arah kamera. Ia menyendok kue itu pelan, menikmati satu perayaan yang tidak menuntutnya tampil ceria untuk siapa-siapa."
     elif _return == "B":
-        moeka "Ramai sekali! Terima kasih... Aku tersenyum sepanjang malam. Senyum itu memang keahlianku, kan."
-        nar "Ia menyambut semua orang, berfoto, memastikan tamu mendapat kue. Ulang tahun itu menjadi acara lain yang ditanganinya dengan cekatan. Baru setelah bubar ia sadar belum sempat memilih satu hal yang ingin dilakukan sendiri."
+        nar "Kamu menghubungi beberapa teman kampus agar berkumpul dadakan menyambut ulang tahun Moeka dengan balon dan kue besar. Begitu ia membuka pintu, suara ucapan serentak langsung memenuhi ruangan."
+        moeka "Wah, ramai sekali! Terima kasih banyak semuanya... haha, aku jadi tersenyum terus dari tadi! Senyum itu memang keahlian utamaku kan!"
+        nar "Ia langsung sigap menyambut setiap tamu, membantu memotong kue, dan berpose ceria untuk semua kamera. Baru setelah seluruh ruangan kembali sepi dan sampah dibereskan, ia duduk sendirian dan sadar belum sempat memilih satu pun hal yang sungguh ia inginkan untuk dirinya hari ini."
     else:
-        nar "Kue dan kabar darimu menunggunya di pintu. Moeka memotret, mengucapkan terima kasih, lalu makan sendiri di meja kecil."
-        nar "Ia tidak harus tampil ceria untuk seorang tamu, tetapi malam itu ia sempat berharap perayaan sederhana tersebut juga punya suara seseorang yang bisa didengar langsung."
+        nar "Kamu menaruh kotak kue mungil beserta kartu ucapan singkat di depan pintu kamar kosnya lalu mengabari lewat pesan singkat agar ia langsung mengambilnya."
+        play sound "audio/sfx/phone_buzz.wav"
+        "Pesan Moeka" "Wah, kuenya sudah kuambil! Enak banget kelihatannya, makasih banyak sudah ingat hari ulang tahunku!"
+        nar "Moeka memotret kue itu dan memakannya sendiri di meja kecilnya tanpa harus repot memasang senyum untuk tamu. Meski begitu, di tengah kamar yang hening malam itu ia sempat berharap ada suara langsung seseorang yang bisa ia dengar sambil meniup lilinnya."
     return
 
-# ┌─ PANDUAN CERITA · Mo-D07 · Rina Bertanya
+# ┌─ PANDUAN CERITA · Mo-D07 · Ryena Bertanya
 # │ LOKASI  : (dinamis — muncul dari kondisi)
 # │ TERLIBAT: Kohinata Moeka
 # │ AWALAN  : rina_curiga ≥ 50
 # │ INTI    : A "Kamu tahu sesuatu?" Jujur / B sangkal / C ajak bekerja sama
-# │ AKHIRAN : Rina menjadi sekutu; kesempatan kedua di Mo25
+# │ AKHIRAN : Ryena menjadi sekutu; kesempatan kedua di Mo25
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_Mo_D07:
-    call kk_scene_enter("moeka", "Rina mencegatmu")
-    nar "Rina, sahabat Moeka sejak kecil, menunggumu dengan wajah serius."
-    "Rina" "Aku nggak minta rahasia untuk dibicarakan orang. Aku khawatir, dan aku ingin tahu siapa yang benar-benar bisa menghubunginya malam ini. Kamu melihat perubahan juga?"
-    call kk_family_menu("Mo-D07", ["Jujur, dan bagi apa yang kau tahu.", "Sangkal, ini bukan urusanmu.", "Ajak Rina bekerja sama menjaganya."])
+    call kk_scene_enter("moeka", "Ryena mencegatmu")
+    nar "Ryena, sahabat Moeka sejak kecil, menunggumu dengan wajah serius."
+    "Ryena" "Aku nggak minta rahasia untuk dibicarakan orang. Aku khawatir, dan aku ingin tahu siapa yang benar-benar bisa menghubunginya malam ini. Kamu melihat perubahan juga?"
+    call kk_family_menu("Mo-D07", ["Jujur, dan bagi apa yang kau tahu.", "Sangkal, ini bukan urusanmu.", "Ajak Ryena bekerja sama menjaganya."])
     if _return == "A":
-        "Rina" "...Jadi aku tidak salah lihat. Baik. Sekarang kita berdua yang jaga."
-        nar "Kau membagikan pengamatan secukupnya untuk membantu, membedakan kekhawatiran dari fakta. Rina menyebut perlunya menghubungkan Moeka dengan orang yang mampu memberi dukungan lebih jauh daripada kalian berdua."
+        "Ryena" "...Jadi aku tidak salah lihat. Baik. Sekarang kita berdua yang jaga."
+        nar "Kau membagikan pengamatan secukupnya untuk membantu, membedakan kekhawatiran dari fakta. Ryena menyebut perlunya menghubungkan Moeka dengan orang yang mampu memberi dukungan lebih jauh daripada kalian berdua."
     elif _return == "B":
-        "Rina" "Begitu. Kupikir kau peduli. Ternyata aku salah orang."
-        nar "Ia menutup percakapan dan mencari jalan lain. Penyangkalanmu tidak membuat perubahan Moeka hilang; hanya membuat Rina semakin enggan mempercayakan kabar berikutnya kepadamu."
+        "Ryena" "Begitu. Kupikir kau peduli. Ternyata aku salah orang."
+        nar "Ia menutup percakapan dan mencari jalan lain. Penyangkalanmu tidak membuat perubahan Moeka hilang; hanya membuat Ryena semakin enggan mempercayakan kabar berikutnya kepadamu."
     else:
-        "Rina" "Kita bagi tugas. Kalau salah satu melihat dia retak, yang lain datang. Setuju?"
+        "Ryena" "Kita bagi tugas. Kalau salah satu melihat dia retak, yang lain datang. Setuju?"
         nar "Kalian menambahkan nama orang lain yang bisa dihubungi dan sepakat menanyakan kebutuhan Moeka sendiri. Menjaga bukan berarti mengawasi setiap langkahnya, melainkan memastikan ia tak kehilangan semua pintu ketika satu orang sedang tak bisa datang."
     return
 
@@ -208,7 +265,7 @@ label kkscene_Mo_D08:
 # │ LOKASI  : (dinamis — muncul dari kondisi)
 # │ TERLIBAT: Kohinata Moeka
 # │ AWALAN  : ayah memburuk
-# │ INTI    : A Dukung / B tentang / C beri tahu Aya / D temani ke RS (Miyuki melihat)
+# │ INTI    : A Dukung / B tentang / C beri tahu Yaeka / D temani ke RS (Miyuki melihat)
 # │ AKHIRAN : cabang donor; stres[[ayah] −40 bila jadi; beasiswa terancam
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_Mo_D09:
@@ -226,8 +283,8 @@ label kkscene_Mo_D09:
         moeka "Kamu menentang? Aku tahu ada risiko dan banyak hal harus diperiksa. Tapi ini Ayah. Aku ingin didengar sebelum diputuskan tidak sanggup."
         nar "Ia tetap bersedia mendengar kekhawatiranmu jika kau tidak mengubahnya menjadi penilaian bahwa kasih sayangnya tidak masuk akal."
     elif _return == "C":
-        nar "Kau memberi tahu Aya, ibu Moeka. Kabar itu membuatnya menangis sebelum menanyakan bagaimana putrinya menjalani semua ini sendirian."
-        "Aya" "Aku ingin dengar dari Moeka. Tolong bilang Ibu tidak marah karena dia bertanya tentang pilihan itu. Ibu hanya tidak ingin dia merasa hidupnya boleh dihabiskan tanpa ikut dipikirkan."
+        nar "Kau memberi tahu Yaeka, ibu Moeka. Kabar itu membuatnya menangis sebelum menanyakan bagaimana putrinya menjalani semua ini sendirian."
+        "Yaeka" "Aku ingin dengar dari Moeka. Tolong bilang Ibu tidak marah karena dia bertanya tentang pilihan itu. Ibu hanya tidak ingin dia merasa hidupnya boleh dihabiskan tanpa ikut dipikirkan."
     else:
         nar "Kau menemaninya ke rumah sakit dan menunggu selama pemeriksaan yang perlu dijalani. Miyuki melihat kalian di koridor, menyapa tanpa meminta rincian yang bukan haknya."
         miyuki "Semoga pembicaraannya membantu kamu memahami pilihanmu. Kalau perlu istirahat, ruang tunggunya ada di sana."
@@ -258,13 +315,13 @@ label kkscene_Mo_D10:
 # │ LOKASI  : (dinamis — muncul dari kondisi)
 # │ TERLIBAT: Kohinata Moeka
 # │ AWALAN  : tahap 4
-# │ INTI    : A Tanya kenapa / B terima / C ceritakan pada Rina
+# │ INTI    : A Tanya kenapa / B terima / C ceritakan pada Ryena
 # │ AKHIRAN : tanda bahaya; menerima tanpa bertanya = jendela kecil terlewat
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_Mo_D11:
     call kk_scene_enter("moeka", "Barang yang dikembalikan")
     nar "Buku dan syalmu dikembalikan bersama catatan kecil bahwa tidak ada lagi barang yang tertinggal padanya. Moeka menanyakan sekali apakah masih punya utang lain, lalu tertawa agar pertanyaan itu terdengar santai."
-    call kk_family_menu("Mo-D11", ["Tanyakan kenapa mengembalikannya sekarang.", "Terima saja tanpa banyak tanya.", "Ceritakan hal ini pada Rina."])
+    call kk_family_menu("Mo-D11", ["Tanyakan kenapa mengembalikannya sekarang.", "Terima saja tanpa banyak tanya.", "Ceritakan hal ini pada Ryena."])
     if _return == "A":
         moeka "Kenapa sekarang? ...Entah. Rasanya aku ingin semua beres. Jangan dibesar-besarkan, ya."
         nar "Kau bertanya lebih jauh tentang keadaan dan keselamatannya. Ia mencoba mengalihkan, kemudian menyerah pada kalimat sederhana bahwa kau khawatir dan ingin tetap bersamanya mencari bantuan."
@@ -272,13 +329,13 @@ label kkscene_Mo_D11:
         nar "Kau menerima barang tanpa menanyakan perubahan itu. Moeka memastikan catatannya ikut masuk tasmu, lalu mengucapkan terima kasih karena selama ini sudah baik."
         nar "Kata selama ini tinggal lebih lama daripada ucapan pamit. Kau belum menentukan apakah keganjilan yang terdengar layak ditanyakan kembali."
     else:
-        nar "Kau menghubungi Rina malam itu, menceritakan pengembalian barang dalam konteks perubahan yang sudah kalian lihat. Rina tidak menganggap satu benda sebagai kepastian tentang niat Moeka; ia menganggap keseluruhan kabar cukup serius untuk segera mencari dan menghubunginya."
+        nar "Kau menghubungi Ryena malam itu, menceritakan pengembalian barang dalam konteks perubahan yang sudah kalian lihat. Ryena tidak menganggap satu benda sebagai kepastian tentang niat Moeka; ia menganggap keseluruhan kabar cukup serius untuk segera mencari dan menghubunginya."
     return
 
 # ┌─ PANDUAN CERITA · Mo-D12 · Pertanyaan Langsung
 # │ LOKASI  : (dinamis — muncul dari kondisi)
 # │ TERLIBAT: Kohinata Moeka
-# │ AWALAN  : tahap ≥ 3; pemain mengenali tanda (Intim ≥ 55 atau Rina memberi tahu)
+# │ AWALAN  : tahap ≥ 3; pemain mengenali tanda (Intim ≥ 55 atau Ryena memberi tahu)
 # │ INTI    : A Tanya langsung lalu tetap tinggal / B tanya sambil bercanda / C tidak berani
 # │ AKHIRAN : tanya langsung: ia menangis dan bercerita; jendela diambil; jalan ke Sato Kyoko dan bantuan profesional terbuka
 # └─ tulis / perbaiki dialog di bawah ──
@@ -290,7 +347,7 @@ label kkscene_Mo_D12:
         moeka "...Kau menanyakannya. Benar-benar menanyakannya."
         moeka "Aku lelah. Lelah sekali. Aku tidak tahu sampai kapan aku masih kuat."
         nar "Kau bertanya jelas apakah ia sedang memikirkan bunuh diri. Ia menangis, lalu mengatakan ada saat ketika ia takut tak akan mampu menjaga keselamatannya sendiri. Kau mendengarkan tanpa memarahinya atau meminta janji demi membuatmu tenang."
-        nar "Ia menangis untuk pertama kalinya tanpa topeng. Kau tetap di sana. Esoknya, bersama Rina, kau menghubungkan Moeka ke Sato Kyoko — konselor kampus — dan untuk pertama kalinya beban itu tidak ditanggung sendirian."
+        nar "Ia menangis untuk pertama kalinya tanpa topeng. Kau tetap di sana. Esoknya, bersama Ryena, kau menghubungkan Moeka ke Sato Kyoko — konselor kampus — dan untuk pertama kalinya beban itu tidak ditanggung sendirian."
         nar "Jika keselamatannya tidak bisa menunggu, bantuan dicari malam itu juga. Kehadiranmu menjadi bagian dari dukungan, bukan pengganti seluruh pertolongan yang ia perlukan."
     elif _return == "B":
         moeka "Hahaha, kau ini... Sudah, jangan serius-serius. Aku baik-baik saja."
@@ -305,19 +362,19 @@ label kkscene_Mo_D12:
 # │ LOKASI  : (dinamis — muncul dari kondisi)
 # │ TERLIBAT: Kohinata Moeka
 # │ AWALAN  : stres_total < 40; Aff ≥ 55
-# │ INTI    : A Dukung / B ajak Rina / C kritik
+# │ INTI    : A Dukung / B ajak Ryena / C kritik
 # │ AKHIRAN : E-MO-08 menguat
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_Mo_D13:
     call kk_scene_enter("moeka", "Kantin Pusat · Sketsa label")
     nar "Beban keluarga sedikit mereda, dan ada warna yang kembali. Moeka menunjukkan rancangan label merek kecilnya sendiri."
     moeka "Aku ingin label kecil. Belum bisnis besar, jangan langsung minta diskon seumur hidup. Untuk pertama kali setelah lama, aku menggambar sesuatu yang ingin kulihat jadi nyata, bukan cuma yang paling cepat bisa dijual."
-    call kk_family_menu("Mo-D13", ["Dukung sepenuh hati.", "Ajak Rina ikut melihat.", "Beri kritik jujur agar lebih baik."])
+    call kk_family_menu("Mo-D13", ["Dukung sepenuh hati.", "Ajak Ryena ikut melihat.", "Beri kritik jujur agar lebih baik."])
     if _return == "A":
         moeka "Kau pikir ini bisa jalan? ...Aku juga mulai percaya begitu."
         nar "Kau menanyakan desain pertama dan siapa yang dibayangkan akan memakainya. Moeka mulai bercerita sampai lupa merendahkan rencananya sebelum orang lain sempat menilai."
     elif _return == "B":
-        nar "Rina ikut melihat dan langsung menanyakan ruang kerja. Kalian membicarakan jumlah kecil, waktu yang realistis, dan apa yang tidak boleh dikorbankan lagi. Moeka tertawa ketika impiannya mulai mendapat ukuran yang dapat dikerjakan."
+        nar "Ryena ikut melihat dan langsung menanyakan ruang kerja. Kalian membicarakan jumlah kecil, waktu yang realistis, dan apa yang tidak boleh dikorbankan lagi. Moeka tertawa ketika impiannya mulai mendapat ukuran yang dapat dikerjakan."
     else:
         moeka "Kritikmu pedas. ...Tapi kau benar. Aku akan perbaiki garis ini. Terima kasih sudah menganggapnya serius."
         nar "Ia menanyakan alasan di balik komentarmu, menolak satu bagian dan menerima yang lain. Rencana itu cukup miliknya untuk dibela, cukup terbuka untuk diperbaiki tanpa membuat seluruh harga dirinya ikut dipertaruhkan."

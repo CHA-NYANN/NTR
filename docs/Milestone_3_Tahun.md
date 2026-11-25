@@ -162,7 +162,7 @@ Event karakter diacu dengan ID (misal N04). Semuanya didefinisikan di file Event
 - **Hub besar #3:** pemain bisa menyela, mengambil alih, atau mengajak orang lain; opsi "Natal rahasia".
 - **Event karakter:** N07, Mi09, Mo08, K08, C06/Y07, H07, S07.
 - **Efek besar:** siapa yang bersama siapa saat Natal menentukan arah Tahun 2. Bisa memicu hubungan rahasia dan rumor.
-- **Quest Sistem:** Q11 *Natal Bukan Milik Protagonis*.
+- **Quest Sistem:** Q11 *Natal Bukan Milik MC*.
 - **Risiko:** sedang.
 
 #### M10 · Januari T1 · Hatsumode + Ujian Semester 2
@@ -250,7 +250,7 @@ Event karakter diacu dengan ID (misal N04). Semuanya didefinisikan di file Event
 - **Hub:** menghadapi Koita; mengakui; berpura-pura; memanfaatkannya.
 - **Event karakter:** K15, Mi16, Mo14, H12.
 - **Efek besar:** Koita mulai melakukan manuver balik (✅ NPC mengambil keputusan mandiri). Dimulainya konfrontasi terbuka.
-- **Quest Sistem:** Q21 *Protagonis Marah*.
+- **Quest Sistem:** Q21 *MC Marah*.
 - **Risiko:** sedang.
 
 #### M20 · November T2 · Festival Seni dan Pameran

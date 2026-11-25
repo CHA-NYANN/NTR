@@ -111,7 +111,7 @@ Banyak kombinasi itu mustahil (misalnya Koita memilih Miyuki sementara Miyuki be
 | E-KO-10 | Koita Membalas | Bad | Y/C | manuver balik berhasil; pemain kalah perang reputasi |
 | E-KO-11 | Penulis yang Jujur | Neutral | Y/C | K19 dibantu jujur; K20 diisi kebenaran sebagian |
 | E-KO-12 | Pergi | Neutral | Y/C | K23-A didukung pergi |
-| E-KO-13 | Protagonis yang Terbangun | Khusus | Y/C | `koita_tahu_naskah` percaya |
+| E-KO-13 | MC yang Terbangun | Khusus | Y/C | `koita_tahu_naskah` percaya |
 | E-KO-14 | Persahabatan yang Diakhiri | Neutral | Y/C | Koita tahu semua manipulasi pemain; tidak runtuh |
 | E-KO-15 | Toga yang Tidak Dipakai | Bad | Y/C | K19 disabotase atau Koita runtuh di Tahun 3 |
 | E-KO-16 | Semua Pergi | Khusus | Y/C | `orbit_koita` 0; sebagian besar heroine pergi sendiri (pola terbongkar atau memilih mandiri); `runtuh_koita` ≥ 80; tanpa penopang |
@@ -215,7 +215,7 @@ Banyak kombinasi itu mustahil (misalnya Koita memilih Miyuki sementara Miyuki be
 | E-SH-06 | Sekutu di Papan yang Sama | Neutral | Y/C | pemain memberitahunya soal Sistem; `tahu_sistem` percaya |
 | E-SH-07 | Pewaris dengan Caranya Sendiri | Neutral | Y/C | tanpa rute aktif; S17 didukung |
 | E-SH-08 | Bidak Bernama Tojo | Distorted | Y/C | S21 Tojo dipakai sampai M35 |
-| E-SH-09 | Ratu Menjatuhkan Protagonis | Khusus | Y/C | `sasaran_balas` Koita |
+| E-SH-09 | Ratu Menjatuhkan MC | Khusus | Y/C | `sasaran_balas` Koita |
 | E-SH-10 | Keadilan yang Tersenyum | Khusus | Y/C | `sasaran_balas` Ogawa, Kuga, atau Mei; pemain memberi bukti |
 | E-SH-11 | Jalur Hukum | Broken | Y/C | pemain pelaku Force terhadapnya |
 | E-SH-12 | Shena dan Pembacanya | Romantis | C | Chiasa mengaku sebagai Shena sebelum Shiori menemukannya sendiri; `respek` ≥ 70; tanpa kebohongan lain yang ia temukan |

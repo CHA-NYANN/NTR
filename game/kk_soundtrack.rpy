@@ -34,6 +34,8 @@ init python:
 
     KK_BGM_LABEL = {
         "kk_main": "campus",
+        "kk_chiasa_orientation": "campus",
+        "kk_yutaka_commute": "campus",
         "kk_world_loop": "campus",
         "kk_explore_loop": "campus",
         "kk_evaluasi": "graduation",
@@ -60,6 +62,7 @@ init python:
         "kk_inspect_board": "quiet",
         "kk_phone_rematch": "nagisa",
         "kk_pudding": "intimacy",
+        "kk_pulau_m17b": "retreat",
     }
 
     KK_BGM_DISTRICT = {

@@ -10,17 +10,31 @@
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_S_D01:
     call kk_scene_enter("shiori", "Papan catur daring · Jam dua belas")
-    nar "Pukul dua belas, akun anonim yang sudah kaukenali menyalakan tantangan. Di kampus Shiori dapat memutus percakapan dengan senyum. Di papan daring, ia tinggal sebagai serangkaian keputusan yang harus dijawab dengan kesungguhan yang sama."
+    nar "Tepat pukul dua belas malam, jendela situs catur daring di layarmu memunculkan bunyi notifikasi tantangan baru. Nama pengguna anonim yang pola pembukaannya sudah sangat kamu kenali itu baru saja masuk ke meja permainan."
+    nar "Di koridor kampus, Shiori selalu bisa menutup jarak dengan satu senyum sopan. Di atas papan daring tanpa wajah ini, yang tersisa hanyalah rangkaian langkah tajam yang menuntut jawaban sama seriusnya."
+    "Chat Lawan" "Selamat malam. Masih mau satu partai cepat sebelum tidur?"
     call kk_family_menu("S-D01", ["Main serius sampai tuntas.", "Ajak bicara lewat kolom chat.", "Log off tiba-tiba."])
     if _return == "A":
-        shiori "Lawan yang ini... berbeda. Membuatku serius. Siapa kau sebenarnya?"
-        nar "Kau menyelesaikan pertandingan tanpa menggunakan identitas tersembunyi untuk mengejek hal yang hanya diketahui dari kampus. Di akhir ia mengirim undangan untuk malam lain, tertarik pada orang yang belum diberi nama."
+        nar "Kamu membalas tantangan itu dengan pembukaan agresif tanpa sekali pun memancing hal-hal yang hanya kamu ketahui dari kampus. Setiap pertukaran perwira berjalan ketat hingga menit terakhir sebelum akhirnya papan menemui jalan buntu yang menegangkan."
+        "Chat Lawan" "Langkah kuda di giliran dua puluh empat barusan sungguh nggak terduga. Lawan kali ini berbeda sekali dari pemain yang biasa kutemui, sampai bikin aku lupa jam. Siapa kamu sebenarnya?"
+        if kk_host == "chiasa":
+            chiasa "Cuma seseorang yang kebetulan senang belajar membaca langkah dari lawan yang jauh lebih jago. Terima kasih partainya."
+        else:
+            yutaka "Anggap saja sesama orang yang belum bisa tidur tengah malam. Permainan yang sangat rapi."
+        "Chat Lawan" "Menarik. Kalau jam dua belas malam lain hari kamu senggang lagi, aku kirim tantangan ulang ya."
+        nar "Di akhir partai, akun itu mengirim permintaan tanding ulang untuk malam berikutnya, tertarik pada sosok di balik layar yang bahkan belum diberi nama."
     elif _return == "B":
-        shiori "Kau mengajakku bicara di tengah pertandingan? Berani. ...Aku suka itu."
-        nar "Percakapan dimulai dari permainan, lalu berpindah ke hal kecil yang membuat hari melelahkan. Ia tidak menyebut nama keluarga. Kau mendengar versi dirinya yang belum harus menanggapi seluruh reputasi yang datang sebelum ia bicara."
+        if kk_host == "chiasa":
+            chiasa "Langkah pembukaannya kelihatan lebih cepat dari biasanya malam ini. Lagi ada hari yang lumayan melelahkan ya?"
+        else:
+            yutaka "Tempo mainmu agak lebih terburu-buru dari minggu lalu. Hari ini baru melewati urusan yang bikin capek ya?"
+        nar "Bidak putih di layar sempat diam hampir setengah menit sebelum kolom obrolan berkedip."
+        "Chat Lawan" "Kamu mengajakku ngobrol di tengah-tengah partai catur? Berani juga ya... anehnya aku malah suka itu."
+        "Chat Lawan" "Yah, anggap saja hari ini terlalu banyak orang yang cuma bicara dengan nama keluargaku alih-alih mendengarkan aku sendiri. Di sini lumayan lega rasanya karena nggak ada yang peduli latar belakang siapa pun."
+        nar "Obrolan pelan bergulir di antara langkah-langkah bidak tanpa pernah menyebut nama kampus ataupun keluarga. Malam itu kamu mendengarkan sisi diri Shiori yang jauh lebih santai sebelum reputasinya ikut masuk ke ruangan."
     else:
-        nar "Kau keluar tanpa kabar. Shiori menunggu beberapa menit lalu menutup tantangan, belum tahu apakah ia sedang dihindari atau hanya menghadapi koneksi yang gagal."
-        nar "Kali berikutnya ia akan memperhatikan lebih banyak hal sebelum memberi waktu pada percakapan yang sama. Ketidaktahuan membuatnya penasaran, tidak otomatis semakin dekat."
+        nar "Begitu giliranmu tiba di langkah kelima, kamu langsung menutup peramban dan keluar dari akun tanpa mengetik sepatah kata pun."
+        nar "Di seberang layar, Shiori menunggu hitungan mundur waktu hingga habis sebelum menutup papan dengan kening berkerut, tidak tahu apakah koneksi lawannya terputus atau ia baru saja sengaja ditinggalkan. Lain kali ia akan membaca setiap detail lebih waspada sebelum membuka ruang obrolan yang sama."
     return
 
 # ┌─ PANDUAN CERITA · S-D02 · Kuroiwa di Parkiran
@@ -54,19 +68,59 @@ label kkscene_S_D02:
 # │ AKHIRAN : jembatan atau perangkap Shena
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_S_D05:
-    call kk_scene_enter("shiori", "Gedung Seni Rupa & Studio · Buku bertanda tangan")
-    nar "Buku di tangan Shiori sudah dibaca sampai sudut sampulnya lembut. Ilustrasinya karya Shena; catatan kecil terselip pada halaman yang tampaknya sering dibuka. Ia melihat caramu mengenali gambar sebelum menyebut nama di sampul."
-    shiori "Aku pengagum Shena. Karyanya seperti mengenalku. ...Kau tahu sesuatu soal siapa dia?"
+    $ _s_loc = getattr(store, "_lokasi", None) or "Klub Catur"
+    $ _s_dist = KK_DISTRICT_NAME.get(getattr(store, "_distrik", "d3"), "Distrik Elite")
+    call kk_scene_enter("shiori", _s_dist + " · " + _s_loc)
+    if _s_loc == "Klub Catur":
+        nar "Ruang Klub Catur sedang lengang saat kamu datang menghampiri meja dekat jendela. Di samping cangkir teh porselen milik Shiori, tergeletak sebuah novel strategi ringan yang sudut sampulnya sudah agak melunak karena sering dibaca, dengan beberapa penanda kertas tipis terselip di bagian tengah."
+    elif _s_loc == "Rumah Saionji":
+        nar "Di ruang duduk Rumah Saionji yang tenang, Shiori baru saja meletakkan buku yang sedang dibacanya di samping cangkir teh ketika kamu duduk di seberangnya. Sudut sampul novel strategi ringan itu sudah agak melunak karena sering dibuka, dengan beberapa penanda kertas tipis terselip di bagian tengah."
+    else:
+        nar "Di meja tempat kalian duduk di [_s_loc], Shiori baru saja menutup sebuah novel strategi ringan di samping cangkir minumannya. Sudut sampul buku itu sudah agak melunak karena sering dibaca, dengan beberapa penanda kertas tipis terselip di bagian tengah."
+    nar "Begitu matamu jatuh pada ilustrasi sampulnya, kamu langsung mengenali tarikan garis halus dan warna dingin yang persis sama dengan cetakan contoh di meja belajar kamarmu. Kamu menahan diri supaya tidak terlihat kaget, lalu membuka obrolan biasa saja."
+    chiasa "Eh, Saionji-senpai baca seri novel strategi yang itu juga ya? Kelihatannya lumayan sering dibuka sampai pinggiran kertasnya halus begitu."
+    nar "Shiori melirik buku di samping tangannya, lalu tersenyum sopan sambil menggeser cangkir tehnya sedikit."
+    shiori "Iya, Amamiya-san. Lumayan bagus buat bacaan selingan di luar materi kuliah. Alur strateginya cukup rapi dan nggak terlalu menggampangkan masalah."
+    chiasa "Aku kira Senpai lebih sering baca buku referensi ekonomi atau catatan permainan catur aja."
+    shiori "Kalau isi kepalaku cuma diisi laporan dan notasi pertandingan terus, bisa jenuh juga. Lagipula, jujur saja, yang bikin aku selalu beli jilid barunya justru ilustrasi di dalamnya."
+    nar "Ia membuka salah satu halaman yang diberi penanda kertas tipis lalu memutarnya sedikit ke arahmu, memperlihatkan ilustrasi hitam-putih seorang tokoh yang berdiri di tengah ruangan penuh orang."
+    shiori "Kebetulan kamu anak Seni Rupa, Amamiya-san. Aku selalu suka cara ilustrator bernama Shena ini menggambar tatapan mata yang terasa sepi di tengah keramaian. Menurutmu dari sudut pandang orang seni, gaya goresan seperti ini kelihatan dikerjakan ilustrator senior yang sudah lama di industri, atau orang yang masih cukup muda?"
+    nar "Pertanyaan santai itu datang tepat saat kamu sedang memandangi gambar yang pernah kamu lihat rancangannya di kamar Chiasa. Karena berusaha menjawab secepat mungkin supaya tidak kelihatan canggung, kalimatmu malah meluncur sedikit kelewatan."
+    chiasa "Kalau dilihat dari tarikan garisnya sih kayaknya masih seumuran mahasiswa, soalnya di buku sketsa aslinya... eh, maksudku kalau dibayangkan waktu masih jadi sketsa pensil sebelum dicetak, goresannya kelihatan masih ringan dan belum kaku kayak ilustrator lama."
+    nar "Begitu kalimat itu keluar, lidahmu langsung terasa kelu. Di seberang meja, tangan Shiori yang hendak menutup kembali halaman buku itu berhenti di udara. Mata ungu ametisnya terangkat pelan menatap wajahmu, mengamati raut salah tingkah yang gagal kamu sembunyikan."
+    shiori "...'Di buku sketsa aslinya', ya?"
+    chiasa "I-itu cuma cara ngomongku aja kok, Saionji-senpai, habis di kelas seni biasanya kami sering nebak-nebak bentuk sketsa awal di balik hasil cetakan."
+    nar "Shiori tidak langsung membantah. Ia justru menutup bukunya perlahan, menumpukan dagu ringan di atas punggung jari, lalu menatapmu dengan senyum tipis yang tenang sekaligus menyelidik."
+    shiori "Penjelasan yang cukup rapi, Amamiya-san. Hanya saja, barusan nada bicaramu lebih terdengar seperti orang yang pernah melihat langsung kertas sketsanya, lalu mendadak sadar salah bicara. Wajahmu juga sempat berubah kaku begitu kusebut nama Shena."
+    shiori "Aku nggak suka asal menuduh tanpa dasar. Jadi aku tanya langsung saja ke kamu, apakah kamu mengenal orang di balik nama pena Shena itu, atau sebenarnya ada kaitan lain?"
     call kk_family_menu("S-D05", ["Akui kaitannya.", "Pura-pura tidak tahu.", "Tawarkan tanda tangan Shena."])
     if _return == "A":
-        shiori "Jadi benar. ...Kau menyimpan rahasia sebesar itu. Sekarang aku penasaran rahasia apa lagi yang kau punya."
-        nar "Kau mengakui kaitan itu dengan batas yang memang bisa dijelaskan. Shiori bertanya tentang karya lebih dahulu, lalu mendengar bagian yang membuat identitasmu sekarang tidak sesederhana dugaan seorang pembaca."
+        nar "Melihat sorot mata Shiori yang sudah membaca kejanggalan ucapanmu dengan terlalu tepat, kamu mengembuskan napas pelan dan memilih tidak memperpanjang alasan yang hanya akan terdengar makin aneh."
+        chiasa "...Sebenarnya nama pena Shena itu memang punyaku, Saionji-senpai. Tapi aku minta tolong banget jangan dibocorkan ke siapa-siapa di kampus ya, soalnya bahkan teman-teman di studio pun hampir nggak ada yang tahu."
+        nar "Shiori terdiam dua detik, alisnya terangkat tipis karena dugaannya ternyata meleset sedikit lebih jauh ke arah yang lebih mengejutkan, sebelum senyum yang lebih tulus muncul di wajahnya."
+        shiori "Jadi ternyata kamu sendiri orangnya. Kamu menyimpan rahasia sebesar ini sendirian sejak masuk kuliah, Amamiya-san? Jujur saja, sekarang aku malah makin penasaran sisi lain apa lagi yang masih kamu simpan."
+        chiasa "Cuma soal ilustrasi itu aja kok, Senpai. Lagipula jujur aja, belakangan ini gambaranku lagi nggak sebagus waktu bikin jilid itu, jadi aku memang agak enggan kalau orang-orang di kampus tahu terus berharap terlalu tinggi."
+        shiori "Tenang saja, aku tahu bedanya menikmati karya dengan mencampuri urusan pribadi pembuatnya. Rahasiamu aman denganku. Kalau kamu nggak keberatan, kapan-kapan boleh kan kita ngobrol santai soal ilustrasi di halaman yang paling kusuka tadi?"
+        chiasa "Boleh kok, Senpai, selama memang cuma jadi obrolan kita berdua aja."
+        nar "Shiori mengangguk pelan sambil merapikan penanda kertas di dalam novelnya, kali ini tanpa jarak sopan yang biasanya selalu ia pasang."
     elif _return == "B":
-        shiori "Tidak tahu? Baik. Aku tidak akan menyebut firasat sebagai bukti. Tetapi jawabanmu akan kuingat."
-        nar "Ia kembali membuka buku. Yang dapat kaulihat hanyalah jeda lebih panjang sebelum ia mengajak membicarakan gambar lagi."
+        nar "Kamu menarik napas pendek, merapikan ekspresi wajahmu supaya terlihat lebih santai, lalu menggeleng pelan."
+        chiasa "Nggak kok, Saionji-senpai. Aku beneran nggak kenal siapa orang di balik nama Shena. Tadi aku cuma keceplosan pakai istilah kelas studio aja, dan sempat kaget karena ternyata Senpai suka baca novel ringan juga."
+        nar "Shiori menatap wajahmu beberapa detik tanpa menyela ataupun mendesak. Kemudian ia menunduk, menyelipkan kembali penanda kertas yang agak mencuat ke dalam novel, dan merapikannya di samping tasnya dengan gerakan yang terlalu tenang."
+        shiori "Begitu, ya. Kalau memang cuma kebetulan salah pilih kata, aku nggak bakal memaksa atau menjadikan firasat pribadi sebagai bukti apa-apa."
+        chiasa "Iya, maaf ya, Senpai, tadi cara ngomongku memang agak membingungkan."
+        shiori "Nggak perlu minta maaf, Amamiya-san. Hanya saja aku punya kebiasaan mengingat detail percakapan yang terasa janggal, jadi jawabanmu hari ini tetap bakal kusimpan baik-baik."
+        nar "Ia kembali meraih cangkir tehnya dengan senyum sopan yang persis seperti biasa. Tidak ada nada marah di suaranya, tetapi jeda sebelum ia mengganti topik obrolan terasa sedikit lebih dingin daripada sebelumnya."
     else:
-        shiori "Tanda tangan asli Shena? Untukku? ...Kau tahu cara membuat seseorang berhutang budi."
-        nar "Kau mengatakan ia tidak perlu berutang untuk menikmati karya. Shiori tertawa, lalu meminta dituliskan namanya tanpa gelar atau tambahan yang biasa mengikuti nama Saionji."
+        nar "Daripada terjebak membela diri dengan wajah gugup, kamu justru menegakkan dudukmu dan menatap balik senyum menyelidik Shiori dengan nada lebih santai."
+        chiasa "Kalau Saionji-senpai memang suka banget sama ilustrasinya sampai bukunya dibaca berulang-ulang begitu... gimana kalau kutuliskan tanda tangan Shena langsung di halaman dalam buku ini? Asal tetap jadi rahasia kita berdua aja ya."
+        nar "Mata ungu ametis Shiori melebar sebentar mendengar tawaran yang tidak ia duga itu. Sedetik kemudian, ia tertawa pelan sambil menggeleng kecil."
+        shiori "Tanda tangan asli Shena langsung di bukuku, tepat setelah aku hampir selesai menebak? ...Wah, Amamiya-san, kamu tahu betul cara membalik keadaan sekaligus bikin orang merasa berutang budi ya."
+        chiasa "Nggak ada utang budi apa-apa kok, Senpai. Aku malah senang lihat bukunya beneran dibaca sampai ujung kertasnya lembut begini, nggak cuma dipajang di rak."
+        nar "Shiori membuka tasnya, mengeluarkan sebuah pulpen tinta hitam yang rapi, lalu menyodorkannya bersama halaman pembuka novel yang masih bersih ke hadapanmu."
+        shiori "Kalau begitu, tolong tulis namaku di atasnya cukup 'untuk Shiori' saja ya, tanpa embel-embel marga Saionji. Biar buku ini benar-benar jadi milikku sendiri."
+        chiasa "Siap, sebentar ya, Senpai... tanganku agak deg-degan nulis langsung di buku orang."
+        nar "Kamu menuliskan catatan singkat dan tanda tangan itu hati-hati di sudut halaman, lalu menyerahkan buku tersebut kembali. Shiori memandangi goresan tinta hitam itu dengan senyum puas sebelum menutupnya rapi dan menyimpannya kembali ke dalam tas."
     return
 
 # ┌─ PANDUAN CERITA · S-D06 · Gala dan Tojo
@@ -78,18 +132,34 @@ label kkscene_S_D05:
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_S_D06:
     call kk_scene_enter("shiori", "Undangan gala")
-    shiori "Orang tuaku mengadakan gala. Mereka tahu aku tidak ingin semua percakapan berakhir pada Tojo. Dia tetap akan datang. Maukah kamu menemaniku supaya ada bagian malam yang bisa kuhabiskan dengan orang yang memang ingin kutemui?"
-    nar "Ia mengakui tawaran itu juga akan mengalihkan perhatian tamu. Keluarganya tidak memerlukan sandiwara hubungan; lingkungan lain mungkin akan menafsirkannya sendiri."
+    nar "Di koridor yang sepi seusai jadwal kampus, Shiori mengeluarkan sebuah amplop undangan berbahan kertas krem tebal dari tasnya dan memegangnya sejenak sebelum menatapmu."
+    if kk_host == "chiasa":
+        shiori "Amamiya-san, akhir pekan ini keluargaku mengadakan jamuan gala tahunan. Orang tuaku sebenarnya paham aku nggak ingin seluruh obrolan malam itu berakhir di meja Tojo Akihiro, tapi secara formal dia tetap datang. Maukah kamu ikut menemaniku malam itu supaya ada sebagian waktu yang bisa kuhabiskan bersama orang yang benar-benar ingin kutemui?"
+    else:
+        shiori "Kisaragi-san, akhir pekan ini keluargaku mengadakan acara gala. Orang tuaku tahu aku nggak mau seluruh malam itu dihabiskan meladeni Tojo Akihiro, tapi dia tetap akan hadir. Maukah kamu menemaniku ke sana supaya ada bagian malam yang bisa kujalani dengan orang yang memang ingin kuajak bicara?"
+    nar "Ia sama sekali tidak menyembunyikan bahwa kehadiranmu juga akan memotong ruang gerak Tojo. Keluarganya tidak menuntut sandiwara hubungan apa pun, meski para tamu kalangan elite pasti akan cepat menarik kesimpulan mereka sendiri."
     call kk_family_menu("S-D06", ["Terima jadi pasangan pengalih.", "Tolak permintaannya.", "Datang bersama orang lain."])
     if _return == "A":
-        shiori "Terima kasih. Di depan orang tuaku, bersikaplah wajar. Sisanya biar aku yang atur."
-        nar "Kalian menyepakati bagaimana akan diperkenalkan. Shiori tidak meminta kau menjanjikan keintiman yang tidak diinginkan hanya agar tamu lain mudah mengerti mengapa kalian datang bersama."
+        if kk_host == "chiasa":
+            chiasa "Boleh, Saionji-senpai. Kalau kehadiranku bisa bikin Senpai bernapas lebih lega di acara itu, aku siap ikut menemani."
+        else:
+            yutaka "Oke, aku ikut, Saionji-san. Kalau butuh alasan buat menghindar dari obrolan Tojo di tengah aula, tinggal beri kode saja."
+        shiori "Terima kasih banyak. Di depan orang tuaku, bersikaplah biasa saja seperti di kampus. Urusan menghadapi tamu-tamu yang terlalu ingin tahu, biar aku yang tangani."
+        nar "Kalian menyepakati cara perkenalan yang nyaman tanpa memaksamu berpura-pura memiliki hubungan yang tidak kamu inginkan demi memuaskan rasa ingin tahu para tamu."
     elif _return == "B":
-        shiori "Baik. Aku kecewa sedikit, tapi aku bisa menghadapi malam itu. Kuroiwa dan keluargaku juga ada."
-        nar "Ia merapikan undangan, menerima penolakan tanpa mengubahnya menjadi tuntutan agar kau membuktikan peduli dengan cara lain."
+        if kk_host == "chiasa":
+            chiasa "Maaf banget, Saionji-senpai, aku kayaknya nggak sanggup ikut acara gala resmi sebesar itu. Aku takut malah canggung dan bikin Senpai makin repot."
+        else:
+            yutaka "Maaf, Saionji-san, untuk acara gala keluarga kali ini kayaknya aku harus menolak dulu. Kalau keluarga Kisaragi lihat aku datang sebagai pendamping, urusannya bisa tambah panjang."
+        shiori "Baik, aku mengerti kok. Jujur sedikit kecewa, tapi aku sanggup menghadapi malam itu. Lagi pula ada Kuroiwa dan orang tuaku di sana."
+        nar "Ia menyimpan kembali amplop undangan itu dengan rapi, menerima penolakanmu dengan bersih tanpa sedikit pun mencoba membuatmu merasa bersalah."
     else:
-        nar "Kau datang bersama orang lain. Shiori menyambut keduanya dengan sopan, menyesuaikan rencana tanpa membiarkan rasa cemburu menentukan perlakuan kepada tamu."
-        nar "Tojo memperhatikan perubahan itu dan mulai mendekat lagi. Malam yang diharapkan memberi ruang bagi Shiori justru menuntut ia menjaga wajah pada dua arah sekaligus."
+        if kk_host == "chiasa":
+            chiasa "Aku bisa datang kok, Saionji-senpai, tapi boleh nggak aku sekalian ajak teman lain biar suasananya lebih santai dan nggak terlalu mencolok?"
+        else:
+            yutaka "Aku datang ke galanya, Saionji-san, tapi aku bakal datang bareng kenalan lain supaya nggak memicu gosip berlebihan di antara keluarga kita."
+        nar "Pada malam acara, Shiori menyambut kedatanganmu dan rekanmu di dekat pintu aula dengan kesopanan sempurna tanpa membiarkan rasa kecewa sedikit pun terlihat."
+        nar "Dari seberang meja minuman, Tojo langsung menangkap perubahan formasi itu dan melangkah mendekat lagi dengan senyum percaya diri. Malam yang semula diharapkan memberi Shiori ruang bernapas kini memaksanya menjaga ketenangan dari dua arah sekaligus."
     return
 
 # ┌─ PANDUAN CERITA · S-D10 · Musuh Bersama

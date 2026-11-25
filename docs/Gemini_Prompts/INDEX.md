@@ -404,7 +404,7 @@ Setiap tautan membuka satu prompt lengkap. Salin seluruh isi file itu ke Gemini;
 | E-SH-06 | Sekutu di Papan yang Sama | [Buka](ending/SH/E-SH-06.md) | `game/kk_ending_story.rpy` |
 | E-SH-07 | Pewaris dengan Caranya Sendiri | [Buka](ending/SH/E-SH-07.md) | `game/kk_ending_story.rpy` |
 | E-SH-08 | Bidak Bernama Tojo | [Buka](ending/SH/E-SH-08.md) | `game/kk_ending_story.rpy` |
-| E-SH-09 | Ratu Menjatuhkan Protagonis | [Buka](ending/SH/E-SH-09.md) | `game/kk_ending_story.rpy` |
+| E-SH-09 | Ratu Menjatuhkan MC | [Buka](ending/SH/E-SH-09.md) | `game/kk_ending_story.rpy` |
 | E-SH-10 | Keadilan yang Tersenyum | [Buka](ending/SH/E-SH-10.md) | `game/kk_ending_story.rpy` |
 | E-SH-11 | Jalur Hukum | [Buka](ending/SH/E-SH-11.md) | `game/kk_ending_story.rpy` |
 | E-SH-12 | Shena dan Pembacanya | [Buka](ending/SH/E-SH-12.md) | `game/kk_ending_story.rpy` |
@@ -448,7 +448,7 @@ Setiap tautan membuka satu prompt lengkap. Salin seluruh isi file itu ke Gemini;
 | E-KO-10 | Koita Membalas | [Buka](ending/KO/E-KO-10.md) | `game/kk_ending_story.rpy` |
 | E-KO-11 | Penulis yang Jujur | [Buka](ending/KO/E-KO-11.md) | `game/kk_ending_story.rpy` |
 | E-KO-12 | Pergi | [Buka](ending/KO/E-KO-12.md) | `game/kk_ending_story.rpy` |
-| E-KO-13 | Protagonis yang Terbangun | [Buka](ending/KO/E-KO-13.md) | `game/kk_ending_story.rpy` |
+| E-KO-13 | MC yang Terbangun | [Buka](ending/KO/E-KO-13.md) | `game/kk_ending_story.rpy` |
 | E-KO-14 | Persahabatan yang Diakhiri | [Buka](ending/KO/E-KO-14.md) | `game/kk_ending_story.rpy` |
 | E-KO-15 | Toga yang Tidak Dipakai | [Buka](ending/KO/E-KO-15.md) | `game/kk_ending_story.rpy` |
 | E-KO-16 | Semua Pergi | [Buka](ending/KO/E-KO-16.md) | `game/kk_ending_story.rpy` |

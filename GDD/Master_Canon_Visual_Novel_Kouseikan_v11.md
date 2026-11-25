@@ -17,9 +17,9 @@
 ## 0A. KOREKSI CANON TERBARU — v7.0 (BERLAKU)
 Bagian ini mencatat keputusan eksplisit terbaru pemain. Jika bertentangan dengan kalimat lama di bagian lain, keputusan v7.0 di bawah ini yang berlaku. Teks lama tetap dipertahankan sebagai rekam jejak dan dianggap *SUPERSEDED*, bukan dihapus.
 
-### 0A.1 Struktur protagonis dan rute
+### 0A.1 Struktur MC dan rute
 - **Male Route:** pemain mengambil alih tubuh **Kisaragi Yutaka**. **Amamiya Chiasa adalah NPC independen** dalam rute ini dan merupakan heroine Koita. Yutaka asli diam-diam menyukai Chiasa.
-- **Female Route:** pemain mengambil alih tubuh **Amamiya Chiasa**. **Chiasa adalah protagonis Female Route**, bukan Kujo Ritsuka/Harumi. Yutaka tetap NPC independen dalam rute ini. Chiasa asli diam-diam mencintai Koita.
+- **Female Route:** pemain mengambil alih tubuh **Amamiya Chiasa**. **Chiasa adalah MC Female Route**, bukan Kujo Ritsuka/Harumi. Yutaka tetap NPC independen dalam rute ini. Chiasa asli diam-diam mencintai Koita.
 - Kedua calon tubuh tetap eksis di dunia yang sama; karakter yang tidak dipilih tetap NPC independen, sesuai aturan possession yang sudah ada.
 
 ### 0A.2 Lima heroine utama dan status cinta awal
@@ -46,7 +46,7 @@ Bagian ini mencatat keputusan eksplisit terbaru pemain. Jika bertentangan dengan
 - Fokus tetap pada narasi, simulasi kehidupan NPC, relationship system, branching choices, dan NTR mechanics. Pembahasan implementasi teknis ditunda ke tahap berikutnya.
 
 ### 0A.6 Label bagian lama yang telah digantikan
-- Bagian 2.3 yang menamai Female Route sebagai Amamiya Chiasa tetap benar. Setiap interpretasi atau usulan terdahulu yang menyebut Harumi/Ritsuka sebagai protagonis Female Route adalah *SUPERSEDED* dan tidak pernah menjadi canon.
+- Bagian 2.3 yang menamai Female Route sebagai Amamiya Chiasa tetap benar. Setiap interpretasi atau usulan terdahulu yang menyebut Harumi/Ritsuka sebagai MC Female Route adalah *SUPERSEDED* dan tidak pernah menjadi canon.
 - Bagian 7 yang menyatakan status cinta Moeka belum ditetapkan kini *SUPERSEDED* oleh 0A.2 dan 0A.4.
 - Bagian 11 yang menggunakan nama Ritsuka tetap dipertahankan sebagai profil historis karakter; nama aktifnya Harumi. Pernyataan bahwa ia tidak memiliki ketertarikan romantis khusus kepada Koita kini *SUPERSEDED*.
 - Bagian 12.7 dan 12.8 yang menyatakan status cinta Moeka kepada Koita belum ditetapkan kini *SUPERSEDED*.
@@ -97,7 +97,7 @@ Bagian ini mencatat keputusan eksplisit terbaru pemain. Jika bertentangan dengan
 - Jalur heteroseksual, yuri, dan BL dimungkinkan; tidak ada ketertarikan yang dijamin hanya karena status karakter.
 - NPC boleh memilih orang lain, menolak player, berkencan sesama NPC, atau hidup mandiri.
 
-## 3. Protagonis manga asli — Amamiya Koita
+## 3. MC manga asli — Amamiya Koita
 - Nama resmi: **Amamiya Koita** (jangan gunakan nama konsep lama 'Chihiro').
 - Sekitar usia 20 tahun; mahasiswa tahun kedua Fakultas Sastra dan Humaniora, Universitas Kouseikan.
 - Citra publik: manis, baik, tampak polos dan sedikit tidak peka.
@@ -493,8 +493,8 @@ Bagian ini mencatat keputusan eksplisit terbaru pemain. Jika bertentangan dengan
 
 ## 18. Aturan lanjutan Distorted Heroine Routes — keputusan pemain (v10.0)
 
-### 18.1 Cakupan protagonis dan simultanitas
-- Seluruh Distorted Heroine Routes tersedia pada **Male Route maupun Female Route**. Konteks adegan dan hubungan dapat berbeda sesuai protagonis, tetapi ketersediaan sistem tidak dikunci pada satu rute protagonis.
+### 18.1 Cakupan MC dan simultanitas
+- Seluruh Distorted Heroine Routes tersedia pada **Male Route maupun Female Route**. Konteks adegan dan hubungan dapat berbeda sesuai MC, tetapi ketersediaan sistem tidak dikunci pada satu rute MC.
 - **Keenam rute** (Miyuki, Nagisa, Harumi, Moeka, Shiori, serta rute khusus Chiasa) dapat aktif bersamaan dalam satu playthrough. Tidak ada batas maksimal satu atau dua rute aktif.
 
 ### 18.2 Syarat aktivasi dan tahapan
@@ -550,7 +550,7 @@ Bagian ini mencatat keputusan eksplisit terbaru pemain. Jika bertentangan dengan
 
 ### Amamiya Koita — MC manga asli, pusat konflik
 **Status: draft visual dari 10 jawaban pemain; ilustrasi telah dibuat, tetapi belum disetujui/dikunci final.**
-- Rambut **hitam alami**, messy short hair, dengan **satu ahoge** khas protagonis manga.
+- Rambut **hitam alami**, messy short hair, dengan **satu ahoge** khas MC manga.
 - Mata **hitam gelap**; tinggi **172–175 cm**; tubuh **slim average**.
 - Wajah **boy-next-door**, tampan natural, mudah didekati; ekspresi default senyum hangat yang terlihat tulus.
 - Pakaian kasual ala MC shonen: kaus, jaket/hoodie, celana kasual, sneakers.

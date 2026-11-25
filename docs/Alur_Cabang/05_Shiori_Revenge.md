@@ -135,7 +135,7 @@ flowchart LR
   R{{"S25 Pilihan Shiori"}} --> F{"Pemain pelaku Force<br/>terhadapnya?"}
   F -->|ya| E11[["E-SH-11 Jalur Hukum"]]
   F -->|tidak| T{"Sasaran balas dendam"}
-  T -->|Koita| E09[["E-SH-09 Ratu Menjatuhkan Protagonis"]]
+  T -->|Koita| E09[["E-SH-09 Ratu Menjatuhkan MC"]]
   T -->|Ogawa, Kuga, atau Mei| E10[["E-SH-10 Keadilan yang Tersenyum"]]
   T -->|pemain, sampai tuntas| E02[["E-SH-02 Skakmat"]]
   T -->|pemain, berhenti di tengah| E03[["E-SH-03 Gencatan Senjata"]]
@@ -183,7 +183,7 @@ flowchart LR
 | E-SH-06 | Sekutu di Papan yang Sama | Neutral | Y/C | pemain memberitahunya soal Sistem; `tahu_sistem` percaya | Shiori menjadi ahli strategi pemain melawan naskah; persahabatan, bukan cinta |
 | E-SH-07 | Pewaris dengan Caranya Sendiri | Neutral | Y/C | tanpa rute aktif; S17 didukung | fokus karier; membatalkan pertunangan Tojo dengan strateginya sendiri |
 | E-SH-08 | Bidak Bernama Tojo | Distorted | Y/C | S21 Tojo dipakai sampai M35 | pertunangan tanpa cinta sebagai hukuman bagi dirinya sendiri; ia tetap tersenyum di setiap foto; ikatan sosial, bukan pasangan romantis baru |
-| E-SH-09 | Ratu Menjatuhkan Protagonis | Khusus | Y/C | `sasaran_balas` Koita | Koita dijatuhkan di depan semua orang; deviasi sangat tinggi; E-KO-09 terkunci |
+| E-SH-09 | Ratu Menjatuhkan MC | Khusus | Y/C | `sasaran_balas` Koita | Koita dijatuhkan di depan semua orang; deviasi sangat tinggi; E-KO-09 terkunci |
 | E-SH-10 | Keadilan yang Tersenyum | Khusus | Y/C | `sasaran_balas` Ogawa, Kuga, atau Mei; pemain memberi bukti | pelaku dijatuhkan; Shiori dan pemain menjadi sekutu yang saling waspada |
 | E-SH-11 | Jalur Hukum | Broken | Y/C | pemain pelaku Force terhadapnya | Rute Revenge teraktivasi paling cepat lewat hukum dan sosial; pemain dikeluarkan dan dipenjara; tanpa romansa |
 | E-SH-12 | Shena dan Pembacanya | Romantis | C | Chiasa mengaku sebagai Shena sebelum Shiori menemukannya sendiri; `respek` ≥ 70; tanpa kebohongan lain yang ia temukan | pembaca dan ilustratornya |
@@ -248,7 +248,7 @@ flowchart LR
   classDef koita stroke:#6366f1,stroke-width:2px
   classDef khusus stroke:#9333ea,stroke-width:2px
   E02[["E-SH-02 Skakmat"]] -->|mengaku di S22-S24| E03[["E-SH-03 Gencatan Senjata"]]
-  E02 -->|S-D07 bukti pola Koita| E09[["E-SH-09 Ratu Menjatuhkan Protagonis"]]
+  E02 -->|S-D07 bukti pola Koita| E09[["E-SH-09 Ratu Menjatuhkan MC"]]
   E02 -->|S-D10 musuh bersama| E10[["E-SH-10 Keadilan yang Tersenyum"]]
   E04[["E-SH-04 Ratu Tanpa Kepercayaan"]] -->|S-D12 dirawat, respek tinggi| E01[["E-SH-01 Lawan Tanding Seumur Hidup"]]
   E08[["E-SH-08 Bidak Bernama Tojo"]] -->|Tojo menolak jadi bidak| E07[["E-SH-07 Pewaris dengan Caranya Sendiri"]]

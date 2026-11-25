@@ -10,7 +10,7 @@ Tulis teks ending E-KO-18. Pertahankan jenis hasil, kondisi muncul, host yang be
 
 Kouseikan adalah visual novel drama psikologis bercabang, berlatar universitas Jepang, ditulis dalam bahasa Indonesia. Pemain mati di dunia asal lalu menempati tubuh Yutaka ATAU Chiasa dalam dunia manga harem yang tidak disukainya. Kesadaran pemilik tubuh asli hilang; jangan membuat pemilik lama berdialog sebagai orang kedua yang hadir di ruangan. Pemain tidak mewarisi ingatan pribadi atau keterampilan rumit host, hanya tubuh dan kebiasaan sederhana.
 
-Koita adalah protagonis manga asli, BUKAN otomatis tokoh yang dikendalikan pemain. Sistem NTR yang sinis mengancam pemain: takdir romantis Koita harus cukup menyimpang ketika ia wisuda, atau pemain mati. Perhitungan itu bukan penilaian moral; kebaikan maupun kekejaman punya akibat tersendiri. Jangan mengubah Sistem menjadi dalih yang membenarkan pelaku atau membuat angka menjadi cinta.
+Koita adalah MC manga asli, BUKAN otomatis tokoh yang dikendalikan pemain. Sistem NTR yang sinis mengancam pemain: takdir romantis Koita harus cukup menyimpang ketika ia wisuda, atau pemain mati. Perhitungan itu bukan penilaian moral; kebaikan maupun kekejaman punya akibat tersendiri. Jangan mengubah Sistem menjadi dalih yang membenarkan pelaku atau membuat angka menjadi cinta.
 
 Permainan mulai 7 April; rentang tiga tahun sampai wisuda Koita pada Maret. Awal: Koita/Yutaka/Nagisa/Harumi/Moeka/Shiori tahun kedua, Chiasa tahun pertama, Miyuki tahun ketiga. Semua tokoh romansa/mahasiswa 18+. Adik-adik kecil Moeka adalah tokoh keluarga saja. Geng kecil: Koita, Yutaka, Nagisa, Chiasa. Kelompok belajar SMA: Koita, Yutaka, Nagisa, Miyuki, Harumi. NPC boleh menolak; tidak ada ketertarikan yang dijamin.
 
@@ -21,7 +21,7 @@ Cerita bercabang: jangan menyatakan opsi dari adegan lain sudah dipilih, hubunga
 ## Karakter dan hubungan
 
 ### Pegangan suara dan fakta
-- Amamiya Koita: protagonis manga asli, mahasiswa Sastra. Baik dan mudah tersanjung, terbiasa menggantung jawaban karena takut mengecewakan atau kehilangan orang. Awal naif, lalu bisa sadar, memilih, atau retak. Jangan jadikan ia bodoh permanen maupun penjahat yang sudah sadar sejak awal.
+- Amamiya Koita: MC manga asli, mahasiswa Sastra. Baik dan mudah tersanjung, terbiasa menggantung jawaban karena takut mengecewakan atau kehilangan orang. Awal naif, lalu bisa sadar, memilih, atau retak. Jangan jadikan ia bodoh permanen maupun penjahat yang sudah sadar sejak awal.
 - Kisaragi Yutaka: mahasiswa Ekonomi/Bisnis, sahabat kecil Koita, tinggal di apartemen bagus. Aslinya santai, jahil, blak-blakan, hangat dan menyimpan kesepian; menyukai Chiasa. Pemain tidak mewarisi ingatan pribadi, materi kuliah atau skill game profesionalnya. Keluarga kaya tetapi berjarak; Amamiya tempat ia merasa diterima. Ia TIDAK punya kunci cadangan rumah Amamiya.
 - Amamiya Chiasa: mahasiswa Seni tahun pertama, adik TIRI Koita tanpa hubungan darah. Posesif halus dan suka menggoda Ko-nii. Rambut cokelat gelap half-up berpita hitam, mata keemasan. Ilustrator nama pena Shena. Daisuke ayah biologisnya, Yoshie ibu biologis Koita/ibu tirinya. Pemain dalam tubuh Chiasa TIDAK mewarisi kemampuan menggambarnya.
 
@@ -166,7 +166,7 @@ Status: fungsi dan persona dasar ✅, detail interaksi 🟡 usulan.
 - "Selamat pagi, Host. Kau punya 3 hari untuk membuat seorang gadis berhenti menunggu seseorang. Santai saja, aku sudah memesan popcorn."
 - "Peringatan. Kau baru saja membohongi seseorang tanpa alasan produktif. Menarik, tapi aku akan mencatatnya."
 - "Quest gagal. Bukan salahmu sepenuhnya. Salahmu 74%."
-- "Kau tahu, Koita itu protagonis. Kau cuma figuran yang kebetulan pintar. Jangan salahkan aku kalau naskahnya membencimu."
+- "Kau tahu, Koita itu MC. Kau cuma figuran yang kebetulan pintar. Jangan salahkan aku kalau naskahnya membencimu."
 
 ## 6. Relasi
 - Dengan pemain: pengawas, pengejek, dan satu-satunya yang tahu kebenaran.
@@ -195,7 +195,7 @@ Status: fungsi dan persona dasar ✅, detail interaksi 🟡 usulan.
   "type": "Khusus",
   "host": "Y/C",
   "cond": "syarat E-KO-16 atau E-KO-17; Koita tahu soal naskah dan percaya; plot armor padam (K-D14)",
-  "body": "Koita sadar ia protagonis yang ditinggalkan naskahnya sendiri; kebetulan tidak pernah datang lagi. Sistem membacakan: \"Protagonis selesai.\"",
+  "body": "Koita sadar ia MC yang ditinggalkan naskahnya sendiri; kebetulan tidak pernah datang lagi. Sistem membacakan: \"MC selesai.\"",
   "file": "07_Koita_dan_BL.md"
 }
 ```
@@ -219,7 +219,7 @@ Koita kembali ke tempat kebetulan dulu selalu datang. Ia menunggu melewati jam y
 
 Ia sudah percaya pada keberadaan naskah. Kini ia mempercayai sesuatu yang lebih menghancurkan: bahwa naskah itu berhenti menginginkannya. Buku catatannya tetap kosong karena setiap awal kalimat terdengar seperti meniru suara yang sudah pergi.
 
-Protagonis selesai, kata Sistem.
+MC selesai, kata Sistem.
 
 Koita mendengar atau tidak mendengar kalimat itu; akibatnya sama-sama tinggal dalam hidup yang terus berjalan. Keesokan paginya matahari masih masuk melalui tirai. Seseorang yang tidak lagi dianggap pusat cerita tetap harus bangun di dalam tubuhnya sendiri, tanpa petunjuk tentang bagaimana menjadi orang biasa.
 ```

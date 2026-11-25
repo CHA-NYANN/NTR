@@ -52,7 +52,7 @@ label kkscene_K01:
             nar "Koita tertawa kecil untuk mencairkan sisa kecanggungan dan menggeserkan kursi kosong untukmu seolah tidak ada yang berubah. Namun sepanjang sisa jam makan siang itu, kau merasakan betul pergeserannya: setiap kali ada kenalan lewat di lorong kantin, tatapan Koita sempat melirik ke arahmu terlebih dahulu sebelum ia memutuskan bagaimana cara menyapa mereka."
     else:
         if kk_host == "chiasa":
-            nar "Kau memutuskan tidak membuang tenaga mengomentari kebiasaan lama sang protagonis di hari pertama kuliah. Kau melangkah santai mendekati meja panjang, menarik kursi kosong di ujung yang tidak mengganggu siapa pun, lalu meletakkan nampan makan siangmu sambil menyapa biasa."
+            nar "Kau memutuskan tidak membuang tenaga mengomentari kebiasaan lama sang MC di hari pertama kuliah. Kau melangkah santai mendekati meja panjang, menarik kursi kosong di ujung yang tidak mengganggu siapa pun, lalu meletakkan nampan makan siangmu sambil menyapa biasa."
             chiasa "Meja ini ramai juga. Aku ikut duduk di ujung sini ya—jam istirahat Fakultas Seni lumayan mepet, habis ini masih ada pengarahan ruang studio."
             nar "Koita langsung menyambut topik aman itu dengan mudah dan tampak lega. Ia menggeser tempat sumpit ke arahmu sambil menanyakan bagaimana kesan gedung Fakultas Seni Rupa di sayap barat."
             koita "Oh, sudah selesai sesi pembukaannya? Gedung sayap barat lumayan jauh kan kalau jalan kaki dari gerbang depan? Kalau nanti kelasmu selesai sore, kabari saja ya."

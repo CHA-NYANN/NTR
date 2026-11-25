@@ -3,7 +3,7 @@
 Status: canon hanya "kaya, sangat sibuk, mendorong Miyuki mendekati Shiori" ✅. Nama dan sisanya 🟡.
 
 ## Peran
-Sumber tekanan dan kesepian Miyuki. Penggerak omiai dengan Hayase Takeru.
+Sumber tekanan dan kesepian Miyuki. Penggerak omiai dengan Hayase Tatsuru.
 
 ## Profil
 - **Tachibana Kazuhiro** (53), dokter bedah senior. Dingin-efisien, bangga pada prestasi, canggung soal kasih sayang.
@@ -13,11 +13,11 @@ Sumber tekanan dan kesepian Miyuki. Penggerak omiai dengan Hayase Takeru.
 ## Hubungan dan fungsi
 - Dengan Miyuki: Aff Tinggi, Intim Rendah. Menelepon seminggu sekali, jadwalnya selalu bentrok.
 - Menyuruh Miyuki mendekati Shiori (✅). Miyuki diam-diam tidak suka.
-- Memperkenalkan Hayase Takeru sebagai calon omiai bila Miyuki "belum punya pilihan".
+- Memperkenalkan Hayase Tatsuru sebagai calon omiai bila Miyuki "belum punya pilihan".
 - Bila pemain terlihat tidak sepadan secara status, mereka ramah di depan dan menekan di belakang.
 
 ## Reaksi
-- Miyuki berubah (Rute Masokis): lambat menyadari; mengira "lelah praktik". Baru sadar saat Sena menelepon.
+- Miyuki berubah (Rute Masokis): lambat menyadari; mengira "lelah praktik". Baru sadar saat Yuina menelepon.
 - Pemain mengejar Miyuki: menilai latar, karier, dan "kestabilan". Bisa dimenangkan dengan konsistensi dan rasa hormat.
 
 ## Gaya bicara

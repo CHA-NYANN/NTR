@@ -26,24 +26,41 @@ init 1 python:
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_K_D01:
     call kk_scene_enter("koita", "Gedung Sastra · Draf tertinggal")
-    nar "Map Koita tersisa di meja setelah ia dipanggil keluar. Sebuah gelas menahan halaman teratas; baris terakhir yang terlihat berhenti pada kata tetapi."
-    nar "Tokoh di dalamnya sedang duduk menunggu orang yang tidak datang. Di pinggir halaman ada pertanyaan dengan tulisan lebih kecil: kalau dia tidak tahu ditunggu, siapa yang bersalah?"
+    nar "Di meja ruang baca Gedung Sastra yang baru saja kosong setelah Koita dipanggil keluar oleh pengurus klub, sebuah map bening berisi draf cerpennya tertinggal terbuka. Bagian atas kertas tertahan gelas plastik dingin, memperlihatkan kalimat terakhir halaman pertama yang terhenti menggantung."
+    nar "Tokoh utamanya dikisahkan duduk menunggu seseorang yang tak kunjung muncul, dan tepat di margin pinggir tertulis catatan tangan kecil Koita menanyakan siapa yang sebenarnya bersalah jika orang yang ditunggu tidak pernah diberi tahu."
     call kk_family_menu("K-D01", ["Baca semua.", "Baca sebagian lalu tutup.", "Kembalikan tanpa membaca."])
     if _return == "A":
-        nar "Kau membaca sampai halaman terakhir. Tokohnya berganti pekerjaan dan tempat tinggal, tetapi setiap bab membawanya kembali ke kursi yang sama."
-        nar "Aku tahu ada yang mengambil tempatku. Kalimat itu muncul dua kali; pada kemunculan kedua, kata mengambil dicoret lalu ditulis kembali."
-        koita "Kamu membaca?"
-        nar "Koita sudah berdiri di ambang. Kau tidak tahu sejak halaman mana ia melihatmu."
-        koita "Itu masih draf. Jangan kutip bagian yang bahkan belum kupahami sendiri."
-        nar "Namun kalimat itu sudah melekat dalam ingatanmu, lengkap dengan coretannya."
+        nar "Kamu menarik lembaran di bawah gelas itu dan membaca terus hingga halaman paling belakang. Latar dan pekerjaan tokohnya berganti dari bab ke bab, tetapi setiap bagian selalu membawanya kembali pada kursi tunggu yang sama."
+        nar "Sebuah kalimat pendek tentang seseorang yang mengambil tempatnya muncul dua kali di bagian penutup. Pada kemunculan kedua, kata mengambil tampak dicoret kuat dengan tinta hitam lalu ditulis ulang di sebelahnya."
+        if kk_host == "chiasa":
+            koita "Chi-chan? Kamu baca naskahku?"
+            nar "Koita sudah berdiri di ambang pintu dengan langkah terhenti. Kamu tidak tahu sejak halaman mana ia memperhatikanmu."
+            chiasa "Eh... maaf, Ko-nii, tadi kebetulan terbuka di meja jadi aku sekilas lihat."
+            koita "Itu masih draf mentah banget, belum jadi apa-apa. Tolong jangan kutip bagian yang bahkan aku sendiri belum paham maksudnya ya."
+        else:
+            koita "Yutaka? Kamu lagi baca drafku?"
+            nar "Koita sudah berdiri di ambang pintu tanpa terdengar langkahnya. Kamu tidak tahu sejak halaman berapa ia melihatmu."
+            yutaka "Maaf, Koita, tadi mapnya kebuka kena angin jadi aku sempat baca sampai bawah."
+            koita "Itu masih draf mentah banget. Jangan kutip kalimat yang bahkan aku sendiri belum ngerti kenapa kutulis ya."
+        nar "Koita segera merapikan kertas itu ke dalam tasnya. Kalimat beserta coretan tinta tadi terlanjur menancap jelas di kepalamu."
     elif _return == "B":
-        nar "Kau membaca halaman pertama, cukup jauh untuk menemukan kemarahan di balik kesedihan tokohnya. Lalu kau menutup map tersebut."
-        koita "Oh, kamu menemukan naskahku. Kupikir kubawa tadi."
-        nar "Ia menyimpannya lebih cepat daripada biasanya. Kau belum mengetahui siapa yang ditunggu tokohnya, tetapi kini tahu Koita tidak lagi menulis penantian sebagai sesuatu yang manis."
+        nar "Kamu membaca halaman pertama hingga bawah, cukup jauh untuk menangkap rasa kesal tersembunyi di balik kesedihan tokohnya, lalu segera menutup kembali map bening itu sebelum melangkah terlalu jauh."
+        if kk_host == "chiasa":
+            koita "Oh, Chi-chan yang nemuin mapku ya? Kupikir tadi sudah kumasukkan ke tas. Makasih ya!"
+            chiasa "Iya, tadi ketahan gelas di meja, Ko-nii. Aku cuma lihat halaman depan sedikit terus kututup lagi."
+        else:
+            koita "Oh, naskahku ketinggalan di sini rupanya. Makasih sudah jagain, Yutaka."
+            yutaka "Santai, aku cuma tutupin biar nggak terbang kena angin."
+        nar "Ia menyelipkan map itu jauh lebih cepat daripada kebiasaannya. Kamu belum tahu siapa sosok yang ditunggu tokohnya, tetapi kamu kini tahu Koita mulai lelah menulis penantian seolah itu hal yang selalu manis."
     else:
-        nar "Kau menutup map tanpa meneruskan baris yang terlihat. Ketika Koita kembali, kau menyerahkannya dengan gelas yang tadi menahan halaman."
-        koita "Makasih. Aku harus mulai ingat membawa barang sendiri."
-        nar "Ia menepuk sampul map, tersenyum malu. Isi naskah tetap menjadi sesuatu yang hanya bisa kauketahui jika ia bersedia memperlihatkannya."
+        nar "Kamu segera menutup map tanpa meneruskan satu baris pun di bawah kalimat yang tadi terlihat. Saat Koita kembali tergesa-gesa mencari mejanya, kamu langsung menyerahkan map itu bersama gelas minumannya."
+        if kk_host == "chiasa":
+            chiasa "Ini mapnya, Ko-nii, tadi ketinggalan di meja. Belum kubaca kok."
+            koita "Wah, makasih banyak ya, Chi-chan! Aku memang harus mulai belajar ingat bawa barang sendiri."
+        else:
+            yutaka "Mapmu ketinggalan tadi, Koita. Langsung kututup biar nggak kebaca orang lewat."
+            koita "Makasih banget, Yutaka. Untung kamu masih di sini, aku sering banget lupa bawa naskah sendiri."
+        nar "Ia menepuk sampul map sambil tersenyum lega. Rahasia di dalam draf itu tetap terjaga sebagai sesuatu yang hanya akan kamu tahu bila suatu hari ia memilih menunjukkannya sendiri."
     return
 
 # ┌─ PANDUAN CERITA · K-D05 · Senyum yang Berhenti

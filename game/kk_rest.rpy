@@ -38,7 +38,7 @@ label kk_bedside_contacts:
     if kk_host == "yutaka":
         $ _people.append(("Ibu", Return("ibu_kisaragi"), "ibu_kisaragi" in kk_priority_contacts))
     if kk_host == "chiasa" and kk_done("C05"):
-        $ _people.append(("Mio", Return("mio"), "mio" in kk_priority_contacts))
+        $ _people.append(("Miono", Return("mio"), "mio" in kk_priority_contacts))
     $ _people.append(("Kembali", Return(None), False))
     call screen kk_choice_panel(_people, "Kontak yang boleh membangunkanmu")
     if _return is None:

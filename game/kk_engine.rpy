@@ -142,7 +142,7 @@ init python:
             "harumi": {0:"Asrama (teh)",1:"Lab Sains",2:"Lab",3:"Perpustakaan",4:"Belajar",5:"Tidur"},
             "moeka":  {0:"Terlambat ke kampus",1:"Kuliah Fashion",2:"Rapat BEM",3:"DIY fashion",4:"Menjahit",5:"Konbini (03:00)"},
             "shiori": {0:"Diantar Kuroiwa",1:"Kuliah Ekonomi",2:"Klub Catur",3:"Rumah Saionji",4:"Shogi online",5:"Tidur"},
-            "chiasa": {0:"Sarapan dgn Koita",1:"Studio Seni",2:"Studio (Haruka)",3:"Menggambar",4:"Proyek (01:00)",5:"Tidur"},
+            "chiasa": {0:"Sarapan dgn Koita",1:"Studio Seni",2:"Studio (Karuha)",3:"Menggambar",4:"Proyek (01:00)",5:"Tidur"},
         }
         slot = store.kk_slot
         loc = base.get(npc, {}).get(slot, "—")

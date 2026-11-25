@@ -8,7 +8,7 @@ init -5 python:
       "name": "Jas Putih yang Ringan",
       "type": "Romantis",
       "host": "Y/C",
-      "cond": "tahap ≤ 3 atau pulih; Affection dan Trust tinggi ke pemain; tanpa Force; Sena tidak memusuhi",
+      "cond": "tahap ≤ 3 atau pulih; Affection dan Trust tinggi ke pemain; tanpa Force; Yuina tidak memusuhi",
       "body": "hubungan setara; ia belajar meminta tolong dan tetap menuju pediatri",
       "file": "01_Miyuki_Masokis.md"
      },
@@ -95,11 +95,11 @@ init -5 python:
      },
      {
       "code": "E-MI-11",
-      "name": "Pintu yang Ditutup Sena",
+      "name": "Pintu yang Ditutup Yuina",
       "type": "Bad",
       "host": "Y/C",
-      "cond": "pemain memanfaatkan di depan umum; Sena memutus",
-      "body": "Miyuki terisolasi; Sena menjadi penghalang pemain di semua lingkungan medis",
+      "cond": "pemain memanfaatkan di depan umum; Yuina memutus",
+      "body": "Miyuki terisolasi; Yuina menjadi penghalang pemain di semua lingkungan medis",
       "file": "01_Miyuki_Masokis.md"
      },
      {
@@ -108,7 +108,7 @@ init -5 python:
       "type": "Broken",
       "host": "Y/C",
       "cond": "pemain pelaku Force terhadapnya",
-      "body": "trauma terpisah dari Rute Masokis; jalur Sena, Sato, dan hukum; tanpa romansa dengan pelaku",
+      "body": "trauma terpisah dari Rute Masokis; jalur Yuina, Sato, dan hukum; tanpa romansa dengan pelaku",
       "file": "01_Miyuki_Masokis.md"
      },
      {
@@ -125,7 +125,7 @@ init -5 python:
       "name": "Sandiwara Terbongkar",
       "type": "Bad",
       "host": "Y/C",
-      "cond": "pasangan palsu terbongkar oleh Takeru atau orang tua",
+      "cond": "pasangan palsu terbongkar oleh Tatsuru atau orang tua",
       "body": "malu di depan keluarga; Miyuki menjauh dari pemain dan menerima omiai",
       "file": "01_Miyuki_Masokis.md"
      },
@@ -414,7 +414,7 @@ init -5 python:
       "type": "Bad",
       "host": "Y/C",
       "cond": "Mo25 terlewati",
-      "body": "Moeka meninggal. Yang ditampilkan: kabar, duka, pemakaman, Rina, Aya, adik-adik, penyesalan pemain. Tanpa metode. Sistem diam",
+      "body": "Moeka meninggal. Yang ditampilkan: kabar, duka, pemakaman, Ryena, Yaeka, adik-adik, penyesalan pemain. Tanpa metode. Sistem diam",
       "file": "04_Moeka_DeathFlag.md"
      },
      {
@@ -428,11 +428,11 @@ init -5 python:
      },
      {
       "code": "E-MO-06",
-      "name": "Rina Mengetuk Pintu",
+      "name": "Ryena Mengetuk Pintu",
       "type": "Neutral",
       "host": "Y/C",
-      "cond": "Mo25-B, atau Rina sekutu sejak Mo18",
-      "body": "Rina tiba lebih dulu; dirawat; persahabatan pemain dan Rina menentukan epilog",
+      "cond": "Mo25-B, atau Ryena sekutu sejak Mo18",
+      "body": "Ryena tiba lebih dulu; dirawat; persahabatan pemain dan Ryena menentukan epilog",
       "file": "04_Moeka_DeathFlag.md"
      },
      {
@@ -449,8 +449,8 @@ init -5 python:
       "name": "Label di Garasi",
       "type": "Neutral",
       "host": "Y/C",
-      "cond": "berhenti kuliah; stres keluarga turun; Rina sekutu",
-      "body": "merintis label fesyen kecil bersama Rina; adik-adik membantu",
+      "cond": "berhenti kuliah; stres keluarga turun; Ryena sekutu",
+      "body": "merintis label fesyen kecil bersama Ryena; adik-adik membantu",
       "file": "04_Moeka_DeathFlag.md"
      },
      {
@@ -572,7 +572,7 @@ init -5 python:
      },
      {
       "code": "E-SH-09",
-      "name": "Ratu Menjatuhkan Protagonis",
+      "name": "Ratu Menjatuhkan MC",
       "type": "Khusus",
       "host": "Y/C",
       "cond": "sasaran_balas Koita",
@@ -584,7 +584,7 @@ init -5 python:
       "name": "Keadilan yang Tersenyum",
       "type": "Khusus",
       "host": "Y/C",
-      "cond": "sasaran_balas Ogawa, Kuga, atau Mei; pemain memberi bukti",
+      "cond": "sasaran_balas Ogawa, Kuga, atau Meisa; pemain memberi bukti",
       "body": "pelaku dijatuhkan; Shiori dan pemain menjadi sekutu yang saling waspada",
       "file": "05_Shiori_Revenge.md"
      },
@@ -801,7 +801,7 @@ init -5 python:
       "type": "Bad",
       "host": "C",
       "cond": "rahasia Shena terbongkar sebagai kebohongan",
-      "body": "kontrak Mio diputus; pembaca marah",
+      "body": "kontrak Miono diputus; pembaca marah",
       "file": "06_Chiasa.md"
      },
      {
@@ -810,7 +810,7 @@ init -5 python:
       "type": "Romantis",
       "host": "C",
       "cond": "pemain belajar menggambar sungguhan sampai layak",
-      "body": "Shena kembali dengan gaya baru; Mio dan Haruka menjadi saksi",
+      "body": "Shena kembali dengan gaya baru; Miono dan Karuha menjadi saksi",
       "file": "06_Chiasa.md"
      },
      {
@@ -968,7 +968,7 @@ init -5 python:
      },
      {
       "code": "E-KO-13",
-      "name": "Protagonis yang Terbangun",
+      "name": "MC yang Terbangun",
       "type": "Khusus",
       "host": "Y/C",
       "cond": "koita_tahu_naskah percaya",
@@ -1017,7 +1017,7 @@ init -5 python:
       "type": "Khusus",
       "host": "Y/C",
       "cond": "syarat E-KO-16 atau E-KO-17; Koita tahu soal naskah dan percaya; plot armor padam (K-D14)",
-      "body": "Koita sadar ia protagonis yang ditinggalkan naskahnya sendiri; kebetulan tidak pernah datang lagi. Sistem membacakan: \"Protagonis selesai.\"",
+      "body": "Koita sadar ia MC yang ditinggalkan naskahnya sendiri; kebetulan tidak pernah datang lagi. Sistem membacakan: \"MC selesai.\"",
       "file": "07_Koita_dan_BL.md"
      },
      {
@@ -1179,7 +1179,7 @@ init -5 python:
       "type": "Bad",
       "host": "Y",
       "cond": "daichi_status penagih",
-      "body": "Daichi memeras pemain dengan semua yang ia tahu",
+      "body": "Kaichi memeras pemain dengan semua yang ia tahu",
       "file": "08_Yutaka.md"
      },
      {
@@ -1313,7 +1313,7 @@ init -5 python:
       "name": "Saksi yang Memeras",
       "type": "Khusus",
       "host": "Y/C",
-      "cond": "saksi (Daichi atau Mei) menyimpan bukti",
+      "cond": "saksi (Kaichi atau Meisa) menyimpan bukti",
       "body": "pemain diperas sampai akhir game",
       "file": "09_Force_dan_Kriminal.md"
      },
@@ -1619,7 +1619,7 @@ init -5 python:
       "name": "Dua Jas Putih",
       "type": "Romantis",
       "host": "Y/C",
-      "cond": "romansa tulus dengan Sena; Miyuki tidak disakiti",
+      "cond": "romansa tulus dengan Yuina; Miyuki tidak disakiti",
       "body": "dua calon dokter yang saling menjaga jam tidur",
       "file": "11_Rute_Sampingan_NPC.md"
      },
@@ -1628,8 +1628,8 @@ init -5 python:
       "name": "Sahabat yang Memilih Sisi",
       "type": "Bad",
       "host": "Y/C",
-      "cond": "pemain menyakiti Miyuki sambil mendekati Sena",
-      "body": "Sena memilih Miyuki dan menutup pintu",
+      "cond": "pemain menyakiti Miyuki sambil mendekati Yuina",
+      "body": "Yuina memilih Miyuki dan menutup pintu",
       "file": "11_Rute_Sampingan_NPC.md"
      },
      {
@@ -1637,17 +1637,17 @@ init -5 python:
       "name": "Thrift Hari Minggu",
       "type": "Romantis",
       "host": "Y/C",
-      "cond": "romansa tulus dengan Rina; Moeka selamat",
+      "cond": "romansa tulus dengan Ryena; Moeka selamat",
       "body": "Minggu pagi di toko bekas, bertiga dengan Moeka",
       "file": "11_Rute_Sampingan_NPC.md"
      },
      {
       "code": "E-NPC-04",
-      "name": "Rina Tidak Memaafkan",
+      "name": "Ryena Tidak Memaafkan",
       "type": "Bad",
       "host": "Y/C",
       "cond": "Moeka meninggal atau disakiti pemain",
-      "body": "Rina menjadi saksi paling keras terhadap pemain",
+      "body": "Ryena menjadi saksi paling keras terhadap pemain",
       "file": "11_Rute_Sampingan_NPC.md"
      },
      {
@@ -1655,7 +1655,7 @@ init -5 python:
       "name": "Studio Berdua",
       "type": "Romantis",
       "host": "Y/C",
-      "cond": "romansa dengan Haruka",
+      "cond": "romansa dengan Karuha",
       "body": "dua meja gambar dalam satu studio",
       "file": "11_Rute_Sampingan_NPC.md"
      },
@@ -1664,7 +1664,7 @@ init -5 python:
       "name": "Rahasia yang Dititipkan",
       "type": "Neutral",
       "host": "C",
-      "cond": "Haruka tahu rahasia Shena dan menjaganya",
+      "cond": "Karuha tahu rahasia Shena dan menjaganya",
       "body": "persahabatan yang lebih kuat dari rahasia",
       "file": "11_Rute_Sampingan_NPC.md"
      },
@@ -1673,8 +1673,8 @@ init -5 python:
       "name": "Pasal yang Membela",
       "type": "Romantis",
       "host": "Y/C",
-      "cond": "romansa atau aliansi dengan Ayane",
-      "body": "Ayane membela pemain di kampus dan Moeka di sidang banding",
+      "cond": "romansa atau aliansi dengan Sayane",
+      "body": "Sayane membela pemain di kampus dan Moeka di sidang banding",
       "file": "11_Rute_Sampingan_NPC.md"
      },
      {
@@ -1682,7 +1682,7 @@ init -5 python:
       "name": "Rapat Terakhir BEM",
       "type": "Bad",
       "host": "Y/C",
-      "cond": "Ayane mengetahui manipulasi pemain",
+      "cond": "Sayane mengetahui manipulasi pemain",
       "body": "ia mengecam pemain di depan umum",
       "file": "11_Rute_Sampingan_NPC.md"
      },
@@ -1691,7 +1691,7 @@ init -5 python:
       "name": "Redaksi Berdua",
       "type": "Romantis",
       "host": "Y/C",
-      "cond": "romansa dengan Mei; pemain jujur padanya",
+      "cond": "romansa dengan Meisa; pemain jujur padanya",
       "body": "akun gosip berhenti menulis tentang pemain",
       "file": "11_Rute_Sampingan_NPC.md"
      },
@@ -1700,8 +1700,8 @@ init -5 python:
       "name": "Headline Terakhir",
       "type": "Bad",
       "host": "Y/C",
-      "cond": "Mei dipakai lalu dibuang",
-      "body": "Mei menerbitkan semua yang ia tahu",
+      "cond": "Meisa dipakai lalu dibuang",
+      "body": "Meisa menerbitkan semua yang ia tahu",
       "file": "11_Rute_Sampingan_NPC.md"
      },
      {
@@ -1709,7 +1709,7 @@ init -5 python:
       "name": "Naskah dan Penyuntingnya",
       "type": "Romantis",
       "host": "C",
-      "cond": "romansa dengan Mio",
+      "cond": "romansa dengan Miono",
       "body": "hubungan kerja menjadi lebih dari itu",
       "file": "11_Rute_Sampingan_NPC.md"
      },
@@ -1718,8 +1718,8 @@ init -5 python:
       "name": "Kontrak Diputus",
       "type": "Bad",
       "host": "C",
-      "cond": "hubungan dengan Mio rusak",
-      "body": "Mio memutus kontrak Shena",
+      "cond": "hubungan dengan Miono rusak",
+      "body": "Miono memutus kontrak Shena",
       "file": "11_Rute_Sampingan_NPC.md"
      },
      {
@@ -1763,7 +1763,7 @@ init -5 python:
       "name": "Informan yang Setia",
       "type": "Romantis",
       "host": "Y",
-      "cond": "romansa dengan Daichi",
+      "cond": "romansa dengan Kaichi",
       "body": "informan yang berhenti menjual pemain",
       "file": "11_Rute_Sampingan_NPC.md"
      },
@@ -1772,8 +1772,8 @@ init -5 python:
       "name": "Maket Kedua",
       "type": "Romantis",
       "host": "Y",
-      "cond": "romansa dengan Yuuto",
-      "body": "Yuuto berhenti mengejar Nagisa",
+      "cond": "romansa dengan Fuuto",
+      "body": "Fuuto berhenti mengejar Nagisa",
       "file": "11_Rute_Sampingan_NPC.md"
      },
      {
@@ -1790,7 +1790,7 @@ init -5 python:
       "name": "Skandal Omiai",
       "type": "Khusus",
       "host": "Y",
-      "cond": "romansa dengan Takeru",
+      "cond": "romansa dengan Tatsuru",
       "body": "omiai Miyuki runtuh dalam skandal",
       "file": "11_Rute_Sampingan_NPC.md"
      },
@@ -1943,7 +1943,7 @@ init -5 python:
       "name": "Kota yang Tahu Semuanya",
       "type": "Bad",
       "host": "Y/C",
-      "cond": "Mei menerbitkan semuanya",
+      "cond": "Meisa menerbitkan semuanya",
       "body": "reputasi semua orang yang terlibat hancur",
       "file": "12_Interlock_Antar_Rute.md"
      },

@@ -1,4 +1,4 @@
-# Ishikawa Haruka — sahabat Chiasa di Seni Rupa
+# Ishikawa Karuha — sahabat Chiasa di Seni Rupa
 
 Status: 🟡 seluruhnya usulan.
 
@@ -12,9 +12,9 @@ Lingkaran Chiasa di kampus. Penggemar "Shena" tanpa tahu itu Chiasa.
 
 ## Hubungan dan fungsi
 - Chiasa: Aff Tinggi, Trust Tinggi. Chiasa menyukainya, tetapi tidak berani membuka rahasia Shena.
-- Female Route: pemain tidak mewarisi kemampuan menggambar; Haruka yang pertama curiga ("gambarmu kok berubah?").
-- Male Route: Haruka bisa menjadi teman yang membuka akses ke Chiasa dan lingkaran seni.
-- Event 🟡: pameran kecil, pembicaraan tentang "Shena", Haruka yang membawa rumor kampus.
+- Female Route: pemain tidak mewarisi kemampuan menggambar; Karuha yang pertama curiga ("gambarmu kok berubah?").
+- Male Route: Karuha bisa menjadi teman yang membuka akses ke Chiasa dan lingkaran seni.
+- Event 🟡: pameran kecil, pembicaraan tentang "Shena", Karuha yang membawa rumor kampus.
 
 ## Gaya bicara
 - "Chiasa! Kamu harus baca Shena-sensei yang terbaru! Ilustrasinya... huaa!"

@@ -23,10 +23,10 @@ GDD ini mendefinisikan pengalaman bermain dan aturan desain Kouseikan sebagai In
 5. **NTR Mechanics:** konflik hubungan, rivalitas, perubahan takdir romantis, dan konsekuensi merupakan bagian inti gameplay.
 6. **Player Freedom:** tidak ada kewajiban semua heroine jatuh cinta kepada pemain atau berakhir bersama pemain.
 
-## 4. Struktur rute protagonis (canon)
+## 4. Struktur rute MC (canon)
 - **Male Route:** pemain mengambil alih Kisaragi Yutaka. Amamiya Chiasa tetap NPC independen dan merupakan heroine Koita. Yutaka asli diam-diam menyukai Chiasa.
 - **Female Route:** pemain mengambil alih Amamiya Chiasa. Yutaka tetap NPC independen. Chiasa asli diam-diam mencintai Koita.
-- Kujo Harumi (nama lama: Kujo Ritsuka) adalah NPC heroine Koita, bukan protagonis Female Route.
+- Kujo Harumi (nama lama: Kujo Ritsuka) adalah NPC heroine Koita, bukan MC Female Route.
 
 ## 5. Status heroine pada awal permainan (canon)
 - Tachibana Miyuki: sudah mencintai Koita.
@@ -104,7 +104,7 @@ Catatan: ini kerangka konseptual, bukan spesifikasi final durasi atau aturan wak
 
 
 ### 6B.5 Aturan aktivasi dan cakupan rute (keputusan v0.4)
-- Distorted Heroine Routes tersedia pada **Male Route maupun Female Route**. Tidak ada pembatasan bahwa rute tertentu hanya bisa muncul pada salah satu protagonis; detail interaksi dan konteksnya dapat berbeda sesuai rute protagonis.
+- Distorted Heroine Routes tersedia pada **Male Route maupun Female Route**. Tidak ada pembatasan bahwa rute tertentu hanya bisa muncul pada salah satu MC; detail interaksi dan konteksnya dapat berbeda sesuai rute MC.
 - **Semua enam rute khusus** (lima heroine utama dan rute khusus Chiasa) dapat aktif dalam satu playthrough secara bersamaan. Rute-rute tersebut tidak saling eksklusif secara default.
 - Pembukaan setiap rute membutuhkan **kondisi/ambang tertentu sekaligus event penting**. Memenuhi kondisi saja tidak otomatis membuka rute tanpa peristiwa naratif yang relevan.
 - Jumlah dan susunan tahap perubahan **berbeda untuk setiap heroine**; tidak ada satu template jumlah tahap yang wajib dipakai semua karakter.
@@ -244,7 +244,7 @@ Catatan: ini kerangka konseptual, bukan spesifikasi final durasi atau aturan wak
 - **v0.4 — 9 Nov 2026:** Mempertahankan seluruh isi v0.3 dan menambahkan 10 keputusan Batch 2: seluruh rute tersedia pada Male dan Female Route; keenam rute dapat aktif bersamaan; pembukaan membutuhkan ambang kondisi dan event penting; jumlah tahap berbeda per heroine; kondisi dibaca melalui dialog/ekspresi/perilaku; teman dan keluarga dekat dapat menyadari perubahan; pemain dapat sengaja mengejar rute melalui manipulasi; dampak meluas ke lingkaran sosial; setiap heroine memiliki beberapa ending Bad, Neutral, dan Distorted; rute Chiasa memakai fondasi yang sama dengan mekanik/konsekuensi khusus. Mengganti status lama tentang simultanitas rute menjadi SUPERSEDED.
 - **v0.3 — 9 Nov 2026:** Mempertahankan seluruh isi v0.2 dan menambahkan sistem **Distorted Heroine Routes** berdasarkan 10 jawaban pemain: pemicu berupa akumulasi tindakan buruk pemain dan peristiwa hidup heroine; perubahan bertahap dengan titik balik; pemulihan hanya mungkin bagi sebagian heroine; tingkat kerusakan tersembunyi. Menambahkan arah rute Miyuki (masokis emosional dan romantis/seksual), Nagisa (yandere dengan pemain sebagai pusat obsesi), Harumi (hypersexual hingga kemungkinan prostitusi), Moeka (risiko bunuh diri akibat akumulasi stres dan masalah keluarga), Shiori (mampu menghancurkan pemain tanpa dukungan keluarga), serta rute khusus Chiasa ketika berhasil bersama Koita dengan konflik tabu saudara tiri tanpa hubungan darah. Detail pemicu/tahap/ending tetap terbuka.
 - **v0.2 — 9 Nov 2026:** Menambahkan navigasi peta kota berbasis distrik. Peta mencakup Universitas Kouseikan dan lokasi kota seperti rumah karakter, apartemen, pusat perbelanjaan, restoran, serta lokasi lain. Pemain memilih distrik terlebih dahulu, lalu memilih lokasi di dalam distrik. Menetapkan cadence pembaruan GDD setiap enam pertanyaan desain.
-- **v0.1 — 9 Nov 2026:** Dokumen GDD awal. Mencatat fokus Interactive Visual Novel, prioritas narasi/NPC simulation/relationship/branching/NTR, struktur protagonis Male/Female Route, status heroine, button-choice interaction, serta keputusan presentasi Classic Visual Novel 2D.
+- **v0.1 — 9 Nov 2026:** Dokumen GDD awal. Mencatat fokus Interactive Visual Novel, prioritas narasi/NPC simulation/relationship/branching/NTR, struktur MC Male/Female Route, status heroine, button-choice interaction, serta keputusan presentasi Classic Visual Novel 2D.
 
 
 ## 6C. Relationship System (keputusan Batch 3)
@@ -539,7 +539,7 @@ Empat jawaban terakhir Batch 6 sudah diterima dan tetap menjadi bagian dari kepu
 
 ### 6I.6 Ending romantis pemain
 - Setiap heroine memiliki kemungkinan ending romantis dengan pemain.
-- Ketersediaan dan syarat ending tetap bergantung pada perkembangan cerita, protagonis, dan keputusan pemain; rincian rute spesifik belum ditetapkan.
+- Ketersediaan dan syarat ending tetap bergantung pada perkembangan cerita, MC, dan keputusan pemain; rincian rute spesifik belum ditetapkan.
 
 ### 6I.7 Keputusan Batch 9 yang menunggu giliran integrasi
 Empat jawaban terakhir Batch 9 telah diterima dan menjadi keputusan desain, tetapi ditahan untuk pembaruan berikutnya sesuai aturan integrasi setiap enam jawaban:
@@ -899,7 +899,7 @@ Dua jawaban terakhir Batch 16 telah diterima dan dicatat untuk pembaruan berikut
 
 ### 6Q.1 Pemilihan rute dan identitas host
 - Pemain memilih gender/rute sebelum cerita dimulai: Male Route atau Female Route.
-- Identitas protagonis mengikuti host canon:
+- Identitas MC mengikuti host canon:
   - **Male Route:** Kisaragi Yutaka.
   - **Female Route:** Amamiya Chiasa.
 - Nama canon host tidak dapat diganti oleh pemain.
@@ -907,7 +907,7 @@ Dua jawaban terakhir Batch 16 telah diterima dan dicatat untuk pembaruan berikut
 - Detail perbedaan prolog dan perspektif tiap rute masih perlu dirancang.
 
 ### 6Q.2 Kepribadian dan gaya interaksi pemain
-- Pemain bebas menentukan kepribadian protagonis melalui pilihan dan tindakan.
+- Pemain bebas menentukan kepribadian MC melalui pilihan dan tindakan.
 - Pemain dapat menentukan gaya interaksi, termasuk ramah, dingin, genit, agresif, manipulatif, dan gaya lain yang didukung pilihan.
 - Kepribadian host tidak mengunci pemain pada satu pola perilaku; identitas sosial dan latar host tetap menjadi fondasi cerita.
 - Rincian bagaimana pilihan membentuk konsistensi kepribadian dan bagaimana NPC menilainya belum ditetapkan.
@@ -934,7 +934,7 @@ Empat jawaban terakhir Batch 17 telah diterima dan dicatat untuk pembaruan berik
 
 ### Penampilan host
 - Penampilan dasar host mengikuti desain canon.
-- Pemain dapat mengubah pakaian dan aksesori protagonis.
+- Pemain dapat mengubah pakaian dan aksesori MC.
 - Perubahan pakaian/aksesori tidak mengubah identitas atau penampilan dasar canon host.
 
 ### Perbedaan rute
@@ -1031,7 +1031,7 @@ Empat jawaban terakhir Batch 19 telah diterima dan dicatat untuk pembaruan berik
 
 ### Amamiya Koita — MC manga asli, pusat konflik
 **Status: draft visual dari 10 jawaban pemain; ilustrasi telah dibuat, tetapi belum disetujui/dikunci final.**
-- Rambut **hitam alami**, messy short hair, dengan **satu ahoge** khas protagonis manga.
+- Rambut **hitam alami**, messy short hair, dengan **satu ahoge** khas MC manga.
 - Mata **hitam gelap**; tinggi **172–175 cm**; tubuh **slim average**.
 - Wajah **boy-next-door**, tampan natural, mudah didekati; ekspresi default senyum hangat yang terlihat tulus.
 - Pakaian kasual ala MC shonen: kaus, jaket/hoodie, celana kasual, sneakers.

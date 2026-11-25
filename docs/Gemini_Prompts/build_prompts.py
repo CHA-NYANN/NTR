@@ -70,7 +70,7 @@ CHAR_FILES = {
 }
 PREFIX = {"K": "koita", "Mi": "miyuki", "N": "nagisa", "H": "harumi", "Mo": "moeka", "S": "shiori", "C": "chiasa", "Y": "yutaka"}
 VOICES = {
-    "koita": "Amamiya Koita: protagonis manga asli, mahasiswa Sastra. Baik dan mudah tersanjung, terbiasa menggantung jawaban karena takut mengecewakan atau kehilangan orang. Awal naif, lalu bisa sadar, memilih, atau retak. Jangan jadikan ia bodoh permanen maupun penjahat yang sudah sadar sejak awal.",
+    "koita": "Amamiya Koita: MC manga asli, mahasiswa Sastra. Baik dan mudah tersanjung, terbiasa menggantung jawaban karena takut mengecewakan atau kehilangan orang. Awal naif, lalu bisa sadar, memilih, atau retak. Jangan jadikan ia bodoh permanen maupun penjahat yang sudah sadar sejak awal.",
     "miyuki": "Tachibana Miyuki: senpai Kedokteran, hangat, rajin merawat orang dan membuat kue. Kebiasaan mendahulukan orang lain menutupi lelah dan kebutuhan disayangi. Suaranya lembut tetapi ia bisa tegas. Sena sahabatnya; Hayase Takeru calon omiai sepihak, bukan pasangan yang otomatis sah.",
     "nagisa": "Sakurajima Nagisa: mahasiswa Arsitektur, teman kecil Koita dan Yutaka, defensif tetapi hangat. Ucapan tajam sering melindungi rasa takut tidak dipilih. Koko adalah boneka KELINCI hadiah Koita pada festival masa kecil. Haruto kakaknya. Chiasa memanggil Nagisa Nacchan-oneechan; bukan sebaliknya.",
     "harumi": "Kujo Harumi: mahasiswa Sains/Kimia, analitis dan canggung menamai perasaan. Ia punya emosi dan keinginan, bukan robot atau orang yang tidak paham persetujuan. Bahasa terukur, kadang memakai analogi ilmiah sewajarnya. Ogawa antagonis eksploitasi; Ogiwara Fumiko pengelola asrama, orang berbeda.",
@@ -124,7 +124,7 @@ NODES = {"K26", "K27", "Mi27", "N24", "H24", "S25", "C18", "Y19"}
 
 PREMISE = """Kouseikan adalah visual novel drama psikologis bercabang, berlatar universitas Jepang, ditulis dalam bahasa Indonesia. Pemain mati di dunia asal lalu menempati tubuh Yutaka ATAU Chiasa dalam dunia manga harem yang tidak disukainya. Kesadaran pemilik tubuh asli hilang; jangan membuat pemilik lama berdialog sebagai orang kedua yang hadir di ruangan. Pemain tidak mewarisi ingatan pribadi atau keterampilan rumit host, hanya tubuh dan kebiasaan sederhana.
 
-Koita adalah protagonis manga asli, BUKAN otomatis tokoh yang dikendalikan pemain. Sistem NTR yang sinis mengancam pemain: takdir romantis Koita harus cukup menyimpang ketika ia wisuda, atau pemain mati. Perhitungan itu bukan penilaian moral; kebaikan maupun kekejaman punya akibat tersendiri. Jangan mengubah Sistem menjadi dalih yang membenarkan pelaku atau membuat angka menjadi cinta.
+Koita adalah MC manga asli, BUKAN otomatis tokoh yang dikendalikan pemain. Sistem NTR yang sinis mengancam pemain: takdir romantis Koita harus cukup menyimpang ketika ia wisuda, atau pemain mati. Perhitungan itu bukan penilaian moral; kebaikan maupun kekejaman punya akibat tersendiri. Jangan mengubah Sistem menjadi dalih yang membenarkan pelaku atau membuat angka menjadi cinta.
 
 Permainan mulai 7 April; rentang tiga tahun sampai wisuda Koita pada Maret. Awal: Koita/Yutaka/Nagisa/Harumi/Moeka/Shiori tahun kedua, Chiasa tahun pertama, Miyuki tahun ketiga. Semua tokoh romansa/mahasiswa 18+. Adik-adik kecil Moeka adalah tokoh keluarga saja. Geng kecil: Koita, Yutaka, Nagisa, Chiasa. Kelompok belajar SMA: Koita, Yutaka, Nagisa, Miyuki, Harumi. NPC boleh menolak; tidak ada ketertarikan yang dijamin.
 

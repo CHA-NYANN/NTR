@@ -473,7 +473,7 @@ _27 event utama · 21 event dinamis · 29 ending_
   - Syarat: K23-A didukung pergi
   - Isi: menerima tawaran penerbit di kota lain dan meninggalkan semuanya
 
-- [ ] **E-KO-13** · Protagonis yang Terbangun _(Khusus, host Y/C)_
+- [ ] **E-KO-13** · MC yang Terbangun _(Khusus, host Y/C)_
   - Syarat: koita_tahu_naskah percaya
   - Isi: Koita sengaja melawan plot armor-nya; pilihannya kini benar-benar miliknya
 
@@ -495,7 +495,7 @@ _27 event utama · 21 event dinamis · 29 ending_
 
 - [ ] **E-KO-18** · Naskah yang Kosong _(Khusus, host Y/C)_
   - Syarat: syarat E-KO-16 atau E-KO-17; Koita tahu soal naskah dan percaya; plot armor padam (K-D14)
-  - Isi: Koita sadar ia protagonis yang ditinggalkan naskahnya sendiri; kebetulan tidak pernah datang lagi. Sistem membacakan: "Protagonis selesai."
+  - Isi: Koita sadar ia MC yang ditinggalkan naskahnya sendiri; kebetulan tidak pernah datang lagi. Sistem membacakan: "MC selesai."
 
 - [ ] **E-KO-19** · Yang Tidak Bisa Ia Hentikan _(Broken, host Y/C)_
   - Syarat: Koita menyaksikan Force; trust_koita masih tinggi saat itu (ia masih percaya dan dekat dengan pemain), sehingga ia membeku alih-alih bertindak; korban tidak kembali padanya
@@ -2231,7 +2231,7 @@ _25 event utama · 17 event dinamis · 16 ending_
   - Syarat: S21 Tojo dipakai sampai M35
   - Isi: pertunangan tanpa cinta sebagai hukuman bagi dirinya sendiri; ia tetap tersenyum di setiap foto; ikatan sosial, bukan pasangan romantis baru
 
-- [ ] **E-SH-09** · Ratu Menjatuhkan Protagonis _(Khusus, host Y/C)_
+- [ ] **E-SH-09** · Ratu Menjatuhkan MC _(Khusus, host Y/C)_
   - Syarat: sasaran_balas Koita
   - Isi: Koita dijatuhkan di depan semua orang; deviasi sangat tinggi; E-KO-09 terkunci
 

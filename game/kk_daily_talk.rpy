@@ -1007,14 +1007,14 @@ init -2 python:
             "Kafe Komorebi": [
                 [
                     ("nar", "Begitu lonceng pintu Kafe Komorebi berdenting, aroma kopi sangrai dan roti panggang mentega langsung menyambutmu. Kamu memilih kursi di dekat meja konter kayu."),
-                    ("Ito Shinji", "Selamat datang. Hari ini mau roti panggang telur hangat sama kopi, atau teh hitam seperti kemarin?"),
+                    ("Ito Shinpei", "Selamat datang. Hari ini mau roti panggang telur hangat sama kopi, atau teh hitam seperti kemarin?"),
                     ("nar", "Pemilik kafe itu menyajikan pesananmu dengan gerakan tenang yang sudah sangat terlatih. Kamu makan pelan sambil mendengarkan musik akustik pelan yang mengalun dari sudut ruangan."),
                     ("nar", "Kehangatan kopi dan roti yang renyah membuat perutmu tenang sekaligus meredakan sisa penat di kepalamu."),
                 ],
                 [
-                    ("nar", "Kamu duduk di meja dekat jendela Kafe Komorebi dan memesan seporsi pasta rumahan beserta segelas teh es. Dari balik konter, Ito Shinji mengangguk tenang dan mulai menyiapkan hidangan."),
+                    ("nar", "Kamu duduk di meja dekat jendela Kafe Komorebi dan memesan seporsi pasta rumahan beserta segelas teh es. Dari balik konter, Ito Shinpei mengangguk tenang dan mulai menyiapkan hidangan."),
                     ("nar", "Sambil makan, kamu memandangi pejalan kaki yang melintas di depan gerbang kampus di balik tirai tipis. Waktu mengalir pelan tanpa terasa terburu-buru."),
-                    ("Ito Shinji", "Pelan-pelan saja makannya, masih banyak waktu sebelum jam berikutnya."),
+                    ("Ito Shinpei", "Pelan-pelan saja makannya, masih banyak waktu sebelum jam berikutnya."),
                     ("nar", "Kamu menghabiskan makananmu sampai bersih dan meninggalkan meja dengan tubuh yang terasa jauh lebih bugar."),
                 ],
             ],
@@ -1029,16 +1029,16 @@ init -2 python:
         "kerja": {
             "Kafe Komorebi": [
                 [
-                    ("nar", "Kamu mengikat celemek kain gelap di belakang konter Kafe Komorebi dan langsung membantu Ito Shinji menyiapkan cangkir bersih serta menata kue di etalase kaca."),
-                    ("Ito Shinji", "Hari ini pengunjung lumayan ramai di jam jeda kuliah. Tolong bantu antar pesanan meja tiga dan lima, sisanya biar saya yang seduh di sini."),
+                    ("nar", "Kamu mengikat celemek kain gelap di belakang konter Kafe Komorebi dan langsung membantu Ito Shinpei menyiapkan cangkir bersih serta menata kue di etalase kaca."),
+                    ("Ito Shinpei", "Hari ini pengunjung lumayan ramai di jam jeda kuliah. Tolong bantu antar pesanan meja tiga dan lima, sisanya biar saya yang seduh di sini."),
                     ("nar", "Selama beberapa jam berikutnya, lonceng pintu terus berdenting hampir tanpa henti. Kamu mencatat pesanan, mengantar nampan kopi panas, mengelap meja yang baru ditinggalkan pelanggan, hingga akhirnya arus tamu mulai mereda."),
-                    ("Ito Shinji", "Kerja bagus hari ini. Ini upahmu, sekalian bawa pulang sisa roti panggang satu bungkus kalau mau."),
+                    ("Ito Shinpei", "Kerja bagus hari ini. Ini upahmu, sekalian bawa pulang sisa roti panggang satu bungkus kalau mau."),
                     ("nar", "Bahu dan kakimu terasa cukup pegal, tetapi lembaran upah sebesar ¥3.000 masuk rapi ke saldomu."),
                 ],
                 [
                     ("nar", "Kamu memulai giliran kerja paruh waktu di Kafe Komorebi dengan menggiling biji kopi segar dan menyusun gelas es di rak bawah konter."),
-                    ("nar", "Menjelang pertengahan jam kerja, dua rombongan mahasiswa datang sekaligus dan membuat suasana kafe mendadak sibuk. Dengan arahan singkat yang tenang dari Ito Shinji, seluruh pesanan berhasil keluar tanpa satu pun yang keliru."),
-                    ("Ito Shinji", "Kamu makin cepat tangkap alurnya sekarang. Terima kasih bantuannya hari ini."),
+                    ("nar", "Menjelang pertengahan jam kerja, dua rombongan mahasiswa datang sekaligus dan membuat suasana kafe mendadak sibuk. Dengan arahan singkat yang tenang dari Ito Shinpei, seluruh pesanan berhasil keluar tanpa satu pun yang keliru."),
+                    ("Ito Shinpei", "Kamu makin cepat tangkap alurnya sekarang. Terima kasih bantuannya hari ini."),
                     ("nar", "Setelah melepas celemek dan mencuci tangan, kamu menerima upah ¥3.000 dengan napas lega meski tenagamu cukup terkuras."),
                 ],
             ],
@@ -1137,7 +1137,7 @@ init -2 python:
             [
                 ("nar", "Hari demi hari sepanjang pekan ini berjalan dengan irama mahasiswa tahun pertama yang mulai terasa akrab. Kelopak bunga yang tersisa di sepanjang jalan menuju Stasiun Kouseikan-mae perlahan berganti menjadi daun hijau muda yang segar."),
                 ("nar", "Sepulang kuliah, kamu menyempatkan diri mampir ke toko kelontong bersama bahan masak sederhana, lalu duduk di meja belajar lantai dua menata ulang catatan kuliahmu sambil mendengarkan suara televisi samar dari ruang tengah."),
-                ("nar", "Sesekali layar ponselmu menyala oleh pesan singkat dari Bu Yoshie atau obrolan grup kelas. Begitu kamu membalik halaman kalender meja, tujuh hari sudah berlalu dengan tenang."),
+                ("nar", "Sesekali layar ponselmu menyala oleh pesan singkat dari Yoshie atau obrolan grup kelas. Begitu kamu membalik halaman kalender meja, tujuh hari sudah berlalu dengan tenang."),
             ],
         ],
         ("chiasa", "summer"): [
@@ -1183,7 +1183,7 @@ init -2 python:
         ("yutaka", "spring"): [
             [
                 ("nar", "Satu minggu penuh berlalu di tengah angin awal musim semi yang sejuk. Pagi hari di apartemen lantai atasmu dimulai dalam keheningan yang rapi, hanya diisi suara mesin pemanas air dan cahaya matahari yang memantul di jendela kaca tinggi."),
-                ("nar", "Di Gedung Ekonomi, kamu duduk di barisan tengah menyimak kuliah sambil menjaga sikap santai yang tidak terlalu mencolok agar teman-teman sefakultas termasuk Daichi tidak curiga pada ingatanmu yang kosong."),
+                ("nar", "Di Gedung Ekonomi, kamu duduk di barisan tengah menyimak kuliah sambil menjaga sikap santai yang tidak terlalu mencolok agar teman-teman sefakultas termasuk Kaichi tidak curiga pada ingatanmu yang kosong."),
                 ("nar", "Di sela jadwal kuliah dan jam makan siang di kantin, kamu beberapa kali bertukar sapa dengan Koita, Nagisa, serta kenalan lainnya sebelum pulang kembali ke apartemen saat langit mulai gelap. Tujuh hari pun terlewati."),
             ],
             [

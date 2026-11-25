@@ -18,7 +18,7 @@
             nar "Saat kau menahan napas karena gugup, jari-jari tangan kananmu tanpa sadar terangkat menyentuh simpul pita hitam di belakang kepala dan anting mungil di daun telingamu—sementara ekor matamu menangkap papan nama kayu kecil bergambar kuas lukis di pintu kamar yang bertuliskan 'Chiasa'."
             nar "Potongan ciri visual itu langsung menyambung dengan halaman manga yang baru saja kaucibir di peron stasiun kereta bawah tanah sebelum kematianmu."
             chiasa "Ahhh!! Tunggu—jangan bercanda! Wajah ini kan... Amamiya Chiasa?! Adik tiri dari manga 'Kouseikan' yang baru kubaca di stasiun tadi?!"
-            nar "Kau membekap mulutmu sendiri dengan telapak tangan yang dingin. Dari seluruh tokoh yang ada di cerita romansa kampus itu, kau justru terlempar masuk ke tubuh si adik tiri tanpa hubungan darah yang tinggal satu atap dengan sang protagonis utama!"
+            nar "Kau membekap mulutmu sendiri dengan telapak tangan yang dingin. Dari seluruh tokoh yang ada di cerita romansa kampus itu, kau justru terlempar masuk ke tubuh si adik tiri tanpa hubungan darah yang tinggal satu atap dengan sang MC utama!"
             nar "Belum sempat keterkejutan di dadamu mereda, aroma kaldu sup miso hangat, roti panggang, dan telur goreng dari lantai bawah menarik langkahmu keluar dari kamar."
             nar "Anehnya, begitu telapak kakimu menapak di deretan tangga kayu menuju lantai satu, otot-otot tungkai tubuh ini melangkah turun dengan sangat hafal—bahkan secara otomatis melangkahi anak tangga kelima yang kayunya agak berderit tanpa perlu kauperhatikan."
             nar "Begitu kau tiba di ambang ruang makan lantai bawah yang terang oleh sinar matahari pagi, tampak sebuah kotak plastik biru berisi lauk kiriman dari Amamiya Yoshie tergeletak di atas meja kayu."
@@ -58,9 +58,9 @@
         chiasa "Kau... kau sengaja memasukkanku ke dalam manga sampah yang baru kuhina sebelum mati?! Di tubuh Amamiya Chiasa pula?! Otakmu sudah miring, hah?!"
     sistem "( ´ w ` )/ Justru karena kau begitu membenci manga ini dari ujung rambut sampai ujung kaki, kau adalah kandidat paling cocok untukku. Panggil aku Sistem—dan mulai detik ini, kontrak sewa nyawamu resmi aktif."
     sistem "Aturan mainnya sangat sederhana: kau punya waktu tiga tahun penuh sampai Amamiya Koita lulus kuliah untuk menyimpangkan takdir romantisnya sejauh mungkin dari jalur asli manga ini."
-    sistem "Evaluasinya hanya dilakukan satu kali, tepat pada hari ia naik ke panggung aula untuk menerima ijazah wisuda (´• v •`). Kalau sampai detik itu skenario romansa sang protagonis masih berjalan mulus... jantung pinjaman di dadamu itu akan kubuat berhenti berdetak di tempat~"
+    sistem "Evaluasinya hanya dilakukan satu kali, tepat pada hari ia naik ke panggung aula untuk menerima ijazah wisuda (´• v •`). Kalau sampai detik itu skenario romansa sang MC masih berjalan mulus... jantung pinjaman di dadamu itu akan kubuat berhenti berdetak di tempat~"
     if kk_host == "yutaka":
-        yutaka "Jangan bercanda! Kenapa aku harus ikut campur mengurus urusan ranjang dan percintaan si protagonis naif itu pakai taruhan nyawa segala?!"
+        yutaka "Jangan bercanda! Kenapa aku harus ikut campur mengurus urusan ranjang dan percintaan si MC naif itu pakai taruhan nyawa segala?!"
     else:
         chiasa "Jangan gila! Kenapa nyawaku harus digantungkan pada urusan cinta kakak tiri menyebalkan itu?!"
     nar "Layar biru transparan itu mendadak berkedip merah menyala selama sepersekian detik, memancarkan gelombang tekanan dingin yang membuat bulu kuduk di tengkukmu berdiri."

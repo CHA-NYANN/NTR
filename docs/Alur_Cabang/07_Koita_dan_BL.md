@@ -176,7 +176,7 @@ flowchart LR
   S -->|ia merebut balik dan menjatuhkan pemain| K10[["E-KO-10 Koita Membalas"]]
   S -->|berhenti menggantung, menulis jujur| K11[["E-KO-11 Penulis yang Jujur"]]
   S -->|menerima tawaran penerbit, pergi| K12[["E-KO-12 Pergi"]]
-  S -->|tahu naskah dan melawannya| K13[["E-KO-13 Protagonis yang Terbangun"]]
+  S -->|tahu naskah dan melawannya| K13[["E-KO-13 MC yang Terbangun"]]
   S -->|memutus persahabatan dengan pemain| K14[["E-KO-14 Persahabatan yang Diakhiri"]]
   S -->|gagal lulus tepat waktu| K15[["E-KO-15 Toga yang Tidak Dipakai"]]
   S -->|orbit nol dan runtuh| NTR{"Jalur NTR sempurna<br/>bagian 14"}
@@ -215,12 +215,12 @@ flowchart LR
 | E-KO-10 | Koita Membalas | Bad | Y/C | manuver balik berhasil; pemain kalah perang reputasi | Koita merebut balik heroine dan menjatuhkan pemain di mata semua orang |
 | E-KO-11 | Penulis yang Jujur | Neutral | Y/C | K19 dibantu jujur; K20 diisi kebenaran sebagian | berhenti menggantung; menulis novel tentang tokoh yang tidak pernah memilih |
 | E-KO-12 | Pergi | Neutral | Y/C | K23-A didukung pergi | menerima tawaran penerbit di kota lain dan meninggalkan semuanya |
-| E-KO-13 | Protagonis yang Terbangun | Khusus | Y/C | `koita_tahu_naskah` percaya | Koita sengaja melawan plot armor-nya; pilihannya kini benar-benar miliknya |
+| E-KO-13 | MC yang Terbangun | Khusus | Y/C | `koita_tahu_naskah` percaya | Koita sengaja melawan plot armor-nya; pilihannya kini benar-benar miliknya |
 | E-KO-14 | Persahabatan yang Diakhiri | Neutral | Y/C | Koita tahu semua manipulasi pemain; tidak runtuh | ia memutus pemain dengan tenang dan tidak pernah kembali |
 | E-KO-15 | Toga yang Tidak Dipakai | Bad | Y/C | K19 disabotase atau Koita runtuh di Tahun 3 | Koita gagal lulus tepat waktu; evaluasi tetap di tanggal wisuda angkatannya |
 | E-KO-16 | Semua Pergi | Khusus | Y/C | `orbit_koita` 0; sebagian besar heroine pergi sendiri (pola terbongkar atau memilih mandiri); `runtuh_koita` ≥ 80; tanpa penopang | NTR sempurna: tidak ada satu pun yang tersisa. Koita berhenti menulis dan kuliah, mengurung diri, kena mental; ditulis lewat kondisi dan dampaknya |
 | E-KO-17 | Pusat yang Berpindah | Khusus | Y/C | `orbit_koita` 0; minimal tiga heroine kini di orbit pemain, karena memilih pemain atau terikat lewat ancaman atau Force ⭐; Koita tahu; `runtuh_koita` ≥ 80 | NTR sempurna: lingkaran yang dulu berputar di sekitar Koita kini berputar di sekitar pemain, dan Koita menjadi figuran di ceritanya sendiri. Slide tiap heroine berbeda: yang memilih pemain tampak bahagia, yang dipaksa tampak hancur |
-| E-KO-18 | Naskah yang Kosong | Khusus | Y/C | syarat E-KO-16 atau E-KO-17; Koita tahu soal naskah dan percaya; plot armor padam (K-D14) | Koita sadar ia protagonis yang ditinggalkan naskahnya sendiri; kebetulan tidak pernah datang lagi. Sistem membacakan: "Protagonis selesai." |
+| E-KO-18 | Naskah yang Kosong | Khusus | Y/C | syarat E-KO-16 atau E-KO-17; Koita tahu soal naskah dan percaya; plot armor padam (K-D14) | Koita sadar ia MC yang ditinggalkan naskahnya sendiri; kebetulan tidak pernah datang lagi. Sistem membacakan: "MC selesai." |
 | E-KO-19 | Yang Tidak Bisa Ia Hentikan | Broken | Y/C | Koita menyaksikan Force; `trust_koita` masih tinggi saat itu (ia masih percaya dan dekat dengan pemain), sehingga ia membeku alih-alih bertindak; korban tidak kembali padanya | trauma karena gagal melindungi orang yang masih ia percaya; ia tidak sanggup mendekati siapa pun lagi. Bisa menempel sebagai lapisan di E-KO-16 atau E-KO-17 |
 | E-KO-20 | Saksi yang Bersuara | Neutral | Y/C | Koita menyaksikan atau mengetahui Force saat `trust_koita` sudah rendah (sudah lama curiga atau lepas dari pemain), sehingga ia bisa bertindak alih-alih membeku | dari orang yang sudah tidak percaya menjadi orang yang menjatuhkan pemain; sendiri, tetapi berdiri. Berjalan bersama E-FO-11 |
 | E-KO-21 | Dituduh atas Luka yang Menimpanya | Broken | C | jalur manipulasi pembalikan Chiasa ([06_Chiasa.md](06_Chiasa.md) §14) bertahan; `runtuh_koita` ≥ 80 | Koita korban yang justru dicap pelaku; tidak dipercaya dan tidak bisa membuktikan sebaliknya; runtuh dalam diam. K-D21 (ada yang tetap percaya) atau C-D14/C-D15 (Chiasa sendiri goyah) bisa membelokkan ini sebelum M35 |
@@ -239,7 +239,7 @@ flowchart LR
 - **Miyuki:** rahasia cinta SMA Koita (file 01).
 - **Chiasa:** BL dan Koita Success saling mengunci di Male Route.
 - **Wisuda:** evaluasi terjadi di tanggal wisuda angkatan Koita, bahkan bila Koita sendiri gagal lulus (E-KO-15). Ini menutup celah "menunda wisuda untuk menunda evaluasi".
-- **Ending tersembunyi ⭐:** satu varian langka dari E-KO-13 — Koita menolak memilih siapa pun di K26 bukan karena menggantung atau hancur, tetapi karena ia sadar dan sengaja berhenti memerankan protagonis harem. Dipasangkan dengan tiga gerbang lain, ini membuka satu ending rahasia untuk pemain: [10_Sistem_dan_Evaluasi.md](10_Sistem_dan_Evaluasi.md) §11.
+- **Ending tersembunyi ⭐:** satu varian langka dari E-KO-13 — Koita menolak memilih siapa pun di K26 bukan karena menggantung atau hancur, tetapi karena ia sadar dan sengaja berhenti memerankan MC harem. Dipasangkan dengan tiga gerbang lain, ini membuka satu ending rahasia untuk pemain: [10_Sistem_dan_Evaluasi.md](10_Sistem_dan_Evaluasi.md) §11.
 
 ## 11. Poin dan ambang
 Skala dan aturan umum: [Sistem_Cabang_dan_Poin.md](../Sistem_Cabang_dan_Poin.md) §2–§3.
@@ -297,7 +297,7 @@ flowchart LR
   K08 -->|K19 dibantu jujur, rasa bersalah tinggi| K11[["E-KO-11 Penulis yang Jujur"]]
   K09 -->|ia tidak runtuh dan mulai tumbuh| K07[["E-KO-07 Sendiri"]]
   K10[["E-KO-10 Koita Membalas"]] -->|pemain mundur dan mengaku| K14[["E-KO-14 Persahabatan yang Diakhiri"]]
-  K07 -->|diberi tahu naskah dan percaya| K13[["E-KO-13 Protagonis yang Terbangun"]]
+  K07 -->|diberi tahu naskah dan percaya| K13[["E-KO-13 MC yang Terbangun"]]
   K11 -->|berhenti menggantung lalu sungguh memilih| KD
   K15[["E-KO-15 Toga yang Tidak Dipakai"]] -->|lulus terlambat dan menulis| K11
   BL03[["E-BL-03 Kembali ke Pola Lama"]] -->|jawaban diulang di M35| BL01[["E-BL-01 Berkomitmen"]]

@@ -423,7 +423,7 @@ screen kk_location_view(distrik, lokasi):
                 if distrik == "onsen":
                     use kk_link("Duduk sejenak di penginapan", Return(("rest", None)), 800)
                 if kk_art_studio_open(lokasi):
-                    use kk_link("Bicarakan sketsa dengan Haruka", Return(("portfolio", None)), 800)
+                    use kk_link("Bicarakan sketsa dengan Karuha", Return(("portfolio", None)), 800)
                 if kk_can_sketch(lokasi):
                     use kk_link("Latihan di buku sketsa", Return(("draw", None)), 800)
                 if kk_can_sit_with_miyuki(lokasi):
@@ -490,6 +490,8 @@ label kk_loc_list:
     if _ent:
         call kk_play_scene(_ent[0])
         $ kk_advance()
+    elif kk_pulau_m17b_due(_distrik, _lokasi):
+        call kk_pulau_m17b
     elif kk_father_visit(_lokasi):
         call kk_visit_kisaragi
         $ kk_minutes(10)

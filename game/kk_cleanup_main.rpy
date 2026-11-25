@@ -104,6 +104,8 @@ label kkscene_Mo07:
         moeka "Apalagi dosen penguji depan panggung bawa papan nilai tebal, rasanya setiap langkah nanti langsung dihitung angkanya."
         nar "Moeka memeluk bagian lengan jaket denim itu sedikit lebih erat ke dadanya."
         moeka "Lama-lama aku capek juga kalau setiap hal yang beneran kusuka langsung berubah jadi tontonan yang wajib berhasil demi menyenangkan semua orang. Sebelum namaku dipanggil panitia keluar tirai, aku boleh gugup lima menit dulu di depanmu kan, Chimian?"
+        chiasa "Tentu saja boleh, Moemoe-senpai. Di sudut cermin sini cuma ada kita berdua kok."
+        nar "Moeka tersenyum tipis penuh rasa syukur sambil menyandarkan punggungnya sebentar ke tepi meja rias."
     else:
         if kk_slot >= 3:
             nar "Lorong persiapan di belakang panggung aula peragaan busana kampus malam itu terang oleh lampu rias, dipenuhi aroma semprotan rambut, bunyi ritsleting tas pakaian, dan langkah tergesa para kru mahasiswa. Di sudut dekat rak gantungan baju cadangan, Kohinata Moeka berdiri bersandar sambil memegangi jaket denim hasil rancangannya sendiri."
@@ -122,6 +124,8 @@ label kkscene_Mo07:
         moeka "Di baris depan aula nanti dosen penguji duduk bawa daftar nilai semua, Yutayuta, rasanya malah makin deg-degan."
         nar "Dari balik tirai hitam tebal di ujung lorong, terdengar suara koordinator panggung yang mengecek mikrofon dan mengingatkan bahwa giliran kelompok pembuka tinggal lima belas menit lagi. Moeka menelan ludah, lalu menoleh menatapmu."
         moeka "Sebelum dipanggil berbaris ke balik tirai, aku boleh panik lima menit dulu di sini kan, Yutayuta?"
+        yutaka "Silakan saja, di pojok rak gantungan baju ini nggak ada panitia lain yang memperhatikan."
+        nar "Bahu Moeka yang sejak tadi terangkat kaku perlahan turun sedikit mendengar jawaban tenangmu."
     call kk_family_menu("Mo07", ["\"Aku duduk di barisan depan kok, nanti kalau gugup lihat aja ke arahku.\"", "\"Sini biar aku bantu jagain barang-barangmu di belakang panggung.\"", "\"Maaf banget, habis ini aku ada urusan lain dan harus pergi sekarang.\""])
     if _return == "A":
         if kk_host == "chiasa":
@@ -139,6 +143,10 @@ label kkscene_Mo07:
             moeka "Serius dosennya mengangguk?! Wah, lega banget rasanya!"
             chiasa "Serius, tadi aku lihat persis dari kursi depan."
             moeka "Hehe, itu gara-gara begitu aku keluar tirai langsung lihat kamu duduk manis di kursi depan! Makasih banyak ya sudah menunggu sampai acara selesai!"
+            chiasa "Sama-sama, Moemoe-senpai. Sekarang jaketnya mau langsung dimasukkan ke tas pakaian atau masih mau dipakai foto dokumentasi klub?"
+            moeka "Masih harus foto bersama panitia lima menit lagi di depan panggung, habis itu kita cari minuman manis dingin di kantin yuk!"
+            chiasa "Ayo, kutunggu di dekat pintu aula ini sambil pegangin tas kain Senpai."
+            nar "Moeka menyerahkan tas kanvasnya kepadamu dengan wajah berseri-seri sebelum berlari kecil menghampiri barisan peserta untuk sesi foto penutup."
         else:
             yutaka "Panik aja dulu lima menit di sini, nggak ada yang melarang kok. Habis ini aku keluar dan duduk di kursi barisan paling depan sebelah kiri. Nanti waktu kamu jalan di panggung terus bingung mau lihat ke mana, lihat ke arahku aja."
             moeka "Serius kamu mau duduk di barisan paling depan sampai acaranya selesai, Yutayuta? Biasanya kamu paling malas duduk lama di acara kampus."
@@ -153,6 +161,9 @@ label kkscene_Mo07:
             moeka "Ahaha, jangan dibuka lagi dong rahasia belakang panggungnya! Tadi dosennya sempat kelihatan mencatat nggak waktu aku muter?"
             yutaka "Sempat, sambil senyum puas malah."
             moeka "Asyik! Serius, makasih banget ya sudah duduk di depan tadi. Begitu lihat mukamu, gugupku langsung hilang setengah!"
+            yutaka "Syukurlah kalau begitu. Sana ikut foto dokumentasi bareng panitia dulu, tasmu biar kupegangin di sini."
+            moeka "Oke, tunggu lima menit ya, habis foto kita beli minuman dingin di depan!"
+            nar "Moeka menitipkan tas pakaiannya ke tanganmu dengan langkah ringan yang penuh rasa bangga sebelum bergabung dengan rekan-rekan sekelasnya di depan panggung."
     elif _return == "B":
         if kk_host == "chiasa":
             chiasa "Aku nggak usah keluar ke kursi penonton deh, Moemoe-senpai. Biar aku tetap di belakang panggung sini aja bantu jagain tas, sepatu ganti, sama perlengkapan jahit darurat Senpai."
@@ -171,6 +182,13 @@ label kkscene_Mo07:
             moeka "Oke, sudah hangat sekarang. Doain aku nggak kesandung tangga ya, tunggu di sini sampai aku balik!"
             chiasa "Pasti kutunggu di sini, Senpai. Semangat!"
             nar "Ia melepaskan genggamannya, lalu melangkah mantap menembus celah tirai menuju sorot lampu panggung yang terang benderang."
+            nar "Dari celah sempit di samping tirai beludru hitam, kamu memperhatikan Moeka melangkah di atas panggung dengan punggung tegak dan senyum lebar yang memancarkan kebanggaan atas jaket hasil jahitannya sendiri."
+            nar "Tepuk tangan penonton di dalam aula terdengar bergemuruh saat ia berhenti sejenak di ujung lintasan untuk memperlihatkan detail renda pada kerah dan manset lengannya."
+            nar "Begitu gilirannya selesai dan ia kembali masuk melewati tirai belakang panggung, Moeka langsung menghampirimu dengan mata berbinar dan napas yang masih sedikit terengah."
+            moeka "Chimian! Rasanya lega banget! Begitu keluar tirai tadi kakiku langsung ringan!"
+            chiasa "Bagus banget jalannya tadi, Moemoe-senpai! Nih, minum dulu airnya sebentar sebelum ganti sepatu."
+            moeka "Makasih banyak ya sudah jagain aku di belakang tirai sini, Chimian!"
+            nar "Moeka menerima botol air minum darimu dengan senyum cerah yang kali ini benar-benar lepas dari segala ketegangan."
         else:
             yutaka "Daripada aku cuma duduk di depan, mending aku tetap di belakang panggung sini aja bantu jagain tas sama barang-barang cadanganmu, Kohinata. Biar kamu nggak usah bolak-balik mengecek barang sambil menunggu giliran."
             moeka "Eh, serius kamu mau menunggu di belakang panggung yang sempit dan ribut begini, Yutayuta?"
@@ -187,6 +205,13 @@ label kkscene_Mo07:
             moeka "Sip, sudah nggak gemetar lagi. Tunggu di dekat tirai sini ya, jangan pergi dulu sampai aku balik dari panggung!"
             yutaka "Aku nggak ke mana-mana. Jalan santai aja di atas sana."
             nar "Ia melepaskan tanganmu sambil tersenyum mantap, lalu melangkah keluar memasuki sorot lampu panggung ketika namanya dipanggil."
+            nar "Dari balik lipatan tirai samping, kamu menyaksikan bagaimana langkah Moeka yang tadinya sempat tegang langsung berubah luwes mengikuti ketukan musik pengiring."
+            nar "Sorot lampu putih panggung memantulkan detail renda putih pada jaket denim rancangannya dengan sangat jelas di hadapan meja para dosen penguji."
+            nar "Ketika ia berbalik dan melangkah masuk kembali ke lorong persiapan diiringi tepuk tangan meriah dari ruang aula, wajahnya tampak berseri-seri penuh kelegaan."
+            moeka "Yutayuta! Aku berhasil melewati putaran ujung panggungnya tanpa salah langkah sedikit pun!"
+            yutaka "Kerja bagus, Kohinata. Nih botol airmu, minum dulu sebelum kita bereskan gantungan bajunya."
+            moeka "Hehe, makasih banyak sudah nungguin persis di balik tirai sesuai janji ya, Yutayuta!"
+            nar "Moeka meneguk air minumnya sambil tertawa ringan, menikmati keberhasilan peragaan busana pertamanya dengan tenang di sampingmu."
     else:
         if kk_host == "chiasa":
             chiasa "Maaf banget ya, Moemoe-senpai. Aku tadi mampir ke ruang tunggu cuma buat menyemangati sebentar, soalnya habis ini aku masih ada urusan lain yang nggak bisa ditinggal jadi harus pergi sekarang."
@@ -195,6 +220,9 @@ label kkscene_Mo07:
             chiasa "Maaf ya nggak bisa lihat waktu Senpai jalan di panggung. Semoga lancar ya peragaannya."
             moeka "Pasti lancar dong! Nanti kalau ada foto dari panitia, kukirim ke kamu deh! Hati-hati di jalan ya, Chimian, sampai ketemu besok di kampus!"
             nar "Kamu melambai singkat lalu keluar meninggalkan ruang persiapan sebelum acara dimulai. Di belakang panggung yang bising, Moeka mengenakan jaketnya seorang diri, merapikan kerahnya di depan cermin tanpa bantuan siapa pun, lalu melangkah naik ke panggung saat gilirannya tiba."
+            nar "Saat melewati koridor luar gedung aula menuju gerbang fakultas, suara musik pembuka dan tepuk tangan penonton dari dalam ruangan terdengar samar menembus pintu kayu."
+            nar "Di dalam sana, tidak ada satu pun penonton di barisan depan maupun rekan di balik tirai yang mengetahui betapa dingin ujung jari Moeka sesaat sebelum namanya dipanggil."
+            nar "Ia tetap memaksa dirinya berdiri tegak seorang diri di tengah keramaian kru belakang panggung seperti yang selama ini selalu ia lakukan di rumah maupun di kampus."
             nar "Ia tetap berjalan dengan senyum lebar yang berkilau di bawah lampu sorot dan melambai ramah setiap kali kamera panitia memotretnya. Baru ketika seluruh penonton sudah meninggalkan aula dan ruang tunggu kembali kosong, Moeka duduk sendirian di kursi lipat sambil merapikan jaketnya ke dalam tas dengan bahu yang tampak sangat letih."
         else:
             yutaka "Maaf banget, Kohinata. Aku tadi mampir ke belakang sini cuma buat menyapa sebentar, habis ini aku ada urusan lain di luar yang nggak bisa ditunda jadi harus langsung jalan."
@@ -203,6 +231,9 @@ label kkscene_Mo07:
             yutaka "Semoga peragaan pertamanya lancar ya, Kohinata. Aku duluan."
             moeka "Siap, pasti kuberikan pertunjukan paling keren! Nanti kukirimin fotonya dari panitia. Hati-hati di jalan ya!"
             nar "Kamu berpamitan lalu berjalan keluar meninggalkan gedung aula sebelum tirai panggung dibuka. Moeka mengenakan jaket rancangannya seorang diri di sudut lorong, lalu tetap tampil memukau dan tersenyum cerah ke arah kamera sepanjang gilirannya di atas panggung."
+            nar "Begitu pintu belakang gedung aula tertutup di punggungmu, dentuman musik peragaan busana dan riuh tepuk tangan penonton mulai bergema dari arah dalam."
+            nar "Tanpa ada orang terdekat yang menunggu di kursi depan ataupun menjaga barangnya di balik tirai, Moeka kembali memikul sendiri seluruh rasa gugupnya di balik topeng ceria."
+            nar "Para peserta lain tampak langsung dikerubungi teman-teman mereka begitu turun dari tangga panggung, sedangkan Moeka langsung berjalan menepi ke sudut rak pakaian."
             nar "Sesudah acara berakhir dan para mahasiswa lain pulang bersama teman-teman yang datang menonton mereka, Moeka membereskan gantungan bajunya seorang diri di ruang tunggu yang sudah sepi, lalu berjalan pulang ke kosnya dengan rasa lelah yang ia simpan rapat-rapat."
     return
 

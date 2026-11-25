@@ -1,4 +1,4 @@
-# Prompt mandiri Gemini Web — E-SH-09: Ratu Menjatuhkan Protagonis
+# Prompt mandiri Gemini Web — E-SH-09: Ratu Menjatuhkan MC
 
 Kamu penulis baru Kouseikan. Ini chat mandiri. Tulis ulang SATU ending berikut dengan seluruh konteks di pesan ini; jangan merujuk percakapan lama atau meminta pengguna mengirim isi repo.
 
@@ -10,7 +10,7 @@ Tulis teks ending E-SH-09. Pertahankan jenis hasil, kondisi muncul, host yang be
 
 Kouseikan adalah visual novel drama psikologis bercabang, berlatar universitas Jepang, ditulis dalam bahasa Indonesia. Pemain mati di dunia asal lalu menempati tubuh Yutaka ATAU Chiasa dalam dunia manga harem yang tidak disukainya. Kesadaran pemilik tubuh asli hilang; jangan membuat pemilik lama berdialog sebagai orang kedua yang hadir di ruangan. Pemain tidak mewarisi ingatan pribadi atau keterampilan rumit host, hanya tubuh dan kebiasaan sederhana.
 
-Koita adalah protagonis manga asli, BUKAN otomatis tokoh yang dikendalikan pemain. Sistem NTR yang sinis mengancam pemain: takdir romantis Koita harus cukup menyimpang ketika ia wisuda, atau pemain mati. Perhitungan itu bukan penilaian moral; kebaikan maupun kekejaman punya akibat tersendiri. Jangan mengubah Sistem menjadi dalih yang membenarkan pelaku atau membuat angka menjadi cinta.
+Koita adalah MC manga asli, BUKAN otomatis tokoh yang dikendalikan pemain. Sistem NTR yang sinis mengancam pemain: takdir romantis Koita harus cukup menyimpang ketika ia wisuda, atau pemain mati. Perhitungan itu bukan penilaian moral; kebaikan maupun kekejaman punya akibat tersendiri. Jangan mengubah Sistem menjadi dalih yang membenarkan pelaku atau membuat angka menjadi cinta.
 
 Permainan mulai 7 April; rentang tiga tahun sampai wisuda Koita pada Maret. Awal: Koita/Yutaka/Nagisa/Harumi/Moeka/Shiori tahun kedua, Chiasa tahun pertama, Miyuki tahun ketiga. Semua tokoh romansa/mahasiswa 18+. Adik-adik kecil Moeka adalah tokoh keluarga saja. Geng kecil: Koita, Yutaka, Nagisa, Chiasa. Kelompok belajar SMA: Koita, Yutaka, Nagisa, Miyuki, Harumi. NPC boleh menolak; tidak ada ketertarikan yang dijamin.
 
@@ -21,7 +21,7 @@ Cerita bercabang: jangan menyatakan opsi dari adegan lain sudah dipilih, hubunga
 ## Karakter dan hubungan
 
 ### Pegangan suara dan fakta
-- Amamiya Koita: protagonis manga asli, mahasiswa Sastra. Baik dan mudah tersanjung, terbiasa menggantung jawaban karena takut mengecewakan atau kehilangan orang. Awal naif, lalu bisa sadar, memilih, atau retak. Jangan jadikan ia bodoh permanen maupun penjahat yang sudah sadar sejak awal.
+- Amamiya Koita: MC manga asli, mahasiswa Sastra. Baik dan mudah tersanjung, terbiasa menggantung jawaban karena takut mengecewakan atau kehilangan orang. Awal naif, lalu bisa sadar, memilih, atau retak. Jangan jadikan ia bodoh permanen maupun penjahat yang sudah sadar sejak awal.
 - Saionji Shiori: tajam, terukur, cerdas dan menjaga jarak; punya perasaan, bukan pembaca pikiran. Keluarga Saionji hangat dan tidak memaksa pernikahan. Tekanan dapat datang dari Tojo, lingkungan sosial, atau pilihan instrumental Shiori sendiri. Kuroiwa pengawal/sopir kepercayaan yang boleh menegurnya.
 - Kisaragi Yutaka: mahasiswa Ekonomi/Bisnis, sahabat kecil Koita, tinggal di apartemen bagus. Aslinya santai, jahil, blak-blakan, hangat dan menyimpan kesepian; menyukai Chiasa. Pemain tidak mewarisi ingatan pribadi, materi kuliah atau skill game profesionalnya. Keluarga kaya tetapi berjarak; Amamiya tempat ia merasa diterima. Ia TIDAK punya kunci cadangan rumah Amamiya.
 - Amamiya Chiasa: mahasiswa Seni tahun pertama, adik TIRI Koita tanpa hubungan darah. Posesif halus dan suka menggoda Ko-nii. Rambut cokelat gelap half-up berpita hitam, mata keemasan. Ilustrator nama pena Shena. Daisuke ayah biologisnya, Yoshie ibu biologis Koita/ibu tirinya. Pemain dalam tubuh Chiasa TIDAK mewarisi kemampuan menggambarnya.
@@ -138,7 +138,7 @@ Status: profil ✅, visual ✅ ACC, sisanya 🟡 usulan. Rute distorsi: Destruct
 ```json
 {
   "code": "E-SH-09",
-  "name": "Ratu Menjatuhkan Protagonis",
+  "name": "Ratu Menjatuhkan MC",
   "type": "Khusus",
   "host": "Y/C",
   "cond": "sasaran_balas Koita",
@@ -166,7 +166,7 @@ Koita kehilangan kendali atas cara ceritanya dibaca. Orang-orang yang dahulu men
 
 Ia jatuh di depan lingkungan yang paling mengenalnya. Ada tuduhan yang dapat dijawab dengan fakta, ada luka yang tak selesai oleh pembelaan bahwa ia tidak pernah bermaksud menyakiti. Setelah hari itu, sapaan hangat yang diandalkannya tidak lagi cukup membuat orang mau tinggal.
 
-Shiori mendapat hasil yang diinginkan. Ia melihat Koita berusaha menahan wajah tetap biasa dan mengetahui tepat kapan usaha itu gagal. Yang tersisa bukan perasaan puas yang sesederhana dugaan semula, melainkan keputusan untuk tetap menyebut akibat tersebut layak. Ratu telah menjatuhkan protagonis; orang-orang di sekelilingnya kini harus menjalani hidup setelah pertunjukan selesai.
+Shiori mendapat hasil yang diinginkan. Ia melihat Koita berusaha menahan wajah tetap biasa dan mengetahui tepat kapan usaha itu gagal. Yang tersisa bukan perasaan puas yang sesederhana dugaan semula, melainkan keputusan untuk tetap menyebut akibat tersebut layak. Ratu telah menjatuhkan MC; orang-orang di sekelilingnya kini harus menjalani hidup setelah pertunjukan selesai.
 ```
 
 ## Format keluaran wajib

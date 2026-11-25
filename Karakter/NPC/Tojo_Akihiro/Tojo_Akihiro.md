@@ -14,7 +14,7 @@ Pesaing yang memandang Shiori sebagai aset. Contoh "pendekat bermotif" yang ia k
 - Dengan Shiori: Aff Rendah, Trust Rendah, Fear Rendah. Shiori memandangnya sebagai "bidak menarik".
 - Mengincar Shiori lewat hadiah, undangan, dan rumor.
 - Rute Revenge: bisa jadi sasaran sampingan balas dendam Shiori, atau alat Shiori untuk menjatuhkan pemain.
-- Bila pemain mengejar Shiori: ia akan menantang, memprovokasi, atau menyebar rumor lewat Kurosawa Mei.
+- Bila pemain mengejar Shiori: ia akan menantang, memprovokasi, atau menyebar rumor lewat Kurosawa Meisa.
 - Event 🟡: pesta, undangan makan malam, pertandingan catur yang ia ikuti hanya demi citra.
 
 ## Gaya bicara

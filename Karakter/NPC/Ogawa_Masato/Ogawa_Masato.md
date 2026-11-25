@@ -13,7 +13,7 @@ Pihak yang memanfaatkan kebingungan emosi Harumi. Contoh predator halus yang ber
 ## Hubungan dan fungsi
 - Menjadi "senior baik" bagi Harumi, lalu menukar perhatian dengan akses dan keintiman.
 - Tidak memakai kekerasan fisik; menekan lewat dependensi dan ancaman karier.
-- Prof. Mizuhara, Ogiwara, dan Sena adalah penghalangnya.
+- Prof. Mizuhara, Ogiwara, dan Yuina adalah penghalangnya.
 - Konsekuensi hukum dan akademik bisa menjatuhkannya bila bukti ditemukan dan korban melapor (✅).
 - Bila pemain mengejar Harumi: Ogawa menjadi penghalang yang licin.
 - Event 🟡: rapat lab, undangan "diskusi", pesan larut malam, perselisihan dengan Mizuhara.

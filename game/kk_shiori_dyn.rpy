@@ -67,14 +67,14 @@ label kkscene_S_D07:
 # │ LOKASI  : (dinamis — muncul dari kondisi)
 # │ TERLIBAT: Saionji Shiori
 # │ AWALAN  : Trust Sedang
-# │ INTI    : A Simpan / B ceritakan ke orang lain / C jual ke Mei
+# │ INTI    : A Simpan / B ceritakan ke orang lain / C jual ke Meisa
 # │ AKHIRAN : bila rahasia itu muncul di mana pun, ia tahu sumbernya; ujian gagal dan marah[[pemain] naik
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_S_D13:
     call kk_scene_enter("shiori", "Klub Catur · Titipan kecil")
     nar "Shiori menceritakan sesuatu yang tampak pribadi dan meminta kau tidak meneruskannya. Tidak ada keadaan darurat atau orang yang keselamatannya bergantung pada penyebaran kabar itu. Hanya kepercayaan yang ia letakkan di antara kalian."
     shiori "Aku ingin cerita ini tetap di sini. Kalau kamu merasa tidak bisa menjaga, katakan sekarang. Aku lebih suka batas yang jelas daripada janji yang diberikan karena mudah."
-    call kk_family_menu("S-D13", ["Simpan rahasia itu.", "Ceritakan pada orang lain.", "Jual informasinya ke Mei."])
+    call kk_family_menu("S-D13", ["Simpan rahasia itu.", "Ceritakan pada orang lain.", "Jual informasinya ke Meisa."])
     if _return == "A":
         nar "Kau menyimpan cerita itu. Pada pertemuan berikutnya, Shiori tidak menagih bukti bahwa kau masih ingat. Ia mengajak bicara hal lain, sedikit lebih santai memberi ruang pada sesuatu yang tidak sepenuhnya dapat diawasi."
     elif _return == "B":
@@ -82,7 +82,7 @@ label kkscene_S_D13:
         shiori "Aku juga mengambil keputusan yang tidak jujur dengan menguji tanpa bilang. Itu bagianku. Bagianmu adalah menyebarkan sesuatu yang sudah kamujanjikan akan dijaga."
         nar "Tak satu pun pengakuan itu membuat percakapan menjadi lebih hangat."
     else:
-        "Mei" "Informasi menarik. Akan kupakai dengan bijak. ...Atau tidak."
+        "Meisa" "Informasi menarik. Akan kupakai dengan bijak. ...Atau tidak."
         nar "Kabar palsu itu mendapat jalan keluar melalui transaksi yang kaupilih. Ketika Shiori mengetahui, ia tidak lagi perlu bertanya apakah kedekatanmu mempunyai harga yang dapat dibayar orang lain."
     return
 

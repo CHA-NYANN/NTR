@@ -1,4 +1,4 @@
-# Higashiyama Mio — editor light novel Chiasa
+# Higashiyama Miono — editor light novel Chiasa
 
 Status: 🟡 seluruhnya usulan.
 
@@ -11,8 +11,8 @@ Rahasia karier Chiasa. Pemicu konflik di Female Route (kemampuan menggambar pema
 - Tahu usia dan identitas "Shena" sejak awal.
 
 ## Hubungan dan fungsi
-- Royalti Chiasa ¥50.000/bulan pasif (✅). Mio tidak menuntut karya baru, tetapi mengirim tawaran proyek.
-- Female Route: setelah possession, Mio curiga ("gaya garismu berubah"). Pemain harus menjelaskan atau menolak proyek.
+- Royalti Chiasa ¥50.000/bulan pasif (✅). Miono tidak menuntut karya baru, tetapi mengirim tawaran proyek.
+- Female Route: setelah possession, Miono curiga ("gaya garismu berubah"). Pemain harus menjelaskan atau menolak proyek.
 - Male Route: Chiasa NPC masih menerima tawaran; Yutaka bisa membantu menjadi manajer.
 - Event 🟡: telepon dadakan, pertemuan di kafe, undangan peluncuran buku.
 

@@ -1,4 +1,4 @@
-# Kuga Renji — fotografer fashion
+# Kuga Renma — fotografer fashion
 
 Status: 🟡 seluruhnya usulan. Tawaran ambigu untuk Moeka, bukan pasangan jadi.
 

@@ -1,9 +1,9 @@
-# Kohinata Aya — ibu Moeka
+# Kohinata Yaeka — ibu Moeka
 
 Status: 🟡 seluruhnya usulan (canon hanya: orang tua tidak ingin membebani Moeka, kondisi keluarga tidak baik-baik saja).
 
 ## 1. Identitas dan peran
-- 🟡 Kohinata Aya. 44 tahun. Bekerja ganda (supermarket pagi, katering sore).
+- 🟡 Kohinata Yaeka. 44 tahun. Bekerja ganda (supermarket pagi, katering sore).
 - 🟡 Peran: sumber informasi keluarga; orang yang mungkin menyadari perubahan Moeka tapi tak sadar seriusnya.
 
 ## 2. Penampilan 🟡
@@ -23,7 +23,7 @@ Status: 🟡 seluruhnya usulan (canon hanya: orang tua tidak ingin membebani Moe
 | Moeka | 🟡 ibu–anak; Aff Tinggi, Trust Tinggi, Intim Sedang |
 | Adik-adik | 🟡 sangat dekat |
 | Shuji | 🟡 suami; sakit |
-| Rina | 🟡 mengenal baik, memanggilnya "anak sendiri" |
+| Ryena | 🟡 mengenal baik, memanggilnya "anak sendiri" |
 | Pemain | 🟡 netral; mudah menerima orang yang membantu keluarga |
 
 ## 6. Gaya bicara 🟡
@@ -36,7 +36,7 @@ Status: 🟡 seluruhnya usulan (canon hanya: orang tua tidak ingin membebani Moe
 ## 7. Reaksi terhadap situasi 🟡
 - **Moeka tampak lelah:** mengira "sedang sibuk kuliah".
 - **Pemain membantu keluarga (uang, tenaga, informasi bantuan):** menerima dengan malu tetapi tulus.
-- **Krisis Moeka:** terpukul, merasa gagal sebagai ibu; butuh pemain dan Rina untuk mengarahkannya ke bantuan profesional.
+- **Krisis Moeka:** terpukul, merasa gagal sebagai ibu; butuh pemain dan Ryena untuk mengarahkannya ke bantuan profesional.
 
 ## 8. Event kunci 🟡
 - Kunjungan ke rumah Kohinata.
@@ -45,5 +45,5 @@ Status: 🟡 seluruhnya usulan (canon hanya: orang tua tidak ingin membebani Moe
 
 ## 9. Keputusan yang sudah kuisi (🟡)
 - **Penyakit ayah:** gagal ginjal kronis; cuci darah rutin. Biaya jadi beban utama.
-- **Bantuan finansial pemain:** boleh. Itu pemberian, bukan pinjaman, jadi tidak melanggar aturan "tanpa utang" di ekonomi. Aya awalnya menolak, lalu menerima kalau pemain bersikap sopan dan konsisten.
-- **Bila Moeka meninggal:** Aya terpukul, menyalahkan dirinya yang tidak menyadari. Keluarga tidak runtuh seketika, tetapi kondisi ayah memburuk.
+- **Bantuan finansial pemain:** boleh. Itu pemberian, bukan pinjaman, jadi tidak melanggar aturan "tanpa utang" di ekonomi. Yaeka awalnya menolak, lalu menerima kalau pemain bersikap sopan dan konsisten.
+- **Bila Moeka meninggal:** Yaeka terpukul, menyalahkan dirinya yang tidak menyadari. Keluarga tidak runtuh seketika, tetapi kondisi ayah memburuk.

@@ -1,4 +1,4 @@
-# Matsuda Takumi — teman dekat Koita di Sastra
+# Matsuda Tazumi — teman dekat Koita di Sastra
 
 Status: 🟡 seluruhnya usulan.
 

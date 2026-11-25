@@ -11,20 +11,37 @@
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_H_D02:
     call kk_scene_enter("harumi", "Gedung Sains & Lab · Lembar pengamatan")
-    nar "Harumi menyodorkan tabel. Kolom-kolomnya mencatat reaksimu: kapan kau tersenyum, berapa lama kau menatap, apa yang membuatmu diam."
-    harumi "Aku tersenyum ketika gugup. Mungkin orang lain juga begitu. Tapi kalau setiap tanda bisa berarti dua hal, aku tidak tahu kapan boleh percaya kesimpulanku. Apakah aku salah mencatatmu?"
-    call kk_family_menu("H-D02", ["Koreksi datanya dengan jujur.", "Tertawakan metodenya.", "Manfaatkan: biarkan ia salah membaca."])
-    if _return == "A":
-        nar "Kau menjelaskan arti tindakanmu sendiri, termasuk yang tidak sesuai harapannya. Harumi menandai bagian yang ternyata ia simpulkan tanpa bertanya."
-        harumi "Aku tidak bisa menjadikan lama tatapan sebagai persetujuan. Aku tahu itu secara teori. Aneh sekali saat perasaanku sendiri yang membuatku melewatinya."
-        nar "Ia menambahkan satu pertanyaan langsung pada catatan berikutnya, memberi tempat bagi jawaban yang belum bisa diketahui dari pengamatan saja."
-    elif _return == "B":
-        harumi "Aku tahu kelihatannya berlebihan. Tapi aku sungguh berusaha memahami, bukan membuat pertunjukan."
-        nar "Ia menarik tabel dari dekatmu. Tawa itu tidak membuatnya berhenti mengamati; hanya membuatnya lebih jarang memperlihatkan cara ia mencari pemahaman."
+    nar "Di meja ruang baca Gedung Sains yang tenang, Harumi menggeser selembar kertas bergaris rapi ke depanmu. Kolom-kolom kecil di atasnya penuh catatan waktu dan tingkah lakumu sendiri, mulai dari kapan kamu tersenyum, berapa detik pandanganmu tertahan, hingga topik apa yang mendadak membuatmu terdiam."
+    if kk_host == "chiasa":
+        chiasa "Eh... Kujo-senpai, ini tabel pengamatan tentang aku semua ya?"
+        harumi "Iya, Amamiya-san. Aku sendiri sering tersenyum refleks waktu lagi gugup, jadi kupikir orang lain mungkin juga begitu. Masalahnya, kalau satu gerak tubuh bisa punya dua arti berlawanan, aku jadi nggak tahu kapan boleh percaya pada kesimpulanku sendiri. Apa aku salah mencatatmu?"
     else:
-        nar "Kau membiarkan kekeliruannya ketika kesimpulan itu memberimu keuntungan. Harumi menganggap diammu sebagai konfirmasi dan menulis ulang batas yang semula hendak dipertahankannya."
-        harumi "Jadi aku boleh menganggap kamu menginginkan itu. Baik."
-        nar "Kepastian yang ia pinjam darimu bertumpu pada bagian yang sengaja tidak kauluruskan."
+        yutaka "Tunggu dulu, Kujo-san... kolom di kertas ini isinya catatanku semua waktu kita ngobrol kemarin?"
+        harumi "Betul, Kisaragi-kun. Aku sendiri sering tersenyum justru waktu sedang gugup, jadi aku sadar tanda luar bisa menipu. Kalau tiap reaksi bisa berarti dua hal berbeda, aku jadi bingung kapan boleh percaya pada kesimpulanku. Apakah catatanku ini keliru?"
+    call kk_family_menu("H-D02", ["Koreksi datanya dengan jujur.", "Tertawakan metodenya.", "Biarkan ia salah membaca demi keuntunganmu."])
+    if _return == "A":
+        if kk_host == "chiasa":
+            chiasa "Bagian waktu aku diam di baris ketiga itu aku bukannya marah kok, Kujo-senpai, cuma lagi bingung mikir jawaban yang nggak bikin Senpai tersinggung. Kalau Senpai ragu, tanya langsung aja ya."
+        else:
+            yutaka "Baris yang kamu tulis 'tertarik' itu sebenarnya aku cuma lagi kaget dengar ceritamu, Kujo-san. Kalau kamu nggak yakin sama reaksiku, mending langsung tanya ke orangnya daripada nebak dari tabel."
+        nar "Harumi mencoret pelan dua kolom kesimpulan yang tadi ia buat sepihak, lalu menatap kertas itu dengan senyum tipis yang agak canggung."
+        harumi "Secara teori aku tahu lama tatapan nggak bisa dijadikan bukti persetujuan. Aneh sekali waktu perasaanku sendiri yang bikin aku melewatkan aturan dasar itu. Lain kali aku taruh satu baris khusus buat langsung bertanya padamu."
+    elif _return == "B":
+        if kk_host == "chiasa":
+            chiasa "Haha, serius sampai dibikin tabel kolom kayak laporan praktikum begini, Kujo-senpai? Lucu banget sih!"
+        else:
+            yutaka "Haha, Kujo-san, kamu beneran nyatat obrolan santai kita pakai tabel pengamatan begini? Kayak lagi ngamati kelinci percobaan aja."
+        nar "Raut terbuka di wajah Harumi meredup seketika. Tangannya menarik kertas itu kembali ke arahnya dan melipatnya rapi menjadi dua."
+        harumi "Aku tahu kelihatannya aneh dan berlebihan. Tapi aku sungguh-sungguh berusaha memahami orang lain dengan cara yang kutahu tanpa niat bikin tontonan."
+        nar "Tawa ringanmu tidak menghentikannya mengamati sekitar, tetapi sejak sore itu ia jauh lebih jarang memperlihatkan caranya berusaha mengerti orang lain."
+    else:
+        if kk_host == "chiasa":
+            chiasa "Nggak salah kok, Kujo-senpai. Pengamatan Senpai malah tajam banget, semuanya persis seperti yang Senpai tulis di bawah itu."
+        else:
+            yutaka "Nggak ada yang salah kok, Kujo-san. Analisis yang kamu tulis di bagian bawah itu semuanya tepat."
+        nar "Kamu sengaja membiarkan kesimpulannya yang meleset tetap berdiri karena arah itu menguntungkan posisimu. Harumi mengangguk pelan, menerima anggukanmu sebagai konfirmasi mutlak dan langsung merevisi batas yang semula ia jaga."
+        harumi "Jadi aku boleh menganggap kamu memang menginginkan arah yang ini. Baik, sekarang dataku jelas."
+        nar "Rasa tenang yang ia pinjam darimu kini bertumpu pada celah yang sengaja tidak kamu luruskan."
     return
 
 # ┌─ PANDUAN CERITA · H-D03 · Pintu Lab Jam Sebelas
@@ -67,19 +84,35 @@ label kkscene_H_D03:
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_H_D04:
     call kk_scene_enter("harumi", "Koridor Sains · Tawaran")
-    nar "Ogawa menyapamu setelah Harumi dipanggil ke ruangan lain. Ia membicarakan bakatnya dengan nada akrab, kemudian mulai membahas bagaimana kalian bisa mempermudah pilihan-pilihannya."
-    "Ogawa" "Kau dekat dengannya. Kalau kita saling memahami, banyak hal tidak perlu dibuat sulit. Aku bisa menghargai kerja sama."
-    nar "Harumi tidak berada di sana untuk mendengar dirinya diperlakukan sebagai urusan antara dua orang."
+    nar "Begitu Harumi dipanggil sebentar ke ruang penyimpanan sampel di ujung lorong, langkah tenang Ogawa Masato berhenti tepat di sampingmu. Senyum ramahnya tampak biasa saja di bawah lampu koridor, sampai arah kalimatnya mulai menggeser percakapan menjadi urusan tertutup di antara kalian berdua."
+    if kk_host == "chiasa":
+        "Ogawa" "Amamiya-san akrab sekali ya dengan Kujo. Anak itu berbakat besar, cuma kadang terlalu kaku menghadapi arahan senior di lab. Kalau kita bisa saling sepaham soal mana yang terbaik buat langkah risetnya, banyak hal nggak perlu jadi rumit. Aku selalu menghargai orang yang mau bekerja sama."
+    else:
+        "Ogawa" "Kisaragi-kun kelihatannya cukup dekat ya dengan Kujo. Dia berbakat sekali, sayang kadang terlalu keras kepala menghadapi arahan pembimbing. Kalau kita saling paham bagaimana mengarahkan pilihannya supaya lebih mulus, aku tentu sangat menghargai kerja sama seperti itu."
+    nar "Harumi bahkan tidak berada di lorong itu untuk mendengar dirinya dibicarakan seperti aset riset yang boleh diatur lewat kesepakatan dua orang di luar pintu."
     call kk_family_menu("H-D04", ["Tolak tegas.", "Pura-pura menerima untuk menyusup.", "Laporkan tawaran ini."])
     if _return == "A":
-        "Ogawa" "Sayang sekali. Kupikir kau orang yang realistis."
-        nar "Kau menolak tanpa tertawa untuk melunakkan jawaban. Ogawa segera menyebut tawarannya disalahpahami, tetapi tak lagi mengulangnya. Kau telah kehilangan keramahan yang ternyata memang punya syarat."
+        if kk_host == "chiasa":
+            chiasa "Maaf, Ogawa-san. Pilihan riset Kujo-senpai itu sepenuhnya hak beliau sendiri, aku nggak tertarik bikin kesepakatan apa pun di belakangnya."
+        else:
+            yutaka "Maaf, Ogawa-san. Aku nggak berminat ikut mengatur keputusan Kujo-san di luar sepengetahuannya."
+        nar "Kamu menolak datar tanpa tawa sopan untuk melunakkan kalimatmu. Senyum Ogawa menipis sepersekian detik."
+        "Ogawa" "Sayang sekali. Kupikir kamu orang yang cukup realistis membaca situasi kampus. Ya sudah, anggap saja tadi kamu salah menangkap maksudku."
+        nar "Ia berbalik pergi tanpa mengulang tawarannya lagi. Kamu kehilangan keramahan tipis yang ternyata sejak awal selalu menyimpan syarat."
     elif _return == "B":
-        nar "Kau berpura-pura menyetujui. Ogawa mengendur, memperlakukanmu sebagai orang yang bisa diajak bicara dengan cara berbeda."
-        nar "Kini ada kesempatan mengetahui lebih banyak dan risiko ikut mendapatkan keuntungan yang membuat penolakan semakin sulit. Niat menyusup tidak akan menghapus akibat jika kau mulai menikmati tempat di sisinya."
+        if kk_host == "chiasa":
+            chiasa "...Begitu ya, Ogawa-san. Kalau memang tujuannya supaya Kujo-senpai nggak terlalu tertekan di lab, aku bisa dengerin dulu rencana Ogawa-san kayak gimana."
+        else:
+            yutaka "Menarik juga, Ogawa-san. Kalau memang ada hal yang bisa bikin urusan di lab lebih lancar, aku bisa ikut memantau situasinya."
+        "Ogawa" "Nah, enak kalau bicara dengan orang yang cepat paham begini. Nanti kalau ada jadwal bimbingan tambahan di luar jam lab, biar kukabari kamu duluan."
+        nar "Sikap waspada Ogawa langsung melonggar begitu merasa kamu berada di sisinya. Kini terbuka celah untuk mengetahui langkahnya lebih dalam, sekaligus risiko nyata bila suatu hari kemudahan di dekatnya membuatmu lupa alasan awalmu masuk."
     else:
-        nar "Kau menyampaikan tawaran yang didengar kepada pihak yang dapat menanganinya, membedakan perkataannya dari dugaanmu tentang maksud di baliknya."
-        nar "Ogawa kehilangan kemudahan berbicara seolah semua orang akan menerima bahasa yang sama. Harumi belum mengetahui seluruh persoalannya, tetapi sesuatu di sekitarnya akhirnya mulai diperiksa dari luar."
+        if kk_host == "chiasa":
+            chiasa "Maaf, Ogawa-san, kalimat barusan kedengarannya di luar etika bimbingan lab. Aku bakal catat dan teruskan ke pihak pengawas fakultas supaya semuanya jelas."
+        else:
+            yutaka "Ucapan Ogawa-san barusan jelas melanggar batas bimbingan. Aku akan laporkan langsung hal ini ke koordinator jurusan."
+        nar "Wajah Ogawa menegang dingin, kehilangan seluruh nada santainya sebelum ia sempat memutar kata. Kamu menyampaikan laporan secara lugas hanya berdasarkan kalimat nyata yang ia ucapkan tanpa menambah dugaan apa pun."
+        nar "Harumi mungkin belum mengetahui seluruh pembicaraan di koridor tadi, tetapi untuk pertama kalinya lingkaran kuasa di sekitar labnya mulai diawasi dari luar."
     return
 
 # ┌─ PANDUAN CERITA · H-D06 · Taksi Jam Lima
@@ -159,23 +192,23 @@ label kkscene_H_D09:
 # ┌─ PANDUAN CERITA · H-D10 · Permintaan Komentar
 # │ LOKASI  : (dinamis — muncul dari kondisi)
 # │ TERLIBAT: Kujo Harumi
-# │ AWALAN  : rumor tentang Harumi; Mei menghubungi pemain
+# │ AWALAN  : rumor tentang Harumi; Meisa menghubungi pemain
 # │ INTI    : A bantah / B diam / C beri informasi
-# │ AKHIRAN : reputasi Harumi; Mei mendapat bahan
+# │ AKHIRAN : reputasi Harumi; Meisa mendapat bahan
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_H_D10:
     call kk_scene_enter("harumi", "Permintaan komentar")
-    "Mei" "Aku menulis soal Kujo dan Ogawa. Ada orang bilang dia mendapat perlakuan khusus. Kamu mengenalnya. Satu komentar saja?"
+    "Meisa" "Aku menulis soal Kujo dan Ogawa. Ada orang bilang dia mendapat perlakuan khusus. Kamu mengenalnya. Satu komentar saja?"
     nar "Kau mendengar kata khusus yang selama ini dipakai Ogawa kini muncul sebagai tuduhan terhadap Harumi. Satu kalimat darimu akan mudah dipindahkan ke percakapan yang tidak lagi bisa kaudengar."
     call kk_family_menu("H-D10", ["Bantah rumornya.", "Diam, jangan beri apa pun.", "Beri informasi yang kau tahu."])
     if _return == "A":
-        nar "Kau membantah anggapan yang tidak berdasar dan menolak menjadikan hidup pribadi Harumi bahan hiburan. Mei meminta sesuatu yang lebih tajam; kau tetap pada hal yang benar-benar dapat dikatakan."
+        nar "Kau membantah anggapan yang tidak berdasar dan menolak menjadikan hidup pribadi Harumi bahan hiburan. Meisa meminta sesuatu yang lebih tajam; kau tetap pada hal yang benar-benar dapat dikatakan."
         nar "Rumor tidak hilang seluruhnya, tetapi tidak mendapat dukungan yang diharapkan dari orang dekat."
     elif _return == "B":
-        "Mei" "Tidak mau bicara? Ya sudah. Diammu juga sejenis jawaban, tahu."
-        nar "Kau tidak memberi bahan. Mei pergi membawa kecenderungannya sendiri untuk menafsirkan. Menolak berkomentar tidak otomatis menghentikan orang lain menulis, dan Harumi tetap harus hidup di tengah cerita yang sedang bergerak tanpa dirinya."
+        "Meisa" "Tidak mau bicara? Ya sudah. Diammu juga sejenis jawaban, tahu."
+        nar "Kau tidak memberi bahan. Meisa pergi membawa kecenderungannya sendiri untuk menafsirkan. Menolak berkomentar tidak otomatis menghentikan orang lain menulis, dan Harumi tetap harus hidup di tengah cerita yang sedang bergerak tanpa dirinya."
     else:
-        nar "Kau memberinya informasi yang diketahui. Mei memilih bagian yang paling menarik, tidak selalu bagian yang paling perlu dipahami."
+        nar "Kau memberinya informasi yang diketahui. Meisa memilih bagian yang paling menarik, tidak selalu bagian yang paling perlu dipahami."
         nar "Saat kabar itu kembali ke lingkungan Harumi, yang hilang justru konteks ketakutan dan kuasa. Ia harus menghadapi tatapan tentang percakapan yang tidak pernah ia setujui untuk dibagikan."
     return
 

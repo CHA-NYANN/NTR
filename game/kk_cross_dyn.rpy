@@ -7,7 +7,7 @@
 # │ TERLIBAT: Lintas-tokoh
 # │ AWALAN  : jeal[[moeka] Nagisa ≥ 60; stres_total Moeka ≥ 60; keduanya di konbini saat Dini Hari
 # │ INTI    : A lerai / B bela Moeka / C bela Nagisa / D pergi
-# │ AKHIRAN : stres Moeka; tahap Nagisa; bila pemain tidak ada, Rina mendengar ceritanya besok
+# │ AKHIRAN : stres Moeka; tahap Nagisa; bila pemain tidak ada, Ryena mendengar ceritanya besok
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_X_D01:
     call kk_scene_enter("moeka", "Konbini · Dini hari")
@@ -24,7 +24,7 @@ label kkscene_X_D01:
     elif _return == "C":
         moeka "Baik. Sekarang aku harus menerima penilaian kalian sambil tetap melayani pelanggan. Kalau sudah selesai membicarakanku, tolong beri aku ruang untuk bekerja."
     else:
-        nar "Kau keluar saat pertengkaran belum selesai. Dari balik kaca, kau melihat Moeka kembali berdiri tegak ketika pelanggan lain masuk. Esoknya Rina mendengar cerita itu darinya. Ketidakhadiranmu tidak menghapus peranmu; seseorang akan mengingat bahwa kau ada, lalu memilih pergi."
+        nar "Kau keluar saat pertengkaran belum selesai. Dari balik kaca, kau melihat Moeka kembali berdiri tegak ketika pelanggan lain masuk. Esoknya Ryena mendengar cerita itu darinya. Ketidakhadiranmu tidak menghapus peranmu; seseorang akan mengingat bahwa kau ada, lalu memilih pergi."
     return
 
 # ┌─ PANDUAN CERITA · X-D02 · Calon Dokter Membaca Tanda
@@ -95,33 +95,88 @@ label kkscene_X_D04:
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_X_D05:
     call kk_scene_enter("chiasa", "Rumah Amamiya · Natal")
-    nar "Rumah Amamiya penuh suara malam itu. Piring berpindah tangan, seseorang mencari pembuka botol, dan beberapa tamu yang sama-sama dekat denganmu akhirnya duduk dalam ruangan yang sama. Koita membantu dari dapur sambil memperhatikan betapa sering orang menoleh untuk memastikan di mana kau berada."
+    if kk_host == "chiasa":
+        nar "Ruang makan Rumah Amamiya penuh suara dan aroma hidangan hangat pada malam Natal itu. Piring berpindah tangan, musik lembut mengalir dari pemutar kecil di sudut lemari, dan beberapa orang yang sama-sama dekat denganmu akhirnya berada di dalam satu ruangan yang sama."
+        moeka "Wah, bau supnya enak banget! Chimian, aku taruh kotak kue Natalnya di tengah meja ya biar semua kebagian!"
+        miyuki "Terima kasih sudah mengundang, Chiasa-chan. Aku juga membawa teh hangat buat nanti setelah makan. Boleh aku bantu tata gelasnya?"
+        nagisa "Eh, piring tambahannya masih di rak dapur kan? Biar aku yang ambilkan sekalian lihat Ko-kun masih butuh bantuan apa nggak."
+        nar "Dari balik meja dapur, Koita keluar membawa panci sup mengepul sambil tersenyum, tetapi sorot matanya sempat menyapu ruangan dan menangkap betapa sering beberapa tamu menoleh untuk memastikan di mana kamu berdiri."
+        koita "Wah, ramai banget malam ini! Chi-chan, kursinya sudah cukup semua kan? Kamu mau atur duduknya dulu biar nggak sempit?"
+    else:
+        nar "Malam Natal ini kamu datang membantu Koita dan Chiasa menyiapkan jamuan di Rumah Amamiya, dan ruang makan yang biasanya tenang itu kini dipenuhi tawa serta aroma masakan hangat. Beberapa orang yang sama-sama dekat denganmu akhirnya berkumpul di bawah satu atap pada waktu yang bersamaan."
+        moeka "Yutayuta! Tolong dong pembuka botol jusnya di sebelah mana ya? Aku sudah muter meja dua kali nggak ketemu!"
+        miyuki "Malam, Yutaka-kun. Terima kasih sudah bantu menyiapkan meja bareng Koita-kun. Kue Natalnya kutaruh sebelah sini ya?"
+        nagisa "Heh, Yutaka, jangan cuma berdiri di tengah jalan dong, gelasnya mau lewat nih. Chiasa, ini ditaruh sebelah piring besar kan?"
+        chiasa "Iya, taruh situ aja, Nagisa-senpai. Makasih ya!"
+        nar "Koita melangkah dari dapur membawa nampan besar berisi hidangan utama. Sambil menurunkan piring ke meja, ia sempat memperhatikan bagaimana setiap kali kamu bergerak, ada dua atau tiga pasang mata di ruangan itu yang tanpa sadar ikut menoleh."
+        koita "Oke, makanan utamanya siap! Yutaka, kursinya kita atur sekarang biar semua bisa langsung duduk nyaman."
     call kk_family_menu("X-D05", ["Atur tempat duduk dengan hati-hati.", "Bagi perhatian secara merata.", "Keluar sebentar mencari udara."])
     if _return == "A":
-        nar "Kau membantu mengatur tempat duduk, terlalu sadar siapa yang ditempatkan dekat dengan siapa. Koita mengikuti gerakanmu, kemudian menanyakan apakah semua orang sudah nyaman. Pertanyaan sederhana itu membuatmu melihat meja makan yang sempat kauperlakukan seperti susunan yang dapat mengendalikan perasaan."
+        if kk_host == "chiasa":
+            chiasa "Sebentar ya semuanya, biar nggak sempit dan gampang ambil kuahnya, Tachibana-senpai duduk di sisi kiri dekat jendela, Moemoe-senpai di sebelahnya, terus Nagisa-senpai di seberang biar dekat sama teko teh."
+            nagisa "Hm, oke juga sih, jadi gampang nuang tehnya."
+            miyuki "Rapi sekali susunannya, Chiasa-chan. Kamu duduk di sebelah mana?"
+            nar "Kamu terlalu sadar siapa yang sengaja kamu tempatkan berdekatan dan siapa yang kamu pisahkan satu kursi. Koita mengikuti gerak matamu dengan tenang, lalu berhenti di samping bahumu sambil meletakkan sendok saji."
+            koita "Semua sudah dapat posisi yang nyaman kan, Chi-chan? Kamu sendiri duduk di kursi yang enak juga lho, jangan cuma mikirin tamu sampai lupa makan."
+            chiasa "Iya, Ko-nii... aku duduk sini kok."
+        else:
+            yutaka "Biar gampang ambil kuahnya, Tachibana-senpai sama Kohinata di sisi kiri aja ya, terus Nagisa di sebelah Chiasa biar dekat sama piring kue. Aku sama Koita di ujung sini."
+            moeka "Siap, kapten pengatur kursi! Tapi Yutayuta duduknya dekat aku dong biar gampang minta tolong ambilin salad!"
+            nagisa "Dasar, tinggal ulurin tangan sendiri juga nyampe, Kohinata-san."
+            nar "Kamu terus mengawasi susunan kursi itu seolah satu geseran kecil bisa menjaga suasana tetap aman. Koita melirikmu pelan sambil meletakkan mangkuk terakhir di dekat tempatmu."
+            koita "Sudah pas semua posisinya, Yutaka? Semua orang kelihatan nyaman nggak menurutmu?"
+            yutaka "Iya, sudah aman semua kok, Koita. Ayo kita mulai makan."
+        nar "Pertanyaan sederhana Koita barusan membuatmu terdiam sejenak. Kamu baru sadar betapa tegangnya kamu memperlakukan meja makan malam Natal itu seperti papan strategi yang harus dikendalikan agar perasaan semua orang tetap rapi."
     elif _return == "B":
-        nar "Kau berusaha mendengar tiap orang tanpa menjanjikan keistimewaan lewat bisikan yang berbeda-beda. Ada percakapan yang terlewat dan cemburu yang belum selesai, tetapi malam ini tak seorang pun sengaja dibiarkan menjadi penonton. Yoshie menambah makanan ketika tawa akhirnya terdengar tanpa terlalu banyak orang memeriksa reaksimu."
+        if kk_host == "chiasa":
+            chiasa "Duduk di mana aja yang paling nyaman ya semuanya! Nggak usah sungkan ambil lauknya. Oh iya, Moemoe-senpai, gimana acara kampus minggu kemarin? Terus Tachibana-senpai, jadwal ujian akhir semester sudah mulai padat ya?"
+            moeka "Seru banget, Chimian! Tunggu, aku cerita sambil makan ayam panggangnya ya!"
+            miyuki "Lumayan padat, Chiasa-chan, tapi malam ini rasanya lega sekali bisa duduk santai makan hangat bareng kalian semua."
+            nagisa "Eh, kalau kuahnya kurang hangat bilang ya, tadi aku sama Chiasa sengaja sisain sedikit di kompor."
+            koita "Nah, kalau begini kan enak, semua ikut ngobrol bareng! Ayo, jangan sampai dingin supnya."
+        else:
+            yutaka "Bebas aja duduk di mana yang paling enak, nggak usah formal-formal. Gimana minggu ini, Tachibana-senpai? Kohinata juga katanya habis lembur beres-beres kostum?"
+            miyuki "Syukurlah minggu ini agak longgar sedikit, Yutaka-kun. Terima kasih sudah menanyakan."
+            moeka "Iya nih! Akhirnya malam Natal bisa istirahat makan enak tanpa mikirin jahitan baju!"
+            nagisa "Eh, Yutaka, ambilin saus yang di depanmu dong. Chiasa juga mau sekalian nggak?"
+            chiasa "Boleh, Nagisa-senpai, makasih!"
+            koita "Wah, akhirnya suasana meja makannya hidup banget! Sini kuambilkan tambahannya dari dapur."
+        nar "Kamu menyimak cerita setiap orang dengan utuh tanpa menyelipkan bisikan istimewa yang membedakan satu tamu dari tamu lainnya. Masih ada beberapa percakapan kecil yang terlewat dan sisa cemburu tipis di sudut pandang, tetapi malam ini tidak seorang pun dibiarkan merasa hanya menjadi penonton."
+        if kk_bulan >= 21:
+            nar "Yoshie ikut tersenyum dari dekat dapur sambil menambahkan potongan roti hangat ke tengah meja ketika tawa para tamu akhirnya mengalir lepas tanpa lagi terlalu sering melirik reaksimu."
+        else:
+            nar "Koita tersenyum lega sambil menambahkan piring kue hangat ke tengah meja ketika tawa para tamu akhirnya mengalir lepas tanpa lagi terlalu sering melirik reaksimu."
     else:
-        nar "Kau keluar mencari udara. Dari halaman, tawa di dalam terdengar lebih mudah daripada yang kaurasakan saat duduk di sana. Ketika kembali, dua tamu telah menemukan topik sendiri dan Koita sedang mendengarkan dengan hangat. Hubungan mereka bergerak juga selama kau tidak berada di tengahnya."
+        if kk_host == "chiasa":
+            chiasa "Kalian makan dulu aja ya, aku ke teras sebentar mau cek kotak surat sama cari angin, di dalam agak gerah dekat kompor."
+            koita "Jangan lama-lama ya, Chi-chan, dingin di luar. Nanti supmu keburu dingin."
+        else:
+            yutaka "Aku keluar teras sebentar cari udara dingin ya, habis bantu angkat panci tadi gerah juga. Kalian lanjut dulu aja."
+            koita "Oke, jangan kelamaan, nanti kuenya habis disikat Moeka-chan lho."
+        nar "Kamu melangkah ke teras depan yang disapu angin dingin Desember. Dari balik jendela kaca yang berembun tipis, suara tawa dari ruang makan terdengar jauh lebih ringan dan lepas daripada yang kamu rasakan saat duduk tegang di tengah meja tadi."
+        nar "Lima menit kemudian, saat kamu kembali membuka pintu, Miyuki dan Moeka sedang tertawa membicarakan resep kue sementara Nagisa dan Koita saling menimpali cerita lama dengan santai."
+        moeka "Eh, sudah balik! Sini, duduk lagi, tadi kita lagi bahas resep kue coklatnya Miyumiyu-senpai!"
+        koita "Sudah mendingan udaranya? Ayo, piringmu sudah kusiapkan di sebelah sini."
+        nar "Melihat kehangatan yang tetap mengalir di meja itu membuatmu mengerti satu hal penting. Hubungan di antara orang-orang ini tetap bergerak dan bernapas dengan sendirinya bahkan ketika kamu sedang tidak berdiri di tengahnya."
     return
 
-# ┌─ PANDUAN CERITA · X-D06 · Wawancara Mei
+# ┌─ PANDUAN CERITA · X-D06 · Wawancara Meisa
 # │ LOKASI  : (dinamis — muncul dari kondisi)
 # │ TERLIBAT: Lintas-tokoh
-# │ AWALAN  : Mei menulis tentang pemain
-# │ INTI    : A Hentikan Mei / B biarkan / C bayar Mei
+# │ AWALAN  : Meisa menulis tentang pemain
+# │ INTI    : A Hentikan Meisa / B biarkan / C bayar Meisa
 # │ AKHIRAN : jawaban tiap heroine mengikuti keadaannya; reputasi
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_X_D06:
-    call kk_scene_enter("koita", "Kampus · Wawancara Mei")
-    "Mei" "Aku sedang menulis tentang cara orang-orang di kampus mengenalmu. Aku akan meminta persetujuan mereka untuk bagian pribadi. Kau boleh memberi komentar, tapi aku tidak akan menjadikan jawabanmu satu-satunya versi."
-    call kk_family_menu("X-D06", ["Hentikan Mei.", "Biarkan ia menulis.", "Bayar Mei agar menyetir ceritanya."])
+    call kk_scene_enter("koita", "Kampus · Wawancara Meisa")
+    "Meisa" "Aku sedang menulis tentang cara orang-orang di kampus mengenalmu. Aku akan meminta persetujuan mereka untuk bagian pribadi. Kau boleh memberi komentar, tapi aku tidak akan menjadikan jawabanmu satu-satunya versi."
+    call kk_family_menu("X-D06", ["Hentikan Meisa.", "Biarkan ia menulis.", "Bayar Meisa agar menyetir ceritanya."])
     if _return == "A":
-        nar "Kau menuntut Mei menghentikan tulisan itu. Ia menutup buku catatan setelah perdebatan yang tidak lagi terdengar seperti permintaan menjaga privasi. Tulisan itu belum terbit, tetapi caramu menekan pembicaraan menjadi sesuatu yang kini ia ketahui sendiri, tanpa perlu mewawancarai orang lain."
+        nar "Kau menuntut Meisa menghentikan tulisan itu. Ia menutup buku catatan setelah perdebatan yang tidak lagi terdengar seperti permintaan menjaga privasi. Tulisan itu belum terbit, tetapi caramu menekan pembicaraan menjadi sesuatu yang kini ia ketahui sendiri, tanpa perlu mewawancarai orang lain."
     elif _return == "B":
-        nar "Kau membiarkan Mei menulis dan menjawab pertanyaan yang bersedia kaubahas. Ia tidak berjanji hasilnya akan menyenangkanmu. Untuk pertama kalinya, kisah tentang dirimu akan memuat suara orang yang tidak dapat kaatur urutannya atau kaupotong ketika mulai membuatmu tidak nyaman."
+        nar "Kau membiarkan Meisa menulis dan menjawab pertanyaan yang bersedia kaubahas. Ia tidak berjanji hasilnya akan menyenangkanmu. Untuk pertama kalinya, kisah tentang dirimu akan memuat suara orang yang tidak dapat kaatur urutannya atau kaupotong ketika mulai membuatmu tidak nyaman."
     else:
-        nar "Kau membayar agar tulisan itu menguntungkanmu. Begitu transaksi selesai, keramahan percakapan berubah menjadi kesepakatan yang kelak bisa dipersoalkan. Pembaca mungkin belum tahu, tetapi kau dan Mei tahu ada bagian kisah yang dibentuk demi orang yang sanggup membelinya."
+        nar "Kau membayar agar tulisan itu menguntungkanmu. Begitu transaksi selesai, keramahan percakapan berubah menjadi kesepakatan yang kelak bisa dipersoalkan. Pembaca mungkin belum tahu, tetapi kau dan Meisa tahu ada bagian kisah yang dibentuk demi orang yang sanggup membelinya."
     return
 
 # ┌─ PANDUAN CERITA · X-D07 · Rapat Rahasia Koita
@@ -144,7 +199,7 @@ label kkscene_X_D07:
         nar "Kau membiarkan mereka berbicara. Dari luar, sulit menerima bahwa mereka berhak membahas pengalaman masing-masing tanpa memberimu kesempatan menyela. Ketika pertemuan selesai, beberapa hubungan di dalamnya menjadi lebih kuat. Koita tidak lagi harus menanggung keraguannya seorang diri."
     return
 
-# ┌─ PANDUAN CERITA · X-D08 · Rina dan Sena Bertukar Cerita
+# ┌─ PANDUAN CERITA · X-D08 · Ryena dan Yuina Bertukar Cerita
 # │ LOKASI  : (dinamis — muncul dari kondisi)
 # │ TERLIBAT: Lintas-tokoh
 # │ AWALAN  : rina_curiga dan sena_curiga ≥ 50
@@ -153,15 +208,15 @@ label kkscene_X_D07:
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_X_D08:
     call kk_scene_enter("moeka", "Kafe · Dua sahabat bertukar cerita")
-    nar "Rina dan Sena bertemu di kafe dan menemukan bahwa beberapa cerita yang mereka dengar tentangmu tidak cocok. Keduanya tidak saling mengenal cukup lama untuk langsung percaya. Justru karena itu, pertanyaan mereka menjadi hati-hati dan semakin sulit diabaikan sebagai kecemburuan seorang teman."
-    "Rina" "Jadi ada bagian yang berbeda dari yang diceritakan kepadaku. Aku tidak mau menyimpulkan sendiri. Tapi kalau teman kita terus yang menanggung akibat, kita harus bertanya."
+    nar "Ryena dan Yuina bertemu di kafe dan menemukan bahwa beberapa cerita yang mereka dengar tentangmu tidak cocok. Keduanya tidak saling mengenal cukup lama untuk langsung percaya. Justru karena itu, pertanyaan mereka menjadi hati-hati dan semakin sulit diabaikan sebagai kecemburuan seorang teman."
+    "Ryena" "Jadi ada bagian yang berbeda dari yang diceritakan kepadaku. Aku tidak mau menyimpulkan sendiri. Tapi kalau teman kita terus yang menanggung akibat, kita harus bertanya."
     call kk_family_menu("X-D08", ["Temui mereka langsung.", "Hindari keduanya.", "Jujur sepenuhnya."])
     if _return == "A":
-        nar "Kau duduk di hadapan keduanya dan mendengarkan sebelum menjawab. Rina membahas yang terjadi pada temannya, Sena menanyakan perkataanmu yang tidak cocok. Menjawab langsung meredakan sebagian dugaan, tetapi kau tidak dapat meminta mereka melupakan hak teman-temannya untuk mengetahui hal yang sama."
+        nar "Kau duduk di hadapan keduanya dan mendengarkan sebelum menjawab. Ryena membahas yang terjadi pada temannya, Yuina menanyakan perkataanmu yang tidak cocok. Menjawab langsung meredakan sebagian dugaan, tetapi kau tidak dapat meminta mereka melupakan hak teman-temannya untuk mengetahui hal yang sama."
     elif _return == "B":
         nar "Kau menghindari keduanya. Mereka tidak mendapatkan penjelasan darimu, lalu berusaha memeriksa cerita yang sudah ada. Ketiadaan jawaban bukan bukti untuk setiap dugaan, tetapi cukup membuat mereka berhenti memberimu kepercayaan hanya karena selama ini kau terdengar meyakinkan."
     else:
-        nar "Kau mengakui bagian yang selama ini kausampaikan berbeda kepada orang berbeda. Rina marah, Sena meminta kau tidak menyebut pengakuan itu sebagai hadiah. Mereka akan menyampaikan kebenaran kepada orang yang perlu tahu. Kau kehilangan kendali atas cerita, sekaligus berhenti menambah kebohongan pada hari ini."
+        nar "Kau mengakui bagian yang selama ini kausampaikan berbeda kepada orang berbeda. Ryena marah, Yuina meminta kau tidak menyebut pengakuan itu sebagai hadiah. Mereka akan menyampaikan kebenaran kepada orang yang perlu tahu. Kau kehilangan kendali atas cerita, sekaligus berhenti menambah kebohongan pada hari ini."
     return
 
 # ┌─ PANDUAN CERITA · X-D09 · Dua Penjaga

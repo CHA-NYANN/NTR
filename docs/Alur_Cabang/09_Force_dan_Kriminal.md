@@ -167,7 +167,7 @@ flowchart TD
 
 | Kapan dan kondisi | Ditentukan oleh | Reaksi dan akibat |
 |---|---|---|
-| Masih percaya dan dekat dengan pemain | `trust_koita` tinggi | **Membeku.** Ia tidak bisa memproses bahwa orang yang masih ia percaya melakukan ini — khas protagonis shounen yang menyaksikan heroine-nya disentuh oleh "kang NTR" dan gagal bergerak. `runtuh_koita` naik besar; jalur E-KO-19 |
+| Masih percaya dan dekat dengan pemain | `trust_koita` tinggi | **Membeku.** Ia tidak bisa memproses bahwa orang yang masih ia percaya melakukan ini — khas MC shounen yang menyaksikan heroine-nya disentuh oleh "kang NTR" dan gagal bergerak. `runtuh_koita` naik besar; jalur E-KO-19 |
 | Sudah lama curiga atau sudah lepas dari pemain | `trust_koita` rendah (mis. `koita_sadar` tinggi, pola sudah ketahuan) | Ia bisa bertindak: **melawan** (Fear rendah, korban sangat ia sayangi; perkelahian dan cedera, [dokumen sistem](../Sistem_Waktu_Bebas_dan_Kondisi_Fisik.md) §4.4) atau **lari mencari bantuan** (lebih berhati-hati; polisi datang, saksi kuat) — menuju E-FO-11 dan E-KO-20 |
 | Diancam sebelum atau sesudah bereaksi | pemain mengancamnya; ancaman adalah kejahatan baru | berlaku di kedua cabang di atas; ia diam (E-FO-14); ancaman bisa terbongkar kapan saja |
 | Datang lebih dulu | `plot_armor_tekanan` dan jarak Koita saat itu | percobaan gagal; korban berlindung pada Koita (E-FO-13) |

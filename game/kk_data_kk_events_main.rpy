@@ -68,7 +68,7 @@ init -5 python:
         "label": "tidak menulis."
        }
       ],
-      "effect": "harapan_pemain; C membuat Haruka bertanya."
+      "effect": "harapan_pemain; C membuat Karuha bertanya."
      },
      {
       "id": "C04",
@@ -94,7 +94,7 @@ init -5 python:
      {
       "id": "C05",
       "month": "M08",
-      "title": "Mio Menelepon",
+      "title": "Miono Menelepon",
       "trigger": "editor meminta cover jilid baru.",
       "choices": [
        {
@@ -107,7 +107,7 @@ init -5 python:
        },
        {
         "key": "C",
-        "label": "minta bantuan Haruka."
+        "label": "minta bantuan Karuha."
        }
       ],
       "effect": "curiga_mio; B bisa membuka kemampuan baru bertahap."
@@ -165,7 +165,7 @@ init -5 python:
      {
       "id": "C08",
       "month": "M13",
-      "title": "Haruka Curiga",
+      "title": "Karuha Curiga",
       "trigger": "gambar sketsa pemain berubah gaya.",
       "choices": [
        {
@@ -202,7 +202,7 @@ init -5 python:
         "label": "berhenti."
        }
       ],
-      "effect": "royalti ¥50.000 tetap masuk (), tetapi tawaran proyek dari Mio bisa gagal."
+      "effect": "royalti ¥50.000 tetap masuk (), tetapi tawaran proyek dari Miono bisa gagal."
      },
      {
       "id": "C10",
@@ -428,7 +428,7 @@ init -5 python:
         "label": "sabotase pembagian kamar."
        }
       ],
-      "effect": "A–C menggeser Jealousy; D memicu kecurigaan Fujisawa/Rina bila ketahuan."
+      "effect": "A–C menggeser Jealousy; D memicu kecurigaan Fujisawa/Ryena bila ketahuan."
      },
      {
       "id": "K03",
@@ -677,7 +677,7 @@ init -5 python:
       "id": "K14",
       "month": "M18",
       "title": "Rumor tentang Koita",
-      "trigger": "Kurosawa Mei mengunggah rumor bahwa Koita \"mempermainkan\".",
+      "trigger": "Kurosawa Meisa mengunggah rumor bahwa Koita \"mempermainkan\".",
       "choices": [
        {
         "key": "A",
@@ -693,7 +693,7 @@ init -5 python:
        },
        {
         "key": "D",
-        "label": "beli kebungkaman Mei."
+        "label": "beli kebungkaman Meisa."
        }
       ],
       "effect": "reputasi Koita; C bisa memicu rute kehancuran."
@@ -1044,7 +1044,7 @@ init -5 python:
        },
        {
         "key": "D",
-        "label": "minta bantuan Daichi."
+        "label": "minta bantuan Kaichi."
        }
       ],
       "effect": "IPK; B berisiko skorsing akademik ()."
@@ -1073,8 +1073,8 @@ init -5 python:
      {
       "id": "Y06",
       "month": "M08",
-      "title": "Daichi Membocorkan",
-      "trigger": "Daichi tahu sesuatu tentang Shiori/Moeka dan menawarkannya.",
+      "title": "Kaichi Membocorkan",
+      "trigger": "Kaichi tahu sesuatu tentang Shiori/Moeka dan menawarkannya.",
       "choices": [
        {
         "key": "A",
@@ -1089,7 +1089,7 @@ init -5 python:
         "label": "tawar informasi lain."
        }
       ],
-      "effect": "intel; C membuat Daichi mulai mengorek rahasia pemain."
+      "effect": "intel; C membuat Kaichi mulai mengorek rahasia pemain."
      },
      {
       "id": "Y07",
@@ -1208,7 +1208,7 @@ init -5 python:
       "id": "Y12",
       "month": "M20",
       "title": "Pameran Chiasa",
-      "trigger": "pameran seni; Haruka mengenalkan Chiasa.",
+      "trigger": "pameran seni; Karuha mengenalkan Chiasa.",
       "choices": [
        {
         "key": "A",
@@ -1471,7 +1471,7 @@ init -5 python:
      {
       "id": "Mo06",
       "month": "M07",
-      "title": "Kuga Renji: Tawaran Foto",
+      "title": "Kuga Renma: Tawaran Foto",
       "trigger": "fotografer menawarkan pekerjaan modeling.",
       "choices": [
        {
@@ -1619,7 +1619,7 @@ init -5 python:
       "id": "Mo13",
       "month": "M18",
       "title": "Foto yang Beredar",
-      "trigger": "rumor Mei tentang Moeka.",
+      "trigger": "rumor Meisa tentang Moeka.",
       "choices": [
        {
         "key": "A",
@@ -1723,8 +1723,8 @@ init -5 python:
      {
       "id": "Mo18",
       "month": "M26",
-      "title": "Rina Bicara",
-      "trigger": "Rina menegur pemain.",
+      "title": "Ryena Bicara",
+      "trigger": "Ryena menegur pemain.",
       "choices": [
        {
         "key": "A",
@@ -1807,7 +1807,7 @@ init -5 python:
      {
       "id": "Mo22",
       "month": "M30",
-      "title": "Ren Menelepon",
+      "title": "Reito Menelepon",
       "trigger": "adiknya khawatir.",
       "choices": [
        {
@@ -2614,7 +2614,7 @@ init -5 python:
       "id": "S12",
       "month": "M18",
       "title": "Rumor tentang Shiori",
-      "trigger": "Mei menulis.",
+      "trigger": "Meisa menulis.",
       "choices": [
        {
         "key": "A",
@@ -2991,7 +2991,7 @@ init -5 python:
      {
       "id": "N06",
       "month": "M07",
-      "title": "Yuuto Menawarkan Bantuan",
+      "title": "Fuuto Menawarkan Bantuan",
       "trigger": "Mochizuki membantu maket.",
       "choices": [
        {
@@ -3239,7 +3239,7 @@ init -5 python:
      {
       "id": "N18",
       "month": "M26",
-      "title": "Yuuto dan Sabotase",
+      "title": "Fuuto dan Sabotase",
       "trigger": "Nagisa mengganggu pesaing.",
       "choices": [
        {
@@ -3437,7 +3437,7 @@ init -5 python:
        },
        {
         "key": "B",
-        "label": "panggil Sena"
+        "label": "panggil Yuina"
        },
        {
         "key": "C",
@@ -3491,12 +3491,12 @@ init -5 python:
      {
       "id": "Mi07",
       "month": "M07",
-      "title": "Takeru Muncul",
+      "title": "Tatsuru Muncul",
       "trigger": "omiai pertama dari orang tua.",
       "choices": [
        {
         "key": "A",
-        "label": "dukung Takeru"
+        "label": "dukung Tatsuru"
        },
        {
         "key": "B",
@@ -3512,8 +3512,8 @@ init -5 python:
      {
       "id": "Mi08",
       "month": "M08",
-      "title": "Sena dan Psikolog",
-      "trigger": "Sena memperkenalkan Sato Kyoko.",
+      "title": "Yuina dan Psikolog",
+      "trigger": "Yuina memperkenalkan Sato Kyoko.",
       "choices": [
        {
         "key": "A",
@@ -3697,7 +3697,7 @@ init -5 python:
        },
        {
         "key": "D",
-        "label": "bawa ke Sena/Sato."
+        "label": "bawa ke Yuina/Sato."
        }
       ],
       "effect": "gerbang Rute Masokis (stage 4); D membuka jalur pemulihan."
@@ -3721,7 +3721,7 @@ init -5 python:
         "label": "manfaatkan."
        }
       ],
-      "effect": "Sena menegur pemain."
+      "effect": "Yuina menegur pemain."
      },
      {
       "id": "Mi18",
@@ -3819,7 +3819,7 @@ init -5 python:
        },
        {
         "key": "C",
-        "label": "bawa ke Sena/Sato."
+        "label": "bawa ke Yuina/Sato."
        }
       ],
       "effect": "A bisa membuat pola permanen setelah 1 semester; C membuka pemulihan sebagian."
@@ -3843,7 +3843,7 @@ init -5 python:
         "label": "tinggalkan."
        }
       ],
-      "effect": "Sena memutus hubungan jika pemain memanfaatkan."
+      "effect": "Yuina memutus hubungan jika pemain memanfaatkan."
      },
      {
       "id": "Mi24",
@@ -3870,7 +3870,7 @@ init -5 python:
       "id": "Mi25",
       "month": "M33",
       "title": "Natal: Pertunangan?",
-      "trigger": "Takeru melamar.",
+      "trigger": "Tatsuru melamar.",
       "choices": [
        {
         "key": "A",
@@ -3890,12 +3890,12 @@ init -5 python:
      {
       "id": "Mi26",
       "month": "M34",
-      "title": "Ujian Akhir dan Sena",
-      "trigger": "Sena berdiri di sisi pemain atau melawan.",
+      "title": "Ujian Akhir dan Yuina",
+      "trigger": "Yuina berdiri di sisi pemain atau melawan.",
       "choices": [
        {
         "key": "A",
-        "label": "minta bantuan Sena"
+        "label": "minta bantuan Yuina"
        },
        {
         "key": "B",

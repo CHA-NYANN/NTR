@@ -1,4 +1,4 @@
-# Ito Shinji — pemilik Kafe Komorebi
+# Ito Shinpei — pemilik Kafe Komorebi
 
 Status: 🟡 seluruhnya usulan.
 

@@ -1,4 +1,4 @@
-# Fujisawa Ayane — ketua BEM Universitas
+# Fujisawa Sayane — ketua BEM Universitas
 
 Status: 🟡 seluruhnya usulan.
 

@@ -3,32 +3,32 @@
 # omiai_takeru) yang sudah ada. Beat perawatan ditulis sebagai pemulihan; cabang
 # gelap (menuruti hukuman-diri, merekam diam-diam, menekan Koita) ditulis sebagai
 # KONSEKUENSI dan KARAKTER saja, tanpa metode. Gerbang yuri (Mi-D13) tidak dibuka.
-# Nilai prototipe; mengikuti Event_Miyuki. Sena & Sato Kyoko memakai nama-penutur.
+# Nilai prototipe; mengikuti Event_Miyuki. Yuina & Sato Kyoko memakai nama-penutur.
 
 # --- 3 pilihan ------------------------------------------------------------
 # ┌─ PANDUAN CERITA · Mi-D05 · Tangga Darurat Jam Tiga
 # │ LOKASI  : (dinamis — muncul dari kondisi)
 # │ TERLIBAT: Tachibana Miyuki
 # │ AWALAN  : Tahun 3; jaga malam; luka[[diri] ≥ 50; pemain di RS saat Dini Hari
-# │ INTI    : A Duduk di sebelahnya / B panggil Sena / C pergi diam-diam
-# │ AKHIRAN : luka[[diri] −15 / Sena menjadi sekutu / tidak ada
+# │ INTI    : A Duduk di sebelahnya / B panggil Yuina / C pergi diam-diam
+# │ AKHIRAN : luka[[diri] −15 / Yuina menjadi sekutu / tidak ada
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_Mi_D05:
     call kk_scene_enter("miyuki", "Rumah Sakit Tachibana · Tangga darurat")
     nar "Pintu tangga darurat menutup dengan desis pelan. Miyuki duduk di anak tangga paling bawah, dekat lantai, memegang teh yang belum dibuka. Jam di ponselnya menunjukkan lewat pukul tiga."
     miyuki "Aku tahu harus kembali sebentar lagi. Di sini nggak ada yang bertanya apa pun selama satu menit. Ternyata aku ingin sekali satu menit itu."
     nar "Ia bergeser ketika melihatmu, belum jelas sedang menawarkan tempat atau bersiap berdiri agar tak dianggap mengabaikan tugas."
-    call kk_family_menu("Mi-D05", ["Duduk di sebelahnya tanpa banyak kata.", "Panggilkan Sena, rekannya.", "Pergi diam-diam agar ia sendiri."])
+    call kk_family_menu("Mi-D05", ["Duduk di sebelahnya tanpa banyak kata.", "Panggilkan Yuina, rekannya.", "Pergi diam-diam agar ia sendiri."])
     if _return == "A":
         nar "Kau duduk dengan satu anak tangga di antara kalian. Miyuki menunggu pertanyaan, kemudian pelan-pelan melepaskan napas ketika tidak ada yang menuntut cerita."
         miyuki "Aku tadi merasa harus menjelaskan kenapa belum masuk. Padahal kamu bahkan belum bertanya."
         nar "Kau menunjukkan teh di tangannya. Ia membukanya setelah sadar sejak tadi hanya memegang."
         miyuki "Boleh sampai minuman ini habis? Setelah itu aku bisa pikirkan langkah berikutnya."
     elif _return == "B":
-        nar "Kau memberi tahu Miyuki sebelum memanggil Sena. Ia sempat ingin menolak karena merasa merepotkan, lalu mengangguk kecil."
-        "Sena" "Aku bisa duduk sebentar. Setelah itu kita lihat jadwalmu, ya. Jangan tambah tugas dulu."
+        nar "Kau memberi tahu Miyuki sebelum memanggil Yuina. Ia sempat ingin menolak karena merasa merepotkan, lalu mengangguk kecil."
+        "Yuina" "Aku bisa duduk sebentar. Setelah itu kita lihat jadwalmu, ya. Jangan tambah tugas dulu."
         miyuki "Aku nggak tahu aku butuh apa."
-        "Sena" "Kalau begitu kita mulai dari nggak sendirian di sini."
+        "Yuina" "Kalau begitu kita mulai dari nggak sendirian di sini."
         nar "Miyuki menurunkan bahu. Ia tidak lagi harus menyusun alasan sempurna agar seseorang tetap tinggal."
     else:
         nar "Kau mundur sebelum ia melihatmu dengan jelas. Pintu kembali menutup, menyisakan bayangannya dalam celah kaca sempit."
@@ -44,23 +44,23 @@ label kkscene_Mi_D05:
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_Mi_D10:
     call kk_scene_enter("miyuki", "Rumah Sakit Tachibana · Ruang resep")
-    nar "Sena menahan lembar resep sebelum diserahkan untuk pemeriksaan berikutnya. Ada kesalahan pada tulisan Miyuki. Ia membacanya, mengoreksi, lalu membaca ulang seolah tidak mengenali gerakan tangannya sendiri."
+    nar "Yuina menahan lembar resep sebelum diserahkan untuk pemeriksaan berikutnya. Ada kesalahan pada tulisan Miyuki. Ia membacanya, mengoreksi, lalu membaca ulang seolah tidak mengenali gerakan tangannya sendiri."
     miyuki "Aku tahu yang benar. Aku bisa menjelaskan. Tadi tanganku..."
-    "Sena" "Belum sampai ke pasien. Sekarang berhenti dulu. Kamu perlu didampingi pembimbing."
+    "Yuina" "Belum sampai ke pasien. Sekarang berhenti dulu. Kamu perlu didampingi pembimbing."
     nar "Miyuki tidak mendengar kelegaan pada kalimat pertama. Ia hanya mendengar bahwa sesuatu yang buruk hampir terjadi dan namanya ada di situ."
     call kk_family_menu("Mi-D10", ["Paksa ia mengambil cuti.", "Bantu ia menyembunyikannya.", "Laporkan ke pembimbing demi keselamatan pasien."])
     if _return == "A":
         nar "Kau bersikeras ia berhenti dan mengambil cuti, bukan kembali membuktikan diri pada jadwal berikutnya. Miyuki marah sebentar, lalu terlalu lelah untuk mempertahankan penyangkalan."
         miyuki "Aku takut kalau berhenti, aku nggak bisa kembali. Tapi kalau terus begini... aku juga takut."
-        nar "Ia meminta Sena menemani membicarakan cuti. Keputusan itu tidak membuatnya langsung tenang, tetapi lembar berikutnya tidak lagi ia tangani dengan tangan yang gemetar."
+        nar "Ia meminta Yuina menemani membicarakan cuti. Keputusan itu tidak membuatnya langsung tenang, tetapi lembar berikutnya tidak lagi ia tangani dengan tangan yang gemetar."
     elif _return == "B":
         nar "Kau membantu mengecilkan kejadian itu menjadi sesuatu yang seolah tidak perlu dibicarakan lebih jauh. Miyuki menerima jalan keluar tersebut dengan lega yang segera berubah menjadi takut ketahuan."
-        "Sena" "Ini tetap harus ditangani. Aku nggak akan menyebut kelelahan yang membahayakan pasien sebagai rahasia pribadi kalian."
+        "Yuina" "Ini tetap harus ditangani. Aku nggak akan menyebut kelelahan yang membahayakan pasien sebagai rahasia pribadi kalian."
         nar "Miyuki kini menanggung dua hal sekaligus: kesalahan yang hampir terjadi dan keputusan untuk mencoba menutupinya. Jadwal yang membuatnya kelelahan belum mendapatkan alasan yang jujur untuk berubah."
     else:
         nar "Kau menyampaikan kejadian kepada pembimbing, membatasi laporan pada apa yang benar-benar kauketahui. Miyuki tetap berada di sana ketika rencana tindak lanjut dibicarakan."
         miyuki "Aku malu sekali. Tapi aku nggak mau ada pasien yang menanggung karena aku takut malu."
-        "Sena" "Kita urus jadwal dan pengawasannya. Kamu nggak perlu menyelesaikan ini dengan menghukum diri sendiri."
+        "Yuina" "Kita urus jadwal dan pengawasannya. Kamu nggak perlu menyelesaikan ini dengan menghukum diri sendiri."
         nar "Miyuki mengangguk, kali ini pada rencana yang punya langkah berikutnya, bukan pada tuduhan bahwa dirinya selalu kurang."
     return
 
@@ -134,33 +134,33 @@ label kkscene_Mi_D06:
 # │ TERLIBAT: Tachibana Miyuki
 # │ AWALAN  : omiai_takeru ≥ 40; pemain di Kafe Komorebi hari Sabtu
 # │ INTI    : A Hadapi / B bersekutu / C pancing ia jujur / D rekam diam-diam
-# │ AKHIRAN : Takeru bisa mengaku ia tidak mencintai Miyuki; rekaman menjadi bukti sekaligus risiko
+# │ AKHIRAN : Tatsuru bisa mengaku ia tidak mencintai Miyuki; rekaman menjadi bukti sekaligus risiko
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_Mi_D07:
     call kk_scene_enter("miyuki", "Kafe Komorebi · Sabtu")
-    nar "Takeru memilih meja Komorebi yang cukup jauh dari pintu. Ia belum memesan untukmu, tetapi sudah menyediakan kursi seolah pertemuan ini bagian jadwal yang akan kauikuti."
-    "Takeru" "Kau dekat dengan Miyuki. Aku ingin tahu apakah kita bisa menghindari masalah yang tidak perlu."
+    nar "Tatsuru memilih meja Komorebi yang cukup jauh dari pintu. Ia belum memesan untukmu, tetapi sudah menyediakan kursi seolah pertemuan ini bagian jadwal yang akan kauikuti."
+    "Tatsuru" "Kau dekat dengan Miyuki. Aku ingin tahu apakah kita bisa menghindari masalah yang tidak perlu."
     nar "Ia menyebut dua keluarga, hubungan lama, dan harapan orang tua sebelum sekali pun menyebut apa yang diinginkan Miyuki sendiri."
     python:
         _caps = ["Hadapi ia terus terang.", "Pura-pura bersekutu dengannya.", "Pancing ia bicara jujur.", "Rekam pembicaraan diam-diam."]
         _rows = [(cap, Return(key), False) for key, cap in zip("ABCD", _caps)]
-    call screen kk_choice_panel(_rows, "Hadapi Takeru")
+    call screen kk_choice_panel(_rows, "Hadapi Tatsuru")
     $ _key = _return
     $ kk_family_choice("Mi-D07", _key)
     if _key == "A":
-        nar "Kau menanyakan langsung apakah ia mencintai Miyuki. Takeru meletakkan sendok, tampak kesal karena percakapan yang dianggapnya praktis dibawa ke sana."
-        "Takeru" "Tidak. Aku menghormatinya. Keluarga kami menganggap itu cukup untuk memulai."
+        nar "Kau menanyakan langsung apakah ia mencintai Miyuki. Tatsuru meletakkan sendok, tampak kesal karena percakapan yang dianggapnya praktis dibawa ke sana."
+        "Tatsuru" "Tidak. Aku menghormatinya. Keluarga kami menganggap itu cukup untuk memulai."
         nar "Kau mengatakan Miyuki berhak menentukan apakah cukup. Ia memandang keluar, lalu mengakui bahwa pertanyaan itulah yang paling jarang diajukan dalam pertemuan keluarga."
     elif _key == "B":
-        nar "Kau menampilkan sikap seolah bersedia bekerja sama. Takeru mengendur, membicarakan rencana keluarga sebagai urusan yang bisa kalian permudah berdua."
-        "Takeru" "Bagus. Aku tidak ingin membuat keadaan sulit. Miyuki juga selalu berusaha memahami."
+        nar "Kau menampilkan sikap seolah bersedia bekerja sama. Tatsuru mengendur, membicarakan rencana keluarga sebagai urusan yang bisa kalian permudah berdua."
+        "Tatsuru" "Bagus. Aku tidak ingin membuat keadaan sulit. Miyuki juga selalu berusaha memahami."
         nar "Ia tidak menyadari persetujuanmu hanya sandiwara. Di antara cangkir, kehidupan Miyuki kembali diperlakukan sebagai sesuatu yang bisa dibahas orang dekat tanpa perlu menghadirkannya."
     elif _key == "C":
-        nar "Kau menanyakan apa yang akan ia pilih jika tidak perlu menjawab kepada keluarganya. Takeru lama tidak menyentuh kopi."
-        "Takeru" "Aku juga ingin memilih sendiri. Tapi setiap kubilang begitu, mereka bertanya apakah aku punya alasan yang lebih baik."
+        nar "Kau menanyakan apa yang akan ia pilih jika tidak perlu menjawab kepada keluarganya. Tatsuru lama tidak menyentuh kopi."
+        "Tatsuru" "Aku juga ingin memilih sendiri. Tapi setiap kubilang begitu, mereka bertanya apakah aku punya alasan yang lebih baik."
         nar "Ia terdengar lebih muda ketika berhenti berbicara atas nama dua keluarga. Pengakuan itu memberinya tanggung jawab baru: ia tidak lagi bisa menganggap kepatuhan Miyuki sebagai bukti bahwa rencana tersebut baik bagi mereka berdua."
     else:
-        nar "Pembicaraan itu tersimpan dalam rekaman tanpa sepengetahuannya. Takeru menyebut tidak mencintai Miyuki dan menganggap hubungan tersebut kepentingan keluarga."
+        nar "Pembicaraan itu tersimpan dalam rekaman tanpa sepengetahuannya. Tatsuru menyebut tidak mencintai Miyuki dan menganggap hubungan tersebut kepentingan keluarga."
         nar "Bukti kini ada di tanganmu, bersama persoalan baru tentang bagaimana ia diperoleh dan siapa yang berhak menentukan penggunaannya. Menyimpan suara seseorang tidak otomatis memberimu hak mengambil keputusan atas nama Miyuki."
     $ kk_minutes(10)
     return

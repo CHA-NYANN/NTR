@@ -1,9 +1,9 @@
-# Hoshino Rina — sahabat Moeka
+# Hoshino Ryena — sahabat Moeka
 
 Status: 🟡 seluruhnya usulan (tidak ada di canon). Dibuat sebagai orang yang paling mungkin menyadari tanda bahaya Moeka.
 
 ## 1. Identitas dan peran
-- 🟡 Hoshino Rina. 19 tahun. Fashion Design tahun kedua, teman sejak SMA dan teman satu kos tak resmi (sering menginap).
+- 🟡 Hoshino Ryena. 19 tahun. Fashion Design tahun kedua, teman sejak SMA dan teman satu kos tak resmi (sering menginap).
 - 🟡 Peran: sahabat terdekat Moeka; orang yang pertama menyadari Rute Death-Flag. Perannya bisa menentukan nada rute.
 
 ## 2. Penampilan 🟡
@@ -34,15 +34,15 @@ Status: 🟡 seluruhnya usulan (tidak ada di canon). Dibuat sebagai orang yang p
 ## 7. Reaksi terhadap situasi 🟡
 - **Moeka terlambat / lupa janji:** memaklumi dan membantu.
 - **Moeka berubah (penarikan diri):** mendatangi tanpa diundang, mengajak makan.
-- **Krisis:** menghubungi Aya, pemain, dan pihak profesional.
+- **Krisis:** menghubungi Yaeka, pemain, dan pihak profesional.
 - **Pemain mengecewakan Moeka:** menegur tegas.
 
 ## 8. Event kunci 🟡
 - Thrifting bersama.
 - Malam sebelum pameran akhir semester.
-- Pertemuan dengan Aya.
+- Pertemuan dengan Yaeka.
 
 ## 9. Keputusan yang sudah kuisi (🟡)
 - **Kanji:** 星野 莉奈.
-- **Bila Moeka meninggal:** Rina menjadi wajah duka utama. Ia tidak menyalahkan pemain secara terbuka, tetapi pernah bilang "aku sudah memperingatkan". Ia melanjutkan label fashion kecil Moeka dan menamainya dengan nama panggilan Moeka. Pemain bisa membantu atau diabaikan.
-- **Bila Moeka selamat:** Rina menjadi sekutu paling setia pemain dan teman Moeka seumur hidup.
+- **Bila Moeka meninggal:** Ryena menjadi wajah duka utama. Ia tidak menyalahkan pemain secara terbuka, tetapi pernah bilang "aku sudah memperingatkan". Ia melanjutkan label fashion kecil Moeka dan menamainya dengan nama panggilan Moeka. Pemain bisa membantu atau diabaikan.
+- **Bila Moeka selamat:** Ryena menjadi sekutu paling setia pemain dan teman Moeka seumur hidup.

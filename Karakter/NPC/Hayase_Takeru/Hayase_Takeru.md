@@ -1,4 +1,4 @@
-# Hayase Takeru — calon omiai Miyuki
+# Hayase Tatsuru — calon omiai Miyuki
 
 Status: 🟡 seluruhnya usulan. Pengejar sepihak, bukan pasangan jadi.
 
@@ -12,9 +12,9 @@ Pilihan orang tua Miyuki. Tekanan keluarga yang tampak sempurna; bukan penjahat.
 
 ## Hubungan dan fungsi
 - Dengan Miyuki: Aff Sedang (satu arah), Trust Sedang. Miyuki sopan tapi menjaga jarak.
-- Orang tua Miyuki mendorong dari belakang; Sena tidak menyukainya.
-- Bila Miyuki berada di Rute Masokis: Takeru bisa jadi pihak yang tak sadar memperparah (terlalu sopan, tak pernah marah) atau justru menolong (bila ia menyadari).
-- Bila pemain mengejar Miyuki: Takeru tidak agresif, tetapi punya keunggulan status. Pemain harus menang lewat ketulusan.
+- Orang tua Miyuki mendorong dari belakang; Yuina tidak menyukainya.
+- Bila Miyuki berada di Rute Masokis: Tatsuru bisa jadi pihak yang tak sadar memperparah (terlalu sopan, tak pernah marah) atau justru menolong (bila ia menyadari).
+- Bila pemain mengejar Miyuki: Tatsuru tidak agresif, tetapi punya keunggulan status. Pemain harus menang lewat ketulusan.
 
 ## Gaya bicara
 - "Tachibana-san, bolehkah saya mengantar Anda? Hari sudah malam."

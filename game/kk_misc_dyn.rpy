@@ -1,5 +1,5 @@
 # Event dinamis lepas: Mi-D13 (Miyuki, pertanyaan pada dirinya sendiri) dan
-# N-D04 (Nagisa, tawaran kedua Yuuto saat pemain absen). Konsekuensi + karakter.
+# N-D04 (Nagisa, tawaran kedua Fuuto saat pemain absen). Konsekuensi + karakter.
 
 # ┌─ PANDUAN CERITA · Mi-D13 · Pertanyaan yang Belum Pernah Ia Tanyakan
 # │ LOKASI  : (dinamis — muncul dari kondisi)
@@ -28,29 +28,29 @@ label kkscene_Mi_D13:
         nar "Ia tersenyum lagi, kali ini lebih lepas. Pertanyaannya belum dijawab, tetapi rasa malu tidak lagi memenuhi seluruh meja."
     return
 
-# ┌─ PANDUAN CERITA · N-D04 · Tawaran Kedua Yuuto
+# ┌─ PANDUAN CERITA · N-D04 · Tawaran Kedua Fuuto
 # │ LOKASI  : (dinamis — muncul dari kondisi)
 # │ TERLIBAT: Sakurajima Nagisa
 # │ AWALAN  : tenggat studio; pemain absen
-# │ INTI    : A Datang membantu / B biarkan / C alihkan Yuuto
+# │ INTI    : A Datang membantu / B biarkan / C alihkan Fuuto
 # │ AKHIRAN : studio +; kelekatan ke pemain turun bila pemain absen
 # └─ tulis / perbaiki dialog di bawah ──
 label kkscene_N_D04:
     call kk_scene_enter("nagisa", "Gedung Arsitektur · Tenggat maket")
-    nar "Foto maket yang belum selesai masuk ke ponselmu bersama kabar bahwa Yuuto sudah berada di studio. Tenggat tinggal semalam. Nagisa tidak sempat mempertahankan gengsi sekaligus menyelesaikan seluruh pekerjaan."
+    nar "Foto maket yang belum selesai masuk ke ponselmu bersama kabar bahwa Fuuto sudah berada di studio. Tenggat tinggal semalam. Nagisa tidak sempat mempertahankan gengsi sekaligus menyelesaikan seluruh pekerjaan."
     nagisa "Dia bisa bantu. Aku bukan melapor untuk membuatmu cemburu. Aku perlu tahu kamu datang atau nggak supaya bisa membagi kerjaan."
     nar "Kalimat berikutnya lebih pendek: aku tadi berharap kamu yang ada di sini."
-    call kk_family_menu("N-D04", ["Datang membantu sendiri.", "Biarkan Yuuto yang membantu.", "Alihkan Yuuto dengan halus."])
+    call kk_family_menu("N-D04", ["Datang membantu sendiri.", "Biarkan Fuuto yang membantu.", "Alihkan Fuuto dengan halus."])
     if _return == "A":
-        nar "Kau datang dan meminta tugas tanpa menyuruh Yuuto pergi. Nagisa memeriksa jam, lalu mengangguk, lebih lega daripada yang ingin ditunjukkan."
+        nar "Kau datang dan meminta tugas tanpa menyuruh Fuuto pergi. Nagisa memeriksa jam, lalu mengangguk, lebih lega daripada yang ingin ditunjukkan."
         nagisa "Baik. Yang itu untukmu. Terima kasih sudah datang. Omelannya nanti kalau sudah selesai."
         nar "Kalian bekerja dengan pembagian yang akhirnya jelas. Kehadiranmu tidak menghapus waktu ketika kau absen, tetapi memberi sesuatu yang nyata untuk dinilai selain janji akan menyusul."
     elif _return == "B":
-        nar "Kau mengatakan tidak akan datang. Nagisa membalas singkat, kemudian berhenti memeriksa layar agar bisa bekerja bersama Yuuto."
+        nar "Kau mengatakan tidak akan datang. Nagisa membalas singkat, kemudian berhenti memeriksa layar agar bisa bekerja bersama Fuuto."
         nar "Maket selesai menjelang pagi. Ia mengucapkan terima kasih kepada orang yang benar-benar melihat bagian mana yang paling melelahkan malam itu. Kedekatan tumbuh di sela bantuan yang tidak perlu ditagih, sementara tempatmu dalam harapannya sedikit bergeser."
     else:
-        nar "Kau mengalihkan Yuuto dari malam yang semula hendak diberikannya. Ia menanyakan apakah ada orang lain yang akan membantu sebelum bersedia pergi."
-        "Yuuto" "Baik, kalau sudah diatur. Tolong jangan sampai Nagisa harus mengulang sendirian."
+        nar "Kau mengalihkan Fuuto dari malam yang semula hendak diberikannya. Ia menanyakan apakah ada orang lain yang akan membantu sebelum bersedia pergi."
+        "Fuuto" "Baik, kalau sudah diatur. Tolong jangan sampai Nagisa harus mengulang sendirian."
         nar "Nagisa melihat orang yang baru bersedia menolong kembali membereskan tas. Kau telah mengubah siapa yang boleh hadir di dekatnya; pekerjaan yang masih menumpuk tetap memerlukan tangan, bukan sekadar alasan."
     return
 

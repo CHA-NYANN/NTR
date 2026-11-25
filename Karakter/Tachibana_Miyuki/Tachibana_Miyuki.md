@@ -8,7 +8,7 @@ Status: profil ✅, visual ✅ ACC, sisanya 🟡 usulan. Rute distorsi: Masokis 
 - 🟡 Ulang tahun: 9 Desember. Golongan darah AB.
 
 ## 2. Penampilan (✅ ACC)
-- Rambut hitam panjang lurus, terurai, tanpa hiasan kepala. Mata biru sapphire. Tinggi, anggun. Outfit utama: jas dokter putih di atas atasan ungu gelap, rok hitam, stetoskop.
+- Rambut hitam panjang lurus, terurai, tanpa hiasan kepala. Mata cokelat kemerahan. Tinggi, anggun. Outfit utama: jas dokter putih di atas atasan ungu gelap, rok hitam, stetoskop.
 - 🟡 Pakaian rumah: kardigan krem dan celana longgar. Di apartemen dia terlihat jauh lebih santai dan "lebih muda".
 
 ## 3. Kepribadian

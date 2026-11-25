@@ -26,7 +26,7 @@ Target File: `game/kk_koita_y1.rpy` (`label kkscene_K01`, blok `else:` untuk Hos
 
     # --- Pilihan A (Host Yutaka) ---
         else:
-            nar "Kau menahan langkah di dekat tiang kantin selama beberapa detik lagi, memetakan cara kerja sang protagonis di dalam kepalamu tanpa menarik perhatian."
+            nar "Kau menahan langkah di dekat tiang kantin selama beberapa detik lagi, memetakan cara kerja sang MC di dalam kepalamu tanpa menarik perhatian."
             nar "Kau memperhatikan siapa yang ia tatap ketika menyebut kata 'nanti' kepada Kujo-san—tidak ada hari, jam, atau tempat yang benar-benar disepakati. Kepada Miyuki-senpai, ia menawarkan kepedulian hangat tanpa harus ikut menemaninya. Dan kepada Nagisa, satu kalimat manis yang terdengar pribadi langsung meredam kekesalannya."
             nar "Tidak ada satu pun janji konkret yang keluar dari mulutnya, tetapi masing-masing dari mereka pergi atau duduk dengan membawa sepotong kecil dari masa depannya."
             nar "Baru ketika Miyuki-senpai melangkah pergi membawa map dan Kujo-san berjalan menjauh, tatapan Koita akhirnya menangkap sosokmu yang berdiri diam memegangi nampan."
@@ -51,7 +51,7 @@ Target File: `game/kk_koita_y1.rpy` (`label kkscene_K01`, blok `else:` untuk Hos
 
     # --- Pilihan C (Host Yutaka) ---
         else:
-            nar "Kau memutuskan tidak perlu repot-repot mengomentari kebiasaan lama sang protagonis siang ini. Kau melangkah santai mendekati meja panjang, menarik kursi kosong di ujung, lalu meletakkan nampan makan siangmu sambil membuka obrolan biasa."
+            nar "Kau memutuskan tidak perlu repot-repot mengomentari kebiasaan lama sang MC siang ini. Kau melangkah santai mendekati meja panjang, menarik kursi kosong di ujung, lalu meletakkan nampan makan siangmu sambil membuka obrolan biasa."
             yutaka "Meja ini ramai juga. Aku ikut duduk di sini ya—kelas pagi tadi lumayan bikin pusing, habis ini masih ada kelas siang."
             nar "Koita langsung menyambut topik aman itu dengan mudah dan tampak lega. Ia menggeser wadah sumpit ke arahmu sambil tertawa kecil."
             koita "Baru hari pertama sudah mengeluh pusing? Dosenmu semester ini galak banget ya? Kalau butuh tempat tenang buat baca catatan, nanti ikut ke perpustakaan saja."

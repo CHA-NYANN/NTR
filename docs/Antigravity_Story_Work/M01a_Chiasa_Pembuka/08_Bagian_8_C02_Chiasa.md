@@ -7,7 +7,7 @@ label kkscene_C02:
     call kk_scene_enter("chiasa", "Rumah Amamiya")
     nar "Kau menuruni tangga kayu rumah keluarga Amamiya yang berderit pelan di bawah pijakan kakimu. Rasanya masih ganjil merasakan langkah yang lebih pendek, ayunan rambut cokelat panjang yang terikat setengah dengan pita hitam di belakang kepala, serta udara pagi 7 April yang sejuk menyapu pergelangan kakimu."
     nar "Begitu kau melangkah masuk ke ruang makan, aroma kaldu miso hangat, roti panggang yang baru menyembul dari pemanggang, dan wangi telur mata sapi langsung memenuhi udara. Cahaya matahari pagi jatuh miring melalui tirai tipis jendela dapur, menerangi meja makan kayu yang sudah tertata rapi."
-    nar "Di dekat meja dapur, seorang pemuda berambut hitam agak acak-acakan dengan satu helai rambut mencuat di puncak kepalanya berdiri mengenakan celemek rumahan di atas kaus abu-abu. Amamiya Koita—sang protagonis manga harem yang selama ini hanya kau lihat di balik panel hitam-putih."
+    nar "Di dekat meja dapur, seorang pemuda berambut hitam agak acak-acakan dengan satu helai rambut mencuat di puncak kepalanya berdiri mengenakan celemek rumahan di atas kaus abu-abu. Amamiya Koita—sang MC manga harem yang selama ini hanya kau lihat di balik panel hitam-putih."
     nar "Ia meletakkan dua piring berisi telur mata sapi dan roti panggang beserta dua mangkuk sup miso di atas meja, lalu menoleh setengah badan ke arah teko di dekat kompor sambil tersenyum hangat—senyum yang tampak begitu tulus dan biasa-biasa saja."
     koita "Sudah bangun? Bagus deh, pas banget baru matang. Duduk dulu saja—tehnya mau kubuatkan seperti biasa sekalian?"
     nar "Kau menarik kursi kayu dan duduk, tetapi pertanyaan ringan itu membuatmu terdiam sepersekian detik. Kau sama sekali tidak tahu 'seperti biasa' versi Chiasa itu teh hijau tawar, teh hitam, atau teh susu—sampai kau melihat tangan Koita sendiri sudah lebih dulu meraih cangkir keramik kuning bermotif kucing dari rak piring dan menjatuhkan satu dadu gula ke dalamnya."
@@ -28,7 +28,7 @@ label kkscene_C02:
         chiasa "Gampang. Ko-nii nggak usah terlalu khawatir begitu."
         nar "Panggilan itu diterima begitu mulus sampai kau justru merasa semakin ganjil. Koita terus bercerita santai tentang jadwal kelas dan rencana mampir ke toko buku bekas sambil mengunyah roti panggangnya—sama sekali tidak menyadari bahwa gadis di seberang mejanya sedang memunguti serpihan informasi dari percakapan biasa demi bertahan hidup di dalam tubuh adiknya."
     elif _return == "B":
-        nar "Lidahmu terasa kelu dan enggan memaksa tubuh ini mengucapkan panggilan semanja itu kepada protagonis manga yang paling tidak kau sukai. Sebelum kau sempat menimbang akibatnya, kalimat yang meluncur dari bibirmu justru terdengar datar dan lugas."
+        nar "Lidahmu terasa kelu dan enggan memaksa tubuh ini mengucapkan panggilan semanja itu kepada MC manga yang paling tidak kau sukai. Sebelum kau sempat menimbang akibatnya, kalimat yang meluncur dari bibirmu justru terdengar datar dan lugas."
         chiasa "Iya, tolong. Makasih, Koita."
         nar "Bunyi kucuran air panas dari moncong teko mendadak terhenti. Tangan Koita membeku di udara selama dua detik penuh sebelum ia meletakkan teko itu kembali ke atas kompor dan menoleh perlahan ke arahmu dengan kening berkerut."
         koita "...'Koita'? Tumben sekali. Sejak kapan kau memanggilku pakai nama langsung begitu?"
